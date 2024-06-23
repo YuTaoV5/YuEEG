@@ -30,7 +30,8 @@
 
 ### 电路设计图：
 
-![电路设计图](path/to/circuit_diagram.png)
+![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20240623124910.png#pic_center%20=400x)
+
 
 ## 软件开发 💻
 
@@ -40,7 +41,130 @@
 - **数据读取**：从芯片读取EEG数据。
 - **数据处理**：初步处理和滤波。
 
-## 上位机程序 📊
+### 引脚定义
+
+| 引脚名称  | 描述                            |
+| --------- | ------------------------------- |
+| CS_PIN    | 片选引脚，低电平有效             |
+| SCLK_PIN  | SPI时钟引脚                      |
+| MOSI_PIN  | SPI主设备输出从设备输入引脚       |
+| MISO_PIN  | SPI主设备输入从设备输出引脚       |
+| DRDY_PIN  | 数据就绪引脚，低电平表示数据可读 |
+| CLKSEL_PIN| 时钟选择引脚                     |
+| START_PIN | 启动转换引脚                     |
+| RESET_PIN | 重置引脚                         |
+| PWDN_PIN  | 省电模式引脚                     |
+
+### 命令定义
+
+| 命令    | 描述                  |
+| ------- | --------------------- |
+| WAKEUP  | 唤醒芯片              |
+| STANDBY | 进入待机模式          |
+| RESET   | 重置芯片              |
+| START   | 开始数据转换          |
+| STOP    | 停止数据转换          |
+| RDATAC  | 连续读取数据          |
+| SDATAC  | 停止连续读取数据      |
+| RDATA   | 读取数据              |
+| RREG    | 读取寄存器            |
+| WREG    | 写寄存器              |
+
+### 定时器中断
+
+代码中使用ESP32的定时器来定时读取数据和导联检测状态：
+
+- `onDataTimer`: 检查数据是否就绪，如果就绪则设置标志位`startRead`。
+- `onImpedanceTimer`: 读取导联检测状态。
+
+### 初始化
+
+在`setup`函数中：
+
+- 初始化串口通信。
+- 初始化引脚模式。
+- 初始化SPI通信参数。
+- 调用`initADS1299`函数初始化ADS1299。
+- 获取并打印设备ID。
+- 配置ESP32的定时器用于数据读取和导联检测。
+
+### 主循环
+
+在`loop`函数中：
+
+- 检查串口是否有数据输入，用于切换连续读取模式和导联检测模式。
+- 如果`startRead`标志位被设置，调用`readData`函数读取数据。
+
+### 启动连续读取模式
+
+`startContinuousReadMode`函数：
+
+- 设置必要的标志位。
+- 重置并初始化ADS1299的寄存器。
+- 启动连续数据读取模式。
+- 启动数据读取定时器，停止导联检测定时器。
+
+### 启动导联检测模式
+
+`startLeadOffDetectionMode`函数：
+
+- 设置必要的标志位。
+- 重置并初始化ADS1299的寄存器用于导联检测。
+- 启动导联检测定时器，停止数据读取定时器。
+
+### ADS1299初始化
+
+`initADS1299`函数：
+
+- 启动ADS1299的时序。
+- 重置芯片。
+- 停止连续数据读取模式。
+- 配置必要的寄存器。
+
+### 读取导联检测状态
+
+`readLeadOffStatus`函数：
+
+- 读取`LOFF_STATP`和`LOFF_STATN`寄存器。
+- 打印导联检测状态。
+
+### 读取数据
+
+`readData`函数：
+
+- 从ADS1299读取数据。
+- 将数据转换为电压并打印。
+
+### 寄存器读写
+
+包含`writeRegister`和`readRegister`函数，用于向ADS1299写入和读取寄存器。
+
+### 数据转换
+
+`convertData`函数：
+
+- 将读取的字节数据转换为电压值。
+
+这个代码框架基本涵盖了ADS1299的初始化、数据读取、导联检测等主要功能。在实际应用中，可能需要根据具体需求调整寄存器配置和定时器的时间间隔。确保ADS1299手册中的寄存器配置正确无误，以实现所需的功能。
+
+### REF和偏置电压（BIAS）的工作原理及电路连接
+
+#### 1. 参考电极（REF）
+
+参考电极是所有测量电极电位的基准点。它的作用是提供一个稳定的参考电压，以确保各个测量电极的电位能够被正确地采集。ADS1299提供了灵活的配置选项，可以将任意电极设置为参考电极。
+
+#### 2. 偏置电压（BIAS）
+
+偏置电压用于提供共模电压稳定性和干扰抑制。在EEG测量中，人体容易受到共模干扰，如电源线频率的干扰（50/60Hz）。偏置电压通过向病人施加一个控制的电压，帮助将测量电极的共模电压保持在ADS1299输入范围内。ADS1299的偏置放大器（BIAS amplifier）提供了一个内部的反馈回路，用于减少共模干扰。
+
+#### 3. SRB引脚
+
+SRB（Signal Reference Buffer）引脚在ADS1299中用于信号参考电极的配置。
+
+- **SRB1**：当SRB1引脚用于参考时，所有通道的负输入可以连接到SRB1。设置`MISC1`寄存器的SRB1位可以实现这种配置。
+- **SRB2**：SRB2引脚可以选择单独的电极作为参考电极，并通过设置`CHnSET`寄存器的SRB2位，将该电极的电位作为其他通道的参考。
+
+#### 上位机程序 📊
 
 ### 功能：
 
@@ -51,11 +175,15 @@
 ### 使用技术：
 
 - **编程语言**：Python
-- **图形库**：Matplotlib
+- **图形库**：pyqt + fluent
 
 ### 界面截图：
 
-![上位机界面](path/to/gui_screenshot.png)
+![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20240623125708.png#pic_center%20=400x)
+![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20240623125839.png#pic_center%20=400x)
+![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20240623125915.png#pic_center%20=400x)
+![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20240623125926.png#pic_center%20=400x)
+
 
 ## 使用指南 📚
 
@@ -69,8 +197,9 @@
 
 1. 安装所需库：
    ```bash
-   pip install pyserial matplotlib
    pip install pyserial pyqt5
+   pip install pyqtgraph PyQt-Fluent-Widgets
+   pip install vtk scikit-learn
    ```
 ## 项目结构 🗂️
 ```
@@ -78,7 +207,7 @@
 │   ├── schematics
 │   └── pcb
 ├── firmware
-│   └── ads1299_driver.c
+│   └── ads1299_driver.ino
 ├── software
 │   └── bci_gui.py
 └── README.md

@@ -35,8 +35,8 @@ class Window(FramelessWindow):
         self.hBoxLayout = QHBoxLayout(self)
         self.navigationInterface = NavigationInterface(self, showMenuButton=True)
         self.stackWidget = QStackedWidget(self)
-        # channels_to_display = [0, 1, 2, 3, 4, 5, 6, 7]  # Example control parameter list
-        channels_to_display = [2]
+        channels_to_display = [0, 1, 2, 3, 4, 5, 6, 7]  # Example control parameter list
+        # channels_to_display = [2]
         pen_colors = ['r', 'g', 'b', 'c', 'm', 'y', 'k', 'w', 'orange']
         pen_widths = [2, 2, 2, 2, 2, 2, 2, 2, 2]
         plot_num = 1000

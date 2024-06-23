@@ -1,15 +1,34 @@
 #include <SPI.h>
 #include "esp_timer.h"
 
+
+// 函数声明
+void IRAM_ATTR onDataTimer(void* arg);
+void IRAM_ATTR onImpedanceTimer(void* arg);
+void setup();
+void drawSprite();
+void readButtons();
+void loop();
+void startContinuousReadMode();
+void startImpedanceMeasurementMode();
+void initADS1299();
+void measureImpedance();
+void getDeviceID();
+void sendCommand(byte cmd);
+void writeRegister(byte reg, byte value);
+byte readRegister(byte reg);
+void readData();
+void convertData(byte *data, double *channelData);
+
 // 定义引脚
-#define CS_PIN    10
-#define SCLK_PIN  12
-#define MOSI_PIN  11
-#define MISO_PIN  13
-#define DRDY_PIN  15
-#define CLKSEL_PIN 16
-#define START_PIN 18
-#define RESET_PIN 8
+#define CS_PIN    15
+#define SCLK_PIN  14
+#define MOSI_PIN  13
+#define MISO_PIN  12
+#define DRDY_PIN  10
+#define CLKSEL_PIN 11
+#define START_PIN 1
+#define RESET_PIN 2
 #define PWDN_PIN  3
 
 // 定义命令
@@ -25,12 +44,32 @@
 #define WREG    0x40
 
 volatile boolean startRead = false;
-volatile boolean readLeadOff = false;
+volatile boolean startImpedanceRead = false;
+volatile boolean readImpedance = false;
 volatile boolean continuousReadMode = true;
 
 esp_timer_handle_t dataTimer;
 esp_timer_handle_t impedanceTimer;
 
+// TFT_eSPI tft = TFT_eSPI();
+// TFT_eSprite sprite = TFT_eSprite(&tft);
+
+// float batteryVoltage;
+
+// // 颜色定义
+// #define gray 0x2A0A
+// #define lines 0x8C71
+// unsigned short rings[4] = { 0x47DD, 0xFB9F, 0x86BF, 0xFFD0 };
+
+// // 图表变量
+// int n = 0;
+// int fromTop = 30;
+// int fromLeft = 20;
+// int w = 480;
+// int h = 200;
+// double channelData[9][20] = { 0 };
+
+// 定义ESP32定时器回调函数
 void IRAM_ATTR onDataTimer(void* arg) {
   if (digitalRead(DRDY_PIN) == LOW) {
     startRead = true;
@@ -38,7 +77,9 @@ void IRAM_ATTR onDataTimer(void* arg) {
 }
 
 void IRAM_ATTR onImpedanceTimer(void* arg) {
-  readLeadOffStatus();
+  if (digitalRead(DRDY_PIN) == LOW) {
+    startImpedanceRead = true;
+  }
 }
 
 void setup() {
@@ -65,7 +106,7 @@ void setup() {
   // 初始化ADS1299
   initADS1299();
   getDeviceID();
-  Serial.println("ADS1299 初始化完成");
+  Serial.println("ADS1299 initialized");
 
   // 配置ESP32定时器
   const esp_timer_create_args_t dataTimer_args = {
@@ -82,13 +123,15 @@ void setup() {
   esp_timer_create(&impedanceTimer_args, &impedanceTimer);
 }
 
+
 void loop() {
+  // 处理串口输入，切换ADS1299功能
   if (Serial.available()) {
     char cmd = Serial.read();
     if (cmd == '1') {
       startContinuousReadMode();
     } else if (cmd == '2') {
-      startLeadOffDetectionMode();
+      startImpedanceMeasurementMode();
     }
   }
 
@@ -96,48 +139,50 @@ void loop() {
     startRead = false;
     readData();
   }
+
+  if (startImpedanceRead) {
+    startImpedanceRead = false;
+    measureImpedance();
+  }
+
 }
 
 void startContinuousReadMode() {
   continuousReadMode = true;
-  readLeadOff = false;
-  // 复位芯片
+  readImpedance = false;
   sendCommand(RESET);
   delay(100);
-  sendCommand(SDATAC); // 停止数据连续读取
-  // 配置寄存器
-  writeRegister(0x01, 0x96); // CONFIG1 设置数据速率为1kSPS
-  writeRegister(0x02, 0xD0); // CONFIG2 内部参考电压和偏置电流
-  writeRegister(0x03, 0xE0); // CONFIG3 启用偏置驱动器
+  sendCommand(SDATAC);
+  writeRegister(0x01, 0x96); // 设置数据速率为1kSPS
+  writeRegister(0x02, 0xD0); // 内部参考电压和偏置电流
+  writeRegister(0x03, 0xE0); // 启用偏置驱动器
+  writeRegister(0x04, 0x20); // 设置MISC1寄存器，启用SRB1
   for (int i = 0x05; i <= 0x0C; i++) {
-    writeRegister(i, 0x60); // CHxSET 设置PGA增益和输入类型
+    writeRegister(i, 0x60); // 设置PGA增益和输入类型
   }
   writeRegister(0x0D, 0xFF); // BIAS_SENSP
   writeRegister(0x0E, 0xFF); // BIAS_SENSN
-  // 启动连续数据读取模式
   sendCommand(START);
   sendCommand(RDATAC); // 启动数据连续读取模式
-  esp_timer_start_periodic(dataTimer, 1000); // 1000微秒 = 1毫秒
-  esp_timer_stop(impedanceTimer); // 停止阻抗读取定时器
+  esp_timer_start_periodic(dataTimer, 1000); // 1ms间隔
+  esp_timer_stop(impedanceTimer);
 }
 
-void startLeadOffDetectionMode() {
+void startImpedanceMeasurementMode() {
   continuousReadMode = false;
-  readLeadOff = true;
-  // 复位芯片
+  readImpedance = true;
   sendCommand(RESET);
   delay(100);
-  sendCommand(SDATAC); // 停止数据连续读取
-  // 配置导联脱落检测
-  writeRegister(0x0F, 0x02); // LOFF寄存器，设置为6nA
-  writeRegister(0x18, 0xFF); // 启用所有通道的正极导联检测
-  writeRegister(0x19, 0xFF); // 启用所有通道的负极导联检测
-  esp_timer_start_periodic(impedanceTimer, 100000); // 100000微秒 = 100毫秒
-  esp_timer_stop(dataTimer); // 停止数据读取定时器
+  sendCommand(SDATAC);
+  // 配置导联电流进行阻抗测量
+  writeRegister(0x0F, 0x02); // 设置LOFF寄存器，导联电流为6nA或其他适当值
+  writeRegister(0x18, 0xFF); // 启用所有正极通道的导联检测
+  writeRegister(0x19, 0xFF); // 启用所有负极通道的导联检测
+  esp_timer_start_periodic(impedanceTimer, 1000); // 1ms间隔
+  esp_timer_stop(dataTimer);
 }
 
 void initADS1299() {
-  // 启动时序
   digitalWrite(CLKSEL_PIN, HIGH);
   digitalWrite(CS_PIN, LOW);
   digitalWrite(START_PIN, LOW);
@@ -145,48 +190,23 @@ void initADS1299() {
   digitalWrite(PWDN_PIN, HIGH);
   delay(100);
 
-  // 复位芯片
   sendCommand(RESET);
   delay(100);
-
-  // 停止连续读取模式
   sendCommand(SDATAC);
-
-  // 配置寄存器
-  writeRegister(0x01, 0x96); // CONFIG1 设置数据速率为1kSPS
-  writeRegister(0x02, 0xD0); // CONFIG2 内部参考电压和偏置电流
-  writeRegister(0x03, 0xE0); // CONFIG3 启用偏置驱动器
+  writeRegister(0x01, 0x96); // 设置数据速率为1kSPS
+  writeRegister(0x02, 0xD0); // 内部参考电压和偏置电流
+  writeRegister(0x03, 0xE0); // 启用偏置驱动器
+  writeRegister(0x04, 0x20); // 设置MISC1寄存器，启用SRB1
   for (int i = 0x05; i <= 0x0C; i++) {
-    writeRegister(i, 0x60); // CHxSET 设置PGA增益和输入类型
+    writeRegister(i, 0x60); // 设置PGA增益和输入类型
   }
   writeRegister(0x0D, 0xFF); // BIAS_SENSP
   writeRegister(0x0E, 0xFF); // BIAS_SENSN
-  // 启动连续数据读取模式
   sendCommand(START);
-  sendCommand(RDATAC);
+  sendCommand(RDATAC); // 启动数据连续读取模式
 }
 
-void readLeadOffStatus() {
-  byte statP = readRegister(0x1C); // 读取LOFF_STATP寄存器
-  byte statN = readRegister(0x1D); // 读取LOFF_STATN寄存器
-
-  Serial.print("Lead-Off Status:");
-
-  for (int i = 0; i < 8; i++) {
-    bool pStatus = statP & (1 << i);
-    bool nStatus = statN & (1 << i);
-    Serial.print(pStatus ? "Off" : "On");
-    if (i != 7) {
-      Serial.print(",");
-    } else {
-      Serial.println("");
-    }
-  }
-  // 读取导联检测结果
-  // readLeadOffImpedance();
-}
-
-void readLeadOffImpedance() {
+void measureImpedance() {
   byte data[27];
   digitalWrite(CS_PIN, LOW);
   for (int i = 0; i < 27; i++) {
@@ -194,14 +214,23 @@ void readLeadOffImpedance() {
   }
   digitalWrite(CS_PIN, HIGH);
 
-  // 转换数据
   double channelData[9];
   convertData(data, channelData);
-
-  // 输出导联阻抗
-  Serial.print("Lead-Off Impedance:");
-  for (int i = 0; i < 8; i++) {
+  Serial.print("Channel:");
+  for (int i = 0; i < 9; i++) {
     Serial.print(channelData[i], 6);
+    if (i != 8) {
+      Serial.print(",");
+    } else {
+      Serial.println("");
+    }
+  }
+  Serial.print("Impedance Measurement:");
+  for (int i = 0; i < 8; i++) {
+    double voltage = channelData[i];
+    double current = 0.000006; // 假设使用6nA的导联电流
+    double impedance = voltage / current;
+    Serial.print(impedance, 2); // 打印阻抗值
     if (i != 7) {
       Serial.print(",");
     } else {
@@ -211,12 +240,12 @@ void readLeadOffImpedance() {
 }
 
 void getDeviceID() {
-  digitalWrite(CS_PIN, LOW); // 低电平以进行通信
-  SPI.transfer(SDATAC);      // 停止连续读取数据模式
-  SPI.transfer(RREG | 0x00); // 读取寄存器命令
-  SPI.transfer(0x00);        // 请求一个字节
-  byte data = SPI.transfer(0x00); // 读取字节
-  digitalWrite(CS_PIN, HIGH); // 高电平以结束通信
+  digitalWrite(CS_PIN, LOW);
+  SPI.transfer(SDATAC);
+  SPI.transfer(RREG | 0x00);
+  SPI.transfer(0x00);
+  byte data = SPI.transfer(0x00);
+  digitalWrite(CS_PIN, HIGH);
   Serial.print("Device ID: ");
   Serial.println(data, BIN);
 }
@@ -230,7 +259,7 @@ void sendCommand(byte cmd) {
 void writeRegister(byte reg, byte value) {
   digitalWrite(CS_PIN, LOW);
   SPI.transfer(WREG | reg);
-  SPI.transfer(0x00); // 写一个寄存器
+  SPI.transfer(0x00);
   SPI.transfer(value);
   digitalWrite(CS_PIN, HIGH);
 }
@@ -238,7 +267,7 @@ void writeRegister(byte reg, byte value) {
 byte readRegister(byte reg) {
   digitalWrite(CS_PIN, LOW);
   SPI.transfer(RREG | reg);
-  SPI.transfer(0x00); // 读取一个寄存器
+  SPI.transfer(0x00);
   byte value = SPI.transfer(0x00);
   digitalWrite(CS_PIN, HIGH);
   return value;
@@ -252,7 +281,6 @@ void readData() {
   }
   digitalWrite(CS_PIN, HIGH);
 
-  // 转换为9通道的double数据
   double channelData[9];
   convertData(data, channelData);
   Serial.print("Channel:");
@@ -269,9 +297,9 @@ void readData() {
 void convertData(byte *data, double *channelData) {
   for (int i = 0; i < 9; i++) {
     long value = ((long)data[3 * i + 3] << 16) | ((long)data[3 * i + 4] << 8) | data[3 * i + 5];
-    if (value & 0x800000) { // 如果最高位为1，则为负数
-      value |= 0xFF000000; // 扩展符号位
+    if (value & 0x800000) {
+      value |= 0xFF000000;
     }
-    channelData[i] = (double)value * 4.5 / (double)0x7FFFFF; // 将值转换为电压
+    channelData[i] = (double)value * 4.5 / (double)0x7FFFFF;
   }
 }
