@@ -30,7 +30,7 @@
 
 ### 电路设计图：
 
-![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20240623124910.png#pic_center%20=400x)
+![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20240623132646.png#pic_center%20=400x)
 
 
 ## 软件开发 💻
