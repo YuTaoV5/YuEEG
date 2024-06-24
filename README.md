@@ -1,8 +1,8 @@
 
 <h1 align = "center">🌟ADS1299 8通道脑机接口设备🌟</h1>
-![](https://img.shields.io/badge/Arduino-passing-green)
-![](https://img.shields.io/badge/PlatformIO-passing-green)
-![](https://img.shields.io/badge/YuEEG-V1-grey)
+![Img](https://img.shields.io/badge/Arduino-passing-green)
+![Img](https://img.shields.io/badge/PlatformIO-passing-green)
+![Img](https://img.shields.io/badge/YuEEG-V1-grey)
 
 > [!CAUTION]
 > 项目基于自定义的MIT协议，除本项目拥有者以外该项目不允许用来参加任何商业比赛。
