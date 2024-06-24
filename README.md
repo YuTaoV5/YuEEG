@@ -1,5 +1,6 @@
 
 <h1 align = "center">🌟ADS1299 8通道脑机接口设备🌟</h1>
+
 ![Img](https://img.shields.io/badge/Arduino-passing-green)
 ![Img](https://img.shields.io/badge/PlatformIO-passing-green)
 ![Img](https://img.shields.io/badge/YuEEG-V1-grey)
