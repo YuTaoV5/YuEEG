@@ -1,4 +1,6 @@
 # 项目名称：ADS1299 8通道脑机接口设备
+> [!CAUTION]
+> 项目基于自定义的MIT协议，除本项目拥有者以外该项目不允许用来参加任何商业比赛。
 
 ## 概述 🧠🔌
 
@@ -216,4 +218,30 @@ SRB（Signal Reference Buffer）引脚在ADS1299中用于信号参考电极的�
 欢迎大家对本项目进行贡献！请提交pull request或创建issue以报告问题。
 
 ## 许可 📜
-本项目采用MIT许可。
+本项目采用基于MIT的许可。
+```
+MIT License with Restrictions
+
+Copyright (c) [2024] [ZhangYutao]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Additional Restrictions:
+The Software may not be used to participate in any commercial competitions or contests without the explicit permission of the copyright holder.
+```
