@@ -1,9 +1,5 @@
 
-<<<<<<< HEAD
 <h1 align = "center">🌟YuEEG 8通道脑机接口设备🌟</h1>
-=======
-<h1 align = "center">🌟ADS1299 8通道脑机接口设备🌟</h1>
->>>>>>> 90881ebe4698cae25b6a6c3273afd805ba9cf01a
 
 ![Img](https://img.shields.io/badge/Arduino-passing-green)
 ![Img](https://img.shields.io/badge/PlatformIO-passing-green)
@@ -53,7 +49,7 @@
 
 |||
 |-|-|
-|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221805.png#pic_center =400x)|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221809.png#pic_center =400x)|
+|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221805.png)|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221809.png)|
 ### 外壳模型设计图：
 
 >3D外壳文件：https://a360.co/3AnxQdK 
@@ -61,7 +57,7 @@
 
 ||||
 |-|-|-|
-|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221759.png#pic_center =400x)|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221635.PNG#pic_center =400x)|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221644.png#pic_center =400x)|
+|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221759.png)|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221635.PNG)|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221644.png)|
 
 
 ## 软件开发 💻
