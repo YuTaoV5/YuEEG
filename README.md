@@ -1,8 +1,9 @@
 
-<h1 align = "center">🌟ADS1299 8通道脑机接口设备🌟</h1>
+<h1 align = "center">🌟YuEEG 8通道脑机接口设备🌟</h1>
+
 ![Img](https://img.shields.io/badge/Arduino-passing-green)
 ![Img](https://img.shields.io/badge/PlatformIO-passing-green)
-![Img](https://img.shields.io/badge/YuEEG-V1-grey)
+![Img](https://img.shields.io/badge/YuEEG-V1\.6-grey)
 
 > [!CAUTION]
 > 项目基于自定义的MIT协议，除本项目拥有者以外该项目不允许用来参加任何商业比赛。
@@ -10,6 +11,12 @@
 ## 概述 🧠🔌
 
 本项目旨在利用TI的ADS1299芯片构建一个8通道的脑机接口（BCI）设备。项目涵盖硬件电路设计、芯片驱动开发以及数据接收和显示的上位机程序。
+
+## 项目亮点
+
+- **8通道高分辨率EEG采集**，适合科研和创客项目。
+- **定制3D打印脑电帽外壳**，设计舒适，便于精确放置电极。
+- **兼容Arduino的驱动代码**，便于集成和控制，支持多种EEG应用和项目开发。
 
 ## 目录 📁
 
@@ -37,7 +44,20 @@
 
 ### 电路设计图：
 
-![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20240623132646.png#pic_center%20=400x)
+>嘉立创链接：[https://oshwhub.com/protodrive000/1299_pro](https://a360.co/3AnxQdK%20)
+访问密码：yutaov5
+
+|||
+|-|-|
+|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221805.png#pic_center =400x)|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221809.png#pic_center =400x)|
+### 外壳模型设计图：
+
+>3D外壳文件：https://a360.co/3AnxQdK 
+访问密码：yutaov5
+
+||||
+|-|-|-|
+|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221759.png#pic_center =400x)|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221635.PNG#pic_center =400x)|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221644.png#pic_center =400x)|
 
 
 ## 软件开发 💻
@@ -185,12 +205,11 @@ SRB（Signal Reference Buffer）引脚在ADS1299中用于信号参考电极的�
 - **图形库**：pyqt + fluent
 
 ### 界面截图：
+![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110222325.png#pic_center%20=400x)
 
-![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20240623125708.png#pic_center%20=400x)
-![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20240623125839.png#pic_center%20=400x)
-![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20240623125915.png#pic_center%20=400x)
-![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20240623125926.png#pic_center%20=400x)
-
+<video width="640" height="360" controls>
+  <source src="https://imgpool.protodrive.xyz/img/8c357eebb239c2a005d27d91e568f3a7.mp4" type="video/mp4">
+</video>
 
 ## 使用指南 📚
 
@@ -200,14 +219,60 @@ SRB（Signal Reference Buffer）引脚在ADS1299中用于信号参考电极的�
 2. 将EEG电极正确连接到被测试者。
 3. 使用USB线连接设备和电脑。
 
+### 软件设置
+
+驱动代码是为支持ESP32的Arduino IDE编写的，代码通过SPI与ADS1299进行数据采集。
+
+### 先决条件
+
+- **Arduino IDE**：从[Arduino官方网站](https://www.arduino.cc/en/software)下载最新版本。
+- **ESP32开发板包**：在Arduino IDE中通过开发板管理器添加ESP32开发板支持。
+
+### 安装步骤
+
+1. **克隆此仓库**：
+   ```bash
+   git clone https://github.com/YuTaoV5/YuEEG.git
+   cd YuEEG
 ### 软件运行：
 
-1. 安装所需库：
+2. 安装所需库：
    ```bash
    pip install pyserial pyqt5
    pip install pyqtgraph PyQt-Fluent-Widgets
    pip install vtk scikit-learn
    ```
+
+### 加载代码：
+
+打开Arduino IDE，选择 文件 > 打开 并选择 ino 文件。
+在 工具 > 开发板 下选择你的ESP32开发板。
+在 工具 > 端口 下设置正确的COM端口。
+### 上传代码：
+
+编译并将代码上传到ESP32开发板。
+## 代码使用方法
+上传完成后，ESP32开发板将开始与ADS1299芯片进行通信，并将EEG数据输出到串口监视器。
+
+- 模式切换：使用以下串口命令切换不同模式：
+    - 1：连续读取模式
+    - 2：阻抗测量模式
+    - 3：自检模式
+
+>示例用法
+上传完成后，在Arduino IDE中打开串口监视器，波特率设为115200。你将看到来自每个通道的实时EEG数据。
+``` C
+Channel 1: 0.123456, Channel 2: 0.654321, ..., Channel 8: 0.345678
+```
+## 贡献指南
+欢迎社区贡献！请随时提交问题、功能请求或拉取请求。
+
+## 未来改进
+- 增加对不同微控制器的支持。
+- 扩展脑电帽设计，以便调整电极位置。
+
+## 致谢
+特别感谢德州仪器提供ADS1299芯片，并感谢开源社区的启发与支持。
 ## 项目结构 🗂️
 ```
 ├── hardware
