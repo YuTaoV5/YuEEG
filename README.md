@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 <h1 align = "center">🌟YuEEG 8通道脑机接口设备🌟</h1>
+=======
+<h1 align = "center">🌟ADS1299 8通道脑机接口设备🌟</h1>
+>>>>>>> 90881ebe4698cae25b6a6c3273afd805ba9cf01a
 
 ![Img](https://img.shields.io/badge/Arduino-passing-green)
 ![Img](https://img.shields.io/badge/PlatformIO-passing-green)
