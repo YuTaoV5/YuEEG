@@ -1,9 +1,16 @@
 
 <h1 align = "center">🌟YuEEG 8通道脑机接口设备🌟</h1>
 
-![Img](https://img.shields.io/badge/Arduino-passing-green)
-![Img](https://img.shields.io/badge/PlatformIO-passing-green)
-![Img](https://img.shields.io/badge/YuEEG-V1\.6-grey)
+<p align = "center">    
+<img  src="https://img.shields.io/badge/Arduino-passing-green" />
+  <img  src="https://img.shields.io/badge/PlatformIO-passing-green" />
+<img  src="https://img.shields.io/badge/ESP32S3%20-项目-blue" />
+<img  src="https://img.shields.io/badge/ADS1299%20-项目-red" />
+<img  src="https://img.shields.io/badge/YuEEG-V1.6-grey" />
+</p>
+<p align = "center">    
+<img  src="https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110230401.jpg" width="400" />
+</p>
 
 > [!CAUTION]
 > 项目基于自定义的MIT协议，除本项目拥有者以外该项目不允许用来参加任何商业比赛。
