@@ -1,16 +1,22 @@
 
-<<<<<<< HEAD
 <h1 align = "center">🌟YuEEG 8通道脑机接口设备🌟</h1>
-=======
-<h1 align = "center">🌟ADS1299 8通道脑机接口设备🌟</h1>
->>>>>>> 90881ebe4698cae25b6a6c3273afd805ba9cf01a
 
-![Img](https://img.shields.io/badge/Arduino-passing-green)
-![Img](https://img.shields.io/badge/PlatformIO-passing-green)
-![Img](https://img.shields.io/badge/YuEEG-V1\.6-grey)
+<p align = "center">    
+<img  src="https://img.shields.io/badge/Arduino-passing-green" />
+  <img  src="https://img.shields.io/badge/PlatformIO-passing-green" />
+<img  src="https://img.shields.io/badge/ESP32S3%20-项目-blue" />
+<img  src="https://img.shields.io/badge/ADS1299%20-项目-red" />
+<img  src="https://img.shields.io/badge/YuEEG-V1.6-grey" />
+</p>
+<p align = "center">    
+<img  src="https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110230401.jpg" width="400" />
+</p>
 
 > [!CAUTION]
 > 项目基于自定义的MIT协议，除本项目拥有者以外该项目不允许用来参加任何商业比赛。
+
+> [!NOTE]
+> 项目尚未完全更新【SSVEP范式】，建议Star后，会添加更多内容。
 
 ## 概述 🧠🔌
 
@@ -51,19 +57,130 @@
 >嘉立创链接：[https://oshwhub.com/protodrive000/1299_pro](https://a360.co/3AnxQdK%20)
 访问密码：yutaov5
 
-|||
+|正面|反面|
 |-|-|
-|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221805.png#pic_center =400x)|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221809.png#pic_center =400x)|
+|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221805.png#pic_center =410x)|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221809.png#pic_center =400x)|
 ### 外壳模型设计图：
 
 >3D外壳文件：https://a360.co/3AnxQdK 
 访问密码：yutaov5
 
-||||
+|单外壳|外壳+脑电帽|仰视图|
 |-|-|-|
-|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221759.png#pic_center =400x)|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221635.PNG#pic_center =400x)|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221644.png#pic_center =400x)|
+|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221759.png)|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221635.PNG)|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221644.png)|
 
 
+
+
+## 上位机程序 📊
+> 目前仅提供串口通讯的 plot_only.py 界面程序
+### 功能：
+
+- **数据接收**：通过串口接收来自硬件设备的数据。
+- **数据展示**：实时显示EEG信号。
+- **数据存储**：保存数据以便后续分析。
+
+### 使用技术：
+
+- **编程语言**：Python
+- **图形库**：pyqt + fluent
+
+### 界面截图：
+|正常采集模式|测试信号模式|
+|-|-|
+|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241111123715.png#pic_center%20=400x)|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241111123732.png#pic_center%20=400x)|
+
+
+## 使用指南 📚
+
+### 硬件连接：
+
+1. 本项目支持两种供电模式：
+    - USB接入XiaoESP32S3直接供电使用，同时串口发送数据
+    - 背面焊接TPS63070锂电池转5V模块，然后电源接口接入3.7V锂电池即可
+1. 将EEG电极正确连接到被测试者。
+2. 使用USB线连接设备和电脑。
+
+### 引脚连接
+```c++
+// 定义引脚
+#define CS_PIN    A3
+#define SCLK_PIN  SCK
+#define MOSI_PIN  MOSI
+#define MISO_PIN  MISO
+#define DRDY_PIN  A0
+#define START_PIN A2
+#define RESET_PIN A1
+```
+
+
+### 硬件设置
+
+驱动代码是为支持ESP32的Arduino IDE编写的，代码通过SPI与ADS1299进行数据采集。
+
+### 先决条件
+
+- **Arduino IDE**：从[Arduino官方网站](https://www.arduino.cc/en/software)下载最新版本。
+- **ESP32开发板包**：在Arduino IDE中通过开发板管理器添加ESP32开发板支持。
+### 加载代码：
+
+打开Arduino IDE，选择 `文件` > `打开` 并选择 `ino 文件`。
+在 `工具` > `开发板` 下选择你的ESP32开发板。
+在 `工具` > `端口` 下设置正确的COM端口。
+### 上传代码：
+>如果是第一次下载，上电前按住boot再上电后松开，然后正常下载
+
+编译并将代码上传到ESP32开发板。
+### 上位机代码使用方法
+上传完成后，ESP32开发板将开始与ADS1299芯片进行通信，并将EEG数据输出到串口监视器。
+
+- 模式切换：使用以下串口命令或者左下方按钮切换不同模式：
+    - 1：连续读取模式
+    - 3：自检模式
+
+>示例用法
+上传完成后，在Arduino IDE中打开串口监视器，波特率设为115200。你将看到来自每个通道的实时EEG数据。
+``` C 
+// 数据格式如下
+Channel 1: 0.123456, Channel 2: 0.654321, ..., Channel 8: 0.345678
+```
+### 上位机安装步骤
+
+1. **克隆此仓库**：
+    ```bash
+    git clone https://github.com/YuTaoV5/YuEEG.git
+    cd YuEEG
+    ```
+1. 安装所需库：
+    ```bash
+    pip install pyserial pyqt5
+    pip install pyqtgraph PyQt-Fluent-Widgets
+    pip install scikit-learn
+    ```
+1. 软件运行：
+    ```bash
+    python plot_only.py
+    ```
+## 贡献指南
+欢迎社区贡献！请随时提交问题、功能请求或拉取请求。
+
+## 未来改进
+- 增加对不同微控制器的支持。
+- 扩展脑电帽设计，以便调整电极位置。
+
+## 致谢
+特别感谢德州仪器提供ADS1299芯片，并感谢开源社区的启发与支持。
+## 项目结构 🗂️
+```
+├── hardware
+│   ├── schematics
+│   └── pcb
+├── firmware
+│   └── ads1299_driver.ino
+├── software
+│   └── bci_gui.py
+└── README.md
+```
 ## 软件开发 💻
 
 ### 芯片驱动：
@@ -195,99 +312,6 @@ SRB（Signal Reference Buffer）引脚在ADS1299中用于信号参考电极的�
 - **SRB1**：当SRB1引脚用于参考时，所有通道的负输入可以连接到SRB1。设置`MISC1`寄存器的SRB1位可以实现这种配置。
 - **SRB2**：SRB2引脚可以选择单独的电极作为参考电极，并通过设置`CHnSET`寄存器的SRB2位，将该电极的电位作为其他通道的参考。
 
-#### 上位机程序 📊
-
-### 功能：
-
-- **数据接收**：通过串口接收来自硬件设备的数据。
-- **数据展示**：实时显示EEG信号。
-- **数据存储**：保存数据以便后续分析。
-
-### 使用技术：
-
-- **编程语言**：Python
-- **图形库**：pyqt + fluent
-
-### 界面截图：
-![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110222325.png#pic_center%20=400x)
-
-<video width="640" height="360" controls>
-  <source src="https://imgpool.protodrive.xyz/img/8c357eebb239c2a005d27d91e568f3a7.mp4" type="video/mp4">
-</video>
-
-## 使用指南 📚
-
-### 硬件连接：
-
-1. 连接电源。
-2. 将EEG电极正确连接到被测试者。
-3. 使用USB线连接设备和电脑。
-
-### 软件设置
-
-驱动代码是为支持ESP32的Arduino IDE编写的，代码通过SPI与ADS1299进行数据采集。
-
-### 先决条件
-
-- **Arduino IDE**：从[Arduino官方网站](https://www.arduino.cc/en/software)下载最新版本。
-- **ESP32开发板包**：在Arduino IDE中通过开发板管理器添加ESP32开发板支持。
-
-### 安装步骤
-
-1. **克隆此仓库**：
-   ```bash
-   git clone https://github.com/YuTaoV5/YuEEG.git
-   cd YuEEG
-### 软件运行：
-
-2. 安装所需库：
-   ```bash
-   pip install pyserial pyqt5
-   pip install pyqtgraph PyQt-Fluent-Widgets
-   pip install vtk scikit-learn
-   ```
-
-### 加载代码：
-
-打开Arduino IDE，选择 文件 > 打开 并选择 ino 文件。
-在 工具 > 开发板 下选择你的ESP32开发板。
-在 工具 > 端口 下设置正确的COM端口。
-### 上传代码：
-
-编译并将代码上传到ESP32开发板。
-## 代码使用方法
-上传完成后，ESP32开发板将开始与ADS1299芯片进行通信，并将EEG数据输出到串口监视器。
-
-- 模式切换：使用以下串口命令切换不同模式：
-    - 1：连续读取模式
-    - 2：阻抗测量模式
-    - 3：自检模式
-
->示例用法
-上传完成后，在Arduino IDE中打开串口监视器，波特率设为115200。你将看到来自每个通道的实时EEG数据。
-``` C
-Channel 1: 0.123456, Channel 2: 0.654321, ..., Channel 8: 0.345678
-```
-## 贡献指南
-欢迎社区贡献！请随时提交问题、功能请求或拉取请求。
-
-## 未来改进
-- 增加对不同微控制器的支持。
-- 扩展脑电帽设计，以便调整电极位置。
-
-## 致谢
-特别感谢德州仪器提供ADS1299芯片，并感谢开源社区的启发与支持。
-## 项目结构 🗂️
-```
-├── hardware
-│   ├── schematics
-│   └── pcb
-├── firmware
-│   └── ads1299_driver.ino
-├── software
-│   └── bci_gui.py
-└── README.md
-```
 ## 贡献 🤝
 欢迎大家对本项目进行贡献！请提交pull request或创建issue以报告问题。
 
