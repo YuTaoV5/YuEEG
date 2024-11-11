@@ -1,5 +1,12 @@
+<div align="right">
+    <img src="https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241105215145.png" alt="Image Description" width="150" />
+</div>
 <h1 align = "center">🌟YuEEG 8通道脑机接口设备🌟</h1>
 
+
+<p align = "center">    
+<img  src="https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110230401.jpg" width="400" />
+</p>
 <p align = "center">    
 <img  src="https://img.shields.io/badge/Arduino-passing-green" />
 <img  src="https://img.shields.io/badge/PlatformIO-passing-green" />
@@ -7,18 +14,12 @@
 <img  src="https://img.shields.io/badge/ADS1299%20-项目-red" />
 <img  src="https://img.shields.io/badge/YuEEG-V1.6-grey" />
 </p>
-<p align = "center">    
-<img  src="https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110230401.jpg" width="400" />
-</p>
 
 > [!CAUTION]
 > 项目基于自定义的 MIT 协议，除本项目拥有者以外该项目不允许用来参加任何商业比赛。
 
 > [!NOTE]
-> 项目尚未完全更新【SSVEP 范式】，建议 Star 后，会添加更多内容。
-
-> [!NOTE]
-> 项目尚未完全更新【SSVEP 范式】，建议 Star 后，会添加更多内容。
+> 项目已更新【SSVEP 范式】，后续还会添加APP以及网页波形显示，建议 Star 或者Fork后，作者会添加更多内容。
 
 ## 概述 🧠🔌
 
@@ -61,7 +62,7 @@
 
 | 正面                                                                                               | 反面                                                                                               |
 | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| ![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221805.png#pic_center =410x) | ![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221809.png#pic_center =400x) |
+| ![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221805.png#pic_center%20=400x) | ![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110221809.png#pic_center%20=400x) |
 
 ### 外壳模型设计图：
 
@@ -93,6 +94,21 @@
 | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | ![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241111123715.png#pic_center%20=400x) | ![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241111123732.png#pic_center%20=400x) |
 
+## 范式程序
+### 功能：
+
+- **拼音输入**：通过C++编写的动态链接库。
+- **联想拼写**：隐马尔可夫链模型。
+- **分类算法**：FBCCA算法
+- **支持多语言**：NLTK模型。
+
+|配置界面|运行界面|
+|-|-|
+|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241111135941.png#pic_center%20=400x)|![Img](https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241111140005.png#pic_center%20=400x)|
+
+>运行 ssvep_paradigm.py
+
+
 ## 使用指南 📚
 
 ### 硬件连接：
@@ -101,7 +117,8 @@
    - USB 接入 XiaoESP32S3 直接供电使用，同时串口发送数据
    - 背面焊接 TPS63070 锂电池转 5V 模块，然后电源接口接入 3.7V 锂电池即可
 1. 将 EEG 电极正确连接到被测试者。
-1. 使用 USB 线连接设备和电脑。
+2. 使用 USB 线连接设备和电脑。
+3. 硬件上支持BMM150以及Makerbase的MKS-142健康监测模块
 
 ### 引脚连接
 
