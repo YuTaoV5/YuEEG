@@ -57,7 +57,7 @@
 
 ### 电路设计图：
 
-> 嘉立创链接：[https://oshwhub.com/protodrive000/1299_pro](https://a360.co/3AnxQdK%20)
+> 嘉立创链接：[https://oshwhub.com/protodrive000/1299_pro](https://oshwhub.com/protodrive000/1299_pro)
 > 访问密码：yutaov5
 
 | 正面                                                                                               | 反面                                                                                               |
