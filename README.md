@@ -3,7 +3,7 @@
 
 <p align = "center">    
 <img  src="https://img.shields.io/badge/Arduino-passing-green" />
-  <img  src="https://img.shields.io/badge/PlatformIO-passing-green" />
+<img  src="https://img.shields.io/badge/PlatformIO-passing-green" />
 <img  src="https://img.shields.io/badge/ESP32S3%20-项目-blue" />
 <img  src="https://img.shields.io/badge/ADS1299%20-项目-red" />
 <img  src="https://img.shields.io/badge/YuEEG-V1.6-grey" />
