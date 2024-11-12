@@ -3,10 +3,6 @@
 </div>
 <h1 align = "center">🌟YuEEG 8通道脑机接口设备🌟</h1>
 
-
-<p align = "center">    
-<img  src="https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110230401.jpg" width="400" />
-</p>
 <p align = "center">    
 <img  src="https://img.shields.io/badge/Arduino-passing-green" />
 <img  src="https://img.shields.io/badge/PlatformIO-passing-green" />
@@ -15,11 +11,12 @@
 <img  src="https://img.shields.io/badge/YuEEG-V1.6-grey" />
 </p>
 
-> [!CAUTION]
-> 项目基于自定义的 MIT 协议，除本项目拥有者以外该项目不允许用来参加任何商业比赛。
+<p align = "center">    
 
-> [!NOTE]
-> 项目已更新【SSVEP 范式】，后续还会添加APP以及网页波形显示，建议 Star 或者Fork后，作者会添加更多内容。
+<img  src="https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241112220324.jpg" width="169" />
+<img  src="https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110230401.jpg" width="300" />
+<img  src="https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241112220356.jpg" width="300" />
+</p>
 
 ## 概述 🧠🔌
 
@@ -30,6 +27,14 @@
 - **8 通道高分辨率 EEG 采集**，适合科研和创客项目。
 - **定制 3D 打印脑电帽外壳**，设计舒适，便于精确放置电极。
 - **兼容 Arduino 的驱动代码**，便于集成和控制，支持多种 EEG 应用和项目开发。
+
+> [!CAUTION]
+> 项目基于自定义的 MIT 协议，除本项目拥有者以外该项目不允许用来参加任何商业比赛。
+
+> [!NOTE]
+> 项目已更新【SSVEP 范式】，后续还会添加APP以及网页波形显示，建议 Star 或者Fork后，作者会添加更多内容。
+
+
 
 ## 目录 📁
 
