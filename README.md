@@ -12,8 +12,6 @@
 </p>
 
 <p align = "center">    
-
-<img  src="https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241112220324.jpg" width="169" />
 <img  src="https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241110230401.jpg" width="300" />
 <img  src="https://imgpool.protodrive.xyz/img/yank-note-picgo-img-20241112220356.jpg" width="300" />
 </p>
@@ -115,6 +113,7 @@
 
 
 ## 使用指南 📚
+
 
 ### 硬件连接：
 
@@ -384,3 +383,4 @@ SOFTWARE.
 Additional Restrictions:
 The Software may not be used to participate in any commercial competitions or contests without the explicit permission of the copyright holder.
 ```
+
