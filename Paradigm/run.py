@@ -8,7 +8,7 @@ Copyright © : 2021年 赛博智能车实验室. All rights reserved.
 '''
 import os
 from login import LOGIN
-from Paradigm import SSVEPApp
+from ssvep_paradigm import SSVEPApp
 import sys
 import pandas as pd
 import numpy as np

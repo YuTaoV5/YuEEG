@@ -5,8 +5,7 @@
 #define CONFIG_1 0xD5
 #define CONFIG_2 0xD0
 #define CONFIG_3 0xEC
-#define CHnSET 0x60  //0x20 ==> 12倍增益 0x40 ==> 24倍增益
-
+#define CHnSET 0x62 
 #define ENABLE_SRB1 0x20
 #define BIAS_SENSP 0xFF
 #define BIAS_SENSN 0xFF
@@ -82,7 +81,7 @@ void setup() {
   SPI.begin(SCLK_PIN, MISO_PIN, MOSI_PIN, CS_PIN);
   SPI.setBitOrder(MSBFIRST);
   SPI.setDataMode(SPI_MODE1);
-  SPI.setClockDivider(SPI_CLOCK_DIV4);
+  SPI.setClockDivider(SPI_CLOCK_DIV16);  // 约 5 MHz
 
   // 初始化ADS1299
   initADS1299();
@@ -259,12 +258,17 @@ void measureImpedance() {
 }
 
 void convertData(byte *data, double *channelData) {
-  for (int i = 0; i < 9; i++) {
+  // 解析 STATUS 寄存器
+  long statusValue = ((long)data[0] << 16) | ((long)data[1] << 8) | data[2];
+  channelData[0] = (double)statusValue;  // 将 STATUS 存储在第一个位置
+
+  // 解析 8 个通道的数据
+  for (int i = 0; i < 8; i++) {
     long value = ((long)data[3 * i + 3] << 16) | ((long)data[3 * i + 4] << 8) | data[3 * i + 5];
     if (value & 0x800000) {
-      value |= 0xFF000000;
+      value |= 0xFF000000;  // 符号扩展
     }
-    channelData[i] = (double)value * 4.5 / (double)0x7FFFFF;
+    channelData[i + 1] = (double)value * 4.5 / (double)0x7FFFFF;
   }
 }
 

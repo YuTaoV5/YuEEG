@@ -250,9 +250,9 @@ class ADCPlotter(QtWidgets.QMainWindow):
             self.channel = [1, 2, 3, 4, 5, 6, 7, 8]
             eeg_data = np.array([eeg_data[i - 1] for i in self.channel])
             if time.time() - self.beg > 1:
-                psd_values = self.compute_psd(eeg_data, 500)
-                current_psd_sum = np.sum(psd_values)
-                print(f"psd:{current_psd_sum}")
+                # psd_values = self.compute_psd(eeg_data, 500)
+                # current_psd_sum = np.sum(psd_values)
+                # print(f"psd:{current_psd_sum}")
                 self.beg = time.time()
         except ValueError:
             pass  # Skip plotting if not enough data is available
