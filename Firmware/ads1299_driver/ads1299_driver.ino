@@ -2,10 +2,10 @@
 #include "esp_timer.h"
 
 // 定义宏，简化寄存器配置
-#define CONFIG_1 0xD5
-#define CONFIG_2 0xD0
-#define CONFIG_3 0xEC
-#define CHnSET 0x62 
+#define CONFIG_1 0xC5
+#define CONFIG_2 0xC0
+#define CONFIG_3 0xE0
+#define CHnSET 0x60 
 #define ENABLE_SRB1 0x20
 #define BIAS_SENSP 0xFF
 #define BIAS_SENSN 0xFF
@@ -81,7 +81,7 @@ void setup() {
   SPI.begin(SCLK_PIN, MISO_PIN, MOSI_PIN, CS_PIN);
   SPI.setBitOrder(MSBFIRST);
   SPI.setDataMode(SPI_MODE1);
-  SPI.setClockDivider(SPI_CLOCK_DIV16);  // 约 5 MHz
+  SPI.setClockDivider(SPI_CLOCK_DIV8);  // 约 5 MHz
 
   // 初始化ADS1299
   initADS1299();
