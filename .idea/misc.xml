@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" project-jdk-name="SSVEP" project-jdk-type="Python SDK" />
+  <component name="Black">
+    <option name="sdkName" value="EEG" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="EEG" project-jdk-type="Python SDK" />
 </project>
