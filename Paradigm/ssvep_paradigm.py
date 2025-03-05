@@ -33,53 +33,109 @@ from collections import deque
 from PyQt5 import QtWidgets, QtCore
 import serial
 import serial.tools.list_ports
+from scipy.signal import butter, lfilter, lfilter_zi
+# 配置参数
+DATA_LENGTH = 20000  # 数据缓存长度
+PLOT_LENGTH = 750   # 显示数据长度
+FFT_LENGTH = 1000   # FFT分析长度
+UPDATE_INTERVAL = 30  # 界面刷新间隔(ms)
+SAMPLE_RATE = 500    # 采样率
+FILTER_CUTOFF = 45   # 低通滤波截止频率
+
 
 class SerialThread(QtCore.QThread):
-    data_received = QtCore.pyqtSignal(str)  # Signal to send data back to the main thread
+    data_received = QtCore.pyqtSignal(str)
 
     def __init__(self, com_port):
         super().__init__()
         self.com_port = com_port
-        data_len = 3000
-        self.serial_port = serial.Serial(self.com_port, baudrate=115200, timeout=1)
-        self.data_pool = [deque(maxlen=data_len) for _ in range(9)]  # Data pool for each channel
-        self.running = True
+        self.serial_port = None
+        self.running = False
+        self.data_buffer = np.zeros((9, DATA_LENGTH), dtype=np.float32)
+        self.timestamps = np.zeros(DATA_LENGTH, dtype=np.float32)
+        self.write_index = 0  # 当前写入位置
+        self.relative_index = 0  # 绝对时间戳
 
     def run(self):
-        self.serial_port.write(b'1')  # Send '1' to start data transmission
-        while self.running:
-            if self.serial_port.in_waiting:
-                try:
-                    raw_data = self.serial_port.readline().decode('utf-8').strip()
-                    if raw_data:
-                        # Emit the raw data to the main thread for display
-                        # self.data_received.emit(raw_data)
+        self.running = True
+        try:
+            self.serial_port = serial.Serial(self.com_port, baudrate=115200, timeout=1)
+            self.serial_port.write(b'1')  # 启动数据传输
 
-                        # Integrity check (matches 'Channel:' followed by 9 float values)
-                        match = re.match(r'Channel:([\d\.\-]+,){8}[\d\.\-]+', raw_data)
-                        if match:
-                            values = [float(x) for x in raw_data.split('Channel:')[1].split(',')]
-                            # Add data to the pool for each channel
-                            for i in range(9):
-                                self.data_pool[i].append(values[i])
-                except:
-                    pass
+            while self.running:
+                if self.serial_port.in_waiting:
+                    raw_data = self.serial_port.readline().decode('utf-8', errors='ignore').strip()
+                    self.data_received.emit(raw_data)
+
+                    # 使用正则表达式验证数据格式
+                    if re.match(r'^Channel:(-?\d+\.?\d*,){8}-?\d+\.?\d*$', raw_data):
+                        values = list(map(float, raw_data.split('Channel:')[1].split(',')))
+                        self._update_buffer(values)
+        finally:
+            if self.serial_port and self.serial_port.is_open:
+                self.serial_port.close()
+
+    def _update_buffer(self, values):
+        idx = self.write_index % DATA_LENGTH
+        self.timestamps[idx] = self.relative_index  # 记录时间戳
+
+        for i in range(9):
+            self.data_buffer[i, idx] = values[i]  # 存储原始数据
+
+        self.write_index += 1
+        self.relative_index += 1
+
+    def get_plot_data(self, length=PLOT_LENGTH):
+        valid_length = min(self.relative_index, DATA_LENGTH)
+        start_idx = max(0, valid_length - length)
+
+        buffer_start = start_idx % DATA_LENGTH
+        buffer_end = valid_length % DATA_LENGTH
+
+        # 处理环形缓冲区数据截取
+        if buffer_start < buffer_end:
+            data_segment = self.data_buffer[:, buffer_start:buffer_end]
+        else:
+            data_segment = np.hstack((
+                self.data_buffer[:, buffer_start:],
+                self.data_buffer[:, :buffer_end]
+            ))
+
+        x_axis = np.arange(start_idx, start_idx + data_segment.shape[1])
+        return x_axis, data_segment
+
+    def get_fft_data(self):
+        return self.get_plot_data(FFT_LENGTH)
+
+    def get_last_data(self, num):
+        """获取最新的num个点数据，返回形状为(9, num)的ndarray"""
+        valid_length = min(self.relative_index, DATA_LENGTH)
+        start_idx = max(0, valid_length - num)
+
+        buffer_start = start_idx % DATA_LENGTH
+        buffer_end = valid_length % DATA_LENGTH
+
+        # 处理环形缓冲区数据截取
+        if buffer_start < buffer_end:
+            data_segment = self.data_buffer[:, buffer_start:buffer_end]
+        else:
+            data_segment = np.hstack((
+                self.data_buffer[:, buffer_start:],
+                self.data_buffer[:, :buffer_end]
+            ))
+
+        # 确保返回的数据数量正确（当num大于可用数据时）
+        actual_num = data_segment.shape[1]
+        if actual_num < num:
+            # 不足时用NaN填充（可根据需求修改填充方式）
+            padding = np.full((9, num - actual_num), np.nan)
+            data_segment = np.hstack((padding, data_segment))
+
+        return data_segment
 
     def stop(self):
         self.running = False
-        self.serial_port.close()
-
-    def send_data(self, data):
-        self.serial_port.write(data.encode('utf-8') + b'\r\n')  # 发送数据到串口
-
-    def get_latest_data(self, size):
-        """Return the latest 'size' data from the data pool for all channels."""
-        if size > len(self.data_pool[0]):
-            raise ValueError("Requested size is larger than the current data pool size.")
-
-        # Convert the latest 'size' elements from deque to numpy array for each channel
-        return np.array([list(self.data_pool[i])[-size:] for i in range(9)])
-
+        self.wait(2000)
 # Example usage:
 # serial_reader = SerialReader(serial_port)
 # data = serial_reader.get_latest_data(100)
@@ -88,6 +144,7 @@ class SerialThread(QtCore.QThread):
 class SSVEPApp(QWidget):
     def __init__(self):
         super().__init__()
+        self.serial_thread = None
         self.timer = QTimer()  # 定时器
         self.timer2 = QTimer()
         self.sta = 0
@@ -151,10 +208,10 @@ class SSVEPApp(QWidget):
         self.auto_complete = MultiLangAutoComplete('autocomplete_data.pkl')
 
     # 参数更新
-    def initPara(self, Fs=500, tri_flag=False, fsc_flag=True, rec_flag=True, cal_flag=True, pinyin_mod='chinese',
+    def initPara(self, Fs=500, fsc_flag=False, rec_flag=True, cal_flag=True, pinyin_mod='chinese',
                  my_wave=0,
                  fre=100, rows=8, cols=5, sta_fre=15, end_fre=8, v_space=0.2, tlen=4, teeth=41,
-                 channel=[0,1,2,3,4,5,6,7],
+                 channel=[1,2,3,4,5,6,7,8],
                  buttonNames=["1", "2", "3", "4", "5", "6", "7", "展开",
                               "Q", "W", "E", "R", "T", "Y", "U", "I",
                               "O", "P", "A", "S", "D", "F", "G", "H",
@@ -166,7 +223,6 @@ class SSVEPApp(QWidget):
         #########################
         """
         self.orgFs = Fs  # 采样采样率
-        self.tri_flag = tri_flag  # 脑电标记flag
         self.fsc_flag = fsc_flag  # 是否全屏
         self.rec_flag = rec_flag  # 是否接受在线数据
         self.cal_flag = cal_flag  # 是否使用算法分析
@@ -187,19 +243,9 @@ class SSVEPApp(QWidget):
         #########################
         '''
         if self.rec_flag:
-            # self.linkme = LinkMe(r"D:\Item\LinkMeDLL使用说明\LinkMe.dll")
-            # self.ser = self.linkme.open_serial(port='COM14', baudrate=460800)
-            #
-            # self.linkme_thread = LinkMeThread(self.linkme)
-            # self.linkme_thread.start()
-            #
-            # self.receive_thread = threading.Thread(target=self.linkme.receive_data, args=(self.ser,))
-            # self.receive_thread.start()
-            # Detect available COM ports and connect to the first available one
-            com_port = self.detect_com_port()
-            print(f"Connected to: {com_port}")
-            if not com_port:
-                raise Exception("No available COM ports detected.")
+            if not (com_port := self.detect_com_port()):
+                QtWidgets.QMessageBox.critical(self, "错误", "未检测到可用串口")
+                sys.exit(1)
 
             self.serial_thread = SerialThread(com_port)
             self.serial_thread.start()
@@ -228,13 +274,6 @@ class SSVEPApp(QWidget):
         return [s for s in input_list if s.startswith(prefix)]
 
     def demo(self):
-        if self.tri_flag:
-            # self.serial_thread.send(int(self.tri_count))
-            self.serial_thread.send_data("1")
-            if self.tri_count > 40:
-                self.tri_count = self.tri_count - 40
-            # self.inputField.setText(str(self.buttonNames[self.tri_count + 1]))
-
         self.timer.start()
         logging.info("开始闪烁")
 
@@ -336,23 +375,7 @@ class SSVEPApp(QWidget):
         confirm_index = self.buttonNames.index("确认")
         if index == confirm_index:
             try:
-                # model_choice = "gpt-3.5-turbo"  # 这里可以换成任何其他可用的模型，如 "text-davinci-003"
-                # response = chat_with_gpt(self.inputText, model=model_choice)
-                # if response:
-                #     self.choseField.setText("GPT说：" + response)
-                # else:
-                #     print("无法获取回应。")
-                chat_app.text_input.setText(self.inputText)
-                chat_app.show()
-                # 创建一个 QTimer 对象
-                timer = QTimer(self)
-                # 将超时时间设置为 2000 毫秒（2 秒）
-                timer.setInterval(1000)
-                # 将超时信号连接到 send_message 方法
-                timer.timeout.connect(chat_app.send_message)
-                # 启动定时器（注意：定时器只会触发一次）
-                timer.setSingleShot(True)
-                timer.start()
+                pass
 
             except Exception as e:
                 self.py2hz_list = []
@@ -567,16 +590,8 @@ class SSVEPApp(QWidget):
         if self.check_psd(eeg_data, self.orgFs) and time.time() - self.beg > 2:
             logging.info("咬牙")
             logging.info("开启闪烁")
-            chat_app.hide()
             self.timer2.stop()
             self.timer.start()
-
-            # if energy > 9:
-            #     logging.info("咬牙")
-            #     logging.info("开启闪烁")
-            #     chat_app.hide()
-            #     self.timer2.stop()
-            #     self.timer.start()
 
     def onTimerOut(self):
         '''
@@ -609,8 +624,6 @@ class SSVEPApp(QWidget):
             return 255 if (T_count & 1) == 0 else 0
 
     def end_blink(self):
-        # if self.tri_flag:
-        #     self.serial_thread.send(int(self.tri_count))
         # 计算误差
         self.end = time.perf_counter_ns()
         self.sum = (self.end - self.sta - self.tlen * pow(10, 9)) / pow(10, 9 - 3)
@@ -625,7 +638,7 @@ class SSVEPApp(QWidget):
         if self.rec_flag:
             self.delay_ms(140)
             # eeg_data = self.linkme.rec_data[-self.orgFs * self.tlen:].T
-            eeg_data = self.serial_thread.get_latest_data(self.orgFs * self.tlen)
+            eeg_data = self.serial_thread.get_last_data(self.orgFs * self.tlen)
             freqlist = [item for sublist in self.key_fre for item in sublist]
             np.save(f'data_save/20241013_{freqlist[self.tri_count]}Hz.npy', eeg_data)
             eeg_data = np.array([eeg_data[i] for i in self.channel])

@@ -265,10 +265,10 @@ void convertData(byte *data, double *channelData) {
   // 解析 8 个通道的数据
   for (int i = 0; i < 8; i++) {
     long value = ((long)data[3 * i + 3] << 16) | ((long)data[3 * i + 4] << 8) | data[3 * i + 5];
-    if (value & 0x800000) {
-      value |= 0xFF000000;  // 符号扩展
-    }
-    channelData[i + 1] = (double)value * 4.5 / (double)0x7FFFFF;
+    // if (value & 0x800000) {
+    //   value |= 0xFF000000;  // 符号扩展
+    // }
+    channelData[i + 1] = (double)value * 4.5 / (double)0x800000;
   }
 }
 
