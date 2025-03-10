@@ -11,15 +11,18 @@ from qfluentwidgets import FluentIcon as FIF
 from scipy.signal import butter, lfilter, lfilter_zi, iirnotch
 
 # 配置参数
-DATA_LENGTH = 20000  # 数据缓存长度
-PLOT_LENGTH = 750  # 显示数据长度
-FFT_LENGTH = 1000  # FFT分析长度
-UPDATE_INTERVAL = 30  # 界面刷新间隔(ms)
+DATA_LENGTH = 2000  # 数据缓存长度
+PLOT_LENGTH = 1000  # 显示数据长度
+FFT_LENGTH = 500  # FFT分析长度
+UPDATE_INTERVAL = 60  # 界面刷新间隔(ms)
 SAMPLE_RATE = 500  # 采样率
-FILTER_CUTOFF = 45  # 低通滤波截止频率
+
 # 新增滤波器参数
 NOTCH_FREQ = 50.0  # 陷波频率
-QUALITY_FACTOR = 30  # 品质因数（决定带宽）
+QUALITY_FACTOR = 10  # 品质因数（决定带宽）
+FILTER_CUTOFF = 45  # 低通滤波截止频率
+BUTTER_ORDER = 4        # 巴特沃兹滤波器阶数
+BUTTER_CUTOFF = 45      # 巴特沃兹截止频率
 
 class SerialThread(QtCore.QThread):
     data_received = QtCore.pyqtSignal(str)
@@ -27,6 +30,7 @@ class SerialThread(QtCore.QThread):
     def __init__(self, com_port):
         super().__init__()
         self.com_port = com_port
+        self.filter_flag = True
         self.serial_port = None
         self.running = False
         self.data_buffer = [[] for _ in range(9)]  # 动态数据池
@@ -43,11 +47,12 @@ class SerialThread(QtCore.QThread):
         nyquist = 0.5 * SAMPLE_RATE
         freq = NOTCH_FREQ / nyquist
         self.b_notch, self.a_notch = iirnotch(freq, QUALITY_FACTOR)
+        self.zi_notch = [lfilter_zi(self.b_notch, self.a_notch) for _ in range(9)]
 
-        # 为每个通道初始化滤波器状态
-        for i in range(9):
-            self.zi_notch[i] = lfilter_zi(self.b_notch, self.a_notch)
-
+        # 巴特沃兹滤波器初始化
+        butter_cutoff = BUTTER_CUTOFF / nyquist
+        self.b_butter, self.a_butter = butter(BUTTER_ORDER, butter_cutoff, btype='low')
+        self.zi_butter = [lfilter_zi(self.b_butter, self.a_butter) for _ in range(9)]
 
     def run(self):
         self.running = True
@@ -81,7 +86,15 @@ class SerialThread(QtCore.QThread):
                 zi=self.zi_notch[i]
             )
             filtered_values.append(filtered_value[0])
-
+        # 第二级：4阶巴特沃兹低通滤波
+        for i in range(9):
+            filtered, self.zi_butter[i] = lfilter(
+                self.b_butter,
+                self.a_butter,
+                [filtered_values[i]],
+                zi=self.zi_butter[i]
+            )
+            filtered_values[i] = filtered[0]
         # 将滤波后的数据存入缓冲区（替代原始数据）
         while len(self.timestamps) >= self.max_data_length:
             for ch in self.data_buffer:
@@ -89,7 +102,10 @@ class SerialThread(QtCore.QThread):
             self.timestamps.pop(0)
 
         for i in range(9):
-            self.data_buffer[i].append(filtered_values[i])
+            if self.filter_flag:
+                self.data_buffer[i].append(filtered_values[i])
+            else:
+                self.data_buffer[i].append(values[i])
         self.timestamps.append(self.write_index)
         self.write_index += 1
 
@@ -204,9 +220,11 @@ class ADCPlotter(QtWidgets.QMainWindow):
     def fun_change(self):
         if self.fun_selector.text() == "测试":
             self.serial_thread.serial_port.write(b'1')
+            self.serial_thread.filter_flag = True
             self.fun_selector.setText("标准")
         elif self.fun_selector.text() == "标准":
             self.serial_thread.serial_port.write(b'3')
+            self.serial_thread.filter_flag = False
             self.fun_selector.setText("测试")
 
     def update_display_mode(self):
