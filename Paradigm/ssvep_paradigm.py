@@ -34,14 +34,17 @@ from PyQt5 import QtWidgets, QtCore
 import serial
 import serial.tools.list_ports
 from scipy.signal import butter, lfilter, lfilter_zi
+
 # 配置参数
 DATA_LENGTH = 20000  # 数据缓存长度
-PLOT_LENGTH = 750   # 显示数据长度
-FFT_LENGTH = 1000   # FFT分析长度
+PLOT_LENGTH = 750  # 显示数据长度
+FFT_LENGTH = 1000  # FFT分析长度
 UPDATE_INTERVAL = 30  # 界面刷新间隔(ms)
-SAMPLE_RATE = 500    # 采样率
-FILTER_CUTOFF = 45   # 低通滤波截止频率
-
+SAMPLE_RATE = 500  # 采样率
+FILTER_CUTOFF = 45  # 低通滤波截止频率
+# 新增滤波器参数
+NOTCH_FREQ = 50.0  # 陷波频率
+QUALITY_FACTOR = 30  # 品质因数（决定带宽）
 
 class SerialThread(QtCore.QThread):
     data_received = QtCore.pyqtSignal(str)
@@ -51,95 +54,98 @@ class SerialThread(QtCore.QThread):
         self.com_port = com_port
         self.serial_port = None
         self.running = False
-        self.data_buffer = np.zeros((9, DATA_LENGTH), dtype=np.float32)
-        self.timestamps = np.zeros(DATA_LENGTH, dtype=np.float32)
-        self.write_index = 0  # 当前写入位置
-        self.relative_index = 0  # 绝对时间戳
+        self.data_buffer = [[] for _ in range(9)]  # 动态数据池
+        self.timestamps = []  # 时间戳记录
+        self.write_index = 0
+        self.max_data_length = 1_000_000  # 最大数据量限制
+
+        # 初始化滤波器参数
+        self.b_notch = [1] * 9  # 滤波器分子系数
+        self.a_notch = [1] * 9  # 滤波器分母系数
+        self.zi_notch = [np.zeros(2) for _ in range(9)]  # 滤波器状态
+
+        # 设计50Hz陷波滤波器
+        nyquist = 0.5 * SAMPLE_RATE
+        freq = NOTCH_FREQ / nyquist
+        self.b_notch, self.a_notch = iirnotch(freq, QUALITY_FACTOR)
+
+        # 为每个通道初始化滤波器状态
+        for i in range(9):
+            self.zi_notch[i] = lfilter_zi(self.b_notch, self.a_notch)
+
 
     def run(self):
         self.running = True
         try:
             self.serial_port = serial.Serial(self.com_port, baudrate=115200, timeout=1)
             self.serial_port.write(b'1')  # 启动数据传输
-
             while self.running:
                 if self.serial_port.in_waiting:
-                    raw_data = self.serial_port.readline().decode('utf-8', errors='ignore').strip()
-                    self.data_received.emit(raw_data)
-
-                    # 使用正则表达式验证数据格式
-                    if re.match(r'^Channel:(-?\d+\.?\d*,){8}-?\d+\.?\d*$', raw_data):
-                        values = list(map(float, raw_data.split('Channel:')[1].split(',')))
-                        self._update_buffer(values)
+                    try:
+                        raw_data = self.serial_port.readline().decode('utf-8', errors='ignore').strip()
+                        self.data_received.emit(raw_data)
+                        # 使用正则表达式验证数据格式
+                        if re.match(r'^Channel:(-?\d+\.?\d*,){8}-?\d+\.?\d*$', raw_data):
+                            values = list(map(float, raw_data.split('Channel:')[1].split(',')))
+                            self._update_buffer(values)
+                    except Exception as e:
+                        print(f"Error processing data: {e}")
         finally:
             if self.serial_port and self.serial_port.is_open:
                 self.serial_port.close()
 
     def _update_buffer(self, values):
-        idx = self.write_index % DATA_LENGTH
-        self.timestamps[idx] = self.relative_index  # 记录时间戳
+        # 应用50Hz陷波滤波
+        filtered_values = []
+        for i in range(9):
+            # 使用lfilter进行实时滤波处理
+            filtered_value, self.zi_notch[i] = lfilter(
+                self.b_notch,
+                self.a_notch,
+                [values[i]],
+                zi=self.zi_notch[i]
+            )
+            filtered_values.append(filtered_value[0])
+
+        # 将滤波后的数据存入缓冲区（替代原始数据）
+        while len(self.timestamps) >= self.max_data_length:
+            for ch in self.data_buffer:
+                ch.pop(0)
+            self.timestamps.pop(0)
 
         for i in range(9):
-            self.data_buffer[i, idx] = values[i]  # 存储原始数据
-
+            self.data_buffer[i].append(filtered_values[i])
+        self.timestamps.append(self.write_index)
         self.write_index += 1
-        self.relative_index += 1
 
     def get_plot_data(self, length=PLOT_LENGTH):
-        valid_length = min(self.relative_index, DATA_LENGTH)
-        start_idx = max(0, valid_length - length)
-
-        buffer_start = start_idx % DATA_LENGTH
-        buffer_end = valid_length % DATA_LENGTH
-
-        # 处理环形缓冲区数据截取
-        if buffer_start < buffer_end:
-            data_segment = self.data_buffer[:, buffer_start:buffer_end]
-        else:
-            data_segment = np.hstack((
-                self.data_buffer[:, buffer_start:],
-                self.data_buffer[:, :buffer_end]
-            ))
-
-        x_axis = np.arange(start_idx, start_idx + data_segment.shape[1])
-        return x_axis, data_segment
+        valid_length = min(len(self.timestamps), length)
+        start = max(0, len(self.timestamps) - valid_length)
+        x_axis = np.arange(start, start + valid_length)
+        data = [np.array(ch[start:start + valid_length]) for ch in self.data_buffer]
+        return x_axis, np.array(data)
 
     def get_fft_data(self):
         return self.get_plot_data(FFT_LENGTH)
 
     def get_last_data(self, num):
         """获取最新的num个点数据，返回形状为(9, num)的ndarray"""
-        valid_length = min(self.relative_index, DATA_LENGTH)
-        start_idx = max(0, valid_length - num)
-
-        buffer_start = start_idx % DATA_LENGTH
-        buffer_end = valid_length % DATA_LENGTH
-
-        # 处理环形缓冲区数据截取
-        if buffer_start < buffer_end:
-            data_segment = self.data_buffer[:, buffer_start:buffer_end]
-        else:
-            data_segment = np.hstack((
-                self.data_buffer[:, buffer_start:],
-                self.data_buffer[:, :buffer_end]
-            ))
-
-        # 确保返回的数据数量正确（当num大于可用数据时）
-        actual_num = data_segment.shape[1]
-        if actual_num < num:
-            # 不足时用NaN填充（可根据需求修改填充方式）
-            padding = np.full((9, num - actual_num), np.nan)
-            data_segment = np.hstack((padding, data_segment))
-
-        return data_segment
+        data = []
+        for ch in self.data_buffer:
+            if len(ch) >= num:
+                data.append(np.array(ch[-num:]))
+            else:
+                padding = np.full(num - len(ch), np.nan)
+                data.append(np.concatenate([padding, ch]))
+        return np.array(data)
 
     def stop(self):
         self.running = False
         self.wait(2000)
+
 # Example usage:
-# serial_reader = SerialReader(serial_port)
-# data = serial_reader.get_latest_data(100)
-# serial_reader.send_window_data('1')
+# self.serial_thread = SerialThread(com_port)
+# self.serial_thread.start()
 
 class SSVEPApp(QWidget):
     def __init__(self):
