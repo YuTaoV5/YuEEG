@@ -2,7 +2,7 @@
 #include "esp_timer.h"
 
 // 定义宏，简化寄存器配置
-#define CONFIG_1 0xC5
+#define CONFIG_1 0xD5
 #define CONFIG_2 0xC0
 #define CONFIG_3 0xEC
 #define CHnSET 0x60
@@ -81,7 +81,7 @@ void setup() {
   SPI.begin(SCLK_PIN, MISO_PIN, MOSI_PIN, CS_PIN);
   SPI.setBitOrder(MSBFIRST);
   SPI.setDataMode(SPI_MODE1);
-  SPI.setClockDivider(SPI_CLOCK_DIV4);  // 约 5 MHz
+  SPI.setClockDivider(SPI_CLOCK_DIV8);  // 约 5 MHz
 
   // 初始化ADS1299
   initADS1299();
@@ -175,9 +175,9 @@ void startSelfTestMode() {
   sendCommand(RESET);
   delay(100);
   sendCommand(SDATAC);
-  // 配置CONFIG2寄存器启用测试信号
-  writeRegister(0x01, 0xD4);
-  writeRegister(0x02, 0x10);
+  // 配置CONFIG2寄存器启用测试信号 1af 2hz
+  writeRegister(0x01, 0xD5);
+  writeRegister(0x02, 0xD1);
   writeRegister(0x03, 0xEC);
   writeRegister(0x04, 0x00); // MISC1寄存器启用SRB1
   // 配置所有通道输入为内部测试信号
@@ -212,11 +212,12 @@ void initADS1299() {
 void readData() {
   byte data[27];
   digitalWrite(CS_PIN, LOW);
+  delayMicroseconds(1);  // 确保 tSDSU
   for (int i = 0; i < 27; i++) {
     data[i] = SPI.transfer(0x00);
   }
   digitalWrite(CS_PIN, HIGH);
-
+  delayMicroseconds(1);  // 确保 tDSHD
   // 转换数据，并将结果保存在全局缓冲区
   convertData(data, channelDataBuffer);
   
@@ -258,50 +259,63 @@ void measureImpedance() {
 }
 
 void convertData(byte *data, double *channelData) {
-  // 解析 STATUS 寄存器
+  // 解析STATUS寄存器
   long statusValue = ((long)data[0] << 16) | ((long)data[1] << 8) | data[2];
-  channelData[0] = (double)statusValue;  // 将 STATUS 存储在第一个位置
+  channelData[0] = (double)statusValue;
 
-  // 解析 8 个通道的数据
+  // 转换通道数据
   for (int i = 0; i < 8; i++) {
-    long value = ((long)data[3 * i + 3] << 16) | ((long)data[3 * i + 4] << 8) | data[3 * i + 5];
-    // if (value & 0x800000) {
-    //   value |= 0xFF000000;  // 符号扩展
-    // }
-    channelData[i + 1] = (double)value * 4.5 / (double)0x800000;
+    long value = ((long)data[3*i+3] << 16) | ((long)data[3*i+4] << 8) | data[3*i+5];
+    
+    // 24位符号扩展
+    if (value & 0x800000) {
+      value |= 0xFF000000;  // 负数扩展
+    }
+    
+    // 电压计算 (考虑增益)
+    double vPerLSB = 4.5 / (24 * 8388608.0);  // 1 LSB对应电压
+    channelData[i+1] = (double)value * vPerLSB;
   }
 }
 
 void sendCommand(byte cmd) {
   digitalWrite(CS_PIN, LOW);
+  delayMicroseconds(1);  // 确保 tSDSU
   SPI.transfer(cmd);
   digitalWrite(CS_PIN, HIGH);
+  delayMicroseconds(1);  // 确保 tSDSU
 }
 
 void writeRegister(byte reg, byte value) {
   digitalWrite(CS_PIN, LOW);
+  delayMicroseconds(1);  // 确保 tSDSU
   SPI.transfer(WREG | reg);
   SPI.transfer(0x00);
   SPI.transfer(value);
   digitalWrite(CS_PIN, HIGH);
+  delayMicroseconds(1);  // 确保 tSDSU
 }
 
 byte readRegister(byte reg) {
   digitalWrite(CS_PIN, LOW);
+  delayMicroseconds(1);  // 确保 tSDSU
   SPI.transfer(RREG | reg);
   SPI.transfer(0x00);
   byte value = SPI.transfer(0x00);
   digitalWrite(CS_PIN, HIGH);
+  delayMicroseconds(1);  // 确保 tSDSU
   return value;
 }
 
 void getDeviceID() {
   digitalWrite(CS_PIN, LOW);
+  delayMicroseconds(1);  // 确保 tSDSU
   SPI.transfer(SDATAC);
   SPI.transfer(RREG | 0x00);
   SPI.transfer(0x00);
   byte data = SPI.transfer(0x00);
   digitalWrite(CS_PIN, HIGH);
+  delayMicroseconds(1);  // 确保 tSDSU
   Serial.print("Device ID: ");
   Serial.println(data, BIN);
 }

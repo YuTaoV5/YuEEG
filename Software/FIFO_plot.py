@@ -1,5 +1,7 @@
 import sys
 import time
+from collections import deque
+
 import numpy as np
 import re
 from PyQt5 import QtWidgets, QtCore, QtGui
@@ -17,12 +19,13 @@ FFT_LENGTH = 500  # FFT分析长度
 UPDATE_INTERVAL = 60  # 界面刷新间隔(ms)
 SAMPLE_RATE = 500  # 采样率
 
-# 新增滤波器参数
+# 修改滤波器参数
 NOTCH_FREQ = 50.0  # 陷波频率
-QUALITY_FACTOR = 10  # 品质因数（决定带宽）
-FILTER_CUTOFF = 45  # 低通滤波截止频率
-BUTTER_ORDER = 4        # 巴特沃兹滤波器阶数
-BUTTER_CUTOFF = 45      # 巴特沃兹截止频率
+QUALITY_FACTOR = 10  # 品质因数
+LOW_CUTOFF = 2.0    # 带通滤波低频截止
+HIGH_CUTOFF = 40.0  # 带通滤波高频截止
+FIR_ORDER = 101     # FIR滤波器阶数
+MEDIAN_WINDOW = 800 # 中值滤波窗口大小
 
 class SerialThread(QtCore.QThread):
     data_received = QtCore.pyqtSignal(str)
@@ -33,26 +36,29 @@ class SerialThread(QtCore.QThread):
         self.filter_flag = True
         self.serial_port = None
         self.running = False
-        self.data_buffer = [[] for _ in range(9)]  # 动态数据池
-        self.timestamps = []  # 时间戳记录
+        self.data_buffer = [[] for _ in range(9)]
+        self.timestamps = []
         self.write_index = 0
-        self.max_data_length = 1_000_000  # 最大数据量限制
+        self.max_data_length = 1_000_000
 
-        # 初始化滤波器参数
-        self.b_notch = [1] * 9  # 滤波器分子系数
-        self.a_notch = [1] * 9  # 滤波器分母系数
-        self.zi_notch = [np.zeros(2) for _ in range(9)]  # 滤波器状态
+        # 初始化滤波器
+        self._init_filters()
 
+    def _init_filters(self):
         # 设计50Hz陷波滤波器
         nyquist = 0.5 * SAMPLE_RATE
         freq = NOTCH_FREQ / nyquist
         self.b_notch, self.a_notch = iirnotch(freq, QUALITY_FACTOR)
         self.zi_notch = [lfilter_zi(self.b_notch, self.a_notch) for _ in range(9)]
 
-        # 巴特沃兹滤波器初始化
-        butter_cutoff = BUTTER_CUTOFF / nyquist
-        self.b_butter, self.a_butter = butter(BUTTER_ORDER, butter_cutoff, btype='low')
-        self.zi_butter = [lfilter_zi(self.b_butter, self.a_butter) for _ in range(9)]
+        # 设计FIR带通滤波器
+        from scipy.signal import firwin
+        self.fir_coeff = firwin(FIR_ORDER, 
+                               [LOW_CUTOFF/nyquist, HIGH_CUTOFF/nyquist],
+                               pass_zero=False)
+        self.zi_fir = [np.zeros(FIR_ORDER - 1) for _ in range(9)]
+        # 中值滤波缓冲区
+        self.median_buffers = [deque(maxlen=MEDIAN_WINDOW) for _ in range(9)]
 
     def run(self):
         self.running = True
@@ -75,27 +81,34 @@ class SerialThread(QtCore.QThread):
                 self.serial_port.close()
 
     def _update_buffer(self, values):
-        # 应用50Hz陷波滤波
         filtered_values = []
         for i in range(9):
-            # 使用lfilter进行实时滤波处理
-            filtered_value, self.zi_notch[i] = lfilter(
+            # 1. 50Hz陷波滤波
+            notch_filtered, self.zi_notch[i] = lfilter(
                 self.b_notch,
                 self.a_notch,
                 [values[i]],
                 zi=self.zi_notch[i]
             )
-            filtered_values.append(filtered_value[0])
-        # 第二级：4阶巴特沃兹低通滤波
-        for i in range(9):
-            filtered, self.zi_butter[i] = lfilter(
-                self.b_butter,
-                self.a_butter,
-                [filtered_values[i]],
-                zi=self.zi_butter[i]
+
+            # 2. FIR带通滤波
+            fir_filtered, self.zi_fir[i] = lfilter(
+                self.fir_coeff,
+                [1.0],
+                notch_filtered,
+                zi=self.zi_fir[i]
             )
-            filtered_values[i] = filtered[0]
-        # 将滤波后的数据存入缓冲区（替代原始数据）
+
+            # 3. 中值滤波去基线
+            self.median_buffers[i].append(fir_filtered[0])
+            # 当缓冲区满时计算中值
+            if len(self.median_buffers[i]) >= MEDIAN_WINDOW:
+                median = np.median(self.median_buffers[i])
+                filtered_values.append(fir_filtered[0] - median)
+            else:
+                filtered_values.append(fir_filtered[0])
+
+        # 更新数据缓冲区
         while len(self.timestamps) >= self.max_data_length:
             for ch in self.data_buffer:
                 ch.pop(0)
