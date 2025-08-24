@@ -263,7 +263,7 @@ class SerialThread(QtCore.QThread):
     def run(self):
         self.running = True
         try:
-            self.serial_port = serial.Serial("COM4", baudrate=115200, timeout=1)
+            self.serial_port = serial.Serial(self.com_port, baudrate=115200, timeout=1)
             # 默认进入连续采样模式
             try:
                 self.serial_port.write(b'1')
@@ -427,10 +427,16 @@ class ADCPlotter(QtWidgets.QMainWindow):
 
         com_port = self._detect_com_port()
         if not com_port:
-            QtWidgets.QMessageBox.critical(self, "错误", "未检测到可用串口")
-            # 停止日志线程
-            self.log_thread.stop()
-            sys.exit(1)
+            available_ports = [p.device for p in serial.tools.list_ports.comports()]
+            if not available_ports:
+                QtWidgets.QMessageBox.critical(self, "错误", "未检测到任何串口")
+                self.log_thread.stop()
+                sys.exit(1)
+
+            com_port, ok = QtWidgets.QInputDialog.getItem(self, "选择串口", "请选择串口设备：", available_ports, 0,
+                                                          False)
+            if not ok or not com_port:
+                sys.exit(1)
 
         self.serial_thread = SerialThread(com_port, self.log_queue)
         self.serial_thread.data_received.connect(self._on_serial_line)
@@ -676,13 +682,52 @@ class ADCPlotter(QtWidgets.QMainWindow):
     # -------- 串口发现 --------
     def _detect_com_port(self):
         ports = serial.tools.list_ports.comports()
-        # 优先匹配常见关键字
-        for p in ports:
-            desc = (p.description or '').lower()
-            if 'usb' in desc or 'ch340' in desc or 'cp210' in desc or 'silabs' in desc or 'uart' in desc or 'serial' in desc:
-                return p.device
-        # 兜底返回第一个
-        return ports[0].device if ports else None
+        for port in ports:
+            # 转换 description 和 hardware_id 为小写，便于匹配
+            desc = port.description.lower()
+            hwid = port.hwid.lower()
+            device = port.device
+
+            # 排除蓝牙串口
+            if 'bluetooth' in desc or 'bluetooth' in hwid:
+                print(f"跳过蓝牙串口: {device} - {desc}")
+                continue
+
+            # 排除常见的虚拟串口/调制解调器
+            if 'modem' in desc or 'virtual' in desc or 'virtual com' in desc:
+                print(f"跳过虚拟串口: {device} - {desc}")
+                continue
+
+            # 可选：根据 VID:PID 判断是否为真实串口芯片（如 CH340、CP2102、FT232）
+            # 示例：CH340 -> VID:PID 可能是 1a86:7523
+            if port.vid is not None and port.pid is not None:
+                # 常见串口芯片的 VID:PID（可扩展）
+                known_chips = [
+                    (0x1A86, 0x7523),  # CH340
+                    (0x0403, 0x6001),  # FT232
+                    (0x10C4, 0xEA60),  # CP2102
+                ]
+                if (port.vid, port.pid) in known_chips:
+                    print(f"找到真实串口设备: {device} (VID:PID={port.vid:04X}:{port.pid:04X})")
+                    return device
+
+            # 如果无法获取 VID:PID，也可以通过描述或厂商名判断
+            manufacturer = port.manufacturer.lower() if port.manufacturer else ""
+            if any(keyword in manufacturer for keyword in ['ftdi', 'siliconlabs', 'wch', 'cp210x']):
+                print(f"通过厂商名识别真实串口: {device} - 制造商: {port.manufacturer}")
+                return device
+
+        # 如果没找到，可以尝试 fallback：只要不是蓝牙/虚拟，就返回第一个
+        print("未通过芯片识别找到设备，尝试 fallback 策略...")
+        for port in serial.tools.list_ports.comports():
+            desc = port.description.lower()
+            hwid = port.hwid.lower()
+            if ('bluetooth' not in desc and 'virtual' not in desc and 'modem' not in desc and
+                    'usb serial' in desc or 'ch340' in desc or 'cp210' in desc):
+                print(f"fallback 识别到可能的串口: {port.device}")
+                return port.device
+
+        return None  # 未找到
 
     def _info(self, msg: str):
         try:

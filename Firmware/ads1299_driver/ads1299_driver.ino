@@ -75,14 +75,14 @@ void setup() {
   pinMode(START_PIN, OUTPUT);
   pinMode(RESET_PIN, OUTPUT);
 
-  digitalWrite(CS_PIN, HIGH);  // CS 默认拉高
+  digitalWrite(CS_PIN, LOW);  // CS 默认拉高
   digitalWrite(START_PIN, LOW);
   digitalWrite(RESET_PIN, HIGH);
   delay(100);
 
   // 初始化 SPI
   SPI.begin(SCLK_PIN, MISO_PIN, MOSI_PIN, CS_PIN);
-  SPI.beginTransaction(SPISettings(8000000, MSBFIRST, SPI_MODE1));
+  SPI.beginTransaction(SPISettings(SPI_CLOCK_DIV8, MSBFIRST, SPI_MODE1));
 
   // 初始化 ADS1299
   initADS1299();
