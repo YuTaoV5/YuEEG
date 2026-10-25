@@ -1,0 +1,39 @@
+# Local IDEs and Python caches (existing tracked copies are removed from index).
+.idea/
+.vscode/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+
+# Generated data and local machine state.
+/logs/
+/recordings/
+/eeg_*.csv
+.env
+.env.*
+!.env.example
+/reference/*
+!/reference/README.md
+/Firmware/build_revD/
+/Firmware/build_revD.log
+*.kicad_prl
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*-backups/
+~*.lck
+*.csv.tmp
+
+# Publish curated hardware deliveries, not routing runtimes and scratch checkouts.
+/hardware/*
+!/hardware/README.md
+!/hardware/archive/
+!/hardware/YuEEG_8CH_RevD/
+!/hardware/YuEEG_8CH_RevA_64x42_PCB_review.zip
+!/hardware/YuEEG_8CH_RevA1_64x42_PCB_review.zip
+!/hardware/YuEEG_8CH_RevB_64x50_bipolar_review.zip
+!/hardware/YuEEG_8CH_RevC_64x74_battery_management_review.zip
+!/hardware/YuEEG_8CH_RevD_84x122_isolated_USB_WiFi_review.zip

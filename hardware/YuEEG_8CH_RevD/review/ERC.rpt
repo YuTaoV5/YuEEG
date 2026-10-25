@@ -1,0 +1,29 @@
+ERC 报告 (2026-10-26T02:33:41+0800, UTF8 编码)
+
+***** 图纸 /
+
+***** 图纸 /01 / Electrode inputs CH1-CH4/
+
+***** 图纸 /01 / Electrode inputs CH5-CH8/
+
+***** 图纸 /02 / ADS1299 digital, bias, reference and decoupling/
+
+***** 图纸 /03 / ESP32-S3 wireless acquisition controller/
+
+***** 图纸 /04 / Battery input and independent analog-digital supplies/
+
+***** 图纸 /05 / Bipolar analog supply/
+
+***** 图纸 /06 / USB-C standalone 2S charger and battery NTC/
+
+***** 图纸 /07 / Raw 2S cell protection and fail-safe acquisition switch/
+
+***** 图纸 /08 / Cell balancing with raw-domain UV qualification/
+
+***** 图纸 /09 / Isolated USB data and conditional isolated power/
+
+***** 图纸 /10 / USB SYS power path with delayed battery interlock/
+
+***** 图纸 /11 / Symmetric AFE insertion and status interfaces/
+
+ ** ERC 信息: 0 个错误 0 个警告 0

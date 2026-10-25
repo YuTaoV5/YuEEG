@@ -1,0 +1,14 @@
+* text=auto whitespace=cr-at-eol
+*.md text eol=lf
+*.zip binary
+*.png binary
+*.pdf binary
+*.3mf binary
+*.dll binary
+*.bin binary
+# Frozen checksums and firmware snapshots must survive checkout byte-for-byte.
+/hardware/YuEEG_8CH_RevD/** -text -whitespace
+/Firmware/ads1299_driver/** -text
+/Firmware/tools/*.py -text
+/Firmware/ads1299_driver/ads1299_driver_legacy.txt -whitespace
+/docs/archive/** -whitespace

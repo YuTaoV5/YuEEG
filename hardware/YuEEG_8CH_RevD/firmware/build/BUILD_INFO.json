@@ -1,0 +1,13 @@
+{
+  "fqbn": "esp32:esp32:esp32s3:FlashSize=16M,FlashMode=qio,PSRAM=opi,USBMode=hwcdc,CDCOnBoot=cdc,PartitionScheme=app3M_fat9M_16MB",
+  "arduino_esp32_core": "2.0.11",
+  "source_header_sha256": "881cfae2f0f058db37cfa2d4b6e1767b65f013a278dc88d0bf16a381dbd43442",
+  "binaries_sha256": {
+    "ads1299_driver.ino.bin": "054e719fb37038bb00f19aeb4086bf2a3870b47357b2882fd5707994f855481a",
+    "ads1299_driver.ino.bootloader.bin": "d0b02b860147ace6a607985a3123a977b9451fa5d54a24ca6db59be4a2e4c345",
+    "ads1299_driver.ino.partitions.bin": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9"
+  },
+  "protocol_tests_passed": 5,
+  "physical_flash_or_transport_tested": false,
+  "notes": "Binary components accompany the source build. Use the documented Arduino IDE/CLI workflow to flash; no merged full-flash image is supplied."
+}

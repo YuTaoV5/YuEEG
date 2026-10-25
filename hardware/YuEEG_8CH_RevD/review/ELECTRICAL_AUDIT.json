@@ -1,0 +1,39 @@
+{
+  "revision": "D",
+  "components": 332,
+  "schematic_sheets": 13,
+  "exported_ref_pin_pairs": 941,
+  "independent_pin_invariants": 159,
+  "pcb_pad_net_mismatches": 0,
+  "rail_budget_V": {
+    "analog_span": [
+      4.9,
+      5.1
+    ],
+    "bias_midpoint": [
+      -0.05,
+      0.05
+    ],
+    "pre_regulator_nominal": 4.4319,
+    "pre_regulator_conservative": [
+      4.311617370129871,
+      4.552520307807807
+    ],
+    "digital_with_full_400nA_FB_leakage": [
+      3.1633475324675335,
+      3.445516876876877
+    ]
+  },
+  "startup": {
+    "tPOR_s": 0.128,
+    "VCAP1_tau_nominal_s": 0.9800000000000001,
+    "VCAP1_nominal_1p1V_time_s": 2.4352085167922413,
+    "initial_bench_wait_after_PWDN_high_s": 10,
+    "automatic_rail_monitor": false
+  },
+  "differential_full_scale_V_at_gain24": 0.1875,
+  "rf_filter_nominal_Hz": 7973.694543682131,
+  "bias_feedback_pole_Hz": 106.1032953945969,
+  "scope": "Static connectivity and conservative component budgets only. Actual power-up/noise/BIAS/ESD/safety require bench evidence.",
+  "sha256_pcb": "72aac6d83f035e062b6f5fe260e39ab24577dbdbaa77ce31e01f1d5acb342ec4"
+}

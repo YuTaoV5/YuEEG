@@ -1,0 +1,333 @@
+﻿Reference,Value,Footprint,Sheet,Datasheet
+U1,ADS1299PAG,Package_QFP:TQFP-64_10x10mm_P0.5mm,afe_core,https://www.ti.com/lit/ds/symlink/ads1299.pdf
+R201,10k,Resistor_SMD:R_0603_1608Metric,afe_core,~
+R202,10k,Resistor_SMD:R_0603_1608Metric,afe_core,~
+R203,10k,Resistor_SMD:R_0603_1608Metric,afe_core,~
+R204,10k,Resistor_SMD:R_0603_1608Metric,afe_core,~
+R205,10k,Resistor_SMD:R_0603_1608Metric,afe_core,~
+R206,10k,Resistor_SMD:R_0603_1608Metric,afe_core,~
+R207,10k,Resistor_SMD:R_0603_1608Metric,afe_core,~
+R208,10k,Resistor_SMD:R_0603_1608Metric,afe_core,~
+R209,10k,Resistor_SMD:R_0603_1608Metric,afe_core,~
+R210,1M 1%,Resistor_SMD:R_0603_1608Metric,afe_core,~
+C201,1.5n C0G,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+R211,499k 1%,Resistor_SMD:R_0603_1608Metric,afe_core,~
+R212,499k 1%,Resistor_SMD:R_0603_1608Metric,afe_core,~
+J201,REF / BIAS,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,afe_core,~
+C202,10u 10V X7R,Capacitor_SMD:C_0805_2012Metric,afe_core,~
+C203,100n 10V,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+C210,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+C211,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+C212,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+C213,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+C214,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+C215,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+C216,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+C217,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+C220,100u 10V,Capacitor_SMD:CP_Elec_6.3x7.7,afe_core,~
+C221,1u 10V,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+C222,1u 10V,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+C223,100n 10V,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+C224,1u 10V,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+D801,BAV199 BIAS CLAMP,Package_TO_SOT_SMD:SOT-23,afe_core,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+R810,0R AFE BYPASS,Resistor_SMD:R_0603_1608Metric,afe_expansion,~
+R811,0R AFE BYPASS,Resistor_SMD:R_0603_1608Metric,afe_expansion,~
+R812,0R AFE BYPASS,Resistor_SMD:R_0603_1608Metric,afe_expansion,~
+R813,0R AFE BYPASS,Resistor_SMD:R_0603_1608Metric,afe_expansion,~
+R814,0R AFE BYPASS,Resistor_SMD:R_0603_1608Metric,afe_expansion,~
+R815,0R AFE BYPASS,Resistor_SMD:R_0603_1608Metric,afe_expansion,~
+R816,0R AFE BYPASS,Resistor_SMD:R_0603_1608Metric,afe_expansion,~
+R817,0R AFE BYPASS,Resistor_SMD:R_0603_1608Metric,afe_expansion,~
+R818,0R AFE BYPASS,Resistor_SMD:R_0603_1608Metric,afe_expansion,~
+R819,0R AFE BYPASS,Resistor_SMD:R_0603_1608Metric,afe_expansion,~
+R820,0R AFE BYPASS,Resistor_SMD:R_0603_1608Metric,afe_expansion,~
+R821,0R AFE BYPASS,Resistor_SMD:R_0603_1608Metric,afe_expansion,~
+R822,0R AFE BYPASS,Resistor_SMD:R_0603_1608Metric,afe_expansion,~
+R823,0R AFE BYPASS,Resistor_SMD:R_0603_1608Metric,afe_expansion,~
+R824,0R AFE BYPASS,Resistor_SMD:R_0603_1608Metric,afe_expansion,~
+R825,0R AFE BYPASS,Resistor_SMD:R_0603_1608Metric,afe_expansion,~
+J801,AFE SEND / RETURN,Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical,afe_expansion,~
+J802,AFE SEND / RETURN,Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical,afe_expansion,~
+J803,OLED 3V3 / GND / SDA / SCL,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,afe_expansion,~
+R830,4.7k,Resistor_SMD:R_0603_1608Metric,afe_expansion,~
+R831,4.7k,Resistor_SMD:R_0603_1608Metric,afe_expansion,~
+R840,2.2k,Resistor_SMD:R_0603_1608Metric,afe_expansion,~
+LED801,POWER,LED_SMD:LED_0603_1608Metric,afe_expansion,~
+R841,2.2k,Resistor_SMD:R_0603_1608Metric,afe_expansion,~
+LED802,RUN,LED_SMD:LED_0603_1608Metric,afe_expansion,~
+R842,2.2k,Resistor_SMD:R_0603_1608Metric,afe_expansion,~
+LED803,WIFI,LED_SMD:LED_0603_1608Metric,afe_expansion,~
+R843,2.2k,Resistor_SMD:R_0603_1608Metric,afe_expansion,~
+LED804,FAULT,LED_SMD:LED_0603_1608Metric,afe_expansion,~
+U603,BQ29209DRBR,Package_SON:VSON-8-1EP_3x3mm_P0.65mm_EP1.6x2.4mm,battery_balance,https://www.ti.com/lit/ds/symlink/bq29209.pdf
+R630,160R 1%,Resistor_SMD:R_0603_1608Metric,battery_balance,~
+R631,260R 1%,Resistor_SMD:R_0603_1608Metric,battery_balance,~
+R632,100R 1%,Resistor_SMD:R_0603_1608Metric,battery_balance,~
+R633,100R 1%,Resistor_SMD:R_0603_1608Metric,battery_balance,~
+C630,100n 16V,Capacitor_SMD:C_0603_1608Metric,battery_balance,~
+C631,100n 16V,Capacitor_SMD:C_0603_1608Metric,battery_balance,~
+C632,100n 16V,Capacitor_SMD:C_0603_1608Metric,battery_balance,~
+C633,330n 16V,Capacitor_SMD:C_0603_1608Metric,battery_balance,~
+R634,330k,Resistor_SMD:R_0603_1608Metric,battery_balance,~
+U605,TPS3700DDCR BAL UV,Package_TO_SOT_SMD:SOT-23-6,battery_balance,https://www.ti.com/lit/ds/symlink/tps3700.pdf
+R660,1.81M 0.1%,Resistor_SMD:R_0603_1608Metric,battery_balance,~
+R661,100k 0.1%,Resistor_SMD:R_0603_1608Metric,battery_balance,~
+R662,1M,Resistor_SMD:R_0603_1608Metric,battery_balance,~
+C660,100n 16V,Capacitor_SMD:C_0603_1608Metric,battery_balance,~
+U606,LTV-356T VALID USB,Package_SO:SO-4_4.4x3.6mm_P2.54mm,battery_balance,http://optoelectronics.liteon.com/upload/download/DS70-2001-010/S_110_LTV-356T%2020140520.pdf
+R663,2.2k,Resistor_SMD:R_0603_1608Metric,battery_balance,~
+Q607,2N7002 RAW UV GATE,Package_TO_SOT_SMD:SOT-23,battery_balance,https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF
+TP601,RAW_BPLUS,TestPoint:TestPoint_Pad_D1.5mm,battery_balance,~
+TP602,RAW_MID,TestPoint:TestPoint_Pad_D1.5mm,battery_balance,~
+TP603,RAW_BMINUS,TestPoint:TestPoint_Pad_D1.5mm,battery_balance,~
+TP604,BAL_OV_ALARM,TestPoint:TestPoint_Pad_D1.5mm,battery_balance,~
+TP605,CHG_PG,TestPoint:TestPoint_Pad_D1.5mm,battery_balance,~
+TP606,CHG_STAT,TestPoint:TestPoint_Pad_D1.5mm,battery_balance,~
+J601,ISOLATED USB-C DATA + CHARGE,Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12,battery_charger,https://www.usb.org/sites/default/files/documents/usb_type-c.zip
+R601,10k 1%,Resistor_SMD:R_0603_1608Metric,battery_charger,~
+R602,10k 1%,Resistor_SMD:R_0603_1608Metric,battery_charger,~
+F602,1A hold PTC,Fuse:Fuse_1206_3216Metric,battery_charger,~
+D601,SMF5.0A,Diode_SMD:D_SOD-123F,battery_charger,~
+D602,PESD5V0U1BAF,Diode_SMD:D_SOD-323,battery_charger,https://assets.nexperia.com/documents/data-sheet/PESD5V0U1BA.pdf
+D603,PESD5V0U1BAF,Diode_SMD:D_SOD-323,battery_charger,https://assets.nexperia.com/documents/data-sheet/PESD5V0U1BA.pdf
+D604,PESD5V0S1BA,Diode_SMD:D_SOD-323,battery_charger,~
+D605,PESD5V0S1BA,Diode_SMD:D_SOD-323,battery_charger,~
+U601,BQ25886RGER,Package_DFN_QFN:Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias,battery_charger,http://www.ti.com/lit/ds/symlink/bq25886.pdf
+C601,4.7u 16V X7R,Capacitor_SMD:C_0805_2012Metric,battery_charger,~
+C602,47u 16V X7R,Capacitor_SMD:C_1210_3225Metric,battery_charger,~
+C603,100n 16V,Capacitor_SMD:C_0603_1608Metric,battery_charger,~
+C604,22u 16V X7R,Capacitor_SMD:C_1206_3216Metric,battery_charger,~
+C605,47u 16V X7R,Capacitor_SMD:C_1210_3225Metric,battery_charger,~
+C606,47u 16V X7R,Capacitor_SMD:C_1210_3225Metric,battery_charger,~
+C607,22u 25V X7R,Capacitor_SMD:C_1206_3216Metric,battery_charger,~
+C608,47n 25V X7R,Capacitor_SMD:C_0603_1608Metric,battery_charger,~
+L601,1uH SRP5030T-1R0M / Isat11A,Inductor_SMD:L_Bourns_SRP5030T,battery_charger,~
+R603,1.50k 1%,Resistor_SMD:R_0603_1608Metric,battery_charger,~
+R604,1.14k 1%,Resistor_SMD:R_0603_1608Metric,battery_charger,~
+R605,9.31k 0.1%,Resistor_SMD:R_0603_1608Metric,battery_charger,~
+R606,365k 0.1%,Resistor_SMD:R_0603_1608Metric,battery_charger,~
+J602,CELL NTC / 103AT-2 10k,Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,battery_charger,~
+R607,100k 1%,Resistor_SMD:R_0603_1608Metric,battery_charger,~
+R608,100k 1%,Resistor_SMD:R_0603_1608Metric,battery_charger,~
+R609,2.2k,Resistor_SMD:R_0603_1608Metric,battery_charger,~
+LED601,CHARGING,LED_SMD:LED_0603_1608Metric,battery_charger,~
+C609,100n 16V,Capacitor_SMD:C_0603_1608Metric,battery_charger,~
+J401,2S RAW: B+ / MID / B-,Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical,battery_protection,~
+F601,1A fast fuse / 32V,Fuse:Fuse_1206_3216Metric,battery_protection,~
+U602,S-8252AAY-M6T1U,Package_TO_SOT_SMD:SOT-23-6,battery_protection,https://www.ablic.com/en/doc/datasheet/battery_protection/S8252_E.pdf
+R620,470R 1%,Resistor_SMD:R_0603_1608Metric,battery_protection,~
+R621,470R 1%,Resistor_SMD:R_0603_1608Metric,battery_protection,~
+R622,2.00k 1%,Resistor_SMD:R_0603_1608Metric,battery_protection,~
+C620,100n 16V,Capacitor_SMD:C_0603_1608Metric,battery_protection,~
+C621,100n 16V,Capacitor_SMD:C_0603_1608Metric,battery_protection,~
+R623,0.010R 1% 0.5W,Resistor_SMD:R_1210_3225Metric,battery_protection,~
+U604,TPS3700DDCR RUN WINDOW,Package_TO_SOT_SMD:SOT-23-6,battery_protection,https://www.ti.com/lit/ds/symlink/tps3700.pdf
+R640,1.58M 0.1%,Resistor_SMD:R_0603_1608Metric,battery_protection,~
+R641,100k 0.1%,Resistor_SMD:R_0603_1608Metric,battery_protection,~
+R642,2.05M 0.1%,Resistor_SMD:R_0603_1608Metric,battery_protection,~
+R643,100k 0.1%,Resistor_SMD:R_0603_1608Metric,battery_protection,~
+C640,100n 16V,Capacitor_SMD:C_0603_1608Metric,battery_protection,~
+C641,10n C0G,Capacitor_SMD:C_0603_1608Metric,battery_protection,~
+R644,62k 1%,Resistor_SMD:R_0603_1608Metric,battery_protection,~
+R645,10k,Resistor_SMD:R_0603_1608Metric,battery_protection,~
+R646,1M,Resistor_SMD:R_0603_1608Metric,battery_protection,~
+Q605,MMBT3904 ENABLE,Package_TO_SOT_SMD:SOT-23,battery_protection,https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf
+Q606,MMBT3904 USB INHIBIT,Package_TO_SOT_SMD:SOT-23,battery_protection,https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf
+R647,47k,Resistor_SMD:R_0603_1608Metric,battery_protection,~
+R648,1M,Resistor_SMD:R_0603_1608Metric,battery_protection,~
+Q603,AO3401A BACK-TO-BACK,Package_TO_SOT_SMD:SOT-23,battery_protection,http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf
+Q604,AO3401A BACK-TO-BACK,Package_TO_SOT_SMD:SOT-23,battery_protection,http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf
+R649,1M,Resistor_SMD:R_0603_1608Metric,battery_protection,~
+R650,100k,Resistor_SMD:R_0603_1608Metric,battery_protection,~
+C642,10n 25V,Capacitor_SMD:C_0603_1608Metric,battery_protection,~
+R651,47k,Resistor_SMD:R_0603_1608Metric,battery_protection,~
+Q601,CSD17308Q3 DSG,Package_SON:VSON-8_3.3x3.3mm_P0.65mm_NexFET,battery_protection,https://www.ti.com/lit/ds/symlink/csd17308q3.pdf
+D606,BZT52C8V2S,Diode_SMD:D_SOD-323,battery_protection,~
+Q602,CSD17308Q3 CHG,Package_SON:VSON-8_3.3x3.3mm_P0.65mm_NexFET,battery_protection,https://www.ti.com/lit/ds/symlink/csd17308q3.pdf
+D607,BZT52C8V2S,Diode_SMD:D_SOD-323,battery_protection,~
+J101,CH1 EEG,Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical,inputs_1_4,~
+R111,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_1_4,~
+R112,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_1_4,~
+D111,BAV199,Package_TO_SOT_SMD:SOT-23,inputs_1_4,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C111,47p C0G 1%,Capacitor_SMD:C_0603_1608Metric,inputs_1_4,~
+R113,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_1_4,~
+R114,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_1_4,~
+D112,BAV199,Package_TO_SOT_SMD:SOT-23,inputs_1_4,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C112,47p C0G 1%,Capacitor_SMD:C_0603_1608Metric,inputs_1_4,~
+C113,1n C0G 2%,Capacitor_SMD:C_0603_1608Metric,inputs_1_4,~
+R115,0R REF SELECT,Resistor_SMD:R_0603_1608Metric,inputs_1_4,~
+J102,CH2 EEG,Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical,inputs_1_4,~
+R121,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_1_4,~
+R122,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_1_4,~
+D121,BAV199,Package_TO_SOT_SMD:SOT-23,inputs_1_4,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C121,47p C0G 1%,Capacitor_SMD:C_0603_1608Metric,inputs_1_4,~
+R123,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_1_4,~
+R124,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_1_4,~
+D122,BAV199,Package_TO_SOT_SMD:SOT-23,inputs_1_4,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C122,47p C0G 1%,Capacitor_SMD:C_0603_1608Metric,inputs_1_4,~
+C123,1n C0G 2%,Capacitor_SMD:C_0603_1608Metric,inputs_1_4,~
+R125,0R REF SELECT,Resistor_SMD:R_0603_1608Metric,inputs_1_4,~
+J103,CH3 EEG,Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical,inputs_1_4,~
+R131,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_1_4,~
+R132,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_1_4,~
+D131,BAV199,Package_TO_SOT_SMD:SOT-23,inputs_1_4,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C131,47p C0G 1%,Capacitor_SMD:C_0603_1608Metric,inputs_1_4,~
+R133,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_1_4,~
+R134,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_1_4,~
+D132,BAV199,Package_TO_SOT_SMD:SOT-23,inputs_1_4,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C132,47p C0G 1%,Capacitor_SMD:C_0603_1608Metric,inputs_1_4,~
+C133,1n C0G 2%,Capacitor_SMD:C_0603_1608Metric,inputs_1_4,~
+R135,0R REF SELECT,Resistor_SMD:R_0603_1608Metric,inputs_1_4,~
+J104,CH4 EEG,Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical,inputs_1_4,~
+R141,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_1_4,~
+R142,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_1_4,~
+D141,BAV199,Package_TO_SOT_SMD:SOT-23,inputs_1_4,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C141,47p C0G 1%,Capacitor_SMD:C_0603_1608Metric,inputs_1_4,~
+R143,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_1_4,~
+R144,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_1_4,~
+D142,BAV199,Package_TO_SOT_SMD:SOT-23,inputs_1_4,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C142,47p C0G 1%,Capacitor_SMD:C_0603_1608Metric,inputs_1_4,~
+C143,1n C0G 2%,Capacitor_SMD:C_0603_1608Metric,inputs_1_4,~
+R145,0R REF SELECT,Resistor_SMD:R_0603_1608Metric,inputs_1_4,~
+J105,CH5 EEG,Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical,inputs_5_8,~
+R151,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_5_8,~
+R152,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_5_8,~
+D151,BAV199,Package_TO_SOT_SMD:SOT-23,inputs_5_8,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C151,47p C0G 1%,Capacitor_SMD:C_0603_1608Metric,inputs_5_8,~
+R153,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_5_8,~
+R154,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_5_8,~
+D152,BAV199,Package_TO_SOT_SMD:SOT-23,inputs_5_8,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C152,47p C0G 1%,Capacitor_SMD:C_0603_1608Metric,inputs_5_8,~
+C153,1n C0G 2%,Capacitor_SMD:C_0603_1608Metric,inputs_5_8,~
+R155,0R REF SELECT,Resistor_SMD:R_0603_1608Metric,inputs_5_8,~
+J106,CH6 EEG,Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical,inputs_5_8,~
+R161,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_5_8,~
+R162,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_5_8,~
+D161,BAV199,Package_TO_SOT_SMD:SOT-23,inputs_5_8,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C161,47p C0G 1%,Capacitor_SMD:C_0603_1608Metric,inputs_5_8,~
+R163,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_5_8,~
+R164,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_5_8,~
+D162,BAV199,Package_TO_SOT_SMD:SOT-23,inputs_5_8,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C162,47p C0G 1%,Capacitor_SMD:C_0603_1608Metric,inputs_5_8,~
+C163,1n C0G 2%,Capacitor_SMD:C_0603_1608Metric,inputs_5_8,~
+R165,0R REF SELECT,Resistor_SMD:R_0603_1608Metric,inputs_5_8,~
+J107,CH7 EEG,Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical,inputs_5_8,~
+R171,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_5_8,~
+R172,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_5_8,~
+D171,BAV199,Package_TO_SOT_SMD:SOT-23,inputs_5_8,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C171,47p C0G 1%,Capacitor_SMD:C_0603_1608Metric,inputs_5_8,~
+R173,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_5_8,~
+R174,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_5_8,~
+D172,BAV199,Package_TO_SOT_SMD:SOT-23,inputs_5_8,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C172,47p C0G 1%,Capacitor_SMD:C_0603_1608Metric,inputs_5_8,~
+C173,1n C0G 2%,Capacitor_SMD:C_0603_1608Metric,inputs_5_8,~
+R175,0R REF SELECT,Resistor_SMD:R_0603_1608Metric,inputs_5_8,~
+J108,CH8 EEG,Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical,inputs_5_8,~
+R181,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_5_8,~
+R182,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_5_8,~
+D181,BAV199,Package_TO_SOT_SMD:SOT-23,inputs_5_8,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C181,47p C0G 1%,Capacitor_SMD:C_0603_1608Metric,inputs_5_8,~
+R183,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_5_8,~
+R184,4.99k 0.1%,Resistor_SMD:R_0603_1608Metric,inputs_5_8,~
+D182,BAV199,Package_TO_SOT_SMD:SOT-23,inputs_5_8,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C182,47p C0G 1%,Capacitor_SMD:C_0603_1608Metric,inputs_5_8,~
+C183,1n C0G 2%,Capacitor_SMD:C_0603_1608Metric,inputs_5_8,~
+R185,0R REF SELECT,Resistor_SMD:R_0603_1608Metric,inputs_5_8,~
+U701,ADuM4160BRIZ / enhanced creepage,YuEEG:ADuM4160_RI16_8p5gap,isolated_usb,https://www.analog.com/media/en/technical-documentation/data-sheets/ADuM4160.pdf
+R701,24R 1%,Resistor_SMD:R_0603_1608Metric,isolated_usb,~
+R702,24R 1%,Resistor_SMD:R_0603_1608Metric,isolated_usb,~
+R703,24R 1%,Resistor_SMD:R_0603_1608Metric,isolated_usb,~
+R704,24R 1%,Resistor_SMD:R_0603_1608Metric,isolated_usb,~
+C701,100n 16V,Capacitor_SMD:C_0603_1608Metric,isolated_usb,~
+C702,100n 16V,Capacitor_SMD:C_0603_1608Metric,isolated_usb,~
+C703,100n 16V,Capacitor_SMD:C_0603_1608Metric,isolated_usb,~
+F701,1.5A hold PTC,Fuse:Fuse_1206_3216Metric,isolated_usb,~
+D701,SMF5.0A,Diode_SMD:D_SOD-123F,isolated_usb,~
+U702,TLV75533PDBVR HOST ONLY,Package_TO_SOT_SMD:SOT-23-5,isolated_usb,http://www.ti.com/lit/ds/symlink/tlv755p.pdf
+C704,1u 16V,Capacitor_SMD:C_0603_1608Metric,isolated_usb,~
+C705,1u 10V,Capacitor_SMD:C_0603_1608Metric,isolated_usb,~
+U703,TUSB320LAIRWBR / UFP GPIO,Package_DFN_QFN:Texas_X2QFN-12_1.6x1.6mm_P0.4mm,isolated_usb,https://www.ti.com/lit/ds/symlink/tusb320lai.pdf
+R705,887k 1%,Resistor_SMD:R_0603_1608Metric,isolated_usb,~
+C706,100n 16V,Capacitor_SMD:C_0603_1608Metric,isolated_usb,~
+U704,SN74LVC1G04DBVR,Package_TO_SOT_SMD:SOT-23-5,isolated_usb,https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf
+C707,100n 16V,Capacitor_SMD:C_0603_1608Metric,isolated_usb,~
+U705,TPS2553DBVR,Package_TO_SOT_SMD:SOT-23-6,isolated_usb,https://www.ti.com/lit/ds/symlink/tps2553.pdf
+R706,23.7k 1%,Resistor_SMD:R_0603_1608Metric,isolated_usb,~
+R707,100k,Resistor_SMD:R_0603_1608Metric,isolated_usb,~
+C708,4.7u 16V,Capacitor_SMD:C_0603_1608Metric,isolated_usb,~
+C709,100n 16V,Capacitor_SMD:C_0603_1608Metric,isolated_usb,~
+U706,THM 6-0511 / standard pinout,YuEEG:THM6_Standard,isolated_usb,https://www.tracopower.com/products/thm6.pdf
+C710,10u 25V X7R,Capacitor_SMD:C_1206_3216Metric,isolated_usb,~
+U2,ESP32-S3-WROOM-1-N16R8,RF_Module:ESP32-S3-WROOM-1,mcu_radio,https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf
+R301,33R,Resistor_SMD:R_0603_1608Metric,mcu_radio,~
+R302,33R,Resistor_SMD:R_0603_1608Metric,mcu_radio,~
+R303,33R,Resistor_SMD:R_0603_1608Metric,mcu_radio,~
+R304,33R,Resistor_SMD:R_0603_1608Metric,mcu_radio,~
+R305,33R,Resistor_SMD:R_0603_1608Metric,mcu_radio,~
+R306,33R,Resistor_SMD:R_0603_1608Metric,mcu_radio,~
+R307,10k,Resistor_SMD:R_0603_1608Metric,mcu_radio,~
+C301,1u 10V,Capacitor_SMD:C_0603_1608Metric,mcu_radio,~
+SW301,RESET,Button_Switch_SMD:SW_SPST_TL3342,mcu_radio,~
+R308,10k,Resistor_SMD:R_0603_1608Metric,mcu_radio,~
+SW302,BOOT,Button_Switch_SMD:SW_SPST_TL3342,mcu_radio,~
+C302,100n 10V,Capacitor_SMD:C_0805_2012Metric,mcu_radio,~
+C303,10u 10V,Capacitor_SMD:C_0805_2012Metric,mcu_radio,~
+C304,22u 10V,Capacitor_SMD:C_0805_2012Metric,mcu_radio,~
+J301,BENCH UART / NO POWER,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,mcu_radio,~
+R309,330k 1%,Resistor_SMD:R_0603_1608Metric,mcu_radio,~
+R310,100k 1%,Resistor_SMD:R_0603_1608Metric,mcu_radio,~
+C305,100n 10V,Capacitor_SMD:C_0603_1608Metric,mcu_radio,~
+F401,0.75A hold PTC,Fuse:Fuse_1206_3216Metric,power,~
+D401,SS14 1A 40V,Diode_SMD:D_SMA,power,~
+SW401,POWER,Button_Switch_SMD:SW_SPDT_CK_JS102011SAQN,power,~
+C401,22u 25V X7R,Capacitor_SMD:C_1206_3216Metric,power,~
+U401,TPS7A4901DGNR,Package_SO:HVSSOP-8-1EP_3x3mm_P0.65mm_EP1.57x1.89mm,power,https://www.ti.com/lit/gpn/TPS7A49
+C402,22u 25V X7R,Capacitor_SMD:C_1206_3216Metric,power,~
+C403,10n C0G,Capacitor_SMD:C_0603_1608Metric,power,~
+R401,27.4k 0.1%,Resistor_SMD:R_0603_1608Metric,power,~
+R402,10k 0.1%,Resistor_SMD:R_0603_1608Metric,power,~
+C404,10n C0G,Capacitor_SMD:C_0603_1608Metric,power,~
+C405,22u 16V X7R,Capacitor_SMD:C_1206_3216Metric,power,~
+U402,TPS62160DGKR,Package_SO:MSOP-8_3x3mm_P0.65mm,power,http://www.ti.com/lit/ds/symlink/tps62160.pdf
+C406,22u 25V X7R,Capacitor_SMD:C_1206_3216Metric,power,~
+L401,2.2uH Isat>=3A DCR<=80mR,Inductor_SMD:L_Taiyo-Yuden_NR-40xx,power,~
+C407,22u 10V X7R,Capacitor_SMD:C_1206_3216Metric,power,~
+R403,31.2k 0.1%,Resistor_SMD:R_0603_1608Metric,power,~
+R404,10k 0.1%,Resistor_SMD:R_0603_1608Metric,power,~
+TP401,GND,TestPoint:TestPoint_Pad_D1.5mm,power,~
+TP402,VBAT_SW,TestPoint:TestPoint_Pad_D1.5mm,power,~
+TP403,+4V4_PRE,TestPoint:TestPoint_Pad_D1.5mm,power,~
+TP404,+3V3,TestPoint:TestPoint_Pad_D1.5mm,power,~
+D403,BAT46W pre-LDO reverse bypass,Diode_SMD:D_SOD-123,power,https://www.vishay.com/docs/86406/bat46w.pdf
+U403,TPS73225DBVR,Package_TO_SOT_SMD:SOT-23-5,power_bipolar,https://www.ti.com/lit/ds/symlink/tps732.pdf
+C410,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,power_bipolar,~
+C411,10n C0G,Capacitor_SMD:C_0603_1608Metric,power_bipolar,~
+C412,10u 10V X7R,Capacitor_SMD:C_0805_2012Metric,power_bipolar,~
+R410,4.99k 1%,Resistor_SMD:R_0603_1608Metric,power_bipolar,~
+U404,TPS60403DBVR,Package_TO_SOT_SMD:SOT-23-5,power_bipolar,https://www.ti.com/lit/ds/symlink/tps60401.pdf
+C413,2.2u 10V X7R,Capacitor_SMD:C_0805_2012Metric,power_bipolar,~
+C414,2.2u 10V X7R,Capacitor_SMD:C_0805_2012Metric,power_bipolar,~
+C415,10u 10V X7R,Capacitor_SMD:C_0805_2012Metric,power_bipolar,~
+U405,TPS72325DBVR,Package_TO_SOT_SMD:SOT-23-5,power_bipolar,https://www.ti.com/lit/ds/symlink/tps723.pdf
+C416,10n C0G,Capacitor_SMD:C_0603_1608Metric,power_bipolar,~
+C417,10u 10V X7R,Capacitor_SMD:C_0805_2012Metric,power_bipolar,~
+R411,4.99k 1%,Resistor_SMD:R_0603_1608Metric,power_bipolar,~
+D402,BAT46W reverse-current bypass,Diode_SMD:D_SOD-123,power_bipolar,https://www.vishay.com/docs/86406/bat46w.pdf
+TP405,+2V5A,TestPoint:TestPoint_Pad_D1.5mm,power_bipolar,~
+TP406,-2V5A,TestPoint:TestPoint_Pad_D1.5mm,power_bipolar,~
+TP407,NEG_RAW,TestPoint:TestPoint_Pad_D1.5mm,power_bipolar,~
+C418,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,power_bipolar,~
+U707,TPS3808G01DBVR,Package_TO_SOT_SMD:SOT-23-6,usb_system_power,https://www.ti.com/lit/ds/symlink/tps3808.pdf
+R710,1.00M 0.1%,Resistor_SMD:R_0603_1608Metric,usb_system_power,~
+R711,100k 0.1%,Resistor_SMD:R_0603_1608Metric,usb_system_power,~
+C711,47n 10% 25V,Capacitor_SMD:C_0603_1608Metric,usb_system_power,~
+C712,100n 16V,Capacitor_SMD:C_0603_1608Metric,usb_system_power,~
+R712,100k,Resistor_SMD:R_0603_1608Metric,usb_system_power,~
+R713,47k,Resistor_SMD:R_0603_1608Metric,usb_system_power,~
+R714,1M,Resistor_SMD:R_0603_1608Metric,usb_system_power,~
+Q703,MMBT3904 USB ENABLE,Package_TO_SOT_SMD:SOT-23,usb_system_power,https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf
+Q701,AO3401A USB BACK-TO-BACK,Package_TO_SOT_SMD:SOT-23,usb_system_power,http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf
+Q702,AO3401A USB BACK-TO-BACK,Package_TO_SOT_SMD:SOT-23,usb_system_power,http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf
+R715,1M,Resistor_SMD:R_0603_1608Metric,usb_system_power,~
+R716,100k,Resistor_SMD:R_0603_1608Metric,usb_system_power,~
+C713,10n 25V,Capacitor_SMD:C_0603_1608Metric,usb_system_power,~

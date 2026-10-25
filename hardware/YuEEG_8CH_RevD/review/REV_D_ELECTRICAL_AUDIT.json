@@ -1,0 +1,16 @@
+{
+  "revision": "D",
+  "components": 332,
+  "ref_pin_pairs_checked": 941,
+  "independent_pin_invariants": 307,
+  "pcb_pad_net_mismatches": 0,
+  "host_system_pad_track_via_gap_mm_min_rule": 8,
+  "isolation_near_pairs_checked": 0,
+  "electrode_connector_same_column": true,
+  "N16R8_reserved_GPIO35_36_37_unused": true,
+  "charge_and_record_separate_modes": true,
+  "SYS_not_directly_connected_to_BAT": true,
+  "USB_data_not_connected_to_charger_DPDM": true,
+  "scope": "Static pin/topology/copper checks, not USB eye, patient leakage, dielectric testing or hardware qualification",
+  "sha256_pcb": "72aac6d83f035e062b6f5fe260e39ab24577dbdbaa77ce31e01f1d5acb342ec4"
+}
