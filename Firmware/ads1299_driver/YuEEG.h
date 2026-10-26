@@ -1,4 +1,4 @@
-// ESP32-S3, YuEEG C/D. Native USB Serial/JTAG and simultaneous WiFi UDP.
+// ESP32-S3, YuEEG Rev E. Native USB Serial/JTAG and simultaneous WiFi UDP.
 #pragma once
 #include <Arduino.h>
 #include <SPI.h>
@@ -87,6 +87,7 @@ void capture() {
  uint16_t c=crc16(f.bytes,48);f.bytes[48]=c;f.bytes[49]=c>>8;
  if(xQueueSend(outputQueue,&f,0)!=pdTRUE)++queueDrops;
 }
+#include "YuEEG_UI.h"
 void receiveControl(WiFiUDP& udp) {
  int size=udp.parsePacket();if(size<=0)return;
  IPAddress source=udp.remoteIP();uint16_t port=udp.remotePort();
@@ -105,6 +106,7 @@ void outputTask(void*) {
  WiFiUDP udp;udp.begin(9001);uint8_t batch[FRAME_BYTES*10];size_t count=0;uint32_t firstMs=0;
  for(;;){RawFrame f;
   if(xQueueReceive(outputQueue,&f,pdMS_TO_TICKS(5))==pdTRUE){
+   backupFrame(f);
    if(Serial&&Serial.availableForWrite()>=FRAME_BYTES){if(Serial.write(f.bytes,FRAME_BYTES)!=FRAME_BYTES)++usbDrops;}else ++usbDrops;
    if(!count)firstMs=millis();memcpy(batch+count*FRAME_BYTES,f.bytes,FRAME_BYTES);++count;
   }
@@ -131,6 +133,7 @@ void startWiFi() {
 }
 void report() {
  Serial.printf("# YuEEG v1 ADC=%s mode=%u gain=%u missed=%lu queue_drop=%lu usb_drop=%lu udp_drop=%lu\n",adcOK?"ready":"FAULT",mode.load(),gain,(unsigned long)missed.load(),(unsigned long)queueDrops.load(),(unsigned long)usbDrops.load(),(unsigned long)udpDrops.load());
+ Serial.printf("# RevE SD=%s saved=%lu sd_drop=%lu panel_bus=%s\n",sdReady?"ready":"absent/fault",(unsigned long)sdFrames.load(),(unsigned long)sdDrops.load(),panelReady?"OK (unverified panel)":"not ready");
  Serial.printf("# AP %s password=%s IP=%s STA=%s\n",WiFi.softAPSSID().c_str(),prefs.getString("ap_pass","").c_str(),WiFi.softAPIP().toString().c_str(),WiFi.localIP().toString().c_str());
  Serial.printf("# CPU=%uMHz Flash=%lu PSRAM=%lu bytes\n",ESP.getCpuFreqMHz(),(unsigned long)ESP.getFlashChipSize(),(unsigned long)ESP.getPsramSize());
  Serial.println("# start | stop | test | probe 1..8 | gain 1/2/4/6/8/12/24 | udp IP PORT | wifi SSID<TAB>PASSWORD | status");
@@ -156,12 +159,12 @@ void setup() {
  outputQueue=xQueueCreate(128,sizeof(RawFrame));controlQueue=xQueueCreate(4,sizeof(ControlCommand));if(!outputQueue||!controlQueue){digitalWrite(LED_FAULT,LOW);while(true)delay(1000);}
  delay(500);digitalWrite(PWDN,HIGH);delay(10000); // verify VCAP1-AVSS>1.1V; no rail fault monitor
  digitalWrite(ADS_RESET,HIGH);delay(1);adcCommand(0x11);uint8_t id=regRead(0);adcOK=(id&0x1F)==0x1E;
- startWiFi();xTaskCreatePinnedToCore(outputTask,"eeg_output",6144,nullptr,1,nullptr,0);
+ startWiFi();startUI();xTaskCreatePinnedToCore(outputTask,"eeg_output",6144,nullptr,2,nullptr,0);
  attachInterrupt(digitalPinToInterrupt(DRDY),onDRDY,FALLING);report(); // stopped until host command
 }
 void loop() {
  ControlCommand remote;if(xQueueReceive(controlQueue,&remote,0)==pdTRUE)handleCommand(String(remote.text));
- capture();if(Serial.available()){char c=Serial.read();if(c=='\n'){handleCommand(commandLine);commandLine="";}else if(c!='\r'){if(commandLine.length()<160)commandLine+=c;else commandLine="";}}
+ pollRecButton();capture();if(Serial.available()){char c=Serial.read();if(c=='\n'){handleCommand(commandLine);commandLine="";}else if(c!='\r'){if(commandLine.length()<160)commandLine+=c;else commandLine="";}}
  // Sleep until DRDY or 1ms timeout for commands; ISR wakes the task immediately.
  ulTaskNotifyTake(pdTRUE,pdMS_TO_TICKS(1));
 }

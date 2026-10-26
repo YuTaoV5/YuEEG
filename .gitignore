@@ -37,3 +37,8 @@ Thumbs.db
 !/hardware/YuEEG_8CH_RevB_64x50_bipolar_review.zip
 !/hardware/YuEEG_8CH_RevC_64x74_battery_management_review.zip
 !/hardware/YuEEG_8CH_RevD_84x122_isolated_USB_WiFi_review.zip
+
+/Firmware/build_revE/
+/Firmware/build_revE.log
+!/hardware/YuEEG_8CH_RevE/
+!/hardware/YuEEG_8CH_RevE_94x122_dual_USB_AMOLED_SD_review.zip

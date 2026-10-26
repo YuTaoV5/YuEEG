@@ -1,0 +1,35 @@
+{
+  "revision": "E",
+  "date": "2026-10-27",
+  "pcb_envelope_mm": [
+    94.0,
+    122.0
+  ],
+  "copper_layers": 4,
+  "footprints": 378,
+  "top_footprints": 233,
+  "bottom_footprints": 145,
+  "schematic_sheets": 15,
+  "ERC_violations": 0,
+  "DRC_violations": 0,
+  "unconnected_items": 0,
+  "schematic_parity_issues": 0,
+  "all_exported_ref_pin_pairs_checked": 1068,
+  "track_segments_by_layer": {
+    "F.Cu": 2246,
+    "B.Cu": 2213,
+    "In2.Cu": 423
+  },
+  "vias": 512,
+  "via_in_pad_require_filled_capped": 78,
+  "default_clearance_mm": 0.15,
+  "NexFET_pad_local_clearance_mm": 0.13,
+  "minimum_board_clearance_mm": 0.13,
+  "minimum_via_diameter_mm": 0.5,
+  "minimum_drill_mm": 0.2,
+  "host_system_clearance_rule_mm": 8,
+  "sha256_pcb": "c122becb875782ec8e10a175058a291a3c8f5496b6d460902af5a69270566565",
+  "firmware_build_fqbn": "esp32:esp32:esp32s3:FlashSize=16M,FlashMode=qio,PSRAM=opi,USBMode=hwcdc,CDCOnBoot=cdc,PartitionScheme=app3M_fat9M_16MB",
+  "firmware_flash_tested": false,
+  "release_scope": "Engineering review only. Physical USB, battery, noise, thermal, EMC and patient-safety qualification pending."
+}

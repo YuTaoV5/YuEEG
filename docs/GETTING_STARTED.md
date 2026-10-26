@@ -1,19 +1,19 @@
-# Rev D 使用指南
+# Rev E 使用指南
 
-本指南对应 ADS1299 + ESP32-S3-WROOM-1-N16R8 的 Rev D 工程评审版。首次只连接假电极/模拟信号，先验证供电、寄存器、采样和隔离。尚未完成样机人体使用验证。
+本指南对应 ADS1299 + ESP32-S3-WROOM-1-N16R8 的 Rev E 工程评审版。首次只连接假电极/模拟信号，先验证供电、寄存器、采样和隔离。尚未完成样机人体使用验证。
 
 ## 硬件文件
 
-使用 KiCad 9 打开 [工程](../hardware/YuEEG_8CH_RevD/YuEEG_8CH_RevD.kicad_pro)。原理图共 13 页；PCB 为 84 × 122 mm、四层。投板前阅读 [设计复核](../hardware/YuEEG_8CH_RevD/REV_D_REVIEW.md) 和 [加工要求](../hardware/YuEEG_8CH_RevD/fabrication_review/ASSEMBLY_NOTES.md)，其中 72 处焊盘内过孔要求填孔、铜封帽。
+使用 KiCad 9 打开 [工程](../hardware/YuEEG_8CH_RevE/YuEEG_8CH_RevE.kicad_pro)。原理图共 15 页；PCB 为 94 × 122 mm、四层。投板前阅读 [设计复核](../hardware/YuEEG_8CH_RevE/REV_E_REVIEW.md) 和 [加工要求](../hardware/YuEEG_8CH_RevE/fabrication_review/ASSEMBLY_NOTES.md)，焊盘内过孔需填孔、铜封帽，数量及坐标见该版检查报告。
 
-电极端口为 CH1–8、REF、BIAS，REF 与 BIAS 各有不同功能，BIAS 不是普通电路地。公共 REF 经各通道负输入保护网络接入；SRB1/SRB2 未用。外接电源、示波器地、串口适配器和扩展子板不得跨接 HOST_GND 与系统 GND。电池接口 B+/MID/B− 与独立 NTC 的要求见设计复核。
+电极端口为 CH1–8、REF、BIAS，REF 与 BIAS 各有不同功能，BIAS 不是普通电路地。公共 REF 经各通道负输入保护网络接入；SRB1/SRB2 未用。外接电源、示波器地和串口适配器不得跨接 HOST_GND 与系统 GND。电池接口 B+/MID/B− 与独立 NTC 的要求见设计复核。
 
 | 条件 | 支持的工作方式 |
 |---|---|
 | 电池、POWER ON | Wi-Fi 采集 |
-| 普通 USB-A/默认电流 Type-C、POWER ON | 需要电池；USB 数据与 Wi-Fi 可并行，不充电 |
-| 广告 1.5 A/3 A 的 Type-C、POWER ON | 启用隔离供电，支持无电池台架烧录；不充电 |
-| 广告 1.5 A/3 A 的 Type-C、POWER OFF | 约 300 mA、8.2 V 充电 |
+| DATA/FLASH、POWER ON | 需要电池；USB 数据与 Wi-Fi 可并行，不充电 |
+| CHARGE/POWER 接广告 1.5 A/3 A 的 Type-C、POWER ON | 启用隔离供电；烧录另接 DATA/FLASH；不充电 |
+| CHARGE/POWER 接广告 1.5 A/3 A 的 Type-C、POWER OFF | 约 300 mA、8.2 V 充电 |
 
 USB 接口有数据能力不等于支持 1.5 A 广告；充电适配器有功率也不等于有电脑数据通路。
 
@@ -60,4 +60,4 @@ python Firmware/tools/receive_eeg.py --serial COM5 > eeg_usb.csv
 
 ## 状态显示
 
-POWER：电源指示；RUN：采集慢闪；WIFI：连接状态；FAULT：ADC 初始化失败或采样/队列丢失；另有充电指示。FAULT 不代表覆盖全部电源或电池故障。J803 预留 3.3 V I²C OLED，尚未包含屏幕和显示驱动。
+POWER：电源指示；RUN：采集慢闪；WIFI：连接状态；FAULT：ADC 初始化失败或采样/队列丢失；另有充电指示。FAULT 不代表覆盖全部电源或电池故障。AMOLED 每秒显示 ADC、连接和 SD 状态；REC 键启停。插入 FAT32 microSD 后上电，确认 SD READY 再采集；.yee 文件可通过 `receive_eeg.py --file` 离线转换。显示/存储尚待样机联调，突然断电可能丢失未刷写数据。

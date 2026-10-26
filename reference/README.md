@@ -11,3 +11,5 @@
 - [Nexperia PESD5V0U1BA](https://assets.nexperia.com/documents/data-sheet/PESD5V0U1BA.pdf)
 
 资料属于各制造商；器件认证与整机认证应区别对待。此前的论文/开源方案调查不等于已经完成样机性能验证。
+
+Rev E 新增 AMOLED、超薄按键、SDMMC 及双 USB 的一手资料与设计取舍，见 [Rev E 复核](../hardware/YuEEG_8CH_RevE/REV_E_REVIEW.md#primary-sources)。

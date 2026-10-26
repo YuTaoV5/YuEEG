@@ -1,0 +1,8 @@
+Item,Quantity,Requirement
+AMOLED module,1,DWO DO0200PFS12 RM67162 QSPI variant IM1 high R4 fitted R3 absent
+Display harness,1,Verified 18-way cable between J1001 Molex 53780-1870 and module CN1; confirm contact sides and pin 1
+Insulated standoff,4,M2 6 mm nylon; verify supplier module hole diameter
+Nonconductive display fasteners,8,M2 nylon appropriate length for module and PCB; verify actual fit
+microSD card,1,FAT32 industrial/high-endurance card; verify latency at 20MHz SDMMC 1-bit
+Battery cells,2,Matched 4.2V Li-ion/polymer each at least 1000mAh; actual part not selected
+NTC,1,Insulated 10kohm pack NTC; confirm B value and charger temperature window against actual part

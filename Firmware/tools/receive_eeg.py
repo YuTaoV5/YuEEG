@@ -28,8 +28,10 @@ class Decoder:
             out.append(r);del self.buffer[:FRAME_SIZE]
         return out
 def main():
-    p=argparse.ArgumentParser();g=p.add_mutually_exclusive_group(required=True);g.add_argument('--udp',type=int);g.add_argument('--serial');p.add_argument('--command',default='start');a=p.parse_args()
-    if a.serial:
+    p=argparse.ArgumentParser();g=p.add_mutually_exclusive_group(required=True);g.add_argument('--udp',type=int);g.add_argument('--serial');g.add_argument('--file',help='Rev E raw .yee backup');p.add_argument('--command',default='start');a=p.parse_args()
+    if a.file:
+        io=open(a.file,'rb');read=lambda:io.read(4096)
+    elif a.serial:
         import serial
         io=serial.Serial(a.serial,921600,timeout=.2);io.write((a.command+'\n').encode());read=lambda:io.read(4096)
     else:
@@ -38,7 +40,9 @@ def main():
     previous=None
     try:
         while True:
-            for r in dec.feed(read()):
+            chunk=read()
+            if a.file and not chunk:break
+            for r in dec.feed(chunk):
                 if previous is not None and (r['seq']-previous)&0xffffffff!=1:print(f"sequence gap: {previous}->{r['seq']}",file=sys.stderr)
                 previous=r['seq'];w.writerow([r[k] for k in ['seq','device_us','missed_drdy','mode','gain','probe_channel','status','flags']]+r['uV'])
     except KeyboardInterrupt:pass

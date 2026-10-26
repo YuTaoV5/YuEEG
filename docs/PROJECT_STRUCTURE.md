@@ -2,15 +2,15 @@
 
 | 路径 | 用途 |
 |---|---|
-| `hardware/YuEEG_8CH_RevD/` | 当前 KiCad 原生工程、BOM、加工文件、PDF、预览和静态检查记录 |
+| `hardware/YuEEG_8CH_RevE/` | 当前 KiCad 原生工程、BOM、加工文件、PDF、预览和静态检查记录 |
 | `Firmware/ads1299_driver/` | 当前固件的唯一开发入口 |
 | `Firmware/tools/` | 当前二进制帧接收、无线控制和协议测试 |
-| `hardware/YuEEG_8CH_RevD/firmware/` | 与工程评审包绑定的固件快照及编译产物，不在此目录开发 |
+| `hardware/YuEEG_8CH_RevE/firmware/` | 与工程评审包绑定的固件快照及编译产物，不在此目录开发 |
 | `hardware/*review.zip` | 各版冻结的工程评审交付包 |
 | `hardware/archive/README.md` | 历史硬件索引及使用范围 |
-| `Firmware/Plot/` | 旧文本串口协议绘图程序，未适配 Rev D |
-| `Paradigm/` | 历史 SSVEP 范式、UI 和平台依赖，未集成 Rev D 协议 |
-| `Model/` | 历史外壳/脑电帽模型，未适配 Rev D 板框 |
+| `Firmware/Plot/` | 旧文本串口协议绘图程序，未适配 Rev E |
+| `Paradigm/` | 历史 SSVEP 范式、UI 和平台依赖，未集成 Rev E 协议 |
+| `Model/` | 历史外壳/脑电帽模型，未适配 Rev E 板框 |
 | `docs/archive/` | 归档的旧首页与使用方法 |
 | `reference/README.md` | 芯片资料的一手来源索引；本机下载文件不上传 |
 | `scripts/verify_review.py` | 验证冻结交付与当前源代码、可重新生成评审 ZIP |

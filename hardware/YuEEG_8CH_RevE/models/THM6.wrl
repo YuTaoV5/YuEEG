@@ -1,0 +1,9 @@
+#VRML V2.0 utf8
+# Original YuEEG mechanical envelope, not a supplier CAD model.
+Transform { translation 0.0 0.0 2.0669291338582676 children [ Shape { appearance Appearance { material Material { diffuseColor .04 .05 .065 } } geometry Box { size 12.51968503937008 7.9921259842519685 4.133858267716535 } } ] }
+Transform { translation 0.0 0.0 4.145669291338582 children [ Shape { appearance Appearance { material Material { diffuseColor .12 .15 .19 } } geometry Box { size 9.05511811023622 4.724409448818897 0.023622047244094488 } } ] }
+Transform { translation -5.5 3.0 -0.23622047244094488 children [ Shape { appearance Appearance { material Material { diffuseColor .8 .65 .25 } } geometry Box { size 0.23622047244094488 0.23622047244094488 0.7874015748031495 } } ] }
+Transform { translation 5.5 3.0 -0.23622047244094488 children [ Shape { appearance Appearance { material Material { diffuseColor .8 .65 .25 } } geometry Box { size 0.23622047244094488 0.23622047244094488 0.7874015748031495 } } ] }
+Transform { translation 5.5 2.0 -0.23622047244094488 children [ Shape { appearance Appearance { material Material { diffuseColor .8 .65 .25 } } geometry Box { size 0.23622047244094488 0.23622047244094488 0.7874015748031495 } } ] }
+Transform { translation -5.5 -2.0 -0.23622047244094488 children [ Shape { appearance Appearance { material Material { diffuseColor .8 .65 .25 } } geometry Box { size 0.23622047244094488 0.23622047244094488 0.7874015748031495 } } ] }
+Transform { translation -5.5 -3.0 -0.23622047244094488 children [ Shape { appearance Appearance { material Material { diffuseColor .8 .65 .25 } } geometry Box { size 0.23622047244094488 0.23622047244094488 0.7874015748031495 } } ] }

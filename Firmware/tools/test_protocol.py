@@ -1,4 +1,5 @@
-import unittest,struct,binascii
+import unittest,struct,binascii,subprocess,sys,tempfile,csv,io
+from pathlib import Path
 from receive_eeg import decode,Decoder
 def frame(values,seq=1,gain=12):
     p=bytearray(b'YEEG'+bytes([1,1,gain,0])+struct.pack('<III',seq,2000,0)+bytes.fromhex('c00000'))
@@ -15,4 +16,12 @@ class ProtocolTest(unittest.TestCase):
         p=frame([1]*8);bad=bytearray(p);bad[30]^=4;d=Decoder();self.assertEqual(len(d.feed(bad+p)),1);self.assertGreater(d.bad_crc,0)
     def test_udp_batch(self):self.assertEqual(len(Decoder().feed(b''.join(frame([0]*8,i) for i in range(10)))),10)
     def test_gain(self):self.assertAlmostEqual(decode(frame([12]*8,gain=1))['uV'][0],12*decode(frame([12]*8))['uV'][0])
+    def test_sd_file_conversion(self):
+        # Offline path must terminate at EOF, preserve signed values and reject bad CRC.
+        bad=bytearray(frame([7]*8,1));bad[27]^=1
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parent) as folder:
+            path=Path(folder)/'backup.yee';path.write_bytes(bytes(bad)+frame([-1]*8,2)+frame([8388607]*8,3))
+            run=subprocess.run([sys.executable,str(Path(__file__).with_name('receive_eeg.py')),'--file',str(path)],capture_output=True,text=True,timeout=10,check=True)
+        rows=list(csv.DictReader(io.StringIO(run.stdout)))
+        self.assertEqual([r['seq'] for r in rows],['2','3']);self.assertLess(float(rows[0]['ch1_uV']),0)
 if __name__=='__main__':unittest.main()
