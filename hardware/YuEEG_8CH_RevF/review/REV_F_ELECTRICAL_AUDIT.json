@@ -1,0 +1,20 @@
+{
+  "revision": "F",
+  "main_components": 305,
+  "power_components": 50,
+  "main_ref_pin_pairs": 876,
+  "power_ref_pin_pairs": 160,
+  "top_only_footprints": true,
+  "independent_pin_invariants": 158,
+  "isolation_gap_mm": 8,
+  "isolation_near_pairs_checked": 0,
+  "quiet_In1_without_signal_tracks": true,
+  "charging_ce_default_available_A_at_1p8V": 2.95e-06,
+  "charging_ce_off_upper_bound_V": 0.3240248315572706,
+  "charge_nominal_V": 8.2,
+  "charge_max_V": 8.241,
+  "charge_nominal_A": 0.299,
+  "sha256_pcb": "17034934d92b7c8b1812fe8afe126c4306112da1b6f088af04f2fbbcbee481cb",
+  "sha256_power_pcb": "fef3641c0f8616dbb3b367fa1badfd6e0c3639696498dd5d32a2221b5895d39a",
+  "scope": "Static connectivity, copper and assembly invariants only; hardware qualification pending."
+}

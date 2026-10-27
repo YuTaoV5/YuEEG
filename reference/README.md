@@ -13,3 +13,5 @@
 资料属于各制造商；器件认证与整机认证应区别对待。此前的论文/开源方案调查不等于已经完成样机性能验证。
 
 Rev E 新增 AMOLED、超薄按键、SDMMC 及双 USB 的一手资料与设计取舍，见 [Rev E 复核](../hardware/YuEEG_8CH_RevE/REV_E_REVIEW.md#primary-sources)。
+
+Rev F 的普通按键、紧凑显示连接器、叠装与主副板充电架构资料见 [Rev F 复核](../hardware/YuEEG_8CH_RevF/REV_F_REVIEW.md#一手资料)。

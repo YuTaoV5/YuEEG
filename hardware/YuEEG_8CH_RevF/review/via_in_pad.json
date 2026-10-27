@@ -1,0 +1,614 @@
+[
+  {
+    "x_mm_absolute": 108.6,
+    "y_mm_absolute": 114.15,
+    "pads": [
+      "U1.48"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 96.08,
+    "y_mm_absolute": 116.08,
+    "pads": [
+      "C153.2"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 93.12,
+    "y_mm_absolute": 117.32,
+    "pads": [
+      "C152.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 95.12,
+    "y_mm_absolute": 121.16,
+    "pads": [
+      "C133.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 93.12,
+    "y_mm_absolute": 121.16,
+    "pads": [
+      "C131.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 96.08,
+    "y_mm_absolute": 113.54,
+    "pads": [
+      "C163.2"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 93.12,
+    "y_mm_absolute": 114.78,
+    "pads": [
+      "C162.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 95.12,
+    "y_mm_absolute": 113.54,
+    "pads": [
+      "C163.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 93.12,
+    "y_mm_absolute": 113.54,
+    "pads": [
+      "C161.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 87.75,
+    "y_mm_absolute": 112.4,
+    "pads": [
+      "D171.2"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 93.12,
+    "y_mm_absolute": 109.7,
+    "pads": [
+      "C182.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 96.08,
+    "y_mm_absolute": 108.46,
+    "pads": [
+      "C183.2"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 110.0,
+    "y_mm_absolute": 138.0,
+    "pads": [
+      "C401.2"
+    ],
+    "diameter_mm": 0.6,
+    "drill_mm": 0.3
+  },
+  {
+    "x_mm_absolute": 83.0,
+    "y_mm_absolute": 135.75,
+    "pads": [
+      "U403.2"
+    ],
+    "diameter_mm": 0.6,
+    "drill_mm": 0.3
+  },
+  {
+    "x_mm_absolute": 138.0,
+    "y_mm_absolute": 174.0,
+    "pads": [
+      "U2.1"
+    ],
+    "diameter_mm": 0.6,
+    "drill_mm": 0.3
+  },
+  {
+    "x_mm_absolute": 90.0,
+    "y_mm_absolute": 102.0,
+    "pads": [
+      "TP401.1"
+    ],
+    "diameter_mm": 0.6,
+    "drill_mm": 0.3
+  },
+  {
+    "x_mm_absolute": 120.0,
+    "y_mm_absolute": 108.0,
+    "pads": [
+      "SW301.2"
+    ],
+    "diameter_mm": 0.6,
+    "drill_mm": 0.3
+  },
+  {
+    "x_mm_absolute": 111.0,
+    "y_mm_absolute": 108.0,
+    "pads": [
+      "C1005.2"
+    ],
+    "diameter_mm": 0.6,
+    "drill_mm": 0.3
+  },
+  {
+    "x_mm_absolute": 93.0,
+    "y_mm_absolute": 135.0,
+    "pads": [
+      "U405.1"
+    ],
+    "diameter_mm": 0.6,
+    "drill_mm": 0.3
+  },
+  {
+    "x_mm_absolute": 129.0,
+    "y_mm_absolute": 138.0,
+    "pads": [
+      "C1101.2"
+    ],
+    "diameter_mm": 0.6,
+    "drill_mm": 0.3
+  },
+  {
+    "x_mm_absolute": 85.5,
+    "y_mm_absolute": 139.0,
+    "pads": [
+      "C411.2"
+    ],
+    "diameter_mm": 0.6,
+    "drill_mm": 0.3
+  },
+  {
+    "x_mm_absolute": 106.0,
+    "y_mm_absolute": 160.25,
+    "pads": [
+      "U701.9"
+    ],
+    "diameter_mm": 0.6,
+    "drill_mm": 0.3
+  },
+  {
+    "x_mm_absolute": 130.5,
+    "y_mm_absolute": 129.25,
+    "pads": [
+      "R643.2"
+    ],
+    "diameter_mm": 0.6,
+    "drill_mm": 0.3
+  },
+  {
+    "x_mm_absolute": 105.0,
+    "y_mm_absolute": 147.0,
+    "pads": [
+      "J1001.12"
+    ],
+    "diameter_mm": 0.6,
+    "drill_mm": 0.3
+  },
+  {
+    "x_mm_absolute": 133.0,
+    "y_mm_absolute": 150.25,
+    "pads": [
+      "J1101.6"
+    ],
+    "diameter_mm": 0.6,
+    "drill_mm": 0.3
+  },
+  {
+    "x_mm_absolute": 120.0,
+    "y_mm_absolute": 117.0,
+    "pads": [
+      "SW302.2"
+    ],
+    "diameter_mm": 0.6,
+    "drill_mm": 0.3
+  },
+  {
+    "x_mm_absolute": 116.5,
+    "y_mm_absolute": 151.75,
+    "pads": [
+      "U1004.12"
+    ],
+    "diameter_mm": 0.6,
+    "drill_mm": 0.3
+  },
+  {
+    "x_mm_absolute": 115.0,
+    "y_mm_absolute": 125.25,
+    "pads": [
+      "Q602.1"
+    ],
+    "diameter_mm": 0.6,
+    "drill_mm": 0.3
+  },
+  {
+    "x_mm_absolute": 130.0,
+    "y_mm_absolute": 152.75,
+    "pads": [
+      "C1103.2"
+    ],
+    "diameter_mm": 0.6,
+    "drill_mm": 0.3
+  },
+  {
+    "x_mm_absolute": 138.5,
+    "y_mm_absolute": 127.25,
+    "pads": [
+      "C640.2"
+    ],
+    "diameter_mm": 0.6,
+    "drill_mm": 0.3
+  },
+  {
+    "x_mm_absolute": 112.0,
+    "y_mm_absolute": 137.0,
+    "pads": [
+      "Q1001.2"
+    ],
+    "diameter_mm": 0.6,
+    "drill_mm": 0.3
+  },
+  {
+    "x_mm_absolute": 95.12,
+    "y_mm_absolute": 111.0,
+    "pads": [
+      "C173.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 93.12,
+    "y_mm_absolute": 111.0,
+    "pads": [
+      "C171.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 93.12,
+    "y_mm_absolute": 127.48,
+    "pads": [
+      "C112.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 96.08,
+    "y_mm_absolute": 126.24,
+    "pads": [
+      "C113.2"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 91.65,
+    "y_mm_absolute": 142.05,
+    "pads": [
+      "U401.8"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 91.65,
+    "y_mm_absolute": 143.95,
+    "pads": [
+      "U401.5"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 95.12,
+    "y_mm_absolute": 108.46,
+    "pads": [
+      "C183.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 93.12,
+    "y_mm_absolute": 108.46,
+    "pads": [
+      "C181.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 96.08,
+    "y_mm_absolute": 123.7,
+    "pads": [
+      "C123.2"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 93.12,
+    "y_mm_absolute": 124.94,
+    "pads": [
+      "C122.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 93.12,
+    "y_mm_absolute": 112.24,
+    "pads": [
+      "C172.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 96.08,
+    "y_mm_absolute": 111.0,
+    "pads": [
+      "C173.2"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 127.1,
+    "y_mm_absolute": 134.15,
+    "pads": [
+      "U603.9"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 95.12,
+    "y_mm_absolute": 126.24,
+    "pads": [
+      "C113.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 93.12,
+    "y_mm_absolute": 126.24,
+    "pads": [
+      "C111.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 93.12,
+    "y_mm_absolute": 122.4,
+    "pads": [
+      "C132.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 96.08,
+    "y_mm_absolute": 121.16,
+    "pads": [
+      "C133.2"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 93.12,
+    "y_mm_absolute": 118.62,
+    "pads": [
+      "C141.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 95.12,
+    "y_mm_absolute": 118.62,
+    "pads": [
+      "C143.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 84.39,
+    "y_mm_absolute": 112.24,
+    "pads": [
+      "R173.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 84.39,
+    "y_mm_absolute": 124.94,
+    "pads": [
+      "R123.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 84.39,
+    "y_mm_absolute": 122.4,
+    "pads": [
+      "R133.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 84.39,
+    "y_mm_absolute": 114.78,
+    "pads": [
+      "R163.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 84.39,
+    "y_mm_absolute": 127.48,
+    "pads": [
+      "R113.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 84.39,
+    "y_mm_absolute": 119.86,
+    "pads": [
+      "R143.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 84.39,
+    "y_mm_absolute": 109.7,
+    "pads": [
+      "R183.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 84.39,
+    "y_mm_absolute": 117.32,
+    "pads": [
+      "R153.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 96.08,
+    "y_mm_absolute": 118.62,
+    "pads": [
+      "C143.2"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 93.12,
+    "y_mm_absolute": 119.86,
+    "pads": [
+      "C142.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 103.5,
+    "y_mm_absolute": 173.5,
+    "pads": [
+      "C701.2"
+    ],
+    "diameter_mm": 0.6,
+    "drill_mm": 0.3
+  },
+  {
+    "x_mm_absolute": 102.0,
+    "y_mm_absolute": 177.0,
+    "pads": [
+      "R901.2"
+    ],
+    "diameter_mm": 0.6,
+    "drill_mm": 0.3
+  },
+  {
+    "x_mm_absolute": 98.5,
+    "y_mm_absolute": 170.0,
+    "pads": [
+      "U701.2"
+    ],
+    "diameter_mm": 0.6,
+    "drill_mm": 0.3
+  },
+  {
+    "x_mm_absolute": 93.12,
+    "y_mm_absolute": 123.7,
+    "pads": [
+      "C121.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 95.12,
+    "y_mm_absolute": 123.7,
+    "pads": [
+      "C123.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 93.12,
+    "y_mm_absolute": 116.08,
+    "pads": [
+      "C151.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 95.12,
+    "y_mm_absolute": 116.08,
+    "pads": [
+      "C153.1"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  },
+  {
+    "x_mm_absolute": 128.3,
+    "y_mm_absolute": 132.8,
+    "pads": [
+      "U603.7"
+    ],
+    "diameter_mm": 0.4,
+    "drill_mm": 0.2
+  }
+]

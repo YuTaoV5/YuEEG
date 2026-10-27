@@ -1,4 +1,4 @@
-// ESP32-S3, YuEEG Rev E. Native USB Serial/JTAG and simultaneous WiFi UDP.
+// ESP32-S3, YuEEG Rev F. Native USB Serial/JTAG and simultaneous WiFi UDP.
 #pragma once
 #include <Arduino.h>
 #include <SPI.h>

@@ -1,63 +1,28 @@
-# Rev E 使用指南
+# Rev F 使用指南
 
-本指南对应 ADS1299 + ESP32-S3-WROOM-1-N16R8 的 Rev E 工程评审版。首次只连接假电极/模拟信号，先验证供电、寄存器、采样和隔离。尚未完成样机人体使用验证。
+用 KiCad 9 分别打开 [主板工程](../hardware/YuEEG_8CH_RevF/YuEEG_8CH_RevF.kicad_pro) 和 [隔离充电副板](../hardware/YuEEG_8CH_RevF/isolated_power/YuEEG_8CH_RevF_POWER.kicad_pro)。主板 70 × 80 mm、305 封装、16 页；副板 44 × 48 mm、50 封装、4 页，均四层且元件全在正面。投板前阅读 [复核记录](../hardware/YuEEG_8CH_RevF/REV_F_REVIEW.md) 和两板 fabrication_review/ASSEMBLY_NOTES.md。
 
-## 硬件文件
-
-使用 KiCad 9 打开 [工程](../hardware/YuEEG_8CH_RevE/YuEEG_8CH_RevE.kicad_pro)。原理图共 15 页；PCB 为 94 × 122 mm、四层。投板前阅读 [设计复核](../hardware/YuEEG_8CH_RevE/REV_E_REVIEW.md) 和 [加工要求](../hardware/YuEEG_8CH_RevE/fabrication_review/ASSEMBLY_NOTES.md)，焊盘内过孔需填孔、铜封帽，数量及坐标见该版检查报告。
-
-电极端口为 CH1–8、REF、BIAS，REF 与 BIAS 各有不同功能，BIAS 不是普通电路地。公共 REF 经各通道负输入保护网络接入；SRB1/SRB2 未用。外接电源、示波器地和串口适配器不得跨接 HOST_GND 与系统 GND。电池接口 B+/MID/B− 与独立 NTC 的要求见设计复核。
-
-| 条件 | 支持的工作方式 |
+| 接法 | 工作方式 |
 |---|---|
-| 电池、POWER ON | Wi-Fi 采集 |
-| DATA/FLASH、POWER ON | 需要电池；USB 数据与 Wi-Fi 可并行，不充电 |
-| CHARGE/POWER 接广告 1.5 A/3 A 的 Type-C、POWER ON | 启用隔离供电；烧录另接 DATA/FLASH；不充电 |
-| CHARGE/POWER 接广告 1.5 A/3 A 的 Type-C、POWER OFF | 约 300 mA、8.2 V 充电 |
+| 电池 + 主板 POWER ON | 采集、Wi-Fi、显示及 SD 备份 |
+| 电池 + POWER ON + DATA/FLASH | 隔离 USB 烧录/CDC；可与 Wi-Fi 并行 |
+| 仅 DATA/FLASH | 不给主板供电，不能替代电池 |
+| 副板 CHARGE + GH6 + POWER OFF | 电极线束完全拔除后充电；允许 CE 放行前的放电延时 |
 
-USB 接口有数据能力不等于支持 1.5 A 广告；充电适配器有功率也不等于有电脑数据通路。
+充电口需要满足其 Type-C 输入能力判断，副板不提供 USB 数据。GH6 线束必须逐针核对，不能当作通用串口或 USB 线。外接示波器地、非隔离调试器和金属安装件不得跨接隔离区域。
 
-## 编译与烧录
+电池使用匹配 2S、≥1000 mAh 电芯，连接 B+/MID/B−，贴附与设计匹配的 103AT-2 10k NTC。实际电芯未选定，第一次充电前核对电芯规格、极性、温度窗和保护动作。VSET 接地对应标称 8.2 V、约 299 mA；不要把 8.241 V 最大公差当作标称设定。
 
-源码入口是 `Firmware/ads1299_driver/ads1299_driver.ino`，实现位于相邻 `YuEEG.h`。已验证 Arduino ESP32 core 2.0.11，选用 16 MB QIO Flash、8 MB OPI PSRAM、Hardware CDC and JTAG、CDC On Boot 和 16 MB 分区。
+电极 J1301：1 REF、2 BIAS、3 CH8 至 10 CH1。BIAS 为有源共模电极，不是保护地。充电前拔下整个十路电极线束并关闭主板；软件 stop 不能代替物理断开。J301 pogo 是非隔离台架调试点，使用前也应拔下电极。
 
-在仓库根目录执行：
+AMOLED 在主板上方使用四个名义 8 mm 绝缘支柱。专用显示接口是 FTSH-110 20 针，前 18 个功能接模块 CN1，19/20 为 GND；需验证 20→18 定制线束，不能接 JTAG。模块准确型号、插头方向和局部去耦应按供应商实物确认。
 
-```powershell
-arduino-cli compile --fqbn esp32:esp32:esp32s3:FlashSize=16M,FlashMode=qio,PSRAM=opi,USBMode=hwcdc,CDCOnBoot=cdc,PartitionScheme=app3M_fat9M_16MB Firmware/ads1299_driver
-```
-
-烧录时选择实际设备端口，具体 Arduino IDE 配置、BOOT/RESET 恢复下载及启动等待见 [固件说明](../Firmware/ads1299_driver/README.md)。不要烧录 `ads1299_driver_legacy.txt`。本项目没有执行实物烧录验证。
-
-## USB 接收
+固件烧录、Wi-Fi 配置、采集命令、显示和 SD 操作见 [固件说明](../Firmware/ads1299_driver/README.md)。首次只接模拟信号源/假电极验证电源、寄存器、采样和保护，不以静态规则检查代替样机验收。
 
 ```powershell
-python -m pip install -r Firmware/tools/requirements.txt
-python Firmware/tools/receive_eeg.py --serial COM5 > eeg_usb.csv
+python Firmware/tools/test_protocol.py
+python scripts/verify_review.py
+python Firmware/tools/receive_eeg.py --serial COM8 --command start > samples.csv
+python Firmware/tools/receive_eeg.py --udp 9000 > samples.csv
+python Firmware/tools/receive_eeg.py --file eeg_000001.yee > samples.csv
 ```
-
-将 COM5 改为实际端口；接收程序默认发送 `start`。上电初始化约需 10 秒，再打开接收器。默认 500 SPS、增益 12；数据是带 CRC 的二进制帧，不能直接使用旧版 `FIFO_plot.py`。
-
-## Wi-Fi 接收与控制
-
-1. 首次通过 USB 串口命令 `status` 取得本机随机 AP 密码，私下保存。设备默认停采。
-2. 电脑连接设备的 `YuEEG-…` 无线网络，在一个终端接收：
-
-   ```powershell
-   python Firmware/tools/receive_eeg.py --udp 9000 > eeg_wifi.csv
-   ```
-
-3. 在另一终端启动采集，按提示输入本机 AP 密码：
-
-   ```powershell
-   python Firmware/tools/send_eeg_command.py start
-   python Firmware/tools/send_eeg_command.py status
-   ```
-
-结束时发送 `stop`。控制端口为 9001，数据端口为 9000；`queued` 只表示命令排队成功，使用 `status` 确认。UDP 不保证送达，必须检查序号、CRC、missed_drdy 和丢帧计数。USB、Wi-Fi 两端可同时接收。
-
-连接路由器的 STA 配置、定向 UDP、内部测试输入、导联激励及增益命令见固件说明。无线控制尚无应用层加密或重放保护，仅用于受控 WPA 网络。
-
-## 状态显示
-
-POWER：电源指示；RUN：采集慢闪；WIFI：连接状态；FAULT：ADC 初始化失败或采样/队列丢失；另有充电指示。FAULT 不代表覆盖全部电源或电池故障。AMOLED 每秒显示 ADC、连接和 SD 状态；REC 键启停。插入 FAT32 microSD 后上电，确认 SD READY 再采集；.yee 文件可通过 `receive_eeg.py --file` 离线转换。显示/存储尚待样机联调，突然断电可能丢失未刷写数据。

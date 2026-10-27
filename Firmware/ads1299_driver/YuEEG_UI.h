@@ -1,4 +1,4 @@
-// Rev E: SDMMC backup and write-only RM67162 QSPI status panel.
+// Rev F: SDMMC backup and write-only RM67162 QSPI status panel.
 // Panel power/logic sequence must be verified on first article, with no electrodes.
 #pragma once
 #include <SD_MMC.h>
@@ -84,7 +84,7 @@ void panelTask(void*){
  for(int y=0;ok&&y<536;y+=18){int h=min(18,536-y);ok=panelWindow(0,y,240,h)&&panelWrite(0x2C,pixels,240*h*2,true);}
  ok=ok&&panelWrite(0x29,nullptr,0);panelReady=ok;
  while(ok){char text[24];
-  ok=panelLine(24,"YUEEG REV E",pixels);
+  ok=panelLine(24,"YUEEG REV F",pixels);
   snprintf(text,sizeof(text),"ADC %s MODE %u",adcOK?"OK":"FAULT",mode.load());ok=ok&&panelLine(72,text,pixels);
   snprintf(text,sizeof(text),"SEQ %lu",(unsigned long)latestSequence.load());ok=ok&&panelLine(108,text,pixels);
   snprintf(text,sizeof(text),"WIFI %u USB %u",WiFi.softAPgetStationNum(),bool(Serial));ok=ok&&panelLine(144,text,pixels);

@@ -1,0 +1,4 @@
+#VRML V2.0 utf8
+# Original YuEEG mechanical envelope, not a supplier CAD model.
+Transform { translation 0.0 -0.05905511811023622 0.36023622047244097 children [ Shape { appearance Appearance { material Material { diffuseColor .65 .68 .7 } } geometry Box { size 5.452755905511811 6.279527559055118 0.7204724409448819 } } ] }
+Transform { translation -0.16732283464566927 -2.450787401574803 0.2952755905511811 children [ Shape { appearance Appearance { material Material { diffuseColor .04 .05 .065 } } geometry Box { size 4.330708661417323 5.905511811023622 0.39370078740157477 } } ] }

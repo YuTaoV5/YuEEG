@@ -1,0 +1,1556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>X:\Items\YuEEG\hardware\YuEEG_8CH_RevF\isolated_power\YuEEG_8CH_RevF_POWER.kicad_sch</source>
+    <date>2026-10-27T09:56:19+0800</date>
+    <tool>Eeschema 9.0.5</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Rev F detachable isolated 2S charger</title>
+        <company>YuEEG</company>
+        <rev>F</rev>
+        <date>2026-10-27</date>
+        <source>YuEEG_8CH_RevF_POWER.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/01 / CHARGE Type-C source gate and primary protection/" tstamps="/63ae2ce3-dd71-408b-8030-8d85794e6ae7/">
+      <title_block>
+        <title>01 / CHARGE Type-C source gate and primary protection</title>
+        <company>YuEEG</company>
+        <rev>F</rev>
+        <date>2026-10-27</date>
+        <source>charge_primary.kicad_sch</source>
+        <comment number="1" value="BATTERY ONLY - NOT VALIDATED FOR HUMAN CONNECTION"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/02 / THM6 isolated 5V supply and local decoupling/" tstamps="/cb8e51c4-b3a9-4bec-888f-b1bf5e852894/">
+      <title_block>
+        <title>02 / THM6 isolated 5V supply and local decoupling</title>
+        <company>YuEEG</company>
+        <rev>F</rev>
+        <date>2026-10-27</date>
+        <source>isolated_converter.kicad_sch</source>
+        <comment number="1" value="BATTERY ONLY - NOT VALIDATED FOR HUMAN CONNECTION"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/03 / Isolated secondary 2S charger and protected harness/" tstamps="/f55e121b-44c9-4580-b963-f3935b9a17ab/">
+      <title_block>
+        <title>03 / Isolated secondary 2S charger and protected harness</title>
+        <company>YuEEG</company>
+        <rev>F</rev>
+        <date>2026-10-27</date>
+        <source>charger_secondary.kicad_sch</source>
+        <comment number="1" value="BATTERY ONLY - NOT VALIDATED FOR HUMAN CONNECTION"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C704">
+      <value>1u 16V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="01 / CHARGE Type-C source gate and primary protection"/>
+      <property name="Sheetfile" value="charge_primary.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/01 / CHARGE Type-C source gate and primary protection/" tstamps="/63ae2ce3-dd71-408b-8030-8d85794e6ae7/"/>
+      <tstamps>cebfa1b9-56bf-44bd-9d07-c28e516c3b6b</tstamps>
+    </comp>
+    <comp ref="C705">
+      <value>1u 10V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="01 / CHARGE Type-C source gate and primary protection"/>
+      <property name="Sheetfile" value="charge_primary.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/01 / CHARGE Type-C source gate and primary protection/" tstamps="/63ae2ce3-dd71-408b-8030-8d85794e6ae7/"/>
+      <tstamps>51583658-7058-44ef-8249-e0a9c6a5ea5a</tstamps>
+    </comp>
+    <comp ref="C706">
+      <value>100n 16V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="01 / CHARGE Type-C source gate and primary protection"/>
+      <property name="Sheetfile" value="charge_primary.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/01 / CHARGE Type-C source gate and primary protection/" tstamps="/63ae2ce3-dd71-408b-8030-8d85794e6ae7/"/>
+      <tstamps>4d52e24c-4799-4ff6-be33-dddab37ceaf0</tstamps>
+    </comp>
+    <comp ref="C707">
+      <value>100n 16V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="01 / CHARGE Type-C source gate and primary protection"/>
+      <property name="Sheetfile" value="charge_primary.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/01 / CHARGE Type-C source gate and primary protection/" tstamps="/63ae2ce3-dd71-408b-8030-8d85794e6ae7/"/>
+      <tstamps>ddb2f415-87b0-41ab-beb0-e1ea14f20e7f</tstamps>
+    </comp>
+    <comp ref="C708">
+      <value>4.7u 16V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="01 / CHARGE Type-C source gate and primary protection"/>
+      <property name="Sheetfile" value="charge_primary.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/01 / CHARGE Type-C source gate and primary protection/" tstamps="/63ae2ce3-dd71-408b-8030-8d85794e6ae7/"/>
+      <tstamps>5b24078a-556b-4d99-84e7-dd6b0e8f694c</tstamps>
+    </comp>
+    <comp ref="C709">
+      <value>100n 16V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="01 / CHARGE Type-C source gate and primary protection"/>
+      <property name="Sheetfile" value="charge_primary.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/01 / CHARGE Type-C source gate and primary protection/" tstamps="/63ae2ce3-dd71-408b-8030-8d85794e6ae7/"/>
+      <tstamps>87b3a89b-482b-4766-a978-ddc089141fde</tstamps>
+    </comp>
+    <comp ref="D701">
+      <value>SMF5.0A</value>
+      <footprint>Diode_SMD:D_SOD-123F</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-123F</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <property name="Sheetname" value="01 / CHARGE Type-C source gate and primary protection"/>
+      <property name="Sheetfile" value="charge_primary.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/01 / CHARGE Type-C source gate and primary protection/" tstamps="/63ae2ce3-dd71-408b-8030-8d85794e6ae7/"/>
+      <tstamps>4abfe1aa-1579-4579-bf1f-0dd9a5643dc7</tstamps>
+    </comp>
+    <comp ref="D902">
+      <value>PESD5V0S1BA</value>
+      <footprint>Diode_SMD:D_SOD-323</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-323</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="D_TVS" description="Bidirectional transient-voltage-suppression diode"/>
+      <property name="Sheetname" value="01 / CHARGE Type-C source gate and primary protection"/>
+      <property name="Sheetfile" value="charge_primary.kicad_sch"/>
+      <property name="ki_keywords" value="diode TVS thyrector"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/01 / CHARGE Type-C source gate and primary protection/" tstamps="/63ae2ce3-dd71-408b-8030-8d85794e6ae7/"/>
+      <tstamps>6b692c84-baef-4362-8023-023d84d506cb</tstamps>
+    </comp>
+    <comp ref="D903">
+      <value>PESD5V0S1BA</value>
+      <footprint>Diode_SMD:D_SOD-323</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-323</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="D_TVS" description="Bidirectional transient-voltage-suppression diode"/>
+      <property name="Sheetname" value="01 / CHARGE Type-C source gate and primary protection"/>
+      <property name="Sheetfile" value="charge_primary.kicad_sch"/>
+      <property name="ki_keywords" value="diode TVS thyrector"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/01 / CHARGE Type-C source gate and primary protection/" tstamps="/63ae2ce3-dd71-408b-8030-8d85794e6ae7/"/>
+      <tstamps>8264a28e-27c5-4d4f-9343-7e7cb0912b01</tstamps>
+    </comp>
+    <comp ref="F701">
+      <value>1.5A hold PTC</value>
+      <footprint>Fuse:Fuse_1206_3216Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Fuse:Fuse_1206_3216Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <property name="Sheetname" value="01 / CHARGE Type-C source gate and primary protection"/>
+      <property name="Sheetfile" value="charge_primary.kicad_sch"/>
+      <property name="ki_keywords" value="fuse"/>
+      <property name="ki_fp_filters" value="*Fuse*"/>
+      <sheetpath names="/01 / CHARGE Type-C source gate and primary protection/" tstamps="/63ae2ce3-dd71-408b-8030-8d85794e6ae7/"/>
+      <tstamps>714e19c5-46ea-40f2-ac7b-3e967f0cb0cc</tstamps>
+    </comp>
+    <comp ref="J901">
+      <value>USB-C CHARGE / POWER - NO DATA</value>
+      <footprint>Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12</footprint>
+      <datasheet>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</datasheet>
+      <fields>
+        <field name="Footprint">Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12</field>
+        <field name="Datasheet">https://www.usb.org/sites/default/files/documents/usb_type-c.zip</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="USB_C_Receptacle_USB2.0_16P" description="USB 2.0-only 16P Type-C Receptacle connector"/>
+      <property name="Sheetname" value="01 / CHARGE Type-C source gate and primary protection"/>
+      <property name="Sheetfile" value="charge_primary.kicad_sch"/>
+      <property name="ki_keywords" value="usb universal serial bus type-C USB2.0"/>
+      <property name="ki_fp_filters" value="USB*C*Receptacle*"/>
+      <sheetpath names="/01 / CHARGE Type-C source gate and primary protection/" tstamps="/63ae2ce3-dd71-408b-8030-8d85794e6ae7/"/>
+      <tstamps>92fb04b4-f106-401e-befb-7df70aea4894</tstamps>
+    </comp>
+    <comp ref="R601">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="01 / CHARGE Type-C source gate and primary protection"/>
+      <property name="Sheetfile" value="charge_primary.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/01 / CHARGE Type-C source gate and primary protection/" tstamps="/63ae2ce3-dd71-408b-8030-8d85794e6ae7/"/>
+      <tstamps>6134ce9c-ac67-417b-9412-83faff730062</tstamps>
+    </comp>
+    <comp ref="R602">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="01 / CHARGE Type-C source gate and primary protection"/>
+      <property name="Sheetfile" value="charge_primary.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/01 / CHARGE Type-C source gate and primary protection/" tstamps="/63ae2ce3-dd71-408b-8030-8d85794e6ae7/"/>
+      <tstamps>bfe5b677-9c87-441b-ab59-0d1c560524c6</tstamps>
+    </comp>
+    <comp ref="R705">
+      <value>887k 1%</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="01 / CHARGE Type-C source gate and primary protection"/>
+      <property name="Sheetfile" value="charge_primary.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/01 / CHARGE Type-C source gate and primary protection/" tstamps="/63ae2ce3-dd71-408b-8030-8d85794e6ae7/"/>
+      <tstamps>110e7d84-f7cf-48c8-8e49-915bb9792f4d</tstamps>
+    </comp>
+    <comp ref="R706">
+      <value>23.7k 1%</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="01 / CHARGE Type-C source gate and primary protection"/>
+      <property name="Sheetfile" value="charge_primary.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/01 / CHARGE Type-C source gate and primary protection/" tstamps="/63ae2ce3-dd71-408b-8030-8d85794e6ae7/"/>
+      <tstamps>0054dcb4-6ee4-4530-aa4d-d5b44405bdd9</tstamps>
+    </comp>
+    <comp ref="R707">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="01 / CHARGE Type-C source gate and primary protection"/>
+      <property name="Sheetfile" value="charge_primary.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/01 / CHARGE Type-C source gate and primary protection/" tstamps="/63ae2ce3-dd71-408b-8030-8d85794e6ae7/"/>
+      <tstamps>dbdfa49d-ca14-4ce7-84d7-21ad63f485d4</tstamps>
+    </comp>
+    <comp ref="U702">
+      <value>TLV75533PDBVR HOST ONLY</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tlv755p.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tlv755p.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Regulator_Linear" part="TLV75533PDBV" description="500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5"/>
+      <property name="Sheetname" value="01 / CHARGE Type-C source gate and primary protection"/>
+      <property name="Sheetfile" value="charge_primary.kicad_sch"/>
+      <property name="ki_keywords" value="LDO Regulator Fixed Positive"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/01 / CHARGE Type-C source gate and primary protection/" tstamps="/63ae2ce3-dd71-408b-8030-8d85794e6ae7/"/>
+      <tstamps>adf12f34-3194-41f9-853a-4ebec5ad48b2</tstamps>
+    </comp>
+    <comp ref="U703">
+      <value>TUSB320LAIRWBR / UFP GPIO</value>
+      <footprint>Package_DFN_QFN:Texas_X2QFN-12_1.6x1.6mm_P0.4mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tusb320lai.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_DFN_QFN:Texas_X2QFN-12_1.6x1.6mm_P0.4mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tusb320lai.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="YuEEG" part="TUSB320LAI" description=""/>
+      <property name="Sheetname" value="01 / CHARGE Type-C source gate and primary protection"/>
+      <property name="Sheetfile" value="charge_primary.kicad_sch"/>
+      <sheetpath names="/01 / CHARGE Type-C source gate and primary protection/" tstamps="/63ae2ce3-dd71-408b-8030-8d85794e6ae7/"/>
+      <tstamps>6690a8cb-31df-4341-8fa5-b772b7389bb7</tstamps>
+    </comp>
+    <comp ref="U704">
+      <value>SN74LVC1G04DBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="YuEEG" part="SN74LVC1G04DBV" description=""/>
+      <property name="Sheetname" value="01 / CHARGE Type-C source gate and primary protection"/>
+      <property name="Sheetfile" value="charge_primary.kicad_sch"/>
+      <sheetpath names="/01 / CHARGE Type-C source gate and primary protection/" tstamps="/63ae2ce3-dd71-408b-8030-8d85794e6ae7/"/>
+      <tstamps>affb9b60-6110-462f-9ab0-6620467466c4</tstamps>
+    </comp>
+    <comp ref="U705">
+      <value>TPS2553DBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps2553.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps2553.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="YuEEG" part="TPS2553DBV" description=""/>
+      <property name="Sheetname" value="01 / CHARGE Type-C source gate and primary protection"/>
+      <property name="Sheetfile" value="charge_primary.kicad_sch"/>
+      <sheetpath names="/01 / CHARGE Type-C source gate and primary protection/" tstamps="/63ae2ce3-dd71-408b-8030-8d85794e6ae7/"/>
+      <tstamps>1b30124c-1e5e-4a21-bf3f-91af39f7da80</tstamps>
+    </comp>
+    <comp ref="C710">
+      <value>10u 25V X7R</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="02 / THM6 isolated 5V supply and local decoupling"/>
+      <property name="Sheetfile" value="isolated_converter.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/02 / THM6 isolated 5V supply and local decoupling/" tstamps="/cb8e51c4-b3a9-4bec-888f-b1bf5e852894/"/>
+      <tstamps>47b3afa0-e04f-4c52-94a5-acda8a5fbde5</tstamps>
+    </comp>
+    <comp ref="C1201">
+      <value>10u 25V X7R</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="02 / THM6 isolated 5V supply and local decoupling"/>
+      <property name="Sheetfile" value="isolated_converter.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/02 / THM6 isolated 5V supply and local decoupling/" tstamps="/cb8e51c4-b3a9-4bec-888f-b1bf5e852894/"/>
+      <tstamps>5e1c4c15-0de5-4939-b994-6e6211a92a8d</tstamps>
+    </comp>
+    <comp ref="C1202">
+      <value>100n 16V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="02 / THM6 isolated 5V supply and local decoupling"/>
+      <property name="Sheetfile" value="isolated_converter.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/02 / THM6 isolated 5V supply and local decoupling/" tstamps="/cb8e51c4-b3a9-4bec-888f-b1bf5e852894/"/>
+      <tstamps>b6c7ca9c-da17-42e3-a0b8-08f73920e323</tstamps>
+    </comp>
+    <comp ref="C1203">
+      <value>10u 25V X7R</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="02 / THM6 isolated 5V supply and local decoupling"/>
+      <property name="Sheetfile" value="isolated_converter.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/02 / THM6 isolated 5V supply and local decoupling/" tstamps="/cb8e51c4-b3a9-4bec-888f-b1bf5e852894/"/>
+      <tstamps>7c2d0a8d-53e1-4a66-866f-ef979445ae86</tstamps>
+    </comp>
+    <comp ref="C1204">
+      <value>100n 16V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="02 / THM6 isolated 5V supply and local decoupling"/>
+      <property name="Sheetfile" value="isolated_converter.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/02 / THM6 isolated 5V supply and local decoupling/" tstamps="/cb8e51c4-b3a9-4bec-888f-b1bf5e852894/"/>
+      <tstamps>0a283c03-db7d-4679-9b0e-b54a8ca1bcb9</tstamps>
+    </comp>
+    <comp ref="H1205">
+      <value>M2 INSULATED MOUNT</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">MountingHole:MountingHole_2.2mm_M2</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value="02 / THM6 isolated 5V supply and local decoupling"/>
+      <property name="Sheetfile" value="isolated_converter.kicad_sch"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
+      <sheetpath names="/02 / THM6 isolated 5V supply and local decoupling/" tstamps="/cb8e51c4-b3a9-4bec-888f-b1bf5e852894/"/>
+      <tstamps>7ba20ec0-3ac6-46c5-8065-671f2f236947</tstamps>
+    </comp>
+    <comp ref="H1206">
+      <value>M2 INSULATED MOUNT</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">MountingHole:MountingHole_2.2mm_M2</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value="02 / THM6 isolated 5V supply and local decoupling"/>
+      <property name="Sheetfile" value="isolated_converter.kicad_sch"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
+      <sheetpath names="/02 / THM6 isolated 5V supply and local decoupling/" tstamps="/cb8e51c4-b3a9-4bec-888f-b1bf5e852894/"/>
+      <tstamps>25565acc-cf21-4462-8f67-c5da35746f07</tstamps>
+    </comp>
+    <comp ref="U706">
+      <value>THM 6-0511 / STANDARD PINOUT</value>
+      <footprint>YuEEG:THM6_Standard</footprint>
+      <datasheet>https://www.tracopower.com/products/thm6.pdf</datasheet>
+      <fields>
+        <field name="Footprint">YuEEG:THM6_Standard</field>
+        <field name="Datasheet">https://www.tracopower.com/products/thm6.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="YuEEG" part="THM6_0511" description=""/>
+      <property name="Sheetname" value="02 / THM6 isolated 5V supply and local decoupling"/>
+      <property name="Sheetfile" value="isolated_converter.kicad_sch"/>
+      <sheetpath names="/02 / THM6 isolated 5V supply and local decoupling/" tstamps="/cb8e51c4-b3a9-4bec-888f-b1bf5e852894/"/>
+      <tstamps>cc00df37-b034-4a44-87eb-0f00bd7f9132</tstamps>
+    </comp>
+    <comp ref="C601">
+      <value>4.7u 16V X7R</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="03 / Isolated secondary 2S charger and protected harness"/>
+      <property name="Sheetfile" value="charger_secondary.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/03 / Isolated secondary 2S charger and protected harness/" tstamps="/f55e121b-44c9-4580-b963-f3935b9a17ab/"/>
+      <tstamps>5f80fcf2-2996-44c7-98b7-1106a8f1546a</tstamps>
+    </comp>
+    <comp ref="C602">
+      <value>47u 16V X7R</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_1210_3225Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="03 / Isolated secondary 2S charger and protected harness"/>
+      <property name="Sheetfile" value="charger_secondary.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/03 / Isolated secondary 2S charger and protected harness/" tstamps="/f55e121b-44c9-4580-b963-f3935b9a17ab/"/>
+      <tstamps>0297b632-6a3b-4e81-8d3b-6102f10a0357</tstamps>
+    </comp>
+    <comp ref="C603">
+      <value>100n 16V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="03 / Isolated secondary 2S charger and protected harness"/>
+      <property name="Sheetfile" value="charger_secondary.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/03 / Isolated secondary 2S charger and protected harness/" tstamps="/f55e121b-44c9-4580-b963-f3935b9a17ab/"/>
+      <tstamps>ba7c0707-772a-44e4-984f-0244746cb930</tstamps>
+    </comp>
+    <comp ref="C604">
+      <value>22u 16V X7R</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="03 / Isolated secondary 2S charger and protected harness"/>
+      <property name="Sheetfile" value="charger_secondary.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/03 / Isolated secondary 2S charger and protected harness/" tstamps="/f55e121b-44c9-4580-b963-f3935b9a17ab/"/>
+      <tstamps>a0dadaef-18d0-4513-b130-de66d1febc16</tstamps>
+    </comp>
+    <comp ref="C605">
+      <value>47u 16V X7R</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_1210_3225Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="03 / Isolated secondary 2S charger and protected harness"/>
+      <property name="Sheetfile" value="charger_secondary.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/03 / Isolated secondary 2S charger and protected harness/" tstamps="/f55e121b-44c9-4580-b963-f3935b9a17ab/"/>
+      <tstamps>0ad58ace-1f41-497b-a77b-81ef48f47d9d</tstamps>
+    </comp>
+    <comp ref="C606">
+      <value>47u 16V X7R</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_1210_3225Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="03 / Isolated secondary 2S charger and protected harness"/>
+      <property name="Sheetfile" value="charger_secondary.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/03 / Isolated secondary 2S charger and protected harness/" tstamps="/f55e121b-44c9-4580-b963-f3935b9a17ab/"/>
+      <tstamps>0bb16721-4653-4cd1-aff5-6d040bbadd58</tstamps>
+    </comp>
+    <comp ref="C607">
+      <value>22u 25V X7R</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="03 / Isolated secondary 2S charger and protected harness"/>
+      <property name="Sheetfile" value="charger_secondary.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/03 / Isolated secondary 2S charger and protected harness/" tstamps="/f55e121b-44c9-4580-b963-f3935b9a17ab/"/>
+      <tstamps>2869538e-e4e2-45d3-9a91-80e93e927db2</tstamps>
+    </comp>
+    <comp ref="C608">
+      <value>47n 25V X7R</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="03 / Isolated secondary 2S charger and protected harness"/>
+      <property name="Sheetfile" value="charger_secondary.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/03 / Isolated secondary 2S charger and protected harness/" tstamps="/f55e121b-44c9-4580-b963-f3935b9a17ab/"/>
+      <tstamps>1081d990-4ef5-4c64-bbc9-6303f06fb19c</tstamps>
+    </comp>
+    <comp ref="C609">
+      <value>100n 16V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="03 / Isolated secondary 2S charger and protected harness"/>
+      <property name="Sheetfile" value="charger_secondary.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/03 / Isolated secondary 2S charger and protected harness/" tstamps="/f55e121b-44c9-4580-b963-f3935b9a17ab/"/>
+      <tstamps>18f17767-2f6b-490d-b8a0-39278d845587</tstamps>
+    </comp>
+    <comp ref="D601">
+      <value>SMF5.0A</value>
+      <footprint>Diode_SMD:D_SOD-123F</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Diode_SMD:D_SOD-123F</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <property name="Sheetname" value="03 / Isolated secondary 2S charger and protected harness"/>
+      <property name="Sheetfile" value="charger_secondary.kicad_sch"/>
+      <property name="ki_keywords" value="diode"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/03 / Isolated secondary 2S charger and protected harness/" tstamps="/f55e121b-44c9-4580-b963-f3935b9a17ab/"/>
+      <tstamps>d3507a35-db44-4a91-beaf-68bc8f5b53b7</tstamps>
+    </comp>
+    <comp ref="F602">
+      <value>1A hold PTC</value>
+      <footprint>Fuse:Fuse_1206_3216Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Fuse:Fuse_1206_3216Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <property name="Sheetname" value="03 / Isolated secondary 2S charger and protected harness"/>
+      <property name="Sheetfile" value="charger_secondary.kicad_sch"/>
+      <property name="ki_keywords" value="fuse"/>
+      <property name="ki_fp_filters" value="*Fuse*"/>
+      <sheetpath names="/03 / Isolated secondary 2S charger and protected harness/" tstamps="/f55e121b-44c9-4580-b963-f3935b9a17ab/"/>
+      <tstamps>e92cbea5-ac85-4811-91e6-6c1302e0ba91</tstamps>
+    </comp>
+    <comp ref="J1204">
+      <value>TO MAIN J1202 / GH6</value>
+      <footprint>Connector_JST:JST_GH_SM06B-GHS-TB_1x06-1MP_P1.25mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Connector_JST:JST_GH_SM06B-GHS-TB_1x06-1MP_P1.25mm_Horizontal</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="03 / Isolated secondary 2S charger and protected harness"/>
+      <property name="Sheetfile" value="charger_secondary.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/03 / Isolated secondary 2S charger and protected harness/" tstamps="/f55e121b-44c9-4580-b963-f3935b9a17ab/"/>
+      <tstamps>5ef1f4f3-92fc-4529-a8c6-e7ddea1485e2</tstamps>
+    </comp>
+    <comp ref="L601">
+      <value>1uH SRP5030T-1R0M / Isat11A</value>
+      <footprint>Inductor_SMD:L_Bourns_SRP5030T</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Inductor_SMD:L_Bourns_SRP5030T</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Sheetname" value="03 / Isolated secondary 2S charger and protected harness"/>
+      <property name="Sheetfile" value="charger_secondary.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
+      <sheetpath names="/03 / Isolated secondary 2S charger and protected harness/" tstamps="/f55e121b-44c9-4580-b963-f3935b9a17ab/"/>
+      <tstamps>f16ebc08-8102-4068-8c38-298be1a75d98</tstamps>
+    </comp>
+    <comp ref="LED601">
+      <value>CHARGING</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="03 / Isolated secondary 2S charger and protected harness"/>
+      <property name="Sheetfile" value="charger_secondary.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/03 / Isolated secondary 2S charger and protected harness/" tstamps="/f55e121b-44c9-4580-b963-f3935b9a17ab/"/>
+      <tstamps>21c7b422-fbd1-4402-ab79-8912192e8f4e</tstamps>
+    </comp>
+    <comp ref="R603">
+      <value>1.50k 1%</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="03 / Isolated secondary 2S charger and protected harness"/>
+      <property name="Sheetfile" value="charger_secondary.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/03 / Isolated secondary 2S charger and protected harness/" tstamps="/f55e121b-44c9-4580-b963-f3935b9a17ab/"/>
+      <tstamps>365f4d9c-c2c2-4f74-ae2f-123ce5452ca6</tstamps>
+    </comp>
+    <comp ref="R604">
+      <value>1.14k 1%</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="03 / Isolated secondary 2S charger and protected harness"/>
+      <property name="Sheetfile" value="charger_secondary.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/03 / Isolated secondary 2S charger and protected harness/" tstamps="/f55e121b-44c9-4580-b963-f3935b9a17ab/"/>
+      <tstamps>5c119037-1861-460e-9a92-54e9bc798cf1</tstamps>
+    </comp>
+    <comp ref="R605">
+      <value>9.31k 0.1%</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="03 / Isolated secondary 2S charger and protected harness"/>
+      <property name="Sheetfile" value="charger_secondary.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/03 / Isolated secondary 2S charger and protected harness/" tstamps="/f55e121b-44c9-4580-b963-f3935b9a17ab/"/>
+      <tstamps>255ce215-4407-4308-848a-99f9e51b1303</tstamps>
+    </comp>
+    <comp ref="R606">
+      <value>365k 0.1%</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="03 / Isolated secondary 2S charger and protected harness"/>
+      <property name="Sheetfile" value="charger_secondary.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/03 / Isolated secondary 2S charger and protected harness/" tstamps="/f55e121b-44c9-4580-b963-f3935b9a17ab/"/>
+      <tstamps>b0937e3a-a822-4eb7-864f-263edfc8e635</tstamps>
+    </comp>
+    <comp ref="R609">
+      <value>2.2k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="03 / Isolated secondary 2S charger and protected harness"/>
+      <property name="Sheetfile" value="charger_secondary.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/03 / Isolated secondary 2S charger and protected harness/" tstamps="/f55e121b-44c9-4580-b963-f3935b9a17ab/"/>
+      <tstamps>7141c724-ac3d-4b1f-93f2-60aba842fa57</tstamps>
+    </comp>
+    <comp ref="R1205">
+      <value>1M CE DEFAULT OFF</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="03 / Isolated secondary 2S charger and protected harness"/>
+      <property name="Sheetfile" value="charger_secondary.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/03 / Isolated secondary 2S charger and protected harness/" tstamps="/f55e121b-44c9-4580-b963-f3935b9a17ab/"/>
+      <tstamps>ced7d9d3-9f66-48b3-8c40-890b8248f710</tstamps>
+    </comp>
+    <comp ref="TP606">
+      <value>CHG_STAT</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.5mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="03 / Isolated secondary 2S charger and protected harness"/>
+      <property name="Sheetfile" value="charger_secondary.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/03 / Isolated secondary 2S charger and protected harness/" tstamps="/f55e121b-44c9-4580-b963-f3935b9a17ab/"/>
+      <tstamps>bc8a0229-95d4-47e3-a37a-ec2f50d63128</tstamps>
+    </comp>
+    <comp ref="U601">
+      <value>BQ25886RGER</value>
+      <footprint>Package_DFN_QFN:Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/bq25886.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_DFN_QFN:Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/bq25886.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Battery_Management" part="BQ25886RGE" description="Standalone 2-Cell (Li-Ion / Li-Polymer), 2A Boost-Mode Battery Charger With PowerPath, USB BC1.2 Detection, USB On-The-Go Boost (OTG), 4.3..6.2V VBUS, 8.2/8.4/8.7/8.8V charge voltage, 9.2V BATOVP, 1.5MHz, VQFN-24"/>
+      <property name="Sheetname" value="03 / Isolated secondary 2S charger and protected harness"/>
+      <property name="Sheetfile" value="charger_secondary.kicad_sch"/>
+      <property name="ki_keywords" value="Power-Path-Management"/>
+      <property name="ki_fp_filters" value="*VQFN*4x4mm*P0.5mm*EP2.7x2.7*"/>
+      <sheetpath names="/03 / Isolated secondary 2S charger and protected harness/" tstamps="/f55e121b-44c9-4580-b963-f3935b9a17ab/"/>
+      <tstamps>19acb5ef-fc29-4a18-87f9-9db6f2d59583</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Battery_Management" part="BQ25886RGE">
+      <description>Standalone 2-Cell (Li-Ion / Li-Polymer), 2A Boost-Mode Battery Charger With PowerPath, USB BC1.2 Detection, USB On-The-Go Boost (OTG), 4.3..6.2V VBUS, 8.2/8.4/8.7/8.8V charge voltage, 9.2V BATOVP, 1.5MHz, VQFN-24</description>
+      <docs>http://www.ti.com/lit/ds/symlink/bq25886.pdf</docs>
+      <footprints>
+        <fp>*VQFN*4x4mm*P0.5mm*EP2.7x2.7*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">BQ25886RGE</field>
+        <field name="Footprint">Package_DFN_QFN:Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/bq25886.pdf</field>
+        <field name="Description">Standalone 2-Cell (Li-Ion / Li-Polymer), 2A Boost-Mode Battery Charger With PowerPath, USB BC1.2 Detection, USB On-The-Go Boost (OTG), 4.3..6.2V VBUS, 8.2/8.4/8.7/8.8V charge voltage, 9.2V BATOVP, 1.5MHz, VQFN-24</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D-" type="bidirectional"/>
+        <pin num="2" name="STAT" type="open_collector"/>
+        <pin num="3" name="~{CE}" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="OTG" type="input"/>
+        <pin num="6" name="VSET" type="passive"/>
+        <pin num="7" name="TS" type="input"/>
+        <pin num="8" name="ILIM" type="passive"/>
+        <pin num="9" name="~{PG}" type="open_collector"/>
+        <pin num="10" name="ICHGSET" type="passive"/>
+        <pin num="11" name="REGN" type="power_out"/>
+        <pin num="12" name="BTST" type="passive"/>
+        <pin num="13" name="BAT" type="passive"/>
+        <pin num="14" name="BAT" type="passive"/>
+        <pin num="15" name="SYS" type="power_out"/>
+        <pin num="16" name="SYS" type="passive"/>
+        <pin num="17" name="SW" type="power_in"/>
+        <pin num="18" name="SW" type="passive"/>
+        <pin num="19" name="GND" type="passive"/>
+        <pin num="20" name="GND" type="passive"/>
+        <pin num="21" name="PMID" type="power_out"/>
+        <pin num="22" name="PMID" type="passive"/>
+        <pin num="23" name="VBUS" type="power_in"/>
+        <pin num="24" name="D+" type="bidirectional"/>
+        <pin num="25" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">test point</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="USB_C_Receptacle_USB2.0_16P">
+      <description>USB 2.0-only 16P Type-C Receptacle connector</description>
+      <docs>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</docs>
+      <footprints>
+        <fp>USB*C*Receptacle*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB_C_Receptacle_USB2.0_16P</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.usb.org/sites/default/files/documents/usb_type-c.zip</field>
+        <field name="Description">USB 2.0-only 16P Type-C Receptacle connector</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="GND" type="passive"/>
+        <pin num="A4" name="VBUS" type="passive"/>
+        <pin num="A5" name="CC1" type="bidirectional"/>
+        <pin num="A6" name="D+" type="bidirectional"/>
+        <pin num="A7" name="D-" type="bidirectional"/>
+        <pin num="A8" name="SBU1" type="bidirectional"/>
+        <pin num="A9" name="VBUS" type="passive"/>
+        <pin num="A12" name="GND" type="passive"/>
+        <pin num="B1" name="GND" type="passive"/>
+        <pin num="B4" name="VBUS" type="passive"/>
+        <pin num="B5" name="CC2" type="bidirectional"/>
+        <pin num="B6" name="D+" type="bidirectional"/>
+        <pin num="B7" name="D-" type="bidirectional"/>
+        <pin num="B8" name="SBU2" type="bidirectional"/>
+        <pin num="B9" name="VBUS" type="passive"/>
+        <pin num="B12" name="GND" type="passive"/>
+        <pin num="S1" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x06">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_TVS">
+      <description>Bidirectional transient-voltage-suppression diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_TVS</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Bidirectional transient-voltage-suppression diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="passive"/>
+        <pin num="2" name="A2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Zener">
+      <description>Zener diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Zener</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Zener diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Fuse">
+      <description>Fuse</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>*Fuse*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Fuse</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Fuse</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Inductor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Light emitting diode</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Mounting Hole without connection</field>
+      </fields>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="TLV75533PDBV">
+      <description>500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5</description>
+      <docs>http://www.ti.com/lit/ds/symlink/tlv755p.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TLV75533PDBV</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tlv755p.pdf</field>
+        <field name="Description">500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="YuEEG" part="SN74LVC1G04DBV">
+      <docs>https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74LVC1G04DBV</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="no_connect"/>
+        <pin num="2" name="A" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="Y" type="output"/>
+        <pin num="5" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="YuEEG" part="THM6_0511">
+      <docs>https://www.tracopower.com/products/thm6.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">THM6_0511</field>
+        <field name="Footprint">YuEEG:THM6_Standard</field>
+        <field name="Datasheet">https://www.tracopower.com/products/thm6.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="+VIN" type="power_in"/>
+        <pin num="12" name="-VOUT" type="passive"/>
+        <pin num="13" name="+VOUT" type="power_out"/>
+        <pin num="23" name="-VIN" type="power_in"/>
+        <pin num="24" name="-VIN" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="YuEEG" part="TPS2553DBV">
+      <docs>https://www.ti.com/lit/ds/symlink/tps2553.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS2553DBV</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps2553.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="FAULT" type="open_collector"/>
+        <pin num="5" name="ILIM" type="passive"/>
+        <pin num="6" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="YuEEG" part="TUSB320LAI">
+      <docs>https://www.ti.com/lit/ds/symlink/tusb320lai.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TUSB320LAI</field>
+        <field name="Footprint">Package_DFN_QFN:Texas_X2QFN-12_1.6x1.6mm_P0.4mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tusb320lai.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="CC1" type="bidirectional"/>
+        <pin num="2" name="CC2" type="bidirectional"/>
+        <pin num="3" name="PORT_UFP" type="input"/>
+        <pin num="4" name="VBUS_DET" type="input"/>
+        <pin num="5" name="ADDR_GPIO" type="input"/>
+        <pin num="6" name="OUT3" type="open_collector"/>
+        <pin num="7" name="OUT1" type="open_collector"/>
+        <pin num="8" name="OUT2" type="open_collector"/>
+        <pin num="9" name="ID" type="open_collector"/>
+        <pin num="10" name="GND" type="power_in"/>
+        <pin num="11" name="EN_N" type="input"/>
+        <pin num="12" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Battery_Management">
+      <uri>X:\Items\YuEEG\hardware\YuEEG_8CH_RevF\isolated_power/../libraries/Battery_Management.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>X:\Items\YuEEG\hardware\YuEEG_8CH_RevF\isolated_power/../libraries/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>X:\Items\YuEEG\hardware\YuEEG_8CH_RevF\isolated_power/../libraries/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>X:\Items\YuEEG\hardware\YuEEG_8CH_RevF\isolated_power/../libraries/Device.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>X:\Items\YuEEG\hardware\YuEEG_8CH_RevF\isolated_power/../libraries/Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>X:\Items\YuEEG\hardware\YuEEG_8CH_RevF\isolated_power/../libraries/Regulator_Linear.kicad_sym</uri>
+    </library>
+    <library logical="YuEEG">
+      <uri>X:\Items\YuEEG\hardware\YuEEG_8CH_RevF\isolated_power/../YuEEG.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="CC_HIGH_N" class="Default">
+      <node ref="R601" pin="2" pintype="passive"/>
+      <node ref="U703" pin="7" pinfunction="OUT1" pintype="open_collector"/>
+      <node ref="U704" pin="2" pinfunction="A" pintype="input"/>
+    </net>
+    <net code="2" name="CC_MODE2" class="Default">
+      <node ref="R602" pin="2" pintype="passive"/>
+      <node ref="U703" pin="8" pinfunction="OUT2" pintype="open_collector"/>
+    </net>
+    <net code="3" name="CC_VBUS_DET" class="Default">
+      <node ref="R705" pin="2" pintype="passive"/>
+      <node ref="U703" pin="4" pinfunction="VBUS_DET" pintype="input"/>
+    </net>
+    <net code="4" name="CHARGE_CC1" class="Default">
+      <node ref="D902" pin="1" pinfunction="A1" pintype="passive"/>
+      <node ref="J901" pin="A5" pinfunction="CC1" pintype="bidirectional"/>
+      <node ref="U703" pin="1" pinfunction="CC1" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="CHARGE_CC2" class="Default">
+      <node ref="D903" pin="1" pinfunction="A1" pintype="passive"/>
+      <node ref="J901" pin="B5" pinfunction="CC2" pintype="bidirectional"/>
+      <node ref="U703" pin="2" pinfunction="CC2" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="CHARGE_HOST_3V3" class="Default">
+      <node ref="C705" pin="1" pintype="passive"/>
+      <node ref="C706" pin="1" pintype="passive"/>
+      <node ref="C707" pin="1" pintype="passive"/>
+      <node ref="R601" pin="1" pintype="passive"/>
+      <node ref="R602" pin="1" pintype="passive"/>
+      <node ref="U702" pin="5" pinfunction="OUT" pintype="power_out"/>
+      <node ref="U703" pin="12" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U704" pin="5" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="7" name="CHARGE_HOST_5V" class="Default">
+      <node ref="C704" pin="1" pintype="passive"/>
+      <node ref="C709" pin="1" pintype="passive"/>
+      <node ref="D701" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="F701" pin="2" pintype="passive"/>
+      <node ref="R705" pin="1" pintype="passive"/>
+      <node ref="U702" pin="1" pinfunction="IN" pintype="power_in"/>
+      <node ref="U702" pin="3" pinfunction="EN" pintype="input"/>
+      <node ref="U705" pin="1" pinfunction="IN" pintype="power_in"/>
+    </net>
+    <net code="8" name="CHARGE_HOST_DCDC_IN" class="Default">
+      <node ref="C1201" pin="1" pintype="passive"/>
+      <node ref="C1202" pin="1" pintype="passive"/>
+      <node ref="C708" pin="1" pintype="passive"/>
+      <node ref="U705" pin="6" pinfunction="OUT" pintype="power_out"/>
+      <node ref="U706" pin="1" pinfunction="+VIN" pintype="power_in"/>
+    </net>
+    <net code="9" name="CHARGE_HOST_GND" class="Default">
+      <node ref="C1201" pin="2" pintype="passive"/>
+      <node ref="C1202" pin="2" pintype="passive"/>
+      <node ref="C704" pin="2" pintype="passive"/>
+      <node ref="C705" pin="2" pintype="passive"/>
+      <node ref="C706" pin="2" pintype="passive"/>
+      <node ref="C707" pin="2" pintype="passive"/>
+      <node ref="C708" pin="2" pintype="passive"/>
+      <node ref="C709" pin="2" pintype="passive"/>
+      <node ref="D701" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D902" pin="2" pinfunction="A2" pintype="passive"/>
+      <node ref="D903" pin="2" pinfunction="A2" pintype="passive"/>
+      <node ref="J901" pin="A1" pinfunction="GND" pintype="passive"/>
+      <node ref="J901" pin="A12" pinfunction="GND" pintype="passive"/>
+      <node ref="J901" pin="B1" pinfunction="GND" pintype="passive"/>
+      <node ref="J901" pin="B12" pinfunction="GND" pintype="passive"/>
+      <node ref="J901" pin="S1" pinfunction="SHIELD" pintype="passive"/>
+      <node ref="R706" pin="2" pintype="passive"/>
+      <node ref="R707" pin="2" pintype="passive"/>
+      <node ref="U702" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U703" pin="10" pinfunction="GND" pintype="power_in"/>
+      <node ref="U703" pin="11" pinfunction="EN_N" pintype="input"/>
+      <node ref="U703" pin="3" pinfunction="PORT_UFP" pintype="input"/>
+      <node ref="U704" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U705" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U706" pin="23" pinfunction="-VIN" pintype="power_in"/>
+      <node ref="U706" pin="24" pinfunction="-VIN" pintype="power_in"/>
+    </net>
+    <net code="10" name="CHARGE_HOST_ILIM" class="Default">
+      <node ref="R706" pin="1" pintype="passive"/>
+      <node ref="U705" pin="5" pinfunction="ILIM" pintype="passive"/>
+    </net>
+    <net code="11" name="CHARGE_HOST_POWER_EN" class="Default">
+      <node ref="R707" pin="1" pintype="passive"/>
+      <node ref="U704" pin="4" pinfunction="Y" pintype="output"/>
+      <node ref="U705" pin="3" pinfunction="EN" pintype="input"/>
+    </net>
+    <net code="12" name="CHARGE_HOST_RAW" class="Default">
+      <node ref="F701" pin="1" pintype="passive"/>
+      <node ref="J901" pin="A4" pinfunction="VBUS" pintype="passive"/>
+      <node ref="J901" pin="A9" pinfunction="VBUS" pintype="passive"/>
+      <node ref="J901" pin="B4" pinfunction="VBUS" pintype="passive"/>
+      <node ref="J901" pin="B9" pinfunction="VBUS" pintype="passive"/>
+    </net>
+    <net code="13" name="CHG_BOOT" class="Default">
+      <node ref="C608" pin="1" pintype="passive"/>
+      <node ref="U601" pin="12" pinfunction="BTST" pintype="passive"/>
+    </net>
+    <net code="14" name="CHG_CE" class="Default">
+      <node ref="J1204" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="R1205" pin="2" pintype="passive"/>
+      <node ref="U601" pin="3" pinfunction="~{CE}" pintype="input"/>
+    </net>
+    <net code="15" name="CHG_DETECT" class="Default">
+      <node ref="U601" pin="1" pinfunction="D-" pintype="bidirectional"/>
+      <node ref="U601" pin="24" pinfunction="D+" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="CHG_ILIM" class="Default">
+      <node ref="R603" pin="1" pintype="passive"/>
+      <node ref="U601" pin="8" pinfunction="ILIM" pintype="passive"/>
+    </net>
+    <net code="17" name="CHG_ISET" class="Default">
+      <node ref="R604" pin="1" pintype="passive"/>
+      <node ref="U601" pin="10" pinfunction="ICHGSET" pintype="passive"/>
+    </net>
+    <net code="18" name="CHG_PG" class="Default">
+      <node ref="J1204" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="U601" pin="9" pinfunction="~{PG}" pintype="open_collector"/>
+    </net>
+    <net code="19" name="CHG_PMID" class="Default">
+      <node ref="C602" pin="1" pintype="passive"/>
+      <node ref="C603" pin="1" pintype="passive"/>
+      <node ref="L601" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U601" pin="21" pinfunction="PMID" pintype="power_out"/>
+      <node ref="U601" pin="22" pinfunction="PMID" pintype="passive"/>
+    </net>
+    <net code="20" name="CHG_REGN" class="Default">
+      <node ref="C604" pin="1" pintype="passive"/>
+      <node ref="R605" pin="1" pintype="passive"/>
+      <node ref="U601" pin="11" pinfunction="REGN" pintype="power_out"/>
+    </net>
+    <net code="21" name="CHG_STAT" class="Default">
+      <node ref="LED601" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="TP606" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U601" pin="2" pinfunction="STAT" pintype="open_collector"/>
+    </net>
+    <net code="22" name="CHG_SW" class="Default">
+      <node ref="C608" pin="2" pintype="passive"/>
+      <node ref="L601" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U601" pin="17" pinfunction="SW" pintype="power_in"/>
+      <node ref="U601" pin="18" pinfunction="SW" pintype="passive"/>
+    </net>
+    <net code="23" name="CHG_SYS" class="Default">
+      <node ref="C605" pin="1" pintype="passive"/>
+      <node ref="C606" pin="1" pintype="passive"/>
+      <node ref="U601" pin="15" pinfunction="SYS" pintype="power_out"/>
+      <node ref="U601" pin="16" pinfunction="SYS" pintype="passive"/>
+    </net>
+    <net code="24" name="CHG_TS" class="Default">
+      <node ref="C609" pin="1" pintype="passive"/>
+      <node ref="J1204" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R605" pin="2" pintype="passive"/>
+      <node ref="R606" pin="1" pintype="passive"/>
+      <node ref="U601" pin="7" pinfunction="TS" pintype="input"/>
+    </net>
+    <net code="25" name="GND" class="Default">
+      <node ref="C1203" pin="2" pintype="passive"/>
+      <node ref="C1204" pin="2" pintype="passive"/>
+      <node ref="C601" pin="2" pintype="passive"/>
+      <node ref="C602" pin="2" pintype="passive"/>
+      <node ref="C603" pin="2" pintype="passive"/>
+      <node ref="C604" pin="2" pintype="passive"/>
+      <node ref="C605" pin="2" pintype="passive"/>
+      <node ref="C606" pin="2" pintype="passive"/>
+      <node ref="C607" pin="2" pintype="passive"/>
+      <node ref="C609" pin="2" pintype="passive"/>
+      <node ref="C710" pin="2" pintype="passive"/>
+      <node ref="D601" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J1204" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R603" pin="2" pintype="passive"/>
+      <node ref="R604" pin="2" pintype="passive"/>
+      <node ref="R606" pin="2" pintype="passive"/>
+      <node ref="U601" pin="19" pinfunction="GND" pintype="passive"/>
+      <node ref="U601" pin="20" pinfunction="GND" pintype="passive"/>
+      <node ref="U601" pin="25" pinfunction="GND" pintype="passive"/>
+      <node ref="U601" pin="4" pinfunction="GND" pintype="power_in"/>
+      <node ref="U601" pin="5" pinfunction="OTG" pintype="input"/>
+      <node ref="U601" pin="6" pinfunction="VSET" pintype="passive"/>
+      <node ref="U706" pin="12" pinfunction="-VOUT" pintype="passive"/>
+    </net>
+    <net code="26" name="LED_CHG_A" class="Default">
+      <node ref="LED601" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R609" pin="2" pintype="passive"/>
+    </net>
+    <net code="27" name="PACK_POS" class="Default">
+      <node ref="C607" pin="1" pintype="passive"/>
+      <node ref="J1204" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="U601" pin="13" pinfunction="BAT" pintype="passive"/>
+      <node ref="U601" pin="14" pinfunction="BAT" pintype="passive"/>
+    </net>
+    <net code="28" name="USB5" class="Default">
+      <node ref="C601" pin="1" pintype="passive"/>
+      <node ref="D601" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="F602" pin="2" pintype="passive"/>
+      <node ref="J1204" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="R1205" pin="1" pintype="passive"/>
+      <node ref="R609" pin="1" pintype="passive"/>
+      <node ref="U601" pin="23" pinfunction="VBUS" pintype="power_in"/>
+    </net>
+    <net code="29" name="USB_RAW" class="Default">
+      <node ref="C1203" pin="1" pintype="passive"/>
+      <node ref="C1204" pin="1" pintype="passive"/>
+      <node ref="C710" pin="1" pintype="passive"/>
+      <node ref="F602" pin="1" pintype="passive"/>
+      <node ref="U706" pin="13" pinfunction="+VOUT" pintype="power_out"/>
+    </net>
+    <net code="30" name="unconnected-(J901-D+-PadA6)" class="Default">
+      <node ref="J901" pin="A6" pinfunction="D+" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="31" name="unconnected-(J901-D+-PadB6)" class="Default">
+      <node ref="J901" pin="B6" pinfunction="D+" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="32" name="unconnected-(J901-D--PadA7)" class="Default">
+      <node ref="J901" pin="A7" pinfunction="D-" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="33" name="unconnected-(J901-D--PadB7)" class="Default">
+      <node ref="J901" pin="B7" pinfunction="D-" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="34" name="unconnected-(J901-SBU1-PadA8)" class="Default">
+      <node ref="J901" pin="A8" pinfunction="SBU1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="35" name="unconnected-(J901-SBU2-PadB8)" class="Default">
+      <node ref="J901" pin="B8" pinfunction="SBU2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(U702-NC-Pad4)" class="Default">
+      <node ref="U702" pin="4" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="37" name="unconnected-(U703-ADDR_GPIO-Pad5)" class="Default">
+      <node ref="U703" pin="5" pinfunction="ADDR_GPIO" pintype="input+no_connect"/>
+    </net>
+    <net code="38" name="unconnected-(U703-ID-Pad9)" class="Default">
+      <node ref="U703" pin="9" pinfunction="ID" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="39" name="unconnected-(U703-OUT3-Pad6)" class="Default">
+      <node ref="U703" pin="6" pinfunction="OUT3" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="40" name="unconnected-(U704-NC-Pad1)" class="Default">
+      <node ref="U704" pin="1" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="41" name="unconnected-(U705-FAULT-Pad4)" class="Default">
+      <node ref="U705" pin="4" pinfunction="FAULT" pintype="open_collector+no_connect"/>
+    </net>
+  </nets>
+</export>

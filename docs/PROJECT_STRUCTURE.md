@@ -1,31 +1,14 @@
-# 目录与版本约定
+# 项目目录与版本
 
-| 路径 | 用途 |
-|---|---|
-| `hardware/YuEEG_8CH_RevE/` | 当前 KiCad 原生工程、BOM、加工文件、PDF、预览和静态检查记录 |
-| `Firmware/ads1299_driver/` | 当前固件的唯一开发入口 |
-| `Firmware/tools/` | 当前二进制帧接收、无线控制和协议测试 |
-| `hardware/YuEEG_8CH_RevE/firmware/` | 与工程评审包绑定的固件快照及编译产物，不在此目录开发 |
-| `hardware/*review.zip` | 各版冻结的工程评审交付包 |
-| `hardware/archive/README.md` | 历史硬件索引及使用范围 |
-| `Firmware/Plot/` | 旧文本串口协议绘图程序，未适配 Rev E |
-| `Paradigm/` | 历史 SSVEP 范式、UI 和平台依赖，未集成 Rev E 协议 |
-| `Model/` | 历史外壳/脑电帽模型，未适配 Rev E 板框 |
-| `docs/archive/` | 归档的旧首页与使用方法 |
-| `reference/README.md` | 芯片资料的一手来源索引；本机下载文件不上传 |
-| `scripts/verify_review.py` | 验证冻结交付与当前源代码、可重新生成评审 ZIP |
+- `Firmware/ads1299_driver/`：当前 Rev F 固件源文件及烧录说明。
+- `Firmware/tools/`：接收、控制、离线 SD 解析和主机协议测试。
+- `hardware/YuEEG_8CH_RevF/`：主板 KiCad、16 页原理图、BOM、模型、固件快照及静态检查。
+- `hardware/YuEEG_8CH_RevF/isolated_power/`：隔离充电副板独立工程、4 页原理图与加工文件。
+- 两板各自 `fabrication_review/`：Gerber、钻孔、正面 SMT 坐标和装配说明；`review/`：静态证据、完整网表与预览。
+- `hardware/YuEEG_8CH_RevD/`、`hardware/YuEEG_8CH_RevE/`：冻结的历史交付及其源文件/固件快照，不与当前固件混验。
+- `hardware/archive/`、`docs/archive/`：历史入口与早期记录。
+- `reference/README.md`：一手资料索引；本机保存的第三方数据手册不随项目许可提交。
+- `scripts/verify_review.py`：校验当前交付清单、双板报告、固件快照、ZIP 与历史冻结字节。
+- `logs/`、`Firmware/build_revF/`：本机布线和编译工作区，不提交。
 
-历史文件保留原路径，避免破坏旧程序的相对路径。历史 DLL、资源和模型保留，不代表当前可安装或已测试；例如 `Paradigm/src/stream.py` 仍依赖仓库未提供的 `lib.neuracle_lib`。
-
-本机的历史 KiCad 工作目录、布线器/JRE、DSN/SES、中途 DRC 报告、完整编译缓存和日志不进入 Git。旧版原生文件可从对应 ZIP 获取。新增版本应复制为新目录，并单独生成与最终 PCB 哈希绑定的检查报告，不能覆盖已有评审记录。
-
-当前工程目录只提交 `CHECKSUMS.json` 列出的交付文件及该目录的 `.gitignore`，防止重复运行一次性迁移脚本。这些文件包含固件快照；修改规范源代码后，必须重新编译、复核并更新快照与校验清单，验证脚本会拒绝源代码与快照不一致的状态。
-
-## 验证命令
-
-```powershell
-python Firmware/tools/test_protocol.py
-python scripts/verify_review.py
-```
-
-静态报告中的零错误不等于模拟性能或整机安全合格。软件协议测试、固件编译、静态电气检查、实物验收四类证据应分别记录。
+当前评审 ZIP 为 `hardware/YuEEG_8CH_RevF_70x80_main_44x48_power_review.zip`。交付中的 `CHECKSUMS.json` 绑定两个 PCB、加工输出、文档与固件快照；ZIP 需与清单逐字节对应。任何硬件修改后都要重新生成相关报告与输出，不能沿用旧版“通过”结论。

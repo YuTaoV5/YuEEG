@@ -42,3 +42,7 @@ Thumbs.db
 /Firmware/build_revE.log
 !/hardware/YuEEG_8CH_RevE/
 !/hardware/YuEEG_8CH_RevE_94x122_dual_USB_AMOLED_SD_review.zip
+/Firmware/build_revF/
+/Firmware/build_revF.log
+!/hardware/YuEEG_8CH_RevF/
+!/hardware/YuEEG_8CH_RevF_70x80_main_44x48_power_review.zip

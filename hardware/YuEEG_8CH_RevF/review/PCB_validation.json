@@ -1,0 +1,33 @@
+{
+  "revision": "F",
+  "date": "2026-10-28",
+  "pcb_envelope_mm": [
+    70.0,
+    80.0
+  ],
+  "copper_layers": 4,
+  "footprints": 305,
+  "top_footprints": 305,
+  "bottom_footprints": 0,
+  "schematic_sheets": 16,
+  "ERC_violations": 0,
+  "DRC_violations": 0,
+  "unconnected_items": 0,
+  "schematic_parity_issues": 0,
+  "all_exported_ref_pin_pairs_checked": 876,
+  "track_segments_by_layer": {
+    "F.Cu": 2567,
+    "In2.Cu": 736,
+    "B.Cu": 701
+  },
+  "vias": 683,
+  "via_in_pad_require_filled_capped": 68,
+  "default_clearance_mm": 0.15,
+  "local_NexFET_clearance_mm": 0.13,
+  "minimum_via_diameter_mm": 0.4,
+  "minimum_drill_mm": 0.2,
+  "host_system_clearance_rule_mm": 8,
+  "sha256_pcb": "17034934d92b7c8b1812fe8afe126c4306112da1b6f088af04f2fbbcbee481cb",
+  "physical_qualification_completed": false,
+  "scope": "Engineering review only; board-house assembly review and hardware qualification pending."
+}
