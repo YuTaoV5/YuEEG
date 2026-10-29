@@ -1,4 +1,6 @@
-// Rev F: SDMMC backup and write-only RM67162 QSPI status panel.
+// Rev G: SDMMC backup and write-only AM178Q368448LK CO5300 QSPI panel.
+// Register settings and x-gap adapted from OSPTEK supplied AM178 ESP32-S3 example.
+// OSPTEK material attribution: see THIRD_PARTY_DISPLAY.md.
 // Panel power/logic sequence must be verified on first article, with no electrodes.
 #pragma once
 #include <SD_MMC.h>
@@ -43,6 +45,7 @@ void sdTask(void*){
  sdDrops+=xStreamBufferBytesAvailable(backupStream)/FRAME_BYTES;
  if(file)file.close();SD_MMC.end();vTaskDelete(nullptr);
 }
+constexpr uint16_t PANEL_WIDTH=368, PANEL_HEIGHT=448, PANEL_X_GAP=16;
 spi_device_handle_t panel=nullptr;
 bool panelWrite(uint8_t reg,const void* data,size_t bytes,bool quad=false){
  spi_transaction_t t{};t.cmd=quad?0x32:0x02;t.addr=uint32_t(reg)<<8;t.length=bytes*8;t.tx_buffer=data;
@@ -51,6 +54,8 @@ bool panelWrite(uint8_t reg,const void* data,size_t bytes,bool quad=false){
 }
 bool panelReg(uint8_t reg,uint8_t val){return panelWrite(reg,&val,1);}
 bool panelWindow(uint16_t x,uint16_t y,uint16_t w,uint16_t h){
+ if(!w||!h||x+w>PANEL_WIDTH||y+h>PANEL_HEIGHT)return false;
+ x+=PANEL_X_GAP;
  uint8_t a[]={uint8_t(x>>8),uint8_t(x),uint8_t((x+w-1)>>8),uint8_t(x+w-1)};
  uint8_t c[]={uint8_t(y>>8),uint8_t(y),uint8_t((y+h-1)>>8),uint8_t(y+h-1)};
  return panelWrite(0x2A,a,4)&&panelWrite(0x2B,c,4);
@@ -63,7 +68,7 @@ uint16_t glyph(char c){
  const char* p=strchr(names,c);return p?bits[p-names]:0;
 }
 bool panelLine(uint16_t y,const char* text,uint16_t* pixels){
- constexpr int scale=3,height=18,width=240;
+ constexpr int scale=3,height=18,width=PANEL_WIDTH;
  memset(pixels,0,width*height*2);
  for(int i=0;text[i]&&i<20;++i){uint16_t g=glyph(text[i]);for(int r=0;r<5;++r)for(int c=0;c<3;++c)if(g&(1<<(14-r*3-c)))
   for(int dy=0;dy<scale;++dy)for(int dx=0;dx<scale;++dx)pixels[(r*scale+dy)*width+i*12+c*scale+dx]=0xFFFF;}
@@ -73,18 +78,21 @@ void panelTask(void*){
  // Configure every input before turning on the load switch / level translator.
  digitalWrite(42,LOW);pinMode(42,OUTPUT);digitalWrite(17,LOW);pinMode(17,OUTPUT);
  for(int gpio:{2,8,9,14,15,16}){digitalWrite(gpio,gpio==2?HIGH:LOW);pinMode(gpio,OUTPUT);}
- spi_bus_config_t bus{};bus.sclk_io_num=8;bus.mosi_io_num=9;bus.miso_io_num=14;bus.quadwp_io_num=15;bus.quadhd_io_num=16;bus.max_transfer_sz=240*18*2;bus.flags=SPICOMMON_BUSFLAG_MASTER|SPICOMMON_BUSFLAG_QUAD;
+ spi_bus_config_t bus{};bus.sclk_io_num=8;bus.mosi_io_num=9;bus.miso_io_num=14;bus.quadwp_io_num=15;bus.quadhd_io_num=16;bus.max_transfer_sz=PANEL_WIDTH*18*2;bus.flags=SPICOMMON_BUSFLAG_MASTER|SPICOMMON_BUSFLAG_QUAD;
  spi_device_interface_config_t dev{};dev.clock_speed_hz=10000000;dev.mode=0;dev.spics_io_num=2;dev.queue_size=1;dev.command_bits=8;dev.address_bits=24;dev.flags=SPI_DEVICE_HALFDUPLEX;
- uint16_t* pixels=(uint16_t*)heap_caps_malloc(240*18*2,MALLOC_CAP_DMA|MALLOC_CAP_INTERNAL);
+ uint16_t* pixels=(uint16_t*)heap_caps_malloc(PANEL_WIDTH*18*2,MALLOC_CAP_DMA|MALLOC_CAP_INTERNAL);
  if(!pixels||spi_bus_initialize(SPI3_HOST,&bus,SPI_DMA_CH_AUTO)!=ESP_OK||spi_bus_add_device(SPI3_HOST,&dev,&panel)!=ESP_OK){if(pixels)free(pixels);vTaskDelete(nullptr);}
- digitalWrite(42,HIGH);vTaskDelay(pdMS_TO_TICKS(20));digitalWrite(17,HIGH);vTaskDelay(pdMS_TO_TICKS(120));
- bool ok=panelWrite(0x11,nullptr,0);vTaskDelay(pdMS_TO_TICKS(120));
- ok=ok&&panelReg(0x3A,0x55)&&panelReg(0x36,0)&&panelReg(0x51,0x40);
- memset(pixels,0,240*18*2);
- for(int y=0;ok&&y<536;y+=18){int h=min(18,536-y);ok=panelWindow(0,y,240,h)&&panelWrite(0x2C,pixels,240*h*2,true);}
- ok=ok&&panelWrite(0x29,nullptr,0);panelReady=ok;
+ digitalWrite(42,HIGH);vTaskDelay(pdMS_TO_TICKS(20));digitalWrite(17,HIGH);vTaskDelay(pdMS_TO_TICKS(150));
+ bool ok=panelReg(0xFE,0x00)&&panelWrite(0x11,nullptr,0);vTaskDelay(pdMS_TO_TICKS(120));
+ ok=ok&&panelReg(0xFE,0x00)&&panelReg(0xC4,0x80)&&panelReg(0x3A,0x55)
+   &&panelReg(0x36,0)&&panelReg(0x53,0x20)&&panelReg(0x63,0xFF)
+   &&panelWrite(0x34,nullptr,0)&&panelReg(0x51,0x40); // TE disabled, low brightness
+ memset(pixels,0,PANEL_WIDTH*18*2);
+ for(int y=0;ok&&y<PANEL_HEIGHT;y+=18){int h=min(18,int(PANEL_HEIGHT)-y);ok=panelWindow(0,y,PANEL_WIDTH,h)&&panelWrite(0x2C,pixels,PANEL_WIDTH*h*2,true);}
+ ok=ok&&panelWrite(0x29,nullptr,0);vTaskDelay(pdMS_TO_TICKS(60));
+ ok=ok&&panelReg(0x58,0x07);vTaskDelay(pdMS_TO_TICKS(10));panelReady=ok;
  while(ok){char text[24];
-  ok=panelLine(24,"YUEEG REV F",pixels);
+  ok=panelLine(24,"YUEEG REV G",pixels);
   snprintf(text,sizeof(text),"ADC %s MODE %u",adcOK?"OK":"FAULT",mode.load());ok=ok&&panelLine(72,text,pixels);
   snprintf(text,sizeof(text),"SEQ %lu",(unsigned long)latestSequence.load());ok=ok&&panelLine(108,text,pixels);
   snprintf(text,sizeof(text),"WIFI %u USB %u",WiFi.softAPgetStationNum(),bool(Serial));ok=ok&&panelLine(144,text,pixels);
@@ -94,7 +102,8 @@ void panelTask(void*){
   snprintf(text,sizeof(text),"ADC MISS %lu",(unsigned long)missed.load());ok=ok&&panelLine(288,text,pixels);
   ok=ok&&panelLine(360,"REC START / STOP",pixels);vTaskDelay(pdMS_TO_TICKS(1000));
  }
- panelReady=false;digitalWrite(42,LOW);free(pixels);vTaskDelete(nullptr);
+ panelReady=false;digitalWrite(17,LOW);digitalWrite(42,LOW);
+ spi_bus_remove_device(panel);spi_bus_free(SPI3_HOST);free(pixels);vTaskDelete(nullptr);
 }
 void startUI(){
  pinMode(41,INPUT);

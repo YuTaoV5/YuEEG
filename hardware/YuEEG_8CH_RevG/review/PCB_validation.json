@@ -1,0 +1,21 @@
+{
+  "revision": "G",
+  "date": "2026-10-29",
+  "pcb_envelope_mm": [
+    70,
+    80
+  ],
+  "copper_layers": 4,
+  "footprints": 305,
+  "top_footprints": 305,
+  "bottom_footprints": 0,
+  "schematic_sheets": 16,
+  "ERC_violations": 0,
+  "DRC_violations": 0,
+  "unconnected_items": 0,
+  "schematic_parity_issues": 0,
+  "vias": 683,
+  "via_in_pad_require_filled_capped": 68,
+  "sha256_pcb": "b2e35d46f812cbaacf447e0e0ec7afeaa4b7391dd90ed41a4d5cf000e1f43033",
+  "physical_qualification_completed": false
+}

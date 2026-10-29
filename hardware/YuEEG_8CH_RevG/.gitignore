@@ -1,0 +1,7 @@
+*.kicad_prl
+__pycache__/
+*.dsn
+*.ses
+routing.log
+export.log
+models/AMOLED_DO0200PFS12.wrl

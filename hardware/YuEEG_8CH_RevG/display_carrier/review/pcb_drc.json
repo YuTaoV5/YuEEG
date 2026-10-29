@@ -1,0 +1,10 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-29T22:21:06+0800",
+    "kicad_version": "9.0.5",
+    "schematic_parity": [],
+    "source": "YuEEG_DISPLAY_G.kicad_pcb",
+    "unconnected_items": [],
+    "violations": []
+}

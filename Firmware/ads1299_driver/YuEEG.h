@@ -1,4 +1,4 @@
-// ESP32-S3, YuEEG Rev F. Native USB Serial/JTAG and simultaneous WiFi UDP.
+// ESP32-S3, YuEEG Rev G. Native USB Serial/JTAG and simultaneous WiFi UDP.
 #pragma once
 #include <Arduino.h>
 #include <SPI.h>
@@ -133,7 +133,7 @@ void startWiFi() {
 }
 void report() {
  Serial.printf("# YuEEG v1 ADC=%s mode=%u gain=%u missed=%lu queue_drop=%lu usb_drop=%lu udp_drop=%lu\n",adcOK?"ready":"FAULT",mode.load(),gain,(unsigned long)missed.load(),(unsigned long)queueDrops.load(),(unsigned long)usbDrops.load(),(unsigned long)udpDrops.load());
- Serial.printf("# RevE SD=%s saved=%lu sd_drop=%lu panel_bus=%s\n",sdReady?"ready":"absent/fault",(unsigned long)sdFrames.load(),(unsigned long)sdDrops.load(),panelReady?"OK (unverified panel)":"not ready");
+ Serial.printf("# RevG SD=%s saved=%lu sd_drop=%lu panel_bus=%s\n",sdReady?"ready":"absent/fault",(unsigned long)sdFrames.load(),(unsigned long)sdDrops.load(),panelReady?"OK (unverified panel)":"not ready");
  Serial.printf("# AP %s password=%s IP=%s STA=%s\n",WiFi.softAPSSID().c_str(),prefs.getString("ap_pass","").c_str(),WiFi.softAPIP().toString().c_str(),WiFi.localIP().toString().c_str());
  Serial.printf("# CPU=%uMHz Flash=%lu PSRAM=%lu bytes\n",ESP.getCpuFreqMHz(),(unsigned long)ESP.getFlashChipSize(),(unsigned long)ESP.getPsramSize());
  Serial.println("# start | stop | test | probe 1..8 | gain 1/2/4/6/8/12/24 | udp IP PORT | wifi SSID<TAB>PASSWORD | status");

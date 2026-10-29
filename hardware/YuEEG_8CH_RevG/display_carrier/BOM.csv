@@ -1,0 +1,16 @@
+﻿Reference,Value,Footprint,Sheet,Datasheet
+J2001,FTSH-110-01-L-DV-K-P-TR / FROM MAIN,YuEEG:Samtec_FTSH_110_01_L_DV_K_2x10,YuEEG_DISPLAY_G,~
+J2002,OK-14F024-04 / AM178Q368448LK,YuEEG:OCN_OK_14F024_04,YuEEG_DISPLAY_G,../../../display-amoled-1.78inch-368x448-main/versions/AM178Q368448LK/cad/OK-14F024-04.pdf
+C2001,10u 10V X7R,Capacitor_SMD:C_0603_1608Metric,YuEEG_DISPLAY_G,~
+C2002,100n 10V,Capacitor_SMD:C_0603_1608Metric,YuEEG_DISPLAY_G,~
+C2003,1u 10V,Capacitor_SMD:C_0603_1608Metric,YuEEG_DISPLAY_G,~
+C2004,100n 10V,Capacitor_SMD:C_0603_1608Metric,YuEEG_DISPLAY_G,~
+C2005,100n 10V,Capacitor_SMD:C_0603_1608Metric,YuEEG_DISPLAY_G,~
+R2001,0R,Resistor_SMD:R_0603_1608Metric,YuEEG_DISPLAY_G,~
+R2002,100k,Resistor_SMD:R_0603_1608Metric,YuEEG_DISPLAY_G,~
+R2003,47k,Resistor_SMD:R_0603_1608Metric,YuEEG_DISPLAY_G,~
+R2004,47k,Resistor_SMD:R_0603_1608Metric,YuEEG_DISPLAY_G,~
+H2001,M2 / 10mm insulated standoff,MountingHole:MountingHole_2.2mm_M2,YuEEG_DISPLAY_G,~
+H2002,M2 / 10mm insulated standoff,MountingHole:MountingHole_2.2mm_M2,YuEEG_DISPLAY_G,~
+H2003,M2 / 10mm insulated standoff,MountingHole:MountingHole_2.2mm_M2,YuEEG_DISPLAY_G,~
+H2004,M2 / 10mm insulated standoff,MountingHole:MountingHole_2.2mm_M2,YuEEG_DISPLAY_G,~

@@ -15,3 +15,5 @@
 Rev E 新增 AMOLED、超薄按键、SDMMC 及双 USB 的一手资料与设计取舍，见 [Rev E 复核](../hardware/YuEEG_8CH_RevE/REV_E_REVIEW.md#primary-sources)。
 
 Rev F 的普通按键、紧凑显示连接器、叠装与主副板充电架构资料见 [Rev F 复核](../hardware/YuEEG_8CH_RevF/REV_F_REVIEW.md#一手资料)。
+
+Rev G 使用用户提供的 OSPTEK AM178Q368448LK 完整资料，来源、授权和 SHA256 见 [归档](../hardware/YuEEG_8CH_RevG/reference/README.md)，接线与规格冲突处理见 [适配复核](../hardware/YuEEG_8CH_RevG/DISPLAY_INTEGRATION.md)。

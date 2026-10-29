@@ -1,6 +1,6 @@
-# Rev F 使用指南
+# Rev G 使用指南
 
-用 KiCad 9 分别打开 [主板工程](../hardware/YuEEG_8CH_RevF/YuEEG_8CH_RevF.kicad_pro) 和 [隔离充电副板](../hardware/YuEEG_8CH_RevF/isolated_power/YuEEG_8CH_RevF_POWER.kicad_pro)。主板 70 × 80 mm、305 封装、16 页；副板 44 × 48 mm、50 封装、4 页，均四层且元件全在正面。投板前阅读 [复核记录](../hardware/YuEEG_8CH_RevF/REV_F_REVIEW.md) 和两板 fabrication_review/ASSEMBLY_NOTES.md。
+用 KiCad 9 打开 [主板](../hardware/YuEEG_8CH_RevG/YuEEG_8CH_RevG.kicad_pro)、[屏幕载板](../hardware/YuEEG_8CH_RevG/display_carrier/YuEEG_DISPLAY_G.kicad_pro) 和 [隔离充电副板](../hardware/YuEEG_8CH_RevG/isolated_power/YuEEG_8CH_RevF_POWER.kicad_pro)。尺寸和装配见 [Rev G 入口](../hardware/YuEEG_8CH_RevG/README.md)。
 
 | 接法 | 工作方式 |
 |---|---|
@@ -15,7 +15,7 @@
 
 电极 J1301：1 REF、2 BIAS、3 CH8 至 10 CH1。BIAS 为有源共模电极，不是保护地。充电前拔下整个十路电极线束并关闭主板；软件 stop 不能代替物理断开。J301 pogo 是非隔离台架调试点，使用前也应拔下电极。
 
-AMOLED 在主板上方使用四个名义 8 mm 绝缘支柱。专用显示接口是 FTSH-110 20 针，前 18 个功能接模块 CN1，19/20 为 GND；需验证 20→18 定制线束，不能接 JTAG。模块准确型号、插头方向和局部去耦应按供应商实物确认。
+AM178Q368448LK AMOLED 在 35 × 67 mm 载板上，四个 10 mm 绝缘支柱叠装。主板到载板使用 20→20 直通有键线缆；载板的 OCN 母座直接配屏幕 FPC。通电前核对实际 pin 1 和全部电源脚，详见 [显示适配说明](../hardware/YuEEG_8CH_RevG/DISPLAY_INTEGRATION.md)。
 
 固件烧录、Wi-Fi 配置、采集命令、显示和 SD 操作见 [固件说明](../Firmware/ads1299_driver/README.md)。首次只接模拟信号源/假电极验证电源、寄存器、采样和保护，不以静态规则检查代替样机验收。
 

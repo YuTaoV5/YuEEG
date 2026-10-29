@@ -1,6 +1,6 @@
-# YuEEG Rev F firmware (ESP32-S3-WROOM-1-N16R8)
+# YuEEG Rev G firmware (ESP32-S3-WROOM-1-N16R8)
 
-Rev F keeps simultaneous isolated USB CDC + Wi-Fi UDP, RM67162 AMOLED status and SDMMC backup. The main board runs from its protected 2S battery; its detached isolated charger never powers acquisition directly. GPIO assignments and the 50-byte protocol are unchanged from Rev E. Rev D/E source and binaries remain frozen in their hardware review folders.
+Rev G keeps simultaneous isolated USB CDC + Wi-Fi UDP, CO5300 AM178 AMOLED status and SDMMC backup. The main board runs from its protected 2S battery; its detached isolated charger never powers acquisition directly. GPIO assignments and the 50-byte protocol are unchanged from Rev E. Rev D/E/F source and binaries remain frozen in their hardware review folders.
 
 ## Build
 
@@ -33,9 +33,9 @@ AP credentials are generated randomly and stored in NVS; USB `status` reports th
 
 ## AMOLED
 
-Use DWO DO0200PFS12 **RM67162 variant**, 240 x 536, configured for QSPI (IM1 high, module R4 fitted/R3 absent). Confirm the supplier's exact initialization and connector orientation before purchasing. Main J1001 is a dedicated keyed Samtec FTSH-110 20-pin display connector, not JTAG. A verified custom 20-to-18 harness connects its first 18 electrical functions to module CN1; main pins 19/20 are extra GND. Safely terminate/insulate unused conductors. Connector pitch alone does not establish module compatibility. The module uses four nominal 8 mm insulated standoffs above the main board.
+Use OSPTEK AM178Q368448LK **CO5300 QSPI**, 368 x 448, with Rev G display carrier. Main J1001 connects to carrier J2001 through a keyed 20-to-20 straight cable, every pin 1-to-1; verify orientation before use. Carrier J2002 is OCN OK-14F024-04 female. Use 10 mm insulated standoffs and an insulating glass support; see the hardware DISPLAY_INTEGRATION.md. This firmware does not drive the previous RM67162 panel.
 
-The load switch enables module VBAT, a 2.8 V regulator supplies VCC and a 1.8 V regulator supplies IOVCC. The SN74AXC8T245 translates the seven write-only control/data lines. Firmware sets input states before enabling power, releases RESET after rail settling, uses RGB565 and starts at reduced brightness. The QSPI register framing and common RM67162 commands follow the primary Arduino_GFX driver; manufacturer-specific initialization remains a first-article check.
+The load switch supplies module VBAT at 3.3 V; IOVCC is 1.8 V through the existing SN74AXC8T245 level translator. Main 2.8 V and IM1 signals are unused by this carrier. Touch remains held in reset. CO5300 register settings and x-gap=16 are adapted from the supplied OSPTEK example (see THIRD_PARTY_DISPLAY.md). Firmware uses RGB565, sets a bounded 368 x 448 window, starts at brightness 0x40, and disables TE. RESET is held low before power-up, then released after settling. First-article power/initialization validation is still required.
 
 SPI3 at 10 MHz is separate from ADS SPI2. A low-priority task updates status once per second using an internal DMA buffer; no touch, TE synchronization or waveform renderer is implemented. `panel_bus=OK` means transactions were accepted by the ESP controller: this write-only path cannot identify or confirm a working panel. SPI/SD activity and Wi-Fi coupling must be measured during noise qualification.
 

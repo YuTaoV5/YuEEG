@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>X:\Items\YuEEG\hardware\YuEEG_8CH_RevG\display_carrier\YuEEG_DISPLAY_G.kicad_sch</source>
+    <date>2026-10-29T22:30:45+0800</date>
+    <tool>Eeschema 9.0.5</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Rev G / OSPTEK AM178 display carrier - 1.8V logic</title>
+        <company>YuEEG</company>
+        <rev>G</rev>
+        <date>2026-10-29</date>
+        <source>YuEEG_DISPLAY_G.kicad_sch</source>
+        <comment number="1" value="BATTERY ONLY - NOT VALIDATED FOR HUMAN CONNECTION"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C2001">
+      <value>10u 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="YuEEG_DISPLAY_G.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8dc0dcb8-00e3-4416-a3dc-6e24bde1465a</tstamps>
+    </comp>
+    <comp ref="C2002">
+      <value>100n 10V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="YuEEG_DISPLAY_G.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>41fde3b1-10d3-4747-a5fb-8d75b02cb796</tstamps>
+    </comp>
+    <comp ref="C2003">
+      <value>1u 10V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="YuEEG_DISPLAY_G.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6cb224d4-a11c-4de2-87eb-451a5ec0e06f</tstamps>
+    </comp>
+    <comp ref="C2004">
+      <value>100n 10V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="YuEEG_DISPLAY_G.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cd744ddd-a3ac-4698-90c1-39ac8dd9586b</tstamps>
+    </comp>
+    <comp ref="C2005">
+      <value>100n 10V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="YuEEG_DISPLAY_G.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e0179168-75b6-4b0a-bce9-b93ac674be94</tstamps>
+    </comp>
+    <comp ref="H2001">
+      <value>M2 / 10mm insulated standoff</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">MountingHole:MountingHole_2.2mm_M2</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="YuEEG_DISPLAY_G.kicad_sch"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>83688506-b453-4393-b3bd-a600c60390f4</tstamps>
+    </comp>
+    <comp ref="H2002">
+      <value>M2 / 10mm insulated standoff</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">MountingHole:MountingHole_2.2mm_M2</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="YuEEG_DISPLAY_G.kicad_sch"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2ccc7200-4a14-4b7d-84e1-7e77d1cf1670</tstamps>
+    </comp>
+    <comp ref="H2003">
+      <value>M2 / 10mm insulated standoff</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">MountingHole:MountingHole_2.2mm_M2</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="YuEEG_DISPLAY_G.kicad_sch"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8e6b7769-691d-4f9c-b74d-42b2df60324f</tstamps>
+    </comp>
+    <comp ref="H2004">
+      <value>M2 / 10mm insulated standoff</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">MountingHole:MountingHole_2.2mm_M2</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="YuEEG_DISPLAY_G.kicad_sch"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7c3731f3-243d-486d-90ac-828537145758</tstamps>
+    </comp>
+    <comp ref="J2001">
+      <value>FTSH-110-01-L-DV-K-P-TR / FROM MAIN</value>
+      <footprint>YuEEG:Samtec_FTSH_110_01_L_DV_K_2x10</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">YuEEG:Samtec_FTSH_110_01_L_DV_K_2x10</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_02x10_Odd_Even" description="Generic connector, double row, 02x10, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="YuEEG_DISPLAY_G.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_2x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4d761700-0c5e-461c-a482-32bbc57d5760</tstamps>
+    </comp>
+    <comp ref="J2002">
+      <value>OK-14F024-04 / AM178Q368448LK</value>
+      <footprint>YuEEG:OCN_OK_14F024_04</footprint>
+      <datasheet>../../../display-amoled-1.78inch-368x448-main/versions/AM178Q368448LK/cad/OK-14F024-04.pdf</datasheet>
+      <fields>
+        <field name="Footprint">YuEEG:OCN_OK_14F024_04</field>
+        <field name="Datasheet">../../../display-amoled-1.78inch-368x448-main/versions/AM178Q368448LK/cad/OK-14F024-04.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="YuEEG" part="AM178_BTB" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="YuEEG_DISPLAY_G.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2e5a6ba1-0be2-4276-add8-3ef8e6a57080</tstamps>
+    </comp>
+    <comp ref="R2001">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="YuEEG_DISPLAY_G.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1c1348d8-6e70-4ca1-ae98-40f7445f37ab</tstamps>
+    </comp>
+    <comp ref="R2002">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="YuEEG_DISPLAY_G.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>620e16fa-91f6-4c62-a51c-a3d5d4b3a04f</tstamps>
+    </comp>
+    <comp ref="R2003">
+      <value>47k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="YuEEG_DISPLAY_G.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1a263c90-7eb9-4e24-8776-ef105589111b</tstamps>
+    </comp>
+    <comp ref="R2004">
+      <value>47k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="YuEEG_DISPLAY_G.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f77c396c-a34f-4859-86b6-b945d67e3bc1</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_02x10_Odd_Even">
+      <description>Generic connector, double row, 02x10, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x10_Odd_Even</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Generic connector, double row, 02x10, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+        <pin num="17" name="Pin_17" type="passive"/>
+        <pin num="18" name="Pin_18" type="passive"/>
+        <pin num="19" name="Pin_19" type="passive"/>
+        <pin num="20" name="Pin_20" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Mounting Hole without connection</field>
+      </fields>
+    </libpart>
+    <libpart lib="YuEEG" part="AM178_BTB">
+      <docs>../../../display-amoled-1.78inch-368x448-main/versions/AM178Q368448LK/cad/OK-14F024-04.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AM178_BTB</field>
+        <field name="Footprint">YuEEG:OCN_OK_14F024_04</field>
+        <field name="Datasheet">../../../display-amoled-1.78inch-368x448-main/versions/AM178Q368448LK/cad/OK-14F024-04.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="LCD_RST" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="LCD_TE" type="passive"/>
+        <pin num="4" name="LCD_CS" type="passive"/>
+        <pin num="5" name="QSPI_CLK" type="passive"/>
+        <pin num="6" name="QSPI_D1" type="passive"/>
+        <pin num="7" name="QSPI_D0" type="passive"/>
+        <pin num="8" name="GND" type="passive"/>
+        <pin num="9" name="IM1_NC" type="passive"/>
+        <pin num="10" name="IM0_NC" type="passive"/>
+        <pin num="11" name="VBAT" type="passive"/>
+        <pin num="12" name="VBAT" type="passive"/>
+        <pin num="13" name="GND" type="passive"/>
+        <pin num="14" name="GND" type="passive"/>
+        <pin num="15" name="IOVCC" type="passive"/>
+        <pin num="16" name="CTP_VDD" type="passive"/>
+        <pin num="17" name="CTP_INT" type="passive"/>
+        <pin num="18" name="CTP_RST" type="passive"/>
+        <pin num="19" name="CTP_SDA" type="passive"/>
+        <pin num="20" name="CTP_SCL" type="passive"/>
+        <pin num="21" name="GND" type="passive"/>
+        <pin num="22" name="QSPI_D3" type="passive"/>
+        <pin num="23" name="QSPI_D2" type="passive"/>
+        <pin num="24" name="VCI_EN" type="passive"/>
+        <pin num="25" name="SHIELD" type="passive"/>
+        <pin num="26" name="SHIELD" type="passive"/>
+        <pin num="27" name="SHIELD" type="passive"/>
+        <pin num="28" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>X:\SoftWare\Kicad\share\kicad\symbols\/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>X:\SoftWare\Kicad\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>X:\SoftWare\Kicad\share\kicad\symbols\/Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="YuEEG">
+      <uri>X:\Items\YuEEG\hardware\YuEEG_8CH_RevG\display_carrier/YuEEG.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/AM_1V8" class="Default">
+      <node ref="C2003" pin="1" pintype="passive"/>
+      <node ref="C2004" pin="1" pintype="passive"/>
+      <node ref="J2001" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="J2002" pin="15" pinfunction="IOVCC" pintype="passive"/>
+      <node ref="R2001" pin="1" pintype="passive"/>
+    </net>
+    <net code="2" name="/AM_CLK_P" class="Default">
+      <node ref="J2001" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="J2002" pin="5" pinfunction="QSPI_CLK" pintype="passive"/>
+    </net>
+    <net code="3" name="/AM_CS_P" class="Default">
+      <node ref="J2001" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="J2002" pin="4" pinfunction="LCD_CS" pintype="passive"/>
+    </net>
+    <net code="4" name="/AM_D0_P" class="Default">
+      <node ref="J2001" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="J2002" pin="7" pinfunction="QSPI_D0" pintype="passive"/>
+    </net>
+    <net code="5" name="/AM_D1_P" class="Default">
+      <node ref="J2001" pin="8" pinfunction="Pin_8" pintype="passive"/>
+      <node ref="J2002" pin="6" pinfunction="QSPI_D1" pintype="passive"/>
+    </net>
+    <net code="6" name="/AM_D2_P" class="Default">
+      <node ref="J2001" pin="9" pinfunction="Pin_9" pintype="passive"/>
+      <node ref="J2002" pin="23" pinfunction="QSPI_D2" pintype="passive"/>
+    </net>
+    <net code="7" name="/AM_D3_P" class="Default">
+      <node ref="J2001" pin="10" pinfunction="Pin_10" pintype="passive"/>
+      <node ref="J2002" pin="22" pinfunction="QSPI_D3" pintype="passive"/>
+    </net>
+    <net code="8" name="/AM_RAW" class="Default">
+      <node ref="C2001" pin="1" pintype="passive"/>
+      <node ref="C2002" pin="1" pintype="passive"/>
+      <node ref="C2005" pin="1" pintype="passive"/>
+      <node ref="J2001" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J2002" pin="11" pinfunction="VBAT" pintype="passive"/>
+      <node ref="J2002" pin="12" pinfunction="VBAT" pintype="passive"/>
+      <node ref="J2002" pin="16" pinfunction="CTP_VDD" pintype="passive"/>
+      <node ref="R2003" pin="1" pintype="passive"/>
+      <node ref="R2004" pin="1" pintype="passive"/>
+    </net>
+    <net code="9" name="/AM_RST_P" class="Default">
+      <node ref="J2001" pin="11" pinfunction="Pin_11" pintype="passive"/>
+      <node ref="J2002" pin="1" pinfunction="LCD_RST" pintype="passive"/>
+    </net>
+    <net code="10" name="/GND" class="Default">
+      <node ref="C2001" pin="2" pintype="passive"/>
+      <node ref="C2002" pin="2" pintype="passive"/>
+      <node ref="C2003" pin="2" pintype="passive"/>
+      <node ref="C2004" pin="2" pintype="passive"/>
+      <node ref="C2005" pin="2" pintype="passive"/>
+      <node ref="J2001" pin="12" pinfunction="Pin_12" pintype="passive"/>
+      <node ref="J2001" pin="18" pinfunction="Pin_18" pintype="passive"/>
+      <node ref="J2001" pin="19" pinfunction="Pin_19" pintype="passive"/>
+      <node ref="J2001" pin="20" pinfunction="Pin_20" pintype="passive"/>
+      <node ref="J2002" pin="13" pinfunction="GND" pintype="passive"/>
+      <node ref="J2002" pin="14" pinfunction="GND" pintype="passive"/>
+      <node ref="J2002" pin="18" pinfunction="CTP_RST" pintype="passive"/>
+      <node ref="J2002" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="J2002" pin="21" pinfunction="GND" pintype="passive"/>
+      <node ref="J2002" pin="25" pinfunction="SHIELD" pintype="passive"/>
+      <node ref="J2002" pin="26" pinfunction="SHIELD" pintype="passive"/>
+      <node ref="J2002" pin="27" pinfunction="SHIELD" pintype="passive"/>
+      <node ref="J2002" pin="28" pinfunction="SHIELD" pintype="passive"/>
+      <node ref="J2002" pin="8" pinfunction="GND" pintype="passive"/>
+      <node ref="R2002" pin="2" pintype="passive"/>
+    </net>
+    <net code="11" name="/TP_SCL_IDLE" class="Default">
+      <node ref="J2002" pin="20" pinfunction="CTP_SCL" pintype="passive"/>
+      <node ref="R2004" pin="2" pintype="passive"/>
+    </net>
+    <net code="12" name="/TP_SDA_IDLE" class="Default">
+      <node ref="J2002" pin="19" pinfunction="CTP_SDA" pintype="passive"/>
+      <node ref="R2003" pin="2" pintype="passive"/>
+    </net>
+    <net code="13" name="/VCI_EN" class="Default">
+      <node ref="J2002" pin="24" pinfunction="VCI_EN" pintype="passive"/>
+      <node ref="R2001" pin="2" pintype="passive"/>
+      <node ref="R2002" pin="1" pintype="passive"/>
+    </net>
+    <net code="14" name="unconnected-(J2001-Pin_2-Pad2)" class="Default">
+      <node ref="J2001" pin="2" pinfunction="Pin_2" pintype="passive+no_connect"/>
+    </net>
+    <net code="15" name="unconnected-(J2001-Pin_4-Pad4)" class="Default">
+      <node ref="J2001" pin="4" pinfunction="Pin_4" pintype="passive+no_connect"/>
+    </net>
+    <net code="16" name="unconnected-(J2001-Pin_13-Pad13)" class="Default">
+      <node ref="J2001" pin="13" pinfunction="Pin_13" pintype="passive+no_connect"/>
+    </net>
+    <net code="17" name="unconnected-(J2001-Pin_14-Pad14)" class="Default">
+      <node ref="J2001" pin="14" pinfunction="Pin_14" pintype="passive+no_connect"/>
+    </net>
+    <net code="18" name="unconnected-(J2001-Pin_15-Pad15)" class="Default">
+      <node ref="J2001" pin="15" pinfunction="Pin_15" pintype="passive+no_connect"/>
+    </net>
+    <net code="19" name="unconnected-(J2001-Pin_16-Pad16)" class="Default">
+      <node ref="J2001" pin="16" pinfunction="Pin_16" pintype="passive+no_connect"/>
+    </net>
+    <net code="20" name="unconnected-(J2001-Pin_17-Pad17)" class="Default">
+      <node ref="J2001" pin="17" pinfunction="Pin_17" pintype="passive+no_connect"/>
+    </net>
+    <net code="21" name="unconnected-(J2002-CTP_INT-Pad17)" class="Default">
+      <node ref="J2002" pin="17" pinfunction="CTP_INT" pintype="passive+no_connect"/>
+    </net>
+    <net code="22" name="unconnected-(J2002-IM0_NC-Pad10)" class="Default">
+      <node ref="J2002" pin="10" pinfunction="IM0_NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="23" name="unconnected-(J2002-IM1_NC-Pad9)" class="Default">
+      <node ref="J2002" pin="9" pinfunction="IM1_NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="24" name="unconnected-(J2002-LCD_TE-Pad3)" class="Default">
+      <node ref="J2002" pin="3" pinfunction="LCD_TE" pintype="passive+no_connect"/>
+    </net>
+  </nets>
+</export>

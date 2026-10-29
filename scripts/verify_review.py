@@ -1,4 +1,4 @@
-"""Verify Rev F two-board delivery, current firmware and frozen historical releases.
+"""Verify current Rev G delivery and frozen Rev D/E/F releases.
 
 Use --package to regenerate the ZIP after successful verification of its inputs.
 This does not rerun KiCad or certify the hardware.
@@ -55,10 +55,10 @@ def verify(package=False):
         'tools/send_eeg_command.py', 'tools/test_protocol.py',
     ]
     for name in source_names:
-        require((ROOT / 'Firmware' / name).read_bytes() == (REVIEW / 'firmware' / name).read_bytes(), f'Firmware snapshot differs: {name}')
+        require((REVIEW / 'firmware' / name).is_file(), f'Frozen firmware missing: {name}')
     build = json.loads((REVIEW / 'firmware/build/BUILD_INFO.json').read_text())
-    require(build['source_header_sha256'] == sha((ROOT / 'Firmware/ads1299_driver/YuEEG.h').read_bytes()), 'Build source hash differs')
-    require(build['ui_header_sha256'] == sha((ROOT / 'Firmware/ads1299_driver/YuEEG_UI.h').read_bytes()), 'UI build source hash differs')
+    require(build['source_header_sha256'] == sha((REVIEW / 'firmware/ads1299_driver/YuEEG.h').read_bytes()), 'Frozen build source hash differs')
+    require(build['ui_header_sha256'] == sha((REVIEW / 'firmware/ads1299_driver/YuEEG_UI.h').read_bytes()), 'Frozen UI build source hash differs')
     for name, digest in build['binaries_sha256'].items():
         require(sha((REVIEW / 'firmware/build' / name).read_bytes()) == digest, f'Binary differs: {name}')
     names = sorted(manifest) + ['CHECKSUMS.json']
@@ -107,6 +107,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--package', action='store_true')
     args = parser.parse_args()
-    verify(args.package)
+    from verify_rev_g import verify as verify_g
+    verify_g(args.package)
+    verify(False)
     verify_rev_d()
     verify_rev_e()

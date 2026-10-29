@@ -1,0 +1,65 @@
+[
+  {
+    "pcb": "YuEEG_8CH_RevG.kicad_pcb",
+    "pcb_sha256": "b2e35d46f812cbaacf447e0e0ec7afeaa4b7391dd90ed41a4d5cf000e1f43033",
+    "zip": "order_gerbers/YuEEG_RevG_MAIN_70x80_Gerber.zip",
+    "fabrication": "fabrication_review",
+    "files": {
+      "YuEEG_8CH_RevG-B_Cu.gbl": "49aac8056a069f100909dce7f58a4357a2782a2a4976339e68c7c33122d00b44",
+      "YuEEG_8CH_RevG-B_Mask.gbs": "6377fe0ccbfd73ee1fa319e7f389c38d65e07bb658ca37152e1fe1b6f6904ba1",
+      "YuEEG_8CH_RevG-B_Paste.gbp": "4d5fa4c8b94e2c36149a66566922e61db14b68473c7b0472811dc89f9852cb04",
+      "YuEEG_8CH_RevG-B_Silkscreen.gbo": "4f0a4a6b6e75872ddbf249a4529f35c8ef31c6901d51f303eecfdfd13ea1d49e",
+      "YuEEG_8CH_RevG-Edge_Cuts.gm1": "56fc3041c3b396475a8b5f54cdf7b47b8652f0be73f25f7db8bf620069c6fb7e",
+      "YuEEG_8CH_RevG-F_Cu.gtl": "ba0ccdd190f0b4d3360e0f43c45e79d6b93ca7a5a96ba36a4b672d7d4e9dbd2a",
+      "YuEEG_8CH_RevG-F_Mask.gts": "d06eb6f92bca18f2e7aabc2f1315d8d85079a9243a72250d4a02b84169b1d811",
+      "YuEEG_8CH_RevG-F_Paste.gtp": "e262c5c58363df6ab493b3cebffeb9a5ad87e48fd657d51d8a161a45ddaad4f1",
+      "YuEEG_8CH_RevG-F_Silkscreen.gto": "291e68f2e2e35eff1c31b6cc2bae3d4ccb0a201123d7c93c49de2c3f36a50de9",
+      "YuEEG_8CH_RevG-In1_Cu.g1": "d0c6f815d5a4d3debef5d6b21aaf891e716004192247862d1940b07b98e1ab38",
+      "YuEEG_8CH_RevG-In2_Cu.g2": "7727d8628256ee354c428c6b5cabd6dcc3637ec64a5e63e0b5746714caca0e58",
+      "YuEEG_8CH_RevG-job.gbrjob": "a88e45d076841ca4cc348d5407c9a7e93a623475cd2a6cb493d089b1378cb517",
+      "YuEEG_8CH_RevG-NPTH.drl": "f20587618dd2d3024fd44002b0c9983edf3420200d07a083ee6a1e9f39b893eb",
+      "YuEEG_8CH_RevG-PTH.drl": "fa295cceb9de1197969a39ff9327973811abee701bb30e3e6a943736e3d2d3f0"
+    }
+  },
+  {
+    "pcb": "display_carrier/YuEEG_DISPLAY_G.kicad_pcb",
+    "pcb_sha256": "ed62341b4bce6c29058a2bff4069134e8f8c93af8901a84330bd2f72a7a33d20",
+    "zip": "order_gerbers/YuEEG_RevG_DISPLAY_35x67_Gerber.zip",
+    "fabrication": "display_carrier/fabrication_review",
+    "files": {
+      "YuEEG_DISPLAY_G-B_Cu.gbl": "99c6e339430e3a9c425fb446bc231da078c5f1405b073ea854387ea19f975fea",
+      "YuEEG_DISPLAY_G-B_Mask.gbs": "b8c7a80fd40b287f447ad48fe86b0635cce31ef6e16c87f0f2aa241489da6051",
+      "YuEEG_DISPLAY_G-B_Paste.gbp": "1fef119f62d2471bd7e927dd6cdcf96fb39d90ac7f8e4602ce0ba78481cec181",
+      "YuEEG_DISPLAY_G-B_Silkscreen.gbo": "24f809a7aaeb88d29b4f9437aaea17d3cc5043645d466c05c4a3e71ec4d35864",
+      "YuEEG_DISPLAY_G-Edge_Cuts.gm1": "f2782d9e04a67ea276ecf2b045e9cf371e7473d5d78318e4c52e4ab7833dec02",
+      "YuEEG_DISPLAY_G-F_Cu.gtl": "1a05c7cfc9f0e758f94a82c0496718dcdb7d8fa2203ef055ae42781a8041c930",
+      "YuEEG_DISPLAY_G-F_Mask.gts": "57700562a3126a054bd107e5a5305bb8529d4da02b569b193adc32128637dda7",
+      "YuEEG_DISPLAY_G-F_Paste.gtp": "60d00cbe3cbc6a2064aca1f0a87c00fc7cb0ea3ac32429db79e6dc1c494962f5",
+      "YuEEG_DISPLAY_G-F_Silkscreen.gto": "5e0f41901d9cb243e9a96f6e225d5a928bc6c2730d5e08c4eab7a00130e4345e",
+      "YuEEG_DISPLAY_G-job.gbrjob": "a6f6fcf08c3d9fdb3a00059297703bfb60f997d41bd33f12db495179089d72e3",
+      "YuEEG_DISPLAY_G-NPTH.drl": "7574e836e443d216d2be3875e4ba4532ce92499d57fe179231b7fc10edc2a40e",
+      "YuEEG_DISPLAY_G-PTH.drl": "bf7561c47647e88af1ad4e2cb6fb8c02db6bd744f042857d2d6551bc51fdb9ca"
+    }
+  },
+  {
+    "pcb": "isolated_power/YuEEG_8CH_RevF_POWER.kicad_pcb",
+    "pcb_sha256": "fef3641c0f8616dbb3b367fa1badfd6e0c3639696498dd5d32a2221b5895d39a",
+    "zip": "order_gerbers/YuEEG_RevG_POWER_44x48_RevF_Gerber.zip",
+    "fabrication": "isolated_power/fabrication_review",
+    "files": {
+      "YuEEG_8CH_RevF_POWER-B_Cu.gbl": "83e3ab1acd8f85fceeb2a9055bcbd4f0a57bd5f6b4ee2364f56fcb99f8c1b3fe",
+      "YuEEG_8CH_RevF_POWER-B_Mask.gbs": "92d11614cb264349101002ea4909ebb4a2a02baaf9ae079aa4e5f24134282f5f",
+      "YuEEG_8CH_RevF_POWER-B_Paste.gbp": "46ab2e50f209002e8abdced0b32c96714f94f5ed84a1fc396fba985eaa67e0f4",
+      "YuEEG_8CH_RevF_POWER-B_Silkscreen.gbo": "483c6a4ff1cfff9bfd4dcd24cc3d5efb0adfee98af090a31509177f0bc2f6bb0",
+      "YuEEG_8CH_RevF_POWER-Edge_Cuts.gm1": "2f9c22a125091f2c9806cd7cfaa5843d61e033b0961c28eaf59fe11ef91589ca",
+      "YuEEG_8CH_RevF_POWER-F_Cu.gtl": "4a6cf56bc5b50fb793e8ae3ac9d0e5536a82e527b2cffeed90e7965da44b4937",
+      "YuEEG_8CH_RevF_POWER-F_Mask.gts": "0a77e087a7f6941c8490825939153da7b19d0edd7bdd546bb05abc16a18d002a",
+      "YuEEG_8CH_RevF_POWER-F_Paste.gtp": "30b269d7a1947a86980011ceacadd93c9024d913300f2c10e514c8dc4a1a4810",
+      "YuEEG_8CH_RevF_POWER-F_Silkscreen.gto": "59b4d5e3975984f4b2aeffe566330f5e171181a158be9c9e8594902d0fc830af",
+      "YuEEG_8CH_RevF_POWER-In1_Cu.g1": "d7863b944df46bb1858d24c217630c0b6ea5b256ec43ac1ce9a4f7255ffe919e",
+      "YuEEG_8CH_RevF_POWER-In2_Cu.g2": "f64ab057296491fbdf378745318ca34aa3dab0878715f62471b7e1aec4f8be8f",
+      "YuEEG_8CH_RevF_POWER-job.gbrjob": "3553fd296b0a6a6d7dee9619e8e07753949b8772f25cf8b1b89c6208b92aa58b",
+      "YuEEG_8CH_RevF_POWER.drl": "0471f67480e8e93620d6e7c0c72ed1909e3169aa98b6e4761a64ac6629a713c3"
+    }
+  }
+]

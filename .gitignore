@@ -46,3 +46,8 @@ Thumbs.db
 /Firmware/build_revF.log
 !/hardware/YuEEG_8CH_RevF/
 !/hardware/YuEEG_8CH_RevF_70x80_main_44x48_power_review.zip
+
+!/hardware/YuEEG_8CH_RevG/
+!/hardware/YuEEG_8CH_RevG_AM178_review.zip
+/manufacturing/
+/Firmware/tools/tmpuk2w3c60/

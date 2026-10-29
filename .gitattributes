@@ -15,3 +15,5 @@
 
 /hardware/YuEEG_8CH_RevE/** -text -whitespace
 /hardware/YuEEG_8CH_RevF/** -text -whitespace
+
+/hardware/YuEEG_8CH_RevG/** -text -whitespace

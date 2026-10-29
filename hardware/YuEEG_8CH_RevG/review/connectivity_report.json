@@ -1,0 +1,10 @@
+{
+  "components": 305,
+  "sheets": 16,
+  "exported_pins": 876,
+  "ADS1299_pins": 64,
+  "connected_pins_checked": 848,
+  "explicit_NC_pins_checked": 28,
+  "connection_mismatches": 0,
+  "scope": "KiCad netlist vs intended connectivity; not analog simulation, PCB validation or safety certification"
+}

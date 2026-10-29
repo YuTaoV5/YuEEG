@@ -1,0 +1,11 @@
+{
+  "supplied_directory": "X:\\Items\\YuEEG\\hardware\\display-amoled-1.78inch-368x448-main",
+  "sha256": {
+    "LICENSE": "42d49efd72a6ac60f128b5f7d51f5bf0e34844696605d5e71b687f80bfe805b9",
+    "versions/AM178Q368448LK/datasheets/AM178Q368448LK.pdf": "878311f5d5594db6a4320401569f575e0a8c56ad5a4073d6acb63c8b05b0cba9",
+    "versions/AM178Q368448LK/cad/OK-14F024-04.pdf": "87eed9ad728bea68bc335b66391e6f8c5be1c8f1b2998fa7fdd8a19d80f9e692",
+    "examples/esp32s3-co5300-qspi-bringup/main/app_init/lcd_init.c": "542d9f0e0d01353e5c7f2c7158e44cc6a77455ea21e6942032622ae08333503e",
+    "examples/esp32s3-co5300-qspi-bringup/components/esp_lcd_qspi_amoled/esp_lcd_qspi_amoled.c": "eb3a3d7652b65e26eb73d65e25d3f0845a4460108e2c40bf448376b75ba72cd4"
+  },
+  "note": "Local manufacturer snapshot supplied by user; not a claim of currently available SKU"
+}

@@ -1,0 +1,11 @@
+{
+  "main_tracks_vias_pads_identical_to_rev_f": true,
+  "rev_f_pcb_sha256": "17034934d92b7c8b1812fe8afe126c4306112da1b6f088af04f2fbbcbee481cb",
+  "main_pcb_sha256": "b2e35d46f812cbaacf447e0e0ec7afeaa4b7391dd90ed41a4d5cf000e1f43033",
+  "carrier_pcb_sha256": "ed62341b4bce6c29058a2bff4069134e8f8c93af8901a84330bd2f72a7a33d20",
+  "straight_cable_connected_pins_checked": 13,
+  "panel_mapping_checked": true,
+  "panel_vbat_v": 3.3,
+  "panel_iovcc_v": 1.8,
+  "scope": "Static connectivity and copper invariants; no physical validation"
+}

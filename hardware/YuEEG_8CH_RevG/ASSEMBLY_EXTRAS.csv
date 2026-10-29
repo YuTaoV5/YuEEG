@@ -1,0 +1,12 @@
+﻿Item,Quantity,Requirement
+AMOLED module,1,OSPTEK AM178Q368448LK CO5300 QSPI 368x448; exact SKU and stock to confirm
+Display harness,1,Keyed FFSD-10 family 20-wire straight 1-to-1 all pins; <=50 mm; mate FTSH-110; verify exact cable ordering code
+Insulated standoff,4,M2 nylon 10 mm nominal; verify first article
+Nonconductive display fasteners,8,M2 nylon; actual length and fit to verify
+Glass support,1,Approx 2 mm insulating foam; support panel without loading FPC or connector
+Display carrier,1,YuEEG_DISPLAY_G 35x67 mm 2-layer; J2002 OCN OK-14F024-04 female included in carrier BOM
+microSD card,1,FAT32 high-endurance; SDMMC 1-bit 20MHz latency qualification
+Battery cells,2,Matched 4.2V Li-ion/polymer each at least 1000mAh; actual part not selected
+Pack NTC,1,Semitec 103AT-2 10k or recalculated equivalent; insulated thermal contact to pack
+Main-power cable,1,GH6 pin1 PACK_POS 2 GND 3 CHG_TS 4 CHG_CE 5 USB5 6 CHG_PG; verify orientation
+Electrode harness,1,10-way female P2.54; pin1 REF pin2 BIAS pin3 CH8 through pin10 CH1; unplug all before charge

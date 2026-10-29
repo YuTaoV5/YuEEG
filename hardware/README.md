@@ -1,13 +1,12 @@
 # 硬件入口
 
-当前为 [Rev F](YuEEG_8CH_RevF/README.md)：70 × 80 mm 主板与 44 × 48 mm 隔离充电副板，四层、全正面元件、AMOLED 叠装。主板电池供电采集，保留 USB 数据隔离；充电前物理拔下整个电极线束。
+当前为 [Rev G AMOLED 适配版](YuEEG_8CH_RevG/README.md)：70 × 80 mm 四层主板、35 × 67 mm 两层屏幕载板，配未修改的 Rev F 44 × 48 mm 四层隔离充电副板。各板元件均在正面。屏幕 OSPTEK AM178Q368448LK / CO5300 叠装；主板电池供电，充电前拔下整个电极线束。
 
-- [主板 KiCad 9 工程](YuEEG_8CH_RevF/YuEEG_8CH_RevF.kicad_pro)
-- [副板 KiCad 9 工程](YuEEG_8CH_RevF/isolated_power/YuEEG_8CH_RevF_POWER.kicad_pro)
-- [设计与复核](YuEEG_8CH_RevF/REV_F_REVIEW.md)
-- [主板装配要求](YuEEG_8CH_RevF/fabrication_review/ASSEMBLY_NOTES.md)
-- [完整评审包](YuEEG_8CH_RevF_70x80_main_44x48_power_review.zip)
-- [Rev E 冻结工程](YuEEG_8CH_RevE/README.md) · [Rev D 冻结工程](YuEEG_8CH_RevD/README.md)
-- [历史索引](archive/README.md)
+- [主板工程](YuEEG_8CH_RevG/YuEEG_8CH_RevG.kicad_pro)
+- [屏幕载板](YuEEG_8CH_RevG/display_carrier/YuEEG_DISPLAY_G.kicad_pro)
+- [隔离充电副板（沿用 Rev F）](YuEEG_8CH_RevG/isolated_power/YuEEG_8CH_RevF_POWER.kicad_pro)
+- [接线、采购与首板验证](YuEEG_8CH_RevG/DISPLAY_INTEGRATION.md)
+- [完整评审包，含三块板独立 Gerber ZIP](YuEEG_8CH_RevG_AM178_review.zip)
+- [冻结 Rev F](YuEEG_8CH_RevF/README.md) · [历史索引](archive/README.md)
 
-静态检查和固件编译已完成；板厂装配工艺与实物电源、噪声、充电、USB/Wi-Fi/SD 并发、漏电流和耐压仍需验证。
+主板和载板静态检查通过；屏幕母座方向需首件导通确认，装配、点亮、噪声和隔离仍待实物验收。

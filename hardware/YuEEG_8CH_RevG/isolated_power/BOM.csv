@@ -1,0 +1,51 @@
+﻿Reference,Value,Footprint,Sheet,Datasheet
+C601,4.7u 16V X7R,Capacitor_SMD:C_0805_2012Metric,charger_secondary,~
+C602,47u 16V X7R,Capacitor_SMD:C_1210_3225Metric,charger_secondary,~
+C603,100n 16V,Capacitor_SMD:C_0402_1005Metric,charger_secondary,~
+C604,22u 16V X7R,Capacitor_SMD:C_1206_3216Metric,charger_secondary,~
+C605,47u 16V X7R,Capacitor_SMD:C_1210_3225Metric,charger_secondary,~
+C606,47u 16V X7R,Capacitor_SMD:C_1210_3225Metric,charger_secondary,~
+C607,22u 25V X7R,Capacitor_SMD:C_1206_3216Metric,charger_secondary,~
+C608,47n 25V X7R,Capacitor_SMD:C_0402_1005Metric,charger_secondary,~
+C609,100n 16V,Capacitor_SMD:C_0402_1005Metric,charger_secondary,~
+D601,SMF5.0A,Diode_SMD:D_SOD-123F,charger_secondary,~
+F602,1A hold PTC,Fuse:Fuse_1206_3216Metric,charger_secondary,~
+L601,1uH SRP5030T-1R0M / Isat11A,Inductor_SMD:L_Bourns_SRP5030T,charger_secondary,~
+LED601,CHARGING,LED_SMD:LED_0603_1608Metric,charger_secondary,~
+R603,1.50k 1%,Resistor_SMD:R_0402_1005Metric,charger_secondary,~
+R604,1.14k 1%,Resistor_SMD:R_0402_1005Metric,charger_secondary,~
+R605,9.31k 0.1%,Resistor_SMD:R_0402_1005Metric,charger_secondary,~
+R606,365k 0.1%,Resistor_SMD:R_0402_1005Metric,charger_secondary,~
+R609,2.2k,Resistor_SMD:R_0402_1005Metric,charger_secondary,~
+U601,BQ25886RGER,Package_DFN_QFN:Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias,charger_secondary,http://www.ti.com/lit/ds/symlink/bq25886.pdf
+R1205,1M CE DEFAULT OFF,Resistor_SMD:R_0402_1005Metric,charger_secondary,~
+J1204,TO MAIN J1202 / GH6,Connector_JST:JST_GH_SM06B-GHS-TB_1x06-1MP_P1.25mm_Horizontal,charger_secondary,~
+TP606,CHG_STAT,TestPoint:TestPoint_Pad_D1.5mm,charger_secondary,~
+C704,1u 16V,Capacitor_SMD:C_0603_1608Metric,charge_primary,~
+C705,1u 10V,Capacitor_SMD:C_0603_1608Metric,charge_primary,~
+C706,100n 16V,Capacitor_SMD:C_0402_1005Metric,charge_primary,~
+C707,100n 16V,Capacitor_SMD:C_0402_1005Metric,charge_primary,~
+C708,4.7u 16V,Capacitor_SMD:C_0603_1608Metric,charge_primary,~
+C709,100n 16V,Capacitor_SMD:C_0402_1005Metric,charge_primary,~
+D701,SMF5.0A,Diode_SMD:D_SOD-123F,charge_primary,~
+D902,PESD5V0S1BA,Diode_SMD:D_SOD-323,charge_primary,~
+D903,PESD5V0S1BA,Diode_SMD:D_SOD-323,charge_primary,~
+F701,1.5A hold PTC,Fuse:Fuse_1206_3216Metric,charge_primary,~
+J901,USB-C CHARGE / POWER - NO DATA,Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12,charge_primary,https://www.usb.org/sites/default/files/documents/usb_type-c.zip
+R705,887k 1%,Resistor_SMD:R_0402_1005Metric,charge_primary,~
+R706,23.7k 1%,Resistor_SMD:R_0402_1005Metric,charge_primary,~
+R707,100k,Resistor_SMD:R_0402_1005Metric,charge_primary,~
+U702,TLV75533PDBVR HOST ONLY,Package_TO_SOT_SMD:SOT-23-5,charge_primary,http://www.ti.com/lit/ds/symlink/tlv755p.pdf
+U703,TUSB320LAIRWBR / UFP GPIO,Package_DFN_QFN:Texas_X2QFN-12_1.6x1.6mm_P0.4mm,charge_primary,https://www.ti.com/lit/ds/symlink/tusb320lai.pdf
+U704,SN74LVC1G04DBVR,Package_TO_SOT_SMD:SOT-23-5,charge_primary,https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf
+U705,TPS2553DBVR,Package_TO_SOT_SMD:SOT-23-6,charge_primary,https://www.ti.com/lit/ds/symlink/tps2553.pdf
+R601,10k 1%,Resistor_SMD:R_0402_1005Metric,charge_primary,~
+R602,10k 1%,Resistor_SMD:R_0402_1005Metric,charge_primary,~
+U706,THM 6-0511 / STANDARD PINOUT,YuEEG:THM6_Standard,isolated_converter,https://www.tracopower.com/products/thm6.pdf
+C1201,10u 25V X7R,Capacitor_SMD:C_1206_3216Metric,isolated_converter,~
+C1202,100n 16V,Capacitor_SMD:C_0402_1005Metric,isolated_converter,~
+C1203,10u 25V X7R,Capacitor_SMD:C_1206_3216Metric,isolated_converter,~
+C1204,100n 16V,Capacitor_SMD:C_0402_1005Metric,isolated_converter,~
+C710,10u 25V X7R,Capacitor_SMD:C_1206_3216Metric,isolated_converter,~
+H1205,M2 INSULATED MOUNT,MountingHole:MountingHole_2.2mm_M2,isolated_converter,~
+H1206,M2 INSULATED MOUNT,MountingHole:MountingHole_2.2mm_M2,isolated_converter,~

@@ -1,0 +1,15 @@
+{
+  "fqbn": "esp32:esp32:esp32s3:FlashSize=16M,FlashMode=qio,PSRAM=opi,USBMode=hwcdc,CDCOnBoot=cdc,PartitionScheme=app3M_fat9M_16MB",
+  "arduino_esp32_core": "2.0.11",
+  "source_header_sha256": "e31c1f0de719e59dbb35822098ba8efbac91dbe9cf7818c14af0dc25211e9817",
+  "ui_header_sha256": "002705476fe353872450cffa8773f183fa30b22dec07f8dcf41d9f09fde70b92",
+  "binaries_sha256": {
+    "ads1299_driver.ino.bin": "1c09d1b0e36d50c88dd3e23e3c43294592d743a3b5baca18d54078fa2ce20efa",
+    "ads1299_driver.ino.bootloader.bin": "d0b02b860147ace6a607985a3123a977b9451fa5d54a24ca6db59be4a2e4c345",
+    "ads1299_driver.ino.partitions.bin": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9"
+  },
+  "protocol_tests_passed": 6,
+  "flash_bytes": 769941,
+  "static_ram_bytes": 46068,
+  "physical_flash_or_transport_tested": false
+}
