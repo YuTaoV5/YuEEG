@@ -1,28 +1,28 @@
 [
   {
     "board": "afe",
-    "source_sha256": "ae5140724bf582ae944073b02cd87ec61d5f3ccc309f2f4dbd5db13efa84e8db",
+    "source_sha256": "626c03b4dd3391a60a2687d95113357e0870bf6a04d825b37c71d953124e91f8",
     "side": "top",
     "local_model_path_substitutions": 18,
     "scope": "Rendering copy differs only by absolute local model paths. Main PCB/library keep project-relative paths. Missing models in model_audit.json remain absent."
   },
   {
     "board": "digital",
-    "source_sha256": "1899196d306572cbcbd0af3c51b9b16141a1bc5e77bc65f2c840ae26532ccd5a",
+    "source_sha256": "d2bd686cc1c6af7c569fcc57c51c2ba92f45ba31ac413b425256b9cd1b61a022",
     "side": "bottom",
     "local_model_path_substitutions": 9,
     "scope": "Rendering copy differs only by absolute local model paths. Main PCB/library keep project-relative paths. Missing models in model_audit.json remain absent."
   },
   {
     "board": "digital",
-    "source_sha256": "1899196d306572cbcbd0af3c51b9b16141a1bc5e77bc65f2c840ae26532ccd5a",
+    "source_sha256": "d2bd686cc1c6af7c569fcc57c51c2ba92f45ba31ac413b425256b9cd1b61a022",
     "side": "top",
     "local_model_path_substitutions": 9,
     "scope": "Rendering copy differs only by absolute local model paths. Main PCB/library keep project-relative paths. Missing models in model_audit.json remain absent."
   },
   {
     "board": "power",
-    "source_sha256": "5c4adcc38e9e9bfc5fa3f98fa179adb2dc6bf5da05ee8dda31bf242898fd3a0b",
+    "source_sha256": "772131212bf444de40b23215ee12a9c742a6c3d58acb581afa2b7b963272e4f9",
     "side": "top",
     "local_model_path_substitutions": 2,
     "scope": "Rendering copy differs only by absolute local model paths. Main PCB/library keep project-relative paths. Missing models in model_audit.json remain absent."

@@ -85,6 +85,9 @@ Thumbs.db
 !/hardware/YuEEG_8CH_RevH_Stack/*/review/side_key_orientation.json
 !/hardware/YuEEG_8CH_RevH_Stack/*/review/fuse_selection.json
 !/hardware/YuEEG_8CH_RevH_Stack/*/review/local_ground_vias_1s.json
+!/hardware/YuEEG_8CH_RevH_Stack/*/review/usb_return_vias.json
+!/hardware/YuEEG_8CH_RevH_Stack/*/review/usb_geometry.json
+!/hardware/YuEEG_8CH_RevH_Stack/*/review/module_legends.json
 /hardware/YuEEG_8CH_RevH_Stack/review/*
 !/hardware/YuEEG_8CH_RevH_Stack/review/README.md
 !/hardware/YuEEG_8CH_RevH_Stack/review/devtools/

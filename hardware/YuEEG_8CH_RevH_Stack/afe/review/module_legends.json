@@ -1,0 +1,48 @@
+{
+  "labels": [
+    {
+      "text": "INPUT",
+      "center_mm": [
+        8.3,
+        6.0
+      ]
+    },
+    {
+      "text": "ADS1299",
+      "center_mm": [
+        29.0,
+        3.0
+      ]
+    },
+    {
+      "text": "POWER",
+      "center_mm": [
+        20.0,
+        48.8
+      ]
+    }
+  ],
+  "regions_mm": [
+    [
+      1,
+      7,
+      17,
+      28.5
+    ],
+    [
+      17.5,
+      9,
+      34,
+      29
+    ],
+    [
+      1,
+      29,
+      34,
+      49
+    ]
+  ],
+  "silk_border_segments": 36,
+  "source_sha256": "626c03b4dd3391a60a2687d95113357e0870bf6a04d825b37c71d953124e91f8",
+  "scope": "Functional grouping marks, clipped around front courtyards, pads and existing legends. Full outlines on Dwgs.User are assembly guides, not electrical isolation boundaries."
+}

@@ -1,0 +1,69 @@
+{
+  "labels": [
+    {
+      "text": "MCU / RF",
+      "center_mm": [
+        36.5,
+        5.8
+      ]
+    },
+    {
+      "text": "DISPLAY",
+      "center_mm": [
+        36.0,
+        9.8
+      ]
+    },
+    {
+      "text": "SD",
+      "center_mm": [
+        3.0,
+        22.5
+      ]
+    },
+    {
+      "text": "3V3",
+      "center_mm": [
+        24.5,
+        40.6
+      ]
+    },
+    {
+      "text": "POWER",
+      "center_mm": [
+        34.0,
+        42.0
+      ]
+    }
+  ],
+  "regions_mm": [
+    [
+      5.3,
+      1.5,
+      24.8,
+      22.5
+    ],
+    [
+      25.5,
+      6,
+      40,
+      29.5
+    ],
+    [
+      4.5,
+      24,
+      22,
+      39
+    ],
+    [
+      21.7,
+      24,
+      27.5,
+      40.1
+    ]
+  ],
+  "silk_border_segments": 16,
+  "source_sha256": "d2bd686cc1c6af7c569fcc57c51c2ba92f45ba31ac413b425256b9cd1b61a022",
+  "scope": "Functional grouping marks, clipped around front courtyards, pads and existing legends. Full outlines on Dwgs.User are assembly guides, not electrical isolation boundaries.",
+  "mcu_leader_arrow": "Points left from label to ESP module; label is offset to available silk space."
+}

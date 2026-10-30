@@ -13,6 +13,8 @@ def verify():
  for board,count,layers in [('afe',135,4),('digital',113,6),('power',21,2)]:
   base=H/board;pcb=base/('YuEEG_H_'+board.upper()+'.kicad_pcb');record=summary['boards'][board]
   require(sha(pcb)==record['pcb_sha256'],'Stale PCB report: '+board)
+  legends=json.loads((base/'review/module_legends.json').read_text())
+  require(legends['source_sha256']==sha(pcb),'Stale module legend evidence: '+board)
   for name,digest in record['source_files_sha256'].items():require(sha(base/name)==digest,'Changed checked source: '+board+'/'+name)
   drc=json.loads((base/'review/drc_current.json').read_text());erc=json.loads((base/'review/erc_current.json').read_text())
   require(all(not drc[k] for k in ['violations','unconnected_items','schematic_parity']),'Dirty PCB report: '+board)
@@ -44,6 +46,10 @@ def verify():
    require(xml.get(pin)==net,'Exported schematic pin mismatch '+pin)
   require(holes==({'H1':[44.,4.],'H2':[44.,51.],'H3':[4.,55.]} if board!='power' else {}),'Mounting coordinates differ: '+board)
  info=json.loads((H/'firmware/build/BUILD_INFO.json').read_text())
+ geometry=json.loads((H/'digital/review/usb_geometry.json').read_text())
+ require(geometry['pcb_sha256']==summary['boards']['digital']['pcb_sha256'],'Stale USB geometry evidence')
+ for render in json.loads((H/'review/render_evidence.json').read_text()):
+  require(render['source_sha256']==summary['boards'][render['board']]['pcb_sha256'],'Stale board rendering: '+render['board'])
  for name,digest in info['source_sha256'].items():
   require(sha(H/'firmware/ads1299_driver'/name)==digest and sha(ROOT/'Firmware/ads1299_driver'/name)==digest,'Active/snapshot firmware mismatch '+name)
  for name,digest in info['binaries_sha256'].items():require(sha(H/'firmware/build'/name)==digest,'Firmware binary mismatch '+name)

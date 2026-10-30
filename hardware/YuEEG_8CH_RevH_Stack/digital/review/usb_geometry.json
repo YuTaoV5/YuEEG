@@ -1,0 +1,147 @@
+{
+  "pcb_sha256": "d2bd686cc1c6af7c569fcc57c51c2ba92f45ba31ac413b425256b9cd1b61a022",
+  "nets": {
+    "USB_DOWN_DM": {
+      "planar_track_length_mm": 33.72152261578638,
+      "segments_by_layer_width": [
+        {
+          "layer": "F.Cu",
+          "width_mm": 0.15,
+          "segments": 2,
+          "length_mm": 1.94
+        },
+        {
+          "layer": "In2.Cu",
+          "width_mm": 0.15,
+          "segments": 6,
+          "length_mm": 31.78152261578638
+        }
+      ],
+      "signal_vias_xy_mm": [
+        [
+          13.905,
+          38.65
+        ],
+        [
+          2.35,
+          18.83
+        ]
+      ]
+    },
+    "USB_DOWN_DP": {
+      "planar_track_length_mm": 33.72147798911886,
+      "segments_by_layer_width": [
+        {
+          "layer": "F.Cu",
+          "width_mm": 0.15,
+          "segments": 2,
+          "length_mm": 1.94
+        },
+        {
+          "layer": "In2.Cu",
+          "width_mm": 0.15,
+          "segments": 9,
+          "length_mm": 31.78147798911886
+        }
+      ],
+      "signal_vias_xy_mm": [
+        [
+          15.175,
+          38.65
+        ],
+        [
+          2.35,
+          20.1
+        ]
+      ]
+    },
+    "USB_MCU_DM": {
+      "planar_track_length_mm": 2.14,
+      "segments_by_layer_width": [
+        {
+          "layer": "F.Cu",
+          "width_mm": 0.15,
+          "segments": 1,
+          "length_mm": 2.14
+        }
+      ],
+      "signal_vias_xy_mm": []
+    },
+    "USB_MCU_DP": {
+      "planar_track_length_mm": 2.14,
+      "segments_by_layer_width": [
+        {
+          "layer": "F.Cu",
+          "width_mm": 0.15,
+          "segments": 1,
+          "length_mm": 2.14
+        }
+      ],
+      "signal_vias_xy_mm": []
+    },
+    "USB_UP_DM": {
+      "planar_track_length_mm": 2.2094722215136415,
+      "segments_by_layer_width": [
+        {
+          "layer": "F.Cu",
+          "width_mm": 0.15,
+          "segments": 2,
+          "length_mm": 2.2094722215136415
+        }
+      ],
+      "signal_vias_xy_mm": []
+    },
+    "USB_UP_DP": {
+      "planar_track_length_mm": 4.539513006548279,
+      "segments_by_layer_width": [
+        {
+          "layer": "F.Cu",
+          "width_mm": 0.15,
+          "segments": 5,
+          "length_mm": 4.539513006548279
+        }
+      ],
+      "signal_vias_xy_mm": []
+    },
+    "USB_HOST_DM": {
+      "planar_track_length_mm": 20.828039231399835,
+      "segments_by_layer_width": [
+        {
+          "layer": "F.Cu",
+          "width_mm": 0.15,
+          "segments": 10,
+          "length_mm": 20.828039231399835
+        }
+      ],
+      "signal_vias_xy_mm": []
+    },
+    "USB_HOST_DP": {
+      "planar_track_length_mm": 23.271027654443156,
+      "segments_by_layer_width": [
+        {
+          "layer": "F.Cu",
+          "width_mm": 0.15,
+          "segments": 13,
+          "length_mm": 19.00902216437499
+        },
+        {
+          "layer": "In2.Cu",
+          "width_mm": 0.15,
+          "segments": 2,
+          "length_mm": 4.262005490068166
+        }
+      ],
+      "signal_vias_xy_mm": [
+        [
+          23.7183,
+          50.7758
+        ],
+        [
+          27.856,
+          50.4757
+        ]
+      ]
+    }
+  },
+  "scope": "Planar track centerline lengths only; excludes via barrels, pads and package. Not an impedance, reference-plane continuity or USB compliance check."
+}

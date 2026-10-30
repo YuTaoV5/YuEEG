@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-30T21:23:00.974578+08:00",
+  "timestamp": "2026-10-30T21:48:56.003574+08:00",
   "battery": "Sony NP-BX1, 1S; supersedes NP-FW50 goal wording",
   "release_status": "DEVELOPMENT; contact mechanics, display FPC and system verification unresolved",
   "boards": {
@@ -8,7 +8,7 @@
       "unconnected": 0,
       "parity": 0,
       "erc": 0,
-      "pcb_sha256": "ae5140724bf582ae944073b02cd87ec61d5f3ccc309f2f4dbd5db13efa84e8db",
+      "pcb_sha256": "626c03b4dd3391a60a2687d95113357e0870bf6a04d825b37c71d953124e91f8",
       "source_files_sha256": {
         "circuit_01.kicad_sch": "d2f828a9e21967b59042a231d97505ea16d968da33064b5d9671700cce44eed2",
         "circuit_02.kicad_sch": "5041dca931ef08dd6fdd5d5e455f393f410f494f82b4fe35e9585fcbd3bdafb6",
@@ -48,7 +48,7 @@
       "unconnected": 0,
       "parity": 0,
       "erc": 0,
-      "pcb_sha256": "1899196d306572cbcbd0af3c51b9b16141a1bc5e77bc65f2c840ae26532ccd5a",
+      "pcb_sha256": "d2bd686cc1c6af7c569fcc57c51c2ba92f45ba31ac413b425256b9cd1b61a022",
       "source_files_sha256": {
         "circuit_01.kicad_sch": "c0f693fd385f79596c60d5a70205e0a44c8216596c28d11cdf796709a7d78db7",
         "circuit_02.kicad_sch": "1b99737c7442ee5dfb7cd9ddb321703e2ffeb85996beade8d0aac2adc8ec3189",
@@ -86,7 +86,7 @@
       "unconnected": 0,
       "parity": 0,
       "erc": 0,
-      "pcb_sha256": "5c4adcc38e9e9bfc5fa3f98fa179adb2dc6bf5da05ee8dda31bf242898fd3a0b",
+      "pcb_sha256": "772131212bf444de40b23215ee12a9c742a6c3d58acb581afa2b7b963272e4f9",
       "source_files_sha256": {
         "power_1.kicad_sch": "899bfbf04e49afb95f93a7c17cc68a548954122a64a93d37c8b5be6812823bda",
         "power_2.kicad_sch": "92f7b73fed98d658b84ee61df1484c102067c0074a51273e708da6d1580de938",

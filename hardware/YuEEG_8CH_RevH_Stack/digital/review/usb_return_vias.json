@@ -1,0 +1,61 @@
+{
+  "vias": [
+    {
+      "end": "mcu",
+      "signal_vias_mm": [
+        [
+          2.35,
+          18.83
+        ],
+        [
+          2.35,
+          20.1
+        ]
+      ],
+      "new_return_via_mm": [
+        2.55,
+        19.45
+      ],
+      "before_nearest_return_mm": [
+        2.284026094421864,
+        3.5322235489844087
+      ],
+      "after_local_return_mm": [
+        0.6514598989960941,
+        0.6800735254367741
+      ]
+    },
+    {
+      "end": "isolator",
+      "signal_vias_mm": [
+        [
+          13.905,
+          38.65
+        ],
+        [
+          15.175,
+          38.65
+        ]
+      ],
+      "new_return_via_mm": [
+        14.35,
+        37.65
+      ],
+      "before_nearest_return_mm": [
+        2.8501096470136003,
+        2.2641554716935848
+      ],
+      "after_local_return_mm": [
+        1.0945432837489801,
+        1.296389216246418
+      ]
+    }
+  ],
+  "diameter_mm": 0.45,
+  "drill_mm": 0.2,
+  "reference_planes": [
+    "In1.Cu GND",
+    "In3.Cu GND"
+  ],
+  "scope": "Local reference-plane stitching at USB layer transitions. Does not verify impedance, USB eye margin or system isolation."
+}
