@@ -1,0 +1,183 @@
+{
+  "checks": [
+    {
+      "pin": "1",
+      "net": "SYS_5V",
+      "xy_mm": [
+        44.0,
+        30.0
+      ]
+    },
+    {
+      "pin": "2",
+      "net": "GND",
+      "xy_mm": [
+        42.0,
+        30.0
+      ]
+    },
+    {
+      "pin": "3",
+      "net": "+3V3",
+      "xy_mm": [
+        44.0,
+        28.0
+      ]
+    },
+    {
+      "pin": "4",
+      "net": "GND",
+      "xy_mm": [
+        42.0,
+        28.0
+      ]
+    },
+    {
+      "pin": "5",
+      "net": "ADS_SCLK",
+      "xy_mm": [
+        44.0,
+        26.0
+      ]
+    },
+    {
+      "pin": "6",
+      "net": "GND",
+      "xy_mm": [
+        42.0,
+        26.0
+      ]
+    },
+    {
+      "pin": "7",
+      "net": "ADS_MOSI",
+      "xy_mm": [
+        44.0,
+        24.0
+      ]
+    },
+    {
+      "pin": "8",
+      "net": "GND",
+      "xy_mm": [
+        42.0,
+        24.0
+      ]
+    },
+    {
+      "pin": "9",
+      "net": "ADS_CS",
+      "xy_mm": [
+        44.0,
+        22.0
+      ]
+    },
+    {
+      "pin": "10",
+      "net": "GND",
+      "xy_mm": [
+        42.0,
+        22.0
+      ]
+    },
+    {
+      "pin": "11",
+      "net": "ADS_MISO",
+      "xy_mm": [
+        44.0,
+        20.0
+      ]
+    },
+    {
+      "pin": "12",
+      "net": "GND",
+      "xy_mm": [
+        42.0,
+        20.0
+      ]
+    },
+    {
+      "pin": "13",
+      "net": "ADS_DRDY",
+      "xy_mm": [
+        44.0,
+        18.0
+      ]
+    },
+    {
+      "pin": "14",
+      "net": "GND",
+      "xy_mm": [
+        42.0,
+        18.0
+      ]
+    },
+    {
+      "pin": "15",
+      "net": "ADS_RESET",
+      "xy_mm": [
+        44.0,
+        16.0
+      ]
+    },
+    {
+      "pin": "16",
+      "net": "ADS_PWDN",
+      "xy_mm": [
+        42.0,
+        16.0
+      ]
+    },
+    {
+      "pin": "17",
+      "net": "ADS_START",
+      "xy_mm": [
+        44.0,
+        14.0
+      ]
+    },
+    {
+      "pin": "18",
+      "net": "GND",
+      "xy_mm": [
+        42.0,
+        14.0
+      ]
+    },
+    {
+      "pin": "19",
+      "net": "SYS_5V",
+      "xy_mm": [
+        44.0,
+        12.0
+      ]
+    },
+    {
+      "pin": "20",
+      "net": "GND",
+      "xy_mm": [
+        42.0,
+        12.0
+      ]
+    }
+  ],
+  "pins_checked": 20,
+  "mismatches": 0,
+  "pcb_surface_gap_mm": 8.5,
+  "nominal_insertion_mm": 3.3499999999999996,
+  "insertion_range_mm": [
+    2.62,
+    5.03
+  ],
+  "z_reference_mm": {
+    "afe_bottom": 0,
+    "afe_top": 1.6,
+    "socket_top": 7.95,
+    "digital_bottom": 10.1,
+    "digital_top": 11.7,
+    "male_body_low": 8.6,
+    "male_post_tip": 4.6,
+    "digital_solder_tail_tip": 12.8
+  },
+  "scope": "Native assembled XY and electrical net mapping; nominal connector dimensions from manufacturer. Does not certify full assembly, supplier part tolerances, FPC fit or enclosure isolation."
+}

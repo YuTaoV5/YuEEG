@@ -1,0 +1,11 @@
+{
+  "source": "https://www.espressif.com/sites/default/files/3dmodel/ESP32-S3-WROOM-1U%203D%20Model.STEP",
+  "provider": "Espressif official module page",
+  "download_date": "2026-10-30",
+  "alignment_status": "Corner-origin compensation applied; XY alignment checked against the native footprint in top renders. Physical module/enclosure tolerances remain unverified.",
+  "model_offset_mm": [
+    -9,
+    -9.6,
+    0
+  ]
+}

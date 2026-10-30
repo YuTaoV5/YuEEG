@@ -1,0 +1,20 @@
+{
+  "digital": {
+    "device_y_max_mm": 40.55,
+    "host_y_min_mm": 49.05,
+    "routing_corridor_mm": 8.5,
+    "cross_domain_clearance_rule_mm": 8.0
+  },
+  "afe": {
+    "all_layer_copper_exclusion_y_mm": [
+      49.05,
+      60
+    ]
+  },
+  "common_outline_mm": [
+    48,
+    60
+  ],
+  "stack_gap_design_target_mm": 8.5,
+  "status": "2D_KEEPOUTS_APPLIED_3D_COMPONENT_AND_CONNECTOR_VERIFICATION_PENDING"
+}

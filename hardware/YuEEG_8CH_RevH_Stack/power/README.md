@@ -1,0 +1,1 @@
+电源板改为 Sony NP-FW50 两线电池输入、保护和供电管理。这里的 BOM_source.csv 与 review/expected_source.json 是旧 Rev G 来源记录，含已弃用充电/均衡器件，不可用于制造。新原理图为 YuEEG_H_POWER.kicad_sch，采用 TPS26600 保护链，PCB 34×18 mm，仅几何试排、无走线；JP1 电池触点暂用排针占位，必须实物选型替换。详见 ../../../docs/REVH_CIRCUIT_PROGRESS.md，不能用于制造。

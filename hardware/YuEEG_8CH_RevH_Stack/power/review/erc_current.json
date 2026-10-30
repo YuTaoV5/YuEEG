@@ -1,0 +1,34 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-30T21:23:07+0800",
+    "kicad_version": "9.0.5",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/de9a6dc5-213e-4426-b4e5-37c4791397f2",
+            "violations": []
+        },
+        {
+            "path": "/power_1/",
+            "uuid_path": "/de9a6dc5-213e-4426-b4e5-37c4791397f2/0e54929e-a337-4399-8bbb-422632c546d1",
+            "violations": []
+        },
+        {
+            "path": "/power_2/",
+            "uuid_path": "/de9a6dc5-213e-4426-b4e5-37c4791397f2/05be5623-296c-43e2-858d-006e8b71b352",
+            "violations": []
+        },
+        {
+            "path": "/power_3/",
+            "uuid_path": "/de9a6dc5-213e-4426-b4e5-37c4791397f2/648c40f8-8eb8-40bc-83c6-ee1eb8910839",
+            "violations": []
+        },
+        {
+            "path": "/power_4/",
+            "uuid_path": "/de9a6dc5-213e-4426-b4e5-37c4791397f2/d99f7cbd-1f49-4e26-8e14-baa8509147de",
+            "violations": []
+        }
+    ],
+    "source": "YuEEG_H_POWER.kicad_sch"
+}

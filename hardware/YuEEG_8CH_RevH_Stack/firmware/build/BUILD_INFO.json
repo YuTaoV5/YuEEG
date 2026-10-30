@@ -1,0 +1,25 @@
+{
+  "status": "REV_H_DEVELOPMENT_NOT_FLASHED_OR_RELEASED",
+  "battery": "Sony NP-BX1 single cell; loaded-voltage telemetry before boost",
+  "timestamp": "2026-10-30T20:58:39.755857+08:00",
+  "fqbn": "esp32:esp32:esp32s3:FlashSize=16M,FlashMode=qio,PSRAM=opi,USBMode=hwcdc,CDCOnBoot=cdc,PartitionScheme=app3M_fat9M_16MB",
+  "arduino_esp32_core": "2.0.11",
+  "source_sha256": {
+    "YuEEG.h": "7f48f7395040ff1bf3f63792952dd46bcd48152591a84f39717bf305747e9031",
+    "YuEEG_Battery.h": "6001af38c19b72576b84f9dd2a7354768ef94bdb08fc181dfbb4dde96efa1471",
+    "YuEEG_UI.h": "707290f8539d2c634e44751b0214d799ad65593c2d34a495976c12fd58e2ec7a",
+    "ads1299_driver.ino": "c06fdc00da6d1214178b67520373361d29e7de04c28974112ffeaab52be07cc7"
+  },
+  "binaries_sha256": {
+    "ads1299_driver.ino.bin": "95593adf174630b5f69afb3a0501abed668dc8bf5b30c179289c080f0e38c0fa",
+    "ads1299_driver.ino.bootloader.bin": "d0b02b860147ace6a607985a3123a977b9451fa5d54a24ca6db59be4a2e4c345",
+    "ads1299_driver.ino.partitions.bin": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9"
+  },
+  "protocol_tests_passed": 6,
+  "flash_bytes": 779901,
+  "static_ram_bytes": 46444,
+  "battery_pin_contract": "../review/firmware_battery_contract.json",
+  "physical_flash_or_transport_tested": false,
+  "battery_voltage_calibration_tested": false,
+  "acquisition_timing_with_battery_monitor_tested": false
+}

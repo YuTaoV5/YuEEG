@@ -1,0 +1,22 @@
+﻿Reference,Value,Footprint,Sheet,Datasheet
+UP1,TPS259530DSGR / latch fault,Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm,power_1,https://www.ti.com/lit/ds/symlink/tps2595.pdf
+UP2,TPS61023DRLR / 5V boost,Package_TO_SOT_SMD:SOT-563,power_1,https://www.ti.com/lit/ds/symlink/tps61023.pdf
+QP1,DMP2035U-7,Package_TO_SOT_SMD:SOT-23,power_1,https://www.diodes.com/datasheet/download/DMP2035U.pdf
+JP1,NP-BX1 + / - contacts: NOT FINAL MECHANICS,Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical,power_1,~
+JP2,1=5V 2=CELL_SENSE 3/4=GND,Connector_JST:JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal,power_1,~
+SWP1,OFF:1-2 / RUN:2-3,Button_Switch_SMD:SW_SPDT_PCM12,power_1,~
+FP1,2A / Littelfuse 0466002.NRHF / 63V fast,Fuse:Fuse_1206_3216Metric,power_2,https://www.littelfuse.com/assetdocs/fuse-466-datasheet?assetguid=dbe9bcd7-6072-4adf-bf5b-d33e52a6b90f
+RP1,196k 0.1%,Resistor_SMD:R_0603_1608Metric,power_2,~
+RP2,100k 0.1%,Resistor_SMD:R_0603_1608Metric,power_2,~
+RP3,1.37k 1% / 1.50A nominal,Resistor_SMD:R_0603_1608Metric,power_2,~
+RP4,100k 1%,Resistor_SMD:R_0603_1608Metric,power_2,~
+RP5,732k 0.1%,Resistor_SMD:R_0603_1608Metric,power_2,~
+RP6,100k 0.1%,Resistor_SMD:R_0603_1608Metric,power_3,~
+CP1,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,power_3,~
+CP2,22u 25V X5R / C3216X5R1E226M160AB,Capacitor_SMD:C_1206_3216Metric,power_3,~
+CP3,10n 16V X7R,Capacitor_SMD:C_0603_1608Metric,power_3,~
+CP4,100n 16V X7R,Capacitor_SMD:C_0603_1608Metric,power_3,~
+CP5,22u 25V X5R / C3216X5R1E226M160AB,Capacitor_SMD:C_1206_3216Metric,power_3,~
+CP6,22u 25V X5R / C3216X5R1E226M160AB,Capacitor_SMD:C_1206_3216Metric,power_4,~
+CP7,100n 16V X7R,Capacitor_SMD:C_0603_1608Metric,power_4,~
+LP1,1uH / TDK SPM4015T-1R0M-LR,YuEEG:TDK_SPM4015_LR,power_4,~

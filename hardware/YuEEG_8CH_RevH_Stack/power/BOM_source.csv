@@ -1,0 +1,112 @@
+﻿Reference,Value,Footprint,Sheet,Datasheet
+U603,BQ29209DRBR,Package_SON:VSON-8-1EP_3x3mm_P0.65mm_EP1.6x2.4mm,battery_balance,https://www.ti.com/lit/ds/symlink/bq29209.pdf
+R630,160R 1%,Resistor_SMD:R_0402_1005Metric,battery_balance,~
+R631,260R 1%,Resistor_SMD:R_0402_1005Metric,battery_balance,~
+R632,100R 1%,Resistor_SMD:R_0402_1005Metric,battery_balance,~
+R633,100R 1%,Resistor_SMD:R_0402_1005Metric,battery_balance,~
+C630,100n 16V,Capacitor_SMD:C_0402_1005Metric,battery_balance,~
+C631,100n 16V,Capacitor_SMD:C_0402_1005Metric,battery_balance,~
+C632,100n 16V,Capacitor_SMD:C_0402_1005Metric,battery_balance,~
+C633,330n 16V,Capacitor_SMD:C_0402_1005Metric,battery_balance,~
+R634,330k,Resistor_SMD:R_0402_1005Metric,battery_balance,~
+U605,TPS3700DDCR BAL UV,Package_TO_SOT_SMD:SOT-23-6,battery_balance,https://www.ti.com/lit/ds/symlink/tps3700.pdf
+R660,1.81M 0.1%,Resistor_SMD:R_0402_1005Metric,battery_balance,~
+R661,100k 0.1%,Resistor_SMD:R_0402_1005Metric,battery_balance,~
+R662,1M,Resistor_SMD:R_0402_1005Metric,battery_balance,~
+C660,100n 16V,Capacitor_SMD:C_0402_1005Metric,battery_balance,~
+U606,LTV-356T VALID USB,Package_SO:SO-4_4.4x3.6mm_P2.54mm,battery_balance,http://optoelectronics.liteon.com/upload/download/DS70-2001-010/S_110_LTV-356T%2020140520.pdf
+R663,2.2k,Resistor_SMD:R_0402_1005Metric,battery_balance,~
+Q607,2N7002 RAW UV GATE,Package_TO_SOT_SMD:SOT-23,battery_balance,https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF
+TP601,RAW_BPLUS,TestPoint:TestPoint_Pad_D1.5mm,battery_balance,~
+TP602,RAW_MID,TestPoint:TestPoint_Pad_D1.5mm,battery_balance,~
+TP603,RAW_BMINUS,TestPoint:TestPoint_Pad_D1.5mm,battery_balance,~
+TP604,BAL_OV_ALARM,TestPoint:TestPoint_Pad_D1.5mm,battery_balance,~
+TP605,CHG_PG,TestPoint:TestPoint_Pad_D1.5mm,battery_balance,~
+R607,100k 1%,Resistor_SMD:R_0402_1005Metric,battery_charger,~
+J602,CELL NTC / 103AT-2 10k,Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,battery_charger,~
+R608,100k 1%,Resistor_SMD:R_0402_1005Metric,battery_charger,~
+J401,2S RAW: B+ / MID / B-,Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical,battery_protection,~
+F601,1A fast fuse / 32V,Fuse:Fuse_1206_3216Metric,battery_protection,~
+U602,S-8252AAY-M6T1U,Package_TO_SOT_SMD:SOT-23-6,battery_protection,https://www.ablic.com/en/doc/datasheet/battery_protection/S8252_E.pdf
+R620,470R 1%,Resistor_SMD:R_0402_1005Metric,battery_protection,~
+R621,470R 1%,Resistor_SMD:R_0402_1005Metric,battery_protection,~
+R622,2.00k 1%,Resistor_SMD:R_0402_1005Metric,battery_protection,~
+C620,100n 16V,Capacitor_SMD:C_0402_1005Metric,battery_protection,~
+C621,100n 16V,Capacitor_SMD:C_0402_1005Metric,battery_protection,~
+R623,0.010R 1% 0.5W,Resistor_SMD:R_1210_3225Metric,battery_protection,~
+U604,TPS3700DDCR RUN WINDOW,Package_TO_SOT_SMD:SOT-23-6,battery_protection,https://www.ti.com/lit/ds/symlink/tps3700.pdf
+R640,1.58M 0.1%,Resistor_SMD:R_0402_1005Metric,battery_protection,~
+R641,100k 0.1%,Resistor_SMD:R_0402_1005Metric,battery_protection,~
+R642,2.05M 0.1%,Resistor_SMD:R_0402_1005Metric,battery_protection,~
+R643,100k 0.1%,Resistor_SMD:R_0402_1005Metric,battery_protection,~
+C640,100n 16V,Capacitor_SMD:C_0402_1005Metric,battery_protection,~
+C641,10n C0G,Capacitor_SMD:C_0402_1005Metric,battery_protection,~
+R644,62k 1%,Resistor_SMD:R_0402_1005Metric,battery_protection,~
+R645,10k,Resistor_SMD:R_0402_1005Metric,battery_protection,~
+R646,1M,Resistor_SMD:R_0402_1005Metric,battery_protection,~
+Q605,MMBT3904 ENABLE,Package_TO_SOT_SMD:SOT-23,battery_protection,https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf
+Q603,AO3401A BACK-TO-BACK,Package_TO_SOT_SMD:SOT-23,battery_protection,http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf
+Q604,AO3401A BACK-TO-BACK,Package_TO_SOT_SMD:SOT-23,battery_protection,http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf
+R649,1M,Resistor_SMD:R_0402_1005Metric,battery_protection,~
+R650,100k,Resistor_SMD:R_0402_1005Metric,battery_protection,~
+C642,10n 25V,Capacitor_SMD:C_0402_1005Metric,battery_protection,~
+R651,47k,Resistor_SMD:R_0402_1005Metric,battery_protection,~
+Q601,CSD17308Q3 DSG,Package_SON:VSON-8_3.3x3.3mm_P0.65mm_NexFET,battery_protection,https://www.ti.com/lit/ds/symlink/csd17308q3.pdf
+D606,BZT52C8V2S,Diode_SMD:D_SOD-323,battery_protection,~
+Q602,CSD17308Q3 CHG,Package_SON:VSON-8_3.3x3.3mm_P0.65mm_NexFET,battery_protection,https://www.ti.com/lit/ds/symlink/csd17308q3.pdf
+D607,BZT52C8V2S,Diode_SMD:D_SOD-323,battery_protection,~
+F401,0.75A hold PTC,Fuse:Fuse_1206_3216Metric,power,~
+D401,SS14 1A 40V,Diode_SMD:D_SMA,power,~
+SW401,POWER: ON=open OFF=RUN_BASE-GND / CONTROL ONLY,Button_Switch_SMD:SW_SPDT_CK_JS102011SAQN,power,~
+TP401,GND,TestPoint:TestPoint_Pad_D1.5mm,power,~
+TP402,VBAT_SW,TestPoint:TestPoint_Pad_D1.5mm,power,~
+R1206,47k BLEED,Resistor_SMD:R_0402_1005Metric,usb_system_power,~
+C601,4.7u 16V X7R,Capacitor_SMD:C_0805_2012Metric,charger_secondary,~
+C602,47u 16V X7R,Capacitor_SMD:C_1210_3225Metric,charger_secondary,~
+C603,100n 16V,Capacitor_SMD:C_0402_1005Metric,charger_secondary,~
+C604,22u 16V X7R,Capacitor_SMD:C_1206_3216Metric,charger_secondary,~
+C605,47u 16V X7R,Capacitor_SMD:C_1210_3225Metric,charger_secondary,~
+C606,47u 16V X7R,Capacitor_SMD:C_1210_3225Metric,charger_secondary,~
+C607,22u 25V X7R,Capacitor_SMD:C_1206_3216Metric,charger_secondary,~
+C608,47n 25V X7R,Capacitor_SMD:C_0402_1005Metric,charger_secondary,~
+C609,100n 16V,Capacitor_SMD:C_0402_1005Metric,charger_secondary,~
+D601,SMF5.0A,Diode_SMD:D_SOD-123F,charger_secondary,~
+F602,1A hold PTC,Fuse:Fuse_1206_3216Metric,charger_secondary,~
+L601,1uH SRP5030T-1R0M / Isat11A,Inductor_SMD:L_Bourns_SRP5030T,charger_secondary,~
+LED601,CHARGING,LED_SMD:LED_0603_1608Metric,charger_secondary,~
+R603,1.50k 1%,Resistor_SMD:R_0402_1005Metric,charger_secondary,~
+R604,1.14k 1%,Resistor_SMD:R_0402_1005Metric,charger_secondary,~
+R605,9.31k 0.1%,Resistor_SMD:R_0402_1005Metric,charger_secondary,~
+R606,365k 0.1%,Resistor_SMD:R_0402_1005Metric,charger_secondary,~
+R609,2.2k,Resistor_SMD:R_0402_1005Metric,charger_secondary,~
+U601,BQ25886RGER,Package_DFN_QFN:Texas_RGE0024H_VQFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias,charger_secondary,http://www.ti.com/lit/ds/symlink/bq25886.pdf
+R1205,1M CE DEFAULT OFF,Resistor_SMD:R_0402_1005Metric,charger_secondary,~
+TP606,CHG_STAT,TestPoint:TestPoint_Pad_D1.5mm,charger_secondary,~
+C704,1u 16V,Capacitor_SMD:C_0603_1608Metric,charge_primary,~
+C705,1u 10V,Capacitor_SMD:C_0603_1608Metric,charge_primary,~
+C706,100n 16V,Capacitor_SMD:C_0402_1005Metric,charge_primary,~
+C707,100n 16V,Capacitor_SMD:C_0402_1005Metric,charge_primary,~
+C708,4.7u 16V,Capacitor_SMD:C_0603_1608Metric,charge_primary,~
+C709,100n 16V,Capacitor_SMD:C_0402_1005Metric,charge_primary,~
+D701,SMF5.0A,Diode_SMD:D_SOD-123F,charge_primary,~
+D902,PESD5V0S1BA,Diode_SMD:D_SOD-323,charge_primary,~
+D903,PESD5V0S1BA,Diode_SMD:D_SOD-323,charge_primary,~
+F701,1.5A hold PTC,Fuse:Fuse_1206_3216Metric,charge_primary,~
+J901,USB-C CHARGE / POWER - NO DATA,Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12,charge_primary,https://www.usb.org/sites/default/files/documents/usb_type-c.zip
+R705,887k 1%,Resistor_SMD:R_0402_1005Metric,charge_primary,~
+R706,23.7k 1%,Resistor_SMD:R_0402_1005Metric,charge_primary,~
+R707,100k,Resistor_SMD:R_0402_1005Metric,charge_primary,~
+U702,TLV75533PDBVR HOST ONLY,Package_TO_SOT_SMD:SOT-23-5,charge_primary,http://www.ti.com/lit/ds/symlink/tlv755p.pdf
+U703,TUSB320LAIRWBR / UFP GPIO,Package_DFN_QFN:Texas_X2QFN-12_1.6x1.6mm_P0.4mm,charge_primary,https://www.ti.com/lit/ds/symlink/tusb320lai.pdf
+U704,SN74LVC1G04DBVR,Package_TO_SOT_SMD:SOT-23-5,charge_primary,https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf
+U705,TPS2553DBVR,Package_TO_SOT_SMD:SOT-23-6,charge_primary,https://www.ti.com/lit/ds/symlink/tps2553.pdf
+R601,10k 1%,Resistor_SMD:R_0402_1005Metric,charge_primary,~
+R602,10k 1%,Resistor_SMD:R_0402_1005Metric,charge_primary,~
+U706,THM 6-0511 / STANDARD PINOUT,YuEEG:THM6_Standard,isolated_converter,https://www.tracopower.com/products/thm6.pdf
+C1201,10u 25V X7R,Capacitor_SMD:C_1206_3216Metric,isolated_converter,~
+C1202,100n 16V,Capacitor_SMD:C_0402_1005Metric,isolated_converter,~
+C1203,10u 25V X7R,Capacitor_SMD:C_1206_3216Metric,isolated_converter,~
+C1204,100n 16V,Capacitor_SMD:C_0402_1005Metric,isolated_converter,~
+C710,10u 25V X7R,Capacitor_SMD:C_1206_3216Metric,isolated_converter,~
+H1205,M2 INSULATED MOUNT,MountingHole:MountingHole_2.2mm_M2,isolated_converter,~
+H1206,M2 INSULATED MOUNT,MountingHole:MountingHole_2.2mm_M2,isolated_converter,~

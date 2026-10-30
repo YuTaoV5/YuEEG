@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650"><rect width="1100" height="650" fill="#f4f5f7"/><g font-family="Arial, sans-serif" fill="#17212e">
+<text x="40" y="30" font-size="20">Rev H screen / digital board envelope review</text>
+<text x="40" y="50" font-size="12">DEVELOPMENT — conditional dimensions; FPC reach and assembly remain unverified</text>
+<rect x="70" y="65" width="384" height="480" fill="#d8e9e0" stroke="#254e3b" rx="16"/>
+<rect x="70" y="389.4" width="384" height="68.0" fill="#f4dbc4" stroke="#be803e" />
+<rect x="70" y="457.4" width="384" height="87.60000000000002" fill="#dcd5e9" stroke="#7e65a6" />
+<rect x="118" y="68.2" width="273.12" height="341.92" fill="#8cc5e0" stroke="#187fb1" fill-opacity=".24" stroke-width="2"/>
+<rect x="82.32" y="107.0" width="20.479999999999997" height="36.0" fill="none" stroke="#586e83" />
+<rect x="75.6" y="117.0" width="6.719999999999999" height="16.0" fill="none" stroke="#586e83" />
+<rect x="252.0" y="315.79999999999995" width="34.39999999999998" height="36.79999999999998" fill="none" stroke="#586e83" />
+<rect x="294.4" y="312.2" width="95.20000000000002" height="48.0" fill="none" stroke="#aa503d" />
+<rect x="82.32" y="155.0" width="20.479999999999997" height="36.0" fill="none" stroke="#586e83" />
+<rect x="75.6" y="165.0" width="6.719999999999999" height="16.0" fill="none" stroke="#586e83" />
+<rect x="127.6" y="259.36" width="43.99999999999999" height="91.27999999999997" fill="none" stroke="#586e83" />
+<rect x="51.599999999999994" y="261.0" width="76.0" height="88.0" fill="none" stroke="#586e83" />
+<rect x="282.32000000000005" y="234.04" width="58.400000000000006" height="20.0" fill="none" stroke="#586e83" />
+<rect x="82.32" y="351.0" width="20.479999999999997" height="36.0" fill="none" stroke="#586e83" />
+<rect x="75.6" y="361.0" width="6.719999999999999" height="16.0" fill="none" stroke="#586e83" />
+<circle cx="422.0" cy="97.0" r="9.6" fill="#f4f5f7" stroke="#52616a"/><text x="434.0" y="101.0" font-size="10">H1</text>
+<circle cx="422.0" cy="473.0" r="9.6" fill="#f4f5f7" stroke="#52616a"/><text x="434.0" y="477.0" font-size="10">H2</text>
+<circle cx="102.0" cy="505.0" r="9.6" fill="#f4f5f7" stroke="#52616a"/><text x="114.0" y="509.0" font-size="10">H3</text>
+<circle cx="342.0" cy="347.4" r="3" fill="#263e55"/><text x="347.0" y="342.4" font-size="11">JH2</text>
+<circle cx="311.52" cy="244.04" r="3" fill="#263e55"/><text x="316.52" y="239.04" font-size="11">J2002</text>
+<circle cx="130.0" cy="305.0" r="3" fill="#263e55"/><text x="135.0" y="300.0" font-size="11">J1101</text>
+<circle cx="92.0" cy="125.0" r="3" fill="#263e55"/><text x="97.0" y="120.0" font-size="11">SW301</text>
+<circle cx="92.0" cy="173.0" r="3" fill="#263e55"/><text x="97.0" y="168.0" font-size="11">SW302</text>
+<circle cx="92.0" cy="369.0" r="3" fill="#263e55"/><text x="97.0" y="364.0" font-size="11">SW1001</text>
+<circle cx="190.0" cy="161.0" r="3" fill="#263e55"/><text x="195.0" y="156.0" font-size="11">U2</text>
+<circle cx="406.0" cy="305.0" r="3" fill="#263e55"/><text x="411.0" y="300.0" font-size="11">JH1</text>
+<circle cx="262.0" cy="513.0" r="3" fill="#263e55"/><text x="267.0" y="508.0" font-size="11">J601</text>
+<text x="510" y="90" font-size="15">Digital / AFE common outline: 48 x 60 mm</text>
+<text x="510" y="113" font-size="15">Screen outer: 34.14 x 42.74 mm</text>
+<text x="510" y="136" font-size="15">JH2 PH4 body height: 5.5 mm</text>
+<text x="510" y="159" font-size="15">At 6 mm flat-back gap: only 0.5 mm above JH2</text>
+<text x="510" y="182" font-size="15"></text>
+<text x="510" y="205" font-size="15">Flat screen back to HOST envelope: 8.42 mm</text>
+<text x="510" y="228" font-size="15">Conservative folded-flex corner scenario: 7.01 mm</text>
+<text x="510" y="251" font-size="15">For an 8 mm corner target: back gap &gt;= 7.36 mm</text>
+<text x="510" y="274" font-size="15"></text>
+<text x="510" y="297" font-size="15">The flex corner is an assumed bounding scenario,</text>
+<text x="510" y="320" font-size="15">not a measured conductor or a clearance failure.</text>
+<text x="510" y="343" font-size="15"></text>
+<text x="510" y="366" font-size="15">Factory FPC is folded/taped to screen back.</text>
+<text x="510" y="389" font-size="15">Direct mating across the support gap is unproven.</text>
+<text x="510" y="412" font-size="15">Do not release enclosure or screen standoffs yet.</text>
+<text x="510" y="435" font-size="15"></text>
+<text x="510" y="458" font-size="15">Blue: screen projection</text>
+<text x="510" y="481" font-size="15">Orange: isolation corridor</text>
+<text x="510" y="504" font-size="15">Purple: USB host region</text>
+<text x="510" y="527" font-size="15">Red outline: PH4 connector under the screen</text>
+</g></svg>

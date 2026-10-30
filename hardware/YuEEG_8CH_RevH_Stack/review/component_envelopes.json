@@ -1,0 +1,443 @@
+{
+  "models": [
+    {
+      "model": "SKRTLBE010_envelope.wrl",
+      "boxes_footprint_mm": [
+        {
+          "min": [
+            -2.25,
+            -1.35,
+            0
+          ],
+          "max": [
+            2.25,
+            1.21,
+            3.3
+          ]
+        },
+        {
+          "min": [
+            -1,
+            1.21,
+            0.7
+          ],
+          "max": [
+            1,
+            2.05,
+            2.7
+          ]
+        }
+      ],
+      "source": [
+        "https://tech.alpsalpine.com/cms.media/product_detail_fig_skrt_d_21_en_3c9d642f3b.gif"
+      ],
+      "scope": "Nominal body and actuator reach. Rectangular actuator is a bounding approximation, not actual circular geometry; no guide bosses.",
+      "sha256": "fe1db42ad3ad6c383225d37d59a836b2b1a8b24da797db0c3e9cecd12d5d027c"
+    },
+    {
+      "model": "JST_S4B_PH_SM4_envelope.wrl",
+      "boxes_footprint_mm": [
+        {
+          "min": [
+            -5.95,
+            -1.6,
+            0
+          ],
+          "max": [
+            5.95,
+            4.4,
+            5.5
+          ]
+        }
+      ],
+      "source": [
+        "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
+      ],
+      "scope": "Nominal SMT side-entry header body only; plug and wire bending volume are separate requirements.",
+      "sha256": "33e2aa6f578fe34426f520b2b3f83a0a894f6ceda732164440ea7ac835543407"
+    },
+    {
+      "model": "KINGCONN_7TFCN_FA_1010_C_envelope.wrl",
+      "boxes_footprint_mm": [
+        {
+          "min": [
+            -5.705,
+            -5.2,
+            0
+          ],
+          "max": [
+            5.705,
+            0.3,
+            3.75
+          ]
+        },
+        {
+          "min": [
+            -5.5,
+            0.3,
+            2.56
+          ],
+          "max": [
+            5.5,
+            9.8,
+            3.56
+          ]
+        }
+      ],
+      "source": [
+        "https://www.kingconn.com.tw/files/7TFCN-FA-1010-X.pdf"
+      ],
+      "scope": "Nominal short socket body and exposed inserted card. Card underside 2.56 mm; edge shape simplified; socket dimensional tolerances and card insertion sweep not resolved by this envelope.",
+      "sha256": "c2906f2408edeafdd6a2583e5a82a84baac0aebefed0ca5d9d11d7047df5271d"
+    },
+    {
+      "model": "OCN_OK_14F024_04_envelope.wrl",
+      "boxes_footprint_mm": [
+        {
+          "min": [
+            -3.65,
+            -1.25,
+            0
+          ],
+          "max": [
+            3.65,
+            1.25,
+            0.87
+          ]
+        }
+      ],
+      "source": [
+        "hardware/display-amoled-1.78inch-368x448-main/versions/AM178Q368448LK/cad/OK-14F024-04.pdf"
+      ],
+      "scope": "Female Rev B page 3; body 7.30 x 2.50, maximum socket height .77+.10. Mated height .80 is not an extension cable allowance.",
+      "sha256": "f0dd16e16aa80a33862c9a7fecc44ccda37b163ed3de59f91069d5736f16d2da"
+    },
+    {
+      "model": "TDK_SPM4015_LR_envelope.wrl",
+      "boxes_footprint_mm": [
+        {
+          "min": [
+            -2.3,
+            -2.15,
+            0
+          ],
+          "max": [
+            2.3,
+            2.15,
+            1.5
+          ]
+        }
+      ],
+      "source": [
+        "https://product.tdk.com/en/search/inductor/inductor/smd/info?part_no=SPM4015T-1R0M-LR"
+      ],
+      "scope": "Maximum X/Y based on 4.40/4.10 +/- .20 mm, maximum height 1.50 mm. Leads and magnetic details omitted.",
+      "sha256": "06ad208ebc2364bc11584af8d96735e0cf38baa16cfbc1fe35931df61f800d2b"
+    },
+    {
+      "model": "Diodes_SOT523_envelope.wrl",
+      "boxes_footprint_mm": [
+        {
+          "min": [
+            -0.425,
+            -0.85,
+            0.1
+          ],
+          "max": [
+            0.425,
+            0.85,
+            0.9
+          ]
+        },
+        {
+          "min": [
+            -0.875,
+            -0.65,
+            0
+          ],
+          "max": [
+            -0.425,
+            0.65,
+            0.2
+          ]
+        },
+        {
+          "min": [
+            0.425,
+            -0.15,
+            0
+          ],
+          "max": [
+            0.875,
+            0.15,
+            0.2
+          ]
+        }
+      ],
+      "source": [
+        "https://www.diodes.com/assets/Package-Files/SOT523.pdf"
+      ],
+      "scope": "Conservative package envelope: D<=1.70, E<=1.75, E1<=.85; A1<=.10 plus A2<=.80 gives .90 mm total upper bound. Lead groups simplified; does not change electrical pin numbering.",
+      "sha256": "b5121179461a772f1fbcfa42f51f254e3a1c43004933dc2b575df46866f9bc6b"
+    },
+    {
+      "model": "TI_DGN8_envelope.wrl",
+      "boxes_footprint_mm": [
+        {
+          "min": [
+            -1.55,
+            -1.55,
+            0.15
+          ],
+          "max": [
+            1.55,
+            1.55,
+            1.1
+          ]
+        },
+        {
+          "min": [
+            -2.525,
+            -1.165,
+            0
+          ],
+          "max": [
+            -1.55,
+            -0.7849999999999999,
+            0.38
+          ]
+        },
+        {
+          "min": [
+            1.55,
+            -1.165,
+            0
+          ],
+          "max": [
+            2.525,
+            -0.7849999999999999,
+            0.38
+          ]
+        },
+        {
+          "min": [
+            -2.525,
+            -0.515,
+            0
+          ],
+          "max": [
+            -1.55,
+            -0.135,
+            0.38
+          ]
+        },
+        {
+          "min": [
+            1.55,
+            -0.515,
+            0
+          ],
+          "max": [
+            2.525,
+            -0.135,
+            0.38
+          ]
+        },
+        {
+          "min": [
+            -2.525,
+            0.135,
+            0
+          ],
+          "max": [
+            -1.55,
+            0.515,
+            0.38
+          ]
+        },
+        {
+          "min": [
+            1.55,
+            0.135,
+            0
+          ],
+          "max": [
+            2.525,
+            0.515,
+            0.38
+          ]
+        },
+        {
+          "min": [
+            -2.525,
+            0.7849999999999999,
+            0
+          ],
+          "max": [
+            -1.55,
+            1.165,
+            0.38
+          ]
+        },
+        {
+          "min": [
+            1.55,
+            0.7849999999999999,
+            0
+          ],
+          "max": [
+            2.525,
+            1.165,
+            0.38
+          ]
+        }
+      ],
+      "source": [
+        "https://www.ti.com/lit/gpn/TPS7A49"
+      ],
+      "scope": "DGN outline: body <=3.1 x 3.1, lead span <=5.05, height <=1.1 mm. Simplified leads; no assertion about internal die, paste coverage or the exact ordered DGN thermal-pad variant.",
+      "sha256": "1557de04243206862110fb64927179126c4fef7f07c342b7e7dcc2451496eba1"
+    }
+  ],
+  "bindings": [
+    {
+      "board": "afe",
+      "reference": "D181",
+      "model": "Diodes_SOT523_envelope.wrl"
+    },
+    {
+      "board": "afe",
+      "reference": "D162",
+      "model": "Diodes_SOT523_envelope.wrl"
+    },
+    {
+      "board": "afe",
+      "reference": "U401",
+      "model": "TI_DGN8_envelope.wrl"
+    },
+    {
+      "board": "afe",
+      "reference": "D141",
+      "model": "Diodes_SOT523_envelope.wrl"
+    },
+    {
+      "board": "afe",
+      "reference": "D131",
+      "model": "Diodes_SOT523_envelope.wrl"
+    },
+    {
+      "board": "afe",
+      "reference": "D182",
+      "model": "Diodes_SOT523_envelope.wrl"
+    },
+    {
+      "board": "afe",
+      "reference": "D152",
+      "model": "Diodes_SOT523_envelope.wrl"
+    },
+    {
+      "board": "afe",
+      "reference": "D142",
+      "model": "Diodes_SOT523_envelope.wrl"
+    },
+    {
+      "board": "afe",
+      "reference": "D161",
+      "model": "Diodes_SOT523_envelope.wrl"
+    },
+    {
+      "board": "afe",
+      "reference": "D151",
+      "model": "Diodes_SOT523_envelope.wrl"
+    },
+    {
+      "board": "afe",
+      "reference": "D171",
+      "model": "Diodes_SOT523_envelope.wrl"
+    },
+    {
+      "board": "afe",
+      "reference": "D121",
+      "model": "Diodes_SOT523_envelope.wrl"
+    },
+    {
+      "board": "afe",
+      "reference": "D122",
+      "model": "Diodes_SOT523_envelope.wrl"
+    },
+    {
+      "board": "afe",
+      "reference": "D132",
+      "model": "Diodes_SOT523_envelope.wrl"
+    },
+    {
+      "board": "afe",
+      "reference": "D112",
+      "model": "Diodes_SOT523_envelope.wrl"
+    },
+    {
+      "board": "afe",
+      "reference": "D172",
+      "model": "Diodes_SOT523_envelope.wrl"
+    },
+    {
+      "board": "afe",
+      "reference": "D111",
+      "model": "Diodes_SOT523_envelope.wrl"
+    },
+    {
+      "board": "digital",
+      "reference": "SW301",
+      "model": "SKRTLBE010_envelope.wrl"
+    },
+    {
+      "board": "digital",
+      "reference": "L401",
+      "model": "TDK_SPM4015_LR_envelope.wrl"
+    },
+    {
+      "board": "digital",
+      "reference": "JH2",
+      "model": "JST_S4B_PH_SM4_envelope.wrl"
+    },
+    {
+      "board": "digital",
+      "reference": "SW302",
+      "model": "SKRTLBE010_envelope.wrl"
+    },
+    {
+      "board": "digital",
+      "reference": "J1101",
+      "model": "KINGCONN_7TFCN_FA_1010_C_envelope.wrl"
+    },
+    {
+      "board": "digital",
+      "reference": "J2002",
+      "model": "OCN_OK_14F024_04_envelope.wrl"
+    },
+    {
+      "board": "digital",
+      "reference": "SW1001",
+      "model": "SKRTLBE010_envelope.wrl"
+    },
+    {
+      "board": "power",
+      "reference": "LP1",
+      "model": "TDK_SPM4015_LR_envelope.wrl"
+    },
+    {
+      "board": "power",
+      "reference": "JP2",
+      "model": "JST_S4B_PH_SM4_envelope.wrl"
+    },
+    {
+      "board": "power",
+      "reference": "UP1",
+      "model": "${KICAD9_3DMODEL_DIR}/Package_SON.3dshapes/WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm.step"
+    }
+  ],
+  "standard_model_aliases": {
+    "power.UP1": "Installed KiCad generic WSON-8 2x2, pitch .5, EP .9x1.6 body model replaces missing Texas-named model. Visual package alias only; original Texas footprint retained."
+  },
+  "status": "Dimensional envelopes only. Not a full tolerance/assembly/cable reach/isolation approval."
+}

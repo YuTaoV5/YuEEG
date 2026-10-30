@@ -1,0 +1,13 @@
+{
+  "width_mm": 0.4,
+  "segments": [
+    "4327fd16-cd4c-4312-92d2-543b57c6370b",
+    "7930a0be-53e6-477c-a415-307c1e33858a",
+    "8667a772-b65b-42de-95cc-2a0721fdd036",
+    "b8d4b43e-74cf-4e64-957e-06c4ebb87145",
+    "d8465a45-ae89-46d8-bd8e-a09bb771314f",
+    "e71cea2d-0126-4f30-a3f7-4ec7a6f00258",
+    "fec6949e-3649-43ac-acd7-3838acf7b66b"
+  ],
+  "scope": "Output capacitor local connection; native DRC checked, physical transient validation pending."
+}

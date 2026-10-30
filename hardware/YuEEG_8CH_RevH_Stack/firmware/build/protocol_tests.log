@@ -1,0 +1,11 @@
+test_crc_corruption_resynchronizes (test_protocol.ProtocolTest.test_crc_corruption_resynchronizes) ... ok
+test_fragmented_stream_and_metadata (test_protocol.ProtocolTest.test_fragmented_stream_and_metadata) ... ok
+test_gain (test_protocol.ProtocolTest.test_gain) ... ok
+test_sd_file_conversion (test_protocol.ProtocolTest.test_sd_file_conversion) ... ok
+test_signed_limits_and_scale (test_protocol.ProtocolTest.test_signed_limits_and_scale) ... ok
+test_udp_batch (test_protocol.ProtocolTest.test_udp_batch) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.100s
+
+OK

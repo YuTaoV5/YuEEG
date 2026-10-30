@@ -1,0 +1,12 @@
+{
+  "via_xy_mm": [
+    26.475,
+    39.75
+  ],
+  "diameter_mm": 0.45,
+  "drill_mm": 0.2,
+  "stub_width_mm": 0.4,
+  "stub_length_mm": 1.45,
+  "native_drc": "zero violations, unconnected and parity issues",
+  "scope": "Local ground return to digital ground planes; physical ripple and transient measurements remain pending"
+}

@@ -1,0 +1,2 @@
+(version 1)
+(rule "USB host to device isolation" (condition "((A.NetClass == 'USB_HOST' && B.NetClass != 'USB_HOST') || (B.NetClass == 'USB_HOST' && A.NetClass != 'USB_HOST')) && A.NetName != '' && B.NetName != ''") (constraint clearance (min 8mm)))

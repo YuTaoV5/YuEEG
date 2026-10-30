@@ -1,0 +1,45 @@
+{
+  "pitch_mm": 2.0,
+  "socket_body_height_mm": 6.35,
+  "header_body_height_mm": 1.5,
+  "header_mating_length_mm": 4,
+  "nominal_pcb_clear_gap_mm": 8.5,
+  "note": "Manufacturer dimensional reference selected. Exact Taobao SKU or qualified equivalent remains unverified; assembly coordinates use project logical pin numbers.",
+  "AFE_DIGITAL": {
+    "1": "SYS_5V",
+    "2": "GND",
+    "3": "+3V3",
+    "4": "GND",
+    "5": "ADS_SCLK",
+    "6": "GND",
+    "7": "ADS_MOSI",
+    "8": "GND",
+    "9": "ADS_CS",
+    "10": "GND",
+    "11": "ADS_MISO",
+    "12": "GND",
+    "13": "ADS_DRDY",
+    "14": "GND",
+    "15": "ADS_RESET",
+    "16": "ADS_PWDN",
+    "17": "ADS_START",
+    "18": "GND",
+    "19": "SYS_5V",
+    "20": "GND"
+  },
+  "nominal_insertion_mm": 3.35,
+  "socket_insertion_range_mm": [
+    2.62,
+    5.03
+  ],
+  "socket_reference": "SQT-110-01-L-D",
+  "header_reference": "TMM-110-03-L-D",
+  "POWER_DIGITAL": {
+    "connector": "JST PH 4-pin side-entry; JP2 to JH2",
+    "1": "SYS_5V",
+    "2": "BAT_PROTECTED_SENSE",
+    "3": "GND",
+    "4": "GND"
+  },
+  "battery": "Sony NP-BX1 / 1S / external charger"
+}

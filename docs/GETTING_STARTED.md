@@ -17,7 +17,7 @@
 
 AM178Q368448LK AMOLED 在 35 × 67 mm 载板上，四个 10 mm 绝缘支柱叠装。主板到载板使用 20→20 直通有键线缆；载板的 OCN 母座直接配屏幕 FPC。通电前核对实际 pin 1 和全部电源脚，详见 [显示适配说明](../hardware/YuEEG_8CH_RevG/DISPLAY_INTEGRATION.md)。
 
-固件烧录、Wi-Fi 配置、采集命令、显示和 SD 操作见 [固件说明](../Firmware/ads1299_driver/README.md)。首次只接模拟信号源/假电极验证电源、寄存器、采样和保护，不以静态规则检查代替样机验收。
+Rev G 固件烧录、Wi-Fi 配置、采集命令、显示和 SD 操作见[冻结版固件说明](../hardware/YuEEG_8CH_RevG/firmware/ads1299_driver/README.md)。当前 `Firmware/ads1299_driver/` 为 Rev H／NP-BX1 开发分支，不能混同为本指南对应的 Rev G 固件。首次只接模拟信号源/假电极验证电源、寄存器、采样和保护，不以静态规则检查代替样机验收。
 
 ```powershell
 python Firmware/tools/test_protocol.py

@@ -17,3 +17,5 @@
 /hardware/YuEEG_8CH_RevF/** -text -whitespace
 
 /hardware/YuEEG_8CH_RevG/** -text -whitespace
+# Engineering hashes also bind Rev H native files and exported fabrication bytes.
+/hardware/YuEEG_8CH_RevH_Stack/** -text -whitespace

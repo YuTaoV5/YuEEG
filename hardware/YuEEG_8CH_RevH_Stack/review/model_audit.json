@@ -1,0 +1,3780 @@
+[
+  {
+    "board": "afe",
+    "reference": "C210",
+    "value": "1u 10V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "CH1",
+    "value": "1u 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C405",
+    "value": "22u 16V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R204",
+    "value": "10k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "D181",
+    "value": "BAV199T-7-F",
+    "models": [
+      "${KIPRJMOD}/../models/Diodes_SOT523_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "H1",
+    "value": "M2 NYLON ONLY",
+    "models": [],
+    "existing": [],
+    "available_wrl_alternative": []
+  },
+  {
+    "board": "afe",
+    "reference": "R201",
+    "value": "10k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C212",
+    "value": "1u 10V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R112",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R164",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R123",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C214",
+    "value": "1u 10V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C215",
+    "value": "1u 10V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R141",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C153",
+    "value": "1n C0G 2%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R211",
+    "value": "499k 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R174",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R144",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "U1",
+    "value": "ADS1299PAG",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Package_QFP.3dshapes/TQFP-64_10x10mm_P0.5mm.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R402",
+    "value": "10k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C133",
+    "value": "1n C0G 2%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "JH1",
+    "value": "SQT-110-01-L-D / SOCKET / logical pins",
+    "models": [
+      "${KIPRJMOD}/../models/SQT_110_01_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C418",
+    "value": "1u 10V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "H3",
+    "value": "M2 NYLON ONLY",
+    "models": [],
+    "existing": [],
+    "available_wrl_alternative": []
+  },
+  {
+    "board": "afe",
+    "reference": "R122",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C224",
+    "value": "1u 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C411",
+    "value": "10n C0G",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C173",
+    "value": "1n C0G 2%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R212",
+    "value": "499k 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R131",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C132",
+    "value": "47p C0G 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R401",
+    "value": "27.4k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "D162",
+    "value": "BAV199T-7-F",
+    "models": [
+      "${KIPRJMOD}/../models/Diodes_SOT523_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C112",
+    "value": "47p C0G 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C143",
+    "value": "1n C0G 2%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C410",
+    "value": "1u 10V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C131",
+    "value": "47p C0G 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R154",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R121",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "CH2",
+    "value": "100n 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R152",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C182",
+    "value": "47p C0G 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "U401",
+    "value": "TPS7A4901DGNR",
+    "models": [
+      "${KIPRJMOD}/../models/TI_DGN8_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "D141",
+    "value": "BAV199T-7-F",
+    "models": [
+      "${KIPRJMOD}/../models/Diodes_SOT523_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C220",
+    "value": "100u 25V EEEFT1E101AP H5.8",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_6.3x5.8.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R203",
+    "value": "10k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R173",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C162",
+    "value": "47p C0G 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C413",
+    "value": "2.2u 10V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "TP403",
+    "value": "+4V4_PRE",
+    "models": [],
+    "existing": [],
+    "available_wrl_alternative": []
+  },
+  {
+    "board": "afe",
+    "reference": "C203",
+    "value": "100n 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C181",
+    "value": "47p C0G 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R210",
+    "value": "1M 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "D131",
+    "value": "BAV199T-7-F",
+    "models": [
+      "${KIPRJMOD}/../models/Diodes_SOT523_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C113",
+    "value": "1n C0G 2%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R205",
+    "value": "10k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C183",
+    "value": "1n C0G 2%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C171",
+    "value": "47p C0G 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "U405",
+    "value": "TPS72325DBVR",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "D182",
+    "value": "BAV199T-7-F",
+    "models": [
+      "${KIPRJMOD}/../models/Diodes_SOT523_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "TP406",
+    "value": "-2V5A",
+    "models": [],
+    "existing": [],
+    "available_wrl_alternative": []
+  },
+  {
+    "board": "afe",
+    "reference": "R143",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C123",
+    "value": "1n C0G 2%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C222",
+    "value": "1u 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "D152",
+    "value": "BAV199T-7-F",
+    "models": [
+      "${KIPRJMOD}/../models/Diodes_SOT523_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C216",
+    "value": "1u 10V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C416",
+    "value": "10n C0G",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R134",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C172",
+    "value": "47p C0G 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C161",
+    "value": "47p C0G 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "D403",
+    "value": "BAT46W pre-LDO reverse bypass",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "D402",
+    "value": "BAT46W reverse-current bypass",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R184",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R163",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R207",
+    "value": "10k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R151",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R171",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C217",
+    "value": "1u 10V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C213",
+    "value": "1u 10V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C402",
+    "value": "22u 25V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C211",
+    "value": "1u 10V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C403",
+    "value": "10n C0G",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R182",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C412",
+    "value": "10u 10V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "FBH1",
+    "value": "600R@100MHz / verify DCR and current",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "U403",
+    "value": "TPS73225DBVR",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "D142",
+    "value": "BAV199T-7-F",
+    "models": [
+      "${KIPRJMOD}/../models/Diodes_SOT523_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R206",
+    "value": "10k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C202",
+    "value": "10u 10V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "D161",
+    "value": "BAV199T-7-F",
+    "models": [
+      "${KIPRJMOD}/../models/Diodes_SOT523_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C141",
+    "value": "47p C0G 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C401",
+    "value": "22u 25V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C414",
+    "value": "2.2u 10V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R209",
+    "value": "10k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R133",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R142",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "D151",
+    "value": "BAV199T-7-F",
+    "models": [
+      "${KIPRJMOD}/../models/Diodes_SOT523_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "H2",
+    "value": "M2 NYLON ONLY",
+    "models": [],
+    "existing": [],
+    "available_wrl_alternative": []
+  },
+  {
+    "board": "afe",
+    "reference": "C201",
+    "value": "1.5n C0G",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R208",
+    "value": "10k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "D171",
+    "value": "BAV199T-7-F",
+    "models": [
+      "${KIPRJMOD}/../models/Diodes_SOT523_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "TP405",
+    "value": "+2V5A",
+    "models": [],
+    "existing": [],
+    "available_wrl_alternative": []
+  },
+  {
+    "board": "afe",
+    "reference": "R162",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R111",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "D121",
+    "value": "BAV199T-7-F",
+    "models": [
+      "${KIPRJMOD}/../models/Diodes_SOT523_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R153",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "J1301",
+    "value": "1x10 2.54mm RIGHT ANGLE / ELECTRODES",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x10_P2.54mm_Horizontal.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R172",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C223",
+    "value": "100n 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R411",
+    "value": "4.99k 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R132",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R202",
+    "value": "10k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R183",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R161",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "D122",
+    "value": "BAV199T-7-F",
+    "models": [
+      "${KIPRJMOD}/../models/Diodes_SOT523_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "D801",
+    "value": "BAV199 BIAS CLAMP",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R113",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "TP407",
+    "value": "NEG_RAW",
+    "models": [],
+    "existing": [],
+    "available_wrl_alternative": []
+  },
+  {
+    "board": "afe",
+    "reference": "D132",
+    "value": "BAV199T-7-F",
+    "models": [
+      "${KIPRJMOD}/../models/Diodes_SOT523_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C111",
+    "value": "47p C0G 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C163",
+    "value": "1n C0G 2%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C142",
+    "value": "47p C0G 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "D112",
+    "value": "BAV199T-7-F",
+    "models": [
+      "${KIPRJMOD}/../models/Diodes_SOT523_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R181",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "U404",
+    "value": "TPS60403DBVR",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C151",
+    "value": "47p C0G 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C152",
+    "value": "47p C0G 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C122",
+    "value": "47p C0G 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C415",
+    "value": "10u 10V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C121",
+    "value": "47p C0G 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C404",
+    "value": "10n C0G",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R114",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "D172",
+    "value": "BAV199T-7-F",
+    "models": [
+      "${KIPRJMOD}/../models/Diodes_SOT523_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C221",
+    "value": "1u 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "D111",
+    "value": "BAV199T-7-F",
+    "models": [
+      "${KIPRJMOD}/../models/Diodes_SOT523_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R124",
+    "value": "4.99k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "R410",
+    "value": "4.99k 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "afe",
+    "reference": "C417",
+    "value": "10u 10V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C1101",
+    "value": "22u 10V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C302",
+    "value": "100n 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R842",
+    "value": "2.2k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "D605",
+    "value": "PESD5V0S1BA",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1022",
+    "value": "22R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C1010",
+    "value": "22u 10V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C901",
+    "value": "100n 16V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R403",
+    "value": "31.2k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "LED804",
+    "value": "FAULT",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R2003",
+    "value": "47k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C2004",
+    "value": "100n 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C1007",
+    "value": "4.7u 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1001",
+    "value": "100k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "SW301",
+    "value": "ALPS SKRTLBE010 / RESET",
+    "models": [
+      "${KIPRJMOD}/../models/SKRTLBE010_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1112",
+    "value": "10k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "D1101",
+    "value": "USBLC6-2SC6",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R404",
+    "value": "10k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "L401",
+    "value": "2.2uH / TDK SPM4015T-2R2M-LR",
+    "models": [
+      "${KIPRJMOD}/../models/TDK_SPM4015_LR_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "JH2",
+    "value": "POWER INPUT: 1=5V 2=CELL_SENSE 3/4=GND",
+    "models": [
+      "${KIPRJMOD}/../models/JST_S4B_PH_SM4_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1025",
+    "value": "22R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "LED801",
+    "value": "POWER",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "LED802",
+    "value": "RUN",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1035",
+    "value": "47k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R841",
+    "value": "2.2k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "U1003",
+    "value": "TPS7A2018PDBVR",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1032",
+    "value": "47k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1031",
+    "value": "47k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "U701",
+    "value": "ADuM4160BRIZ / enhanced creepage",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-16W_7.5x10.3mm_P1.27mm.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1026",
+    "value": "22R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C305",
+    "value": "100n 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R840",
+    "value": "2.2k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1037",
+    "value": "47k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "D602",
+    "value": "PESD5V0U1BAF",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C1006",
+    "value": "1u 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "U2",
+    "value": "ESP32-S3-WROOM-1U-N16R8",
+    "models": [
+      "${KIPRJMOD}/../models/ESP32-S3-WROOM-1U.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      false
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1021",
+    "value": "22R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "U1004",
+    "value": "SN74AXC8T245PWR / 3V3 -> 1V8",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-24_4.4x7.8mm_P0.65mm.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R701",
+    "value": "24R 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C1102",
+    "value": "100n 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "D603",
+    "value": "PESD5V0U1BAF",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C2001",
+    "value": "10u 10V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C1120",
+    "value": "10n 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "SW302",
+    "value": "ALPS SKRTLBE010 / BOOT",
+    "models": [
+      "${KIPRJMOD}/../models/SKRTLBE010_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "H1",
+    "value": "M2 NYLON ONLY",
+    "models": [],
+    "existing": [],
+    "available_wrl_alternative": []
+  },
+  {
+    "board": "digital",
+    "reference": "C701",
+    "value": "100n 16V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R704",
+    "value": "24R 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R2001",
+    "value": "0R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C1009",
+    "value": "100n 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1115",
+    "value": "10k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C702",
+    "value": "100n 16V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R702",
+    "value": "24R 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "J301",
+    "value": "DEBUG POGO / NO HEADER FITTED",
+    "models": [],
+    "existing": [],
+    "available_wrl_alternative": []
+  },
+  {
+    "board": "digital",
+    "reference": "C407",
+    "value": "22u 10V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R843",
+    "value": "2.2k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C2005",
+    "value": "100n 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1036",
+    "value": "47k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "H3",
+    "value": "M2 NYLON ONLY",
+    "models": [],
+    "existing": [],
+    "available_wrl_alternative": []
+  },
+  {
+    "board": "digital",
+    "reference": "C303",
+    "value": "10u 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1111",
+    "value": "10k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R310",
+    "value": "100k 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "Q1001",
+    "value": "MMBT3904 OE ENABLE",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "D901",
+    "value": "SMF5.0A DATA VBUS",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123F.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C1012",
+    "value": "100n 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C2003",
+    "value": "1u 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "D1102",
+    "value": "USBLC6-2SC6",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R902",
+    "value": "5.1k 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C1001",
+    "value": "1n 25V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "H2",
+    "value": "M2 NYLON ONLY",
+    "models": [],
+    "existing": [],
+    "available_wrl_alternative": []
+  },
+  {
+    "board": "digital",
+    "reference": "R1002",
+    "value": "10k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1003",
+    "value": "1k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C1008",
+    "value": "100n 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "D604",
+    "value": "PESD5V0S1BA",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "J1101",
+    "value": "KINGCONN 7TFCN-FA-1010-C / H3.75",
+    "models": [
+      "${KIPRJMOD}/../models/KINGCONN_7TFCN_FA_1010_C_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R703",
+    "value": "24R 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1027",
+    "value": "22R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "U402",
+    "value": "TPS62160DGKR",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Package_SO.3dshapes/MSOP-8_3x3mm_P0.65mm.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "J601",
+    "value": "USB-C DATA / FLASH - ISOLATED",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.step"
+    ],
+    "existing": [
+      false
+    ],
+    "available_wrl_alternative": [
+      false
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "LED803",
+    "value": "WIFI",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R2004",
+    "value": "47k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C1003",
+    "value": "100n 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1120",
+    "value": "10k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "TP404",
+    "value": "+3V3",
+    "models": [],
+    "existing": [],
+    "available_wrl_alternative": []
+  },
+  {
+    "board": "digital",
+    "reference": "U1001",
+    "value": "TPS22918DBVR AMOLED POWER",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1114",
+    "value": "10k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "J2002",
+    "value": "OK-14F024-04 / AM178Q368448LK",
+    "models": [
+      "${KIPRJMOD}/../models/OCN_OK_14F024_04_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C304",
+    "value": "22u 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C703",
+    "value": "100n 16V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1023",
+    "value": "22R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1005",
+    "value": "1M",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C1103",
+    "value": "1u 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1004",
+    "value": "100k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1116",
+    "value": "10k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1113",
+    "value": "10k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1033",
+    "value": "47k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1034",
+    "value": "47k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1101",
+    "value": "22R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "SW1001",
+    "value": "ALPS SKRTLBE010 / REC",
+    "models": [
+      "${KIPRJMOD}/../models/SKRTLBE010_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R901",
+    "value": "5.1k 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C2002",
+    "value": "100n 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "FB1101",
+    "value": "BLM18PG121SN1D / 120R@100MHz",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C1002",
+    "value": "22u 10V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "F901",
+    "value": "500mA HOLD PTC",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Fuse.3dshapes/Fuse_1206_3216Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R309",
+    "value": "330k 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R2002",
+    "value": "100k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R308",
+    "value": "10k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1024",
+    "value": "22R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R303",
+    "value": "33R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R302",
+    "value": "33R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "JH1",
+    "value": "TMM-110-03-L-D / 4mm POST / bottom logical",
+    "models": [
+      "${KIPRJMOD}/../models/TMM_110_03_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R301",
+    "value": "33R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R304",
+    "value": "33R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R306",
+    "value": "33R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R307",
+    "value": "10k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R305",
+    "value": "33R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C301",
+    "value": "1u 10V",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C406",
+    "value": "22u 25V X5R / C3216X5R1E226M160AB H1.8max",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "power",
+    "reference": "QP1",
+    "value": "DMP2035U-7",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "power",
+    "reference": "LP1",
+    "value": "1uH / TDK SPM4015T-1R0M-LR",
+    "models": [
+      "${KIPRJMOD}/../models/TDK_SPM4015_LR_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "power",
+    "reference": "RP6",
+    "value": "100k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "power",
+    "reference": "FP1",
+    "value": "2A / Littelfuse 0466002.NRHF / 63V fast",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Fuse.3dshapes/Fuse_1206_3216Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "power",
+    "reference": "RP4",
+    "value": "100k 1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "power",
+    "reference": "RP1",
+    "value": "196k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "power",
+    "reference": "JP2",
+    "value": "1=5V 2=CELL_SENSE 3/4=GND",
+    "models": [
+      "${KIPRJMOD}/../models/JST_S4B_PH_SM4_envelope.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "power",
+    "reference": "SWP1",
+    "value": "OFF:1-2 / RUN:2-3",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPDT_PCM12.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "power",
+    "reference": "CP4",
+    "value": "100n 16V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "power",
+    "reference": "UP1",
+    "value": "TPS259530DSGR / latch fault",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Package_SON.3dshapes/WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "power",
+    "reference": "JP1",
+    "value": "NP-BX1 + / - contacts: NOT FINAL MECHANICS",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.00mm.3dshapes/PinHeader_1x02_P2.00mm_Vertical.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "power",
+    "reference": "RP5",
+    "value": "732k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "power",
+    "reference": "UP2",
+    "value": "TPS61023DRLR / 5V boost",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-563.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "power",
+    "reference": "CP1",
+    "value": "1u 10V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "power",
+    "reference": "CP6",
+    "value": "22u 25V X5R / C3216X5R1E226M160AB",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "power",
+    "reference": "RP2",
+    "value": "100k 0.1%",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "power",
+    "reference": "CP3",
+    "value": "10n 16V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "power",
+    "reference": "CP7",
+    "value": "100n 16V X7R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "power",
+    "reference": "CP5",
+    "value": "22u 25V X5R / C3216X5R1E226M160AB",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "power",
+    "reference": "CP2",
+    "value": "22u 25V X5R / C3216X5R1E226M160AB",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "power",
+    "reference": "RP3",
+    "value": "1.37k 1% / 1.50A nominal",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  }
+]

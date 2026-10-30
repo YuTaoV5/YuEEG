@@ -1,0 +1,78 @@
+{
+  "status": "ENGINEERING_REVIEW_ONLY_NOT_FOR_ORDER",
+  "timestamp": "2026-10-30T21:23:12.237240+08:00",
+  "boards": [
+    {
+      "board": "afe",
+      "pcb_sha256": "ae5140724bf582ae944073b02cd87ec61d5f3ccc309f2f4dbd5db13efa84e8db",
+      "files": {
+        "BOM.csv": "6e6793e58aafe8fdc51248102a824570f1ae39e5eab63b7558d812a3ad4c9f0f",
+        "placement_back.csv": "2f78b0dba8182984481e1a881e3aa538b27d088bb966433e244aa6f0992a9c85",
+        "placement_front.csv": "832c099a572ea1ef049f9ab6505d3860f3b36820ef53c73484fa260620fc4b15",
+        "YuEEG_H_AFE-B_Cu.gbl": "524d0fe2929c5ac22306c0805fc827d438b2f32403eb22411ed44ba5bab959a5",
+        "YuEEG_H_AFE-B_Mask.gbs": "da63744f4d06389ad6e8b2e5b816730194ab2fcc6db1ed6085a969af05957455",
+        "YuEEG_H_AFE-B_Paste.gbp": "677e5e84fad6ab17e3f2b4548fbdd6aec210ccb5e80a3b5dac7ed69822bca844",
+        "YuEEG_H_AFE-B_Silkscreen.gbo": "d9ddb8df0c78d1f09bd9364203d5fe230ce6c855dbdd73053de281ce8a10f8be",
+        "YuEEG_H_AFE-Edge_Cuts.gm1": "4e86a4c71409a3c2fc071bb97847ecad0d9f7540b1fae0b2890f489df6834b2e",
+        "YuEEG_H_AFE-F_Cu.gtl": "5bd3aee9a43ca60c6421e44d2c8522cac94dc0ae97b4ae875e1fae31a5a18c26",
+        "YuEEG_H_AFE-F_Mask.gts": "7b019e6ef0c1742f3fd3f239fc65835031bab788b1c2da84877c9780096fcb7c",
+        "YuEEG_H_AFE-F_Paste.gtp": "9fa7bb33c5d0177649bebc8c273ce272816831de17163f6a0b108413572b30ff",
+        "YuEEG_H_AFE-F_Silkscreen.gto": "f171af3eac7a85f58475f232de2815f05f4e78598017e75fc826d0c9b503f454",
+        "YuEEG_H_AFE-In1_Cu.g1": "54e555ccffe40066e0b6c4941b3e678e600f2492e082d5d4c8745567ef9318f2",
+        "YuEEG_H_AFE-In2_Cu.g2": "dcb34d8700b17e0e349ae5b31adeb7a674a8d0ecaef3706a094d6e59f7c2c3d3",
+        "YuEEG_H_AFE-job.gbrjob": "c4a567ea49c8372f795e735be1928ced1475a865b79475e23ef0a8abf113737d",
+        "YuEEG_H_AFE-NPTH.drl": "eb66c2c65c780a81b925c2a1cdc6721ec3e4fb26c4e6b2d1e17c10956b495711",
+        "YuEEG_H_AFE-PTH.drl": "29f848534aa3555461b7c8c41fc2140fc7baf56a000b45267404ffa85a7dbe30"
+      },
+      "internal_M2_openings_in_Edge_Cuts": 3
+    },
+    {
+      "board": "digital",
+      "pcb_sha256": "1899196d306572cbcbd0af3c51b9b16141a1bc5e77bc65f2c840ae26532ccd5a",
+      "files": {
+        "BOM.csv": "b20163aaf200dadafc2534bf600771e28b1b56f462b4553f4bc7aac76b0e4209",
+        "placement_back.csv": "11918ab511805474032f5810f388b27f8741486b33bc37902db486a0ecd1c633",
+        "placement_front.csv": "63bee36613175a459b3c8425da2b23c47ee74b9cf2d50e3973c3eef592744d84",
+        "YuEEG_H_DIGITAL-B_Cu.gbl": "982ce86210bcc5455c0df8acd3ddda24500ec1312608218a7f106cf3af4d9ee9",
+        "YuEEG_H_DIGITAL-B_Mask.gbs": "7ddd62e13ebb7f9479195e37e442159e57442c98b58b3f3f454b06df2e8c84d7",
+        "YuEEG_H_DIGITAL-B_Paste.gbp": "a76c8daa4f2f36a84b8006685c645cde61a3ce66983b6e5bbd045a6153cc4ff7",
+        "YuEEG_H_DIGITAL-B_Silkscreen.gbo": "3bf347e954335951312b929b23288fa7f678df0d41fa97ab905e186e7d5d7dbf",
+        "YuEEG_H_DIGITAL-Edge_Cuts.gm1": "a386f2b94778ed2eb0c2e8eb4f4875f88c575a29f775eb534b2c71adfc596965",
+        "YuEEG_H_DIGITAL-F_Cu.gtl": "e540fdf52c99e21418aae740d13a6f75440b87a4731014db1ef8ee4940daabe3",
+        "YuEEG_H_DIGITAL-F_Mask.gts": "cf239ceafb7bf41e03a9441cae7ac3d88507addaa702bab2e7ea955b539abc0f",
+        "YuEEG_H_DIGITAL-F_Paste.gtp": "757f26608fe485ea0d47cf31bbd38e4dc0dd62a29b69914a742afb85bc7a66ce",
+        "YuEEG_H_DIGITAL-F_Silkscreen.gto": "dc125a24ee636a35614202ea3c75864d8c896016b8a47fc7caa98166d2b7670b",
+        "YuEEG_H_DIGITAL-In1_Cu.g1": "c925b19a600ffc6951350619e67c6c1774be88e8dab33f323e0285f39497b9bc",
+        "YuEEG_H_DIGITAL-In2_Cu.g2": "8a8eac7e9e5c7604c92e9ab9525c436c6a18df87884175b3754534e6f110cabe",
+        "YuEEG_H_DIGITAL-In3_Cu.g3": "2679c6ea29d0cdcea39ebfeb1b9fc69219037ad9b037f7ba4c666da356a6d004",
+        "YuEEG_H_DIGITAL-In4_Cu.g4": "deb31b0cb8847c728fe7c5215eb334630f79a9e00d091a2e12776c0745890900",
+        "YuEEG_H_DIGITAL-job.gbrjob": "558a13ea55453e646e78419b75c41e2dc8f89a7eb7486247472d331f97457b14",
+        "YuEEG_H_DIGITAL-NPTH.drl": "e0875235c7cd87230ef4b6bc93d2f4ac493e161aa0f2d21e163eab9220fdb9a3",
+        "YuEEG_H_DIGITAL-PTH.drl": "5a36e350cfc8b27ade2b890cc0bd65dd8109f623372661318d768c742bb7049b"
+      },
+      "internal_M2_openings_in_Edge_Cuts": 3
+    },
+    {
+      "board": "power",
+      "pcb_sha256": "5c4adcc38e9e9bfc5fa3f98fa179adb2dc6bf5da05ee8dda31bf242898fd3a0b",
+      "files": {
+        "BOM.csv": "e2526d1353e39ddc3dc1a89994ef6bccb49d51dd388689de1a8ed03c143eb89c",
+        "placement_back.csv": "2f78b0dba8182984481e1a881e3aa538b27d088bb966433e244aa6f0992a9c85",
+        "placement_front.csv": "086db26dba339039b6e1b0431b333397991a64169a454a5c8d4abcf43d8c0062",
+        "YuEEG_H_POWER-B_Cu.gbl": "7aedf93cadbebdad806b1bda92a7cd31db711b09f5af71276efff9c7e336a57d",
+        "YuEEG_H_POWER-B_Mask.gbs": "750480ad68626316310cc7a04d124a31b18737dd5b63a35e00060f3eeb04173b",
+        "YuEEG_H_POWER-B_Paste.gbp": "199ba83be3c3c1f2ba6c864896c1294325efb0698043265e0f246413f1238089",
+        "YuEEG_H_POWER-B_Silkscreen.gbo": "ae50e6fa4fdfc1eb496d5c046a73c543ab87cce305d42b7ab7ef4e987ac65400",
+        "YuEEG_H_POWER-Edge_Cuts.gm1": "366a2e7e0ead729d85f406b4df19b3cd77b2007df4015b2d9d793887d96a48ce",
+        "YuEEG_H_POWER-F_Cu.gtl": "50b3eca043cdc7e9d13a1958b84cb14ca145bd17f0a1fa640c24e80967e4e8f4",
+        "YuEEG_H_POWER-F_Mask.gts": "7609c5af1cd821d67b806d19f68506ea867f8bc33c9adcb5ce5b0a05ae23162b",
+        "YuEEG_H_POWER-F_Paste.gtp": "7744f2c2050f9284f769929f7075356794c6152bdb2e9d837ade3dc1cd2ddfc6",
+        "YuEEG_H_POWER-F_Silkscreen.gto": "84e4c3791a6d3930fd504ad7f32dc84df47980cf11586d8e915a474b8147792e",
+        "YuEEG_H_POWER-job.gbrjob": "03d0a610cee01a1a50cd99f0518bfe6c1b7fccb3ce657419f0a541c4e6509d1f",
+        "YuEEG_H_POWER-NPTH.drl": "c6cd0193e57ee8d0fb4caef24e6755e0a180d9f1545bc35f40efcd6e5ab77f3e",
+        "YuEEG_H_POWER-PTH.drl": "185b6c093287306813d77c7468bd743c33e315dd30e8e0acef20b5b5df098d70"
+      },
+      "internal_M2_openings_in_Edge_Cuts": 0
+    }
+  ]
+}

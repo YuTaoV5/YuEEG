@@ -1,0 +1,114 @@
+﻿Reference,Value,Footprint,Sheet,Datasheet
+U1001,TPS22918DBVR AMOLED POWER,Package_TO_SOT_SMD:SOT-23-6,circuit_01,https://www.ti.com/lit/ds/symlink/tps22918.pdf
+R1001,100k,Resistor_SMD:R_0402_1005Metric,circuit_01,~
+C1001,1n 25V,Capacitor_SMD:C_0402_1005Metric,circuit_01,~
+R1003,1k,Resistor_SMD:R_0402_1005Metric,circuit_01,~
+C1002,22u 10V X7R,Capacitor_SMD:C_1206_3216Metric,circuit_01,~
+C1003,100n 10V,Capacitor_SMD:C_0402_1005Metric,circuit_01,~
+U1003,TPS7A2018PDBVR,Package_TO_SOT_SMD:SOT-23-5,circuit_02,https://www.ti.com/lit/ds/symlink/tps7a20.pdf
+C1006,1u 10V,Capacitor_SMD:C_0603_1608Metric,circuit_02,~
+C1007,4.7u 10V,Capacitor_SMD:C_0603_1608Metric,circuit_02,~
+U1004,SN74AXC8T245PWR / 3V3 -> 1V8,Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm,circuit_02,https://www.ti.com/lit/ds/symlink/sn74axc8t245.pdf
+C1008,100n 10V,Capacitor_SMD:C_0402_1005Metric,circuit_02,~
+C1009,100n 10V,Capacitor_SMD:C_0402_1005Metric,circuit_02,~
+Q1001,MMBT3904 OE ENABLE,Package_TO_SOT_SMD:SOT-23,circuit_03,https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf
+R1002,10k,Resistor_SMD:R_0402_1005Metric,circuit_03,~
+R1004,100k,Resistor_SMD:R_0402_1005Metric,circuit_03,~
+R1005,1M,Resistor_SMD:R_0402_1005Metric,circuit_03,~
+R1021,22R,Resistor_SMD:R_0402_1005Metric,circuit_03,~
+R1022,22R,Resistor_SMD:R_0402_1005Metric,circuit_03,~
+R1023,22R,Resistor_SMD:R_0402_1005Metric,circuit_04,~
+R1024,22R,Resistor_SMD:R_0402_1005Metric,circuit_04,~
+R1025,22R,Resistor_SMD:R_0402_1005Metric,circuit_04,~
+R1026,22R,Resistor_SMD:R_0402_1005Metric,circuit_04,~
+R1027,22R,Resistor_SMD:R_0402_1005Metric,circuit_04,~
+R1031,47k,Resistor_SMD:R_0402_1005Metric,circuit_04,~
+R1032,47k,Resistor_SMD:R_0402_1005Metric,circuit_05,~
+R1033,47k,Resistor_SMD:R_0402_1005Metric,circuit_05,~
+R1034,47k,Resistor_SMD:R_0402_1005Metric,circuit_05,~
+R1035,47k,Resistor_SMD:R_0402_1005Metric,circuit_05,~
+R1036,47k,Resistor_SMD:R_0402_1005Metric,circuit_05,~
+R1037,47k,Resistor_SMD:R_0402_1005Metric,circuit_05,~
+C1010,22u 10V X7R,Capacitor_SMD:C_1206_3216Metric,circuit_06,~
+C1012,100n 10V,Capacitor_SMD:C_0402_1005Metric,circuit_06,~
+D602,PESD5V0U1BAF,Diode_SMD:D_SOD-323,circuit_06,~
+D604,PESD5V0S1BA,Diode_SMD:D_SOD-323,circuit_06,~
+D603,PESD5V0U1BAF,Diode_SMD:D_SOD-323,circuit_06,~
+J601,USB-C DATA / FLASH - ISOLATED,Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12,circuit_06,https://www.usb.org/sites/default/files/documents/usb_type-c.zip
+D605,PESD5V0S1BA,Diode_SMD:D_SOD-323,circuit_07,~
+D901,SMF5.0A DATA VBUS,Diode_SMD:D_SOD-123F,circuit_07,~
+F901,500mA HOLD PTC,Fuse:Fuse_1206_3216Metric,circuit_07,~
+R902,5.1k 1%,Resistor_SMD:R_0402_1005Metric,circuit_07,~
+R901,5.1k 1%,Resistor_SMD:R_0402_1005Metric,circuit_07,~
+C901,100n 16V,Capacitor_SMD:C_0402_1005Metric,circuit_07,~
+C701,100n 16V,Capacitor_SMD:C_0402_1005Metric,circuit_08,~
+R702,24R 1%,Resistor_SMD:R_0402_1005Metric,circuit_08,~
+R704,24R 1%,Resistor_SMD:R_0402_1005Metric,circuit_08,~
+C702,100n 16V,Capacitor_SMD:C_0402_1005Metric,circuit_08,~
+U701,ADuM4160BRIZ / enhanced creepage,YuEEG:ADuM4160_RI16_8p5gap,circuit_08,https://www.analog.com/media/en/technical-documentation/data-sheets/ADuM4160.pdf
+R703,24R 1%,Resistor_SMD:R_0402_1005Metric,circuit_08,~
+R701,24R 1%,Resistor_SMD:R_0402_1005Metric,circuit_09,~
+C703,100n 16V,Capacitor_SMD:C_0402_1005Metric,circuit_09,~
+U2,ESP32-S3-WROOM-1U-N16R8,RF_Module:ESP32-S3-WROOM-1U,circuit_09,https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf
+R301,33R,Resistor_SMD:R_0402_1005Metric,circuit_09,~
+R302,33R,Resistor_SMD:R_0402_1005Metric,circuit_09,~
+R303,33R,Resistor_SMD:R_0402_1005Metric,circuit_09,~
+R304,33R,Resistor_SMD:R_0402_1005Metric,circuit_10,~
+R305,33R,Resistor_SMD:R_0402_1005Metric,circuit_10,~
+R306,33R,Resistor_SMD:R_0402_1005Metric,circuit_10,~
+R307,10k,Resistor_SMD:R_0402_1005Metric,circuit_10,~
+C301,1u 10V,Capacitor_SMD:C_0603_1608Metric,circuit_10,~
+SW301,ALPS SKRTLBE010 / RESET,YuEEG:ALPS_SKRTLBE010_GroundedShell,circuit_10,~
+R308,10k,Resistor_SMD:R_0402_1005Metric,circuit_11,~
+SW302,ALPS SKRTLBE010 / BOOT,YuEEG:ALPS_SKRTLBE010_GroundedShell,circuit_11,~
+C302,100n 10V,Capacitor_SMD:C_0402_1005Metric,circuit_11,~
+C303,10u 10V,Capacitor_SMD:C_0805_2012Metric,circuit_11,~
+C304,22u 10V,Capacitor_SMD:C_0805_2012Metric,circuit_11,~
+J301,DEBUG POGO / NO HEADER FITTED,YuEEG:Debug_Pogo_1x06_P1p27,circuit_11,~
+R309,330k 1%,Resistor_SMD:R_0402_1005Metric,circuit_12,~
+R310,100k 1%,Resistor_SMD:R_0402_1005Metric,circuit_12,~
+C305,100n 10V,Capacitor_SMD:C_0402_1005Metric,circuit_12,~
+U402,TPS62160DGKR,Package_SO:MSOP-8_3x3mm_P0.65mm,circuit_12,http://www.ti.com/lit/ds/symlink/tps62160.pdf
+C406,22u 25V X5R / C3216X5R1E226M160AB H1.8max,Capacitor_SMD:C_1206_3216Metric,circuit_12,https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3216X5R1E226M160AB
+L401,2.2uH / TDK SPM4015T-2R2M-LR,YuEEG:TDK_SPM4015_LR,circuit_12,https://product.tdk.com/en/search/inductor/inductor/smd/info?part_no=SPM4015T-2R2M-LR
+C407,22u 10V X7R,Capacitor_SMD:C_1206_3216Metric,circuit_13,~
+R403,31.2k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_13,~
+R404,10k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_13,~
+TP404,+3V3,TestPoint:TestPoint_Pad_D1.5mm,circuit_13,~
+J1101,KINGCONN 7TFCN-FA-1010-C / H3.75,YuEEG:KINGCONN_7TFCN_FA_1010_C_NotchedShield,circuit_13,https://www.hirose.com/product/p/CL0609-0031-0-00
+FB1101,BLM18PG121SN1D / 120R@100MHz,Resistor_SMD:R_0603_1608Metric,circuit_13,~
+C1101,22u 10V X7R,Capacitor_SMD:C_1206_3216Metric,circuit_14,~
+C1102,100n 10V,Capacitor_SMD:C_0402_1005Metric,circuit_14,~
+C1103,1u 10V,Capacitor_SMD:C_0603_1608Metric,circuit_14,~
+R1101,22R,Resistor_SMD:R_0402_1005Metric,circuit_14,~
+R1111,10k,Resistor_SMD:R_0402_1005Metric,circuit_14,~
+R1112,10k,Resistor_SMD:R_0402_1005Metric,circuit_14,~
+R1113,10k,Resistor_SMD:R_0402_1005Metric,circuit_15,~
+R1114,10k,Resistor_SMD:R_0402_1005Metric,circuit_15,~
+R1115,10k,Resistor_SMD:R_0402_1005Metric,circuit_15,~
+R1116,10k,Resistor_SMD:R_0402_1005Metric,circuit_15,~
+D1101,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,circuit_15,https://www.st.com/resource/en/datasheet/usblc6-2.pdf
+D1102,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,circuit_15,https://www.st.com/resource/en/datasheet/usblc6-2.pdf
+R840,2.2k,Resistor_SMD:R_0402_1005Metric,circuit_16,~
+LED801,POWER,LED_SMD:LED_0603_1608Metric,circuit_16,~
+R841,2.2k,Resistor_SMD:R_0402_1005Metric,circuit_16,~
+LED802,RUN,LED_SMD:LED_0603_1608Metric,circuit_16,~
+R842,2.2k,Resistor_SMD:R_0402_1005Metric,circuit_16,~
+LED803,WIFI,LED_SMD:LED_0603_1608Metric,circuit_16,~
+R843,2.2k,Resistor_SMD:R_0402_1005Metric,circuit_17,~
+LED804,FAULT,LED_SMD:LED_0603_1608Metric,circuit_17,~
+SW1001,ALPS SKRTLBE010 / REC,YuEEG:ALPS_SKRTLBE010_GroundedShell,circuit_17,~
+R1120,10k,Resistor_SMD:R_0402_1005Metric,circuit_17,~
+C1120,10n 10V,Capacitor_SMD:C_0402_1005Metric,circuit_17,~
+J2002,OK-14F024-04 / AM178Q368448LK,YuEEG:OCN_OK_14F024_04,circuit_17,../../../display-amoled-1.78inch-368x448-main/versions/AM178Q368448LK/cad/OK-14F024-04.pdf
+C2001,10u 10V X7R,Capacitor_SMD:C_0603_1608Metric,circuit_18,~
+C2002,100n 10V,Capacitor_SMD:C_0603_1608Metric,circuit_18,~
+C2003,1u 10V,Capacitor_SMD:C_0603_1608Metric,circuit_18,~
+C2004,100n 10V,Capacitor_SMD:C_0603_1608Metric,circuit_18,~
+C2005,100n 10V,Capacitor_SMD:C_0603_1608Metric,circuit_18,~
+R2001,0R,Resistor_SMD:R_0603_1608Metric,circuit_18,~
+R2002,100k,Resistor_SMD:R_0603_1608Metric,circuit_19,~
+R2003,47k,Resistor_SMD:R_0603_1608Metric,circuit_19,~
+R2004,47k,Resistor_SMD:R_0603_1608Metric,circuit_19,~
+JH1,TMM-110-03-L-D / 4mm POST / bottom logical,YuEEG:Samtec_TMM_110_03_BottomLogical,circuit_19,https://www.samtec.com/products/tmm-110-03-l-d
+JH2,POWER INPUT: 1=5V 2=CELL_SENSE 3/4=GND,Connector_JST:JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal,circuit_19,~

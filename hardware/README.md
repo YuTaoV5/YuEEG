@@ -1,5 +1,7 @@
 # 硬件入口
 
+开发中的新版本为 [Rev H 叠放版](YuEEG_8CH_RevH_Stack/README.md)：NP-BX1 外置充电，模拟／数字板统一 48×60 mm，电源条板 34×18 mm。当前导出仅作工程复核，电池探针接口和屏幕 FPC 尚未完成装配定型。下文为此前已发布的 Rev G 版本。
+
 当前为 [Rev G AMOLED 适配版](YuEEG_8CH_RevG/README.md)：70 × 80 mm 四层主板、35 × 67 mm 两层屏幕载板，配未修改的 Rev F 44 × 48 mm 四层隔离充电副板。各板元件均在正面。屏幕 OSPTEK AM178Q368448LK / CO5300 叠装；主板电池供电，充电前拔下整个电极线束。
 
 - [主板工程](YuEEG_8CH_RevG/YuEEG_8CH_RevG.kicad_pro)

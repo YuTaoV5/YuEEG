@@ -1,4 +1,4 @@
-// Rev G: SDMMC backup and write-only AM178Q368448LK CO5300 QSPI panel.
+// Rev H: SDMMC backup, NP-BX1 telemetry and AM178Q368448LK CO5300 QSPI panel.
 // Register settings and x-gap adapted from OSPTEK supplied AM178 ESP32-S3 example.
 // OSPTEK material attribution: see THIRD_PARTY_DISPLAY.md.
 // Panel power/logic sequence must be verified on first article, with no electrodes.
@@ -92,7 +92,7 @@ void panelTask(void*){
  ok=ok&&panelWrite(0x29,nullptr,0);vTaskDelay(pdMS_TO_TICKS(60));
  ok=ok&&panelReg(0x58,0x07);vTaskDelay(pdMS_TO_TICKS(10));panelReady=ok;
  while(ok){char text[24];
-  ok=panelLine(24,"YUEEG REV G",pixels);
+  ok=panelLine(24,"YUEEG REV H",pixels);
   snprintf(text,sizeof(text),"ADC %s MODE %u",adcOK?"OK":"FAULT",mode.load());ok=ok&&panelLine(72,text,pixels);
   snprintf(text,sizeof(text),"SEQ %lu",(unsigned long)latestSequence.load());ok=ok&&panelLine(108,text,pixels);
   snprintf(text,sizeof(text),"WIFI %u USB %u",WiFi.softAPgetStationNum(),bool(Serial));ok=ok&&panelLine(144,text,pixels);
@@ -100,6 +100,7 @@ void panelTask(void*){
   snprintf(text,sizeof(text),"SAVED %lu",(unsigned long)sdFrames.load());ok=ok&&panelLine(216,text,pixels);
   snprintf(text,sizeof(text),"SD DROP %lu",(unsigned long)sdDrops.load());ok=ok&&panelLine(252,text,pixels);
   snprintf(text,sizeof(text),"ADC MISS %lu",(unsigned long)missed.load());ok=ok&&panelLine(288,text,pixels);
+  batteryText(text,sizeof(text));ok=ok&&panelLine(324,text,pixels);
   ok=ok&&panelLine(360,"REC START / STOP",pixels);vTaskDelay(pdMS_TO_TICKS(1000));
  }
  panelReady=false;digitalWrite(17,LOW);digitalWrite(42,LOW);

@@ -1,0 +1,132 @@
+﻿Reference,Value,Footprint,Sheet,Datasheet
+U1,ADS1299PAG,Package_QFP:TQFP-64_10x10mm_P0.5mm,afe_core,https://www.ti.com/lit/ds/symlink/ads1299.pdf
+R201,10k,Resistor_SMD:R_0402_1005Metric,afe_core,~
+R202,10k,Resistor_SMD:R_0402_1005Metric,afe_core,~
+R203,10k,Resistor_SMD:R_0402_1005Metric,afe_core,~
+R204,10k,Resistor_SMD:R_0402_1005Metric,afe_core,~
+R205,10k,Resistor_SMD:R_0402_1005Metric,afe_core,~
+R206,10k,Resistor_SMD:R_0402_1005Metric,afe_core,~
+R207,10k,Resistor_SMD:R_0402_1005Metric,afe_core,~
+R208,10k,Resistor_SMD:R_0402_1005Metric,afe_core,~
+R209,10k,Resistor_SMD:R_0402_1005Metric,afe_core,~
+R210,1M 1%,Resistor_SMD:R_0402_1005Metric,afe_core,~
+C201,1.5n C0G,Capacitor_SMD:C_0402_1005Metric,afe_core,~
+R211,499k 1%,Resistor_SMD:R_0402_1005Metric,afe_core,~
+R212,499k 1%,Resistor_SMD:R_0402_1005Metric,afe_core,~
+C202,10u 10V X7R,Capacitor_SMD:C_0805_2012Metric,afe_core,~
+C203,100n 10V,Capacitor_SMD:C_0402_1005Metric,afe_core,~
+C210,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+C211,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+C212,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+C213,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+C214,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+C215,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+C216,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+C217,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+C220,100u 25V EEEFT1E101AP H5.8,Capacitor_SMD:CP_Elec_6.3x5.8,afe_core,https://industrial.panasonic.com/ww/products/pt/aluminum-cap-smd/models/EEEFT1E101AP
+C221,1u 10V,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+C222,1u 10V,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+C223,100n 10V,Capacitor_SMD:C_0402_1005Metric,afe_core,~
+C224,1u 10V,Capacitor_SMD:C_0603_1608Metric,afe_core,~
+D801,BAV199 BIAS CLAMP,Package_TO_SOT_SMD:SOT-23,afe_core,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+J1301,ELECTRODES: REF BIAS CH8..CH1,Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical,electrode_header,~
+R111,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_1_4,~
+R112,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_1_4,~
+D111,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,inputs_1_4,https://www.diodes.com/datasheet/download/BAV199T.pdf
+C111,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,inputs_1_4,~
+R113,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_1_4,~
+R114,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_1_4,~
+D112,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,inputs_1_4,https://www.diodes.com/datasheet/download/BAV199T.pdf
+C112,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,inputs_1_4,~
+C113,1n C0G 2%,Capacitor_SMD:C_0402_1005Metric,inputs_1_4,~
+R121,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_1_4,~
+R122,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_1_4,~
+D121,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,inputs_1_4,https://www.diodes.com/datasheet/download/BAV199T.pdf
+C121,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,inputs_1_4,~
+R123,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_1_4,~
+R124,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_1_4,~
+D122,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,inputs_1_4,https://www.diodes.com/datasheet/download/BAV199T.pdf
+C122,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,inputs_1_4,~
+C123,1n C0G 2%,Capacitor_SMD:C_0402_1005Metric,inputs_1_4,~
+R131,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_1_4,~
+R132,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_1_4,~
+D131,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,inputs_1_4,https://www.diodes.com/datasheet/download/BAV199T.pdf
+C131,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,inputs_1_4,~
+R133,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_1_4,~
+R134,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_1_4,~
+D132,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,inputs_1_4,https://www.diodes.com/datasheet/download/BAV199T.pdf
+C132,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,inputs_1_4,~
+C133,1n C0G 2%,Capacitor_SMD:C_0402_1005Metric,inputs_1_4,~
+R141,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_1_4,~
+R142,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_1_4,~
+D141,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,inputs_1_4,https://www.diodes.com/datasheet/download/BAV199T.pdf
+C141,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,inputs_1_4,~
+R143,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_1_4,~
+R144,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_1_4,~
+D142,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,inputs_1_4,https://www.diodes.com/datasheet/download/BAV199T.pdf
+C142,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,inputs_1_4,~
+C143,1n C0G 2%,Capacitor_SMD:C_0402_1005Metric,inputs_1_4,~
+R151,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_5_8,~
+R152,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_5_8,~
+D151,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,inputs_5_8,https://www.diodes.com/datasheet/download/BAV199T.pdf
+C151,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,inputs_5_8,~
+R153,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_5_8,~
+R154,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_5_8,~
+D152,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,inputs_5_8,https://www.diodes.com/datasheet/download/BAV199T.pdf
+C152,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,inputs_5_8,~
+C153,1n C0G 2%,Capacitor_SMD:C_0402_1005Metric,inputs_5_8,~
+R161,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_5_8,~
+R162,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_5_8,~
+D161,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,inputs_5_8,https://www.diodes.com/datasheet/download/BAV199T.pdf
+C161,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,inputs_5_8,~
+R163,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_5_8,~
+R164,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_5_8,~
+D162,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,inputs_5_8,https://www.diodes.com/datasheet/download/BAV199T.pdf
+C162,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,inputs_5_8,~
+C163,1n C0G 2%,Capacitor_SMD:C_0402_1005Metric,inputs_5_8,~
+R171,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_5_8,~
+R172,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_5_8,~
+D171,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,inputs_5_8,https://www.diodes.com/datasheet/download/BAV199T.pdf
+C171,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,inputs_5_8,~
+R173,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_5_8,~
+R174,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_5_8,~
+D172,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,inputs_5_8,https://www.diodes.com/datasheet/download/BAV199T.pdf
+C172,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,inputs_5_8,~
+C173,1n C0G 2%,Capacitor_SMD:C_0402_1005Metric,inputs_5_8,~
+R181,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_5_8,~
+R182,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_5_8,~
+D181,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,inputs_5_8,https://www.diodes.com/datasheet/download/BAV199T.pdf
+C181,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,inputs_5_8,~
+R183,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_5_8,~
+R184,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,inputs_5_8,~
+D182,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,inputs_5_8,https://www.diodes.com/datasheet/download/BAV199T.pdf
+C182,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,inputs_5_8,~
+C183,1n C0G 2%,Capacitor_SMD:C_0402_1005Metric,inputs_5_8,~
+C401,22u 25V X7R,Capacitor_SMD:C_1206_3216Metric,power,~
+U401,TPS7A4901DGNR,Package_SO:HVSSOP-8-1EP_3x3mm_P0.65mm_EP1.57x1.89mm,power,https://www.ti.com/lit/gpn/TPS7A49
+C402,22u 25V X7R,Capacitor_SMD:C_1206_3216Metric,power,~
+C403,10n C0G,Capacitor_SMD:C_0402_1005Metric,power,~
+R401,27.4k 0.1%,Resistor_SMD:R_0402_1005Metric,power,~
+R402,10k 0.1%,Resistor_SMD:R_0402_1005Metric,power,~
+C404,10n C0G,Capacitor_SMD:C_0402_1005Metric,power,~
+C405,22u 16V X7R,Capacitor_SMD:C_1206_3216Metric,power,~
+TP403,+4V4_PRE,TestPoint:TestPoint_Pad_D1.5mm,power,~
+D403,BAT46W pre-LDO reverse bypass,Diode_SMD:D_SOD-123,power,https://www.vishay.com/docs/86406/bat46w.pdf
+U403,TPS73225DBVR,Package_TO_SOT_SMD:SOT-23-5,power_bipolar,https://www.ti.com/lit/ds/symlink/tps732.pdf
+C410,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,power_bipolar,~
+C411,10n C0G,Capacitor_SMD:C_0402_1005Metric,power_bipolar,~
+C412,10u 10V X7R,Capacitor_SMD:C_0805_2012Metric,power_bipolar,~
+R410,4.99k 1%,Resistor_SMD:R_0402_1005Metric,power_bipolar,~
+U404,TPS60403DBVR,Package_TO_SOT_SMD:SOT-23-5,power_bipolar,https://www.ti.com/lit/ds/symlink/tps60401.pdf
+C413,2.2u 10V X7R,Capacitor_SMD:C_0805_2012Metric,power_bipolar,~
+C414,2.2u 10V X7R,Capacitor_SMD:C_0805_2012Metric,power_bipolar,~
+C415,10u 10V X7R,Capacitor_SMD:C_0805_2012Metric,power_bipolar,~
+U405,TPS72325DBVR,Package_TO_SOT_SMD:SOT-23-5,power_bipolar,https://www.ti.com/lit/ds/symlink/tps723.pdf
+C416,10n C0G,Capacitor_SMD:C_0402_1005Metric,power_bipolar,~
+C417,10u 10V X7R,Capacitor_SMD:C_0805_2012Metric,power_bipolar,~
+R411,4.99k 1%,Resistor_SMD:R_0402_1005Metric,power_bipolar,~
+D402,BAT46W reverse-current bypass,Diode_SMD:D_SOD-123,power_bipolar,https://www.vishay.com/docs/86406/bat46w.pdf
+TP405,+2V5A,TestPoint:TestPoint_Pad_D1.5mm,power_bipolar,~
+TP406,-2V5A,TestPoint:TestPoint_Pad_D1.5mm,power_bipolar,~
+TP407,NEG_RAW,TestPoint:TestPoint_Pad_D1.5mm,power_bipolar,~
+C418,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,power_bipolar,~

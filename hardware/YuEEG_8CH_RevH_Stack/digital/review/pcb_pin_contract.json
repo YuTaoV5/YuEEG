@@ -1,0 +1,6 @@
+{
+  "components_checked": 113,
+  "pins_checked": 396,
+  "mismatches": 0,
+  "scope": "Raw PCB pad numbers/netnames versus exported expected contract; source instance paths and footprint IDs linked. Copper routing and functional performance are separate checks."
+}

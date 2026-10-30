@@ -1,0 +1,136 @@
+﻿Reference,Value,Footprint,Sheet,Datasheet
+U1,ADS1299PAG,Package_QFP:TQFP-64_10x10mm_P0.5mm,circuit_01,https://www.ti.com/lit/ds/symlink/ads1299.pdf
+R201,10k,Resistor_SMD:R_0402_1005Metric,circuit_01,~
+R202,10k,Resistor_SMD:R_0402_1005Metric,circuit_02,~
+R203,10k,Resistor_SMD:R_0402_1005Metric,circuit_02,~
+R204,10k,Resistor_SMD:R_0402_1005Metric,circuit_02,~
+R205,10k,Resistor_SMD:R_0402_1005Metric,circuit_02,~
+R206,10k,Resistor_SMD:R_0402_1005Metric,circuit_02,~
+R207,10k,Resistor_SMD:R_0402_1005Metric,circuit_02,~
+R208,10k,Resistor_SMD:R_0402_1005Metric,circuit_03,~
+R209,10k,Resistor_SMD:R_0402_1005Metric,circuit_03,~
+R210,1M 1%,Resistor_SMD:R_0402_1005Metric,circuit_03,~
+C201,1.5n C0G,Capacitor_SMD:C_0402_1005Metric,circuit_03,~
+R211,499k 1%,Resistor_SMD:R_0402_1005Metric,circuit_03,~
+R212,499k 1%,Resistor_SMD:R_0402_1005Metric,circuit_03,~
+C202,10u 10V X7R,Capacitor_SMD:C_0805_2012Metric,circuit_04,~
+C203,100n 10V,Capacitor_SMD:C_0402_1005Metric,circuit_04,~
+C210,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,circuit_04,~
+C211,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,circuit_04,~
+C212,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,circuit_04,~
+C213,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,circuit_04,~
+C214,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,circuit_05,~
+C215,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,circuit_05,~
+C216,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,circuit_05,~
+C217,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,circuit_05,~
+C220,100u 25V EEEFT1E101AP H5.8,Capacitor_SMD:CP_Elec_6.3x5.8,circuit_05,~
+C221,1u 10V,Capacitor_SMD:C_0603_1608Metric,circuit_05,~
+C222,1u 10V,Capacitor_SMD:C_0603_1608Metric,circuit_06,~
+C223,100n 10V,Capacitor_SMD:C_0402_1005Metric,circuit_06,~
+C224,1u 10V,Capacitor_SMD:C_0603_1608Metric,circuit_06,~
+D801,BAV199 BIAS CLAMP,Package_TO_SOT_SMD:SOT-23,circuit_06,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+J1301,1x10 2.54mm RIGHT ANGLE / ELECTRODES,YuEEG:Electrode_1x10_Horizontal_ReverseLogical,circuit_06,~
+R111,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_06,~
+R112,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_07,~
+D111,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,circuit_07,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C111,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,circuit_07,~
+R113,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_07,~
+R114,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_07,~
+D112,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,circuit_07,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C112,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,circuit_08,~
+C113,1n C0G 2%,Capacitor_SMD:C_0402_1005Metric,circuit_08,~
+R121,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_08,~
+R122,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_08,~
+D121,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,circuit_08,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C121,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,circuit_08,~
+R123,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_09,~
+R124,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_09,~
+D122,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,circuit_09,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C122,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,circuit_09,~
+C123,1n C0G 2%,Capacitor_SMD:C_0402_1005Metric,circuit_09,~
+R131,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_09,~
+R132,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_10,~
+D131,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,circuit_10,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C131,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,circuit_10,~
+R133,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_10,~
+R134,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_10,~
+D132,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,circuit_10,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C132,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,circuit_11,~
+C133,1n C0G 2%,Capacitor_SMD:C_0402_1005Metric,circuit_11,~
+R141,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_11,~
+R142,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_11,~
+D141,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,circuit_11,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C141,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,circuit_11,~
+R143,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_12,~
+R144,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_12,~
+D142,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,circuit_12,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C142,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,circuit_12,~
+C143,1n C0G 2%,Capacitor_SMD:C_0402_1005Metric,circuit_12,~
+R151,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_12,~
+R152,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_13,~
+D151,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,circuit_13,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C151,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,circuit_13,~
+R153,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_13,~
+R154,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_13,~
+D152,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,circuit_13,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C152,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,circuit_14,~
+C153,1n C0G 2%,Capacitor_SMD:C_0402_1005Metric,circuit_14,~
+R161,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_14,~
+R162,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_14,~
+D161,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,circuit_14,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C161,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,circuit_14,~
+R163,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_15,~
+R164,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_15,~
+D162,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,circuit_15,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C162,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,circuit_15,~
+C163,1n C0G 2%,Capacitor_SMD:C_0402_1005Metric,circuit_15,~
+R171,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_15,~
+R172,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_16,~
+D171,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,circuit_16,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C171,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,circuit_16,~
+R173,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_16,~
+R174,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_16,~
+D172,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,circuit_16,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C172,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,circuit_17,~
+C173,1n C0G 2%,Capacitor_SMD:C_0402_1005Metric,circuit_17,~
+R181,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_17,~
+R182,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_17,~
+D181,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,circuit_17,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C181,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,circuit_17,~
+R183,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_18,~
+R184,4.99k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_18,~
+D182,BAV199T-7-F,Package_TO_SOT_SMD:SOT-523,circuit_18,https://assets.nexperia.com/documents/data-sheet/BAV199.pdf
+C182,47p C0G 1%,Capacitor_SMD:C_0402_1005Metric,circuit_18,~
+C183,1n C0G 2%,Capacitor_SMD:C_0402_1005Metric,circuit_18,~
+C401,22u 25V X7R,Capacitor_SMD:C_1206_3216Metric,circuit_18,~
+U401,TPS7A4901DGNR,Package_SO:HVSSOP-8-1EP_3x3mm_P0.65mm_EP1.57x1.89mm,circuit_19,https://www.ti.com/lit/gpn/TPS7A49
+C402,22u 25V X7R,Capacitor_SMD:C_1206_3216Metric,circuit_19,~
+C403,10n C0G,Capacitor_SMD:C_0402_1005Metric,circuit_19,~
+R401,27.4k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_19,~
+R402,10k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_19,~
+C404,10n C0G,Capacitor_SMD:C_0402_1005Metric,circuit_19,~
+C405,22u 16V X7R,Capacitor_SMD:C_1206_3216Metric,circuit_20,~
+TP403,+4V4_PRE,TestPoint:TestPoint_Pad_D1.5mm,circuit_20,~
+D403,BAT46W pre-LDO reverse bypass,Diode_SMD:D_SOD-123,circuit_20,~
+U403,TPS73225DBVR,Package_TO_SOT_SMD:SOT-23-5,circuit_20,https://www.ti.com/lit/ds/symlink/tps732.pdf
+C410,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,circuit_20,~
+C411,10n C0G,Capacitor_SMD:C_0402_1005Metric,circuit_20,~
+C412,10u 10V X7R,Capacitor_SMD:C_0805_2012Metric,circuit_21,~
+R410,4.99k 1%,Resistor_SMD:R_0402_1005Metric,circuit_21,~
+U404,TPS60403DBVR,Package_TO_SOT_SMD:SOT-23-5,circuit_21,https://www.ti.com/lit/ds/symlink/tps60401.pdf
+C413,2.2u 10V X7R,Capacitor_SMD:C_0805_2012Metric,circuit_21,~
+C414,2.2u 10V X7R,Capacitor_SMD:C_0805_2012Metric,circuit_21,~
+C415,10u 10V X7R,Capacitor_SMD:C_0805_2012Metric,circuit_21,~
+U405,TPS72325DBVR,Package_TO_SOT_SMD:SOT-23-5,circuit_22,https://www.ti.com/lit/ds/symlink/tps723.pdf
+C416,10n C0G,Capacitor_SMD:C_0402_1005Metric,circuit_22,~
+C417,10u 10V X7R,Capacitor_SMD:C_0805_2012Metric,circuit_22,~
+R411,4.99k 1%,Resistor_SMD:R_0402_1005Metric,circuit_22,~
+D402,BAT46W reverse-current bypass,Diode_SMD:D_SOD-123,circuit_22,~
+TP405,+2V5A,TestPoint:TestPoint_Pad_D1.5mm,circuit_22,~
+TP406,-2V5A,TestPoint:TestPoint_Pad_D1.5mm,circuit_23,~
+TP407,NEG_RAW,TestPoint:TestPoint_Pad_D1.5mm,circuit_23,~
+C418,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,circuit_23,~
+FBH1,600R@100MHz / verify DCR and current,Inductor_SMD:L_0603_1608Metric,circuit_23,~
+CH1,1u 10V,Capacitor_SMD:C_0603_1608Metric,circuit_23,~
+CH2,100n 10V,Capacitor_SMD:C_0402_1005Metric,circuit_23,~
+JH1,SQT-110-01-L-D / SOCKET / logical pins,YuEEG:Samtec_SQT_110_01_Logical,circuit_24,https://www.samtec.com/products/sqt-110-01-l-d

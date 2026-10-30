@@ -1,0 +1,47 @@
+{
+  "features": [
+    {
+      "board": "afe",
+      "positions_mm": [
+        [
+          44,
+          4
+        ],
+        [
+          44,
+          51
+        ],
+        [
+          4,
+          55
+        ]
+      ],
+      "finished_unplated_opening_mm": 2.4,
+      "representation": "Edge.Cuts internal circles; not duplicated in Excellon drill files"
+    },
+    {
+      "board": "digital",
+      "positions_mm": [
+        [
+          44,
+          4
+        ],
+        [
+          44,
+          51
+        ],
+        [
+          4,
+          55
+        ]
+      ],
+      "finished_unplated_opening_mm": 2.4,
+      "representation": "Edge.Cuts internal circles; not duplicated in Excellon drill files"
+    }
+  ],
+  "hardware_constraint": "All screws, washers and spacers must be insulating; no metal inserts or metal through-bolts across the boards.",
+  "nominal_AFE_to_digital_surface_gap_mm": 8.5,
+  "spacer_option": "M2 8mm insulating spacer plus .5mm insulating washer as nominal dimensional option; exact part, tolerance and assembly remain to be qualified.",
+  "status": "Native 2.4mm internal cutouts for M2 insulating fasteners; full pad/track/via/pour exclusions retained. Manufacturing must process all three internal circles in Edge.Cuts. Mechanical assembly and material qualification remain pending.",
+  "manufacturing_source": "https://jlcpcb.com/capabilities/pcb-capabilities/"
+}

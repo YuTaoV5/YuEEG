@@ -1,0 +1,31 @@
+{
+  "part": "SPM4015T-2R2M-LR",
+  "source": "https://product.tdk.com/en/search/inductor/inductor/smd/info?part_no=SPM4015T-2R2M-LR",
+  "inductance_uH": 2.2,
+  "tolerance_percent": 20,
+  "rated_current_inductance_drop_typ_A": 5.7,
+  "inductance_drop_percent": 30,
+  "rated_current_temp_rise_typ_A": 3.5,
+  "temp_rise_C": 40,
+  "DCR_max_ohm": 0.0627,
+  "body_nominal_mm": [
+    4.4,
+    4.1
+  ],
+  "height_max_mm": 1.5,
+  "pin_nets": {
+    "1": "BUCK_SW",
+    "2": "+3V3"
+  },
+  "new_position_mm": [
+    24.9,
+    33.65,
+    -90
+  ],
+  "C407_position_mm": [
+    25,
+    38.3,
+    0
+  ],
+  "note": "Concrete manufacturer part installed; neighboring testpoint and pullup relocated; .4mm local capacitor link. Native DRC and netlist parity passed. Physical ripple, load transient, DC bias and thermal validation remain pending."
+}

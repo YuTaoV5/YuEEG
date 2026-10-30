@@ -42,9 +42,9 @@ def verify(package=False):
     for name, digest in json.loads((old / 'CHECKSUMS.json').read_text()).items():
         if name.startswith('isolated_power/'):
             require(sha(G / name) == digest, 'Changed inherited power board: ' + name)
-    for name in manifest:
-        if name.startswith('firmware/') and not name.startswith('firmware/build/'):
-            require((G / name).read_bytes() == (ROOT / 'Firmware' / name[len('firmware/'):]).read_bytes(), 'Current firmware differs: ' + name)
+    # Rev G is frozen. Its manifest above still checks every archived source byte.
+    # The active Firmware/ tree may advance to Rev H and is checked separately;
+    # requiring it to mirror an older release would forbid intentional development.
     build = json.loads((G / 'firmware/build/BUILD_INFO.json').read_text())
     for field, file in [('source_header_sha256', 'YuEEG.h'), ('ui_header_sha256', 'YuEEG_UI.h')]:
         require(build[field] == sha(G / 'firmware/ads1299_driver' / file), 'Build source mismatch')
@@ -69,7 +69,7 @@ def verify(package=False):
         require(set(z.namelist()) == {G.name + '/' + n for n in names}, 'Rev G ZIP inventory mismatch')
         for name in names:
             require(z.read(G.name + '/' + name) == (G / name).read_bytes(), 'Rev G ZIP differs: ' + name)
-    print(f'PASS: Rev G {len(manifest)} hashes, three boards, current firmware and ZIP verified.')
+    print(f'PASS: frozen Rev G {len(manifest)} hashes, three boards, archived firmware and ZIP verified.')
 
 
 if __name__ == '__main__':

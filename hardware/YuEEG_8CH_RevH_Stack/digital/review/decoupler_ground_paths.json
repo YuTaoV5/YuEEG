@@ -1,0 +1,146 @@
+[
+  {
+    "reference": "C1101",
+    "net": "GND",
+    "ground_pad_xy_mm": [
+      20.25,
+      24.025
+    ],
+    "routed_distance_to_through_connection_mm": 1.1499746997216957
+  },
+  {
+    "reference": "C302",
+    "net": "GND",
+    "ground_pad_xy_mm": [
+      2.82,
+      3.75
+    ],
+    "routed_distance_to_through_connection_mm": 0.6499999999999999
+  },
+  {
+    "reference": "C1007",
+    "net": "GND",
+    "ground_pad_xy_mm": [
+      37.0,
+      17.225
+    ],
+    "routed_distance_to_through_connection_mm": 0.9999701245537269
+  },
+  {
+    "reference": "C1006",
+    "net": "GND",
+    "ground_pad_xy_mm": [
+      34.75,
+      15.975
+    ],
+    "routed_distance_to_through_connection_mm": 1.2999713996853917
+  },
+  {
+    "reference": "C1102",
+    "net": "GND",
+    "ground_pad_xy_mm": [
+      17.48,
+      28.0
+    ],
+    "routed_distance_to_through_connection_mm": 0.75
+  },
+  {
+    "reference": "C701",
+    "net": "HOST_GND",
+    "ground_pad_xy_mm": [
+      7.98,
+      51.55
+    ],
+    "routed_distance_to_through_connection_mm": 0.6500000000000004
+  },
+  {
+    "reference": "C1009",
+    "net": "GND",
+    "ground_pad_xy_mm": [
+      34.0,
+      13.52
+    ],
+    "routed_distance_to_through_connection_mm": 0.7499834998184989
+  },
+  {
+    "reference": "C702",
+    "net": "HOST_GND",
+    "ground_pad_xy_mm": [
+      10.58,
+      51.55
+    ],
+    "routed_distance_to_through_connection_mm": 0.6500000000000004
+  },
+  {
+    "reference": "C407",
+    "net": "GND",
+    "ground_pad_xy_mm": [
+      26.475,
+      38.3
+    ],
+    "routed_distance_to_through_connection_mm": 1.4500000000000028
+  },
+  {
+    "reference": "C303",
+    "net": "GND",
+    "ground_pad_xy_mm": [
+      2.3,
+      1.5
+    ],
+    "routed_distance_to_through_connection_mm": 0.8500000000000001
+  },
+  {
+    "reference": "C1008",
+    "net": "GND",
+    "ground_pad_xy_mm": [
+      26.48,
+      16.0
+    ],
+    "routed_distance_to_through_connection_mm": 0.9999904099540162
+  },
+  {
+    "reference": "C304",
+    "net": "GND",
+    "ground_pad_xy_mm": [
+      17.95,
+      25.0
+    ],
+    "routed_distance_to_through_connection_mm": 0.8500000000000014
+  },
+  {
+    "reference": "C703",
+    "net": "GND",
+    "ground_pad_xy_mm": [
+      10.48,
+      38.0
+    ],
+    "routed_distance_to_through_connection_mm": 0.6500000000000004
+  },
+  {
+    "reference": "C1103",
+    "net": "GND",
+    "ground_pad_xy_mm": [
+      17.025,
+      29.5
+    ],
+    "routed_distance_to_through_connection_mm": 1.7499478620804692
+  },
+  {
+    "reference": "C301",
+    "net": "GND",
+    "ground_pad_xy_mm": [
+      10.275,
+      6.13
+    ],
+    "routed_distance_to_through_connection_mm": 0.8499999999999996
+  },
+  {
+    "reference": "C406",
+    "net": "GND",
+    "ground_pad_xy_mm": [
+      27.625,
+      25.8
+    ],
+    "routed_distance_to_through_connection_mm": 1.4499999999999993
+  }
+]

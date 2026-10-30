@@ -1,0 +1,34 @@
+{
+  "afe_socket_reference": "SQT-110-01-L-D",
+  "digital_header_reference": "TMM-110-03-L-D",
+  "pitch_mm": 2,
+  "finished_hole_mm": 0.9,
+  "female_body_mm": [
+    4,
+    20.3,
+    6.35
+  ],
+  "male_body_mm": [
+    3.94,
+    20,
+    1.5
+  ],
+  "male_mating_post_mm": 4,
+  "male_solder_tail_mm": 2.7,
+  "socket_tail_mm": 2.29,
+  "pcb_surface_gap_mm": 8.5,
+  "nominal_insertion_mm": 3.35,
+  "socket_insertion_range_mm": [
+    2.62,
+    5.03
+  ],
+  "nominal_housing_gap_mm": 0.65,
+  "sources": [
+    "https://suddendocs.samtec.com/catalog_english/sqw.pdf",
+    "https://suddendocs.samtec.com/catalog_english/tmm_th.pdf",
+    "https://suddendocs.samtec.com/prints/tmm-th.pdf"
+  ],
+  "procurement_status": "Manufacturer dimensional reference selected; exact Taobao seller/stock or qualified equivalent not verified",
+  "numbering": "Project logical numbers; unkeyed physical rows. Assembly XY/net contract remains mandatory. No vendor pin-1 marking relied upon.",
+  "models": "Original bounding envelopes; not manufacturer STEP or internal contact model"
+}

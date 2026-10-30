@@ -1,0 +1,18 @@
+{
+  "switch": {
+    "part": "ALPS SKRTLBE010",
+    "source": "https://tech.alpsalpine.com/e/products/detail/SKRTLBE010/",
+    "height_mm": 3.3,
+    "force_N": 1.6,
+    "bosses": false,
+    "note": "Grounded support pads; old LAE 3D model removed because it contains guide bosses."
+  },
+  "microSD": {
+    "part": "KINGCONN 7TFCN-FA-1010-C",
+    "source": "https://www.kingconn.com.tw/files/7TFCN-FA-1010-X.pdf",
+    "height_mm": 3.75,
+    "card_underside_mm": 2.56,
+    "under_card_part_height_limit_mm": 1.2,
+    "note": "Ground land neck is an engineering adaptation of the manufacturer tapered land: .7mm neck instead of the invalid rectangular overlap with pad 8. Solder/contact geometry still requires supplier confirmation. Must verify with card and socket samples."
+  }
+}

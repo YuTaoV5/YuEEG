@@ -1,4 +1,4 @@
-"""Verify current Rev G delivery and frozen Rev D/E/F releases.
+"""Verify frozen Rev D/E/F/G and an available Rev H engineering checkpoint.
 
 Use --package to regenerate the ZIP after successful verification of its inputs.
 This does not rerun KiCad or certify the hardware.
@@ -112,3 +112,6 @@ if __name__ == '__main__':
     verify(False)
     verify_rev_d()
     verify_rev_e()
+    if (ROOT/'hardware/YuEEG_8CH_RevH_Stack/review/current_check_summary.json').exists():
+        from verify_rev_h import verify as verify_h
+        verify_h()

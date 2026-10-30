@@ -1,6 +1,6 @@
-# YuEEG Rev G firmware (ESP32-S3-WROOM-1-N16R8)
+# YuEEG Rev H development firmware (ESP32-S3-WROOM-1U-N16R8)
 
-Rev G keeps simultaneous isolated USB CDC + Wi-Fi UDP, CO5300 AM178 AMOLED status and SDMMC backup. The main board runs from its protected 2S battery; its detached isolated charger never powers acquisition directly. GPIO assignments and the 50-byte protocol are unchanged from Rev E. Rev D/E/F source and binaries remain frozen in their hardware review folders.
+Rev H keeps simultaneous isolated USB CDC + Wi-Fi UDP, CO5300 AM178 AMOLED status and SDMMC backup. The board uses a removable Sony NP-BX1 single-cell battery through a protected 5V boost supply. The battery is removed for charging in its dedicated external charger. Acquisition GPIO assignments and the 50-byte protocol remain unchanged. Rev G source and binaries remain frozen in `hardware/YuEEG_8CH_RevG/firmware/`; this development firmware has not been flashed or tested on a physical Rev H assembly.
 
 ## Build
 
@@ -22,8 +22,9 @@ arduino-cli compile --fqbn "esp32:esp32:esp32s3:FlashSize=16M,FlashMode=qio,PSRA
 | SDMMC CLK / CMD / DAT0 / card detect | 18 / 21 / 47 / 48 |
 | REC key (active low) | 41 |
 | RUN / Wi-Fi / FAULT LEDs (active low) | 38 / 39 / 40 |
+| NP-BX1 protected loaded-voltage ADC1_CH0 | 1 |
 
-GPIO35/36/37 remain reserved for OPI PSRAM. Hardware RESET, BOOT and REC use ordinary C&K PTS645SM43SMTR92 LFS 6 x 6 mm SMT tactile switches (4.3 mm high). REC retains 30 ms firmware debounce.
+GPIO35/36/37 remain reserved for OPI PSRAM. Hardware RESET, BOOT and REC use ALPS SKRTLBE010 side-actuated switches. REC retains 30 ms firmware debounce.
 
 ## Acquisition and control
 
@@ -33,9 +34,9 @@ AP credentials are generated randomly and stored in NVS; USB `status` reports th
 
 ## AMOLED
 
-Use OSPTEK AM178Q368448LK **CO5300 QSPI**, 368 x 448, with Rev G display carrier. Main J1001 connects to carrier J2001 through a keyed 20-to-20 straight cable, every pin 1-to-1; verify orientation before use. Carrier J2002 is OCN OK-14F024-04 female. Use 10 mm insulated standoffs and an insulating glass support; see the hardware DISPLAY_INTEGRATION.md. This firmware does not drive the previous RM67162 panel.
+Use OSPTEK AM178Q368448LK **CO5300 QSPI**, 368 x 448. Rev H places the display power/logic circuits and OCN OK-14F024-04 female J2002 on the digital board. The former Rev G carrier cable and 10mm standoff arrangement do not apply. Screen FPC reach and the final raised-screen connection remain unresolved; see `docs/REVH_MECHANICAL_REVIEW.md`.
 
-The load switch supplies module VBAT at 3.3 V; IOVCC is 1.8 V through the existing SN74AXC8T245 level translator. Main 2.8 V and IM1 signals are unused by this carrier. Touch remains held in reset. CO5300 register settings and x-gap=16 are adapted from the supplied OSPTEK example (see THIRD_PARTY_DISPLAY.md). Firmware uses RGB565, sets a bounded 368 x 448 window, starts at brightness 0x40, and disables TE. RESET is held low before power-up, then released after settling. First-article power/initialization validation is still required.
+The load switch supplies module VBAT at 3.3 V; IOVCC is 1.8 V through the existing SN74AXC8T245 level translator. IM1 is unused; touch remains held in reset. CO5300 register settings and x-gap=16 are adapted from the supplied OSPTEK example (see THIRD_PARTY_DISPLAY.md). Firmware uses RGB565, sets a bounded 368 x 448 window, starts at brightness 0x40, and disables TE. RESET is held low before power-up, then released after settling. First-article power/initialization validation is still required.
 
 SPI3 at 10 MHz is separate from ADS SPI2. A low-priority task updates status once per second using an internal DMA buffer; no touch, TE synchronization or waveform renderer is implemented. `panel_bus=OK` means transactions were accepted by the ESP controller: this write-only path cannot identify or confirm a working panel. SPI/SD activity and Wi-Fi coupling must be measured during noise qualification.
 
@@ -60,10 +61,18 @@ Only serial reception requires `pyserial`. The six protocol tests include signed
 
 The firmware has compile and host-protocol checks. No physical board has yet verified flash/USB, simultaneous wireless + backup, display startup, SD stalls, analog noise or patient isolation. Use the hardware review and bench checklist before attaching electrodes.
 
-## Rev F power and electrodes
+## Rev H power and electrodes
 
-Use a matched 2S 4.2 V/cell Li-ion pack of at least 1000 mAh with the specified 10k NTC and cell-midpoint connection. Main J1202 and charger J1204 use a verified GH6 cable: 1 PACK_POS, 2 GND, 3 CHG_TS, 4 CHG_CE, 5 USB5, 6 CHG_PG. These are all isolated secondary signals. This is not a USB cable or a general-purpose expansion port. The main DATA Type-C has data isolation and cannot boot or charge the board without a battery. The daughterboard CHARGE Type-C has no data.
+Use the user-selected Sony NP-BX1 single-cell battery and a matching external dedicated charger. Rev H has no on-board charging input or cell-midpoint connector. Power-strip JP2 to digital JH2 is 1=SYS_5V, 2=BAT_PROTECTED_SENSE, 3/4=GND. Pin 2 is not a parallel 5V supply pin. The USB data port remains isolated and does not supply the acquisition electronics; a battery or a suitable isolated bench supply is required.
 
 Physically unplug the entire 10-electrode harness (CH1..8, REF and BIAS) before charging. Turn acquisition off before connecting the charger. Firmware cannot verify a detached electrode cable. A stopped ADC or a software command is not an electrode disconnect. Main J1301 pin order is 1 REF, 2 BIAS, 3 CH8, 4 CH7, 5 CH6, 6 CH5, 7 CH4, 8 CH3, 9 CH2, 10 CH1. REF is the shared measurement reference; BIAS is a driven common-mode electrode, not protective earth.
 
-The acquisition slide switch controls the battery power gate. After switching off, input capacitors discharge through the 47k bleeder and other loads before the charger's CE input permits charging; allow approximately 10–15 seconds, subject to measured discharge behavior. Charging is nominally 8.2 V / 299 mA, with charger tolerances and the selected cell/NTC requirements to be checked before first charge. The exposed J301 pogo interface is nonisolated bench access: disconnect electrodes before using it.
+The acquisition slide switch disables the protected battery supply. Remove the battery for charging. The exposed J301 pogo interface is nonisolated bench access: disconnect electrodes before using it. Firmware cannot verify electrode removal or certify USB isolation.
+
+## NP-BX1 voltage telemetry
+
+`YuEEG_Battery.h` samples GPIO1 / ADC1_CH0 in a separate priority-1 task on core 0 once per second. It takes 16 millivolt readings with 2ms spacing, discards one minimum and one maximum, and applies the nominal R309=330k / R310=100k divider. ADC work never runs in the DRDY ISR or the acquisition loop. The panel and USB/UDP `status` report `CELL nnnn MV OK/LOW`, or `CELL UNAVAILABLE` for an implausible input or absent reading.
+
+The low warning sets at a measured protected supply of 3450mV and clears at 3550mV. It lights the FAULT LED but does not stop capture or alter the 50-byte frame format. Hardware undervoltage protection remains independent. Stop acquisition and allow SD writes to finish before removing power when the low warning appears; firmware cannot guarantee a flush before the hardware supply cuts off.
+
+This reading is **loaded voltage after the fuse, reverse MOSFET and eFuse**, not open-circuit cell voltage or charge percentage. The software accepts 2700–4400mV as a plausibility window; that window is not a battery operating specification. Core 2.0.11 provides `analogReadMilliVolts` and `ADC_2_5db`; nominal divider tolerances and ADC accuracy still require board calibration against a meter at several voltages and loads. No runtime, SOC or first-article accuracy claim is made.

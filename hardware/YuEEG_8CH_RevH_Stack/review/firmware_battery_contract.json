@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "adc_gpio_from_kicad_pinfunction": 1,
+  "divider_top_ohms": 330000,
+  "divider_bottom_ohms": 100000,
+  "divider_ratio": 4.3,
+  "measurement_source": "BAT_PROTECTED_SENSE, before boost; excludes regulated SYS_5V",
+  "scope": "Firmware constants versus exported physical pin function, net wiring and current BOM. No ADC calibration, timing or physical board validation."
+}

@@ -1,0 +1,12 @@
+Sketch uses 779901 bytes (24%) of program storage space. Maximum is 3145728 bytes.
+Global variables use 46444 bytes (14%) of dynamic memory, leaving 281236 bytes for local variables. Maximum is 327680 bytes.
+
+Used library Version Path
+SPI          2.0.0   C:\Users\YuTao\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.11\libraries\SPI
+WiFi         2.0.0   C:\Users\YuTao\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.11\libraries\WiFi
+Preferences  2.0.0   C:\Users\YuTao\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.11\libraries\Preferences
+SD_MMC       2.0.0   C:\Users\YuTao\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.11\libraries\SD_MMC
+FS           2.0.0   C:\Users\YuTao\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.11\libraries\FS
+
+Used platform Version Path
+esp32:esp32   2.0.11  C:\Users\YuTao\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.11

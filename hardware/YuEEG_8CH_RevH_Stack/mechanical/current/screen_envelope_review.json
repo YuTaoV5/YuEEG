@@ -1,0 +1,155 @@
+{
+  "pcb_sha256": "1899196d306572cbcbd0af3c51b9b16141a1bc5e77bc65f2c840ae26532ccd5a",
+  "screen_projection_mm": [
+    6,
+    0.4,
+    40.14,
+    43.14
+  ],
+  "candidate_screen_back_gap_mm": 6.0,
+  "known_component_bodies": [
+    {
+      "reference": "SW301",
+      "body_xy_bounds_mm": [
+        1.54,
+        5.25,
+        4.1,
+        9.75
+      ],
+      "height_mm": 3.3,
+      "under_screen_projection": false,
+      "nominal_vertical_margin_to_flat_back_at_6mm": null
+    },
+    {
+      "reference": "SW301",
+      "body_xy_bounds_mm": [
+        0.7000000000000002,
+        6.5,
+        1.54,
+        8.5
+      ],
+      "height_mm": 2.7,
+      "under_screen_projection": false,
+      "nominal_vertical_margin_to_flat_back_at_6mm": null
+    },
+    {
+      "reference": "L401",
+      "body_xy_bounds_mm": [
+        22.75,
+        31.349999999999998,
+        27.049999999999997,
+        35.949999999999996
+      ],
+      "height_mm": 1.5,
+      "under_screen_projection": true,
+      "nominal_vertical_margin_to_flat_back_at_6mm": 4.5
+    },
+    {
+      "reference": "JH2",
+      "body_xy_bounds_mm": [
+        28.05,
+        30.9,
+        39.95,
+        36.9
+      ],
+      "height_mm": 5.5,
+      "under_screen_projection": true,
+      "nominal_vertical_margin_to_flat_back_at_6mm": 0.5
+    },
+    {
+      "reference": "SW302",
+      "body_xy_bounds_mm": [
+        1.54,
+        11.25,
+        4.1,
+        15.75
+      ],
+      "height_mm": 3.3,
+      "under_screen_projection": false,
+      "nominal_vertical_margin_to_flat_back_at_6mm": null
+    },
+    {
+      "reference": "SW302",
+      "body_xy_bounds_mm": [
+        0.7000000000000002,
+        12.5,
+        1.54,
+        14.5
+      ],
+      "height_mm": 2.7,
+      "under_screen_projection": false,
+      "nominal_vertical_margin_to_flat_back_at_6mm": null
+    },
+    {
+      "reference": "J1101",
+      "body_xy_bounds_mm": [
+        7.2,
+        24.295,
+        12.7,
+        35.705
+      ],
+      "height_mm": 3.75,
+      "under_screen_projection": true,
+      "nominal_vertical_margin_to_flat_back_at_6mm": 2.25
+    },
+    {
+      "reference": "J1101",
+      "body_xy_bounds_mm": [
+        -2.3000000000000007,
+        24.5,
+        7.2,
+        35.5
+      ],
+      "height_mm": 3.56,
+      "under_screen_projection": true,
+      "nominal_vertical_margin_to_flat_back_at_6mm": 2.44
+    },
+    {
+      "reference": "J2002",
+      "body_xy_bounds_mm": [
+        26.540000000000003,
+        21.13,
+        33.84,
+        23.63
+      ],
+      "height_mm": 0.87,
+      "under_screen_projection": true,
+      "nominal_vertical_margin_to_flat_back_at_6mm": 5.13
+    },
+    {
+      "reference": "SW1001",
+      "body_xy_bounds_mm": [
+        1.54,
+        35.75,
+        4.1,
+        40.25
+      ],
+      "height_mm": 3.3,
+      "under_screen_projection": false,
+      "nominal_vertical_margin_to_flat_back_at_6mm": null
+    },
+    {
+      "reference": "SW1001",
+      "body_xy_bounds_mm": [
+        0.7000000000000002,
+        37.0,
+        1.54,
+        39.0
+      ],
+      "height_mm": 2.7,
+      "under_screen_projection": false,
+      "nominal_vertical_margin_to_flat_back_at_6mm": null
+    }
+  ],
+  "isolated_host_y_min_mm": 49.05,
+  "flat_back_to_host_envelope_distance_mm": 8.421882212427336,
+  "conservative_flex_scenario": {
+    "extension_beyond_bottom_mm": 0.8,
+    "downward_component_allowance_mm": 1.2,
+    "nearest_corner_distance_at_6mm": 7.01085586786663,
+    "screen_back_gap_needed_for_8mm_corner_distance_mm": 7.355314776678771,
+    "interpretation": "Bounding scenario only; does not prove an actual conductor violates clearance. Actual folded FPC copper/component positions and height require verification."
+  },
+  "fpc_reach_status": "UNPROVEN: factory folded/taped FPC cannot be assumed to bridge 6mm support gap to .8mm mating connector. Extension or a verified refold/raised socket solution is required.",
+  "complete_assembly_status": "NOT VERIFIED; this report covers selected sourced component envelopes, not all parts/tolerances/cables/creepage."
+}

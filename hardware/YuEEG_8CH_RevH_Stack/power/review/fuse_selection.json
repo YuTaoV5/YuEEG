@@ -1,0 +1,20 @@
+{
+  "part": "0466002.NRHF",
+  "current_A": 2,
+  "rated_voltage_V": 63,
+  "cold_resistance_nominal_ohm": 0.03,
+  "melting_I2t_nominal_A2s": 0.2326,
+  "interrupting_rating_A": 50,
+  "source": "https://www.littelfuse.com/assetdocs/fuse-466-datasheet?assetguid=dbe9bcd7-6072-4adf-bf5b-d33e52a6b90f",
+  "source_revision": "2023-06-21",
+  "purpose": "Backup for pre-eFuse faults; not the normal load current limiter",
+  "normal_limit": "TPS259530 nominal 1.50A; tolerances and fuse ambient derating must be checked",
+  "manufacturer_continuous_derating": 0.75,
+  "ambient_derating_required": true,
+  "footprint": "Existing KiCad generic 1206 IPC land, not a claimed exact copy of manufacturer recommended land",
+  "validation_pending": [
+    "Battery prospective short circuit current and fuse breaking coordination",
+    "Actual enclosure temperature, continuous/peak load and inrush I2t",
+    "Assembly land/paste validation with selected fuse"
+  ]
+}

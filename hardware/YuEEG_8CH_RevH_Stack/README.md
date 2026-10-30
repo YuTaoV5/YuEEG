@@ -1,0 +1,15 @@
+# YuEEG Rev H 三板叠装 — 开发中
+
+最新电池为 **Sony NP-BX1（单节）**，覆盖 NP-FW50／2S 版本。电池与最上层屏幕／数字板／模拟板叠层体并排；拆下电池使用专用充电器。详情见 [NP-BX1 电源改版](../../docs/REVH_NPBX1_POWER.md)。
+
+模拟／数字板均为 48×60 mm，电源条板 34×18 mm。三板共 269 个实物器件（135／113／21），最新 ERC、DRC、未连接、原理图一致性问题均为零，文件哈希及检查时间见 `review/current_check_summary.json`。侧键已转向左侧板边，加入 ALPS 安装面禁铜区；数字板保留 9 个背面 SMT，其余主要器件正面装配。
+
+模拟／数字板已有三处上下同轴的 2.4 mm M2 绝缘固定内切口，位于 Edge.Cuts，不能在 CAM 中丢弃。数字板电感已选定 TDK SPM4015T-2R2M-LR。Rev H 开发固件增加 NP-BX1 带载电压遥测，编译与六项协议测试通过；源文件与开发二进制在 `firmware/`，并非实物验证或生产放行。
+
+短线束 JP2→JH2：1=SYS_5V，2=BAT_PROTECTED_SENSE，3/4=GND。针 2 用于升压前电芯电压检测，不再与针 1 并联。板间 JH1 的 1／19 针仍是并联 SYS_5V。
+
+**尚未完成制造放行**：JP1 为临时逻辑端子，弹性电池触点真实封装未定型；屏幕 FPC 插接高度、最终支撑件和整机三维隔离未验证。旧 `mechanical/` 屏下电池方案已失效。静态检查不代表采集性能、装配或人体连接安全已经验证。
+
+`archive/` 保留已失效的 2S 电源板及接口迁移前源文件，只供追溯。`BOM_source.csv`、`expected_source.json` 是旧版来源，不能作为生产依据。当前器件清单与连接表为各板 `BOM.csv`、`review/expected_connections.json`。本目录尚未发布制造包；不要使用旧 Rev G Gerber 代替本版。
+
+`fabrication_engineering/` 是带源 PCB 哈希的 Gerber／钻孔／SMT 坐标工程复核导出，**不可直接下单**；电池探针与屏幕连接定型后必须重新生成。机械复核见 [记录](../../docs/REVH_MECHANICAL_REVIEW.md)。

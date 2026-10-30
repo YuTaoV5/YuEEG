@@ -1,4 +1,4 @@
-// ESP32-S3, YuEEG Rev G. Native USB Serial/JTAG and simultaneous WiFi UDP.
+// ESP32-S3-WROOM-1U-N16R8, YuEEG Rev H development, NP-BX1 battery.
 #pragma once
 #include <Arduino.h>
 #include <SPI.h>
@@ -23,6 +23,7 @@ std::atomic<uint8_t> mode{0};
 uint8_t gain=12,testChannel=0; // 0 stopped;1 EEG;2 internal test;3 electrode probe
 std::atomic<bool> adcOK{false};
 constexpr uint8_t LED_RUN=38,LED_WIFI=39,LED_FAULT=40; // active low, 2.2k series, no PWM
+#include "YuEEG_Battery.h"
 Preferences prefs;
 String commandLine;
 String apToken; // immutable after Wi-Fi setup, also authenticates local UDP control
@@ -96,7 +97,7 @@ void receiveControl(WiFiUDP& udp) {
  String text(packet),prefix="YEEG "+apToken+" ";if(!text.startsWith(prefix))return;
  String cmd=text.substring(prefix.length());cmd.trim();if(cmd.length()>160)return;String reply;
  if(cmd=="status"){
-  char status[160];snprintf(status,sizeof(status),"# ADC=%s mode=%u missed=%lu queue_drop=%lu usb_drop=%lu udp_drop=%lu",adcOK?"ready":"FAULT",mode.load(),(unsigned long)missed.load(),(unsigned long)queueDrops.load(),(unsigned long)usbDrops.load(),(unsigned long)udpDrops.load());reply=status;
+  char status[160],battery[40];batteryText(battery,sizeof(battery));snprintf(status,sizeof(status),"# ADC=%s mode=%u missed=%lu queue_drop=%lu usb_drop=%lu udp_drop=%lu",adcOK?"ready":"FAULT",mode.load(),(unsigned long)missed.load(),(unsigned long)queueDrops.load(),(unsigned long)usbDrops.load(),(unsigned long)udpDrops.load());reply=String(status)+"\n# "+battery;
  }else if(cmd=="start"||cmd=="stop"||cmd=="test"||cmd.startsWith("probe ")||cmd.startsWith("gain ")||cmd.startsWith("udp ")){
   ControlCommand c{};cmd.toCharArray(c.text,sizeof(c.text));reply=xQueueSend(controlQueue,&c,0)==pdTRUE?"# queued; query status to confirm":"# busy";
  }else reply="# rejected";
@@ -119,7 +120,7 @@ void outputTask(void*) {
   bool blink=(millis()/500)&1;
   digitalWrite(LED_RUN,mode?(!blink):HIGH);
   digitalWrite(LED_WIFI,(WiFi.softAPgetStationNum()||WiFi.status()==WL_CONNECTED)?LOW:!blink);
-  digitalWrite(LED_FAULT,(!adcOK||queueDrops.load()||missed)?LOW:HIGH);
+  digitalWrite(LED_FAULT,(!adcOK||queueDrops.load()||missed||batteryLow())?LOW:HIGH);
  }
 }
 void startWiFi() {
@@ -133,7 +134,8 @@ void startWiFi() {
 }
 void report() {
  Serial.printf("# YuEEG v1 ADC=%s mode=%u gain=%u missed=%lu queue_drop=%lu usb_drop=%lu udp_drop=%lu\n",adcOK?"ready":"FAULT",mode.load(),gain,(unsigned long)missed.load(),(unsigned long)queueDrops.load(),(unsigned long)usbDrops.load(),(unsigned long)udpDrops.load());
- Serial.printf("# RevG SD=%s saved=%lu sd_drop=%lu panel_bus=%s\n",sdReady?"ready":"absent/fault",(unsigned long)sdFrames.load(),(unsigned long)sdDrops.load(),panelReady?"OK (unverified panel)":"not ready");
+ Serial.printf("# RevH SD=%s saved=%lu sd_drop=%lu panel_bus=%s\n",sdReady?"ready":"absent/fault",(unsigned long)sdFrames.load(),(unsigned long)sdDrops.load(),panelReady?"OK (unverified panel)":"not ready");
+ char battery[40];batteryText(battery,sizeof(battery));Serial.printf("# %s (protected loaded supply; nominal divider, bench calibration pending)\n",battery);
  Serial.printf("# AP %s password=%s IP=%s STA=%s\n",WiFi.softAPSSID().c_str(),prefs.getString("ap_pass","").c_str(),WiFi.softAPIP().toString().c_str(),WiFi.localIP().toString().c_str());
  Serial.printf("# CPU=%uMHz Flash=%lu PSRAM=%lu bytes\n",ESP.getCpuFreqMHz(),(unsigned long)ESP.getFlashChipSize(),(unsigned long)ESP.getPsramSize());
  Serial.println("# start | stop | test | probe 1..8 | gain 1/2/4/6/8/12/24 | udp IP PORT | wifi SSID<TAB>PASSWORD | status");
@@ -159,7 +161,7 @@ void setup() {
  outputQueue=xQueueCreate(128,sizeof(RawFrame));controlQueue=xQueueCreate(4,sizeof(ControlCommand));if(!outputQueue||!controlQueue){digitalWrite(LED_FAULT,LOW);while(true)delay(1000);}
  delay(500);digitalWrite(PWDN,HIGH);delay(10000); // verify VCAP1-AVSS>1.1V; no rail fault monitor
  digitalWrite(ADS_RESET,HIGH);delay(1);adcCommand(0x11);uint8_t id=regRead(0);adcOK=(id&0x1F)==0x1E;
- startWiFi();startUI();xTaskCreatePinnedToCore(outputTask,"eeg_output",6144,nullptr,2,nullptr,0);
+ startBatteryMonitor();startWiFi();startUI();xTaskCreatePinnedToCore(outputTask,"eeg_output",6144,nullptr,2,nullptr,0);
  attachInterrupt(digitalPinToInterrupt(DRDY),onDRDY,FALLING);report(); // stopped until host command
 }
 void loop() {

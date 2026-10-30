@@ -1,0 +1,117 @@
+﻿Reference,Value,Footprint,Sheet,Datasheet
+U1001,TPS22918DBVR AMOLED POWER,Package_TO_SOT_SMD:SOT-23-6,amoled_ui,https://www.ti.com/lit/ds/symlink/tps22918.pdf
+R1001,100k,Resistor_SMD:R_0402_1005Metric,amoled_ui,~
+C1001,1n 25V,Capacitor_SMD:C_0402_1005Metric,amoled_ui,~
+R1003,1k,Resistor_SMD:R_0402_1005Metric,amoled_ui,~
+C1002,22u 10V X7R,Capacitor_SMD:C_1206_3216Metric,amoled_ui,~
+C1003,100n 10V,Capacitor_SMD:C_0402_1005Metric,amoled_ui,~
+U1002,TPS7A2028PDBVR,Package_TO_SOT_SMD:SOT-23-5,amoled_ui,https://www.ti.com/lit/ds/symlink/tps7a20.pdf
+C1004,1u 10V,Capacitor_SMD:C_0603_1608Metric,amoled_ui,~
+C1005,4.7u 10V,Capacitor_SMD:C_0603_1608Metric,amoled_ui,~
+U1003,TPS7A2018PDBVR,Package_TO_SOT_SMD:SOT-23-5,amoled_ui,https://www.ti.com/lit/ds/symlink/tps7a20.pdf
+C1006,1u 10V,Capacitor_SMD:C_0603_1608Metric,amoled_ui,~
+C1007,4.7u 10V,Capacitor_SMD:C_0603_1608Metric,amoled_ui,~
+U1004,SN74AXC8T245PWR / 3V3 -> 1V8,Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm,amoled_ui,https://www.ti.com/lit/ds/symlink/sn74axc8t245.pdf
+C1008,100n 10V,Capacitor_SMD:C_0402_1005Metric,amoled_ui,~
+C1009,100n 10V,Capacitor_SMD:C_0402_1005Metric,amoled_ui,~
+Q1001,MMBT3904 OE ENABLE,Package_TO_SOT_SMD:SOT-23,amoled_ui,https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf
+R1002,10k,Resistor_SMD:R_0402_1005Metric,amoled_ui,~
+R1004,100k,Resistor_SMD:R_0402_1005Metric,amoled_ui,~
+R1005,1M,Resistor_SMD:R_0402_1005Metric,amoled_ui,~
+R1021,22R,Resistor_SMD:R_0402_1005Metric,amoled_ui,~
+R1022,22R,Resistor_SMD:R_0402_1005Metric,amoled_ui,~
+R1023,22R,Resistor_SMD:R_0402_1005Metric,amoled_ui,~
+R1024,22R,Resistor_SMD:R_0402_1005Metric,amoled_ui,~
+R1025,22R,Resistor_SMD:R_0402_1005Metric,amoled_ui,~
+R1026,22R,Resistor_SMD:R_0402_1005Metric,amoled_ui,~
+R1027,22R,Resistor_SMD:R_0402_1005Metric,amoled_ui,~
+R1006,10k,Resistor_SMD:R_0402_1005Metric,amoled_ui,~
+R1031,47k,Resistor_SMD:R_0402_1005Metric,amoled_ui,~
+R1032,47k,Resistor_SMD:R_0402_1005Metric,amoled_ui,~
+R1033,47k,Resistor_SMD:R_0402_1005Metric,amoled_ui,~
+R1034,47k,Resistor_SMD:R_0402_1005Metric,amoled_ui,~
+R1035,47k,Resistor_SMD:R_0402_1005Metric,amoled_ui,~
+R1036,47k,Resistor_SMD:R_0402_1005Metric,amoled_ui,~
+R1037,47k,Resistor_SMD:R_0402_1005Metric,amoled_ui,~
+C1010,22u 10V X7R,Capacitor_SMD:C_1206_3216Metric,amoled_ui,~
+C1011,1u 10V,Capacitor_SMD:C_0603_1608Metric,amoled_ui,~
+C1012,100n 10V,Capacitor_SMD:C_0402_1005Metric,amoled_ui,~
+D602,PESD5V0U1BAF,Diode_SMD:D_SOD-323,battery_charger,~
+D604,PESD5V0S1BA,Diode_SMD:D_SOD-323,battery_charger,~
+D603,PESD5V0U1BAF,Diode_SMD:D_SOD-323,battery_charger,~
+J601,USB-C DATA / FLASH - ISOLATED,Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12,battery_charger,https://www.usb.org/sites/default/files/documents/usb_type-c.zip
+D605,PESD5V0S1BA,Diode_SMD:D_SOD-323,battery_charger,~
+D901,SMF5.0A DATA VBUS,Diode_SMD:D_SOD-123F,dual_usb_ports,~
+F901,500mA HOLD PTC,Fuse:Fuse_1206_3216Metric,dual_usb_ports,~
+R902,5.1k 1%,Resistor_SMD:R_0402_1005Metric,dual_usb_ports,~
+R901,5.1k 1%,Resistor_SMD:R_0402_1005Metric,dual_usb_ports,~
+C901,100n 16V,Capacitor_SMD:C_0402_1005Metric,dual_usb_ports,~
+C701,100n 16V,Capacitor_SMD:C_0402_1005Metric,isolated_usb,~
+R702,24R 1%,Resistor_SMD:R_0402_1005Metric,isolated_usb,~
+R704,24R 1%,Resistor_SMD:R_0402_1005Metric,isolated_usb,~
+C702,100n 16V,Capacitor_SMD:C_0402_1005Metric,isolated_usb,~
+U701,ADuM4160BRIZ / enhanced creepage,YuEEG:ADuM4160_RI16_8p5gap,isolated_usb,https://www.analog.com/media/en/technical-documentation/data-sheets/ADuM4160.pdf
+R703,24R 1%,Resistor_SMD:R_0402_1005Metric,isolated_usb,~
+R701,24R 1%,Resistor_SMD:R_0402_1005Metric,isolated_usb,~
+C703,100n 16V,Capacitor_SMD:C_0402_1005Metric,isolated_usb,~
+U2,ESP32-S3-WROOM-1-N16R8,RF_Module:ESP32-S3-WROOM-1,mcu_radio,https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf
+R301,33R,Resistor_SMD:R_0402_1005Metric,mcu_radio,~
+R302,33R,Resistor_SMD:R_0402_1005Metric,mcu_radio,~
+R303,33R,Resistor_SMD:R_0402_1005Metric,mcu_radio,~
+R304,33R,Resistor_SMD:R_0402_1005Metric,mcu_radio,~
+R305,33R,Resistor_SMD:R_0402_1005Metric,mcu_radio,~
+R306,33R,Resistor_SMD:R_0402_1005Metric,mcu_radio,~
+R307,10k,Resistor_SMD:R_0402_1005Metric,mcu_radio,~
+C301,1u 10V,Capacitor_SMD:C_0603_1608Metric,mcu_radio,~
+SW301,PTS645SM43SMTR92 LFS / RESET,Button_Switch_SMD:SW_SPST_PTS645Sx43SMTR92,mcu_radio,https://www.ckswitches.com/media/1471/pts645.pdf
+R308,10k,Resistor_SMD:R_0402_1005Metric,mcu_radio,~
+SW302,PTS645SM43SMTR92 LFS / BOOT,Button_Switch_SMD:SW_SPST_PTS645Sx43SMTR92,mcu_radio,https://www.ckswitches.com/media/1471/pts645.pdf
+C302,100n 10V,Capacitor_SMD:C_0402_1005Metric,mcu_radio,~
+C303,10u 10V,Capacitor_SMD:C_0805_2012Metric,mcu_radio,~
+C304,22u 10V,Capacitor_SMD:C_0805_2012Metric,mcu_radio,~
+J301,DEBUG POGO / NO HEADER FITTED,YuEEG:Debug_Pogo_1x06_P1p27,mcu_radio,~
+R309,330k 1%,Resistor_SMD:R_0402_1005Metric,mcu_radio,~
+R310,100k 1%,Resistor_SMD:R_0402_1005Metric,mcu_radio,~
+C305,100n 10V,Capacitor_SMD:C_0402_1005Metric,mcu_radio,~
+U402,TPS62160DGKR,Package_SO:MSOP-8_3x3mm_P0.65mm,power,http://www.ti.com/lit/ds/symlink/tps62160.pdf
+C406,22u 25V X7R,Capacitor_SMD:C_1206_3216Metric,power,~
+L401,2.2uH Isat>=3A DCR<=80mR,Inductor_SMD:L_Taiyo-Yuden_NR-40xx,power,~
+C407,22u 10V X7R,Capacitor_SMD:C_1206_3216Metric,power,~
+R403,31.2k 0.1%,Resistor_SMD:R_0402_1005Metric,power,~
+R404,10k 0.1%,Resistor_SMD:R_0402_1005Metric,power,~
+TP404,+3V3,TestPoint:TestPoint_Pad_D1.5mm,power,~
+J1101,HIROSE DM3AT-SF-PEJM5,Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5,storage_status,https://www.hirose.com/product/p/CL0609-0031-0-00
+FB1101,BLM18PG121SN1D / 120R@100MHz,Resistor_SMD:R_0603_1608Metric,storage_status,~
+C1101,22u 10V X7R,Capacitor_SMD:C_1206_3216Metric,storage_status,~
+C1102,100n 10V,Capacitor_SMD:C_0402_1005Metric,storage_status,~
+C1103,1u 10V,Capacitor_SMD:C_0603_1608Metric,storage_status,~
+R1101,22R,Resistor_SMD:R_0402_1005Metric,storage_status,~
+R1111,10k,Resistor_SMD:R_0402_1005Metric,storage_status,~
+R1112,10k,Resistor_SMD:R_0402_1005Metric,storage_status,~
+R1113,10k,Resistor_SMD:R_0402_1005Metric,storage_status,~
+R1114,10k,Resistor_SMD:R_0402_1005Metric,storage_status,~
+R1115,10k,Resistor_SMD:R_0402_1005Metric,storage_status,~
+R1116,10k,Resistor_SMD:R_0402_1005Metric,storage_status,~
+D1101,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,storage_status,https://www.st.com/resource/en/datasheet/usblc6-2.pdf
+D1102,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,storage_status,https://www.st.com/resource/en/datasheet/usblc6-2.pdf
+R840,2.2k,Resistor_SMD:R_0402_1005Metric,storage_status,~
+LED801,POWER,LED_SMD:LED_0603_1608Metric,storage_status,~
+R841,2.2k,Resistor_SMD:R_0402_1005Metric,storage_status,~
+LED802,RUN,LED_SMD:LED_0603_1608Metric,storage_status,~
+R842,2.2k,Resistor_SMD:R_0402_1005Metric,storage_status,~
+LED803,WIFI,LED_SMD:LED_0603_1608Metric,storage_status,~
+R843,2.2k,Resistor_SMD:R_0402_1005Metric,storage_status,~
+LED804,FAULT,LED_SMD:LED_0603_1608Metric,storage_status,~
+SW1001,PTS645SM43SMTR92 LFS / REC,Button_Switch_SMD:SW_SPST_PTS645Sx43SMTR92,storage_status,https://www.ckswitches.com/media/1471/pts645.pdf
+R1120,10k,Resistor_SMD:R_0402_1005Metric,storage_status,~
+C1120,10n 10V,Capacitor_SMD:C_0402_1005Metric,storage_status,~
+J2002,OK-14F024-04 / AM178Q368448LK,YuEEG:OCN_OK_14F024_04,YuEEG_DISPLAY_G,../../../display-amoled-1.78inch-368x448-main/versions/AM178Q368448LK/cad/OK-14F024-04.pdf
+C2001,10u 10V X7R,Capacitor_SMD:C_0603_1608Metric,YuEEG_DISPLAY_G,~
+C2002,100n 10V,Capacitor_SMD:C_0603_1608Metric,YuEEG_DISPLAY_G,~
+C2003,1u 10V,Capacitor_SMD:C_0603_1608Metric,YuEEG_DISPLAY_G,~
+C2004,100n 10V,Capacitor_SMD:C_0603_1608Metric,YuEEG_DISPLAY_G,~
+C2005,100n 10V,Capacitor_SMD:C_0603_1608Metric,YuEEG_DISPLAY_G,~
+R2001,0R,Resistor_SMD:R_0603_1608Metric,YuEEG_DISPLAY_G,~
+R2002,100k,Resistor_SMD:R_0603_1608Metric,YuEEG_DISPLAY_G,~
+R2003,47k,Resistor_SMD:R_0603_1608Metric,YuEEG_DISPLAY_G,~
+R2004,47k,Resistor_SMD:R_0603_1608Metric,YuEEG_DISPLAY_G,~
