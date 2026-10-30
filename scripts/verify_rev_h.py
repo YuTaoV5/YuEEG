@@ -64,5 +64,8 @@ def verify():
  for q in exports['boards']:
   require(q['pcb_sha256']==summary['boards'][q['board']]['pcb_sha256'],'Stale Gerber export '+q['board'])
   for name,digest in q['files'].items():require(sha(H/'fabrication_engineering'/q['board']/name)==digest,'Changed engineering export '+name)
+ if (H/'display_link').exists():
+  from verify_display_link import verify as verify_fpc
+  verify_fpc()
  print('PASS: Rev H engineering checkpoint: native pin/BOM/source hashes, zero static reports, firmware and review exports. Mechanical/functional release remains incomplete.')
 if __name__=='__main__':verify()

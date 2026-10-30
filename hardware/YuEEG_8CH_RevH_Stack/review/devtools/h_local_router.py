@@ -1,7 +1,7 @@
 """Adapt the reviewed local router to Rev H, validating off-grid endpoint escapes."""
 from pathlib import Path
 import sys
-def load(board='digital',board_path=None):
+def load(board='digital',board_path=None,outline=None,edge=.7,via=None):
  src=Path('hardware/YuEEG_8CH_RevF/review/local_router_f.py').read_text()
  line=next(l for l in src.splitlines() if l.startswith('path=ROOT/'))
  board_path=board_path or f'hardware/YuEEG_8CH_RevH_Stack/{board}/YuEEG_H_{board.upper()}.kicad_pcb'
@@ -12,6 +12,19 @@ def load(board='digital',board_path=None):
  if board=='power':
   src=src.replace('layers=[p.F_Cu,p.In2_Cu,p.In4_Cu,p.B_Cu]','layers=[p.F_Cu,p.B_Cu]')
   src=src.replace('right=47.3;bottom=59.3','right=33.3;bottom=17.3')
+ if outline is not None:
+  old='right=33.3;bottom=17.3' if board=='power' else 'right=47.3;bottom=59.3'
+  assert old in src;src=src.replace(old,f'right={outline[0]-edge};bottom={outline[1]-edge}').replace('.7*scale',f'{edge}*scale')
+  src=src.replace('    keepouts=[z for z in b.Zones()', '    board_poly=p.SHAPE_POLY_SET();b.GetBoardPolygonOutlines(board_poly);edge_shapes=[g.GetEffectiveShape() for g in b.GetDrawings() if g.GetLayer()==p.Edge_Cuts]\n    keepouts=[z for z in b.Zones()')
+  src=src.replace('        blocked=any(',f'        if not board_poly.Contains(xy(x/scale,y/scale)) or any(sh.Collide(circ,mm({edge})) for sh in edge_shapes):cache[node]=False;return False\n        blocked=any(')
+  src=src.replace('        blocked=any(',"        clip=globals().get('route_clip_box')\n        if clip and not (clip[0]<=x/scale<=clip[2] and clip[1]<=y/scale<=clip[3]):cache[node]=False;return False\n        blocked=any(")
+  src=src.replace('        okay=all(',f'        if not board_poly.Contains(xy(xx,yy)) or any(sh.Collide(circ,mm({edge})) for sh in edge_shapes):v_cache[x,y]=False;return False\n        okay=all(')
+ if via is not None:
+  diameter,drill=via
+  src=src.replace("mm(.35 if '--small-via' in sys.argv else .4)",f'mm({diameter})').replace("mm(.15 if '--small-via' in sys.argv else .2)",f'mm({drill})').replace("mm(.175 if '--small-via' in sys.argv else .2)",f'mm({diameter/2})').replace('r+.25+.21',f'r+.25+{diameter/2+.01}')
+  if outline is not None:
+   needle='xx,yy=x/scale,y/scale;circ='
+   src=src.replace(needle,f'xx,yy=x/scale,y/scale\n        if not ({edge+diameter/2}<=xx<={outline[0]-edge-diameter/2} and {edge+diameter/2}<=yy<={outline[1]-edge-diameter/2}):v_cache[x,y]=False;return False\n        circ=')
  src=src.replace('for z in b.Zones()', 'for z in list(b.Zones())+[fz for footprint in b.GetFootprints() for fz in footprint.Zones()]')
  src=src.replace('margin=4 if','margin=14 if').replace('visited>400000','visited>1200000')
  old='s=(round(start[0]*scale),round(start[1]*scale),sl);goal=(round(end[0]*scale),round(end[1]*scale),el)'

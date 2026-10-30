@@ -1,0 +1,71 @@
+{
+  "status": "FPC_EXTENSION_PROTOTYPE_NOT_FOR_ORDER",
+  "outline_mm": [
+    8.3,
+    13.644866776461628
+  ],
+  "neck_width_mm": 6.6,
+  "finished_fpc_thickness_mm": 0.11,
+  "copper_layers": 2,
+  "connector_centers_flat_mm": {
+    "JF1": [
+      4.15,
+      1.8
+    ],
+    "JF2": [
+      4.15,
+      11.844866776461627
+    ]
+  },
+  "B_side_rotations_deg": {
+    "JF1": 0,
+    "JF2": 0
+  },
+  "connector_mounting_plane_separation_target_mm": 6.0,
+  "warning_plane_datum": "6 mm is between main PCB and factory male FPC solder mounting plane, not a verified screen-back spacing. Factory folded FPC offset remains unknown.",
+  "U_fold_neutral_radius_mm": 1.8,
+  "vertical_centerline_section_mm": 0.69,
+  "straight_center_to_bend_mm": 1.85,
+  "bend_interval_flat_y_mm": [
+    3.6500000000000004,
+    9.994866776461627
+  ],
+  "pins": {
+    "1": "AM_RST_P",
+    "2": "GND",
+    "3": null,
+    "4": "AM_CS_P",
+    "5": "AM_CLK_P",
+    "6": "AM_D1_P",
+    "7": "AM_D0_P",
+    "8": "GND",
+    "9": null,
+    "10": null,
+    "11": "AM_RAW",
+    "12": "AM_RAW",
+    "13": "GND",
+    "14": "GND",
+    "15": "AM_1V8",
+    "16": "AM_RAW",
+    "17": null,
+    "18": "GND",
+    "19": "TP_SDA_IDLE",
+    "20": "TP_SCL_IDLE",
+    "21": "GND",
+    "22": "AM_D3_P",
+    "23": "AM_D2_P",
+    "24": "VCI_EN",
+    "25": "GND",
+    "26": "GND",
+    "27": "GND",
+    "28": "GND"
+  },
+  "drawing_path": "hardware/display-amoled-1.78inch-368x448-main/versions/AM178Q368448LK/cad/OK-14F024-04.pdf",
+  "drawing_sha256": "87eed9ad728bea68bc335b66391e6f8c5be1c8f1b2998fa7fdd8a19d80f9e692",
+  "male_drawing_page": 1,
+  "female_drawing_page": 3,
+  "fabrication_reference": "https://jlcpcb.com/capabilities/flex-pcb-capabilities",
+  "fabrication_proposal": "Two-layer PI FPC, nominal .11 mm finished, 12um copper; end PI stiffeners on F side, .20mm proposal. Advanced .10/.30mm drill/diameter vias in end areas only require fabricator confirmation. Yellow coverlay, gang opening under each fine-pitch connector. Final fab stackup, thickness maximum for bend radius, stiffener support and assembly process not qualified.",
+  "procurement": "User confirmed both exact-series male and matching socket are available on Taobao. Specific SKU, delivered version and mating samples have not been independently verified.",
+  "scope": "Baseline three boards unchanged. Four unused signal pins remain NC at both ends. Retention fittings remain acquisition GND. Both components on B in flat artwork; one-time U fold toward +Y with a narrow neck to avoid adjacent power ICs. Geometric mating/numbering and all clearances require sample verification."
+}

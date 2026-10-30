@@ -15,3 +15,5 @@
 `archive/` 保留已失效的 2S 电源板及接口迁移前源文件，只供追溯。`BOM_source.csv`、`expected_source.json` 是旧版来源，不能作为生产依据。当前器件清单与连接表为各板 `BOM.csv`、`review/expected_connections.json`。本目录尚未发布制造包；不要使用旧 Rev G Gerber 代替本版。
 
 `fabrication_engineering/` 是带源 PCB 哈希的 Gerber／钻孔／SMT 坐标工程复核导出，**不可直接下单**；电池探针与屏幕连接定型后必须重新生成。机械复核见 [记录](../../docs/REVH_MECHANICAL_REVIEW.md)。
+
+新增[屏幕短 FPC 延长板工程样板](display_link/README.md)，用于保持屏幕最上层而保留现有数字板母座。用户已确认配对公母头可在淘宝购买；附件原理图和布线检查已通过，折弯区无过孔及斜向走线。实际针序、加工叠层及屏幕背面装配尚待确认，不能据此视为屏幕机械定型。

@@ -29,6 +29,8 @@
 
 OCN 母座本体高度为 0.77±0.10 mm、厂家给出的配对高度为 0.80 mm。配对高度不能当作可伸长的排线长度。因此 6 mm 支撑柱方案仍需一套实际可行的连接方式，例如经过确认的展开／折弯结构或延长转接方案；当前没有把任何一种未经验证的方式当成定案。
 
+2026-10-31：用户确认 OK-14GM024-04 公头与匹配母座淘宝可购，现成延长线未知。已完成[无源短 FPC 延长板工程样板](../hardware/YuEEG_8CH_RevH_Stack/display_link/README.md)的原理图、布线及逻辑几何复核，保留厂家原屏 FPC 和主三板。该附件采用同面两端接头、向 +Y 的 U 形折弯，名义中性层半径 1.8 mm；目标 6 mm 是主板到原厂公头 FPC 焊接安装面的距离，**不是已确认的屏幕后表面间隙**。实际连接器针序、盖膜／补强加工、邻近器件碰撞及整个屏幕背面的导体包络仍待核定。静态检查通过不解除本节的机械及隔离条件。
+
 已生成[当前投影检查图](../hardware/YuEEG_8CH_RevH_Stack/mechanical/current/screen_envelope_review.svg)及[数值记录](../hardware/YuEEG_8CH_RevH_Stack/mechanical/current/screen_envelope_review.json)。该图覆盖有尺寸依据的部分器件，并非全部零件的完整装配模型。
 
 ## 隔离距离的条件计算
@@ -71,7 +73,7 @@ OCN 母座本体高度为 0.77±0.10 mm、厂家给出的配对高度为 0.80 mm
 
 ## 资料依据
 
-- 用户提供的 `hardware/display-amoled-1.78inch-368x448-main/versions/AM178Q368448LK/`，规格图第 5 页及 `cad/OK-14F024-04.pdf` 母座 Rev B。
+- 用户提供的 `hardware/display-amoled-1.78inch-368x448-main/versions/AM178Q368448LK/`，规格图第 5 页及 `cad/OK-14F024-04.pdf` 第 1 页公头 Rev A／第 3 页母座 Rev B。
 - [JST PH 官方图纸](https://www.jst-mfg.com/product/pdf/eng/ePH.pdf)，第 4 页 SMT side entry。
 - [Mill-Max 官方目录](https://www.mill-max.com/sites/default/files/external/catalog/2019-04/023M-028M.pdf)，印刷页 25，公制部分。
 - [NP-BX1 触点座原始 CAD](https://gist.github.com/ednisley/c842ec39d6ac5a2e6945ea03435c56c3)，作者样品测量参考。

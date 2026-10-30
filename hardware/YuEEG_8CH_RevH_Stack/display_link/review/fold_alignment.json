@@ -1,0 +1,247 @@
+{
+  "status": "PROTOTYPE_GEOMETRIC_CHECK_NOT_MATING_OR_ASSEMBLY_RELEASE",
+  "pcb_sha256": "1972f891f7a6f3003c6ad1cc0614ac399bf2f4ec40fef13fbbde6f1ee1f2c295",
+  "main_pcb_sha256": "b05a6924490a5af3d4159e10566bda3ad422d91f38a9d9845cedaab8a1e003db",
+  "upper_socket_folded_pad_checks": [
+    {
+      "pin": "1",
+      "error_mm": 0.0
+    },
+    {
+      "pin": "2",
+      "error_mm": 3.552713678800501e-15
+    },
+    {
+      "pin": "3",
+      "error_mm": 3.552713678800501e-15
+    },
+    {
+      "pin": "4",
+      "error_mm": 3.552713678800501e-15
+    },
+    {
+      "pin": "5",
+      "error_mm": 0.0
+    },
+    {
+      "pin": "6",
+      "error_mm": 0.0
+    },
+    {
+      "pin": "7",
+      "error_mm": 3.552713678800501e-15
+    },
+    {
+      "pin": "8",
+      "error_mm": 3.552713678800501e-15
+    },
+    {
+      "pin": "9",
+      "error_mm": 3.552713678800501e-15
+    },
+    {
+      "pin": "10",
+      "error_mm": 0.0
+    },
+    {
+      "pin": "11",
+      "error_mm": 0.0
+    },
+    {
+      "pin": "12",
+      "error_mm": 3.552713678800501e-15
+    },
+    {
+      "pin": "13",
+      "error_mm": 3.552713678800501e-15
+    },
+    {
+      "pin": "14",
+      "error_mm": 0.0
+    },
+    {
+      "pin": "15",
+      "error_mm": 0.0
+    },
+    {
+      "pin": "16",
+      "error_mm": 3.552713678800501e-15
+    },
+    {
+      "pin": "17",
+      "error_mm": 3.552713678800501e-15
+    },
+    {
+      "pin": "18",
+      "error_mm": 3.552713678800501e-15
+    },
+    {
+      "pin": "19",
+      "error_mm": 0.0
+    },
+    {
+      "pin": "20",
+      "error_mm": 0.0
+    },
+    {
+      "pin": "21",
+      "error_mm": 3.552713678800501e-15
+    },
+    {
+      "pin": "22",
+      "error_mm": 3.552713678800501e-15
+    },
+    {
+      "pin": "23",
+      "error_mm": 3.552713678800501e-15
+    },
+    {
+      "pin": "24",
+      "error_mm": 0.0
+    },
+    {
+      "pin": "25",
+      "error_mm": 0.0
+    },
+    {
+      "pin": "26",
+      "error_mm": 0.0
+    },
+    {
+      "pin": "27",
+      "error_mm": 0.0
+    },
+    {
+      "pin": "28",
+      "error_mm": 0.0
+    }
+  ],
+  "lower_header_signal_column_and_row_checks": [
+    {
+      "pin": "1",
+      "column_error_mm": 0.0,
+      "same_row_side": true
+    },
+    {
+      "pin": "2",
+      "column_error_mm": 2.6645352591003757e-15,
+      "same_row_side": true
+    },
+    {
+      "pin": "3",
+      "column_error_mm": 8.881784197001252e-16,
+      "same_row_side": true
+    },
+    {
+      "pin": "4",
+      "column_error_mm": 0.0,
+      "same_row_side": true
+    },
+    {
+      "pin": "5",
+      "column_error_mm": 1.7763568394002505e-15,
+      "same_row_side": true
+    },
+    {
+      "pin": "6",
+      "column_error_mm": 0.0,
+      "same_row_side": true
+    },
+    {
+      "pin": "7",
+      "column_error_mm": 2.6645352591003757e-15,
+      "same_row_side": true
+    },
+    {
+      "pin": "8",
+      "column_error_mm": 8.881784197001252e-16,
+      "same_row_side": true
+    },
+    {
+      "pin": "9",
+      "column_error_mm": 4.440892098500626e-16,
+      "same_row_side": true
+    },
+    {
+      "pin": "10",
+      "column_error_mm": 1.7763568394002505e-15,
+      "same_row_side": true
+    },
+    {
+      "pin": "11",
+      "column_error_mm": 4.440892098500626e-16,
+      "same_row_side": true
+    },
+    {
+      "pin": "12",
+      "column_error_mm": 2.6645352591003757e-15,
+      "same_row_side": true
+    },
+    {
+      "pin": "13",
+      "column_error_mm": 2.6645352591003757e-15,
+      "same_row_side": true
+    },
+    {
+      "pin": "14",
+      "column_error_mm": 4.440892098500626e-16,
+      "same_row_side": true
+    },
+    {
+      "pin": "15",
+      "column_error_mm": 1.7763568394002505e-15,
+      "same_row_side": true
+    },
+    {
+      "pin": "16",
+      "column_error_mm": 4.440892098500626e-16,
+      "same_row_side": true
+    },
+    {
+      "pin": "17",
+      "column_error_mm": 8.881784197001252e-16,
+      "same_row_side": true
+    },
+    {
+      "pin": "18",
+      "column_error_mm": 2.6645352591003757e-15,
+      "same_row_side": true
+    },
+    {
+      "pin": "19",
+      "column_error_mm": 0.0,
+      "same_row_side": true
+    },
+    {
+      "pin": "20",
+      "column_error_mm": 1.7763568394002505e-15,
+      "same_row_side": true
+    },
+    {
+      "pin": "21",
+      "column_error_mm": 0.0,
+      "same_row_side": true
+    },
+    {
+      "pin": "22",
+      "column_error_mm": 8.881784197001252e-16,
+      "same_row_side": true
+    },
+    {
+      "pin": "23",
+      "column_error_mm": 2.6645352591003757e-15,
+      "same_row_side": true
+    },
+    {
+      "pin": "24",
+      "column_error_mm": 0.0,
+      "same_row_side": true
+    }
+  ],
+  "bend_vias": [],
+  "nonparallel_tracks_in_bend": [],
+  "bend_radius_neutral_mm": 1.8,
+  "inner_radius_at_nominal_thickness_mm": 1.745,
+  "max_fpc_thickness_for_inner_radius_ge_10t_mm": 0.17142857142857143,
+  "scope": "Fold transforms verify project logical columns and row sides only. Male/female PCB land row offsets differ by design. Connector internal contacts, real pin-1 marking, solder fillets, screen-back datum, exact stiffener/fabricator stack and assembled continuity are not proved."
+}

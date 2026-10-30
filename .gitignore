@@ -112,3 +112,11 @@ Thumbs.db
 /hardware/YuEEG_8CH_RevH_Stack/models/PTS645.wrl
 /hardware/YuEEG_8CH_RevH_Stack/models/THM6.wrl
 /hardware/YuEEG_8CH_RevH_Stack/models/USB_C_HRO.wrl
+
+# Passive display-link prototype evidence; separate from the three-board baseline.
+!/hardware/YuEEG_8CH_RevH_Stack/display_link/review/design_contract.json
+!/hardware/YuEEG_8CH_RevH_Stack/display_link/review/fold_alignment.json
+!/hardware/YuEEG_8CH_RevH_Stack/display_link/review/checkpoint.json
+!/hardware/YuEEG_8CH_RevH_Stack/display_link/review/geometry.json
+!/hardware/YuEEG_8CH_RevH_Stack/display_link/review/flat_and_fold.png
+!/hardware/YuEEG_8CH_RevH_Stack/display_link/review/flat_and_fold.svg

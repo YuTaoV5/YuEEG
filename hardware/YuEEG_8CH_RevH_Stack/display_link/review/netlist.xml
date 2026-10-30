@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>X:\Items\YuEEG\hardware\YuEEG_8CH_RevH_Stack\display_link\YuEEG_H_DISPLAY_LINK.kicad_sch</source>
+    <date>2026-10-31T00:37:13+0800</date>
+    <tool>Eeschema 9.0.5</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>YuEEG_H_DISPLAY_LINK.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/display_link/" tstamps="/49eb8874-8fb5-42c5-b7fe-a01ba5f20185/">
+      <title_block>
+        <title>Passive extension / same logical pin at both ends</title>
+        <company>YuEEG</company>
+        <rev>H FPC prototype</rev>
+        <date>2026-10-31</date>
+        <source>display_link.kicad_sch</source>
+        <comment number="1" value="DISPLAY LINK PROTOTYPE - MATING AND FLEX NOT QUALIFIED"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="JF1">
+      <value>OK-14GM024-04 / MAIN</value>
+      <footprint>YuEEG_Display:OCN_OK_14GM024_04_LogicalMate</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">YuEEG_Display:OCN_OK_14GM024_04_LogicalMate</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x28" description="Generic connector, single row, 01x28, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="display_link"/>
+      <property name="Sheetfile" value="display_link.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/display_link/" tstamps="/49eb8874-8fb5-42c5-b7fe-a01ba5f20185/"/>
+      <tstamps>e7e81240-cbd5-4f15-9b52-10b3b9bad0a2</tstamps>
+    </comp>
+    <comp ref="JF2">
+      <value>OK-14F024-04 / SCREEN</value>
+      <footprint>YuEEG_Display:OCN_OK_14F024_04_GangMask</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">YuEEG_Display:OCN_OK_14F024_04_GangMask</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x28" description="Generic connector, single row, 01x28, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="display_link"/>
+      <property name="Sheetfile" value="display_link.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/display_link/" tstamps="/49eb8874-8fb5-42c5-b7fe-a01ba5f20185/"/>
+      <tstamps>e3a98087-13b2-4e3f-a615-7ba50b9873da</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_01x28">
+      <description>Generic connector, single row, 01x28, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x28</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Generic connector, single row, 01x28, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+        <pin num="17" name="Pin_17" type="passive"/>
+        <pin num="18" name="Pin_18" type="passive"/>
+        <pin num="19" name="Pin_19" type="passive"/>
+        <pin num="20" name="Pin_20" type="passive"/>
+        <pin num="21" name="Pin_21" type="passive"/>
+        <pin num="22" name="Pin_22" type="passive"/>
+        <pin num="23" name="Pin_23" type="passive"/>
+        <pin num="24" name="Pin_24" type="passive"/>
+        <pin num="25" name="Pin_25" type="passive"/>
+        <pin num="26" name="Pin_26" type="passive"/>
+        <pin num="27" name="Pin_27" type="passive"/>
+        <pin num="28" name="Pin_28" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>X:\Items\YuEEG\hardware\YuEEG_8CH_RevH_Stack\display_link/Connector_Generic.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="AM_1V8" class="Default">
+      <node ref="JF1" pin="15" pinfunction="Pin_15" pintype="passive"/>
+      <node ref="JF2" pin="15" pinfunction="Pin_15" pintype="passive"/>
+    </net>
+    <net code="2" name="AM_CLK_P" class="Default">
+      <node ref="JF1" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="JF2" pin="5" pinfunction="Pin_5" pintype="passive"/>
+    </net>
+    <net code="3" name="AM_CS_P" class="Default">
+      <node ref="JF1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="JF2" pin="4" pinfunction="Pin_4" pintype="passive"/>
+    </net>
+    <net code="4" name="AM_D0_P" class="Default">
+      <node ref="JF1" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="JF2" pin="7" pinfunction="Pin_7" pintype="passive"/>
+    </net>
+    <net code="5" name="AM_D1_P" class="Default">
+      <node ref="JF1" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="JF2" pin="6" pinfunction="Pin_6" pintype="passive"/>
+    </net>
+    <net code="6" name="AM_D2_P" class="Default">
+      <node ref="JF1" pin="23" pinfunction="Pin_23" pintype="passive"/>
+      <node ref="JF2" pin="23" pinfunction="Pin_23" pintype="passive"/>
+    </net>
+    <net code="7" name="AM_D3_P" class="Default">
+      <node ref="JF1" pin="22" pinfunction="Pin_22" pintype="passive"/>
+      <node ref="JF2" pin="22" pinfunction="Pin_22" pintype="passive"/>
+    </net>
+    <net code="8" name="AM_RAW" class="Default">
+      <node ref="JF1" pin="11" pinfunction="Pin_11" pintype="passive"/>
+      <node ref="JF1" pin="12" pinfunction="Pin_12" pintype="passive"/>
+      <node ref="JF1" pin="16" pinfunction="Pin_16" pintype="passive"/>
+      <node ref="JF2" pin="11" pinfunction="Pin_11" pintype="passive"/>
+      <node ref="JF2" pin="12" pinfunction="Pin_12" pintype="passive"/>
+      <node ref="JF2" pin="16" pinfunction="Pin_16" pintype="passive"/>
+    </net>
+    <net code="9" name="AM_RST_P" class="Default">
+      <node ref="JF1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="JF2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="10" name="GND" class="Default">
+      <node ref="JF1" pin="13" pinfunction="Pin_13" pintype="passive"/>
+      <node ref="JF1" pin="14" pinfunction="Pin_14" pintype="passive"/>
+      <node ref="JF1" pin="18" pinfunction="Pin_18" pintype="passive"/>
+      <node ref="JF1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="JF1" pin="21" pinfunction="Pin_21" pintype="passive"/>
+      <node ref="JF1" pin="25" pinfunction="Pin_25" pintype="passive"/>
+      <node ref="JF1" pin="26" pinfunction="Pin_26" pintype="passive"/>
+      <node ref="JF1" pin="27" pinfunction="Pin_27" pintype="passive"/>
+      <node ref="JF1" pin="28" pinfunction="Pin_28" pintype="passive"/>
+      <node ref="JF1" pin="8" pinfunction="Pin_8" pintype="passive"/>
+      <node ref="JF2" pin="13" pinfunction="Pin_13" pintype="passive"/>
+      <node ref="JF2" pin="14" pinfunction="Pin_14" pintype="passive"/>
+      <node ref="JF2" pin="18" pinfunction="Pin_18" pintype="passive"/>
+      <node ref="JF2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="JF2" pin="21" pinfunction="Pin_21" pintype="passive"/>
+      <node ref="JF2" pin="25" pinfunction="Pin_25" pintype="passive"/>
+      <node ref="JF2" pin="26" pinfunction="Pin_26" pintype="passive"/>
+      <node ref="JF2" pin="27" pinfunction="Pin_27" pintype="passive"/>
+      <node ref="JF2" pin="28" pinfunction="Pin_28" pintype="passive"/>
+      <node ref="JF2" pin="8" pinfunction="Pin_8" pintype="passive"/>
+    </net>
+    <net code="11" name="TP_SCL_IDLE" class="Default">
+      <node ref="JF1" pin="20" pinfunction="Pin_20" pintype="passive"/>
+      <node ref="JF2" pin="20" pinfunction="Pin_20" pintype="passive"/>
+    </net>
+    <net code="12" name="TP_SDA_IDLE" class="Default">
+      <node ref="JF1" pin="19" pinfunction="Pin_19" pintype="passive"/>
+      <node ref="JF2" pin="19" pinfunction="Pin_19" pintype="passive"/>
+    </net>
+    <net code="13" name="VCI_EN" class="Default">
+      <node ref="JF1" pin="24" pinfunction="Pin_24" pintype="passive"/>
+      <node ref="JF2" pin="24" pinfunction="Pin_24" pintype="passive"/>
+    </net>
+    <net code="14" name="unconnected-(JF1-Pin_3-Pad3)" class="Default">
+      <node ref="JF1" pin="3" pinfunction="Pin_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="15" name="unconnected-(JF1-Pin_9-Pad9)" class="Default">
+      <node ref="JF1" pin="9" pinfunction="Pin_9" pintype="passive+no_connect"/>
+    </net>
+    <net code="16" name="unconnected-(JF1-Pin_10-Pad10)" class="Default">
+      <node ref="JF1" pin="10" pinfunction="Pin_10" pintype="passive+no_connect"/>
+    </net>
+    <net code="17" name="unconnected-(JF1-Pin_17-Pad17)" class="Default">
+      <node ref="JF1" pin="17" pinfunction="Pin_17" pintype="passive+no_connect"/>
+    </net>
+    <net code="18" name="unconnected-(JF2-Pin_3-Pad3)" class="Default">
+      <node ref="JF2" pin="3" pinfunction="Pin_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="19" name="unconnected-(JF2-Pin_9-Pad9)" class="Default">
+      <node ref="JF2" pin="9" pinfunction="Pin_9" pintype="passive+no_connect"/>
+    </net>
+    <net code="20" name="unconnected-(JF2-Pin_10-Pad10)" class="Default">
+      <node ref="JF2" pin="10" pinfunction="Pin_10" pintype="passive+no_connect"/>
+    </net>
+    <net code="21" name="unconnected-(JF2-Pin_17-Pad17)" class="Default">
+      <node ref="JF2" pin="17" pinfunction="Pin_17" pintype="passive+no_connect"/>
+    </net>
+  </nets>
+</export>
