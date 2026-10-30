@@ -1,0 +1,49 @@
+{
+  "vias": [
+    {
+      "end": "host_0",
+      "signal_vias_mm": [
+        [
+          23.7183,
+          50.7758
+        ]
+      ],
+      "new_return_via_mm": [
+        23.7,
+        49.4
+      ],
+      "before_nearest_return_mm": [
+        6.696253017919795
+      ],
+      "after_local_return_mm": [
+        1.3759217019874332
+      ]
+    },
+    {
+      "end": "host_1",
+      "signal_vias_mm": [
+        [
+          27.856,
+          50.4757
+        ]
+      ],
+      "new_return_via_mm": [
+        27.85,
+        49.4
+      ],
+      "before_nearest_return_mm": [
+        10.736740683280006
+      ],
+      "after_local_return_mm": [
+        1.0757167331598083
+      ]
+    }
+  ],
+  "diameter_mm": 0.45,
+  "drill_mm": 0.2,
+  "reference_planes": [
+    "In1.Cu HOST_GND",
+    "In3.Cu HOST_GND"
+  ],
+  "scope": "Local reference-plane stitching at USB layer transitions. Does not verify impedance, USB eye margin or system isolation."
+}

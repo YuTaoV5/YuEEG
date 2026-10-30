@@ -1,5 +1,5 @@
 {
-  "pcb_sha256": "d2bd686cc1c6af7c569fcc57c51c2ba92f45ba31ac413b425256b9cd1b61a022",
+  "pcb_sha256": "b05a6924490a5af3d4159e10566bda3ad422d91f38a9d9845cedaab8a1e003db",
   "nets": {
     "USB_DOWN_DM": {
       "planar_track_length_mm": 33.72152261578638,
@@ -143,5 +143,5 @@
       ]
     }
   },
-  "scope": "Planar track centerline lengths only; excludes via barrels, pads and package. Not an impedance, reference-plane continuity or USB compliance check."
+  "scope": "Sum of all planar track centerline lengths in each net, including branches and loops; not end-to-end propagation path length or differential skew. Excludes via barrels, pads and package. Not an impedance, reference-plane continuity or USB compliance check."
 }

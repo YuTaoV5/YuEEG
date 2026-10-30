@@ -1,0 +1,190 @@
+{
+  "status": "PARTITION_FEASIBILITY_ONLY_NOT_IMPLEMENTED",
+  "source_pcb_sha256": "b05a6924490a5af3d4159e10566bda3ad422d91f38a9d9845cedaab8a1e003db",
+  "proposed_move_components": [
+    {
+      "reference": "C701",
+      "value": "100n 16V",
+      "footprint": "C_0402_1005Metric",
+      "nets": [
+        "DATA_5V",
+        "HOST_GND"
+      ]
+    },
+    {
+      "reference": "C702",
+      "value": "100n 16V",
+      "footprint": "C_0402_1005Metric",
+      "nets": [
+        "HOST_GND",
+        "USB_VDD1"
+      ]
+    },
+    {
+      "reference": "C703",
+      "value": "100n 16V",
+      "footprint": "C_0402_1005Metric",
+      "nets": [
+        "+3V3",
+        "GND"
+      ]
+    },
+    {
+      "reference": "C901",
+      "value": "100n 16V",
+      "footprint": "C_0402_1005Metric",
+      "nets": [
+        "DATA_5V",
+        "HOST_GND"
+      ]
+    },
+    {
+      "reference": "D602",
+      "value": "PESD5V0U1BAF",
+      "footprint": "D_SOD-323",
+      "nets": [
+        "HOST_GND",
+        "USB_HOST_DP"
+      ]
+    },
+    {
+      "reference": "D603",
+      "value": "PESD5V0U1BAF",
+      "footprint": "D_SOD-323",
+      "nets": [
+        "HOST_GND",
+        "USB_HOST_DM"
+      ]
+    },
+    {
+      "reference": "D604",
+      "value": "PESD5V0S1BA",
+      "footprint": "D_SOD-323",
+      "nets": [
+        "HOST_GND",
+        "USB_CC1"
+      ]
+    },
+    {
+      "reference": "D605",
+      "value": "PESD5V0S1BA",
+      "footprint": "D_SOD-323",
+      "nets": [
+        "HOST_GND",
+        "USB_CC2"
+      ]
+    },
+    {
+      "reference": "D901",
+      "value": "SMF5.0A DATA VBUS",
+      "footprint": "D_SOD-123F",
+      "nets": [
+        "DATA_5V",
+        "HOST_GND"
+      ]
+    },
+    {
+      "reference": "F901",
+      "value": "500mA HOLD PTC",
+      "footprint": "Fuse_1206_3216Metric",
+      "nets": [
+        "DATA_5V",
+        "DATA_RAW"
+      ]
+    },
+    {
+      "reference": "J601",
+      "value": "USB-C DATA / FLASH - ISOLATED",
+      "footprint": "USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+      "nets": [
+        "DATA_RAW",
+        "HOST_GND",
+        "USB_CC1",
+        "USB_CC2",
+        "USB_HOST_DM",
+        "USB_HOST_DP",
+        "unconnected-(J601-SBU1-PadA8)",
+        "unconnected-(J601-SBU2-PadB8)"
+      ]
+    },
+    {
+      "reference": "R701",
+      "value": "24R 1%",
+      "footprint": "R_0402_1005Metric",
+      "nets": [
+        "USB_HOST_DP",
+        "USB_UP_DP"
+      ]
+    },
+    {
+      "reference": "R702",
+      "value": "24R 1%",
+      "footprint": "R_0402_1005Metric",
+      "nets": [
+        "USB_HOST_DM",
+        "USB_UP_DM"
+      ]
+    },
+    {
+      "reference": "R901",
+      "value": "5.1k 1%",
+      "footprint": "R_0402_1005Metric",
+      "nets": [
+        "HOST_GND",
+        "USB_CC1"
+      ]
+    },
+    {
+      "reference": "R902",
+      "value": "5.1k 1%",
+      "footprint": "R_0402_1005Metric",
+      "nets": [
+        "HOST_GND",
+        "USB_CC2"
+      ]
+    },
+    {
+      "reference": "U701",
+      "value": "ADuM4160BRIZ / enhanced creepage",
+      "footprint": "ADuM4160_RI16_8p5gap",
+      "nets": [
+        "+3V3",
+        "DATA_5V",
+        "GND",
+        "HOST_GND",
+        "USB_DOWN_DM",
+        "USB_DOWN_DP",
+        "USB_UP_DM",
+        "USB_UP_DP",
+        "USB_VDD1"
+      ]
+    }
+  ],
+  "component_count": 16,
+  "boundary_nets": [
+    "+3V3",
+    "GND",
+    "USB_DOWN_DM",
+    "USB_DOWN_DP"
+  ],
+  "remaining_digital_component_count": 97,
+  "existing_power_outline_mm": [
+    34,
+    18
+  ],
+  "existing_stack_outline_mm": [
+    48,
+    60
+  ],
+  "screen_projection_mm": [
+    34.14,
+    42.74
+  ],
+  "constraints": [
+    "Power strip must preserve the same 8 mm host/device copper separation, including battery probes, cable pins, mounting hardware and all layers.",
+    "The existing 34 x 18 mm strip cannot be assumed to fit the added isolation circuit. No new board size or probe position is selected.",
+    "A new cable must preserve protected-cell telemetry and power and add isolated-side USB D+/D-, reference ground and any necessary supply connections.",
+    "Both stack boards must be re-placed and re-routed; moving USB alone does not prove screen-sized boards or display FPC reach.",
+    "Main native boards, pin contracts and engineering exports are unchanged by this report."
+  ]
+}

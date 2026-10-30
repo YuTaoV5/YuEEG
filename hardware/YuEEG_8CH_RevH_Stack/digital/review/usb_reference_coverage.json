@@ -1,0 +1,1866 @@
+{
+  "pcb_sha256": "b05a6924490a5af3d4159e10566bda3ad422d91f38a9d9845cedaab8a1e003db",
+  "sample_pitch_max_mm": 0.1,
+  "segments": [
+    {
+      "net": "USB_DOWN_DM",
+      "layer": "F.Cu",
+      "from_mm": [
+        13.905,
+        38.65
+      ],
+      "to_mm": [
+        13.905,
+        39.85
+      ],
+      "reference_net": "GND",
+      "sample_count": 13,
+      "uncovered_samples": [
+        {
+          "xy_mm": [
+            13.905,
+            38.65
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DM"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            13.905,
+            38.75
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DM"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            13.905,
+            38.85
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DM"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            13.905,
+            38.95
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DM"
+          ],
+          "classification": "near_signal_via_antipad"
+        }
+      ]
+    },
+    {
+      "net": "USB_DOWN_DM",
+      "layer": "F.Cu",
+      "from_mm": [
+        3.09,
+        18.83
+      ],
+      "to_mm": [
+        2.35,
+        18.83
+      ],
+      "reference_net": "GND",
+      "sample_count": 9,
+      "uncovered_samples": [
+        {
+          "xy_mm": [
+            2.6275,
+            18.83
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DM"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            2.535,
+            18.83
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DM"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            2.4425,
+            18.83
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DM"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            2.35,
+            18.83
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DM"
+          ],
+          "classification": "near_signal_via_antipad"
+        }
+      ]
+    },
+    {
+      "net": "USB_DOWN_DM",
+      "layer": "In2.Cu",
+      "from_mm": [
+        0.8,
+        34.95
+      ],
+      "to_mm": [
+        2.3,
+        36.45
+      ],
+      "reference_net": "GND",
+      "sample_count": 23,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_DOWN_DM",
+      "layer": "In2.Cu",
+      "from_mm": [
+        0.8,
+        19.18
+      ],
+      "to_mm": [
+        0.8,
+        34.95
+      ],
+      "reference_net": "GND",
+      "sample_count": 159,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_DOWN_DM",
+      "layer": "In2.Cu",
+      "from_mm": [
+        2.35,
+        18.83
+      ],
+      "to_mm": [
+        1.15,
+        18.83
+      ],
+      "reference_net": "GND",
+      "sample_count": 13,
+      "uncovered_samples": [
+        {
+          "xy_mm": [
+            2.35,
+            18.83
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DM"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            2.25,
+            18.83
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DM"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            2.15,
+            18.83
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DM"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            2.05,
+            18.83
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DM"
+          ],
+          "classification": "near_signal_via_antipad"
+        }
+      ]
+    },
+    {
+      "net": "USB_DOWN_DM",
+      "layer": "In2.Cu",
+      "from_mm": [
+        10.1,
+        36.45
+      ],
+      "to_mm": [
+        13.905,
+        38.65
+      ],
+      "reference_net": "GND",
+      "sample_count": 45,
+      "uncovered_samples": [
+        {
+          "xy_mm": [
+            13.645568,
+            38.5
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DM"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            13.732045,
+            38.55
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DM"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            13.818523,
+            38.6
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DM"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            13.905,
+            38.65
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DM"
+          ],
+          "classification": "near_signal_via_antipad"
+        }
+      ]
+    },
+    {
+      "net": "USB_DOWN_DM",
+      "layer": "In2.Cu",
+      "from_mm": [
+        1.15,
+        18.83
+      ],
+      "to_mm": [
+        0.8,
+        19.18
+      ],
+      "reference_net": "GND",
+      "sample_count": 6,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_DOWN_DM",
+      "layer": "In2.Cu",
+      "from_mm": [
+        2.3,
+        36.45
+      ],
+      "to_mm": [
+        10.1,
+        36.45
+      ],
+      "reference_net": "GND",
+      "sample_count": 79,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_DOWN_DP",
+      "layer": "F.Cu",
+      "from_mm": [
+        3.09,
+        20.1
+      ],
+      "to_mm": [
+        2.35,
+        20.1
+      ],
+      "reference_net": "GND",
+      "sample_count": 9,
+      "uncovered_samples": [
+        {
+          "xy_mm": [
+            2.6275,
+            20.1
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            2.535,
+            20.1
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            2.4425,
+            20.1
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            2.35,
+            20.1
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        }
+      ]
+    },
+    {
+      "net": "USB_DOWN_DP",
+      "layer": "F.Cu",
+      "from_mm": [
+        15.175,
+        38.65
+      ],
+      "to_mm": [
+        15.175,
+        39.85
+      ],
+      "reference_net": "GND",
+      "sample_count": 13,
+      "uncovered_samples": [
+        {
+          "xy_mm": [
+            15.175,
+            38.65
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            15.175,
+            38.75
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            15.175,
+            38.85
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            15.175,
+            38.95
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        }
+      ]
+    },
+    {
+      "net": "USB_DOWN_DP",
+      "layer": "In2.Cu",
+      "from_mm": [
+        2.1,
+        19.602
+      ],
+      "to_mm": [
+        1.5,
+        19.602
+      ],
+      "reference_net": "GND",
+      "sample_count": 7,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_DOWN_DP",
+      "layer": "In2.Cu",
+      "from_mm": [
+        1.5,
+        20.1
+      ],
+      "to_mm": [
+        1.15,
+        20.45
+      ],
+      "reference_net": "GND",
+      "sample_count": 6,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_DOWN_DP",
+      "layer": "In2.Cu",
+      "from_mm": [
+        2.1,
+        20.1
+      ],
+      "to_mm": [
+        2.1,
+        19.602
+      ],
+      "reference_net": "GND",
+      "sample_count": 6,
+      "uncovered_samples": [
+        {
+          "xy_mm": [
+            2.1,
+            20.1
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            2.1,
+            20.0004
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            2.1,
+            19.9008
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        }
+      ]
+    },
+    {
+      "net": "USB_DOWN_DP",
+      "layer": "In2.Cu",
+      "from_mm": [
+        1.15,
+        20.45
+      ],
+      "to_mm": [
+        1.15,
+        34.6
+      ],
+      "reference_net": "GND",
+      "sample_count": 143,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_DOWN_DP",
+      "layer": "In2.Cu",
+      "from_mm": [
+        1.5,
+        19.602
+      ],
+      "to_mm": [
+        1.5,
+        20.1
+      ],
+      "reference_net": "GND",
+      "sample_count": 6,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_DOWN_DP",
+      "layer": "In2.Cu",
+      "from_mm": [
+        10.45,
+        36.1
+      ],
+      "to_mm": [
+        15.175,
+        38.65
+      ],
+      "reference_net": "GND",
+      "sample_count": 55,
+      "uncovered_samples": [
+        {
+          "xy_mm": [
+            14.9125,
+            38.508333
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            15.0,
+            38.555556
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            15.0875,
+            38.602778
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            15.175,
+            38.65
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        }
+      ]
+    },
+    {
+      "net": "USB_DOWN_DP",
+      "layer": "In2.Cu",
+      "from_mm": [
+        1.15,
+        34.6
+      ],
+      "to_mm": [
+        2.65,
+        36.1
+      ],
+      "reference_net": "GND",
+      "sample_count": 23,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_DOWN_DP",
+      "layer": "In2.Cu",
+      "from_mm": [
+        2.65,
+        36.1
+      ],
+      "to_mm": [
+        10.45,
+        36.1
+      ],
+      "reference_net": "GND",
+      "sample_count": 79,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_DOWN_DP",
+      "layer": "In2.Cu",
+      "from_mm": [
+        2.35,
+        20.1
+      ],
+      "to_mm": [
+        2.1,
+        20.1
+      ],
+      "reference_net": "GND",
+      "sample_count": 4,
+      "uncovered_samples": [
+        {
+          "xy_mm": [
+            2.35,
+            20.1
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            2.266667,
+            20.1
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            2.183333,
+            20.1
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            2.1,
+            20.1
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_DOWN_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        }
+      ]
+    },
+    {
+      "net": "USB_HOST_DM",
+      "layer": "F.Cu",
+      "from_mm": [
+        24.25,
+        51.955
+      ],
+      "to_mm": [
+        24.25,
+        52.9051
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 11,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_HOST_DM",
+      "layer": "F.Cu",
+      "from_mm": [
+        15.6599,
+        51.8
+      ],
+      "to_mm": [
+        15.31,
+        51.8
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 5,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_HOST_DM",
+      "layer": "F.Cu",
+      "from_mm": [
+        24.25,
+        52.9051
+      ],
+      "to_mm": [
+        23.25,
+        52.9051
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 11,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_HOST_DM",
+      "layer": "F.Cu",
+      "from_mm": [
+        24.25,
+        50.3245
+      ],
+      "to_mm": [
+        24.1401,
+        50.2146
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 3,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_HOST_DM",
+      "layer": "F.Cu",
+      "from_mm": [
+        30.75,
+        49.95
+      ],
+      "to_mm": [
+        24.6245,
+        49.95
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 63,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_HOST_DM",
+      "layer": "F.Cu",
+      "from_mm": [
+        24.6245,
+        49.95
+      ],
+      "to_mm": [
+        24.25,
+        50.3245
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 7,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_HOST_DM",
+      "layer": "F.Cu",
+      "from_mm": [
+        24.1401,
+        50.2146
+      ],
+      "to_mm": [
+        17.2453,
+        50.2146
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 70,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_HOST_DM",
+      "layer": "F.Cu",
+      "from_mm": [
+        17.2453,
+        50.2146
+      ],
+      "to_mm": [
+        15.6599,
+        51.8
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 24,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_HOST_DM",
+      "layer": "F.Cu",
+      "from_mm": [
+        24.25,
+        50.3245
+      ],
+      "to_mm": [
+        24.25,
+        51.955
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 18,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_HOST_DM",
+      "layer": "F.Cu",
+      "from_mm": [
+        23.25,
+        52.9051
+      ],
+      "to_mm": [
+        23.25,
+        51.955
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 11,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_HOST_DP",
+      "layer": "F.Cu",
+      "from_mm": [
+        23.75,
+        51.0799
+      ],
+      "to_mm": [
+        23.75,
+        50.8075
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 4,
+      "uncovered_samples": [
+        {
+          "xy_mm": [
+            23.75,
+            51.0799
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            23.75,
+            50.9891
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            23.75,
+            50.8983
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            23.75,
+            50.8075
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        }
+      ]
+    },
+    {
+      "net": "USB_HOST_DP",
+      "layer": "F.Cu",
+      "from_mm": [
+        27.856,
+        50.7048
+      ],
+      "to_mm": [
+        25.0501,
+        50.7048
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 30,
+      "uncovered_samples": [
+        {
+          "xy_mm": [
+            27.856,
+            50.7048
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            27.759245,
+            50.7048
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            27.66249,
+            50.7048
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            27.565734,
+            50.7048
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            27.468979,
+            50.7048
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        }
+      ]
+    },
+    {
+      "net": "USB_HOST_DP",
+      "layer": "F.Cu",
+      "from_mm": [
+        23.75,
+        51.0799
+      ],
+      "to_mm": [
+        23.3248,
+        50.6547
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 8,
+      "uncovered_samples": [
+        {
+          "xy_mm": [
+            23.75,
+            51.0799
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            23.689257,
+            51.019157
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            23.628514,
+            50.958414
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            23.567771,
+            50.897671
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            23.507029,
+            50.836929
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            23.446286,
+            50.776186
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            23.385543,
+            50.715443
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            23.3248,
+            50.6547
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        }
+      ]
+    },
+    {
+      "net": "USB_HOST_DP",
+      "layer": "F.Cu",
+      "from_mm": [
+        30.213,
+        50.7048
+      ],
+      "to_mm": [
+        27.856,
+        50.7048
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 25,
+      "uncovered_samples": [
+        {
+          "xy_mm": [
+            28.248833,
+            50.7048
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            28.150625,
+            50.7048
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            28.052417,
+            50.7048
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            27.954208,
+            50.7048
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            27.856,
+            50.7048
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        }
+      ]
+    },
+    {
+      "net": "USB_HOST_DP",
+      "layer": "F.Cu",
+      "from_mm": [
+        23.75,
+        51.0799
+      ],
+      "to_mm": [
+        23.75,
+        51.955
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 10,
+      "uncovered_samples": [
+        {
+          "xy_mm": [
+            23.75,
+            51.0799
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            23.75,
+            51.177133
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        }
+      ]
+    },
+    {
+      "net": "USB_HOST_DP",
+      "layer": "F.Cu",
+      "from_mm": [
+        32.3,
+        54.0
+      ],
+      "to_mm": [
+        32.3,
+        52.7918
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 14,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_HOST_DP",
+      "layer": "F.Cu",
+      "from_mm": [
+        24.75,
+        51.0049
+      ],
+      "to_mm": [
+        24.75,
+        51.955
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 11,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_HOST_DP",
+      "layer": "F.Cu",
+      "from_mm": [
+        25.0501,
+        50.7048
+      ],
+      "to_mm": [
+        24.75,
+        51.0049
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 6,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_HOST_DP",
+      "layer": "F.Cu",
+      "from_mm": [
+        23.3248,
+        50.6547
+      ],
+      "to_mm": [
+        18.6553,
+        50.6547
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 48,
+      "uncovered_samples": [
+        {
+          "xy_mm": [
+            23.3248,
+            50.6547
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        }
+      ]
+    },
+    {
+      "net": "USB_HOST_DP",
+      "layer": "F.Cu",
+      "from_mm": [
+        23.75,
+        50.8075
+      ],
+      "to_mm": [
+        23.7183,
+        50.7758
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 2,
+      "uncovered_samples": [
+        {
+          "xy_mm": [
+            23.75,
+            50.8075
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            23.7183,
+            50.7758
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        }
+      ]
+    },
+    {
+      "net": "USB_HOST_DP",
+      "layer": "F.Cu",
+      "from_mm": [
+        18.6553,
+        50.6547
+      ],
+      "to_mm": [
+        17.51,
+        51.8
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 18,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_HOST_DP",
+      "layer": "F.Cu",
+      "from_mm": [
+        27.856,
+        50.7048
+      ],
+      "to_mm": [
+        27.856,
+        50.4757
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 4,
+      "uncovered_samples": [
+        {
+          "xy_mm": [
+            27.856,
+            50.7048
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            27.856,
+            50.628433
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            27.856,
+            50.552067
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            27.856,
+            50.4757
+          ],
+          "missing_planes": [
+            "In1.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        }
+      ]
+    },
+    {
+      "net": "USB_HOST_DP",
+      "layer": "F.Cu",
+      "from_mm": [
+        32.3,
+        52.7918
+      ],
+      "to_mm": [
+        30.213,
+        50.7048
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 31,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_HOST_DP",
+      "layer": "In2.Cu",
+      "from_mm": [
+        23.7183,
+        50.7758
+      ],
+      "to_mm": [
+        27.5559,
+        50.7758
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 40,
+      "uncovered_samples": [
+        {
+          "xy_mm": [
+            23.7183,
+            50.7758
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            23.8167,
+            50.7758
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            23.9151,
+            50.7758
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            24.0135,
+            50.7758
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            24.1119,
+            50.7758
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            27.5559,
+            50.7758
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        }
+      ]
+    },
+    {
+      "net": "USB_HOST_DP",
+      "layer": "In2.Cu",
+      "from_mm": [
+        27.5559,
+        50.7758
+      ],
+      "to_mm": [
+        27.856,
+        50.4757
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 6,
+      "uncovered_samples": [
+        {
+          "xy_mm": [
+            27.5559,
+            50.7758
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            27.61592,
+            50.71578
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            27.67594,
+            50.65576
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            27.73596,
+            50.59574
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            27.79598,
+            50.53572
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        },
+        {
+          "xy_mm": [
+            27.856,
+            50.4757
+          ],
+          "missing_planes": [
+            "In1.Cu",
+            "In3.Cu"
+          ],
+          "near_via_antipad_nets": [
+            "USB_HOST_DP"
+          ],
+          "classification": "near_signal_via_antipad"
+        }
+      ]
+    },
+    {
+      "net": "USB_MCU_DM",
+      "layer": "F.Cu",
+      "from_mm": [
+        4.11,
+        18.83
+      ],
+      "to_mm": [
+        6.25,
+        18.83
+      ],
+      "reference_net": "GND",
+      "sample_count": 23,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_MCU_DP",
+      "layer": "F.Cu",
+      "from_mm": [
+        4.11,
+        20.1
+      ],
+      "to_mm": [
+        6.25,
+        20.1
+      ],
+      "reference_net": "GND",
+      "sample_count": 23,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_UP_DM",
+      "layer": "F.Cu",
+      "from_mm": [
+        14.29,
+        51.8
+      ],
+      "to_mm": [
+        13.905,
+        51.415
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 7,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_UP_DM",
+      "layer": "F.Cu",
+      "from_mm": [
+        13.905,
+        51.415
+      ],
+      "to_mm": [
+        13.905,
+        49.75
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 18,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_UP_DP",
+      "layer": "F.Cu",
+      "from_mm": [
+        15.0233,
+        52.348
+      ],
+      "to_mm": [
+        14.8,
+        52.1247
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 5,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_UP_DP",
+      "layer": "F.Cu",
+      "from_mm": [
+        16.49,
+        51.8
+      ],
+      "to_mm": [
+        15.942,
+        52.348
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 9,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_UP_DP",
+      "layer": "F.Cu",
+      "from_mm": [
+        15.942,
+        52.348
+      ],
+      "to_mm": [
+        15.0233,
+        52.348
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 11,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_UP_DP",
+      "layer": "F.Cu",
+      "from_mm": [
+        14.8,
+        52.1247
+      ],
+      "to_mm": [
+        14.8,
+        50.125
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 21,
+      "uncovered_samples": []
+    },
+    {
+      "net": "USB_UP_DP",
+      "layer": "F.Cu",
+      "from_mm": [
+        14.8,
+        50.125
+      ],
+      "to_mm": [
+        15.175,
+        49.75
+      ],
+      "reference_net": "HOST_GND",
+      "sample_count": 7,
+      "uncovered_samples": []
+    }
+  ],
+  "scope": "Static centerline sampling of native filled-zone copper only. Does not prove continuous return around holes, field distribution, full trace-width coverage, impedance or USB compliance."
+}

@@ -48,6 +48,8 @@ def verify():
  info=json.loads((H/'firmware/build/BUILD_INFO.json').read_text())
  geometry=json.loads((H/'digital/review/usb_geometry.json').read_text())
  require(geometry['pcb_sha256']==summary['boards']['digital']['pcb_sha256'],'Stale USB geometry evidence')
+ reference=json.loads((H/'digital/review/usb_reference_coverage.json').read_text())
+ require(reference['pcb_sha256']==summary['boards']['digital']['pcb_sha256'],'Stale USB reference sampling evidence')
  for render in json.loads((H/'review/render_evidence.json').read_text()):
   require(render['source_sha256']==summary['boards'][render['board']]['pcb_sha256'],'Stale board rendering: '+render['board'])
  for name,digest in info['source_sha256'].items():

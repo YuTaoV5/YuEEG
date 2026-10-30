@@ -86,6 +86,8 @@ Thumbs.db
 !/hardware/YuEEG_8CH_RevH_Stack/*/review/fuse_selection.json
 !/hardware/YuEEG_8CH_RevH_Stack/*/review/local_ground_vias_1s.json
 !/hardware/YuEEG_8CH_RevH_Stack/*/review/usb_return_vias.json
+!/hardware/YuEEG_8CH_RevH_Stack/*/review/usb_host_return_vias.json
+!/hardware/YuEEG_8CH_RevH_Stack/*/review/usb_reference_coverage.json
 !/hardware/YuEEG_8CH_RevH_Stack/*/review/usb_geometry.json
 !/hardware/YuEEG_8CH_RevH_Stack/*/review/module_legends.json
 /hardware/YuEEG_8CH_RevH_Stack/review/*

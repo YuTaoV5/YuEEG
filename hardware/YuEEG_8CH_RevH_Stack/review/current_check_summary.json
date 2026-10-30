@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-30T21:48:56.003574+08:00",
+  "timestamp": "2026-10-30T21:57:38.797100+08:00",
   "battery": "Sony NP-BX1, 1S; supersedes NP-FW50 goal wording",
   "release_status": "DEVELOPMENT; contact mechanics, display FPC and system verification unresolved",
   "boards": {
@@ -48,7 +48,7 @@
       "unconnected": 0,
       "parity": 0,
       "erc": 0,
-      "pcb_sha256": "d2bd686cc1c6af7c569fcc57c51c2ba92f45ba31ac413b425256b9cd1b61a022",
+      "pcb_sha256": "b05a6924490a5af3d4159e10566bda3ad422d91f38a9d9845cedaab8a1e003db",
       "source_files_sha256": {
         "circuit_01.kicad_sch": "c0f693fd385f79596c60d5a70205e0a44c8216596c28d11cdf796709a7d78db7",
         "circuit_02.kicad_sch": "1b99737c7442ee5dfb7cd9ddb321703e2ffeb85996beade8d0aac2adc8ec3189",
