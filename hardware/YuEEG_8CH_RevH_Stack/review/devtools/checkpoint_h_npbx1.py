@@ -44,5 +44,7 @@ for name in ['select_h_digital_inductor.py','fit_h_l401_capacitor.py','clear_h_l
  shutil.copy2(Path('logs')/name,dev/name)
  if (R/'review'/name).exists():shutil.copy2(Path('logs')/name,R/'review'/name)
 print('NP-BX1 checkpoint recorded; production release remains pending')
+for name in ['fit_h_usb_power_candidate.py','plot_h_usb_power_fit.py']:
+ shutil.copy2(Path('logs')/name,dev/name)
 for name in ['add_h_usb_return_vias.py','add_h_usb_host_return_vias.py','add_h_module_legends.py','clarify_h_mcu_legend.py','audit_h_usb_geometry.py','audit_h_usb_reference.py','audit_h_usb_partition.py','rebind_h_graphic_evidence.py']:
  shutil.copy2(Path('logs')/name,dev/name)
