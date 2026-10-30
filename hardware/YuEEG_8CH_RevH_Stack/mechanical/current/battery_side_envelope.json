@@ -1,0 +1,114 @@
+{
+  "status": "CONDITIONAL_MECHANICAL_SCREENING_NOT_ASSEMBLY_RELEASE",
+  "selected_architecture": "USB isolation, Type-C and host protection stay on digital; stack may exceed screen",
+  "baseline_pcb_sha256": {
+    "afe": "626c03b4dd3391a60a2687d95113357e0870bf6a04d825b37c71d953124e91f8",
+    "digital": "b05a6924490a5af3d4159e10566bda3ad422d91f38a9d9845cedaab8a1e003db",
+    "power": "772131212bf444de40b23215ee12a9c742a6c3d58acb581afa2b7b963272e4f9"
+  },
+  "battery_model": "Sony NP-BX1",
+  "battery_dimensions_whd_mm": [
+    29.9,
+    9.2,
+    42.7
+  ],
+  "battery_dimensions_source": "https://pro.sony/s3/cms-static-content/operation-manual/4447543111.pdf",
+  "dimensions_status": "Manufacturer approximate envelope, not a mechanical tolerance drawing",
+  "host_copper_xy_bounding_envelope_mm": [
+    0.4,
+    49.05,
+    47.6,
+    59.6
+  ],
+  "afe_electrode_header_courtyard_xy_mm": [
+    -8.565,
+    2.205,
+    3.795,
+    28.655
+  ],
+  "screen_projection_xy_mm": [
+    6,
+    0.4,
+    40.14,
+    43.14
+  ],
+  "candidate_layouts": [
+    {
+      "name": "left_2mm",
+      "battery_body_xy_mm": [
+        -31.9,
+        0,
+        -2.0,
+        42.7
+      ],
+      "board_edge_gap_mm": 2,
+      "battery_y_offset_mm": 0,
+      "host_xy_envelope_separation_mm": 6.788409239284261,
+      "meets_8mm_xy_screen": false,
+      "overlaps_afe_electrode_header_courtyard_xy": true
+    },
+    {
+      "name": "right_2mm",
+      "battery_body_xy_mm": [
+        50,
+        0,
+        79.9,
+        42.7
+      ],
+      "board_edge_gap_mm": 2,
+      "battery_y_offset_mm": 0,
+      "host_xy_envelope_separation_mm": 6.788409239284261,
+      "meets_8mm_xy_screen": false,
+      "overlaps_afe_electrode_header_courtyard_xy": false
+    },
+    {
+      "name": "right_5mm",
+      "battery_body_xy_mm": [
+        53,
+        0,
+        82.9,
+        42.7
+      ],
+      "board_edge_gap_mm": 5,
+      "battery_y_offset_mm": 0,
+      "host_xy_envelope_separation_mm": 8.335616353935677,
+      "meets_8mm_xy_screen": true,
+      "overlaps_afe_electrode_header_courtyard_xy": false
+    },
+    {
+      "name": "right_6mm",
+      "battery_body_xy_mm": [
+        54,
+        0,
+        83.9,
+        42.7
+      ],
+      "board_edge_gap_mm": 6,
+      "battery_y_offset_mm": 0,
+      "host_xy_envelope_separation_mm": 9.015680784056183,
+      "meets_8mm_xy_screen": true,
+      "overlaps_afe_electrode_header_courtyard_xy": false
+    },
+    {
+      "name": "right_2mm_forward_3mm",
+      "battery_body_xy_mm": [
+        50,
+        -3,
+        79.9,
+        39.7
+      ],
+      "board_edge_gap_mm": 2,
+      "battery_y_offset_mm": -3,
+      "host_xy_envelope_separation_mm": 9.65310830769032,
+      "meets_8mm_xy_screen": true,
+      "overlaps_afe_electrode_header_courtyard_xy": false
+    }
+  ],
+  "proposed_layout": "right_6mm",
+  "proposed_battery_body_z_mm": [
+    0,
+    9.2
+  ],
+  "design_target_xy_mm": 8,
+  "scope": "XY lower-bound screening against a bounding rectangle enclosing native HOST-class pad/track copper and zone outlines. Z is deliberately ignored. Battery full case treated conservatively as a conductor envelope, not claimed to be exposed metal. No actual electrode collision, certified isolation or assembly claim. Host bodies, enclosure surfaces, cables, tolerances, RF antenna and screen FPC require separate review."
+}

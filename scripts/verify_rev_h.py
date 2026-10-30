@@ -52,12 +52,10 @@ def verify():
  require(reference['pcb_sha256']==summary['boards']['digital']['pcb_sha256'],'Stale USB reference sampling evidence')
  for render in json.loads((H/'review/render_evidence.json').read_text()):
   require(render['source_sha256']==summary['boards'][render['board']]['pcb_sha256'],'Stale board rendering: '+render['board'])
- trial=H/'mechanical/current/usb_power_fit_candidate.json'
- if trial.exists():
-  trial_data=json.loads(trial.read_text())
-  require(trial_data['status']=='UNROUTED_PLACEMENT_EXPERIMENT_NOT_A_DESIGN_RELEASE','USB power placement must remain an experiment')
-  require(trial_data['candidate_sha256']==sha(trial.with_suffix('.kicad_pcb')),'Stale USB power trial evidence')
-  for board,digest in trial_data['baseline_sha256'].items():require(digest==summary['boards'][board]['pcb_sha256'],'Trial refers to an obsolete baseline: '+board)
+ battery=H/'mechanical/current/battery_side_envelope.json'
+ if battery.exists():
+  data=json.loads(battery.read_text());require(data['status']=='CONDITIONAL_MECHANICAL_SCREENING_NOT_ASSEMBLY_RELEASE','Battery screening must not imply assembly release')
+  for board,digest in data['baseline_pcb_sha256'].items():require(digest==summary['boards'][board]['pcb_sha256'],'Stale battery envelope source: '+board)
  for name,digest in info['source_sha256'].items():
   require(sha(H/'firmware/ads1299_driver'/name)==digest and sha(ROOT/'Firmware/ads1299_driver'/name)==digest,'Active/snapshot firmware mismatch '+name)
  for name,digest in info['binaries_sha256'].items():require(sha(H/'firmware/build'/name)==digest,'Firmware binary mismatch '+name)

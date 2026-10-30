@@ -23,6 +23,8 @@ for name in ['REVH_CIRCUIT_PROGRESS.md','REVH_SONY_BATTERY_LAYOUT.md','REVH_SIDE
 
 模拟／数字板均为 48×60 mm，电源条板 34×18 mm。三板共 269 个实物器件（135／113／21），最新 ERC、DRC、未连接、原理图一致性问题均为零，文件哈希及检查时间见 `review/current_check_summary.json`。侧键已转向左侧板边，加入 ALPS 安装面禁铜区；数字板保留 9 个背面 SMT，其余主要器件正面装配。
 
+用户已明确选择 **USB 隔离继续放数字板，接受叠层板超出屏幕**。Type-C／ADuM4160／主机侧保护保留原位；电源条板保持电池保护与升压功能及原 PH4 电源／电压检测线束。USB 迁移到条板的试排与电气草稿已停止归档，不是本版电路。
+
 模拟／数字板已有三处上下同轴的 2.4 mm M2 绝缘固定内切口，位于 Edge.Cuts，不能在 CAM 中丢弃。数字板电感已选定 TDK SPM4015T-2R2M-LR。Rev H 开发固件增加 NP-BX1 带载电压遥测，编译与六项协议测试通过；源文件与开发二进制在 `firmware/`，并非实物验证或生产放行。
 
 短线束 JP2→JH2：1=SYS_5V，2=BAT_PROTECTED_SENSE，3/4=GND。针 2 用于升压前电芯电压检测，不再与针 1 并联。板间 JH1 的 1／19 针仍是并联 SYS_5V。
@@ -44,7 +46,7 @@ for name in ['select_h_digital_inductor.py','fit_h_l401_capacitor.py','clear_h_l
  shutil.copy2(Path('logs')/name,dev/name)
  if (R/'review'/name).exists():shutil.copy2(Path('logs')/name,R/'review'/name)
 print('NP-BX1 checkpoint recorded; production release remains pending')
-for name in ['fit_h_usb_power_candidate.py','plot_h_usb_power_fit.py']:
+for name in ['check_h_battery_side_envelope.py','plot_h_battery_side_envelope.py']:
  shutil.copy2(Path('logs')/name,dev/name)
-for name in ['add_h_usb_return_vias.py','add_h_usb_host_return_vias.py','add_h_module_legends.py','clarify_h_mcu_legend.py','audit_h_usb_geometry.py','audit_h_usb_reference.py','audit_h_usb_partition.py','rebind_h_graphic_evidence.py']:
+for name in ['add_h_usb_return_vias.py','add_h_usb_host_return_vias.py','add_h_module_legends.py','clarify_h_mcu_legend.py','audit_h_usb_geometry.py','audit_h_usb_reference.py','rebind_h_graphic_evidence.py']:
  shutil.copy2(Path('logs')/name,dev/name)

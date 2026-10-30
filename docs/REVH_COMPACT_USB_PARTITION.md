@@ -1,6 +1,8 @@
-# Rev H 屏幕范围内主板的分区评估
+# Rev H USB 布局决定与未采用的迁移方案
 
-**可行性分析，尚未实施。** 当前原生模拟／数字板仍为 48×60 mm，不能称为完成了屏幕范围内的紧凑设计。目标屏幕外形为 34.14×42.74 mm。电池按用户后续指定的 NP-BX1；本文不使用旧 NP-FW50 尺寸。
+> **用户最终选择**：USB 隔离继续放数字板，接受叠层板超出屏幕。Type-C、ADuM4160 和主机侧保护留在现有数字板；电源条板不增加 USB 功能，保持原 PH4 电源／电池电压检测线束。迁移试排和后续电气草稿已经停止并归档，不作为当前设计。以下只保留此前方案的分析记录。
+
+当前原生模拟／数字板均为 48×60 mm，电源条板 34×18 mm，屏幕外形为 34.14×42.74 mm。数字板完全落入屏幕投影的限制已由用户放宽；仍以采集功能、隔离和整体体积为优先。电池按用户后续指定的 NP-BX1；不使用旧 NP-FW50 尺寸。当前三板电路、针号和工程导出未被迁移草稿替换。
 
 数字板现有器件侧到 Y=40.55 mm，主机侧从 Y=49.05 mm 开始，中间 8.5 mm 走线隔离带。模拟板 Y≥49.05 mm 则全层禁铜。只裁掉板框空白并不能保留现有隔离要求：主机侧 Type-C、保护器件和绝缘固定点仍占空间。
 
@@ -13,9 +15,9 @@
 
 若迁移，主机地必须留在条板主机域；连接数字板的线束只承载隔离后的器件侧网络。Type-C 外壳、探针、线束焊盘、固定件及所有铜层均须纳入原有 8 mm 域间间距复核，不能因模块移到侧面就取消隔离。原 34×18 mm 条板现有电源部分尚无空间验证，不能宣称能直接容纳新增电路。条板扩大后可能反过来增加整机厚度或电池端占地，应以整机包络比较，而不是只看数字板面积。
 
-这条路线有望移除叠层板下部的 USB 主机域，并解除模拟板对应区域的禁铜占地；但 **尚未证明** 97 个器件、板间座、侧键、短卡槽和显示插座能在目标外形内装配。模拟板也仍需重新布局和布线；屏幕折回 FPC 与支撑高度问题不会因 USB 迁走自动解决。是否采用该路线已向用户询问；本评估未修改现有三板的功能分配或连接器针号。
+这条路线曾用于评估移除叠层板下部 USB 主机域的收益；但未证明 97 个数字器件及所有接口能在屏幕范围内装配，也不能自动解决屏幕 FPC 问题。用户已选择不采用迁移，因此不再沿该路线改板。
 
-原生提取清单与边界网络见 `hardware/YuEEG_8CH_RevH_Stack/mechanical/current/usb_partition_feasibility.json`。它不是 PCB 设计完成证据，也不是制造放行文件。
+原生提取清单、试排和边界网络保留在 [历史提交 e1f0457](https://github.com/YuTaoV5/YuEEG/commit/e1f0457)；本地归档为 `hardware/YuEEG_8CH_RevH_Stack/archive/usb_relocation_not_selected/`。它们不是当前电路或制造依据。
 
 ## 原生器件试排结果
 
@@ -25,8 +27,8 @@
 
 基于第三方样品的 10 mm 触点间距与 6.2 mm 接触高度，暂留两个 3×3 mm 的探针／焊接工具区域，未放入电气探针焊盘，也未指定正负极。该保留区不代表已经核实 Sony 触点尺寸或完成电池座。JP1 仍是旧临时逻辑端子；JP2 仍是旧 PH4，仅用于保留原生器件占位，不能承载迁移后全部网络。
 
-后续线束可评估 [Hirose FH12-10S-0.5SH(55)](https://www.hirose.com/en/product/p/CL0586-0522-3-55)：官方给出 10 位、0.5 mm 节距、9.1 mm 长、6.4 mm 宽、2 mm 高、下接点、0.3 mm FFC/FPC、额定 0.5 A。它目前只是有资料的接口候选，尚未替换 PH4；电源并联触点、线缆载流、接触方向、USB 阻抗及淘宝具体 SKU 都未完成确认。不能把普通 FFC 当作已验证的 90Ω USB 线缆。
+此前曾评估 [Hirose FH12-10S-0.5SH(55)](https://www.hirose.com/en/product/p/CL0586-0522-3-55) 作为迁移线束接口，后续电气草稿又试用过 12 针版本。这些 FFC/FPC 方案均未纳入用户最终选择，当前仍使用 PH4 电源／检测线束。
 
 该试排证明了一个保留 8 mm 跨域焊盘距离的初步器件占位方案，**不证明可布通、低噪声、可装配或能缩小整机**。条板面积从 612 增至 1014.8 mm²，约增加 66%；若垂直放置，23.6 mm 的板高也必须计入整机厚度。仍需把缩小后的模拟／数字板、屏幕及真实电池触点一起验证，才能决定是否迁移，不能仅凭叠层板面积下降选择方案。
 
-查看 [试排图](../hardware/YuEEG_8CH_RevH_Stack/mechanical/current/usb_power_fit_overview.png)、[原生试排 PCB](../hardware/YuEEG_8CH_RevH_Stack/mechanical/current/usb_power_fit_candidate.kicad_pcb)及其同名 JSON。所有候选文件均为 `UNROUTED_PLACEMENT_EXPERIMENT_NOT_A_DESIGN_RELEASE`，现有工程制造导出仍只对应基线三板。
+历史 [试排图](https://github.com/YuTaoV5/YuEEG/blob/e1f0457/hardware/YuEEG_8CH_RevH_Stack/mechanical/current/usb_power_fit_overview.png)和 [原生试排 PCB](https://github.com/YuTaoV5/YuEEG/blob/e1f0457/hardware/YuEEG_8CH_RevH_Stack/mechanical/current/usb_power_fit_candidate.kicad_pcb)只供追溯。当前工作目录已移除这些未采用候选，工程制造导出仍只对应原三板。
