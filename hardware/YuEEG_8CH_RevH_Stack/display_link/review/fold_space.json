@@ -1,0 +1,267 @@
+{
+  "status": "CONDITIONAL_NOMINAL_SPACE_SCREEN_NOT_ASSEMBLY_RELEASE",
+  "design_contract_sha256": "89260bf10de4593328f75d0a26b393322d1235031275f56029e106e1b19fab26",
+  "digital_pcb_sha256": "b05a6924490a5af3d4159e10566bda3ad422d91f38a9d9845cedaab8a1e003db",
+  "fpc_pcb_sha256": "51979b486cb4e063baf91e5e389caad5001929970646c76e1cca3f596b3a5b12",
+  "neighbor_native_sha256": "a8a85cf302f964959844527d3e4080833fe258a604100dbce4fa5edd23fec741",
+  "sampling_step_max_mm": 0.002,
+  "model": "Swept substrate, proposed .20 mm F-side end stiffeners and nominal connector body boxes; intentional mate excluded. Segment AABBs conservative for each interval, with curve chord approximation below .000001 mm; no overall manufacturing/assembly tolerance approval.",
+  "neighbors": [
+    {
+      "ref": "U1001",
+      "box": [
+        28.975,
+        26.25,
+        0,
+        32.525,
+        29.25,
+        1.55
+      ],
+      "boxes": [
+        [
+          28.975,
+          26.625,
+          0,
+          32.525,
+          28.875,
+          1.55
+        ],
+        [
+          29.55,
+          26.25,
+          0,
+          31.95,
+          29.25,
+          1.55
+        ]
+      ],
+      "scope": "Body 1.75 x 3.05 mm plus .25 mm mold flash on each side; lead span 3.0 mm with end-pin .95 mm center plus .25 mm half-width. Both boxes raised to 1.45 mm max package height plus assumed .10 mm solder lift; conservative lead height.",
+      "source": "https://www.ti.com/lit/ds/symlink/tps22918.pdf",
+      "drawing": "DBV0006A p27 note3",
+      "minimum_nominal_box_distance_mm": 0.5003747311346975,
+      "nearest_fpc_cell": [
+        27.64,
+        25.702765953211014,
+        1.7732057417664588,
+        32.74,
+        25.802167365636887,
+        1.823940098246287
+      ],
+      "nearest_obstacle_box": [
+        29.55,
+        26.25,
+        0,
+        31.95,
+        29.25,
+        1.55
+      ]
+    },
+    {
+      "ref": "U1003",
+      "box": [
+        33.5,
+        24.475,
+        0,
+        36.5,
+        28.025,
+        1.55
+      ],
+      "boxes": [
+        [
+          33.875,
+          24.475,
+          0,
+          36.125,
+          28.025,
+          1.55
+        ],
+        [
+          33.5,
+          25.05,
+          0,
+          36.5,
+          27.45,
+          1.55
+        ]
+      ],
+      "scope": "Body 1.75 x 3.05 mm plus .25 mm mold flash on each side; lead span 3.0 mm with end-pin .95 mm center plus .25 mm half-width. Both boxes raised to 1.45 mm max package height plus assumed .10 mm solder lift; conservative lead height.",
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a20.pdf",
+      "drawing": "DBV0005A p60 note4",
+      "minimum_nominal_box_distance_mm": 0.41065957674681075,
+      "nearest_fpc_cell": [
+        26.641428875878297,
+        24.085665129613204,
+        0.8,
+        33.738571124121705,
+        24.087664938586173,
+        0.9100000000000001
+      ],
+      "nearest_obstacle_box": [
+        33.875,
+        24.475,
+        0,
+        36.125,
+        28.025,
+        1.55
+      ]
+    },
+    {
+      "ref": "U402",
+      "box": [
+        23.25,
+        24.42,
+        0,
+        26.75,
+        30.78,
+        2.0
+      ],
+      "scope": "Native courtyard extruded to an assumed 2.0 mm screening height. Not a sourced body height.",
+      "minimum_nominal_box_distance_mm": 0.2787977720533944,
+      "nearest_fpc_cell": [
+        26.83861004061296,
+        24.15365863469412,
+        0.8,
+        33.54138995938705,
+        24.15565844366709,
+        0.9100000000000001
+      ],
+      "nearest_obstacle_box": [
+        23.25,
+        24.42,
+        0,
+        26.75,
+        30.78,
+        2.0
+      ]
+    },
+    {
+      "ref": "R1101",
+      "box": [
+        25.03,
+        20.82,
+        0,
+        25.97,
+        22.68,
+        2.0
+      ],
+      "scope": "Native courtyard extruded to an assumed 2.0 mm screening height. Not a sourced body height.",
+      "minimum_nominal_box_distance_mm": 0.22000000000000242,
+      "nearest_fpc_cell": [
+        26.19,
+        20.819977076756178,
+        0.8,
+        34.19,
+        20.821976885729146,
+        0.9100000000000001
+      ],
+      "nearest_obstacle_box": [
+        25.03,
+        20.82,
+        0,
+        25.97,
+        22.68,
+        2.0
+      ]
+    },
+    {
+      "ref": "U402_max_package_plus_solder",
+      "box": [
+        23.3,
+        25.075000000000003,
+        0,
+        26.7,
+        30.125,
+        1.2
+      ],
+      "source": "https://www.ti.com/lit/ds/symlink/tps62160.pdf",
+      "drawing": "DGK0008A p35",
+      "scope": "5.05 mm maximum lead span, 3.1 mm body length plus .15 mm mold flash each side, 1.1 mm maximum height plus assumed .10 mm solder lift. Full lead/body box.",
+      "minimum_nominal_box_distance_mm": 0.9143112559093567,
+      "nearest_fpc_cell": [
+        26.995195083196368,
+        24.207653476964264,
+        0.8,
+        33.38480491680364,
+        24.209653285937232,
+        0.9100000000000001
+      ],
+      "nearest_obstacle_box": [
+        23.3,
+        25.075000000000003,
+        0,
+        26.7,
+        30.125,
+        1.2
+      ]
+    },
+    {
+      "ref": "R1101_conditional_low_profile",
+      "box": [
+        25.03,
+        20.82,
+        0,
+        25.97,
+        22.68,
+        0.5
+      ],
+      "source": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0722RL",
+      "scope": "CONDITIONAL procurement reference RC0402FR-0722RL, .40 mm maximum body plus .10 mm assumed solder lift, native courtyard XY. Main BOM does not yet freeze this MPN; tall alternatives need review.",
+      "minimum_nominal_box_distance_mm": 0.3720215047547669,
+      "nearest_fpc_cell": [
+        26.19,
+        20.819977076756178,
+        0.8,
+        34.19,
+        20.821976885729146,
+        0.9100000000000001
+      ],
+      "nearest_obstacle_box": [
+        25.03,
+        20.82,
+        0,
+        25.97,
+        22.68,
+        0.5
+      ]
+    },
+    {
+      "ref": "JH2",
+      "box": [
+        28.05,
+        30.9,
+        0,
+        39.95,
+        36.9,
+        5.5
+      ],
+      "scope": "Existing nominal PH4 body envelope; plug/wires excluded.",
+      "minimum_nominal_box_distance_mm": 4.914999999999999,
+      "nearest_fpc_cell": [
+        27.64,
+        25.874999739129013,
+        2.5540116243430195,
+        32.74,
+        25.985,
+        2.556042408001068
+      ],
+      "nearest_obstacle_box": [
+        28.05,
+        30.9,
+        0,
+        39.95,
+        36.9,
+        5.5
+      ]
+    }
+  ],
+  "fpc_swept_bounds": [
+    26.19,
+    20.58,
+    0.15000000000000002,
+    34.19,
+    25.985,
+    5.970000000000001
+  ],
+  "host_y_only_separation_lower_bound_mm": 23.064999999999998,
+  "scope": "Only listed obstacles. A small distance to a conservative full lead-height box is a design risk, not proof of actual package collision. Screen back, factory FPC, solder and all other obstacles remain unverified."
+}

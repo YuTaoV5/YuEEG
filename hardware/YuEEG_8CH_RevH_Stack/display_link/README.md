@@ -7,10 +7,10 @@
 ## 已完成的工程设计
 
 - KiCad 9 原理图、局部固定库、连接器封装、双面完整布线、BOM 和检查记录。
-- 平展外形约 **8.30×13.645 mm**，中间颈宽 6.6 mm；拟采用双层 PI、成品名义厚度 0.11 mm。不是 FR-4 小板。
+- 平展外形约 **8.00×13.531 mm**，中间颈宽 5.1 mm；拟采用双层 PI、成品名义厚度 0.11 mm。不是 FR-4 小板。
 - 两个连接器均装 B 面，平展图均为 0°；向主板 +Y 方向作一次 U 形折弯，使上端母座朝向屏幕。F 面两端拟加 0.20 mm PI 补强。补强边界与折弯区见原生板文件。
 - 主板表面到屏幕原厂公头的 FPC 焊接安装面，目标距离为 **6.0 mm**。该尺寸不是屏幕后表面间隙，也不是已确定的支撑柱长度；原厂折回 FPC 的 Z 偏置尚未测量。
-- 名义中性层弯曲半径 1.8 mm。折弯区只有平行直线，无过孔、焊盘及整面铺铜；地平面仅在两端平直区域。原生检查为 ERC 0、DRC 0、未连接 0、原理图一致性问题 0。
+- 名义中性层弯曲半径 1.7 mm。折弯区只有平行直线，无过孔、焊盘及整面铺铜；地平面仅在两端平直区域。原生检查为 ERC 0、DRC 0、未连接 0、原理图一致性问题 0。
 
 信号按现有 J2002 逻辑引脚保持。3、9、10、17 为未使用脚，两端不布线；11/12/16 同为 AM_RAW 电源，所有 GND 及四个固定焊脚接采集侧地。多个同网脚相互导通属于原电路设计，不是独立 28 芯排线。`review/expected_connections.json` 是完整针号表。
 
@@ -20,17 +20,37 @@
 
 1. 实物公母头配对、pin 1 标识、逐针通断及电源对地绝缘检查。确认后才可接屏通电。
 2. FPC 厂确认 0.10 mm 钻孔／0.30 mm 过孔、连接器整窗开盖膜、补强片及贴装支撑。当前属于较细的加工规格，尚未获得工厂放行；不能直接使用普通 FR-4 下单流程。
-3. 成品厚度上限与折弯工艺。以“内半径至少十倍厚度”作当前条件计算，1.8 mm 中性层半径要求成品厚度不超过约 0.171 mm；此处不构成材料耐弯资格认证。颈部轮廓、盖膜与补强收口需由加工厂复核。
+3. 成品厚度上限与折弯工艺。以“内半径至少十倍厚度”作当前条件计算，1.7 mm 中性层半径要求成品厚度不超过约 0.162 mm；此处不构成材料耐弯资格认证。颈部轮廓、盖膜与补强收口需由加工厂复核。
 4. 实测屏幕公头安装面、原厂 FPC／背面元件包络，以及延长板相对 U1001、U1003 等邻近器件的三维间距。投影靠近器件 courtyard，不能只凭空板 DRC 判定无碰撞。
 5. 现有固件 10 MHz QSPI 下验证显示、触摸与供电压降，再验证显示／SD／Wi-Fi 并发时的采集噪声。当前没有完成柔性板阻抗控制或实测信号完整性验证。
 
 未输出此附件的生产 Gerber 包。制造叠层、盖膜及补强说明未定型，避免普通 Gerber 被误作可直接下单版本。主三板原有工程导出仍不包含本附件。
+
+## 局部装配空间复核
+
+原版本（提交 `b7f17f0`）到 U1003 的保守封装包络只有约 0.01 mm 名义间距。此次将颈宽由 6.6 改为 5.1 mm，板宽由 8.3 改为 8.0 mm，并提前两端收窄轮廓、将中性层弯曲半径改为 1.7 mm，避免把空板 DRC 通过误作装配通过。
+
+按当前名义折弯，扫掠 FPC、拟用补强片及名义连接器本体后，到部分邻件包络的最小空间距离为：
+
+| 邻件 | 条件计算距离 | 包络依据 |
+| --- | ---: | --- |
+| U1003 | 0.411 mm | TI DBV0005A，本体每侧加脚注允许的 0.25 mm 毛边，引脚另建包络；两者均按 1.45 mm 最大高度加假设的 0.10 mm 焊接抬高 |
+| U1001 | 0.500 mm | TI DBV0006A，同上 |
+| U402 | 0.914 mm | TI DGK0008A 最大外形、额外计入毛边及假设的 0.10 mm 焊接抬高 |
+| R1101 | 0.372 mm | **条件选型** RC0402FR-0722RL 最大 0.40 mm 本体，加假设的 0.10 mm 焊接抬高，XY 用原生 courtyard |
+| JH2 | 4.915 mm | 既有 PH4 名义本体包络，不包含插头和线束 |
+
+U402／R1101 另以 courtyard 整体抬高到假设的 2 mm 作粗筛，仍分别有 0.279／0.220 mm 间距；这两个高度不是厂家给出的本体高度。R1101 的低高度 MPN 尚未写入主板 BOM，替代料不能无条件沿用上表。完整材料清单必须约束装配高度。
+
+该局部计算的最大采样步长为 0.002 mm，按每段包围盒作筛查，含微小曲线离散误差；**未覆盖全部器件、公差、焊点、原屏 FPC／屏背、拆装路径及外壳受力**。这些名义距离不是制造放行阈值或人体安全认证。本延长板到 USB HOST 区的 Y 向保守分离下界约 23.065 mm；该结果只覆盖本延长板，不能替代整套屏幕及外壳的隔离复核。
+
+见[局部空间图](review/fold_space.png)和 `review/fold_space.json`。尺寸来源：[TPS7A20](https://www.ti.com/lit/ds/symlink/tps7a20.pdf) 第 60 页、[TPS22918](https://www.ti.com/lit/ds/symlink/tps22918.pdf) 第 27 页、[TPS62160](https://www.ti.com/lit/ds/symlink/tps62160.pdf) 第 35 页及 [YAGEO 候选料规格](https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0722RL)。
 
 ## 文件与复查
 
 - [原理图](YuEEG_H_DISPLAY_LINK.kicad_sch)、[PCB](YuEEG_H_DISPLAY_LINK.kicad_pcb)、[BOM](BOM.csv)。
 - [平展布线与条件折弯图](review/flat_and_fold.png)：F 面视角的两层走线示意，省略端部地铺铜；不是完整装配图。
 - `review/design_contract.json` 记录尺寸、来源与采购确认，`fold_alignment.json` 记录几何折叠检查，`checkpoint.json` 绑定原生来源与主三板哈希。
-- 根目录运行 `X:/SoftWare/Kicad/bin/python.exe hardware/YuEEG_8CH_RevH_Stack/review/devtools/checkpoint_h_display_link.py` 可重新运行 KiCad 静态检查及引脚表比较；先运行同目录 `audit_h_display_link_fold.py` 更新折弯审查。生成布局和路由的脚本会重建附件，应在独立工作副本中使用。
+- 根目录运行 `X:/SoftWare/Kicad/bin/python.exe hardware/YuEEG_8CH_RevH_Stack/review/devtools/checkpoint_h_display_link.py` 可重新运行 KiCad 静态检查及引脚表比较；改板后先以 KiCad Python 运行同目录 `inspect_h_fpc_neighbors.py`、`audit_h_display_link_fold.py`，再以普通 Python 运行 `check_h_display_fold_space.py` 更新空间记录。图由 `plot_h_display_link.py`、`plot_h_display_fold_space.py` 生成，最后重跑 checkpoint 绑定最终图件。生成布局和路由的脚本会重建附件，应在独立工作副本中使用。
 
 连接器尺寸来自项目内厂家 `cad/OK-14F024-04.pdf` 第 1 页公头 Rev A、第 3 页母座 Rev B，文件哈希在设计记录中。工艺参考 [JLCPCB 柔性板能力表](https://jlcpcb.com/capabilities/flex-pcb-capabilities)，尚未获得该厂家对本设计的报价或工艺确认。

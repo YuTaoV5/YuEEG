@@ -6,11 +6,13 @@ D=Path('hardware/YuEEG_8CH_RevH_Stack/display_link');path=D/'YuEEG_H_DISPLAY_LIN
 high=['AM_RST_P','AM_CS_P','AM_CLK_P','AM_D0_P','AM_D1_P','AM_D2_P','AM_D3_P'];low=['GND','AM_RAW','AM_1V8','TP_SDA_IDLE','TP_SCL_IDLE','VCI_EN'];lanes={};out=[]
 def save():p.SaveBoard(str(path),b);project.write_bytes(project_bytes)
 assert not list(b.GetTracks()),'Run only on fresh unrouted display-link layout'
-for layer,names,xs in [(p.F_Cu,high,[6.35,5.15,4.75,3.95,4.35,5.95,5.55]),(p.B_Cu,low,[1.35,2.35,2.75,4.35,4.75,6.35])]:
+for layer,names,xs in [(p.F_Cu,high,[6.35,5.15,4.75,3.95,4.35,5.95,5.55]),(p.B_Cu,low,[2.05,2.35,2.75,4.35,4.75,6.35])]:
  for net,x in zip(names,xs):
+  x+=q['outline_mm'][0]/2-4.15
   actual_layer=p.F_Cu if net=='AM_RAW' else layer
   width=.30 if net=='GND' else .4 if net=='AM_RAW' else .15 if net=='AM_1V8' else .1;t=p.PCB_TRACK(b);t.SetStart(p.VECTOR2I(p.FromMM(x),p.FromMM(left)));t.SetEnd(p.VECTOR2I(p.FromMM(x),p.FromMM(right)));t.SetWidth(p.FromMM(width));t.SetLayer(actual_layer);t.SetNet(b.FindNet(net));b.Add(t);lanes[net]=(actual_layer,x)
 for x in [3.45,5.55]:
+ x+=q['outline_mm'][0]/2-4.15
  t=p.PCB_TRACK(b);t.SetStart(p.VECTOR2I(p.FromMM(x),p.FromMM(left)));t.SetEnd(p.VECTOR2I(p.FromMM(x),p.FromMM(right)));t.SetWidth(p.FromMM(.3));t.SetLayer(p.B_Cu);t.SetNet(b.FindNet('GND'));b.Add(t)
 save()
 for net in high+['VCI_EN','TP_SDA_IDLE','TP_SCL_IDLE','AM_1V8','AM_RAW','GND']:

@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>X:\Items\YuEEG\hardware\YuEEG_8CH_RevH_Stack\display_link\YuEEG_H_DISPLAY_LINK.kicad_sch</source>
-    <date>2026-10-31T00:37:13+0800</date>
+    <date>2026-10-31T07:53:43+0800</date>
     <tool>Eeschema 9.0.5</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -22,7 +22,7 @@
         <comment number="9" value=""/>
       </title_block>
     </sheet>
-    <sheet number="2" name="/display_link/" tstamps="/49eb8874-8fb5-42c5-b7fe-a01ba5f20185/">
+    <sheet number="2" name="/display_link/" tstamps="/29135592-ca9b-4bff-ac28-51bb01694bb4/">
       <title_block>
         <title>Passive extension / same logical pin at both ends</title>
         <company>YuEEG</company>
@@ -56,8 +56,8 @@
       <property name="Sheetfile" value="display_link.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
       <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
-      <sheetpath names="/display_link/" tstamps="/49eb8874-8fb5-42c5-b7fe-a01ba5f20185/"/>
-      <tstamps>e7e81240-cbd5-4f15-9b52-10b3b9bad0a2</tstamps>
+      <sheetpath names="/display_link/" tstamps="/29135592-ca9b-4bff-ac28-51bb01694bb4/"/>
+      <tstamps>531ff34d-c2d2-44d4-8749-7b302b84442c</tstamps>
     </comp>
     <comp ref="JF2">
       <value>OK-14F024-04 / SCREEN</value>
@@ -73,8 +73,8 @@
       <property name="Sheetfile" value="display_link.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
       <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
-      <sheetpath names="/display_link/" tstamps="/49eb8874-8fb5-42c5-b7fe-a01ba5f20185/"/>
-      <tstamps>e3a98087-13b2-4e3f-a615-7ba50b9873da</tstamps>
+      <sheetpath names="/display_link/" tstamps="/29135592-ca9b-4bff-ac28-51bb01694bb4/"/>
+      <tstamps>dc46e230-a1ee-4231-84d7-72e52ed8bf3c</tstamps>
     </comp>
   </components>
   <libparts>

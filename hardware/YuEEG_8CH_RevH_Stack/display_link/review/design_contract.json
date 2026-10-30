@@ -1,20 +1,24 @@
 {
   "status": "FPC_EXTENSION_PROTOTYPE_NOT_FOR_ORDER",
   "outline_mm": [
-    8.3,
-    13.644866776461628
+    8.0,
+    13.530707511102651
   ],
-  "neck_width_mm": 6.6,
+  "neck_width_mm": 5.1,
+  "end_taper_offsets_from_connector_mm": [
+    1.55,
+    2.05
+  ],
   "finished_fpc_thickness_mm": 0.11,
   "copper_layers": 2,
   "connector_centers_flat_mm": {
     "JF1": [
-      4.15,
+      4.0,
       1.8
     ],
     "JF2": [
-      4.15,
-      11.844866776461627
+      4.0,
+      11.73070751110265
     ]
   },
   "B_side_rotations_deg": {
@@ -23,12 +27,12 @@
   },
   "connector_mounting_plane_separation_target_mm": 6.0,
   "warning_plane_datum": "6 mm is between main PCB and factory male FPC solder mounting plane, not a verified screen-back spacing. Factory folded FPC offset remains unknown.",
-  "U_fold_neutral_radius_mm": 1.8,
-  "vertical_centerline_section_mm": 0.69,
+  "U_fold_neutral_radius_mm": 1.7,
+  "vertical_centerline_section_mm": 0.8900000000000001,
   "straight_center_to_bend_mm": 1.85,
   "bend_interval_flat_y_mm": [
     3.6500000000000004,
-    9.994866776461627
+    9.880707511102651
   ],
   "pins": {
     "1": "AM_RST_P",
