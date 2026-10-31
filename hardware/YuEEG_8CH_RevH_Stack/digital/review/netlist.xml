@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>X:\Items\YuEEG\hardware\YuEEG_8CH_RevH_Stack\digital\YuEEG_H_DIGITAL.kicad_sch</source>
-    <date>2026-10-31T08:20:21+0800</date>
+    <date>2026-10-31T09:25:21+0800</date>
     <tool>Eeschema 9.0.5</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -1752,12 +1752,12 @@
       <tstamps>c8d79425-8141-434c-8260-087aa38507c1</tstamps>
     </comp>
     <comp ref="R1101">
-      <value>22R</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
-      <datasheet>~</datasheet>
+      <value>22R 1% / RC0402FR-0722RL</value>
+      <footprint>YuEEG:YAGEO_RC0402FR_0722RL</footprint>
+      <datasheet>https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0722RL</datasheet>
       <fields>
-        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
-        <field name="Datasheet">~</field>
+        <field name="Footprint">YuEEG:YAGEO_RC0402FR_0722RL</field>
+        <field name="Datasheet">https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0722RL</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>

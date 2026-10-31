@@ -1,0 +1,28 @@
+{
+  "status": "SELECTED_DIMENSION_CONSTRAINED_PART_NOT_ASSEMBLY_RELEASE",
+  "reference": "R1101",
+  "mpn": "RC0402FR-0722RL",
+  "manufacturer": "YAGEO",
+  "source": "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0722RL",
+  "resistance_ohm": 22,
+  "tolerance_percent": 1,
+  "rated_power_W_at_70C": 0.063,
+  "body_nominal_mm": [
+    1.0,
+    0.5,
+    0.35
+  ],
+  "body_max_mm": [
+    1.05,
+    0.55,
+    0.4
+  ],
+  "assumed_solder_lift_mm": 0.1,
+  "maximum_mounted_height_for_fold_screen_mm": 0.5,
+  "before_pcb_sha256": "5cd4df1e92ff3f235302a9acfa4c97530c9c22d2ba01bcc125e22868934183a4",
+  "after_pcb_sha256": "e62dbc80c4811195aaf47eaec0ec8931b466e4a04353b59568df75b37cee4926",
+  "pad_geometry_and_pose_unchanged": true,
+  "tracks_vias_and_zones_unchanged": true,
+  "procurement_scope": "Exact MPN selected from manufacturer data; no Taobao stock assertion. Substitutions require equivalent electrical rating and maximum envelope, including installed solder height.",
+  "scope": "Closes the unselected resistor MPN used by fold screening; not full display assembly qualification."
+}

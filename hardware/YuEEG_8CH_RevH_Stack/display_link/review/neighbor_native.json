@@ -65,8 +65,8 @@
   },
   {
     "ref": "R1101",
-    "value": "22R",
-    "fp": "R_0402_1005Metric",
+    "value": "22R 1% / RC0402FR-0722RL",
+    "fp": "YAGEO_RC0402FR_0722RL",
     "xy": [
       25.5,
       21.75

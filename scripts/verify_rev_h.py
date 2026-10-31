@@ -93,6 +93,9 @@ def verify():
  env=json.loads((H/'review/component_envelopes.json').read_text())
  for model in env['models']:require(sha(H/'models'/model['model'])==model['sha256'],'Changed dimensional model: '+model['model'])
  require(info['protocol_tests_passed']==6 and info['physical_flash_or_transport_tested'] is False,'Unexpected test scope')
+ selected=json.loads((H/'digital/review/r1101_height_selection.json').read_text())
+ require(selected['after_pcb_sha256']==summary['boards']['digital']['pcb_sha256'],'Stale R1101 height selection record')
+ require(selected['mpn']=='RC0402FR-0722RL' and selected['body_max_mm']==[1.05,.55,.4] and selected['maximum_mounted_height_for_fold_screen_mm']==.5,'Changed R1101 selected height contract')
  exports=json.loads((H/'fabrication_engineering/MANIFEST.json').read_text());require(exports['status']=='ENGINEERING_REVIEW_ONLY_NOT_FOR_ORDER','Export status is not an engineering draft')
  for q in exports['boards']:
   require(q['pcb_sha256']==summary['boards'][q['board']]['pcb_sha256'],'Stale Gerber export '+q['board'])

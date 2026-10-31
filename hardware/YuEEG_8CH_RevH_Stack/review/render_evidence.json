@@ -14,9 +14,9 @@
   },
   {
     "board": "digital",
-    "source_sha256": "5cd4df1e92ff3f235302a9acfa4c97530c9c22d2ba01bcc125e22868934183a4",
+    "source_sha256": "e62dbc80c4811195aaf47eaec0ec8931b466e4a04353b59568df75b37cee4926",
     "side": "bottom",
-    "local_model_path_substitutions": 10,
+    "local_model_path_substitutions": 11,
     "referenced_local_model_sha256": {
       "ESP32-S3-WROOM-1U.step": "7be82bdafece2891b297546eb0643ff254e3d8161074ebdc972e0d78e79a4bdb",
       "HRO_TYPE_C_31_M_12_original_envelope.wrl": "f80feb762533f717c6b56387bbc82150dbcc9875c31b10cff8c323e9577f9bd9",
@@ -25,15 +25,16 @@
       "OCN_OK_14F024_04_envelope.wrl": "f0dd16e16aa80a33862c9a7fecc44ccda37b163ed3de59f91069d5736f16d2da",
       "SKRTLBE010_envelope.wrl": "fe1db42ad3ad6c383225d37d59a836b2b1a8b24da797db0c3e9cecd12d5d027c",
       "TDK_SPM4015_LR_envelope.wrl": "06ad208ebc2364bc11584af8d96735e0cf38baa16cfbc1fe35931df61f800d2b",
-      "TMM_110_03_envelope.wrl": "c0605bd849ecd727ec80270f89077fcf67a59f31a1b992b877861ef0da360941"
+      "TMM_110_03_envelope.wrl": "c0605bd849ecd727ec80270f89077fcf67a59f31a1b992b877861ef0da360941",
+      "YAGEO_RC0402FR_0722RL_max_envelope.wrl": "21ed4d1db6c73d46b3479ec8a32371d018f25329c8724ec4cafeaf48151b5054"
     },
     "scope": "Rendering copy differs only by absolute local model paths. Main PCB/library keep project-relative paths. Missing models in model_audit.json remain absent."
   },
   {
     "board": "digital",
-    "source_sha256": "5cd4df1e92ff3f235302a9acfa4c97530c9c22d2ba01bcc125e22868934183a4",
+    "source_sha256": "e62dbc80c4811195aaf47eaec0ec8931b466e4a04353b59568df75b37cee4926",
     "side": "top",
-    "local_model_path_substitutions": 10,
+    "local_model_path_substitutions": 11,
     "referenced_local_model_sha256": {
       "ESP32-S3-WROOM-1U.step": "7be82bdafece2891b297546eb0643ff254e3d8161074ebdc972e0d78e79a4bdb",
       "HRO_TYPE_C_31_M_12_original_envelope.wrl": "f80feb762533f717c6b56387bbc82150dbcc9875c31b10cff8c323e9577f9bd9",
@@ -42,7 +43,8 @@
       "OCN_OK_14F024_04_envelope.wrl": "f0dd16e16aa80a33862c9a7fecc44ccda37b163ed3de59f91069d5736f16d2da",
       "SKRTLBE010_envelope.wrl": "fe1db42ad3ad6c383225d37d59a836b2b1a8b24da797db0c3e9cecd12d5d027c",
       "TDK_SPM4015_LR_envelope.wrl": "06ad208ebc2364bc11584af8d96735e0cf38baa16cfbc1fe35931df61f800d2b",
-      "TMM_110_03_envelope.wrl": "c0605bd849ecd727ec80270f89077fcf67a59f31a1b992b877861ef0da360941"
+      "TMM_110_03_envelope.wrl": "c0605bd849ecd727ec80270f89077fcf67a59f31a1b992b877861ef0da360941",
+      "YAGEO_RC0402FR_0722RL_max_envelope.wrl": "21ed4d1db6c73d46b3479ec8a32371d018f25329c8724ec4cafeaf48151b5054"
     },
     "scope": "Rendering copy differs only by absolute local model paths. Main PCB/library keep project-relative paths. Missing models in model_audit.json remain absent."
   },

@@ -80,7 +80,7 @@ FB1101,BLM18PG121SN1D / 120R@100MHz,Resistor_SMD:R_0603_1608Metric,circuit_13,~
 C1101,22u 10V X7R,Capacitor_SMD:C_1206_3216Metric,circuit_14,~
 C1102,100n 10V,Capacitor_SMD:C_0402_1005Metric,circuit_14,~
 C1103,1u 10V,Capacitor_SMD:C_0603_1608Metric,circuit_14,~
-R1101,22R,Resistor_SMD:R_0402_1005Metric,circuit_14,~
+R1101,22R 1% / RC0402FR-0722RL,YuEEG:YAGEO_RC0402FR_0722RL,circuit_14,https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0722RL
 R1111,10k,Resistor_SMD:R_0402_1005Metric,circuit_14,~
 R1112,10k,Resistor_SMD:R_0402_1005Metric,circuit_14,~
 R1113,10k,Resistor_SMD:R_0402_1005Metric,circuit_15,~

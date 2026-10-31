@@ -38219,7 +38219,7 @@ no)
 0
 0))))
 (footprint
-"Resistor_SMD:R_0402_1005Metric"
+"YuEEG:YAGEO_RC0402FR_0722RL"
 (layer
 "F.Cu")
 (uuid
@@ -38252,7 +38252,7 @@ no)
 0.15))))
 (property
 "Value"
-"22R"
+"22R 1% / RC0402FR-0722RL"
 (at
 0
 1.17
@@ -38270,7 +38270,7 @@ no)
 0.15))))
 (property
 "Datasheet"
-""
+"https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0722RL"
 (at
 0
 0
@@ -38537,7 +38537,7 @@ roundrect
 (embedded_fonts
 no)
 (model
-"${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+"${KIPRJMOD}/../models/YAGEO_RC0402FR_0722RL_max_envelope.wrl"
 (offset
 (xyz
 0

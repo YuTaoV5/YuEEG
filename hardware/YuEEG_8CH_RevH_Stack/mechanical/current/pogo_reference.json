@@ -29,6 +29,12 @@
     "contact_pitch_mm": 10,
     "contact_height_from_battery_bottom_mm": 6.2,
     "contact_recess_mm": 0.75,
+    "author_cad_battery_xyz_mm": [43.0, 30.0, 9.5],
+    "author_cad_contact_xyz_mm": [[-0.75, 6.0, 6.2], [-0.75, 16.0, 6.2]],
+    "author_cad_coordinate_note": "Author X is length, Y width, Z thickness; origin at contact face with key openings below contacts. Y coordinates are not a verified user-view left/right or polarity mapping.",
+    "contact_pair_center_author_y_mm": 11.0,
+    "author_battery_midwidth_y_mm": 15.0,
+    "noncentering_warning": "Do not center the 10mm contact pair on the battery width. Author sample pair midpoint is 4mm off the width center. Handedness, polarity and delivered battery dimensions remain unverified.",
     "status": "Author sample measurements, NOT Sony tolerance drawing. Polarity orientation and 1.07mm tip fit unresolved."
   },
   "not_yet_installed_on_power_pcb": true,

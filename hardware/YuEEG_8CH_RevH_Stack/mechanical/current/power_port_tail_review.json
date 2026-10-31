@@ -1,6 +1,6 @@
 {
   "status": "CONDITIONAL_TAIL_SCREEN_NOT_ASSEMBLY_RELEASE",
-  "digital_pcb_sha256": "5cd4df1e92ff3f235302a9acfa4c97530c9c22d2ba01bcc125e22868934183a4",
+  "digital_pcb_sha256": "e62dbc80c4811195aaf47eaec0ec8931b466e4a04353b59568df75b37cee4926",
   "afe_pcb_sha256": "2eb85cbd1e8bc271004dadf2321513e58e03e8ef493d7506ea8eff0663e4da2a",
   "surface_gap_mm": 8.5,
   "maximum_tail_solder_projection_allowed_below_digital_mm": 1.2,

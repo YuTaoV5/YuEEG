@@ -1,5 +1,5 @@
 {
-  "pcb_sha256": "5cd4df1e92ff3f235302a9acfa4c97530c9c22d2ba01bcc125e22868934183a4",
+  "pcb_sha256": "e62dbc80c4811195aaf47eaec0ec8931b466e4a04353b59568df75b37cee4926",
   "screen_projection_mm": [
     6,
     0.4,
@@ -211,6 +211,18 @@
       "height_mm": 2.03,
       "under_screen_projection": false,
       "nominal_vertical_margin_to_flat_back_at_6mm": null
+    },
+    {
+      "reference": "R1101",
+      "body_xy_bounds_mm": [
+        25.225,
+        21.225,
+        25.775,
+        22.275
+      ],
+      "height_mm": 0.4,
+      "under_screen_projection": true,
+      "nominal_vertical_margin_to_flat_back_at_6mm": 5.6
     }
   ],
   "isolated_host_y_min_mm": 49.05,

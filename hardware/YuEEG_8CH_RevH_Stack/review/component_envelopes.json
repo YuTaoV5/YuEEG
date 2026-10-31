@@ -481,6 +481,29 @@
       "scope": "Original nominal visual envelope; package variants on pages 1-3 excluded. Simplified wall/tongue geometry is illustrative. Solder and manufacturing variation separate.",
       "coordinate_convention": "VRML Y is negative footprint Y; units 2.54 mm",
       "sha256": "f80feb762533f717c6b56387bbc82150dbcc9875c31b10cff8c323e9577f9bd9"
+    },
+    {
+      "model": "YAGEO_RC0402FR_0722RL_max_envelope.wrl",
+      "boxes_footprint_mm": [
+        {
+          "min": [
+            -0.525,
+            -0.275,
+            0
+          ],
+          "max": [
+            0.525,
+            0.275,
+            0.4
+          ]
+        }
+      ],
+      "source": [
+        "https://www.yageogroup.com/component-documentation/download/specsheet/RC0402FR-0722RL"
+      ],
+      "scope": "Maximum body incl manufacturer tolerance. Separate .10mm solder-lift allowance is used by fold screening.",
+      "coordinate_convention": "VRML Y is negative footprint Y; units 2.54 mm",
+      "sha256": "21ed4d1db6c73d46b3479ec8a32371d018f25329c8724ec4cafeaf48151b5054"
     }
   ],
   "bindings": [
@@ -628,6 +651,11 @@
       "board": "digital",
       "reference": "J601",
       "model": "HRO_TYPE_C_31_M_12_original_envelope.wrl"
+    },
+    {
+      "board": "digital",
+      "reference": "R1101",
+      "model": "YAGEO_RC0402FR_0722RL_max_envelope.wrl"
     }
   ],
   "standard_model_aliases": {

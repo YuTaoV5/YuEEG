@@ -3192,9 +3192,9 @@
   {
     "board": "digital",
     "reference": "R1101",
-    "value": "22R",
+    "value": "22R 1% / RC0402FR-0722RL",
     "models": [
-      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+      "${KIPRJMOD}/../models/YAGEO_RC0402FR_0722RL_max_envelope.wrl"
     ],
     "existing": [
       true

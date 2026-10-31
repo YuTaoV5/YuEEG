@@ -15,5 +15,7 @@ def verify():
  assert space['fpc_pcb_sha256']==sha(D/'YuEEG_H_DISPLAY_LINK.kicad_pcb') and space['digital_pcb_sha256']==q['baseline_pcb_sha256']['digital']
  assert space['design_contract_sha256']==sha(D/'review/design_contract.json') and space['neighbor_native_sha256']==sha(D/'review/neighbor_native.json')
  assert all(v['minimum_nominal_box_distance_mm']>0 for v in space['neighbors']), 'Potential intersection of selected FPC envelope boxes'
+ selected=json.loads((H/'digital/review/r1101_height_selection.json').read_text());r=next(v for v in space['neighbors'] if v['ref']=='R1101_selected_low_profile')
+ assert r['box'][5]==selected['maximum_mounted_height_for_fold_screen_mm'] and r['source']==selected['source'],'FPC resistor height must match selected BOM MPN'
  print('PASS: display FPC prototype source/report bindings, zero static reports and fold geometry. Physical mating and fabrication remain unqualified.')
 if __name__=='__main__':verify()
