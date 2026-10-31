@@ -67,7 +67,7 @@ OCN 母座本体高度为 0.77±0.10 mm、厂家给出的配对高度为 0.80 mm
 
 ## 模型与器件清单
 
-已补充 8 类原始尺寸包络，当前 PCB 共 27 个相关器件绑定，覆盖侧键、两种 PH4、短体 SD 卡槽、OCN 母座、电感、SOT523 二极管及 DGN8 稳压器，并以标准 WSON 包体模型替换缺失的同尺寸模型引用。新通孔 PH4 的橙色框是修剪后焊尾的条件预留体。这些不是厂家完整 CAD，不能用模型存在与否代替装配验证。[模型依据及绑定](../hardware/YuEEG_8CH_RevH_Stack/review/component_envelopes.json)
+已补充原始尺寸包络，覆盖侧键、两种 PH4、短体 SD 卡槽、OCN 母座、电感、SOT523 二极管及 DGN8 稳压器，并以标准 WSON 包体模型替换缺失的同尺寸模型引用。新通孔 PH4 的橙色框是修剪后焊尾的条件预留体。这些不是厂家完整 CAD，不能用模型存在与否代替装配验证。[模型依据及绑定](../hardware/YuEEG_8CH_RevH_Stack/review/component_envelopes.json)
 
 数字板 L401 已选定 TDK SPM4015T-2R2M-LR，2.2 µH、最大 DCR 62.7 mΩ、最大高度 1.5 mm。其输出电容改为横放，局部供电连接加宽至 0.4 mm，另加接地过孔，将输出电容到地平面的表面回流段缩短至 1.45 mm。台架纹波和 Wi-Fi／SD／显示并发瞬态仍待验证。
 
@@ -80,3 +80,6 @@ OCN 母座本体高度为 0.77±0.10 mm、厂家给出的配对高度为 0.80 mm
 - [Mill-Max 官方目录](https://www.mill-max.com/sites/default/files/external/catalog/2019-04/023M-028M.pdf)，印刷页 25，公制部分。
 - [NP-BX1 触点座原始 CAD](https://gist.github.com/ednisley/c842ec39d6ac5a2e6945ea03435c56c3)，作者样品测量参考。
 - [Littelfuse 466 官方资料](https://www.littelfuse.com/assetdocs/fuse-466-datasheet?assetguid=dbe9bcd7-6072-4adf-bf5b-d33e52a6b90f)，2023-06-21 修订。
+
+
+模拟电源区、全层禁铜区及 USB 板边已继续改版；PH4 模型 Y 方向和 JH1 线束示意范围已纠正，详见[叠层空间复核与改版](REVH_STACK_REFINEMENT.md)。当前视图和工程导出均以最新原生 PCB 为准。

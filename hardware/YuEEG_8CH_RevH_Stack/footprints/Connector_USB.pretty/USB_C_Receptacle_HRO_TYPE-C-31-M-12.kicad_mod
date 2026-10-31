@@ -705,7 +705,7 @@ no)
 (embedded_fonts
 no)
 (model
-"${KICAD9_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.step"
+"${KIPRJMOD}/../models/HRO_TYPE_C_31_M_12_original_envelope.wrl"
 (offset
 (xyz
 0

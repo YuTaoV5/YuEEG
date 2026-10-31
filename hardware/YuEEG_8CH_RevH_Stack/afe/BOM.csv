@@ -109,7 +109,7 @@ C403,10n C0G,Capacitor_SMD:C_0402_1005Metric,circuit_19,~
 R401,27.4k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_19,~
 R402,10k 0.1%,Resistor_SMD:R_0402_1005Metric,circuit_19,~
 C404,10n C0G,Capacitor_SMD:C_0402_1005Metric,circuit_19,~
-C405,22u 16V X7R,Capacitor_SMD:C_1206_3216Metric,circuit_20,~
+C405,22u 16V X7R MSASE31LBB7226MTNA01,YuEEG:TY_MSASE31LBB7226MTNA01_1206,circuit_20,https://ds.yuden.co.jp/TYCOMPAS/ap/detail?pn=MSASE31LBB7226MTNA01&u=M
 TP403,+4V4_PRE,TestPoint:TestPoint_Pad_D1.5mm,circuit_20,~
 D403,BAT46W pre-LDO reverse bypass,Diode_SMD:D_SOD-123,circuit_20,~
 U403,TPS73225DBVR,Package_TO_SOT_SMD:SOT-23-5,circuit_20,https://www.ti.com/lit/ds/symlink/tps732.pdf

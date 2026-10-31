@@ -1,0 +1,46 @@
+{
+  "status": "IMPLEMENTED_ENGINEERING_RELIEF_NOT_ASSEMBLY_RELEASE",
+  "boards": {
+    "afe": {
+      "before_pcb_sha256": "71e303ebc239bd1df15d830467d6d5bdbaa1654bfb61b79c7e91aa08b627cd79",
+      "after_pcb_sha256": "994fa09bebb49838d97babb6d02bc7a5f64dc50c0bac8689b66b15fb26db714d"
+    },
+    "digital": {
+      "before_pcb_sha256": "179565dde66c6899577eb7d980690d5ab896a0eafdae337fd2396ba05dafb5c8",
+      "after_pcb_sha256": "488df3b94b1904939dddac21cff1abee1f90066e2265851a99b5b7216258edf6"
+    }
+  },
+  "source": "https://www.krhro.com/Product-Details/726.html",
+  "source_pdf_sha256": "1c23b78973c56e8dd83f1b46b8c31226f31ba0ea136ce3babd9f80bbaf2e7345",
+  "source_page": 4,
+  "source_drawing_date": "2020-12-08",
+  "body_nominal_mm": [
+    8.94,
+    7.35,
+    3.26
+  ],
+  "body_max_assumed_mm": [
+    9.09,
+    7.5,
+    3.36
+  ],
+  "solder_lift_allowance_mm": 0.1,
+  "board_edge_recommended_y_mm": 59.19,
+  "implemented_notch_roof_y_mm": 59.2,
+  "notch_depth_mm": 0.8,
+  "notch_inner_radius_mm": 0.5,
+  "notch_outer_radius_mm": 0.25,
+  "notch_roof_x_mm": [
+    18.5,
+    29.5
+  ],
+  "overall_outline_mm": [
+    48,
+    60
+  ],
+  "scope": "Web product title says 3.16mm; use matched base-part drawing 3.26mm. Manufacturer tabs extend 1.10mm below mounting plane, not below PCB back. Notch and model require native DRC/refill and delivered connector inspection; external USB plug/case envelope unqualified.",
+  "current_pcb_sha256": {
+    "afe": "2eb85cbd1e8bc271004dadf2321513e58e03e8ef493d7506ea8eff0663e4da2a",
+    "digital": "5cd4df1e92ff3f235302a9acfa4c97530c9c22d2ba01bcc125e22868934183a4"
+  }
+}

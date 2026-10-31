@@ -52,6 +52,8 @@ def verify():
  require(reference['pcb_sha256']==summary['boards']['digital']['pcb_sha256'],'Stale USB reference sampling evidence')
  for render in json.loads((H/'review/render_evidence.json').read_text()):
   require(render['source_sha256']==summary['boards'][render['board']]['pcb_sha256'],'Stale board rendering: '+render['board'])
+  require('referenced_local_model_sha256' in render,'Missing rendering model bindings: '+render['board'])
+  for name,digest in render['referenced_local_model_sha256'].items():require(sha(H/'models'/name)==digest,'Stale rendered model: '+name)
  battery=H/'mechanical/current/battery_side_envelope.json'
  if battery.exists():
   data=json.loads(battery.read_text());require(data['status']=='CONDITIONAL_MECHANICAL_SCREENING_NOT_ASSEMBLY_RELEASE','Battery screening must not imply assembly release')
@@ -67,11 +69,21 @@ def verify():
   require(ports[board]['pcb_sha256']==summary['boards'][board]['pcb_sha256'],'Stale native power-port extract: '+board)
   require({k:v['net'] for k,v in ports[board]['pads'].items()}==port['pin_map'],'Power cable pin mismatch: '+board)
  require(ports['digital']['xy_mm']==port['position_mm'] and ports['digital']['rotation_deg']==90,'Wrong power port placement')
+ header=ports['digital']['interboard_header']
+ require(header['pad_centers_mm']['1']==[44.,30.] and header['pad_centers_mm']['20']==[42.,12.],'Stale interboard header projection')
  cable=json.loads((H/'mechanical/current/power_harness_routing_review.json').read_text())
  require(cable['native_ports_sha256']==sha(H/'mechanical/current/power_ports_native.json'),'Stale cable source binding')
  require(cable['native_ports']==ports and cable['status'].endswith('NOT_ASSEMBLY_RELEASE'),'Cable reservation must remain conditional')
  require(cable['display_fpc_pcb_sha256']==sha(H/'display_link/YuEEG_H_DISPLAY_LINK.kicad_pcb'),'Stale cable/FPC binding')
  require(all(w['minimum_signed_gap_mm']>0 for w in cable['current_right_exit_wires']),'Modeled cable overlaps the FPC reservation')
+ hb=header['native_pad_bbox_xy_mm'];require(cable['conditional_JH1_post_envelope_mm']==[hb[0],hb[1],0,hb[2],hb[3],1.5],'Cable report uses incorrect header geometry')
+ screen=json.loads((H/'mechanical/current/afe_host_screen.json').read_text())
+ require(screen['afe_pcb_sha256']==summary['boards']['afe']['pcb_sha256'] and screen['digital_pcb_sha256']==summary['boards']['digital']['pcb_sha256'],'Stale AFE/HOST conditional screen')
+ require(screen['afe_copper_y_max_mm']<=47.5001 and screen['c405_minimum_external_host_lower_bound_mm']>8,'AFE conditional screen no longer meets its engineering assumptions')
+ change=json.loads((H/'afe/review/power_shadow_change.json').read_text())
+ require(change['current_pcb_sha256']=={name:summary['boards'][name]['pcb_sha256'] for name in ['afe','digital']},'Stale analog power change record')
+ mouth=json.loads((H/'mechanical/current/usb_mouth_review.json').read_text())
+ for name in ['afe','digital']:require(mouth['current_pcb_sha256'][name]==summary['boards'][name]['pcb_sha256'],'Stale USB mouth review: '+name)
  tails=json.loads((H/'mechanical/current/power_port_tail_review.json').read_text())
  require(tails['digital_pcb_sha256']==summary['boards']['digital']['pcb_sha256'] and tails['afe_pcb_sha256']==summary['boards']['afe']['pcb_sha256'],'Stale tail/AFE screening')
  require(tails['status']=='CONDITIONAL_TAIL_SCREEN_NOT_ASSEMBLY_RELEASE' and tails['maximum_tail_solder_projection_allowed_below_digital_mm']==1.2,'Missing conditional tail-trim constraint')

@@ -1,23 +1,49 @@
 [
   {
     "board": "afe",
-    "source_sha256": "626c03b4dd3391a60a2687d95113357e0870bf6a04d825b37c71d953124e91f8",
+    "source_sha256": "2eb85cbd1e8bc271004dadf2321513e58e03e8ef493d7506ea8eff0663e4da2a",
     "side": "top",
-    "local_model_path_substitutions": 18,
+    "local_model_path_substitutions": 19,
+    "referenced_local_model_sha256": {
+      "Diodes_SOT523_envelope.wrl": "b5121179461a772f1fbcfa42f51f254e3a1c43004933dc2b575df46866f9bc6b",
+      "SQT_110_01_envelope.wrl": "126b90393d0c6a5ba1de7bed2039394ff4bb1cb284fe3a7ea4a5fcc89238ccb0",
+      "TI_DGN8_envelope.wrl": "1557de04243206862110fb64927179126c4fef7f07c342b7e7dcc2451496eba1",
+      "TY_MSASE31LBB7226MTNA01_1206_max_envelope.wrl": "2c47fdbe6d60f2c759409b9b7261bea6c16e0f76989eaa54b12293dfd53ac89c"
+    },
     "scope": "Rendering copy differs only by absolute local model paths. Main PCB/library keep project-relative paths. Missing models in model_audit.json remain absent."
   },
   {
     "board": "digital",
-    "source_sha256": "179565dde66c6899577eb7d980690d5ab896a0eafdae337fd2396ba05dafb5c8",
+    "source_sha256": "5cd4df1e92ff3f235302a9acfa4c97530c9c22d2ba01bcc125e22868934183a4",
     "side": "bottom",
-    "local_model_path_substitutions": 9,
+    "local_model_path_substitutions": 10,
+    "referenced_local_model_sha256": {
+      "ESP32-S3-WROOM-1U.step": "7be82bdafece2891b297546eb0643ff254e3d8161074ebdc972e0d78e79a4bdb",
+      "HRO_TYPE_C_31_M_12_original_envelope.wrl": "f80feb762533f717c6b56387bbc82150dbcc9875c31b10cff8c323e9577f9bd9",
+      "JST_S4B_PH_TH_envelope.wrl": "b84f059d595a1877fef5360514bcd1b5e237c7dbc1c6a9991ccfd2ad6ad7a0f9",
+      "KINGCONN_7TFCN_FA_1010_C_envelope.wrl": "c2906f2408edeafdd6a2583e5a82a84baac0aebefed0ca5d9d11d7047df5271d",
+      "OCN_OK_14F024_04_envelope.wrl": "f0dd16e16aa80a33862c9a7fecc44ccda37b163ed3de59f91069d5736f16d2da",
+      "SKRTLBE010_envelope.wrl": "fe1db42ad3ad6c383225d37d59a836b2b1a8b24da797db0c3e9cecd12d5d027c",
+      "TDK_SPM4015_LR_envelope.wrl": "06ad208ebc2364bc11584af8d96735e0cf38baa16cfbc1fe35931df61f800d2b",
+      "TMM_110_03_envelope.wrl": "c0605bd849ecd727ec80270f89077fcf67a59f31a1b992b877861ef0da360941"
+    },
     "scope": "Rendering copy differs only by absolute local model paths. Main PCB/library keep project-relative paths. Missing models in model_audit.json remain absent."
   },
   {
     "board": "digital",
-    "source_sha256": "179565dde66c6899577eb7d980690d5ab896a0eafdae337fd2396ba05dafb5c8",
+    "source_sha256": "5cd4df1e92ff3f235302a9acfa4c97530c9c22d2ba01bcc125e22868934183a4",
     "side": "top",
-    "local_model_path_substitutions": 9,
+    "local_model_path_substitutions": 10,
+    "referenced_local_model_sha256": {
+      "ESP32-S3-WROOM-1U.step": "7be82bdafece2891b297546eb0643ff254e3d8161074ebdc972e0d78e79a4bdb",
+      "HRO_TYPE_C_31_M_12_original_envelope.wrl": "f80feb762533f717c6b56387bbc82150dbcc9875c31b10cff8c323e9577f9bd9",
+      "JST_S4B_PH_TH_envelope.wrl": "b84f059d595a1877fef5360514bcd1b5e237c7dbc1c6a9991ccfd2ad6ad7a0f9",
+      "KINGCONN_7TFCN_FA_1010_C_envelope.wrl": "c2906f2408edeafdd6a2583e5a82a84baac0aebefed0ca5d9d11d7047df5271d",
+      "OCN_OK_14F024_04_envelope.wrl": "f0dd16e16aa80a33862c9a7fecc44ccda37b163ed3de59f91069d5736f16d2da",
+      "SKRTLBE010_envelope.wrl": "fe1db42ad3ad6c383225d37d59a836b2b1a8b24da797db0c3e9cecd12d5d027c",
+      "TDK_SPM4015_LR_envelope.wrl": "06ad208ebc2364bc11584af8d96735e0cf38baa16cfbc1fe35931df61f800d2b",
+      "TMM_110_03_envelope.wrl": "c0605bd849ecd727ec80270f89077fcf67a59f31a1b992b877861ef0da360941"
+    },
     "scope": "Rendering copy differs only by absolute local model paths. Main PCB/library keep project-relative paths. Missing models in model_audit.json remain absent."
   },
   {
@@ -25,6 +51,10 @@
     "source_sha256": "772131212bf444de40b23215ee12a9c742a6c3d58acb581afa2b7b963272e4f9",
     "side": "top",
     "local_model_path_substitutions": 2,
+    "referenced_local_model_sha256": {
+      "JST_S4B_PH_SM4_envelope.wrl": "33e2aa6f578fe34426f520b2b3f83a0a894f6ceda732164440ea7ac835543407",
+      "TDK_SPM4015_LR_envelope.wrl": "06ad208ebc2364bc11584af8d96735e0cf38baa16cfbc1fe35931df61f800d2b"
+    },
     "scope": "Rendering copy differs only by absolute local model paths. Main PCB/library keep project-relative paths. Missing models in model_audit.json remain absent."
   }
 ]

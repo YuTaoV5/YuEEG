@@ -1,5 +1,5 @@
 {
-  "pcb_sha256": "179565dde66c6899577eb7d980690d5ab896a0eafdae337fd2396ba05dafb5c8",
+  "pcb_sha256": "5cd4df1e92ff3f235302a9acfa4c97530c9c22d2ba01bcc125e22868934183a4",
   "screen_projection_mm": [
     6,
     0.4,
@@ -137,6 +137,78 @@
         39.0
       ],
       "height_mm": 2.7,
+      "under_screen_projection": false,
+      "nominal_vertical_margin_to_flat_back_at_6mm": null
+    },
+    {
+      "reference": "J601",
+      "body_xy_bounds_mm": [
+        19.53,
+        52.33,
+        28.47,
+        59.68
+      ],
+      "height_mm": 0.25,
+      "under_screen_projection": false,
+      "nominal_vertical_margin_to_flat_back_at_6mm": null
+    },
+    {
+      "reference": "J601",
+      "body_xy_bounds_mm": [
+        19.53,
+        52.33,
+        28.47,
+        59.68
+      ],
+      "height_mm": 3.26,
+      "under_screen_projection": false,
+      "nominal_vertical_margin_to_flat_back_at_6mm": null
+    },
+    {
+      "reference": "J601",
+      "body_xy_bounds_mm": [
+        19.53,
+        52.33,
+        19.83,
+        59.68
+      ],
+      "height_mm": 3.01,
+      "under_screen_projection": false,
+      "nominal_vertical_margin_to_flat_back_at_6mm": null
+    },
+    {
+      "reference": "J601",
+      "body_xy_bounds_mm": [
+        28.17,
+        52.33,
+        28.47,
+        59.68
+      ],
+      "height_mm": 3.01,
+      "under_screen_projection": false,
+      "nominal_vertical_margin_to_flat_back_at_6mm": null
+    },
+    {
+      "reference": "J601",
+      "body_xy_bounds_mm": [
+        19.83,
+        52.33,
+        28.17,
+        52.83
+      ],
+      "height_mm": 3.01,
+      "under_screen_projection": false,
+      "nominal_vertical_margin_to_flat_back_at_6mm": null
+    },
+    {
+      "reference": "J601",
+      "body_xy_bounds_mm": [
+        20.6,
+        52.83,
+        27.4,
+        59.05
+      ],
+      "height_mm": 2.03,
       "under_screen_projection": false,
       "nominal_vertical_margin_to_flat_back_at_6mm": null
     }

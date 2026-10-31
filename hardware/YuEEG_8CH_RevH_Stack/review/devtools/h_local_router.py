@@ -12,6 +12,8 @@ def load(board='digital',board_path=None,outline=None,edge=.7,via=None):
  if board=='power':
   src=src.replace('layers=[p.F_Cu,p.In2_Cu,p.In4_Cu,p.B_Cu]','layers=[p.F_Cu,p.B_Cu]')
   src=src.replace('right=47.3;bottom=59.3','right=33.3;bottom=17.3')
+ if board=='afe':
+  src=src.replace('layers=[p.F_Cu,p.In2_Cu,p.In4_Cu,p.B_Cu]','layers=[p.F_Cu,p.In2_Cu,p.B_Cu]')
  if outline is not None:
   old='right=33.3;bottom=17.3' if board=='power' else 'right=47.3;bottom=59.3'
   assert old in src;src=src.replace(old,f'right={outline[0]-edge};bottom={outline[1]-edge}').replace('.7*scale',f'{edge}*scale')

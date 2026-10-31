@@ -1,7 +1,7 @@
 {
   "status": "CONDITIONAL_NOMINAL_SPACE_SCREEN_NOT_ASSEMBLY_RELEASE",
   "design_contract_sha256": "ba84db7ae22199cc02e52a775d5694b3dc58a4663b36ace4a7b8d2a99e209aac",
-  "digital_pcb_sha256": "179565dde66c6899577eb7d980690d5ab896a0eafdae337fd2396ba05dafb5c8",
+  "digital_pcb_sha256": "5cd4df1e92ff3f235302a9acfa4c97530c9c22d2ba01bcc125e22868934183a4",
   "fpc_pcb_sha256": "51979b486cb4e063baf91e5e389caad5001929970646c76e1cca3f596b3a5b12",
   "neighbor_native_sha256": "a8a85cf302f964959844527d3e4080833fe258a604100dbce4fa5edd23fec741",
   "sampling_step_max_mm": 0.002,

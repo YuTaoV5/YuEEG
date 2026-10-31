@@ -3,7 +3,7 @@
   "native_ports": {
     "digital": {
       "reference": "JH2",
-      "pcb_sha256": "179565dde66c6899577eb7d980690d5ab896a0eafdae337fd2396ba05dafb5c8",
+      "pcb_sha256": "5cd4df1e92ff3f235302a9acfa4c97530c9c22d2ba01bcc125e22868934183a4",
       "xy_mm": [
         32.4,
         38.5
@@ -66,6 +66,97 @@
             31.9,
             33.275,
             33.1
+          ]
+        }
+      },
+      "interboard_header": {
+        "reference": "JH1",
+        "native_pad_bbox_xy_mm": [
+          41.325,
+          11.325,
+          44.675,
+          30.675
+        ],
+        "pad_centers_mm": {
+          "1": [
+            44.0,
+            30.0
+          ],
+          "2": [
+            42.0,
+            30.0
+          ],
+          "3": [
+            44.0,
+            28.0
+          ],
+          "4": [
+            42.0,
+            28.0
+          ],
+          "5": [
+            44.0,
+            26.0
+          ],
+          "6": [
+            42.0,
+            26.0
+          ],
+          "7": [
+            44.0,
+            24.0
+          ],
+          "8": [
+            42.0,
+            24.0
+          ],
+          "9": [
+            44.0,
+            22.0
+          ],
+          "10": [
+            42.0,
+            22.0
+          ],
+          "11": [
+            44.0,
+            20.0
+          ],
+          "12": [
+            42.0,
+            20.0
+          ],
+          "13": [
+            44.0,
+            18.0
+          ],
+          "14": [
+            42.0,
+            18.0
+          ],
+          "15": [
+            44.0,
+            16.0
+          ],
+          "16": [
+            42.0,
+            16.0
+          ],
+          "17": [
+            44.0,
+            14.0
+          ],
+          "18": [
+            42.0,
+            14.0
+          ],
+          "19": [
+            44.0,
+            12.0
+          ],
+          "20": [
+            42.0,
+            12.0
           ]
         }
       }
@@ -232,7 +323,7 @@
       }
     }
   },
-  "native_ports_sha256": "1164e840625a21a4b049fff076e6096503aaaeee32a78d654a32cce2168d92b8",
+  "native_ports_sha256": "37931b452a49237e6d4ad44c4a2de9056171902dfda123bfbd51645d95e88c33",
   "display_fpc_pcb_sha256": "51979b486cb4e063baf91e5e389caad5001929970646c76e1cca3f596b3a5b12",
   "source": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
   "reference_pages": [
@@ -254,7 +345,7 @@
       54
     ],
     "maximum_JH1_F_side_pin_solder_protrusion_allowed_mm": 1.5,
-    "minimum_wire_axis_required_for_0_3mm_post_gap_mm": 2.3499999999999996
+    "header_geometry_basis": "Actual native JH1 pad projection; no wire-axis minimum inferred from a fictitious crossing"
   },
   "former_forward_exit_wires": [
     {
@@ -4173,15 +4264,15 @@
     4.8
   ],
   "conditional_JH1_post_envelope_mm": [
-    41.55,
-    29.55,
+    41.325,
+    11.325,
     0,
-    44.45,
-    48.45,
+    44.675,
+    30.675,
     1.5
   ],
-  "nominal_mated_body_to_post_envelope_mm": 0.8999999999999986,
-  "nominal_wire_to_full_post_height_lower_bound_mm": 0.7000000000000002,
+  "nominal_mated_body_to_post_envelope_mm": 0.6750000000000043,
+  "nominal_wire_to_JH1_envelope_lower_bound_mm": 1.6620409128223639,
   "native_pad_y_max_mm": 39.1,
   "pad_y_only_HOST_separation_mm": 9.949999999999996,
   "body_y_only_HOST_separation_mm": 8.599999999999994,

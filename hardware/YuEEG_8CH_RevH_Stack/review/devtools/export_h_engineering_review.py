@@ -11,6 +11,8 @@ for board,cu in [('afe','F.Cu,In1.Cu,In2.Cu,B.Cu'),('digital','F.Cu,In1.Cu,In2.C
  shutil.copy2(base/'BOM.csv',folder/'BOM.csv')
  edge=next(folder.glob('*Edge_Cuts*'));s=edge.read_text()
  if board!='power':
+  assert 'X29500000Y-59200000D02*\nX18500000Y-59200000D01*' in s,'Missing 11mm roof of USB mouth relief'
+  assert 'X30000000Y-59700000I0J-500000D01*' in s and 'X18500000Y-59200000I500000J0D01*' in s,'Missing R0.5 mouth relief arcs'
   # Native Gerber object attributes bind each pair of semicircles to its hole.
   for ref in ['H1','H2','H3']:
    section=s.split('%TO.C,'+ref+'*%')[1].split('%TO.C,')[0].split('%TD*%')[0]

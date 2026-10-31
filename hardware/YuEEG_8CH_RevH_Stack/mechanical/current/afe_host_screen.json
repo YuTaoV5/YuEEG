@@ -1,0 +1,2545 @@
+{
+  "status": "CONDITIONAL_C405_AND_COPPER_SCREEN_NOT_ASSEMBLY_RELEASE",
+  "afe_pcb_sha256": "2eb85cbd1e8bc271004dadf2321513e58e03e8ef493d7506ea8eff0663e4da2a",
+  "digital_pcb_sha256": "5cd4df1e92ff3f235302a9acfa4c97530c9c22d2ba01bcc125e22868934183a4",
+  "external_host_copper_extract": {
+    "status": "NATIVE_EXTERNAL_COPPER_EXTRACT_NOT_ASSEMBLY_RELEASE",
+    "pcb_sha256": "5cd4df1e92ff3f235302a9acfa4c97530c9c22d2ba01bcc125e22868934183a4",
+    "host_nets": [
+      "DATA_5V",
+      "DATA_RAW",
+      "HOST_GND",
+      "USB_CC1",
+      "USB_CC2",
+      "USB_HOST_DM",
+      "USB_HOST_DP",
+      "USB_UP_DM",
+      "USB_UP_DP",
+      "USB_VDD1",
+      "unconnected-(J601-SBU1-PadA8)",
+      "unconnected-(J601-SBU2-PadB8)"
+    ],
+    "selected_component_pad_nets": {
+      "U701.1": "DATA_5V",
+      "U701.2": "HOST_GND",
+      "U701.3": "USB_VDD1",
+      "U701.4": "USB_VDD1",
+      "U701.5": "USB_VDD1",
+      "U701.6": "USB_UP_DM",
+      "U701.7": "USB_UP_DP",
+      "U701.8": "HOST_GND",
+      "U701.9": "GND",
+      "U701.10": "USB_DOWN_DP",
+      "U701.11": "USB_DOWN_DM",
+      "U701.12": "+3V3",
+      "U701.13": "+3V3",
+      "U701.14": "+3V3",
+      "U701.15": "GND",
+      "U701.16": "+3V3",
+      "J601.": "",
+      "J601.A1": "HOST_GND",
+      "J601.A4": "DATA_RAW",
+      "J601.A5": "USB_CC1",
+      "J601.A6": "USB_HOST_DP",
+      "J601.A7": "USB_HOST_DM",
+      "J601.A8": "unconnected-(J601-SBU1-PadA8)",
+      "J601.A9": "DATA_RAW",
+      "J601.A12": "HOST_GND",
+      "J601.B1": "HOST_GND",
+      "J601.B4": "DATA_RAW",
+      "J601.B5": "USB_CC2",
+      "J601.B6": "USB_HOST_DP",
+      "J601.B7": "USB_HOST_DM",
+      "J601.B8": "unconnected-(J601-SBU2-PadB8)",
+      "J601.B9": "DATA_RAW",
+      "J601.B12": "HOST_GND",
+      "J601.S1": "HOST_GND",
+      "F901.1": "DATA_RAW",
+      "F901.2": "DATA_5V",
+      "JH1.1": "SYS_5V",
+      "JH1.2": "GND",
+      "JH1.3": "+3V3",
+      "JH1.4": "GND",
+      "JH1.5": "ADS_SCLK",
+      "JH1.6": "GND",
+      "JH1.7": "ADS_MOSI",
+      "JH1.8": "GND",
+      "JH1.9": "ADS_CS",
+      "JH1.10": "GND",
+      "JH1.11": "ADS_MISO",
+      "JH1.12": "GND",
+      "JH1.13": "ADS_DRDY",
+      "JH1.14": "GND",
+      "JH1.15": "ADS_RESET",
+      "JH1.16": "ADS_PWDN",
+      "JH1.17": "ADS_START",
+      "JH1.18": "GND",
+      "JH1.19": "SYS_5V",
+      "JH1.20": "GND"
+    },
+    "external_items": [
+      {
+        "kind": "pad",
+        "ref": "D605.1",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          33.65,
+          56.775,
+          34.25,
+          57.225
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "D605.2",
+        "net": "USB_CC2",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          35.75,
+          56.775,
+          36.35,
+          57.225
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "C901.1",
+        "net": "DATA_5V",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          39.24,
+          57.69,
+          39.8,
+          58.31
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "C901.2",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          40.2,
+          57.69,
+          40.76,
+          58.31
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "U701.1",
+        "net": "DATA_5V",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          7.255,
+          49.05,
+          7.855,
+          50.45
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "U701.2",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          8.525,
+          49.05,
+          9.125,
+          50.45
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "U701.3",
+        "net": "USB_VDD1",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          9.795,
+          49.05,
+          10.395,
+          50.45
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "U701.4",
+        "net": "USB_VDD1",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          11.065,
+          49.05,
+          11.665,
+          50.45
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "U701.5",
+        "net": "USB_VDD1",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          12.335,
+          49.05,
+          12.935,
+          50.45
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "U701.6",
+        "net": "USB_UP_DM",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          13.605,
+          49.05,
+          14.205,
+          50.45
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "U701.7",
+        "net": "USB_UP_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          14.875,
+          49.05,
+          15.475,
+          50.45
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "U701.8",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          16.145,
+          49.05,
+          16.745,
+          50.45
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "D602.1",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          29.9,
+          53.775,
+          30.5,
+          54.225
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "D602.2",
+        "net": "USB_HOST_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          32.0,
+          53.775,
+          32.6,
+          54.225
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "R701.1",
+        "net": "USB_HOST_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          17.24,
+          51.48,
+          17.78,
+          52.12
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "R701.2",
+        "net": "USB_UP_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          16.22,
+          51.48,
+          16.76,
+          52.12
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "D603.1",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          30.525,
+          51.75,
+          30.975,
+          52.35
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "D603.2",
+        "net": "USB_HOST_DM",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          30.525,
+          49.65,
+          30.975,
+          50.25
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "C701.1",
+        "net": "DATA_5V",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          6.74,
+          51.24,
+          7.3,
+          51.86
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "C701.2",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          7.7,
+          51.24,
+          8.26,
+          51.86
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "C702.1",
+        "net": "USB_VDD1",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          9.34,
+          51.24,
+          9.9,
+          51.86
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "C702.2",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          10.3,
+          51.24,
+          10.86,
+          51.86
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "R702.1",
+        "net": "USB_HOST_DM",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          15.04,
+          51.48,
+          15.58,
+          52.12
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "R702.2",
+        "net": "USB_UP_DM",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          14.02,
+          51.48,
+          14.56,
+          52.12
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "D901.1",
+        "net": "DATA_5V",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          42.05,
+          54.45,
+          43.15,
+          55.55
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "D901.2",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          44.85,
+          54.45,
+          45.95,
+          55.55
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "R902.1",
+        "net": "USB_CC2",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          31.22,
+          56.68,
+          31.76,
+          57.32
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "R902.2",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          32.24,
+          56.68,
+          32.78,
+          57.32
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "D604.1",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          34.775,
+          53.75,
+          35.225,
+          54.35
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "D604.2",
+        "net": "USB_CC1",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          34.775,
+          51.65,
+          35.225,
+          52.25
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.A1",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          20.45,
+          51.23,
+          21.05,
+          52.68
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.A4",
+        "net": "DATA_RAW",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          21.25,
+          51.23,
+          21.85,
+          52.68
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.A5",
+        "net": "USB_CC1",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          22.6,
+          51.23,
+          22.9,
+          52.68
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.A6",
+        "net": "USB_HOST_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          23.6,
+          51.23,
+          23.9,
+          52.68
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.A7",
+        "net": "USB_HOST_DM",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          24.1,
+          51.23,
+          24.4,
+          52.68
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.A8",
+        "net": "unconnected-(J601-SBU1-PadA8)",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          25.1,
+          51.23,
+          25.4,
+          52.68
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.A9",
+        "net": "DATA_RAW",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          26.15,
+          51.23,
+          26.75,
+          52.68
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.A12",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          26.95,
+          51.23,
+          27.55,
+          52.68
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.B1",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          26.95,
+          51.23,
+          27.55,
+          52.68
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.B4",
+        "net": "DATA_RAW",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          26.15,
+          51.23,
+          26.75,
+          52.68
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.B5",
+        "net": "USB_CC2",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          25.6,
+          51.23,
+          25.9,
+          52.68
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.B6",
+        "net": "USB_HOST_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          24.6,
+          51.23,
+          24.9,
+          52.68
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.B7",
+        "net": "USB_HOST_DM",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          23.1,
+          51.23,
+          23.4,
+          52.68
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.B8",
+        "net": "unconnected-(J601-SBU2-PadB8)",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          22.1,
+          51.23,
+          22.4,
+          52.68
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.B9",
+        "net": "DATA_RAW",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          21.25,
+          51.23,
+          21.85,
+          52.68
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.B12",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          20.45,
+          51.23,
+          21.05,
+          52.68
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.S1",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          19.18,
+          51.82,
+          20.18,
+          53.92
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.S1",
+        "net": "HOST_GND",
+        "layer": "B.Cu",
+        "bounds_mm": [
+          19.18,
+          51.82,
+          20.18,
+          53.92
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.S1",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          19.18,
+          56.25,
+          20.18,
+          57.85
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.S1",
+        "net": "HOST_GND",
+        "layer": "B.Cu",
+        "bounds_mm": [
+          19.18,
+          56.25,
+          20.18,
+          57.85
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.S1",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          27.82,
+          51.82,
+          28.82,
+          53.92
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.S1",
+        "net": "HOST_GND",
+        "layer": "B.Cu",
+        "bounds_mm": [
+          27.82,
+          51.82,
+          28.82,
+          53.92
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.S1",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          27.82,
+          56.25,
+          28.82,
+          57.85
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "J601.S1",
+        "net": "HOST_GND",
+        "layer": "B.Cu",
+        "bounds_mm": [
+          27.82,
+          56.25,
+          28.82,
+          57.85
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "R901.1",
+        "net": "USB_CC1",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          31.22,
+          55.43,
+          31.76,
+          56.07
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "R901.2",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          32.24,
+          55.43,
+          32.78,
+          56.07
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "F901.1",
+        "net": "DATA_RAW",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          36.975,
+          53.125,
+          38.225,
+          54.875
+        ]
+      },
+      {
+        "kind": "pad",
+        "ref": "F901.2",
+        "net": "DATA_5V",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          39.775,
+          53.125,
+          41.025,
+          54.875
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "0b4d2b1b-ee43-4b2a-a60a-ee3cfff81902",
+        "net": "DATA_5V",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          39.445,
+          57.045,
+          40.475,
+          58.075
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "17a0a7e1-b506-459f-a93a-450099ccc2ea",
+        "net": "DATA_5V",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          6.7255,
+          49.9763,
+          7.1021,
+          50.3529
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "25680926-a3ab-4aab-bc60-9256db089066",
+        "net": "DATA_5V",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          40.325,
+          52.262,
+          40.475,
+          54.075
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "2a205457-e274-4cc2-b396-eaa45963b12e",
+        "net": "DATA_5V",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          40.325,
+          53.925,
+          41.675,
+          54.075
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "4a7cee16-07ff-4aea-9f65-fde150c8a475",
+        "net": "DATA_5V",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          6.945,
+          50.21,
+          7.095,
+          51.625
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "5ff5a39c-047a-4c34-8c86-8a6243d4793f",
+        "net": "DATA_5V",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          6.945,
+          50.2029,
+          7.1021,
+          50.36
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "86f7d85d-e673-4d62-b59e-fd6dffaf411e",
+        "net": "DATA_5V",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          6.9521,
+          49.675,
+          7.63,
+          50.3529
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "94479c51-0fb5-4bee-b4d2-e32176bfda5d",
+        "net": "DATA_5V",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          40.325,
+          53.925,
+          40.475,
+          57.195
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "cf33dd8b-cbe1-4b59-a593-74a1b1476467",
+        "net": "DATA_5V",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          41.525,
+          53.925,
+          42.675,
+          55.075
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "2baec712-4478-48a5-8fd0-6ddec4be4aaf",
+        "net": "DATA_5V",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          6.5005,
+          49.7513,
+          7.1005,
+          50.3513
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "2baec712-4478-48a5-8fd0-6ddec4be4aaf",
+        "net": "DATA_5V",
+        "layer": "B.Cu",
+        "bounds_mm": [
+          6.5005,
+          49.7513,
+          7.1005,
+          50.3513
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "8caf1ab0-2fa5-459a-8a99-4ef9ba3cf766",
+        "net": "DATA_5V",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          40.1,
+          52.037,
+          40.7,
+          52.637
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "8caf1ab0-2fa5-459a-8a99-4ef9ba3cf766",
+        "net": "DATA_5V",
+        "layer": "B.Cu",
+        "bounds_mm": [
+          40.1,
+          52.037,
+          40.7,
+          52.637
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "061fa4f3-8d89-416d-a7ef-fabdd28ffb78",
+        "net": "DATA_RAW",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          37.525,
+          53.6753,
+          37.675,
+          54.075
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "08a6f0c3-03ab-4f43-b070-dab54540e276",
+        "net": "DATA_RAW",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          26.6724,
+          54.4339,
+          32.7,
+          54.5839
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "121caebd-befc-428d-a59c-baa31b3f99f0",
+        "net": "DATA_RAW",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          21.475,
+          52.421,
+          22.4175,
+          53.3635
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "19127012-d03e-4be8-96d7-22f7fb341e46",
+        "net": "DATA_RAW",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          32.55,
+          54.0569,
+          33.077,
+          54.5839
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "20b4ccd3-2312-44da-8693-af4989242348",
+        "net": "DATA_RAW",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          26.375,
+          51.88,
+          26.525,
+          52.7834
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "2bc468bb-97d5-4b83-81e0-215907ae9bc8",
+        "net": "DATA_RAW",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          35.1532,
+          51.3035,
+          37.675,
+          53.8253
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "46fe0dfa-4c18-4589-93cc-e134aa980f94",
+        "net": "DATA_RAW",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          25.9663,
+          53.2135,
+          26.1163,
+          53.8778
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "50cc72c3-bf98-4f44-b40c-5903949952d6",
+        "net": "DATA_RAW",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          25.9663,
+          52.6334,
+          26.525,
+          53.1921
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "6a27321a-726b-4693-9145-cb6a98c510a6",
+        "net": "DATA_RAW",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          21.475,
+          51.88,
+          21.625,
+          52.571
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "928e15bb-5144-4d00-ae4c-1345a81e0113",
+        "net": "DATA_RAW",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          22.2675,
+          53.2135,
+          26.1163,
+          53.3635
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "aae4d302-043d-49af-9609-91b777d83779",
+        "net": "DATA_RAW",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          25.9663,
+          53.7278,
+          26.8224,
+          54.5839
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "c677ae58-e423-43de-b45b-ef029c884ad6",
+        "net": "DATA_RAW",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          34.6897,
+          51.3035,
+          35.3032,
+          51.4535
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "cf82c752-0a8f-4c39-bb8e-681310db99ef",
+        "net": "DATA_RAW",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          32.927,
+          51.3035,
+          34.8397,
+          53.2162
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "f4665f26-e26e-4eea-9218-58bba8a14c1f",
+        "net": "DATA_RAW",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          25.9663,
+          53.0421,
+          26.1163,
+          53.3635
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "f507b458-db85-45a0-8d9d-7c4909bc23c6",
+        "net": "DATA_RAW",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          32.927,
+          53.0662,
+          33.077,
+          54.2069
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "0af77ae6-899a-453d-9601-0e58018c829a",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          16.37,
+          49.675,
+          16.52,
+          50.2686
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "0dd75e9b-38bd-4381-8e22-8298c4311145",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          8.75,
+          51.5746,
+          9.3771,
+          52.2017
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "1c820b18-84dc-4147-8386-fb654c34dbd8",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          40.405,
+          57.925,
+          42.475,
+          58.075
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "1ccb9b12-b6a7-42c1-9281-e75294332fd0",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          27.33,
+          51.88,
+          28.395,
+          52.945
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "1eb3c417-053e-415b-9ac8-b8f46018f7df",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          8.75,
+          51.475,
+          8.9,
+          51.7246
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "1f97a561-6636-4768-a240-bf0e9a4b1c6e",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          28.8419,
+          56.3781,
+          32.585,
+          56.5281
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "21b36096-9a72-4a4d-ac6b-6bdc24587674",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          19.605,
+          51.88,
+          20.67,
+          52.945
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "27f1b917-8534-4be0-852b-22c63e5261da",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          32.435,
+          56.3,
+          34.025,
+          56.45
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "2d6c7ee0-5d88-4a20-b621-549f3191721a",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          34.925,
+          53.975,
+          35.075,
+          54.3918
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "34c0054f-11ef-4cb4-9f1a-43c73cf417f6",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          10.48,
+          51.45,
+          11.33,
+          51.65
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "37594b1f-6cad-4856-812c-ef181fda661f",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          32.435,
+          56.3,
+          32.585,
+          56.5281
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "395fa9af-df78-40c2-94f3-a6940cab2d48",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          16.345,
+          49.225,
+          17.2811,
+          49.85
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "6108fe44-2d9f-47b8-88e2-4c2e6097e5de",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          30.125,
+          51.975,
+          30.825,
+          52.675
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "617cd0bd-9661-4326-80a7-2aed36d77058",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          8.555,
+          51.475,
+          8.9,
+          51.625
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "661b3424-8f45-4a67-9b2e-76a49056c088",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          32.435,
+          56.3781,
+          32.585,
+          57.075
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "673954a0-e7b3-4d86-a830-7f4c8054c66d",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          7.88,
+          51.45,
+          8.73,
+          51.65
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "6ba8fb6d-ac8f-4018-b082-44fd8f02e4b9",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          27.175,
+          51.88,
+          27.48,
+          52.03
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "76a2a128-b51c-4376-83a5-af2027bd3cb7",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          8.75,
+          49.675,
+          8.9,
+          51.625
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "7e6aaae9-6af8-4ac3-947b-26e2683da014",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          39.8442,
+          57.925,
+          40.555,
+          58.6358
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "7f6c50af-db14-4993-a440-08a699713d1b",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          28.245,
+          56.3781,
+          28.9919,
+          57.125
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "8283ebf0-794f-461b-9a5d-72b1504c7f21",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          9.9283,
+          51.475,
+          10.655,
+          52.2017
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "8823def5-c96f-4d29-a6ba-14807d91dcf4",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          32.435,
+          55.675,
+          32.585,
+          56.45
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "8bf7a967-7efe-41fe-bdc9-be90f8456199",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          28.245,
+          52.795,
+          29.525,
+          54.075
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "90a1f6cc-1472-4b3e-a375-e3883e147344",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          10.505,
+          51.475,
+          11.975,
+          52.945
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "9df7254e-12e0-41b6-8777-410e32249f47",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          30.125,
+          52.525,
+          30.275,
+          54.075
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "a6762747-ff33-430d-a903-d29ca733b211",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          39.169,
+          58.4858,
+          39.9942,
+          58.6358
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "a7932091-32d9-4e10-9f18-695b324043cc",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          29.375,
+          53.925,
+          30.275,
+          54.075
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "ac5e0346-d258-4cae-9b55-adbc1f103a12",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          20.52,
+          51.88,
+          20.825,
+          52.03
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "b3e409a8-e744-4658-af87-92541c79f8a9",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          15.817,
+          50.1186,
+          16.52,
+          50.8216
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "bb5cc4a9-30ce-46a8-a0c3-3de736232c51",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          33.875,
+          56.3,
+          34.025,
+          57.075
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "bebc6f26-bbe9-435d-8bdf-931b824b03ce",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          33.875,
+          53.975,
+          35.075,
+          55.175
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "c6338253-c360-4abf-95c2-0c445ff7f554",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          33.875,
+          55.025,
+          34.025,
+          56.45
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "d9f7ec36-840b-40de-b42d-7cc86c792d82",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          8.725,
+          49.65,
+          9.5,
+          50.8459
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "e4367497-80a0-469e-9bf6-8526bad93e4e",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          11.825,
+          52.795,
+          19.755,
+          52.945
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "f7cb2010-fc30-4192-994a-ed41ae3ab9c9",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          7.905,
+          51.475,
+          8.705,
+          51.625
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "fa057c4a-1aca-4d94-87b1-c43ea9e0309b",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          9.2271,
+          52.0517,
+          10.0783,
+          52.2017
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "fd8add5d-f62a-4953-b5fc-e58131ca5236",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          34.925,
+          54.2418,
+          39.319,
+          58.6358
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "fe774d97-c0e8-4896-91bc-7bb36b7ae768",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          42.325,
+          54.925,
+          45.475,
+          58.075
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "18b7f816-bf84-4e28-9489-94f4f6f63982",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          27.625,
+          49.175,
+          28.075,
+          49.625
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "18b7f816-bf84-4e28-9489-94f4f6f63982",
+        "net": "HOST_GND",
+        "layer": "B.Cu",
+        "bounds_mm": [
+          27.625,
+          49.175,
+          28.075,
+          49.625
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "4e442f37-883b-46fc-923e-93f9da7bc6c8",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          16.9811,
+          49.125,
+          17.3811,
+          49.525
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "4e442f37-883b-46fc-923e-93f9da7bc6c8",
+        "net": "HOST_GND",
+        "layer": "B.Cu",
+        "bounds_mm": [
+          16.9811,
+          49.125,
+          17.3811,
+          49.525
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "5abbfb4c-9044-4ef2-bc9a-7882b46c5161",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          11.03,
+          51.35,
+          11.43,
+          51.75
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "5abbfb4c-9044-4ef2-bc9a-7882b46c5161",
+        "net": "HOST_GND",
+        "layer": "B.Cu",
+        "bounds_mm": [
+          11.03,
+          51.35,
+          11.43,
+          51.75
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "a878b3ed-d020-439e-ab10-e7bb3a585d60",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          8.43,
+          51.35,
+          8.83,
+          51.75
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "a878b3ed-d020-439e-ab10-e7bb3a585d60",
+        "net": "HOST_GND",
+        "layer": "B.Cu",
+        "bounds_mm": [
+          8.43,
+          51.35,
+          8.83,
+          51.75
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "bc686bcc-51a1-4186-8487-7cd5fc07691e",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          23.475,
+          49.175,
+          23.925,
+          49.625
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "bc686bcc-51a1-4186-8487-7cd5fc07691e",
+        "net": "HOST_GND",
+        "layer": "B.Cu",
+        "bounds_mm": [
+          23.475,
+          49.175,
+          23.925,
+          49.625
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "e692688d-0963-44ca-82a9-f867c934128e",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          9.2,
+          50.5459,
+          9.6,
+          50.9459
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "e692688d-0963-44ca-82a9-f867c934128e",
+        "net": "HOST_GND",
+        "layer": "B.Cu",
+        "bounds_mm": [
+          9.2,
+          50.5459,
+          9.6,
+          50.9459
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "ff4d8416-16f2-4c97-9b5a-db33035aabd9",
+        "net": "HOST_GND",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          15.592,
+          50.4466,
+          16.192,
+          51.0466
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "ff4d8416-16f2-4c97-9b5a-db33035aabd9",
+        "net": "HOST_GND",
+        "layer": "B.Cu",
+        "bounds_mm": [
+          15.592,
+          50.4466,
+          16.192,
+          51.0466
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "1a4f9d3d-3347-4418-a48a-1deb52be4c33",
+        "net": "USB_CC1",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          22.675,
+          50.9299,
+          22.825,
+          52.03
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "27b6e7d2-0f61-4fb8-8d34-92628e41c19a",
+        "net": "USB_CC1",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          34.925,
+          51.875,
+          35.075,
+          52.6334
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "2da030af-a39a-4c4a-990c-0aecc1a228ec",
+        "net": "USB_CC1",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          31.9425,
+          55.0088,
+          32.1398,
+          55.2061
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "71938ac0-f43f-48e7-8f84-b7c1dc8acd35",
+        "net": "USB_CC1",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          20.0881,
+          50.9299,
+          22.825,
+          51.0799
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "84a079dd-1e12-4e74-8d24-c758b5d9a180",
+        "net": "USB_CC1",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          19.906,
+          50.9299,
+          20.2381,
+          51.262
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "915977e5-5b20-45c2-9182-0c36decbfbba",
+        "net": "USB_CC1",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          31.9898,
+          55.0561,
+          32.1398,
+          55.2502
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "c10152f1-c9b6-4f94-afbc-23bc7781db44",
+        "net": "USB_CC1",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          31.9898,
+          55.0561,
+          32.5023,
+          55.2061
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "daf1efd8-6236-4eca-90ae-70896e4db070",
+        "net": "USB_CC1",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          31.415,
+          55.1002,
+          32.1398,
+          55.825
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "fd09755d-496b-413b-bfa5-475a1f7091f0",
+        "net": "USB_CC1",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          32.3523,
+          52.4834,
+          35.075,
+          55.2061
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "60a07cbf-aa6a-490c-8ae7-954523571783",
+        "net": "USB_CC1",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          19.681,
+          50.887,
+          20.281,
+          51.487
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "60a07cbf-aa6a-490c-8ae7-954523571783",
+        "net": "USB_CC1",
+        "layer": "B.Cu",
+        "bounds_mm": [
+          19.681,
+          50.887,
+          20.281,
+          51.487
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "af2b7025-78a9-41ab-9a6c-8526a7c47a65",
+        "net": "USB_CC1",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          31.7175,
+          54.7838,
+          32.3175,
+          55.3838
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "af2b7025-78a9-41ab-9a6c-8526a7c47a65",
+        "net": "USB_CC1",
+        "layer": "B.Cu",
+        "bounds_mm": [
+          31.7175,
+          54.7838,
+          32.3175,
+          55.3838
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "5def0bea-df99-44ea-8ed8-51b66f0fa931",
+        "net": "USB_CC2",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          31.9702,
+          57.4802,
+          35.5698,
+          57.6302
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "6296df3a-b08e-4eea-a6d1-7df0afb69447",
+        "net": "USB_CC2",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          25.675,
+          50.9299,
+          25.825,
+          52.03
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "69b5499f-1423-4adc-92ba-9490b751c574",
+        "net": "USB_CC2",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          35.4198,
+          56.925,
+          36.125,
+          57.6302
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "817bd27a-8b6a-412d-9121-ed3ed0e77f17",
+        "net": "USB_CC2",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          30.6729,
+          57.268,
+          31.222,
+          57.418
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "8b24a30b-f522-4a28-85e4-38ede0693802",
+        "net": "USB_CC2",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          31.072,
+          56.925,
+          31.565,
+          57.418
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "c3a23e74-caa5-4979-9513-5f14fd493ed9",
+        "net": "USB_CC2",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          31.415,
+          56.925,
+          32.1202,
+          57.6302
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "cdb81b7e-3181-40bd-b6ba-015a46049f6b",
+        "net": "USB_CC2",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          27.967,
+          50.9299,
+          28.3499,
+          51.3128
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "f3dae848-bd74-4549-8e24-4d94032c197a",
+        "net": "USB_CC2",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          25.675,
+          50.9299,
+          28.117,
+          51.0799
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "06365cb8-814f-4fb3-9f88-2668fa15ea3a",
+        "net": "USB_CC2",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          27.9749,
+          50.9378,
+          28.5749,
+          51.5378
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "06365cb8-814f-4fb3-9f88-2668fa15ea3a",
+        "net": "USB_CC2",
+        "layer": "B.Cu",
+        "bounds_mm": [
+          27.9749,
+          50.9378,
+          28.5749,
+          51.5378
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "fb747376-e77d-4674-bb66-b7ff6a01ba6e",
+        "net": "USB_CC2",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          30.4479,
+          57.043,
+          31.0479,
+          57.643
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "fb747376-e77d-4674-bb66-b7ff6a01ba6e",
+        "net": "USB_CC2",
+        "layer": "B.Cu",
+        "bounds_mm": [
+          30.4479,
+          57.043,
+          31.0479,
+          57.643
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "2db6799c-208d-4d35-a07c-359425b7b2ae",
+        "net": "USB_HOST_DM",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          24.175,
+          51.88,
+          24.325,
+          52.9801
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "3ead35d2-c8fa-4d0a-bced-fe9e04fe75e7",
+        "net": "USB_HOST_DM",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          15.235,
+          51.725,
+          15.7349,
+          51.875
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "73d30ff2-9c21-442b-9c6e-c0570aec01ad",
+        "net": "USB_HOST_DM",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          23.175,
+          52.8301,
+          24.325,
+          52.9801
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "997ad49d-aede-430e-b2fc-7edd7f44cb4c",
+        "net": "USB_HOST_DM",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          24.0651,
+          50.1396,
+          24.325,
+          50.3995
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "ad9022c9-2469-44dc-b4e6-26f2284d6bc1",
+        "net": "USB_HOST_DM",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          24.5495,
+          49.875,
+          30.825,
+          50.025
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "b21f8fe3-e603-40ee-b0e0-a108669309de",
+        "net": "USB_HOST_DM",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          24.175,
+          49.875,
+          24.6995,
+          50.3995
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "b4f33796-d213-4790-8372-e146c4a81dfa",
+        "net": "USB_HOST_DM",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          17.1703,
+          50.1396,
+          24.2151,
+          50.2896
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "bccfee32-0f2f-42fa-8876-f607bb58339e",
+        "net": "USB_HOST_DM",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          15.5849,
+          50.1396,
+          17.3203,
+          51.875
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "d1d34b66-2f0b-4226-8c74-71d66a28b459",
+        "net": "USB_HOST_DM",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          24.175,
+          50.2495,
+          24.325,
+          52.03
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "d947c944-2cff-41c5-a72d-6b2898e5c24c",
+        "net": "USB_HOST_DM",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          23.175,
+          51.88,
+          23.325,
+          52.9801
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "06341ecf-7e84-4977-b13f-f4ca6ea0082d",
+        "net": "USB_HOST_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          23.675,
+          50.7325,
+          23.825,
+          51.1549
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "10944546-d487-4a94-b091-63ec79fd9858",
+        "net": "USB_HOST_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          24.9751,
+          50.6298,
+          27.931,
+          50.7798
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "27239992-0dbf-4b4c-a5c5-012f6cf30b73",
+        "net": "USB_HOST_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          23.2498,
+          50.5797,
+          23.825,
+          51.1549
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "2f37d1d5-f06a-45fe-af5e-ae8f283d4c05",
+        "net": "USB_HOST_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          27.781,
+          50.6298,
+          30.288,
+          50.7798
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "44eb273d-6e34-42ed-bbb7-20864921aef5",
+        "net": "USB_HOST_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          23.675,
+          51.0049,
+          23.825,
+          52.03
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "456e80be-4954-478c-bf50-7a90c1b2a9e2",
+        "net": "USB_HOST_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          32.225,
+          52.7168,
+          32.375,
+          54.075
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "4ccbc726-5197-4af7-9364-3c5d17df7632",
+        "net": "USB_HOST_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          24.675,
+          50.9299,
+          24.825,
+          52.03
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "75ff31a0-cfdc-49f2-b71b-13556f02e678",
+        "net": "USB_HOST_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          24.675,
+          50.6298,
+          25.1251,
+          51.0799
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "981b7522-fd49-45aa-ae9a-b80ea1f0101e",
+        "net": "USB_HOST_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          18.5803,
+          50.5797,
+          23.3998,
+          50.7297
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "9d1cd8a4-fe88-41d6-9446-84f290f17cb3",
+        "net": "USB_HOST_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          23.6433,
+          50.7008,
+          23.825,
+          50.8825
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "bc804cd3-17e5-4ca9-8ea6-75115f58b692",
+        "net": "USB_HOST_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          17.435,
+          50.5797,
+          18.7303,
+          51.875
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "bf5d55f9-f856-47e5-92e9-4efd5fff6b30",
+        "net": "USB_HOST_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          27.781,
+          50.4007,
+          27.931,
+          50.7798
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "e3058379-33a3-4bb4-843e-d5e5c87c79b0",
+        "net": "USB_HOST_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          30.138,
+          50.6298,
+          32.375,
+          52.8668
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "76f5814e-018a-449a-9247-d8fc086eeb56",
+        "net": "USB_HOST_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          23.4183,
+          50.4758,
+          24.0183,
+          51.0758
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "76f5814e-018a-449a-9247-d8fc086eeb56",
+        "net": "USB_HOST_DP",
+        "layer": "B.Cu",
+        "bounds_mm": [
+          23.4183,
+          50.4758,
+          24.0183,
+          51.0758
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "d70145b3-9175-4b16-8710-a1087c969104",
+        "net": "USB_HOST_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          27.556,
+          50.1757,
+          28.156,
+          50.7757
+        ]
+      },
+      {
+        "kind": "via",
+        "ref": "d70145b3-9175-4b16-8710-a1087c969104",
+        "net": "USB_HOST_DP",
+        "layer": "B.Cu",
+        "bounds_mm": [
+          27.556,
+          50.1757,
+          28.156,
+          50.7757
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "41676408-8b42-4b88-8b41-623a169d3d18",
+        "net": "USB_UP_DM",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          13.83,
+          51.34,
+          14.365,
+          51.875
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "9d213443-abb1-4f8e-a006-b09ad1cb4cd9",
+        "net": "USB_UP_DM",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          13.83,
+          49.675,
+          13.98,
+          51.49
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "5c78af9f-c08c-448a-8d6d-dcd8637fa594",
+        "net": "USB_UP_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          14.725,
+          52.0497,
+          15.0983,
+          52.423
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "64e34ff4-e504-44a7-a746-1f542022d6a9",
+        "net": "USB_UP_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          15.867,
+          51.725,
+          16.565,
+          52.423
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "72d30123-60ba-4496-bc3f-5a1e267182d8",
+        "net": "USB_UP_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          14.9483,
+          52.273,
+          16.017,
+          52.423
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "af363905-0e6e-49b2-b072-ebc8dc292ec6",
+        "net": "USB_UP_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          14.725,
+          50.05,
+          14.875,
+          52.1997
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "d37e1e15-6402-403b-a75f-40ee02ea62ad",
+        "net": "USB_UP_DP",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          14.725,
+          49.675,
+          15.25,
+          50.2
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "6f8c8ba1-95ed-45e8-bc0f-6f8fcd666e06",
+        "net": "USB_VDD1",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          10.02,
+          49.675,
+          11.44,
+          49.825
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "ecca1100-8616-4a53-96b8-f3173f6c4437",
+        "net": "USB_VDD1",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          9.545,
+          51.0,
+          10.17,
+          51.625
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "f2c230eb-962d-4d6b-88a5-c5745df0313e",
+        "net": "USB_VDD1",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          11.29,
+          49.675,
+          12.71,
+          49.825
+        ]
+      },
+      {
+        "kind": "track",
+        "ref": "fde11103-2725-4dfb-9293-63c623a7cebe",
+        "net": "USB_VDD1",
+        "layer": "F.Cu",
+        "bounds_mm": [
+          10.02,
+          49.675,
+          10.17,
+          51.15
+        ]
+      }
+    ]
+  },
+  "afe_native_copper_item_count": 3313,
+  "afe_copper_y_max_mm": 47.5,
+  "afe_y_max_primitive": {
+    "kind": "filled_zone",
+    "layer": "In1.Cu",
+    "ref": "AFE_GND_PLANE",
+    "bbox": [
+      0.4,
+      0.4,
+      47.6,
+      47.5
+    ]
+  },
+  "all_layer_exclusion_start_y_mm": 47.5,
+  "c405_mpn": "MSASE31LBB7226MTNA01",
+  "c405_position_mm": [
+    3.9,
+    42.5
+  ],
+  "c405_max_body_mm": [
+    3.5,
+    1.9,
+    1.9
+  ],
+  "cap_envelope_including_solder_and_xy_allowance_mm": [
+    1.75,
+    41.15,
+    0,
+    6.050000000000001,
+    43.85,
+    2.0
+  ],
+  "relative_xy_registration_allowance_mm": 0.4,
+  "minimum_local_surface_gap_required_mm": 8.2,
+  "upper_host_back_solder_allowance_mm": 0.3,
+  "upper_board_min_thickness_assumed_mm": 1.5,
+  "c405_minimum_external_host_lower_bound_mm": 8.356930772717934,
+  "nearest_external_host_primitive": {
+    "kind": "via",
+    "ref": "2baec712-4478-48a5-8fd0-6ddec4be4aaf",
+    "net": "DATA_5V",
+    "layer": "B.Cu",
+    "bounds_mm": [
+      6.5005,
+      49.7513,
+      7.1005,
+      50.3513
+    ]
+  },
+  "scope": "Distances between conservative primitive bounding boxes. HOST In1/In3 planes are embedded and excluded from bare external-copper distances; PCB dielectric and full insulation system require separate qualification. Does not bound all components, wires, mounting hardware, battery or contamination. Assembly assumptions require verification."
+}

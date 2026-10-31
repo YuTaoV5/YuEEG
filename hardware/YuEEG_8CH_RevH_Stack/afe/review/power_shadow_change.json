@@ -1,0 +1,90 @@
+{
+  "status": "IMPLEMENTED_ROUTED_ENGINEERING_CHANGE_NOT_ASSEMBLY_RELEASE",
+  "baseline_pcb_sha256": "626c03b4dd3391a60a2687d95113357e0870bf6a04d825b37c71d953124e91f8",
+  "positions": {
+    "C405": [
+      3.9,
+      42.5,
+      180
+    ],
+    "R401": [
+      7.05,
+      40.45,
+      0
+    ],
+    "R402": [
+      5.2,
+      44.5,
+      0
+    ],
+    "D403": [
+      19,
+      42.0,
+      0
+    ]
+  },
+  "ripped": [
+    {
+      "uuid": "8beb8c0b-aa42-4af7-95cc-a57c5d30b13c",
+      "net": "+4V4_PRE"
+    },
+    {
+      "uuid": "ef5532a0-89e0-4b28-9c2d-647053b7c89b",
+      "net": "+4V4_PRE"
+    },
+    {
+      "uuid": "14da153e-9846-498a-b647-03e6a3e549ff",
+      "net": "GND"
+    },
+    {
+      "uuid": "a432fb9f-9310-4ff5-b894-40b6075b1a06",
+      "net": "GND"
+    },
+    {
+      "uuid": "d529f362-b239-46df-a5ee-e5e585f77b4b",
+      "net": "GND"
+    },
+    {
+      "uuid": "206f69fb-89c0-4245-905e-a9bc621f2c86",
+      "net": "LDO_FB"
+    },
+    {
+      "uuid": "3ebcaa89-071b-4189-8929-09e12e8631e9",
+      "net": "LDO_FB"
+    },
+    {
+      "uuid": "678f99df-6842-4022-94c1-19df1748d8ad",
+      "net": "LDO_FB"
+    },
+    {
+      "uuid": "9c930b23-76d5-4720-873e-ed3c51d23904",
+      "net": "LDO_FB"
+    },
+    {
+      "uuid": "9ddc8501-bb1a-4875-bc66-851686d3f53b",
+      "net": "LDO_FB"
+    },
+    {
+      "uuid": "42e8b6c4-5def-494a-84f0-a7a55d7438f2",
+      "net": "SYS_5V"
+    }
+  ],
+  "exclusion_y_min_mm": 47.5,
+  "c405_local_gnd_via_mm": [
+    1.5,
+    42.5
+  ],
+  "c405_ground_return_track_width_mm": 0.5,
+  "after_pcb_sha256": "71e303ebc239bd1df15d830467d6d5bdbaa1654bfb61b79c7e91aa08b627cd79",
+  "reason": "Move high capacitor away from actual external HOST copper and extend lower-board copper exclusion; not a safety qualification.",
+  "source": "https://ds.yuden.co.jp/TYCOMPAS/ap/detail?pn=MSASE31LBB7226MTNA01&u=M",
+  "cap_dimensions_max_mm": [
+    3.5,
+    1.9,
+    1.9
+  ],
+  "current_pcb_sha256": {
+    "afe": "2eb85cbd1e8bc271004dadf2321513e58e03e8ef493d7506ea8eff0663e4da2a",
+    "digital": "5cd4df1e92ff3f235302a9acfa4c97530c9c22d2ba01bcc125e22868934183a4"
+  }
+}

@@ -30,9 +30,9 @@
   {
     "board": "afe",
     "reference": "C405",
-    "value": "22u 16V X7R",
+    "value": "22u 16V X7R MSASE31LBB7226MTNA01",
     "models": [
-      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+      "${KIPRJMOD}/../models/TY_MSASE31LBB7226MTNA01_1206_max_envelope.wrl"
     ],
     "existing": [
       true
@@ -2920,13 +2920,13 @@
     "reference": "J601",
     "value": "USB-C DATA / FLASH - ISOLATED",
     "models": [
-      "${KICAD9_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.step"
+      "${KIPRJMOD}/../models/HRO_TYPE_C_31_M_12_original_envelope.wrl"
     ],
     "existing": [
-      false
+      true
     ],
     "available_wrl_alternative": [
-      false
+      true
     ]
   },
   {

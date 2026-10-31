@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>X:\Items\YuEEG\hardware\YuEEG_8CH_RevH_Stack\afe\YuEEG_H_AFE.kicad_sch</source>
-    <date>2026-10-30T19:57:22+0800</date>
+    <date>2026-10-31T09:17:56+0800</date>
     <tool>Eeschema 9.0.5</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -2289,12 +2289,12 @@
       <tstamps>19c41cb1-d973-4d45-bf1e-6c96cc544e03</tstamps>
     </comp>
     <comp ref="C405">
-      <value>22u 16V X7R</value>
-      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
-      <datasheet>~</datasheet>
+      <value>22u 16V X7R MSASE31LBB7226MTNA01</value>
+      <footprint>YuEEG:TY_MSASE31LBB7226MTNA01_1206</footprint>
+      <datasheet>https://ds.yuden.co.jp/TYCOMPAS/ap/detail?pn=MSASE31LBB7226MTNA01&amp;u=M</datasheet>
       <fields>
-        <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
-        <field name="Datasheet">~</field>
+        <field name="Footprint">YuEEG:TY_MSASE31LBB7226MTNA01_1206</field>
+        <field name="Datasheet">https://ds.yuden.co.jp/TYCOMPAS/ap/detail?pn=MSASE31LBB7226MTNA01&amp;u=M</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>

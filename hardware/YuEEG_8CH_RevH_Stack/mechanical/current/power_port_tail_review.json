@@ -1,7 +1,7 @@
 {
   "status": "CONDITIONAL_TAIL_SCREEN_NOT_ASSEMBLY_RELEASE",
-  "digital_pcb_sha256": "179565dde66c6899577eb7d980690d5ab896a0eafdae337fd2396ba05dafb5c8",
-  "afe_pcb_sha256": "626c03b4dd3391a60a2687d95113357e0870bf6a04d825b37c71d953124e91f8",
+  "digital_pcb_sha256": "5cd4df1e92ff3f235302a9acfa4c97530c9c22d2ba01bcc125e22868934183a4",
+  "afe_pcb_sha256": "2eb85cbd1e8bc271004dadf2321513e58e03e8ef493d7506ea8eff0663e4da2a",
   "surface_gap_mm": 8.5,
   "maximum_tail_solder_projection_allowed_below_digital_mm": 1.2,
   "additional_reserved_xy_margin_around_pad_bbox_mm": 0.25,
