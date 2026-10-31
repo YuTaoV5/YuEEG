@@ -9,23 +9,23 @@
     "YuEEG_H_DISPLAY_LINK.kicad_sch": "7b8e9b4accc323bce52de23f84eca9f15cc29d6c7f0c127f8f621588cd61fe90",
     "footprints/YuEEG_Display.pretty/OCN_OK_14F024_04_GangMask.kicad_mod": "583c0baa661e8fbfeae478e8de6b4c2b6672e3e5a2687ccfda6501f1701e613c",
     "footprints/YuEEG_Display.pretty/OCN_OK_14GM024_04_LogicalMate.kicad_mod": "071d9fa46b067f7375839d0f7296d4f93920aeac79c37a31ef9eafd28694f31e",
-    "review/design_contract.json": "89260bf10de4593328f75d0a26b393322d1235031275f56029e106e1b19fab26",
-    "review/fold_alignment.json": "f772fae1b837030899ce621972e346b94a39bca872ebf8744a2d763548e37fa2",
+    "review/design_contract.json": "ba84db7ae22199cc02e52a775d5694b3dc58a4663b36ace4a7b8d2a99e209aac",
+    "review/fold_alignment.json": "c30d2652c63e71439af2274b0ea2c745d7aac8544ea15c40a75d34f37a169abc",
     "review/expected_connections.json": "1ae5ad55bb348ecfc4bffedfce0d61f58a91911f8bc7a0364c7ba64039a88266",
-    "review/drc_current.json": "62d19ac2e3c8d80ab23271b2899b76fb1251634d281ac06af01604dba69bb32d",
-    "review/erc_current.json": "b069dc76de4ac914ee1e666c3c9b7f554beae323b16731de60f9fa905badb3dc",
+    "review/drc_current.json": "1aba73705b6a95147de65d779dd4b7a172abd3f17451a533810f3eddd5135529",
+    "review/erc_current.json": "a21f108039720214580c0e360c1ae39a8d1ce8146c186778a3c682157d65b834",
     "review/netlist.xml": "f61ffcb4cc6be98eb85e53d0cf13f9d3204ed950293717aa52a9036967a95165",
     "review/geometry.json": "bba6dc05bca630585621c7fea3d62c1b3a01319d0219ad62ac974536707dfbc5",
-    "review/fold_space.json": "b333591f8391902f66367c1cd4800bea041878eb40e81c4ed1bdc1ce00cc3092",
+    "review/fold_space.json": "14b633149ced107983c5b7f241b25c72e3485714c8c57c2bc035abdf8e5f867f",
     "review/neighbor_native.json": "a8a85cf302f964959844527d3e4080833fe258a604100dbce4fa5edd23fec741",
     "review/flat_and_fold.png": "1bf376ea66bf813735c28433133cd48f618637e37b6bb33716d675a899c4a8de",
     "review/flat_and_fold.svg": "7909b09a0ab06eac4ea50be3b91632d7156fe9a1c5e6ec77088108dac944a7cb",
     "review/fold_space.png": "2b2b40c73e2348a6964bbe2114db1470b65059428129467ea2bab7e198c5f702",
-    "review/fold_space.svg": "0369edd0df6e90a8025e2e4f7fe8e95e2ea78a130a3c89087b2dab3953866e64"
+    "review/fold_space.svg": "9dc43df8d48fdbe0d2e88290a514304150b70d2473e37f82693ec67fcbac6ca6"
   },
   "baseline_pcb_sha256": {
     "afe": "626c03b4dd3391a60a2687d95113357e0870bf6a04d825b37c71d953124e91f8",
-    "digital": "b05a6924490a5af3d4159e10566bda3ad422d91f38a9d9845cedaab8a1e003db",
+    "digital": "179565dde66c6899577eb7d980690d5ab896a0eafdae337fd2396ba05dafb5c8",
     "power": "772131212bf444de40b23215ee12a9c742a6c3d58acb581afa2b7b963272e4f9"
   },
   "checks": {
@@ -37,7 +37,7 @@
     "bend_vias": 0,
     "nonparallel_bend_tracks": 0
   },
-  "main_boards_modified": false,
+  "main_boards_modified_by_this_accessory_build": false,
   "release_gates": [
     "Delivered connector pin-1 and end-to-end continuity",
     "Fabricator stackup, advanced vias, gang coverlay and stiffeners",

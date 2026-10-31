@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-30T21:57:38.797100+08:00",
+  "timestamp": "2026-10-31T08:20:47.673147+08:00",
   "battery": "Sony NP-BX1, 1S; supersedes NP-FW50 goal wording",
   "release_status": "DEVELOPMENT; contact mechanics, display FPC and system verification unresolved",
   "boards": {
@@ -48,7 +48,7 @@
       "unconnected": 0,
       "parity": 0,
       "erc": 0,
-      "pcb_sha256": "b05a6924490a5af3d4159e10566bda3ad422d91f38a9d9845cedaab8a1e003db",
+      "pcb_sha256": "179565dde66c6899577eb7d980690d5ab896a0eafdae337fd2396ba05dafb5c8",
       "source_files_sha256": {
         "circuit_01.kicad_sch": "c0f693fd385f79596c60d5a70205e0a44c8216596c28d11cdf796709a7d78db7",
         "circuit_02.kicad_sch": "1b99737c7442ee5dfb7cd9ddb321703e2ffeb85996beade8d0aac2adc8ec3189",
@@ -68,16 +68,16 @@
         "circuit_16.kicad_sch": "9b08944bbc8ec44dd2b42ec3b07372228cdf1e23b216129deea06d55842acce1",
         "circuit_17.kicad_sch": "9bb584f83fd385fcda859409139c8150917e8697ef384acd52940725d571e66e",
         "circuit_18.kicad_sch": "51f8934fc0aea0291a5cbbedd2db869daf9022fe440b231bbb38e59dd4c09559",
-        "circuit_19.kicad_sch": "63e7a71b97699af36f3f76da9dc3d385d4a533f1cfbbbeb620ca74e92c2f8911",
+        "circuit_19.kicad_sch": "39cf230372b534b2fb9b29e58fed0663a9f1f1b297a660df8267af4b27772c90",
         "circuit_20.kicad_sch": "da6ec5489c418fcda9ee71ac1287946019e80a8d0844846b4fe62894c4739b9b",
         "circuit_21.kicad_sch": "1165746ed52cc5b2cc4a88130b5b0193292b6b4143ca56a7a3eab449dc170933",
         "YuEEG_H_DIGITAL.kicad_sch": "7b15f179f34a4b91e1917dffe0318838c0324ba2e1d03bf3edec0fda02394c79",
         "YuEEG_H_DIGITAL.kicad_pro": "4eff9ef9a380ebc8f8516bd3811d1cd8f738c10bf196233690634d5226cb001d",
         "YuEEG_H_DIGITAL.kicad_dru": "1b106febb83945f94ebf1a0b23c9de8b05920d7c929839018c15b59e06a3cc9f",
-        "BOM.csv": "b20163aaf200dadafc2534bf600771e28b1b56f462b4553f4bc7aac76b0e4209",
+        "BOM.csv": "10e57f857c553a79972382894bf43158dc1a7d249585e2b2ab0f0dce1576bfb6",
         "fp-lib-table": "7fee321fac63dfa191da7d740e87f96a5395da8fc76fa626673a9cb152a2124a",
         "sym-lib-table": "6cf4513f28ea28ee6b2f4ae3e0b4f779ca0736a738bdbed1bd2e64672348b99f",
-        "review/netlist.xml": "e0fcd612053eb3e2c71bf03278a6a541766b43641c26ce2806e280a34b80d6fe",
+        "review/netlist.xml": "a9f198f8ce5e0466c48aa2f1b957b56aa41ba51e56d4157590fb5e37879dcc98",
         "review/expected_connections.json": "cee7435445ee2d52a37c2d3be5a3d44d458246d0d8fa84b4665e79f363730a1b"
       }
     },

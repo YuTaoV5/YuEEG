@@ -3,7 +3,7 @@
   "selected_architecture": "USB isolation, Type-C and host protection stay on digital; stack may exceed screen",
   "baseline_pcb_sha256": {
     "afe": "626c03b4dd3391a60a2687d95113357e0870bf6a04d825b37c71d953124e91f8",
-    "digital": "b05a6924490a5af3d4159e10566bda3ad422d91f38a9d9845cedaab8a1e003db",
+    "digital": "179565dde66c6899577eb7d980690d5ab896a0eafdae337fd2396ba05dafb5c8",
     "power": "772131212bf444de40b23215ee12a9c742a6c3d58acb581afa2b7b963272e4f9"
   },
   "battery_model": "Sony NP-BX1",

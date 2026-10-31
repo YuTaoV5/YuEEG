@@ -1,7 +1,7 @@
 {
   "status": "PROTOTYPE_GEOMETRIC_CHECK_NOT_MATING_OR_ASSEMBLY_RELEASE",
   "pcb_sha256": "51979b486cb4e063baf91e5e389caad5001929970646c76e1cca3f596b3a5b12",
-  "main_pcb_sha256": "b05a6924490a5af3d4159e10566bda3ad422d91f38a9d9845cedaab8a1e003db",
+  "main_pcb_sha256": "179565dde66c6899577eb7d980690d5ab896a0eafdae337fd2396ba05dafb5c8",
   "upper_socket_folded_pad_checks": [
     {
       "pin": "1",

@@ -111,4 +111,4 @@ R2002,100k,Resistor_SMD:R_0603_1608Metric,circuit_19,~
 R2003,47k,Resistor_SMD:R_0603_1608Metric,circuit_19,~
 R2004,47k,Resistor_SMD:R_0603_1608Metric,circuit_19,~
 JH1,TMM-110-03-L-D / 4mm POST / bottom logical,YuEEG:Samtec_TMM_110_03_BottomLogical,circuit_19,https://www.samtec.com/products/tmm-110-03-l-d
-JH2,POWER INPUT: 1=5V 2=CELL_SENSE 3/4=GND,Connector_JST:JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal,circuit_19,~
+JH2,S4B-PH-K-S / 5V+CELL SENSE / RIGHT,Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal,circuit_19,https://www.jst-mfg.com/product/pdf/eng/ePH.pdf

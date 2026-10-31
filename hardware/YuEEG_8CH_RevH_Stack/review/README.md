@@ -6,4 +6,6 @@ Use `current_check_summary.json` to identify current PCB and schematic/project/B
 
 `devtools/` preserves development transformations, including one-shot migration scripts. Some depend on local `logs/`, old source generations, KiCad Python or local tool paths. **Do not replay the directory as a clean-build pipeline.** Edit the supplied native KiCad projects and regenerate checks/exports deliberately. Current native source files are the editable design; these historical transformations are supporting evidence.
 
+`digital/review/right_power_port.json` records the implemented right-facing PH4 change. Current cable reservation and below-board tail screening are in `mechanical/current/power_harness_routing_review.json` and `power_port_tail_review.json`; their assembly assumptions remain to be verified. Follow `docs/REVH_POWER_HARNESS.md`, including the JH2 tail trim requirement; clean native checks do not qualify a delivered harness.
+
 The engineering checkpoint remains incomplete: the power-board temporary terminal must be replaced by a qualified battery-probe arrangement; screen FPC reach/support and exact procurement are unresolved; size optimization and final assembly/process review remain open. No current report proves acquisition noise, full concurrent operation, assembled isolation or human-use qualification.

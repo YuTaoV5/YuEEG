@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>X:\Items\YuEEG\hardware\YuEEG_8CH_RevH_Stack\digital\YuEEG_H_DIGITAL.kicad_sch</source>
-    <date>2026-10-30T20:33:21+0800</date>
+    <date>2026-10-31T08:20:21+0800</date>
     <tool>Eeschema 9.0.5</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -2221,12 +2221,12 @@
       <tstamps>9ddbd958-a82a-4713-bcb3-4151d4695e8c</tstamps>
     </comp>
     <comp ref="JH2">
-      <value>POWER INPUT: 1=5V 2=CELL_SENSE 3/4=GND</value>
-      <footprint>Connector_JST:JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal</footprint>
-      <datasheet>~</datasheet>
+      <value>S4B-PH-K-S / 5V+CELL SENSE / RIGHT</value>
+      <footprint>Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal</footprint>
+      <datasheet>https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</datasheet>
       <fields>
-        <field name="Footprint">Connector_JST:JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal</field>
-        <field name="Datasheet">~</field>
+        <field name="Footprint">Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal</field>
+        <field name="Datasheet">https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>

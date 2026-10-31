@@ -1,0 +1,140 @@
+{
+  "digital": {
+    "reference": "JH2",
+    "pcb_sha256": "179565dde66c6899577eb7d980690d5ab896a0eafdae337fd2396ba05dafb5c8",
+    "xy_mm": [
+      32.4,
+      38.5
+    ],
+    "rotation_deg": 90.0,
+    "courtyard_xy_mm": [
+      30.55,
+      30.05,
+      39.15,
+      40.95
+    ],
+    "pads": {
+      "1": {
+        "net": "SYS_5V",
+        "xy_mm": [
+          32.4,
+          38.5
+        ],
+        "native_pad_bbox_xy_mm": [
+          31.525,
+          37.9,
+          33.275,
+          39.1
+        ]
+      },
+      "2": {
+        "net": "BAT_PROTECTED_SENSE",
+        "xy_mm": [
+          32.4,
+          36.5
+        ],
+        "native_pad_bbox_xy_mm": [
+          31.525,
+          35.9,
+          33.275,
+          37.1
+        ]
+      },
+      "3": {
+        "net": "GND",
+        "xy_mm": [
+          32.4,
+          34.5
+        ],
+        "native_pad_bbox_xy_mm": [
+          31.525,
+          33.9,
+          33.275,
+          35.1
+        ]
+      },
+      "4": {
+        "net": "GND",
+        "xy_mm": [
+          32.4,
+          32.5
+        ],
+        "native_pad_bbox_xy_mm": [
+          31.525,
+          31.9,
+          33.275,
+          33.1
+        ]
+      }
+    }
+  },
+  "power": {
+    "reference": "JP2",
+    "pcb_sha256": "772131212bf444de40b23215ee12a9c742a6c3d58acb581afa2b7b963272e4f9",
+    "xy_mm": [
+      7.5,
+      11.0
+    ],
+    "rotation_deg": 180.0,
+    "courtyard_xy_mm": [
+      0.9,
+      5.9,
+      14.1,
+      16.1
+    ],
+    "pads": {
+      "1": {
+        "net": "SYS_5V",
+        "xy_mm": [
+          10.5,
+          13.85
+        ],
+        "native_pad_bbox_xy_mm": [
+          10.0,
+          12.1,
+          11.0,
+          15.6
+        ]
+      },
+      "2": {
+        "net": "BAT_PROTECTED_SENSE",
+        "xy_mm": [
+          8.5,
+          13.85
+        ],
+        "native_pad_bbox_xy_mm": [
+          8.0,
+          12.1,
+          9.0,
+          15.6
+        ]
+      },
+      "3": {
+        "net": "GND",
+        "xy_mm": [
+          6.5,
+          13.85
+        ],
+        "native_pad_bbox_xy_mm": [
+          6.0,
+          12.1,
+          7.0,
+          15.6
+        ]
+      },
+      "4": {
+        "net": "GND",
+        "xy_mm": [
+          4.5,
+          13.85
+        ],
+        "native_pad_bbox_xy_mm": [
+          4.0,
+          12.1,
+          5.0,
+          15.6
+        ]
+      }
+    }
+  }
+}

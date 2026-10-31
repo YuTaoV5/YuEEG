@@ -1,6 +1,6 @@
 """Verify Rev H engineering artifact bindings; does not rerun KiCad or release hardware."""
 from pathlib import Path
-import csv,hashlib,json,sys,xml.etree.ElementTree as E
+import csv,hashlib,json,sys,re,xml.etree.ElementTree as E
 ROOT=Path(__file__).resolve().parents[1];H=ROOT/'hardware/YuEEG_8CH_RevH_Stack'
 sys.path.insert(0,str(ROOT/'hardware/YuEEG_8CH_RevG/review'))
 from sexpr_io import loads,sub
@@ -59,11 +59,41 @@ def verify():
  for name,digest in info['source_sha256'].items():
   require(sha(H/'firmware/ads1299_driver'/name)==digest and sha(ROOT/'Firmware/ads1299_driver'/name)==digest,'Active/snapshot firmware mismatch '+name)
  for name,digest in info['binaries_sha256'].items():require(sha(H/'firmware/build'/name)==digest,'Firmware binary mismatch '+name)
+ port=json.loads((H/'digital/review/right_power_port.json').read_text())
+ require(port['after_pcb_sha256']==summary['boards']['digital']['pcb_sha256'],'Stale right-facing power port record')
+ require(port['pin_map']=={'1':'SYS_5V','2':'BAT_PROTECTED_SENSE','3':'GND','4':'GND'},'Changed PH4 electrical contract')
+ ports=json.loads((H/'mechanical/current/power_ports_native.json').read_text())
+ for board in ['digital','power']:
+  require(ports[board]['pcb_sha256']==summary['boards'][board]['pcb_sha256'],'Stale native power-port extract: '+board)
+  require({k:v['net'] for k,v in ports[board]['pads'].items()}==port['pin_map'],'Power cable pin mismatch: '+board)
+ require(ports['digital']['xy_mm']==port['position_mm'] and ports['digital']['rotation_deg']==90,'Wrong power port placement')
+ cable=json.loads((H/'mechanical/current/power_harness_routing_review.json').read_text())
+ require(cable['native_ports_sha256']==sha(H/'mechanical/current/power_ports_native.json'),'Stale cable source binding')
+ require(cable['native_ports']==ports and cable['status'].endswith('NOT_ASSEMBLY_RELEASE'),'Cable reservation must remain conditional')
+ require(cable['display_fpc_pcb_sha256']==sha(H/'display_link/YuEEG_H_DISPLAY_LINK.kicad_pcb'),'Stale cable/FPC binding')
+ require(all(w['minimum_signed_gap_mm']>0 for w in cable['current_right_exit_wires']),'Modeled cable overlaps the FPC reservation')
+ tails=json.loads((H/'mechanical/current/power_port_tail_review.json').read_text())
+ require(tails['digital_pcb_sha256']==summary['boards']['digital']['pcb_sha256'] and tails['afe_pcb_sha256']==summary['boards']['afe']['pcb_sha256'],'Stale tail/AFE screening')
+ require(tails['status']=='CONDITIONAL_TAIL_SCREEN_NOT_ASSEMBLY_RELEASE' and tails['maximum_tail_solder_projection_allowed_below_digital_mm']==1.2,'Missing conditional tail-trim constraint')
+ artifacts=json.loads((H/'mechanical/current/power_harness_artifacts.json').read_text())
+ for name,digest in artifacts['files_sha256'].items():require(sha(H/'mechanical/current'/name)==digest,'Changed cable-review artifact: '+name)
+ for name,digest in artifacts['pcb_sha256'].items():require(digest==summary['boards'][name]['pcb_sha256'],'Stale cable-review PCB binding: '+name)
+ env=json.loads((H/'review/component_envelopes.json').read_text())
+ for model in env['models']:require(sha(H/'models'/model['model'])==model['sha256'],'Changed dimensional model: '+model['model'])
  require(info['protocol_tests_passed']==6 and info['physical_flash_or_transport_tested'] is False,'Unexpected test scope')
  exports=json.loads((H/'fabrication_engineering/MANIFEST.json').read_text());require(exports['status']=='ENGINEERING_REVIEW_ONLY_NOT_FOR_ORDER','Export status is not an engineering draft')
  for q in exports['boards']:
   require(q['pcb_sha256']==summary['boards'][q['board']]['pcb_sha256'],'Stale Gerber export '+q['board'])
   for name,digest in q['files'].items():require(sha(H/'fabrication_engineering'/q['board']/name)==digest,'Changed engineering export '+name)
+ drill=(H/'fabrication_engineering/digital/YuEEG_H_DIGITAL-PTH.drl').read_text();tools={};active=None;holes=[]
+ require('METRIC' in drill,'Unexpected drill units')
+ for line in drill.splitlines():
+  definition=re.fullmatch(r'T(\d+)C([\d.]+)',line);selection=re.fullmatch(r'T(\d+)',line);point=re.fullmatch(r'X(-?[\d.]+)Y(-?[\d.]+)',line)
+  if definition:tools[definition[1]]=float(definition[2])
+  elif selection:active=selection[1]
+  elif point and tools.get(active)==.75:holes.append((float(point[1]),float(point[2])))
+ require(sorted(holes)==sorted((v['xy_mm'][0],-v['xy_mm'][1]) for v in ports['digital']['pads'].values()),'PH4 0.75mm plated drill export mismatch')
+ with (H/'fabrication_engineering/digital/placement_front.csv').open(encoding='utf8',newline='') as stream:require(all(r['Ref']!='JH2' for r in csv.DictReader(stream)),'TH PH4 must not be listed as an SMT placement')
  if (H/'display_link').exists():
   from verify_display_link import verify as verify_fpc
   verify_fpc()

@@ -2143,20 +2143,6 @@
   },
   {
     "board": "digital",
-    "reference": "JH2",
-    "value": "POWER INPUT: 1=5V 2=CELL_SENSE 3/4=GND",
-    "models": [
-      "${KIPRJMOD}/../models/JST_S4B_PH_SM4_envelope.wrl"
-    ],
-    "existing": [
-      true
-    ],
-    "available_wrl_alternative": [
-      true
-    ]
-  },
-  {
-    "board": "digital",
     "reference": "R1025",
     "value": "22R",
     "models": [
@@ -3111,6 +3097,20 @@
     "value": "1u 10V",
     "models": [
       "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "JH2",
+    "value": "S4B-PH-K-S / 5V+CELL SENSE / RIGHT",
+    "models": [
+      "${KIPRJMOD}/../models/JST_S4B_PH_TH_envelope.wrl"
     ],
     "existing": [
       true

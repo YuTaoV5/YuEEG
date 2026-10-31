@@ -1,5 +1,5 @@
 {
-  "pcb_sha256": "b05a6924490a5af3d4159e10566bda3ad422d91f38a9d9845cedaab8a1e003db",
+  "pcb_sha256": "179565dde66c6899577eb7d980690d5ab896a0eafdae337fd2396ba05dafb5c8",
   "nets": {
     "USB_DOWN_DM": {
       "planar_track_length_mm": 33.72152261578638,

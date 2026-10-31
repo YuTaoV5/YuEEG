@@ -297,6 +297,82 @@
       ],
       "scope": "DGN outline: body <=3.1 x 3.1, lead span <=5.05, height <=1.1 mm. Simplified leads; no assertion about internal die, paste coverage or the exact ordered DGN thermal-pad variant.",
       "sha256": "1557de04243206862110fb64927179126c4fef7f07c342b7e7dcc2451496eba1"
+    },
+    {
+      "model": "JST_S4B_PH_TH_envelope.wrl",
+      "boxes_footprint_mm": [
+        {
+          "min": [
+            -1.95,
+            -1.35,
+            0
+          ],
+          "max": [
+            7.95,
+            6.25,
+            4.8
+          ]
+        }
+      ],
+      "source": [
+        "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
+      ],
+      "scope": "Nominal TH header body plus orange solder/tail reservation below a 1.6mm PCB, assuming trim to <=1.2mm below B. Not supplier CAD or untrimmed lead geometry. Mated plug/wires are separate.",
+      "sha256": "1669aadbc4aaa4fa540fa40b2cdd503f2106bd2f548cd5466478a6c96c1cd8b5",
+      "source_pages": [
+        1,
+        3
+      ],
+      "additional_tail_reservation_boxes_footprint_mm": [
+        {
+          "min": [
+            -0.85,
+            -1.1,
+            -2.8
+          ],
+          "max": [
+            0.85,
+            1.1,
+            -1.6
+          ]
+        },
+        {
+          "min": [
+            1.15,
+            -1.1,
+            -2.8
+          ],
+          "max": [
+            2.85,
+            1.1,
+            -1.6
+          ]
+        },
+        {
+          "min": [
+            3.15,
+            -1.1,
+            -2.8
+          ],
+          "max": [
+            4.85,
+            1.1,
+            -1.6
+          ]
+        },
+        {
+          "min": [
+            5.15,
+            -1.1,
+            -2.8
+          ],
+          "max": [
+            6.85,
+            1.1,
+            -1.6
+          ]
+        }
+      ]
     }
   ],
   "bindings": [
@@ -398,7 +474,7 @@
     {
       "board": "digital",
       "reference": "JH2",
-      "model": "JST_S4B_PH_SM4_envelope.wrl"
+      "model": "JST_S4B_PH_TH_envelope.wrl"
     },
     {
       "board": "digital",

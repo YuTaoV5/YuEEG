@@ -1,0 +1,16 @@
+{
+  "status": "CONDITIONAL_REVIEW_ARTIFACTS_NOT_ASSEMBLY_RELEASE",
+  "files_sha256": {
+    "power_ports_native.json": "1164e840625a21a4b049fff076e6096503aaaeee32a78d654a32cce2168d92b8",
+    "power_harness_routing_review.json": "8a99930e94fe1a1d9280b83c411546e88197bf4c9ec60f521c359c74f5522360",
+    "power_harness_routing_review.png": "be5037ecfde540ab92c4ac84bfbad6145f09e65239b7ce24678cff5978bf044b",
+    "power_harness_routing_review.svg": "116ed86ef845a8c8f7e971afd9117d03d2697dcaa48d409b2f91f11d492a21d9",
+    "power_port_tail_review.json": "59499b8b844da990c84f01f0d350f6cacacbdf8e489d06ebe11626d74e2cfdfe"
+  },
+  "pcb_sha256": {
+    "afe": "626c03b4dd3391a60a2687d95113357e0870bf6a04d825b37c71d953124e91f8",
+    "digital": "179565dde66c6899577eb7d980690d5ab896a0eafdae337fd2396ba05dafb5c8",
+    "power": "772131212bf444de40b23215ee12a9c742a6c3d58acb581afa2b7b963272e4f9"
+  },
+  "scope": "Binds engineering reports and plan-view image artifacts. No measurement, thermal/EEG validation or production release."
+}

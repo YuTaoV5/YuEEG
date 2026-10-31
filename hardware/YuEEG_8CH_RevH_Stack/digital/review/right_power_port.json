@@ -1,0 +1,31 @@
+{
+  "status": "IMPLEMENTED_ENGINEERING_CHANGE_NOT_ASSEMBLY_RELEASE",
+  "before_pcb_sha256": "b05a6924490a5af3d4159e10566bda3ad422d91f38a9d9845cedaab8a1e003db",
+  "after_pcb_sha256": "179565dde66c6899577eb7d980690d5ab896a0eafdae337fd2396ba05dafb5c8",
+  "reference": "JH2",
+  "mpn": "S4B-PH-K-S",
+  "position_mm": [
+    32.4,
+    38.5
+  ],
+  "rotation_deg": 90,
+  "mating_direction": "+X",
+  "mated_reference_body_box_mm": [
+    31.05,
+    30.55,
+    0,
+    40.65,
+    40.45,
+    4.8
+  ],
+  "nominal_header_height_mm": 4.8,
+  "old_header_height_mm": 5.5,
+  "reason": "Reserve a cable path toward the adjacent battery without entering the display FPC bend. Smaller TH PH header avoids rotating the wider SMT header across neighboring parts.",
+  "pin_map": {
+    "1": "SYS_5V",
+    "2": "BAT_PROTECTED_SENSE",
+    "3": "GND",
+    "4": "GND"
+  },
+  "scope": "Electrical reroute and model/source synchronization; mating housing dimensions are reference-only. Wire-axis height, solder-tail/plug clearance, below-board AFE, enclosure support and delivered parts require verification."
+}

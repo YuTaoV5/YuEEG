@@ -2822,7 +2822,7 @@ no)
 1.0))))
 (property
 "Value"
-"POWER INPUT: 1=5V 2=CELL_SENSE 3/4=GND"
+"S4B-PH-K-S / 5V+CELL SENSE / RIGHT"
 (at
 101.6
 205.74
@@ -2834,7 +2834,7 @@ no)
 1.0))))
 (property
 "Footprint"
-"Connector_JST:JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal"
+"Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal"
 (at
 101.6
 218.44
@@ -2848,7 +2848,7 @@ no)
 yes)))
 (property
 "Datasheet"
-"~"
+"https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
 (at
 101.6
 218.44

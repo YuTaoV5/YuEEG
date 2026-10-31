@@ -29,8 +29,10 @@ AFE and digital each have three 2.4mm round internal openings at (44,4), (44,51)
 
 The current power-board JP1 is still a temporary logical terminal; the verified probe reference has not been integrated. Screen FPC reach, support height, battery contact alignment/polarity and exact mating connector procurement remain unresolved. Read `docs/REVH_MECHANICAL_REVIEW.md` and `docs/REVH_NPBX1_POWER.md` before using these exports.
 
+Digital JH2 is now the right-facing TH S4B-PH-K-S. Trim/inspect its solder and tails to <=1.2mm below B; follow docs/REVH_POWER_HARNESS.md.
+
 Front/back SMT positions are exported separately; hand-assembled through-hole connectors, probes and mounting hardware are not an SMT-only placement file. BOM lists and manufacturing stackup/impedance, thermal-via and assembly-process requirements must be reviewed before an actual fabrication release. Clean static checks do not prove assembly, functional acquisition or patient isolation.
 
 `MANIFEST.json` binds each export to its current PCB hash. Regenerate this directory after any board change.
-''')
+''',encoding='utf8')
 print('Engineering exports complete for all three boards; six M2 internal Gerber openings verified')

@@ -1,0 +1,105 @@
+{
+  "status": "CONDITIONAL_TAIL_SCREEN_NOT_ASSEMBLY_RELEASE",
+  "digital_pcb_sha256": "179565dde66c6899577eb7d980690d5ab896a0eafdae337fd2396ba05dafb5c8",
+  "afe_pcb_sha256": "626c03b4dd3391a60a2687d95113357e0870bf6a04d825b37c71d953124e91f8",
+  "surface_gap_mm": 8.5,
+  "maximum_tail_solder_projection_allowed_below_digital_mm": 1.2,
+  "additional_reserved_xy_margin_around_pad_bbox_mm": 0.25,
+  "required_afe_component_height_max_for_0_5mm_vertical_margin_mm": 6.8,
+  "intersecting_capacitor": {
+    "reference": "C220",
+    "mpn": "EEEFT1E101AP",
+    "catalog_length_nominal_mm": 5.8,
+    "catalog_length_max_mm": 6.1,
+    "source": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1240.pdf",
+    "nominal_gap_minus_trimmed_tail_and_cap_max_mm": 1.2,
+    "additional_assumed_cap_solder_lift_mm": 0.1,
+    "conditional_clearance_after_cap_solder_lift_mm": 1.1
+  },
+  "checks": [
+    {
+      "pin": "1",
+      "reserved_tail_xy_mm": [
+        31.275,
+        37.65,
+        33.525,
+        39.35
+      ],
+      "overlapping_afe_courtyards": [],
+      "nearest_courtyard": "C401",
+      "xy_distance_mm": 0.47499999999999787
+    },
+    {
+      "pin": "2",
+      "reserved_tail_xy_mm": [
+        31.275,
+        35.65,
+        33.525,
+        37.35
+      ],
+      "overlapping_afe_courtyards": [
+        {
+          "reference": "C220",
+          "value": "100u 25V EEEFT1E101AP H5.8",
+          "courtyard_xy_mm": [
+            24.45,
+            26.8,
+            31.55,
+            36.2
+          ]
+        }
+      ],
+      "nearest_courtyard": "C220",
+      "xy_distance_mm": 0.0
+    },
+    {
+      "pin": "3",
+      "reserved_tail_xy_mm": [
+        31.275,
+        33.65,
+        33.525,
+        35.35
+      ],
+      "overlapping_afe_courtyards": [
+        {
+          "reference": "C220",
+          "value": "100u 25V EEEFT1E101AP H5.8",
+          "courtyard_xy_mm": [
+            24.45,
+            26.8,
+            31.55,
+            36.2
+          ]
+        }
+      ],
+      "nearest_courtyard": "C220",
+      "xy_distance_mm": 0.0
+    },
+    {
+      "pin": "4",
+      "reserved_tail_xy_mm": [
+        31.275,
+        31.65,
+        33.525,
+        33.35
+      ],
+      "overlapping_afe_courtyards": [
+        {
+          "reference": "C220",
+          "value": "100u 25V EEEFT1E101AP H5.8",
+          "courtyard_xy_mm": [
+            24.45,
+            26.8,
+            31.55,
+            36.2
+          ]
+        }
+      ],
+      "nearest_courtyard": "C220",
+      "xy_distance_mm": 0.0
+    }
+  ],
+  "scope": "Pad bounding boxes enlarged by .25mm screen entire tail/solder projection, which overestimates bare lead width. JH2 tails must be trimmed/inspected to at most 1.2mm including solder below digital B; not a guaranteed supplier maximum. Current XY overlaps C220. 8.5mm nominal gap minus 1.2mm tail, 6.1mm capacitor maximum and assumed .1mm solder lift leaves 1.1mm before board-gap/warpage tolerances. Does not qualify all interboard parts or the full assembly.",
+  "minimum_local_surface_gap_required_mm": 8.2,
+  "conditional_clearance_at_minimum_local_gap_mm": 0.8
+}

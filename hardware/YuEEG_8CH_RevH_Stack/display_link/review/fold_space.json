@@ -1,7 +1,7 @@
 {
   "status": "CONDITIONAL_NOMINAL_SPACE_SCREEN_NOT_ASSEMBLY_RELEASE",
-  "design_contract_sha256": "89260bf10de4593328f75d0a26b393322d1235031275f56029e106e1b19fab26",
-  "digital_pcb_sha256": "b05a6924490a5af3d4159e10566bda3ad422d91f38a9d9845cedaab8a1e003db",
+  "design_contract_sha256": "ba84db7ae22199cc02e52a775d5694b3dc58a4663b36ace4a7b8d2a99e209aac",
+  "digital_pcb_sha256": "179565dde66c6899577eb7d980690d5ab896a0eafdae337fd2396ba05dafb5c8",
   "fpc_pcb_sha256": "51979b486cb4e063baf91e5e389caad5001929970646c76e1cca3f596b3a5b12",
   "neighbor_native_sha256": "a8a85cf302f964959844527d3e4080833fe258a604100dbce4fa5edd23fec741",
   "sampling_step_max_mm": 0.002,
@@ -227,15 +227,15 @@
     {
       "ref": "JH2",
       "box": [
-        28.05,
-        30.9,
+        31.049999999999997,
+        30.55,
         0,
-        39.95,
-        36.9,
-        5.5
+        38.65,
+        40.45,
+        4.8
       ],
       "scope": "Existing nominal PH4 body envelope; plug/wires excluded.",
-      "minimum_nominal_box_distance_mm": 4.914999999999999,
+      "minimum_nominal_box_distance_mm": 4.565000000000001,
       "nearest_fpc_cell": [
         27.64,
         25.874999739129013,
@@ -245,12 +245,12 @@
         2.556042408001068
       ],
       "nearest_obstacle_box": [
-        28.05,
-        30.9,
+        31.049999999999997,
+        30.55,
         0,
-        39.95,
-        36.9,
-        5.5
+        38.65,
+        40.45,
+        4.8
       ]
     }
   ],
