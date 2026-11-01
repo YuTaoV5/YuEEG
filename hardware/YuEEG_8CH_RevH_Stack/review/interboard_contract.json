@@ -4,8 +4,8 @@
   "socket_body_height_mm": 4.5,
   "header_body_height_mm": 4.0,
   "nominal_pcb_clear_gap_mm": 8.5,
-  "drawing_mated_height_tolerance_mm": 0.15,
-  "note": "JMEconn dual slot BTB drawing B. Project logical pin numbering; male footprint mirrored. Exact delivered pair and Taobao SKU still unconfirmed.",
+  "drawing_mated_height_tolerance_mm": null,
+  "note": "SGDCONN SGD003/004 RevA, Taobao exact PH0.8/H40-H45 options verified. Project logical numbering with mirrored male footprint; supplier PIN1/PIN2 markers differ. Combined-H tolerance not explicit; require local assembled gap>=8.3mm.",
   "AFE_DIGITAL": {
     "1": "SYS_5V",
     "2": "GND",
@@ -28,8 +28,8 @@
     "19": "SYS_5V",
     "20": "GND"
   },
-  "socket_reference": "5001-BTB0845-20FR",
-  "header_reference": "5001-BTB0840-20MR",
+  "socket_reference": "SGDBF-08-020P-H45",
+  "header_reference": "SGDBM-08-020P-H40",
   "POWER_DIGITAL": {
     "connector": "JST PH 4-pin side-entry; JP2 to JH2",
     "1": "SYS_5V",

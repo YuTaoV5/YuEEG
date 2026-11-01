@@ -147,3 +147,12 @@ Thumbs.db
 !/hardware/YuEEG_8CH_RevH_Stack/review/smt_btb_procurement_revision_review.json
 !/hardware/YuEEG_8CH_RevH_Stack/review/smt_btb_drawing_revision_comparison.svg
 !/hardware/YuEEG_8CH_RevH_Stack/review/am178_vendor_mechanical_review.json
+
+# Verified Taobao SMT connector source facts; no account headers or original supplier PDF.
+!/hardware/YuEEG_8CH_RevH_Stack/review/sgd_btb_procurement.json
+!/hardware/YuEEG_8CH_RevH_Stack/review/procurement/
+!/hardware/YuEEG_8CH_RevH_Stack/review/sgd_btb_adoption.json
+!/hardware/YuEEG_8CH_RevH_Stack/review/sgd_btb_current_via_clearance.json
+/hardware/YuEEG_8CH_RevH_Stack/review/procurement/*
+!/hardware/YuEEG_8CH_RevH_Stack/review/procurement/sgd_h40_ph08.jpg
+!/hardware/YuEEG_8CH_RevH_Stack/review/procurement/sgd_h45_ph08.jpg

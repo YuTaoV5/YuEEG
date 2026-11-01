@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "firmware_spi3_source_sha256": "c3a65f9bea12fd39ca13026e13d6b26654078b9470300dc8ee99f9a0b0e477ae",
-  "exported_netlist_sha256": "f957745454e5d25e791ce2e7b054133f874467637e46fb7c02d76ed51b74152e",
+  "exported_netlist_sha256": "0b2f6495479d270737f9d6b4829d8f915fb50aa4114bdcd4b0785b98e6f1c8c3",
   "uart_alias_source": "https://documentation.espressif.com/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf, module pad37 TXD0=GPIO43; pad36 RXD0=GPIO44",
   "pins": {
     "SPI3_PANEL_CS": {

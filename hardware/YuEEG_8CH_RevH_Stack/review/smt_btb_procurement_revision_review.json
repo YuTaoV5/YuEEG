@@ -1,5 +1,5 @@
 {
-  "status": "PROCUREMENT_VERSION_CONFLICT_NOT_CLOSED",
+  "status": "HISTORICAL_JME_VERSION_CONFLICT",
   "native_footprints": [
     {
       "footprint": "JME_BTB0840_20MR_Logical",
@@ -68,7 +68,7 @@
   ],
   "mated_height_both_drawings_mm": 8.5,
   "2021_locator_shift_per_side_relative_to_current_mm": 0.4,
-  "interpretation": "2021 PCB LAYOUT dimension C and table C=8.2 at20contacts; supplier must resolve intended locator/land pattern and confirm delivered variant. Current PCB follows the2017 drawing, not a qualified fit for these later catalog listings.",
+  "interpretation": "2021 PCB LAYOUT dimension C and table C=8.2 at20contacts; supplier must resolve intended locator/land pattern and confirm delivered variant. The e5df79c baseline followed the2017 drawing. These catalog variants were not adopted; see sgd_btb_procurement.json for the current selection.",
   "catalog_candidates": [
     {
       "mpn": "5001-BTB0840-20MR-00",

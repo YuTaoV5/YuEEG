@@ -290,9 +290,9 @@
   {
     "board": "afe",
     "reference": "JH1",
-    "value": "5001-BTB0845-20FR / SMT BTB",
+    "value": "SGDBF-08-020P-H45 / SMT BTB",
     "models": [
-      "${KIPRJMOD}/../models/JME_BTB0845_20FR_Logical.wrl"
+      "${KIPRJMOD}/../models/SGD_BF08_020_H45_Logical.wrl"
     ],
     "existing": [
       true
@@ -3556,9 +3556,9 @@
   {
     "board": "digital",
     "reference": "JH1",
-    "value": "5001-BTB0840-20MR / SMT BTB",
+    "value": "SGDBM-08-020P-H40 / SMT BTB",
     "models": [
-      "${KIPRJMOD}/../models/JME_BTB0840_20MR_Logical.wrl"
+      "${KIPRJMOD}/../models/SGD_BM08_020_H40_Logical.wrl"
     ],
     "existing": [
       true

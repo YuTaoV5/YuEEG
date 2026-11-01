@@ -133,4 +133,4 @@ C418,1u 10V X7R,Capacitor_SMD:C_0603_1608Metric,circuit_23,~
 FBH1,600R@100MHz / verify DCR and current,Inductor_SMD:L_0603_1608Metric,circuit_23,~
 CH1,1u 10V,Capacitor_SMD:C_0603_1608Metric,circuit_23,~
 CH2,100n 10V,Capacitor_SMD:C_0402_1005Metric,circuit_23,~
-JH1,5001-BTB0845-20FR / SMT BTB,YuEEG:JME_BTB0845_20FR_Logical,circuit_24,https://www.wzjm5001.com/data/upload/2022-03-18/62342c4418c0d.pdf
+JH1,SGDBF-08-020P-H45 / SMT BTB,YuEEG:SGD_BF08_020_H45_Logical,circuit_24,https://itemcdn.tmall.com/attachment/icoss234754281bbb74bf255ec8c29

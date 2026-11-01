@@ -1,9 +1,9 @@
 {
   "status": "COMPLETE_NOMINAL_ENDPOINT_ROUTE_NOT_QUALIFIED_HARNESS",
   "source_sha256": {
-    "power_ports_native.json": "e34fe4824460c4af90d22724514ecb751a65cd42607020d7e491a0daf682220b",
+    "power_ports_native.json": "9f92fb2b00e30654140c723743e41faf9f638cd1ea72c8e1772234c65119e2b1",
     "pogo_assembly_review.json": "3eebac4da342adb98ad7d2940a44f6b53797e36f8225f88444098881526cd278",
-    "interboard_contract.json": "f4920ba33760304a0261ff5a3972eb21fb74d23f2a097d0be57bec090f2c7adc",
+    "interboard_contract.json": "74f413e8f602520af97d4c58ac982c88bcd8967f2ae5b97f5a8cc803a460fee2",
     "design_contract.json": "ba84db7ae22199cc02e52a775d5694b3dc58a4663b36ace4a7b8d2a99e209aac"
   },
   "catalog": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",

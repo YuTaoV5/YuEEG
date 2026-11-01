@@ -14,7 +14,7 @@
   "unconnected": 0,
   "schematic_parity": 0,
   "pin_mismatches": 0,
-  "pcb_sha256": "9407948570a5ba2f7ba6700888929932599c12ad0884c823c179237d57320851",
+  "pcb_sha256": "e4ec2796baec9bfced51394bc5c8ac8c5172db75c834cd15c4a2eb06d868470f",
   "before_imu_digital_sha256": "e62dbc80c4811195aaf47eaec0ec8931b466e4a04353b59568df75b37cee4926",
   "new_part_positions_mm_deg": {
     "U1801": [
@@ -113,5 +113,7 @@
   "before_underbody_change_pcb_sha256": "3b147f0fc0ede321edb8e9d7f102aac338d5d1f1c03fb6ba0b1d17cba90ee977",
   "underbody_no_pour_review": "imu_underbody_pour_review.json",
   "original113_pose_exception": "JH1 replaced and relocated to (43.7,21); all other112 original poses and all16 IMU poses retained",
-  "current_interboard_connector": "5001-BTB0840-20MR / SMT BTB"
+  "current_interboard_connector": "5001-BTB0840-20MR / SMT BTB",
+  "pre_sgd_pcb_sha256": "9407948570a5ba2f7ba6700888929932599c12ad0884c823c179237d57320851",
+  "sgd_followup_proof_sha256": "b4dbe79c38103edb1c4cc56a4205e612499cd317e29ee3bceb1268bc8d346147"
 }

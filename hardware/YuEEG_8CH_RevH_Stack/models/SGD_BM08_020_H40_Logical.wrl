@@ -1,0 +1,7 @@
+#VRML V2.0 utf8
+# Project nominal illustration; not supplier CAD or tolerance model.
+Transform { translation 0.0 0.0 0.7874015748031495 children [ Shape { appearance Appearance { material Material { diffuseColor .08 .08 .08 } } geometry Box { size 3.8976377952755907 2.047244094488189 1.574803149606299 } } ] }
+Transform { translation 0.0 -0.37401574803149606 1.9488188976377954 children [ Shape { appearance Appearance { material Material { diffuseColor .65 .55 .25 } } geometry Box { size 3.228346456692913 0.11811023622047241 0.7480314960629922 } } ] }
+Transform { translation 0.0 0.37401574803149606 1.9488188976377954 children [ Shape { appearance Appearance { material Material { diffuseColor .65 .55 .25 } } geometry Box { size 3.228346456692913 0.11811023622047241 0.7480314960629922 } } ] }
+Transform { translation -1.7716535433070866 0.4921259842519685 -0.11811023622047244 children [ Shape { appearance Appearance { material Material { diffuseColor .08 .08 .08 } } geometry Box { size 0.23622047244094474 0.2362204724409449 0.23622047244094488 } } ] }
+Transform { translation 1.7716535433070866 0.4921259842519685 -0.11811023622047244 children [ Shape { appearance Appearance { material Material { diffuseColor .08 .08 .08 } } geometry Box { size 0.23622047244094474 0.2362204724409449 0.23622047244094488 } } ] }

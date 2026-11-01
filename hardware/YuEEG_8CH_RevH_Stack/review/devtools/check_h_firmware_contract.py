@@ -7,7 +7,7 @@ pinmap={};gpio=None
 for net in xml.findall('./nets/net'):
  for node in net.findall('node'):
   pinmap[node.get('ref')+'.'+node.get('pin')]=net.get('name')
-  if node.get('ref')=='U2' and net.get('name')=='BAT_SENSE':gpio=int(re.fullmatch('IO(\d+)',node.get('pinfunction')).group(1))
+  if node.get('ref')=='U2' and net.get('name')=='BAT_SENSE':gpio=int(re.fullmatch(r'IO(\d+)',node.get('pinfunction')).group(1))
 assert gpio==constant('BATTERY_ADC_GPIO')==1
 assert pinmap['R309.1']==pinmap['JH2.2']=='BAT_PROTECTED_SENSE'
 assert pinmap['R309.2']==pinmap['R310.1']==pinmap['C305.1']=='BAT_SENSE'

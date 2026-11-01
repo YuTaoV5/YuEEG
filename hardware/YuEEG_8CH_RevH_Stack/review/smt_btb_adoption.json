@@ -3,24 +3,29 @@
   "boards": {
     "afe": {
       "baseline_pcb_sha256": "2eb85cbd1e8bc271004dadf2321513e58e03e8ef493d7506ea8eff0663e4da2a",
-      "pcb_sha256": "a21378ccdee99483476029f1a83178f06f04ec7765870b2a36bc914ee907312b",
+      "pcb_sha256": "61f639e6cd2ab0925f28603e0191da73723e721caa7f991c334818731c2a21b8",
       "all_other_component_poses_unchanged": true,
       "component_pose_exception": "JH1 only; 2mm THT pair replaced by 0.8mm SMT mezzanine pair at (43.7,21)",
       "new_vias_checked_for_hole_to_all_smt_pads_0p25mm": 24,
       "same_net_smt_hole_clearance_violations": [],
-      "candidate": "afe_best"
+      "candidate": "afe_best",
+      "pre_sgd_pcb_sha256": "a21378ccdee99483476029f1a83178f06f04ec7765870b2a36bc914ee907312b",
+      "sgd_followup_proof_sha256": "b4dbe79c38103edb1c4cc56a4205e612499cd317e29ee3bceb1268bc8d346147"
     },
     "digital": {
       "baseline_pcb_sha256": "157ffd1e0412ff2283224bd3119d5567486dd6dca845c1c37716d3a30bcbd80c",
-      "pcb_sha256": "9407948570a5ba2f7ba6700888929932599c12ad0884c823c179237d57320851",
+      "pcb_sha256": "e4ec2796baec9bfced51394bc5c8ac8c5172db75c834cd15c4a2eb06d868470f",
       "all_other_component_poses_unchanged": true,
       "component_pose_exception": "JH1 only; 2mm THT pair replaced by 0.8mm SMT mezzanine pair at (43.7,21)",
       "new_vias_checked_for_hole_to_all_smt_pads_0p25mm": 22,
       "same_net_smt_hole_clearance_violations": [],
-      "candidate": "digital"
+      "candidate": "digital",
+      "pre_sgd_pcb_sha256": "9407948570a5ba2f7ba6700888929932599c12ad0884c823c179237d57320851",
+      "sgd_followup_proof_sha256": "b4dbe79c38103edb1c4cc56a4205e612499cd317e29ee3bceb1268bc8d346147"
     }
   },
   "minimum_local_gap_mm": 8.3,
   "nominal_mated_gap_mm": 8.5,
-  "exact_taobao_sku_confirmed": false
+  "exact_taobao_sku_confirmed": true,
+  "procurement_scope": "Both exact PH0.8/H40-H45 UI options and supplier drawing verified; not a purchase or delivered fit acceptance."
 }

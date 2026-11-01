@@ -165,29 +165,29 @@
   "pins_checked": 20,
   "mismatches": 0,
   "pcb_sha256": {
-    "afe": "a21378ccdee99483476029f1a83178f06f04ec7765870b2a36bc914ee907312b",
-    "digital": "9407948570a5ba2f7ba6700888929932599c12ad0884c823c179237d57320851"
+    "afe": "61f639e6cd2ab0925f28603e0191da73723e721caa7f991c334818731c2a21b8",
+    "digital": "e4ec2796baec9bfced51394bc5c8ac8c5172db75c834cd15c4a2eb06d868470f"
   },
   "footprint_sha256": {
-    "JME_BTB0845_20FR_Logical.kicad_mod": "1eee0fbbd64ee708d63aee9bc447a0c574b734c98ec37dc0fe237a975add7c0c",
-    "JME_BTB0840_20MR_Logical.kicad_mod": "d520555fd34cd238e223d9fe6ef71991f4c87c21c8099dc70d15f6679ebc710b"
+    "SGD_BF08_020_H45_Logical.kicad_mod": "cdc62e5fcb0c28a5dc4e1c5bff3ce78b1154847b26186995204f085d520e7c7c",
+    "SGD_BM08_020_H40_Logical.kicad_mod": "c427f07bbfce093044fd1b2c65c62f16c393c6d159e6043711c64bbd3c14d11c"
   },
   "pitch_mm": 0.8,
   "pcb_surface_gap_mm": 8.5,
-  "drawing_mated_height_tolerance_mm": 0.15,
+  "drawing_mated_height_tolerance_mm": null,
   "female_height_grade_mm": 4.5,
   "male_height_grade_mm": 4.0,
   "electrical_drills": 0,
   "plastic_locator_holes_per_board": 2,
   "digital_F_side_metal_tail_protrusion_mm": 0,
   "z_reference_mm": {
-    "afe_bottom": 0,
-    "afe_top": 1.6,
-    "female_nominal_top": 6.1,
-    "digital_bottom": 10.1,
-    "digital_top": 11.7,
-    "male_nominal_housing_low": 6.1,
-    "male_nominal_contact_tip": 4.2
+    "afe_bottom": -1.6,
+    "afe_top": 0,
+    "female_nominal_top": 4.5,
+    "digital_bottom": 8.5,
+    "digital_top": 10.1,
+    "male_nominal_housing_low": 4.5,
+    "male_nominal_contact_tip": 2.6
   },
-  "scope": "Native logical pad XY/net and surface keepout checks. Manufacturer drawing does not number contacts. Plastic pegs remain within a 1.6mm PCB; no metal THT tails. 8.5mm is a drawing grade, not a measured assembly gap. Delivered pair, tolerances, supports, insertion and solder joints remain unqualified."
+  "scope": "Native logical pad XY/net and surface keepout checks. Supplier marks PIN1/PIN2 at opposite ends for the two PCB patterns; this report verifies explicitly project-logical numbering. Plastic pegs remain within a 1.6mm PCB; no metal THT tails. 8.5mm is a drawing grade with no explicit combined-H tolerance on these pages, not a measured assembly gap. Current supplier SGDCONN. Delivered pair, tolerances, supports, insertion and solder joints remain unqualified."
 }

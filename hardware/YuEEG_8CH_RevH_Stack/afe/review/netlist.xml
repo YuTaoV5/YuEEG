@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>X:\Items\YuEEG\hardware\YuEEG_8CH_RevH_Stack\afe\YuEEG_H_AFE.kicad_sch</source>
-    <date>2026-10-31T09:17:56+0800</date>
+    <date>2026-11-01T13:44:14+0800</date>
     <tool>Eeschema 9.0.5</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -2695,12 +2695,12 @@
       <tstamps>9772a01c-0271-4220-a706-4fd416741661</tstamps>
     </comp>
     <comp ref="JH1">
-      <value>SQT-110-01-L-D / SOCKET / logical pins</value>
-      <footprint>YuEEG:Samtec_SQT_110_01_Logical</footprint>
-      <datasheet>https://www.samtec.com/products/sqt-110-01-l-d</datasheet>
+      <value>SGDBF-08-020P-H45 / SMT BTB</value>
+      <footprint>YuEEG:SGD_BF08_020_H45_Logical</footprint>
+      <datasheet>https://itemcdn.tmall.com/attachment/icoss234754281bbb74bf255ec8c29</datasheet>
       <fields>
-        <field name="Footprint">YuEEG:Samtec_SQT_110_01_Logical</field>
-        <field name="Datasheet">https://www.samtec.com/products/sqt-110-01-l-d</field>
+        <field name="Footprint">YuEEG:SGD_BF08_020_H45_Logical</field>
+        <field name="Datasheet">https://itemcdn.tmall.com/attachment/icoss234754281bbb74bf255ec8c29</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x20" description="Generic connector, single row, 01x20, script generated (kicad-library-utils/schlib/autogen/connector/)"/>

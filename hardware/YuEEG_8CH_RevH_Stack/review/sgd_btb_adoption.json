@@ -1,0 +1,272 @@
+{
+  "status": "SGDCONN_DRAWING_AND_SKU_ADOPTED_ENGINEERING_NOT_ASSEMBLY_RELEASE",
+  "baseline_git_commit": "e5df79c5b5a603c2e0c9b75f851ded95b042c890",
+  "boards": {
+    "afe": {
+      "baseline_pcb_sha256": "a21378ccdee99483476029f1a83178f06f04ec7765870b2a36bc914ee907312b",
+      "candidate_pcb_sha256": "61f639e6cd2ab0925f28603e0191da73723e721caa7f991c334818731c2a21b8",
+      "all_tracks_unchanged_except_listed_fanout": true,
+      "via_count_unchanged": true,
+      "via_moves": [
+        {
+          "uuid": "e047f38e-eb1c-46b4-8546-a7136b26ab54",
+          "net": "ADS_PWDN",
+          "old_xy_mm": [
+            40.4,
+            19.1464
+          ],
+          "new_xy_mm": [
+            40.25,
+            19.1464
+          ],
+          "attached_tracks": [
+            "7731adab-b976-47de-b100-a1f401c882bb",
+            "20dd37a2-c9e8-4d30-a63c-50c52a286b3d"
+          ]
+        },
+        {
+          "uuid": "3e26e90c-037e-483c-830d-fae58dc88549",
+          "net": "GND",
+          "old_xy_mm": [
+            40.4,
+            17.9605
+          ],
+          "new_xy_mm": [
+            40.25,
+            17.9605
+          ],
+          "attached_tracks": [
+            "29c03d49-1474-4bf1-953d-5e5d951c4a80"
+          ]
+        },
+        {
+          "uuid": "722be9a0-f63c-48ac-9e97-612c8358a39b",
+          "net": "GND",
+          "old_xy_mm": [
+            40.4,
+            24.6276
+          ],
+          "new_xy_mm": [
+            40.25,
+            24.6276
+          ],
+          "attached_tracks": [
+            "57ef9f9e-7a55-43aa-8cc7-701cf4885a47"
+          ]
+        },
+        {
+          "uuid": "df236809-1191-4dc9-ad6a-a5306bd9f368",
+          "net": "GND",
+          "old_xy_mm": [
+            40.4,
+            22.8541
+          ],
+          "new_xy_mm": [
+            40.25,
+            22.8541
+          ],
+          "attached_tracks": [
+            "b9661731-19ea-4e2c-9a5a-47427e5b1898"
+          ]
+        }
+      ],
+      "local_reroute": {
+        "removed_tracks": [],
+        "added_items": []
+      },
+      "all_other_component_electrical_and_pose_geometry_unchanged": true,
+      "all20_JH1_pad_centers_and_nets_unchanged": true,
+      "locator_holes_unchanged": true,
+      "all_via_holes_checked_against_new_JH1_smt_pads": 160,
+      "minimum_hole_to_smt_copper_mm": 0.25,
+      "hits": [],
+      "checks": {
+        "violations": 0,
+        "unconnected_items": 0,
+        "schematic_parity": 0
+      },
+      "footprint": "SGD_BF08_020_H45_Logical",
+      "mpn": "SGDBF-08-020P-H45"
+    },
+    "digital": {
+      "baseline_pcb_sha256": "9407948570a5ba2f7ba6700888929932599c12ad0884c823c179237d57320851",
+      "candidate_pcb_sha256": "e4ec2796baec9bfced51394bc5c8ac8c5172db75c834cd15c4a2eb06d868470f",
+      "all_tracks_unchanged_except_listed_fanout": true,
+      "via_count_unchanged": true,
+      "via_moves": [
+        {
+          "uuid": "b82e420d-9a52-4ed4-a677-93d06d90d509",
+          "net": "+3V3",
+          "old_xy_mm": [
+            46.97,
+            23.8
+          ],
+          "new_xy_mm": [
+            46.97,
+            24.2
+          ],
+          "attached_tracks": [
+            "2ad625d8-4490-477a-bf54-442709d133e3",
+            "511b43a9-b607-4323-9645-cec9fa012223"
+          ]
+        },
+        {
+          "uuid": "101e79bd-5b1a-4b2d-a9ac-1c0f55f9a5c8",
+          "net": "ADS_CS",
+          "old_xy_mm": [
+            46.97,
+            21.4
+          ],
+          "new_xy_mm": [
+            46.97,
+            21.8
+          ],
+          "attached_tracks": [
+            "79ddf286-a34e-4e73-aa83-38a792beb88e",
+            "cd791414-d6f6-489e-b2be-9b4f8b9d96e7"
+          ]
+        },
+        {
+          "uuid": "5e088f58-044b-4a6f-98cf-ee823dbdc9b3",
+          "net": "ADS_DRDY",
+          "old_xy_mm": [
+            46.97,
+            19.8
+          ],
+          "new_xy_mm": [
+            46.97,
+            20.2
+          ],
+          "attached_tracks": [
+            "9860bc29-5a29-4dfa-ba87-0d639eb7d456",
+            "1564d097-fde4-4867-b497-457fffef122f"
+          ]
+        },
+        {
+          "uuid": "06901ed6-4cf5-41bc-b246-250aba7a089c",
+          "net": "ADS_MISO",
+          "old_xy_mm": [
+            46.97,
+            20.6
+          ],
+          "new_xy_mm": [
+            46.97,
+            21.0
+          ],
+          "attached_tracks": [
+            "d24bf9ca-bef4-4228-9a7c-8eb9649a5318",
+            "e852030b-4716-4e43-a27e-d5c10df8734f"
+          ]
+        },
+        {
+          "uuid": "a46d9a70-64ed-4679-b2e7-a8c9a3e43098",
+          "net": "ADS_MOSI",
+          "old_xy_mm": [
+            46.97,
+            22.2
+          ],
+          "new_xy_mm": [
+            46.97,
+            22.6
+          ],
+          "attached_tracks": [
+            "b83cea5d-e9f3-4145-b32f-f6f8c7db9d58",
+            "d86c147d-4cfd-4d85-b445-57ce595b53d5"
+          ]
+        },
+        {
+          "uuid": "f772c37f-65de-4938-a41c-7564dd660699",
+          "net": "ADS_RESET",
+          "old_xy_mm": [
+            46.97,
+            19.0
+          ],
+          "new_xy_mm": [
+            46.97,
+            19.4
+          ],
+          "attached_tracks": [
+            "d3921165-9dd3-4582-a4a9-bcd1df5bfadf",
+            "8a583fcb-a2f5-4b92-883c-ea43805e6d2f"
+          ]
+        },
+        {
+          "uuid": "9856ac53-ccb3-41c6-938d-158a505a4b2d",
+          "net": "ADS_START",
+          "old_xy_mm": [
+            46.97,
+            18.2
+          ],
+          "new_xy_mm": [
+            46.97,
+            18.6
+          ],
+          "attached_tracks": [
+            "e0f29fc2-f83f-4e11-abc4-688474ccc2ba",
+            "82275c1c-5e7b-489d-a0df-271362a54e97"
+          ]
+        },
+        {
+          "uuid": "c061261c-e9ef-4f72-a9e8-5e2a56b91ed6",
+          "net": "SYS_5V",
+          "old_xy_mm": [
+            46.97,
+            24.6
+          ],
+          "new_xy_mm": [
+            46.97,
+            25.0
+          ],
+          "attached_tracks": [
+            "83f39e42-d17e-4d23-8fde-3d930d10c2d5",
+            "0c8f4941-efc0-488c-9516-c3e4ac699334"
+          ]
+        }
+      ],
+      "local_reroute": {
+        "removed_tracks": [
+          "0711c08c-a3c8-409a-ab9b-ad53800f7691",
+          "11403ca2-e486-4a5f-9710-36723d79b284",
+          "1564d097-fde4-4867-b497-457fffef122f",
+          "70d10c48-41bf-4603-b844-b8833d544722",
+          "979ed132-e88c-469d-ae4b-0a5b3444caeb",
+          "9fc6cc54-71fc-4423-8ff0-76371a75f486",
+          "aeacff58-97f7-4e2d-bdd7-091f4d036a3e",
+          "b1e647b2-0d5e-4f32-b6d9-e153e8705211"
+        ],
+        "added_items": [
+          "085ee724-ded4-461d-9393-f2cf00e702a8",
+          "00fdcab6-9904-45bd-bc14-93b4d18701d1",
+          "fa42763c-945e-4a89-a413-0e7a7e8afdce",
+          "9a0ce22f-cde5-472b-bcd6-0a6a3f5ad0f8",
+          "08da3e7e-ab63-44cd-b007-e9bfa86d0ca9",
+          "d183003f-09a5-40b3-83b6-f6c901851a3a",
+          "c1607556-def6-460e-9087-64a61b7a7d05",
+          "3a5d436c-c4df-4bd2-ba1c-acc1d0447347",
+          "dcc4f87c-a854-44a1-a808-19d790ecadf5",
+          "156a49aa-3f55-4022-98ac-24c8697f43fe",
+          "18f8371d-9d72-49bf-abe1-9ffcfcae8bef"
+        ],
+        "rerouted_nets": [
+          "ADS_SCLK",
+          "ADS_DRDY"
+        ]
+      },
+      "all_other_component_electrical_and_pose_geometry_unchanged": true,
+      "all20_JH1_pad_centers_and_nets_unchanged": true,
+      "locator_holes_unchanged": true,
+      "all_via_holes_checked_against_new_JH1_smt_pads": 272,
+      "minimum_hole_to_smt_copper_mm": 0.25,
+      "hits": [],
+      "checks": {
+        "violations": 0,
+        "unconnected_items": 0,
+        "schematic_parity": 0
+      },
+      "footprint": "SGD_BM08_020_H40_Logical",
+      "mpn": "SGDBM-08-020P-H40"
+    }
+  },
+  "source_review": "review/sgd_btb_procurement.json",
+  "scope": "Only JH1 library/value/lands plus4AFE and8digital via moves and listed attached/rerouted traces. Other electrical parts and poses,20logical contact centers/nets and locator holes independently checked unchanged. No physical assembly, EEG or production qualification."
+}

@@ -1,12 +1,12 @@
 [
   {
     "board": "afe",
-    "source_sha256": "a21378ccdee99483476029f1a83178f06f04ec7765870b2a36bc914ee907312b",
+    "source_sha256": "61f639e6cd2ab0925f28603e0191da73723e721caa7f991c334818731c2a21b8",
     "side": "top",
     "local_model_path_substitutions": 19,
     "referenced_local_model_sha256": {
       "Diodes_SOT523_envelope.wrl": "b5121179461a772f1fbcfa42f51f254e3a1c43004933dc2b575df46866f9bc6b",
-      "JME_BTB0845_20FR_Logical.wrl": "a03817d4c59307f0cdb95fac1759b2441f0f07ad5248e35e9beb2eed809f125f",
+      "SGD_BF08_020_H45_Logical.wrl": "aa0a8db5de2e1b1011fc65ea852599038bc8ab30f20daf26afac2b169df1225d",
       "TI_DGN8_envelope.wrl": "1557de04243206862110fb64927179126c4fef7f07c342b7e7dcc2451496eba1",
       "TY_MSASE31LBB7226MTNA01_1206_max_envelope.wrl": "2c47fdbe6d60f2c759409b9b7261bea6c16e0f76989eaa54b12293dfd53ac89c"
     },
@@ -14,17 +14,17 @@
   },
   {
     "board": "digital",
-    "source_sha256": "9407948570a5ba2f7ba6700888929932599c12ad0884c823c179237d57320851",
+    "source_sha256": "e4ec2796baec9bfced51394bc5c8ac8c5172db75c834cd15c4a2eb06d868470f",
     "side": "bottom",
     "local_model_path_substitutions": 12,
     "referenced_local_model_sha256": {
       "ESP32-S3-WROOM-1U.step": "7be82bdafece2891b297546eb0643ff254e3d8161074ebdc972e0d78e79a4bdb",
       "HRO_TYPE_C_31_M_12_original_envelope.wrl": "f80feb762533f717c6b56387bbc82150dbcc9875c31b10cff8c323e9577f9bd9",
-      "JME_BTB0840_20MR_Logical.wrl": "715777b1f9370648443b5d86af5e798a05e20f362814b741e131f49dd04067a8",
       "JST_S4B_PH_TH_envelope.wrl": "b84f059d595a1877fef5360514bcd1b5e237c7dbc1c6a9991ccfd2ad6ad7a0f9",
       "KINGCONN_7TFCN_FA_1010_C_envelope.wrl": "c2906f2408edeafdd6a2583e5a82a84baac0aebefed0ca5d9d11d7047df5271d",
       "Murata_SCH16T_SOIC24_nominal.wrl": "8fe7433239f55bbb74aeab46290b551a1d569a5fbbfbaffa5bcf93604cba8e03",
       "OCN_OK_14F024_04_envelope.wrl": "f0dd16e16aa80a33862c9a7fecc44ccda37b163ed3de59f91069d5736f16d2da",
+      "SGD_BM08_020_H40_Logical.wrl": "d8494f2c5e0fc168aae58c71cd8b991fafa19fc939e0d6bebe3fc342be4b0fad",
       "SKRTLBE010_envelope.wrl": "fe1db42ad3ad6c383225d37d59a836b2b1a8b24da797db0c3e9cecd12d5d027c",
       "TDK_SPM4015_LR_envelope.wrl": "06ad208ebc2364bc11584af8d96735e0cf38baa16cfbc1fe35931df61f800d2b",
       "YAGEO_RC0402FR_0722RL_max_envelope.wrl": "21ed4d1db6c73d46b3479ec8a32371d018f25329c8724ec4cafeaf48151b5054"
@@ -33,17 +33,17 @@
   },
   {
     "board": "digital",
-    "source_sha256": "9407948570a5ba2f7ba6700888929932599c12ad0884c823c179237d57320851",
+    "source_sha256": "e4ec2796baec9bfced51394bc5c8ac8c5172db75c834cd15c4a2eb06d868470f",
     "side": "top",
     "local_model_path_substitutions": 12,
     "referenced_local_model_sha256": {
       "ESP32-S3-WROOM-1U.step": "7be82bdafece2891b297546eb0643ff254e3d8161074ebdc972e0d78e79a4bdb",
       "HRO_TYPE_C_31_M_12_original_envelope.wrl": "f80feb762533f717c6b56387bbc82150dbcc9875c31b10cff8c323e9577f9bd9",
-      "JME_BTB0840_20MR_Logical.wrl": "715777b1f9370648443b5d86af5e798a05e20f362814b741e131f49dd04067a8",
       "JST_S4B_PH_TH_envelope.wrl": "b84f059d595a1877fef5360514bcd1b5e237c7dbc1c6a9991ccfd2ad6ad7a0f9",
       "KINGCONN_7TFCN_FA_1010_C_envelope.wrl": "c2906f2408edeafdd6a2583e5a82a84baac0aebefed0ca5d9d11d7047df5271d",
       "Murata_SCH16T_SOIC24_nominal.wrl": "8fe7433239f55bbb74aeab46290b551a1d569a5fbbfbaffa5bcf93604cba8e03",
       "OCN_OK_14F024_04_envelope.wrl": "f0dd16e16aa80a33862c9a7fecc44ccda37b163ed3de59f91069d5736f16d2da",
+      "SGD_BM08_020_H40_Logical.wrl": "d8494f2c5e0fc168aae58c71cd8b991fafa19fc939e0d6bebe3fc342be4b0fad",
       "SKRTLBE010_envelope.wrl": "fe1db42ad3ad6c383225d37d59a836b2b1a8b24da797db0c3e9cecd12d5d027c",
       "TDK_SPM4015_LR_envelope.wrl": "06ad208ebc2364bc11584af8d96735e0cf38baa16cfbc1fe35931df61f800d2b",
       "YAGEO_RC0402FR_0722RL_max_envelope.wrl": "21ed4d1db6c73d46b3479ec8a32371d018f25329c8724ec4cafeaf48151b5054"

@@ -1,0 +1,91 @@
+{
+  "status": "TAOBAO_PAIR_AND_DRAWING_VERIFIED_ENGINEERING_ADOPTED",
+  "observed_date": "2026-11-01",
+  "seller": "深圳市山谷道科技有限公司",
+  "brand": "SGDCONN",
+  "item_id": "860586965302",
+  "item_url": "https://item.taobao.com/item.htm?id=860586965302",
+  "male": {
+    "mpn": "SGDBM-08-020P-H40",
+    "sku_id": "5677537797627",
+    "selected_ui_options": [
+      "公座型号：SGDBM-05/08-020P-H40",
+      "PH0.8mm"
+    ],
+    "stock_ui": "有货",
+    "stock_scope": "Observed UI only; not stock guarantee or purchase."
+  },
+  "female": {
+    "mpn": "SGDBF-08-020P-H45",
+    "sku_id": "5677537797637",
+    "selected_ui_options": [
+      "母座型号：SGDBF-05/08-020P-H45",
+      "PH0.8mm"
+    ],
+    "stock_ui": "有货",
+    "stock_scope": "Observed UI only; not stock guarantee or purchase."
+  },
+  "supplier_attachment": {
+    "title": "0.8双槽板对板公母图纸（4.0-8.5）.pdf",
+    "url": "https://itemcdn.tmall.com/attachment/icoss234754281bbb74bf255ec8c29",
+    "sha256": "5b9e942df6e5df4c325b1c56d70f06cf8ec6e85da2d4516dea33df9a662ba18a",
+    "bytes": 4557552,
+    "pages": 2,
+    "drawing_numbers": [
+      "SGD-003",
+      "SGD-004"
+    ],
+    "revision": "A; original date2014-08-30; locator-hole revision2026-07-01",
+    "redistribution": "Original PDF read locally; linked, not copied into delivery."
+  },
+  "drawing_dimensions_mm": {
+    "contacts": 20,
+    "pitch": 0.8,
+    "pad_row_centers": 4.0,
+    "pad_size": [
+      0.3,
+      2.0
+    ],
+    "pad_outer_span": 6.0,
+    "locator_hole_span": 9.0,
+    "locator_hole_y_from_midline": 1.25,
+    "locator_hole_diameter": 0.65,
+    "locator_hole_tolerance_plus_minus": [
+      0.03,
+      0
+    ],
+    "locator_peg_diameter": 0.6,
+    "male_height_grade": 4.0,
+    "female_height_grade": 4.5,
+    "nominal_mated_height": 8.5,
+    "mated_height_tolerance": null,
+    "mated_height_tolerance_note": "No explicit combined-H tolerance on these pages. Do not inherit the JME2017 +/-0.15mm value. Local assembled PCB gap must still be measured >=8.3mm.",
+    "body_length": 9.9,
+    "maximum_drawn_mounting_width_nominal": 5.2,
+    "mounting_width_explicit_tolerance": 0.1,
+    "male_contact_insertion_extension": 1.9
+  },
+  "drawing_ratings": {
+    "current_A": 0.5,
+    "voltage_V": 50,
+    "contact_resistance_milliohm_max": 50,
+    "dielectric_withstanding_VAC": 200,
+    "operating_C": [
+      -40,
+      85
+    ],
+    "rating_scope": "Supplier declaration only; interboard device-domain connector, not USB safety isolation barrier. Listing60V conflicts with drawing50V; drawing value used."
+  },
+  "numbering": "Supplier pages mark PIN1/PIN2 at opposite long-axis ends for the two PCB patterns. Retain explicitly named project-logical numbering and assembled coordinate/net checks; do not treat logical pins as a factory numbering sequence.",
+  "files_sha256": {
+    "sgd_h40_ph08.jpg": "a87072f700089549a0850cc50d74d56eb9bac1affba34b43baeb7728a005cd32",
+    "sgd_h45_ph08.jpg": "32fcdfb62b5b353280adc2f4c0b8ba32ef3293b83009adfaaa75eaf94e99fcc4"
+  },
+  "open_items": [
+    "No delivered-part dimensional, insertion, solder-joint or mechanical acceptance test",
+    "Local surface gap>=8.3mm and holder/support tolerances remain assembly conditions"
+  ],
+  "scope": "Verified one actual Taobao listing, both selected0.8mm/20contact/H40-H45 SKU options and its2-page supplier drawing. No purchase, seller message, physical fit, isolation certification or production release.",
+  "pcb_adoption_sha256": "b4dbe79c38103edb1c4cc56a4205e612499cd317e29ee3bceb1268bc8d346147",
+  "screenshot_scope": "Cropped technical option area only; no account header, shipping region, address, cart contents or tracking URLs."
+}

@@ -2024,7 +2024,7 @@ no)
 1.0))))
 (property
 "Value"
-"5001-BTB0840-20MR / SMT BTB"
+"SGDBM-08-020P-H40 / SMT BTB"
 (at
 297.18
 105.41000000000001
@@ -2036,7 +2036,7 @@ no)
 1.0))))
 (property
 "Footprint"
-"YuEEG:JME_BTB0840_20MR_Logical"
+"YuEEG:SGD_BM08_020_H40_Logical"
 (at
 297.18
 138.43
@@ -2050,7 +2050,7 @@ no)
 yes)))
 (property
 "Datasheet"
-"https://www.wzjm5001.com/data/upload/2022-03-18/62342c4418c0d.pdf"
+"https://itemcdn.tmall.com/attachment/icoss234754281bbb74bf255ec8c29"
 (at
 297.18
 138.43

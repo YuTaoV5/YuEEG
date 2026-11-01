@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-01T12:40:47.148762+08:00",
+  "timestamp": "2026-11-01T13:39:06.130251+08:00",
   "battery": "Sony NP-BX1, 1S; supersedes NP-FW50 goal wording",
   "release_status": "DEVELOPMENT; contact mechanics, display FPC and system verification unresolved",
   "boards": {
@@ -8,9 +8,9 @@
       "unconnected": 0,
       "parity": 0,
       "erc": 0,
-      "pcb_sha256": "a21378ccdee99483476029f1a83178f06f04ec7765870b2a36bc914ee907312b",
+      "pcb_sha256": "61f639e6cd2ab0925f28603e0191da73723e721caa7f991c334818731c2a21b8",
       "source_files_sha256": {
-        "BOM.csv": "29fcfc702c4284937dba2a14fff59ad872f0a8bd468f294839e8e40a4a18f499",
+        "BOM.csv": "6828c4ae416ea5e7358d74789280b244a2d9136a028fb26563496e6e2b1a8ce5",
         "YuEEG_H_AFE.kicad_pro": "40131c91cbb70622eaee3e26f84c43f4d4988f613dabd10b18b9320592eff196",
         "YuEEG_H_AFE.kicad_sch": "ffa959e85c59194befd5f25004877d6d8911fbed2ddd8f3b50d0b727cc9b07c7",
         "circuit_01.kicad_sch": "d2f828a9e21967b59042a231d97505ea16d968da33064b5d9671700cce44eed2",
@@ -36,10 +36,10 @@
         "circuit_21.kicad_sch": "24aee73261bf58c87ad40bd042f2ad96bfe07802cbfbb1a3fbf64d77b4121e87",
         "circuit_22.kicad_sch": "efdf6ae393896c1c183c71acfea3873d8451ce40a6896f2996d4b4373d410cd6",
         "circuit_23.kicad_sch": "aca6b39fc3d7180bb1d4e5bc83283390697c3a8edcd67127ae20103e0eddaeda",
-        "circuit_24.kicad_sch": "b10aa4f075b1d0fbda823c878f6c56abf7e8d557cd83040a4c5783a058612f4d",
+        "circuit_24.kicad_sch": "2a62db0a53d90501899b6b8c0fe3af4100114248ef3ebb5415ee31145e045752",
         "fp-lib-table": "7fee321fac63dfa191da7d740e87f96a5395da8fc76fa626673a9cb152a2124a",
         "review/expected_connections.json": "eb98f108f557b03612e13be82d2b017bf8d88fa55cc2ff8bfdd0b41a2e3f44b6",
-        "review/netlist.xml": "cd3d8d9ecaa466f1ae8f8b9ef331e34b84e9512c4243abf63fda9f2fa1161a19",
+        "review/netlist.xml": "c0e1a7e61ad54b904cb7f0f22186893a5786034964c5ff74754a41ccf9257177",
         "sym-lib-table": "6cf4513f28ea28ee6b2f4ae3e0b4f779ca0736a738bdbed1bd2e64672348b99f"
       }
     },
@@ -48,9 +48,9 @@
       "unconnected": 0,
       "parity": 0,
       "erc": 0,
-      "pcb_sha256": "9407948570a5ba2f7ba6700888929932599c12ad0884c823c179237d57320851",
+      "pcb_sha256": "e4ec2796baec9bfced51394bc5c8ac8c5172db75c834cd15c4a2eb06d868470f",
       "source_files_sha256": {
-        "BOM.csv": "d68ce1da6cd8586cae8e804bf1843353bc63baf4d05d7f0f862871bdd93674cb",
+        "BOM.csv": "50de6fbe8a375aab716b258fccc9856c898a379aab8e362f6dd6d55887870762",
         "YuEEG.kicad_sym": "907b9c8d945bae09adafc4d875dece17871d6500c6579bbae618d9c6cfec3f5b",
         "YuEEG_H_DIGITAL.kicad_dru": "1b106febb83945f94ebf1a0b23c9de8b05920d7c929839018c15b59e06a3cc9f",
         "YuEEG_H_DIGITAL.kicad_pro": "4eff9ef9a380ebc8f8516bd3811d1cd8f738c10bf196233690634d5226cb001d",
@@ -73,13 +73,13 @@
         "circuit_16.kicad_sch": "9b08944bbc8ec44dd2b42ec3b07372228cdf1e23b216129deea06d55842acce1",
         "circuit_17.kicad_sch": "9bb584f83fd385fcda859409139c8150917e8697ef384acd52940725d571e66e",
         "circuit_18.kicad_sch": "51f8934fc0aea0291a5cbbedd2db869daf9022fe440b231bbb38e59dd4c09559",
-        "circuit_19.kicad_sch": "282b4b2acdf6637dd9bf275d2c65c2c577a14aec90f1d109b7dc3f1137ff323d",
+        "circuit_19.kicad_sch": "d37ec7b2bb2fb681978f9c03a62f74e8c36b8ad48beaa95645433eb7a90165d0",
         "circuit_20.kicad_sch": "da6ec5489c418fcda9ee71ac1287946019e80a8d0844846b4fe62894c4739b9b",
         "circuit_21.kicad_sch": "1165746ed52cc5b2cc4a88130b5b0193292b6b4143ca56a7a3eab449dc170933",
         "circuit_21_imu.kicad_sch": "78ebbab926de25b66712681449125004c26a535352adfceb839146b63327a9c6",
         "fp-lib-table": "4944c0e4f8dcbd72e4e42f6a53dd3ea369b1494a3a9cfdeb8ccc1270c050910c",
         "review/expected_connections.json": "e66938b0a02ef96282b856e4e4f22fe70e9befaf20bd7bd842ae5bf5923dc7d9",
-        "review/netlist.xml": "f957745454e5d25e791ce2e7b054133f874467637e46fb7c02d76ed51b74152e",
+        "review/netlist.xml": "0b2f6495479d270737f9d6b4829d8f915fb50aa4114bdcd4b0785b98e6f1c8c3",
         "sym-lib-table": "cbbbc7ca2d814abf8c8999ebfb6280b20bc4119904e48ccbbadcf20a257be558"
       }
     },

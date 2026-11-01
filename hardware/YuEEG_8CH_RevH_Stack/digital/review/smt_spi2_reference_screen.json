@@ -1,22 +1,22 @@
 {
   "status": "NATIVE_CENTERLINE_SCREEN_NOT_SIGNAL_INTEGRITY_VALIDATION",
-  "pcb_sha256": "9407948570a5ba2f7ba6700888929932599c12ad0884c823c179237d57320851",
+  "pcb_sha256": "e4ec2796baec9bfced51394bc5c8ac8c5172db75c834cd15c4a2eb06d868470f",
   "baseline_pcb_sha256": "157ffd1e0412ff2283224bd3119d5567486dd6dca845c1c37716d3a30bcbd80c",
   "baseline_revision": "b67843f before SMT migration",
   "sample_pitch_max_mm": 0.1,
   "nets": {
     "ADS_CS": {
-      "planar_length_mm": 40.92460736885996,
-      "samples": 419,
+      "planar_length_mm": 41.00030575644897,
+      "samples": 420,
       "missing_all_reference_samples": 33,
-      "missing_length_estimate_mm": 3.0505575931390743,
+      "missing_length_estimate_mm": 3.0412139391464255,
       "current_missing_but_baseline_plane_present_samples": 33,
       "missing_outside_signal_antipads_samples": 0,
       "missing_examples_mm": []
     },
     "ADS_SCLK": {
-      "planar_length_mm": 45.08010771224848,
-      "samples": 480,
+      "planar_length_mm": 45.31360218628656,
+      "samples": 484,
       "missing_all_reference_samples": 0,
       "missing_length_estimate_mm": 0,
       "current_missing_but_baseline_plane_present_samples": 0,
@@ -24,28 +24,28 @@
       "missing_examples_mm": []
     },
     "ADS_MOSI": {
-      "planar_length_mm": 40.522744672819805,
-      "samples": 413,
+      "planar_length_mm": 40.598912134365506,
+      "samples": 414,
       "missing_all_reference_samples": 16,
-      "missing_length_estimate_mm": 1.5681659369606544,
+      "missing_length_estimate_mm": 1.558892621941163,
       "current_missing_but_baseline_plane_present_samples": 16,
       "missing_outside_signal_antipads_samples": 0,
       "missing_examples_mm": []
     },
     "ADS_MISO": {
-      "planar_length_mm": 35.17362018872446,
-      "samples": 361,
+      "planar_length_mm": 35.268641353532225,
+      "samples": 363,
       "missing_all_reference_samples": 18,
-      "missing_length_estimate_mm": 1.749028657562338,
+      "missing_length_estimate_mm": 1.728251750450721,
       "current_missing_but_baseline_plane_present_samples": 8,
       "missing_outside_signal_antipads_samples": 0,
       "missing_examples_mm": []
     },
     "ADS_DRDY": {
-      "planar_length_mm": 55.3072239405873,
-      "samples": 559,
+      "planar_length_mm": 56.01780324411468,
+      "samples": 567,
       "missing_all_reference_samples": 127,
-      "missing_length_estimate_mm": 12.54257424229536,
+      "missing_length_estimate_mm": 12.528780924899369,
       "current_missing_but_baseline_plane_present_samples": 8,
       "missing_outside_signal_antipads_samples": 109,
       "missing_examples_mm": [
@@ -92,10 +92,10 @@
       ]
     },
     "ADS_RESET": {
-      "planar_length_mm": 48.27616403923063,
-      "samples": 500,
+      "planar_length_mm": 48.36541510918091,
+      "samples": 501,
       "missing_all_reference_samples": 136,
-      "missing_length_estimate_mm": 12.866691335592575,
+      "missing_length_estimate_mm": 12.860178840124133,
       "current_missing_but_baseline_plane_present_samples": 8,
       "missing_outside_signal_antipads_samples": 118,
       "missing_examples_mm": [
@@ -142,10 +142,10 @@
       ]
     },
     "ADS_START": {
-      "planar_length_mm": 47.43533862076842,
-      "samples": 484,
+      "planar_length_mm": 47.61021946399252,
+      "samples": 486,
       "missing_all_reference_samples": 145,
-      "missing_length_estimate_mm": 14.253243670896016,
+      "missing_length_estimate_mm": 14.256878442697257,
       "current_missing_but_baseline_plane_present_samples": 8,
       "missing_outside_signal_antipads_samples": 127,
       "missing_examples_mm": [

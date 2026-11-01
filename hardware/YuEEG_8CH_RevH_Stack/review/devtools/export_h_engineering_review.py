@@ -35,6 +35,8 @@ JP1 is now a routed 10mm pair of B-side Mill-Max 0906 probes, D+/B- confirmed by
 
 Power JP2 is side-facing at(7.5,11.4),270deg; RP4 at(7.0,2.8). All pad nets and P_SW/P_FB track geometry are preserved. The nominal battery-side channel is7mm; strip/battery are shifted1mm right and1.4mm down. Follow docs/REVH_SIDE_POWER_PORT.md and REVH_COMPLETE_POWER_HARNESS.md. No qualified wire,screen support or holder release.
 
+SGDCONN JH1 now uses SGDBF-08-020P-H45 (AFE F) and SGDBM-08-020P-H40 (digital B), Taobao item860586965302/PH0.8. Follow the linked SGD003/004 drawing: lands0.30x2.00mm; two finished NPTH locator holes per board require diameter0.65+0.03/-0mm at9mm span. Combined8.5mm H tolerance is not explicit on that drawing; do not inherit the old JME+/-0.15mm. Verify local assembled surface gap>=8.3mm, exact delivered mating and manufacturer hole capability. These exports remain NOT FOR ORDER.
+
 Digital JH2 is now the right-facing TH S4B-PH-K-S. Trim/inspect its solder and tails to <=1.2mm below B; follow docs/REVH_POWER_HARNESS.md.
 
 Front/back SMT positions are exported separately; hand-assembled through-hole connectors, probes and mounting hardware are not an SMT-only placement file. BOM lists and manufacturing stackup/impedance, thermal-via and assembly-process requirements must be reviewed before an actual fabrication release. Clean static checks do not prove assembly, functional acquisition or patient isolation.

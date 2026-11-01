@@ -40,6 +40,9 @@ def verify():
    if pin.startswith('#'):continue
    require(pin in actual,'Missing native pad '+pin)
    require(actual[pin]==net if net is not None else not actual[pin] or actual[pin].startswith('unconnected-'),'Native pin mismatch '+pin)
+  net_components={n.get('ref'):n for n in E.parse(base/'review/netlist.xml').findall('./components/comp')}
+  require(set(net_components)==set(bom),'Netlist component set differs from BOM '+board)
+  for ref,row in bom.items():require(net_components[ref].findtext('value')==row['Value'] and net_components[ref].findtext('footprint')==row['Footprint'],'Exported schematic/BOM metadata mismatch '+board+'/'+ref)
   xml={n.get('ref')+'.'+n.get('pin'):net.get('name') for net in E.parse(base/'review/netlist.xml').findall('./nets/net') for n in net.findall('node')}
   for pin,net in expected.items():
    if pin.startswith('#') or net is None:continue
@@ -88,7 +91,18 @@ def verify():
  require(sha(ROOT/screen_source['source_pdf'])==screen_source['source_pdf_sha256'],'Changed screen source PDF')
  require(sha(H/'display_link/review/design_contract.json')==screen_source['display_link_contract_sha256'],'Stale screen/FPC target binding')
  require(len(screen_source['selected_native_dimensions'])==8 and screen_source['pdf_page5_visual_observations']['folded_male_solder_plane_to_screen_back_Z_offset_mm'] is None,'Re-audit screen source dimensions before claiming folded Z closure')
- procurement=json.loads((H/'review/smt_btb_procurement_revision_review.json').read_text(encoding='utf8'));require(procurement['status']=='PROCUREMENT_VERSION_CONFLICT_NOT_CLOSED' and procurement['taobao_qualified_sku'] is None,'Re-audit the supplier drawing gate before closing procurement')
+ procurement=json.loads((H/'review/smt_btb_procurement_revision_review.json').read_text(encoding='utf8'));require(procurement['status']=='HISTORICAL_JME_VERSION_CONFLICT','Historical JME variants must not become qualified alternates')
+ sgd=json.loads((H/'review/sgd_btb_procurement.json').read_text(encoding='utf8'));adoption=H/'review/sgd_btb_adoption.json';sgda=json.loads(adoption.read_text(encoding='utf8'))
+ require(sgd['status']=='TAOBAO_PAIR_AND_DRAWING_VERIFIED_ENGINEERING_ADOPTED' and sgd['pcb_adoption_sha256']==sha(adoption),'Stale SGDCONN procurement/adoption chain')
+ require(sgd['male']['sku_id']=='5677537797627' and sgd['female']['sku_id']=='5677537797637' and sgd['drawing_dimensions_mm']['mated_height_tolerance'] is None,'SGD option or tolerance scope changed')
+ require(set(sgd['files_sha256'])=={'sgd_h40_ph08.jpg','sgd_h45_ph08.jpg'},'SGD evidence must contain only the curated technical screenshots')
+ require(sgd['drawing_dimensions_mm']['pad_size']==[.3,2.] and sgd['drawing_dimensions_mm']['locator_hole_span']==9.0 and sgd['drawing_dimensions_mm']['contacts']==20,'Changed SGD drawing geometry')
+ for name,digest in sgd['files_sha256'].items():require(sha(H/'review/procurement'/name)==digest,'Changed SGDCONN option screenshot')
+ via_sgd=json.loads((H/'review/sgd_btb_current_via_clearance.json').read_text(encoding='utf8'));require(via_sgd['adoption_sha256']==sha(adoption) and via_sgd['minimum_hole_to_smt_copper_mm']==.25,'Stale current SGD via check')
+ for name,row in sgda['boards'].items():
+  require(row['candidate_pcb_sha256']==summary['boards'][name]['pcb_sha256'] and row['all_other_component_electrical_and_pose_geometry_unchanged'] and row['all20_JH1_pad_centers_and_nets_unchanged'] and row['locator_holes_unchanged'] and not row['hits'],'Stale/dirty SGD migration '+name)
+  require(via_sgd['boards'][name]['pcb_sha256']==row['candidate_pcb_sha256'] and not via_sgd['boards'][name]['hits'] and via_sgd['boards'][name]['moved_vias_against_all_SMD_pads']==(4 if name=='afe' else 8),'Incomplete current SGD via check '+name)
+  require(smt['boards'][name]['sgd_followup_proof_sha256']==sha(adoption),'Missing historical SMT follow-up chain '+name)
  for f in procurement['native_footprints']:require(sha(H/'footprints/YuEEG.pretty'/(f['footprint']+'.kicad_mod'))==f['sha256'],'Stale BTB drawing/native comparison')
  mating=json.loads((H/'review/interboard_xy_check.json').read_text(encoding='utf8'));require(mating['pins_checked']==20 and mating['mismatches']==0 and mating['electrical_drills']==0,'Missing checked SMT mating contract')
  for board,digest in mating['pcb_sha256'].items():require(digest==summary['boards'][board]['pcb_sha256'],'Stale SMT mapping source '+board)

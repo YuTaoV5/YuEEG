@@ -526,6 +526,122 @@
       ],
       "scope": "Original nominal single probe model at .7mm compression. Pair footprint has two instances. Not maximum free-height geometry or supplier CAD.",
       "sha256": "a10a22e42a9f57529a8fb38bdb5e7e9e5686bc97fe2ffbad81060745b0f53083"
+    },
+    {
+      "model": "SGD_BF08_020_H45_Logical.wrl",
+      "boxes_footprint_mm": [
+        {
+          "min": [
+            -4.95,
+            -2.6,
+            0
+          ],
+          "max": [
+            4.95,
+            2.6,
+            4.5
+          ]
+        },
+        {
+          "min": [
+            -4.8,
+            0.95,
+            -0.6
+          ],
+          "max": [
+            -4.2,
+            1.55,
+            0
+          ]
+        },
+        {
+          "min": [
+            4.2,
+            0.95,
+            -0.6
+          ],
+          "max": [
+            4.8,
+            1.55,
+            0
+          ]
+        }
+      ],
+      "source": [
+        "https://itemcdn.tmall.com/attachment/icoss234754281bbb74bf255ec8c29"
+      ],
+      "scope": "Original nominal illustration from SGD003/004. Width5.2mm is nominal with explicit+/-0.1mm on drawing; no tolerance, solder, full peg/contact or internal mating-solid claim. Actual locally measured board gap must be>=8.3mm.",
+      "sha256": "aa0a8db5de2e1b1011fc65ea852599038bc8ab30f20daf26afac2b169df1225d"
+    },
+    {
+      "model": "SGD_BM08_020_H40_Logical.wrl",
+      "boxes_footprint_mm": [
+        {
+          "min": [
+            -4.95,
+            -2.6,
+            0
+          ],
+          "max": [
+            4.95,
+            2.6,
+            4
+          ]
+        },
+        {
+          "min": [
+            -4.1,
+            -1.0999999999999999,
+            4
+          ],
+          "max": [
+            4.1,
+            -0.7999999999999999,
+            5.9
+          ]
+        },
+        {
+          "min": [
+            -4.1,
+            0.7999999999999999,
+            4
+          ],
+          "max": [
+            4.1,
+            1.0999999999999999,
+            5.9
+          ]
+        },
+        {
+          "min": [
+            -4.8,
+            0.95,
+            -0.6
+          ],
+          "max": [
+            -4.2,
+            1.55,
+            0
+          ]
+        },
+        {
+          "min": [
+            4.2,
+            0.95,
+            -0.6
+          ],
+          "max": [
+            4.8,
+            1.55,
+            0
+          ]
+        }
+      ],
+      "source": [
+        "https://itemcdn.tmall.com/attachment/icoss234754281bbb74bf255ec8c29"
+      ],
+      "scope": "Original nominal illustration from SGD003/004. Width5.2mm is nominal with explicit+/-0.1mm on drawing; no tolerance, solder, full peg/contact or internal mating-solid claim. Actual locally measured board gap must be>=8.3mm.",
+      "sha256": "d8494f2c5e0fc168aae58c71cd8b991fafa19fc939e0d6bebe3fc342be4b0fad"
     }
   ],
   "bindings": [

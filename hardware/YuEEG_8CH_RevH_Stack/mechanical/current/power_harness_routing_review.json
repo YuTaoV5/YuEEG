@@ -3,7 +3,7 @@
   "native_ports": {
     "digital": {
       "reference": "JH2",
-      "pcb_sha256": "9407948570a5ba2f7ba6700888929932599c12ad0884c823c179237d57320851",
+      "pcb_sha256": "e4ec2796baec9bfced51394bc5c8ac8c5172db75c834cd15c4a2eb06d868470f",
       "xy_mm": [
         32.4,
         38.5
@@ -74,9 +74,9 @@
         "mounting": "SMT_B_NO_F_SIDE_METAL_TAILS",
         "F_side_metal_tail_protrusion_mm": 0,
         "native_pad_bbox_xy_mm": [
-          40.8,
+          40.7,
           16.175,
-          46.6,
+          46.7,
           25.825
         ],
         "pad_centers_mm": {
@@ -329,7 +329,7 @@
       }
     }
   },
-  "native_ports_sha256": "e34fe4824460c4af90d22724514ecb751a65cd42607020d7e491a0daf682220b",
+  "native_ports_sha256": "9f92fb2b00e30654140c723743e41faf9f638cd1ea72c8e1772234c65119e2b1",
   "display_fpc_pcb_sha256": "51979b486cb4e063baf91e5e389caad5001929970646c76e1cca3f596b3a5b12",
   "source": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
   "reference_pages": [
@@ -4270,15 +4270,15 @@
     4.8
   ],
   "conditional_JH1_post_envelope_mm": [
-    40.8,
+    40.7,
     16.175,
     0,
-    46.6,
+    46.7,
     25.825,
     0
   ],
-  "nominal_mated_body_to_post_envelope_mm": 4.727380352795829,
-  "nominal_wire_to_JH1_envelope_lower_bound_mm": 3.2003333185198386,
+  "nominal_mated_body_to_post_envelope_mm": 4.725264542858952,
+  "nominal_wire_to_JH1_envelope_lower_bound_mm": 3.1330693721405813,
   "native_pad_y_max_mm": 39.1,
   "pad_y_only_HOST_separation_mm": 9.949999999999996,
   "body_y_only_HOST_separation_mm": 8.599999999999994,

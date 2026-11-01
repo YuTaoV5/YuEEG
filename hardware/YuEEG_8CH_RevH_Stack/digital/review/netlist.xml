@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>X:\Items\YuEEG\hardware\YuEEG_8CH_RevH_Stack\digital\YuEEG_H_DIGITAL.kicad_sch</source>
-    <date>2026-11-01T03:38:01+0800</date>
+    <date>2026-11-01T13:44:14+0800</date>
     <tool>Eeschema 9.0.5</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -2222,12 +2222,12 @@
       <tstamps>a4a210d8-e372-4aee-b8fa-107c6f0ed68b</tstamps>
     </comp>
     <comp ref="JH1">
-      <value>TMM-110-03-L-D / 4mm POST / bottom logical</value>
-      <footprint>YuEEG:Samtec_TMM_110_03_BottomLogical</footprint>
-      <datasheet>https://www.samtec.com/products/tmm-110-03-l-d</datasheet>
+      <value>SGDBM-08-020P-H40 / SMT BTB</value>
+      <footprint>YuEEG:SGD_BM08_020_H40_Logical</footprint>
+      <datasheet>https://itemcdn.tmall.com/attachment/icoss234754281bbb74bf255ec8c29</datasheet>
       <fields>
-        <field name="Footprint">YuEEG:Samtec_TMM_110_03_BottomLogical</field>
-        <field name="Datasheet">https://www.samtec.com/products/tmm-110-03-l-d</field>
+        <field name="Footprint">YuEEG:SGD_BM08_020_H40_Logical</field>
+        <field name="Datasheet">https://itemcdn.tmall.com/attachment/icoss234754281bbb74bf255ec8c29</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x20" description="Generic connector, single row, 01x20, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
