@@ -1,3 +1,5 @@
+"""Historical THT migration, disabled after the user required SMT BTB."""
+raise RuntimeError("Deprecated THT connector generator: current design uses SMT BTB; see docs/REVH_SMT_BTB.md")
 from pathlib import Path
 import pcbnew as p,wx,sys,json,csv,copy
 wx.DisableAsserts()

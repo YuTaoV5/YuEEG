@@ -136,3 +136,9 @@ Thumbs.db
 !/hardware/YuEEG_8CH_RevH_Stack/digital/review/imu_ground_fill_paths.json
 !/hardware/YuEEG_8CH_RevH_Stack/review/firmware_motion_contract.json
 !/hardware/YuEEG_8CH_RevH_Stack/review/publication_authorization.json
+
+# Current SMT mezzanine migration evidence.
+!/hardware/YuEEG_8CH_RevH_Stack/review/smt_btb_adoption.json
+!/hardware/YuEEG_8CH_RevH_Stack/review/smt_btb_candidate_selection.json
+!/hardware/YuEEG_8CH_RevH_Stack/digital/review/smt_spi2_reference_screen.json
+!/hardware/YuEEG_8CH_RevH_Stack/digital/review/imu_ground_via_current_clearance.json

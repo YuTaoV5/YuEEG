@@ -2,19 +2,19 @@
   "status": "ROUTED_NATIVE_CHECKS_PASS_NOT_ASSEMBLY_OR_PERFORMANCE_RELEASE",
   "parts": 129,
   "new_parts": 16,
-  "original113_component_poses_unchanged": true,
+  "original113_component_poses_unchanged": false,
   "board_mm": [
     48,
     60
   ],
   "copper_layers": 6,
-  "back_smd": 25,
+  "back_smd": 26,
   "erc": 0,
   "drc": 0,
   "unconnected": 0,
   "schematic_parity": 0,
   "pin_mismatches": 0,
-  "pcb_sha256": "157ffd1e0412ff2283224bd3119d5567486dd6dca845c1c37716d3a30bcbd80c",
+  "pcb_sha256": "9407948570a5ba2f7ba6700888929932599c12ad0884c823c179237d57320851",
   "before_imu_digital_sha256": "e62dbc80c4811195aaf47eaec0ec8931b466e4a04353b59568df75b37cee4926",
   "new_part_positions_mm_deg": {
     "U1801": [
@@ -111,5 +111,7 @@
   "adopted_main_development": true,
   "nominal_model_sha256": "8fe7433239f55bbb74aeab46290b551a1d569a5fbbfbaffa5bcf93604cba8e03",
   "before_underbody_change_pcb_sha256": "3b147f0fc0ede321edb8e9d7f102aac338d5d1f1c03fb6ba0b1d17cba90ee977",
-  "underbody_no_pour_review": "imu_underbody_pour_review.json"
+  "underbody_no_pour_review": "imu_underbody_pour_review.json",
+  "original113_pose_exception": "JH1 replaced and relocated to (43.7,21); all other112 original poses and all16 IMU poses retained",
+  "current_interboard_connector": "5001-BTB0840-20MR / SMT BTB"
 }

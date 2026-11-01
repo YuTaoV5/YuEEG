@@ -1,7 +1,7 @@
 {
   "status": "REV_H_DEVELOPMENT_NOT_FLASHED_OR_RELEASED",
   "battery": "Sony NP-BX1 single cell; loaded-voltage telemetry before boost",
-  "timestamp": "2026-11-01T10:06:02.411635+08:00",
+  "timestamp": "2026-11-01T10:18:20.754597+08:00",
   "fqbn": "esp32:esp32:esp32s3:FlashSize=16M,FlashMode=qio,PSRAM=opi,USBMode=hwcdc,CDCOnBoot=cdc,PartitionScheme=app3M_fat9M_16MB",
   "arduino_esp32_core": "2.0.11",
   "source_sha256": {
@@ -12,10 +12,10 @@
     "YuEEG_MotionWire.h": "64cb2ca3e5e9be3595ec5360c727ff51cc6ffcfa30910a3163df6a180f13b37c",
     "YuEEG_RelativeMotion.h": "52d8f06c2d572c2157994e433739c1674bef8112f52c596c83ca670dc2b1c1dc",
     "YuEEG_SafeSpi.h": "8ca73cd97530d3132e26af984955e95cdc4096e80194be979891b069565fb5c8",
-    "YuEEG_SCH16T.h": "3a5c6364fae41a8cf6fda267fe93fe4ec08fa9ca3ee35fe7b1d4f375f18c1c02",
+    "YuEEG_SCH16T.h": "8f25213d3609fdc9b9af5e959660c7419c0bfc85946c28c8b429ecd1f1c68cbc",
     "YuEEG_SPI3.h": "c3a65f9bea12fd39ca13026e13d6b26654078b9470300dc8ee99f9a0b0e477ae",
     "YuEEG_UI.h": "f60527a54247cfa361ce15268c70e371f8a3053efc106336394578bc15e2bb69",
-    "YuEEG_SCH16T.cpp": "48321cfcc6bfadba5b1b300575ce0fd969542235df802414107384afe14dbe3c",
+    "YuEEG_SCH16T.cpp": "a0db3a4a911cd14fe025cf327c693704e17821a0beff5ad1f8926507557b5a4e",
     "ads1299_driver.ino": "c06fdc00da6d1214178b67520373361d29e7de04c28974112ffeaab52be07cc7",
     "MURATA_SCH16T_LICENSE.txt": "68f48800c7901c55dd51cee0160b681458b39618aea5240d6f1a491f6adffbcd",
     "SCH16T_UPSTREAM_LICENSE.txt": "78c75294ed88d79326fa33075dc9476514ec7ad0c09c235f7d91fe7468989145"

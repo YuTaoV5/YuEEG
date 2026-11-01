@@ -358,7 +358,7 @@ class SCH16T
         bool        verifyStatus(SCH16T_status *Status);
         int         getStatus(SCH16T_status *Status);
         char        *getSnbr(void);
-        
+
     protected:
         SCH16T(spi_device_handle_t spi, int cs_pin, int reset_pin = -1, int ta9_8 = 0);
 

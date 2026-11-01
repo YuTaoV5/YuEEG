@@ -1,0 +1,205 @@
+{
+  "status": "NATIVE_CENTERLINE_SCREEN_NOT_SIGNAL_INTEGRITY_VALIDATION",
+  "pcb_sha256": "9407948570a5ba2f7ba6700888929932599c12ad0884c823c179237d57320851",
+  "baseline_pcb_sha256": "157ffd1e0412ff2283224bd3119d5567486dd6dca845c1c37716d3a30bcbd80c",
+  "baseline_revision": "b67843f before SMT migration",
+  "sample_pitch_max_mm": 0.1,
+  "nets": {
+    "ADS_CS": {
+      "planar_length_mm": 40.92460736885996,
+      "samples": 419,
+      "missing_all_reference_samples": 33,
+      "missing_length_estimate_mm": 3.0505575931390743,
+      "current_missing_but_baseline_plane_present_samples": 33,
+      "missing_outside_signal_antipads_samples": 0,
+      "missing_examples_mm": []
+    },
+    "ADS_SCLK": {
+      "planar_length_mm": 45.08010771224848,
+      "samples": 480,
+      "missing_all_reference_samples": 0,
+      "missing_length_estimate_mm": 0,
+      "current_missing_but_baseline_plane_present_samples": 0,
+      "missing_outside_signal_antipads_samples": 0,
+      "missing_examples_mm": []
+    },
+    "ADS_MOSI": {
+      "planar_length_mm": 40.522744672819805,
+      "samples": 413,
+      "missing_all_reference_samples": 16,
+      "missing_length_estimate_mm": 1.5681659369606544,
+      "current_missing_but_baseline_plane_present_samples": 16,
+      "missing_outside_signal_antipads_samples": 0,
+      "missing_examples_mm": []
+    },
+    "ADS_MISO": {
+      "planar_length_mm": 35.17362018872446,
+      "samples": 361,
+      "missing_all_reference_samples": 18,
+      "missing_length_estimate_mm": 1.749028657562338,
+      "current_missing_but_baseline_plane_present_samples": 8,
+      "missing_outside_signal_antipads_samples": 0,
+      "missing_examples_mm": []
+    },
+    "ADS_DRDY": {
+      "planar_length_mm": 55.3072239405873,
+      "samples": 559,
+      "missing_all_reference_samples": 127,
+      "missing_length_estimate_mm": 12.54257424229536,
+      "current_missing_but_baseline_plane_present_samples": 8,
+      "missing_outside_signal_antipads_samples": 109,
+      "missing_examples_mm": [
+        [
+          35.979038,
+          7.6945,
+          "In2.Cu"
+        ],
+        [
+          35.879282,
+          7.6945,
+          "In2.Cu"
+        ],
+        [
+          35.779527,
+          7.6945,
+          "In2.Cu"
+        ],
+        [
+          35.679771,
+          7.6945,
+          "In2.Cu"
+        ],
+        [
+          35.580015,
+          7.6945,
+          "In2.Cu"
+        ],
+        [
+          35.480259,
+          7.6945,
+          "In2.Cu"
+        ],
+        [
+          35.380504,
+          7.6945,
+          "In2.Cu"
+        ],
+        [
+          35.280748,
+          7.6945,
+          "In2.Cu"
+        ]
+      ]
+    },
+    "ADS_RESET": {
+      "planar_length_mm": 48.27616403923063,
+      "samples": 500,
+      "missing_all_reference_samples": 136,
+      "missing_length_estimate_mm": 12.866691335592575,
+      "current_missing_but_baseline_plane_present_samples": 8,
+      "missing_outside_signal_antipads_samples": 118,
+      "missing_examples_mm": [
+        [
+          31.825,
+          15.2,
+          "In2.Cu"
+        ],
+        [
+          31.875,
+          15.175,
+          "In2.Cu"
+        ],
+        [
+          32.425,
+          14.9,
+          "In2.Cu"
+        ],
+        [
+          32.325,
+          14.95,
+          "In2.Cu"
+        ],
+        [
+          32.125,
+          15.05,
+          "In2.Cu"
+        ],
+        [
+          31.975,
+          15.125,
+          "In2.Cu"
+        ],
+        [
+          31.925,
+          15.15,
+          "In2.Cu"
+        ],
+        [
+          32.475,
+          14.875,
+          "In2.Cu"
+        ]
+      ]
+    },
+    "ADS_START": {
+      "planar_length_mm": 47.43533862076842,
+      "samples": 484,
+      "missing_all_reference_samples": 145,
+      "missing_length_estimate_mm": 14.253243670896016,
+      "current_missing_but_baseline_plane_present_samples": 8,
+      "missing_outside_signal_antipads_samples": 127,
+      "missing_examples_mm": [
+        [
+          25.744785,
+          9.0449,
+          "In2.Cu"
+        ],
+        [
+          25.645155,
+          9.0449,
+          "In2.Cu"
+        ],
+        [
+          25.545526,
+          9.0449,
+          "In2.Cu"
+        ],
+        [
+          25.445896,
+          9.0449,
+          "In2.Cu"
+        ],
+        [
+          25.346266,
+          9.0449,
+          "In2.Cu"
+        ],
+        [
+          25.246636,
+          9.0449,
+          "In2.Cu"
+        ],
+        [
+          34.9284,
+          13.0203,
+          "In2.Cu"
+        ],
+        [
+          34.8684,
+          12.9603,
+          "In2.Cu"
+        ]
+      ]
+    },
+    "ADS_PWDN": {
+      "planar_length_mm": 36.642774875100244,
+      "samples": 370,
+      "missing_all_reference_samples": 0,
+      "missing_length_estimate_mm": 0,
+      "current_missing_but_baseline_plane_present_samples": 0,
+      "missing_outside_signal_antipads_samples": 0,
+      "missing_examples_mm": []
+    }
+  },
+  "scope": "Midpoint samples, length-weighted missing copper estimate; reference F=In1, B/In4=In3, In2=In1 or In3. No proof of connected return path around holes, full trace width, impedance, edge ringing, crosstalk, ADC timing or EEG noise. Baseline coverage queried at CURRENT route XY, not a comparison of equal-length old/new traces."
+}

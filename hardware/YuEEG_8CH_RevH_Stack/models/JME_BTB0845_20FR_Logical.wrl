@@ -1,0 +1,5 @@
+#VRML V2.0 utf8
+# Original nominal bounding illustration, NOT manufacturer CAD.
+Transform { translation 0.0 0.0 0.8858267716535433 children [ Shape { appearance Appearance { material Material { diffuseColor .08 .08 .08 } } geometry Box { size 3.8976377952755907 1.7322834645669292 1.7716535433070866 } } ] }
+Transform { translation -1.7716535433070866 0.4921259842519685 -0.11811023622047244 children [ Shape { appearance Appearance { material Material { diffuseColor .08 .08 .08 } } geometry Box { size 0.19685039370078738 0.19685039370078738 0.23622047244094488 } } ] }
+Transform { translation 1.7716535433070866 0.4921259842519685 -0.11811023622047244 children [ Shape { appearance Appearance { material Material { diffuseColor .08 .08 .08 } } geometry Box { size 0.19685039370078738 0.19685039370078738 0.23622047244094488 } } ] }

@@ -1,34 +1,43 @@
 {
-  "afe_socket_reference": "SQT-110-01-L-D",
-  "digital_header_reference": "TMM-110-03-L-D",
-  "pitch_mm": 2,
-  "finished_hole_mm": 0.9,
-  "female_body_mm": [
-    4,
-    20.3,
-    6.35
+  "status": "ADOPTED_NATIVE_CHECKS_PASS_ENGINEERING_DEVELOPMENT",
+  "manufacturer": "JMEconn / 文章济美",
+  "family": "0.8mm dual-slot SMT BTB",
+  "pitch_mm": 0.8,
+  "electrical_contacts": 20,
+  "nominal_surface_gap_mm": 8.5,
+  "drawing_mated_height_tolerance_mm": 0.15,
+  "male_height_grade_mm": 4.0,
+  "female_height_grade_mm": 4.5,
+  "body_length_mm": 9.9,
+  "pad_size_mm": [
+    0.35,
+    1.8
   ],
-  "male_body_mm": [
-    3.94,
-    20,
-    1.5
+  "row_centers_mm": 4.0,
+  "plastic_locator_finished_hole_mm": 0.65,
+  "contact_rating_A": 0.5,
+  "source_pdf": "https://www.wzjm5001.com/data/upload/2022-03-18/62342c4418c0d.pdf",
+  "source_pdf_sha256": "2fb09e9820767e83a0f8a32d958b34b5cdacb71f4c2631dcb50154f5ab2625ba",
+  "drawing_revision": "B, 2017-02-17",
+  "afe_reference": "5001-BTB0845-20FR",
+  "digital_reference": "5001-BTB0840-20MR",
+  "order_code_status": "Derived from drawing coding/table; exact delivered full part numbers/variant must be confirmed by supplier",
+  "taobao_sku_status": "NOT_VERIFIED_FOR_THIS_20_CONTACT_8P5_MM_PAIR",
+  "numbering": "Project logical numbers, absent from supplier drawing; mirrored male/female footprints; assembled XY/net equality required",
+  "candidate_xy_mm": [
+    43.7,
+    21
   ],
-  "male_mating_post_mm": 4,
-  "male_solder_tail_mm": 2.7,
-  "socket_tail_mm": 2.29,
-  "pcb_surface_gap_mm": 8.5,
-  "nominal_insertion_mm": 3.35,
-  "socket_insertion_range_mm": [
-    2.62,
-    5.03
-  ],
-  "nominal_housing_gap_mm": 0.65,
+  "candidate_orientation_deg": 90,
+  "required_minimum_local_surface_gap_mm": 8.3,
+  "models": "Original bounding illustration, not supplier STEP or toleranced internal contact model",
   "sources": [
-    "https://suddendocs.samtec.com/catalog_english/sqw.pdf",
-    "https://suddendocs.samtec.com/catalog_english/tmm_th.pdf",
-    "https://suddendocs.samtec.com/prints/tmm-th.pdf"
+    "https://www.wzjm5001.com/home/listn/details/id/73.html",
+    "https://www.wzjm5001.com/data/upload/2022-03-18/62342c4418c0d.pdf",
+    "https://csconn.com.cn/UserFiles/upload/file/CBT-0820XXM-XX.pdf",
+    "https://csconn.com.cn/UserFiles/upload/file/CBT-0820XXF-XX.pdf"
   ],
-  "procurement_status": "Manufacturer dimensional reference selected; exact Taobao seller/stock or qualified equivalent not verified",
-  "numbering": "Project logical numbers; unkeyed physical rows. Assembly XY/net contract remains mandatory. No vendor pin-1 marking relied upon.",
-  "models": "Original bounding envelopes; not manufacturer STEP or internal contact model"
+  "pcb_surface_gap_mm": 8.5,
+  "afe_socket_reference": "5001-BTB0845-20FR",
+  "digital_header_reference": "5001-BTB0840-20MR"
 }

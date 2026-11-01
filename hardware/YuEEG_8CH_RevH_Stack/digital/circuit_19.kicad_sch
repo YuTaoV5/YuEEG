@@ -2024,7 +2024,7 @@ no)
 1.0))))
 (property
 "Value"
-"TMM-110-03-L-D / 4mm POST / bottom logical"
+"5001-BTB0840-20MR / SMT BTB"
 (at
 297.18
 105.41000000000001
@@ -2036,7 +2036,7 @@ no)
 1.0))))
 (property
 "Footprint"
-"YuEEG:Samtec_TMM_110_03_BottomLogical"
+"YuEEG:JME_BTB0840_20MR_Logical"
 (at
 297.18
 138.43
@@ -2050,7 +2050,7 @@ no)
 yes)))
 (property
 "Datasheet"
-"https://www.samtec.com/products/tmm-110-03-l-d"
+"https://www.wzjm5001.com/data/upload/2022-03-18/62342c4418c0d.pdf"
 (at
 297.18
 138.43

@@ -1109,7 +1109,7 @@ no)
 1.0))))
 (property
 "Value"
-"SQT-110-01-L-D / SOCKET / logical pins"
+"5001-BTB0845-20FR / SMT BTB"
 (at
 101.6
 25.400000000000002
@@ -1121,7 +1121,7 @@ no)
 1.0))))
 (property
 "Footprint"
-"YuEEG:Samtec_SQT_110_01_Logical"
+"YuEEG:JME_BTB0845_20FR_Logical"
 (at
 101.6
 58.42
@@ -1135,7 +1135,7 @@ no)
 yes)))
 (property
 "Datasheet"
-"https://www.samtec.com/products/sqt-110-01-l-d"
+"https://www.wzjm5001.com/data/upload/2022-03-18/62342c4418c0d.pdf"
 (at
 101.6
 58.42

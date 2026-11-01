@@ -1,6 +1,6 @@
 {
   "status": "NATIVE_RULE_AND_FILLED_POUR_SCREEN_PASS_NOT_PERFORMANCE_VALIDATION",
-  "pcb_sha256": "157ffd1e0412ff2283224bd3119d5567486dd6dca845c1c37716d3a30bcbd80c",
+  "pcb_sha256": "9407948570a5ba2f7ba6700888929932599c12ad0884c823c179237d57320851",
   "rule_attached_to": "U1801",
   "footprint_library_sha256": "8629cc82418a2dfa7b1543e668023c31ab34bce03a4cc0d393cbf236c8b3259f",
   "global_bounds_mm": [

@@ -13,6 +13,6 @@ for name,ref in [('digital','JH2'),('power','JP2')]:
   header=next(f for f in b.GetFootprints() if f.GetReference()=='JH1');boxes=[]
   for pad in header.Pads():
    bb=pad.GetBoundingBox();boxes.append([p.ToMM(bb.GetX()),p.ToMM(bb.GetY()),p.ToMM(bb.GetRight()),p.ToMM(bb.GetBottom())])
-  out[name]['interboard_header']=dict(reference='JH1',native_pad_bbox_xy_mm=[min(v[0] for v in boxes),min(v[1] for v in boxes),max(v[2] for v in boxes),max(v[3] for v in boxes)],pad_centers_mm={v.GetNumber():[p.ToMM(v.GetPosition().x),p.ToMM(v.GetPosition().y)] for v in header.Pads()})
+  out[name]['interboard_header']=dict(reference='JH1',mounting='SMT_B_NO_F_SIDE_METAL_TAILS',F_side_metal_tail_protrusion_mm=0,native_pad_bbox_xy_mm=[min(v[0] for v in boxes),min(v[1] for v in boxes),max(v[2] for v in boxes),max(v[3] for v in boxes)],pad_centers_mm={v.GetNumber():[p.ToMM(v.GetPosition().x),p.ToMM(v.GetPosition().y)] for v in header.Pads()})
 assert {k:v['net'] for k,v in out['digital']['pads'].items()}=={k:v['net'] for k,v in out['power']['pads'].items()}
 dest=H/'mechanical/current/power_ports_native.json';dest.write_text(json.dumps(out,indent=2));print(json.dumps(out,indent=2))

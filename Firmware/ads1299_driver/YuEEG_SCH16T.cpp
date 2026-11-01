@@ -45,13 +45,13 @@
  * @note Resets SCH1 by setting EXTRESN pin low and high.
  *
  * @param None
- * 
- * @return None                           
+ *
+ * @return None
  */
 void SCH16T::reset(void)
-{       
+{
     if (_reset > 0)
-    {       
+    {
         digitalWrite(_reset, LOW);
         delay(2);
         digitalWrite(_reset, HIGH);
@@ -64,8 +64,8 @@ void SCH16T::reset(void)
  * @note Resets SCH1 by setting SOFTRESET_CTRL-bit in CTRL_RESET register.
  *
  * @param None
- * 
- * @return None                           
+ *
+ * @return None
  */
 void SCH16T::sendSPIreset(void)
 {
@@ -78,15 +78,15 @@ void SCH16T::sendSPIreset(void)
  * @brief Checks if the gyroscope filter value given as parameter is valid.
  *
  * @param Freq - Gyroscope filter corner frequency [Hz]
- * 
+ *
  * @return true = valid
  *         false = invalid
  */
 bool SCH16T::isValidRateFilterFreq(uint32_t Freq)
-{   
-    if (Freq == 13 || Freq == 30 || Freq == 68 || Freq == 235 || Freq == 280 || Freq == 370 || Freq == 0) 
+{
+    if (Freq == 13 || Freq == 30 || Freq == 68 || Freq == 235 || Freq == 280 || Freq == 370 || Freq == 0)
         return true;
-    else    
+    else
         return false;
 }
 
@@ -95,15 +95,15 @@ bool SCH16T::isValidRateFilterFreq(uint32_t Freq)
  * @brief Checks if the accelerometer filter value given as parameter is valid.
  *
  * @param Freq - Accelerometer Filter corner frequency [Hz]
- * 
+ *
  * @return true = valid
  *         false = invalid
  */
 bool SCH16T::isValidAccFilterFreq(uint32_t Freq)
-{   
-    if (Freq == 13 || Freq == 30 || Freq == 68 || Freq == 210 || Freq == 240 || Freq == 290 || Freq == 0) 
+{
+    if (Freq == 13 || Freq == 30 || Freq == 68 || Freq == 210 || Freq == 240 || Freq == 290 || Freq == 0)
         return true;
-    else    
+    else
         return false;
 }
 
@@ -112,15 +112,15 @@ bool SCH16T::isValidAccFilterFreq(uint32_t Freq)
  * @brief Checks if the sensitivity value given as parameter is a valid rate sensitivity.
  *
  * @param Sens - Sensitivity value [LSB/dps]
- * 
+ *
  * @return true = valid
- *         false = invalid                          
+ *         false = invalid
  */
 bool SCH16T::isValidRateSens(uint32_t Sens)
-{   
-    if (Sens == 1600 || Sens == 3200 || Sens == 6400) 
+{
+    if (Sens == 1600 || Sens == 3200 || Sens == 6400)
         return true;
-    else    
+    else
         return false;
 }
 
@@ -129,15 +129,15 @@ bool SCH16T::isValidRateSens(uint32_t Sens)
  * @brief Checks if the sensitivity value given as parameter is a valid accelerometer sensitivity.
  *
  * @param Sens - Sensitivity value [LSB/m/s2]
- * 
+ *
  * @return true = valid
- *         false = invalid                          
+ *         false = invalid
  */
 bool SCH16T::isValidAccSens(uint32_t Sens)
-{   
-    if (Sens == 3200 || Sens == 6400 || Sens == 12800 || Sens == 25600) 
+{
+    if (Sens == 3200 || Sens == 6400 || Sens == 12800 || Sens == 25600)
         return true;
-    else    
+    else
         return false;
 }
 
@@ -146,15 +146,15 @@ bool SCH16T::isValidAccSens(uint32_t Sens)
  * @brief Checks if the decimation value given as parameter is valid.
  *
  * @param Decimation - Decimation ratio
- * 
+ *
  * @return true = valid
- *         false = invalid                          
+ *         false = invalid
  */
 bool SCH16T::isValidDecimation(uint32_t Decimation)
-{   
-    if (Decimation == 2 || Decimation == 4 || Decimation == 8 || Decimation == 16 || Decimation == 32) 
+{
+    if (Decimation == 2 || Decimation == 4 || Decimation == 8 || Decimation == 16 || Decimation == 32)
         return true;
-    else    
+    else
         return false;
 }
 
@@ -163,12 +163,12 @@ bool SCH16T::isValidDecimation(uint32_t Decimation)
  * @brief Checks if the sample rate given as parameter is valid.
  *
  * @param Freq - Sample rate [Hz]
- * 
+ *
  * @return true = valid
- *         false = invalid                          
+ *         false = invalid
  */
 bool SCH16T::isValidSampleRate(uint32_t Freq)
-{   
+{
     if ((Freq >= 1) && (Freq <= 10000))
         return true;
 
@@ -178,15 +178,15 @@ bool SCH16T::isValidSampleRate(uint32_t Freq)
 
 /**
  * @brief Sets filter values for the SCH1.
- * 
+ *
  * @note Valid filter frequency values for all channels are: 0, 13, 30, 68, 235, 280, 370 [Hz]
  *
  * @param Freq_Rate12 - Filter for Rate_XYZ1 (interpolated) and Rate_XYZ2 (decimated) outputs.
  * @param Freq_Acc12  - Filter for Acc_XYZ1 (interpolated) and Acc_XYZ2 (decimated) outputs.
  * @param Freq_Acc3   - Filter for Acc_XYZ3 (interpolated) output.
- * 
+ *
  * @return SCH16T_OK = success
- *         SCH16T_ERR_* = failure. Please see header file for error definitions.                      
+ *         SCH16T_ERR_* = failure. Please see header file for error definitions.
  */
 int SCH16T::setFilters(uint32_t Freq_Rate12, uint32_t Freq_Acc12, uint32_t Freq_Acc3)
 {
@@ -208,7 +208,7 @@ int SCH16T::setFilters(uint32_t Freq_Rate12, uint32_t Freq_Acc12, uint32_t Freq_
     if (isValidAccFilterFreq(Freq_Acc3) == false) {
         return SCH16T_ERR_INVALID_PARAM;
     }
-    
+
     // Set filters for Rate_XYZ1 (interpolated) and Rate_XYZ2 (decimated) outputs.
     requestFrame_Rate12 = addTargetAddressNoCRC(request::REQ_SET_FILT_RATE);
     dataField = convertRateFilterToBitfield(Freq_Rate12);
@@ -235,13 +235,13 @@ int SCH16T::setFilters(uint32_t Freq_Rate12, uint32_t Freq_Acc12, uint32_t Freq_
     CRCvalue = CRC8(requestFrame_Acc3);
     requestFrame_Acc3 |= CRCvalue;
     sendRequest(requestFrame_Acc3);
-    
+
     // Read back filter register contents.
     sendRequest(addTargetAddress(request::REQ_READ_FILT_RATE));
     responseFrame_Rate12 = sendRequest(addTargetAddress(request::REQ_READ_FILT_ACC12));
     responseFrame_Acc12 = sendRequest(addTargetAddress(request::REQ_READ_FILT_ACC3));
     responseFrame_Acc3 = sendRequest(addTargetAddress(request::REQ_READ_FILT_ACC3));
-    
+
     // Check that return frame is not blank.
     if ((responseFrame_Rate12 == 0xFFFFFFFFFFFF) || (responseFrame_Rate12 == 0x00))
         return SCH16T_ERR_OTHER;
@@ -249,7 +249,7 @@ int SCH16T::setFilters(uint32_t Freq_Rate12, uint32_t Freq_Acc12, uint32_t Freq_
         return SCH16T_ERR_OTHER;
     if ((responseFrame_Acc3 == 0xFFFFFFFFFFFF) || (responseFrame_Acc3 == 0x00))
         return SCH16T_ERR_OTHER;
-    
+
     // Check that Source Address matches Target Address.
     if (((requestFrame_Rate12 & frame_mask::TA_FIELD_MASK) >> 38) != ((responseFrame_Rate12 & frame_mask::SA_FIELD_MASK) >> 37))
         return SCH16T_ERR_OTHER;
@@ -257,7 +257,7 @@ int SCH16T::setFilters(uint32_t Freq_Rate12, uint32_t Freq_Acc12, uint32_t Freq_
         return SCH16T_ERR_OTHER;
     if (((requestFrame_Acc3 & frame_mask::TA_FIELD_MASK) >> 38) != ((responseFrame_Acc3 & frame_mask::SA_FIELD_MASK) >> 37))
         return SCH16T_ERR_OTHER;
-    
+
     // Check that read and written data match.
     if ((requestFrame_Rate12 & frame_mask::DATA_FIELD_MASK) != (responseFrame_Rate12 & frame_mask::DATA_FIELD_MASK))
         return SCH16T_ERR_OTHER;
@@ -265,25 +265,25 @@ int SCH16T::setFilters(uint32_t Freq_Rate12, uint32_t Freq_Acc12, uint32_t Freq_
         return SCH16T_ERR_OTHER;
     if ((requestFrame_Acc3 & frame_mask::DATA_FIELD_MASK) != (responseFrame_Acc3 & frame_mask::DATA_FIELD_MASK))
         return SCH16T_ERR_OTHER;
-    
+
     return SCH16T_OK;
 }
 
 
 /**
  * @brief Sets Rate_XYZ1 & Rate_XYZ2 channel sensitivities and Rate_XYZ2 channel decimation for the SCH1.
- * 
+ *
  * @note Valid sensitivities for rate channels are: 1600, 3200, 6400 [LSB/dps]
  * @note Valid decimations for Rate_XYZ2 channel are: 2, 4, 8, 16, 32
  *
  * @param Sens_Rate1 - Sensitivity for Rate_XYZ1 (interpolated) output.
  * @param Sens_Rate2 - Sensitivity for Rate_XYZ2 (decimated) output.
  * @param Dec_Rate2  - Decimation for Rate_XYZ2 output (FPRIM / Dec_Rate2).
- * 
+ *
  * @note Here the same decimation is used for all Rate_XYZ2 axis.
  *
  * @return SCH16T_OK = success
- *         SCH16T_ERR_* = failure. Please see header file for error definitions.                      
+ *         SCH16T_ERR_* = failure. Please see header file for error definitions.
  */
 int SCH16T::setRateSensDec(uint16_t Sens_Rate1, uint16_t Sens_Rate2, uint16_t Dec_Rate2)
 {
@@ -292,7 +292,7 @@ int SCH16T::setRateSensDec(uint16_t Sens_Rate1, uint16_t Sens_Rate2, uint16_t De
     uint64_t requestFrame_Rate_Ctrl;
     uint64_t responseFrame_Rate_Ctrl;
     uint8_t  CRCvalue;
- 
+
     if (isValidRateSens(Sens_Rate1) == false) {
         return SCH16T_ERR_INVALID_PARAM;
     }
@@ -320,7 +320,7 @@ int SCH16T::setRateSensDec(uint16_t Sens_Rate1, uint16_t Sens_Rate2, uint16_t De
     dataField |= bitField;
     dataField <<= 3;
     dataField |= bitField;
-    
+
     requestFrame_Rate_Ctrl |= dataField;
     requestFrame_Rate_Ctrl <<= 8;
     CRCvalue = CRC8(requestFrame_Rate_Ctrl);
@@ -338,7 +338,7 @@ int SCH16T::setRateSensDec(uint16_t Sens_Rate1, uint16_t Sens_Rate2, uint16_t De
     // Check that Source Address matches Target Address.
     if (((requestFrame_Rate_Ctrl & frame_mask::TA_FIELD_MASK) >> 38) != ((responseFrame_Rate_Ctrl & frame_mask::SA_FIELD_MASK) >> 37))
         return SCH16T_ERR_OTHER;
-    
+
     // Check that read and written data match.
     if ((requestFrame_Rate_Ctrl & frame_mask::DATA_FIELD_MASK) != (responseFrame_Rate_Ctrl & frame_mask::DATA_FIELD_MASK))
         return SCH16T_ERR_OTHER;
@@ -349,15 +349,15 @@ int SCH16T::setRateSensDec(uint16_t Sens_Rate1, uint16_t Sens_Rate2, uint16_t De
 
 /**
  * @brief Gets Rate_XYZ1 & Rate_XYZ2 channel sensitivities and Rate_XYZ2 channel decimation for the SCH1.
- * 
+ *
  * @param Sens_Rate1 - Sensitivity for Rate_XYZ1 (interpolated) output.
  * @param Sens_Rate2 - Sensitivity for Rate_XYZ2 (decimated) output.
  * @param Dec_Rate2  - Decimation for Rate_XYZ2 output (FPRIM / Dec_Rate2).
- * 
+ *
  * @note It is assumed that the same decimation is used for all Rate_XYZ2 axis.
  *
  * @return SCH16T_OK = success
- *         SCH16T_ERR_* = failure. Please see header file for error definitions.                      
+ *         SCH16T_ERR_* = failure. Please see header file for error definitions.
  */
 int SCH16T::getRateSensDec(uint16_t *Sens_Rate1, uint16_t *Sens_Rate2, uint16_t *Dec_Rate2)
 {
@@ -376,10 +376,10 @@ int SCH16T::getRateSensDec(uint16_t *Sens_Rate1, uint16_t *Sens_Rate2, uint16_t 
     if (((addTargetAddress(request::REQ_READ_RATE_CTRL) & frame_mask::TA_FIELD_MASK) >> 38) != ((responseFrame_Rate_Ctrl & frame_mask::SA_FIELD_MASK) >> 37))
         return SCH16T_ERR_OTHER;
 
-    
+
     // Get sensitivities for Rate_XYZ1 (interpolated) and Rate_XYZ2 (decimated) outputs.
     // Also get decimation for Rate_XYZ2.
-    
+
     // First get the Rate_XYZ2 decimation
     dataField = (uint16_t)(responseFrame_Rate_Ctrl >> 8) & 0x07;
     *Dec_Rate2 = (uint16_t)convertBitfieldToDecimation(dataField);
@@ -398,7 +398,7 @@ int SCH16T::getRateSensDec(uint16_t *Sens_Rate1, uint16_t *Sens_Rate2, uint16_t 
 
 /**
  * @brief Sets Acc_XYZ1/2/3 channel sensitivities and Acc_XYZ2 channel decimation for the SCH1.
- * 
+ *
  * @note Valid sensitivities for all Acc channels are: 3200, 6400, 12800, 25600 [LSB/m/s2]
  * @note Valid decimations for Acc_XYZ3 channel are: 2, 4, 8, 16, 32
  *
@@ -406,11 +406,11 @@ int SCH16T::getRateSensDec(uint16_t *Sens_Rate1, uint16_t *Sens_Rate2, uint16_t 
  * @param Sens_Acc2 - Sensitivity for Acc_XYZ2 (decimated) output.
  * @param Sens_Acc3 - Sensitivity for Acc_XYZ3 (interpolated) output.
  * @param Dec_Acc2  - Decimation for Acc_XYZ2 output (FPRIM / Dec_Acc2).
- * 
+ *
  * @note Here the same decimation is used for all Acc_XYZ2 axis.
  *
  * @return SCH16T_OK = success
- *         SCH16T_ERR_* = failure. Please see header file for error definitions.                      
+ *         SCH16T_ERR_* = failure. Please see header file for error definitions.
  */
 int SCH16T::setAccSensDec(uint16_t Sens_Acc1, uint16_t Sens_Acc2, uint16_t Sens_Acc3, uint16_t Dec_Acc2)
 {
@@ -421,7 +421,7 @@ int SCH16T::setAccSensDec(uint16_t Sens_Acc1, uint16_t Sens_Acc2, uint16_t Sens_
     uint64_t requestFrame_Acc3_Ctrl;
     uint64_t responseFrame_Acc3_Ctrl;
     uint8_t  CRCvalue;
- 
+
     if (isValidAccSens(Sens_Acc1) == false) {
         return SCH16T_ERR_INVALID_PARAM;
     }
@@ -453,7 +453,7 @@ int SCH16T::setAccSensDec(uint16_t Sens_Acc1, uint16_t Sens_Acc2, uint16_t Sens_
     dataField |= bitField;
     dataField <<= 3;
     dataField |= bitField;
-    
+
     requestFrame_Acc12_Ctrl |= dataField;
     requestFrame_Acc12_Ctrl <<= 8;
     CRCvalue = CRC8(requestFrame_Acc12_Ctrl);
@@ -485,7 +485,7 @@ int SCH16T::setAccSensDec(uint16_t Sens_Acc1, uint16_t Sens_Acc2, uint16_t Sens_
         return SCH16T_ERR_OTHER;
     if (((requestFrame_Acc3_Ctrl & frame_mask::TA_FIELD_MASK) >> 38) != ((responseFrame_Acc3_Ctrl & frame_mask::SA_FIELD_MASK) >> 37))
         return SCH16T_ERR_OTHER;
-    
+
     // Check that read and written data match.
     if ((requestFrame_Acc12_Ctrl & frame_mask::DATA_FIELD_MASK) != (responseFrame_Acc12_Ctrl & frame_mask::DATA_FIELD_MASK))
         return SCH16T_ERR_OTHER;
@@ -498,16 +498,16 @@ int SCH16T::setAccSensDec(uint16_t Sens_Acc1, uint16_t Sens_Acc2, uint16_t Sens_
 
 /**
  * @brief Gets Acc_XYZ1/2/3 channel sensitivities and Acc_XYZ2 channel decimation for the SCH1.
- * 
+ *
  * @param Sens_Acc1 - Sensitivity for Acc_XYZ1 (interpolated) output.
  * @param Sens_Acc2 - Sensitivity for Acc_XYZ2 (decimated) output.
  * @param Sens_Acc3 - Sensitivity for Acc_XYZ3 (interpolated) output.
  * @param Dec_Acc2  - Decimation for Acc_XYZ2 output (FPRIM / Dec_Acc2).
- * 
+ *
  * @note It is assumed that the same decimation is used for all Acc_XYZ2 axis.
  *
  * @return SCH16T_OK = success
- *         SCH16T_ERR_* = failure. Please see header file for error definitions.                      
+ *         SCH16T_ERR_* = failure. Please see header file for error definitions.
  */
 int SCH16T::getAccSensDec(uint16_t *Sens_Acc1, uint16_t *Sens_Acc2, uint16_t *Sens_Acc3, uint16_t *Dec_Acc2)
 {
@@ -533,10 +533,10 @@ int SCH16T::getAccSensDec(uint16_t *Sens_Acc1, uint16_t *Sens_Acc2, uint16_t *Se
     if (((addTargetAddress(request::REQ_READ_ACC3_CTRL) & frame_mask::TA_FIELD_MASK) >> 38) != ((responseFrame_Acc3_Ctrl & frame_mask::SA_FIELD_MASK) >> 37))
         return SCH16T_ERR_OTHER;
 
-    
+
     // Get sensitivities for Acc_XYZ1 (interpolated) and Acc_XYZ2 (decimated) outputs.
     // Also get decimation for Acc_XYZ2.
-    
+
     // Firat get the Acc_XYZ2 decimation
     dataField = (uint16_t)(responseFrame_Acc12_Ctrl >> 8) & 0x07;
     *Dec_Acc2 = (uint16_t)convertBitfieldToDecimation(dataField);
@@ -564,7 +564,7 @@ int SCH16T::getAccSensDec(uint16_t *Sens_Acc1, uint16_t *Sens_Acc2, uint16_t *Se
  * @param setEOI - Sets EOI-bit. Locks all R/W registers, except soft reset. Can only be set when no errors in common status.
  *
  * @return SCH16T_OK = success
- *         SCH16T_ERR_* = failure. Please see header file for error definitions.                      
+ *         SCH16T_ERR_* = failure. Please see header file for error definitions.
  */
 int SCH16T::enableMeas(bool enableSensor, bool setEOI)
 {
@@ -598,7 +598,7 @@ int SCH16T::enableMeas(bool enableSensor, bool setEOI)
     // Check that Source Address matches Target Address.
     if (((requestFrame_Mode_Ctrl & frame_mask::TA_FIELD_MASK) >> 38) != ((responseFrame_Mode_Ctrl & frame_mask::SA_FIELD_MASK) >> 37))
         return SCH16T_ERR_OTHER;
-    
+
     return SCH16T_OK;
 }
 
@@ -610,7 +610,7 @@ int SCH16T::enableMeas(bool enableSensor, bool setEOI)
  * @param enable   - Data Ready -pin disable/enable
  *
  * @return SCH16T_OK = success
- *         SCH16T_ERR_* = failure. Please see header file for error definitions.                      
+ *         SCH16T_ERR_* = failure. Please see header file for error definitions.
  */
 int SCH16T::setDRY(int8_t polarity, bool enable)
 {
@@ -621,22 +621,22 @@ int SCH16T::setDRY(int8_t polarity, bool enable)
 
     if ((polarity < -1) || (polarity > 1))
         return SCH16T_ERR_INVALID_PARAM;
-    
+
     // Read USER_IF_CTRL -register content
     sendRequest(addTargetAddress(request::REQ_READ_USER_IF_CTRL));
     responseFrame_User_If_Ctrl = sendRequest(addTargetAddress(request::REQ_READ_USER_IF_CTRL));
     dataContent = (responseFrame_User_If_Ctrl & frame_mask::DATA_FIELD_MASK) >> 8;
-    
+
     if (polarity == 0)
         dataContent &= (uint16_t)~0x40;   // Set DRY active high (0b01000000)
     else if (polarity == 1)
         dataContent |= 0x40;              // Set DRY active low
-    
+
     if (enable)
         dataContent |= 0x20;              // Set DRY enabled (0b00100000)
     else
         dataContent &= (uint16_t)~0x20;   // Set DRY disabled
-        
+
     requestFrame_User_If_Ctrl = addTargetAddressNoCRC(request::REQ_SET_USER_IF_CTRL);
     requestFrame_User_If_Ctrl |= dataContent;
     requestFrame_User_If_Ctrl <<= 8;
@@ -659,20 +659,20 @@ int SCH16T::setDRY(int8_t polarity, bool enable)
     // Check that read and written data match.
     if ((requestFrame_User_If_Ctrl & frame_mask::DATA_FIELD_MASK) != (responseFrame_User_If_Ctrl & frame_mask::DATA_FIELD_MASK))
         return SCH16T_ERR_OTHER;
-    
+
     return SCH16T_OK;
 }
 
 
 /**
  * @brief Returns bitfield for setting gyroscope output channel filters to desired frequency value.
- * 
+ *
  * @note Valid filter frequency values for all channels are: 0, 13, 30, 68, 235, 280, 370 [Hz]
  * @note Here all XYZ-axis filters are set to same value.
  *
  * @param Freq - Filter for an output channel (Rate_XYZ1, Freq_Acc12, Freq_Acc3).
- * 
- * @return Equivalent bit field for building the filter setting SPI-frame.                   
+ *
+ * @return Equivalent bit field for building the filter setting SPI-frame.
  */
 uint32_t SCH16T::convertRateFilterToBitfield(uint32_t Freq)
 {
@@ -683,7 +683,7 @@ uint32_t SCH16T::convertRateFilterToBitfield(uint32_t Freq)
         case 30:
             return 0x049;   // 001 001 001
         case 68:
-            return 0x000;   // 000 000 000        
+            return 0x000;   // 000 000 000
         case 235:
             return 0x16D;   // 101 101 101
         case 280:
@@ -693,20 +693,20 @@ uint32_t SCH16T::convertRateFilterToBitfield(uint32_t Freq)
         case 0:
             return 0x1FF;   // 111 111 111, filter bypass mode
         default:
-            return 0x000;       
+            return 0x000;
     }
 }
 
 
 /**
  * @brief Returns bitfield for setting accelerometer output channel filters to desired frequency value.
- * 
+ *
  * @note Valid filter frequency values for all channels are: 0, 13, 30, 68, 210, 240, 290 [Hz]
  * @note Here all XYZ-axis filters are set to same value.
  *
  * @param Freq - Filter for an output channel (Rate_XYZ1, Freq_Acc12, Freq_Acc3).
- * 
- * @return Equivalent bit field for building the filter setting SPI-frame.                   
+ *
+ * @return Equivalent bit field for building the filter setting SPI-frame.
  */
 uint32_t SCH16T::convertAccFilterToBitfield(uint32_t Freq)
 {
@@ -717,7 +717,7 @@ uint32_t SCH16T::convertAccFilterToBitfield(uint32_t Freq)
         case 30:
             return 0x049;   // 001 001 001
         case 68:
-            return 0x000;   // 000 000 000        
+            return 0x000;   // 000 000 000
         case 210:
             return 0x16D;   // 101 101 101
         case 240:
@@ -727,19 +727,19 @@ uint32_t SCH16T::convertAccFilterToBitfield(uint32_t Freq)
         case 0:
             return 0x1FF;   // 111 111 111, filter bypass mode
         default:
-            return 0x000;       
+            return 0x000;
     }
 }
 
 
 /**
  * @brief Returns bitfield for setting output channel rate sensitivities to desired value.
- * 
+ *
  * @note Valid sensitivity values for all rate channels are: 1600, 3200, 6400 [LSB/dps]
  *
  * @param Sens - Sensitivity for a rate output channel (Rate_XYZ1 & Rate_XYZ2).
- * 
- * @return Equivalent bit field for building the rate sensitivity setting SPI-frame.                   
+ *
+ * @return Equivalent bit field for building the rate sensitivity setting SPI-frame.
  */
 uint32_t SCH16T::convertRateSensToBitfield(uint32_t Sens)
 {
@@ -748,11 +748,11 @@ uint32_t SCH16T::convertRateSensToBitfield(uint32_t Sens)
         case 1600:
             return 0x02;   // 010
         case 3200:
-            return 0x03;   // 011      
+            return 0x03;   // 011
         case 6400:
             return 0x04;   // 100
         default:
-            return 0x01;       
+            return 0x01;
     }
 }
 
@@ -761,8 +761,8 @@ uint32_t SCH16T::convertRateSensToBitfield(uint32_t Sens)
  * @brief Returns rate sensitivity that equals to RATE_CTRL-register bitfield.
  *
  * @param bitfield - RATE_CTRL-register bitfield for a rate output channel (Rate_XYZ1 & Rate_XYZ2).
- * 
- * @return Equivalent sensitivity for Rate channels.                   
+ *
+ * @return Equivalent sensitivity for Rate channels.
  */
 uint32_t SCH16T::convertBitfieldToRateSens(uint32_t bitfield)
 {
@@ -771,23 +771,23 @@ uint32_t SCH16T::convertBitfieldToRateSens(uint32_t bitfield)
         case 0x02:          // 010
             return 1600;
         case 0x03:          // 011
-            return 3200;      
+            return 3200;
         case 0x04:          // 100
             return 6400;
         default:
-            return 0x00;       
+            return 0x00;
     }
 }
 
 
 /**
  * @brief Returns bitfield for setting output channel acc sensitivities to desired value.
- * 
+ *
  * @note Valid sensitivity values for all acc channels are: 3200, 6400, 12800, 25600 [LSB/m/s2]
  *
  * @param Sens - Sensitivity for a rate output channel (Rate_XYZ1 & Rate_XYZ2).
- * 
- * @return Equivalent bit field for building the rate sensitivity setting SPI-frame.                   
+ *
+ * @return Equivalent bit field for building the rate sensitivity setting SPI-frame.
  */
 uint32_t SCH16T::convertAccSensToBitfield(uint32_t Sens)
 {
@@ -798,21 +798,21 @@ uint32_t SCH16T::convertAccSensToBitfield(uint32_t Sens)
         case 6400:
             return 0x02;   // 010
         case 12800:
-            return 0x03;   // 011      
+            return 0x03;   // 011
         case 25600:
             return 0x04;   // 100
         default:
-            return 0x00;       
+            return 0x00;
     }
 }
 
 
 /**
  * @brief Return acc sensitivity that equals to ACC12/3_CTRL-register bitfield.
- * 
+ *
  * @param bitfield - ACC12/3_CTRL-register bitfield for an acc output channel (Acc_XYZ1/2 & Acc_XYZ3).
- * 
- * @return Equivalent sensitivity for Acc channels.                  
+ *
+ * @return Equivalent sensitivity for Acc channels.
  */
 uint32_t SCH16T::convertBitfieldToAccSens(uint32_t bitfield)
 {
@@ -823,23 +823,23 @@ uint32_t SCH16T::convertBitfieldToAccSens(uint32_t bitfield)
         case 0x02:          // 010
             return 6400;
         case 0x03:          // 011
-            return 12800;      
+            return 12800;
         case 0x04:          // 100
             return 25600;
         default:
-            return 0x00;       
+            return 0x00;
     }
 }
 
 
 /**
  * @brief Returns bitfield for setting output channel rate decimation to desired value.
- * 
+ *
  * @note Valid decimation values for all rate channels are: 2, 4, 8, 16, 32
  *
  * @param Decimation - Decimation for output channel.
- * 
- * @return Equivalent bit field for building the decimation setting SPI-frame.                   
+ *
+ * @return Equivalent bit field for building the decimation setting SPI-frame.
  */
 uint32_t SCH16T::convertDecimationToBitfield(uint32_t Decimation)
 {
@@ -850,13 +850,13 @@ uint32_t SCH16T::convertDecimationToBitfield(uint32_t Decimation)
         case 4:
             return 0x01;   // 010
         case 8:
-            return 0x02;   // 011      
+            return 0x02;   // 011
         case 16:
             return 0x03;   // 100
         case 32:
             return 0x04;   // 100
         default:
-            return 0x00;       
+            return 0x00;
     }
 }
 
@@ -865,7 +865,7 @@ uint32_t SCH16T::convertDecimationToBitfield(uint32_t Decimation)
  * @brief Return decimation that equals to RATE_CTRL-register bitfield.
  *
  * @param bitfield - RATE_CTRL-register bitfield for decimation.
- * 
+ *
  * @return Equivalent decimation value
  */
 uint32_t SCH16T::convertBitfieldToDecimation(uint32_t bitfield)
@@ -877,13 +877,13 @@ uint32_t SCH16T::convertBitfieldToDecimation(uint32_t bitfield)
         case 0x01:      // 010
             return 4;
         case 0x02:      // 011
-            return 8;      
+            return 8;
         case 0x03:      // 100
             return 16;
         case 0x04:      // 100
             return 32;
         default:
-            return 0x00;       
+            return 0x00;
     }
 }
 
@@ -900,7 +900,7 @@ int SCH16T::getStatus(SCH16T_status *Status)
     if (Status == NULL) {
         return SCH16T_ERR_NULL_POINTER;
     }
-    
+
     sendRequest(addTargetAddress(request::REQ_READ_STAT_SUM));
     Status->Summary     = SPI48_DATA_UINT16(sendRequest(addTargetAddress(request::REQ_READ_STAT_SUM_SAT)));
     Status->Summary_Sat = SPI48_DATA_UINT16(sendRequest(addTargetAddress(request::REQ_READ_STAT_COM)));
@@ -951,7 +951,7 @@ bool SCH16T::verifyStatus(SCH16T_status *Status)
         return false;
     if (Status->Acc_Z != 0xffff)
         return false;
-    
+
     return true;
 }
 
@@ -960,8 +960,8 @@ bool SCH16T::verifyStatus(SCH16T_status *Status)
  * @brief Read serial number of the SCH1.
  *
  * @param None
- * 
- * @return Serial number string                        
+ *
+ * @return Serial number string
  */
 char* SCH16T::getSnbr(void)
 {
@@ -975,7 +975,7 @@ char* SCH16T::getSnbr(void)
     sn_id2 = SPI48_DATA_UINT16(sendRequest(addTargetAddress(request::REQ_READ_SN_ID3)));
     sn_id3 = SPI48_DATA_UINT16(sendRequest(addTargetAddress(request::REQ_READ_SN_ID3)));
 
-    // Build serial number string 
+    // Build serial number string
     snprintf(strBuffer, 14, "%05d%01X%04X", sn_id2, sn_id1 & 0x000F, sn_id3);
 
     return strBuffer;
@@ -986,8 +986,8 @@ char* SCH16T::getSnbr(void)
  * @brief Add sensor target address bits 9 and 8 to request word
  *
  * @param  Request - 48-bit MOSI data
- * 
- * @return 48-bit MOSI data with correct target address                     
+ *
+ * @return 48-bit MOSI data with correct target address
  */
 uint64_t SCH16T::addTargetAddress(uint64_t Request)
 {
@@ -1001,8 +1001,8 @@ uint64_t SCH16T::addTargetAddress(uint64_t Request)
  * @brief Add sensor target address bits 9 and 8 to request word (that does not have CRC bits appended yet)
  *
  * @param  Request - 40-bit MOSI data
- * 
- * @return 40-bit MOSI data with correct target address                     
+ *
+ * @return 40-bit MOSI data with correct target address
  */
 uint64_t SCH16T::addTargetAddressNoCRC(uint64_t Request)
 {
@@ -1015,8 +1015,8 @@ uint64_t SCH16T::addTargetAddressNoCRC(uint64_t Request)
  * @brief Send SPI request to SCH1.
  *
  * @param  Request - 48-bit MOSI data
- * 
- * @return 48-bit received MISO line data.                     
+ *
+ * @return 48-bit received MISO line data.
  */
 uint64_t SCH16T::sendRequest(uint64_t Request)
 {
@@ -1034,10 +1034,10 @@ uint64_t SCH16T::sendRequest(uint64_t Request)
 
 /**
  * @brief Calculate CRC8 for the 48-bit SPI-frame.
- * 
+ *
  * @param SPIframe - 48-bit SPI-frame for which the CRC is calculated.
- * 
- * @return CRC for the given SPI-frame.                   
+ *
+ * @return CRC for the given SPI-frame.
  */
 uint8_t SCH16T::CRC8(uint64_t SPIframe)
 { return YuEEGSafeSpi::crc8(SPIframe); }
@@ -1047,7 +1047,7 @@ uint8_t SCH16T::CRC8(uint64_t SPIframe)
  * @brief Check if the CRC8 is correct for the given SPI frame.
  *
  * @param SPIframe - 48 bit SPI frame
- * 
+ *
  * @return true = ok
  *         false = error
  */
@@ -1062,10 +1062,10 @@ bool SCH16T::checkCRC8(uint64_t SPIframe)
 
 /**
  * @brief Calculate CRC3 for the 32-bit SPI-frame.
- * 
+ *
  * @param SPIframe - 32-bit SPI-frame for which the CRC is calculated.
- * 
- * @return CRC for the given SPI-frame.                   
+ *
+ * @return CRC for the given SPI-frame.
  */
 uint8_t SCH16T::CRC3(uint32_t SPIframe)
 { return YuEEGSafeSpi::crc3(SPIframe); }
@@ -1075,7 +1075,7 @@ uint8_t SCH16T::CRC3(uint32_t SPIframe)
  * @brief Check if the CRC3 is correct for the given SPI frame.
  *
  * @param SPIframe - 32 bit SPI frame
- * 
+ *
  * @return true = ok
  *         false = error
  */
@@ -1095,9 +1095,9 @@ bool SCH16T::checkCRC3(uint32_t SPIframe)
  *        sSensitivity - structure containing sensitivity settings for all channels.
  *        sDecimation - structure containing decimation settings for decimated channels.
  *        enableDRY - true = enable DRY interrupt, false = disable DRY interrupt.
- * 
+ *
  * @return SCH16T_OK = success
- *         SCH16T_ERR_* = failure. Please see header file for error definitions.                      
+ *         SCH16T_ERR_* = failure. Please see header file for error definitions.
  */
 int SCH16T::begin(SCH16T_filter f, SCH16T_sensitivity s, SCH16T_decimation d, bool dry)
 {
@@ -1126,8 +1126,8 @@ int SCH16T::begin(SCH16T_filter f, SCH16T_sensitivity s, SCH16T_decimation d, bo
  * @brief Read rate, acceleration and temperature data from sensor. Called by sampling_callback()
  *
  * @param data - pointer to "raw" data from sensor
- * 
- * @return None                       
+ *
+ * @return None
  */
 void SCH16T::getData(SCH16T_raw_data *data)
 {
@@ -1142,9 +1142,9 @@ void SCH16T::getData(SCH16T_raw_data *data)
     uint64_t temp_raw   = sendRequest(addTargetAddress(request::REQ_READ_TEMP));
 
     // Get possible frame errors
-    uint64_t miso_words[] = {rate_x_raw, rate_y_raw, rate_z_raw, acc_x_raw, acc_y_raw, acc_z_raw, temp_raw};       
+    uint64_t miso_words[] = {rate_x_raw, rate_y_raw, rate_z_raw, acc_x_raw, acc_y_raw, acc_z_raw, temp_raw};
     data->frame_error = check48bitFrameError(miso_words, (sizeof(miso_words) / sizeof(uint64_t)));
-    
+
     // Parse MISO data to structure
     data->Rate1_raw[SCH16T_AXIS_X] = SPI48_DATA_INT32(rate_x_raw);
     data->Rate1_raw[SCH16T_AXIS_Y] = SPI48_DATA_INT32(rate_y_raw);
@@ -1161,8 +1161,8 @@ void SCH16T::getData(SCH16T_raw_data *data)
  * @brief Read rate, acceleration and temperature data from sensor. Called by sampling_callback()
  *
  * @param data - pointer to "raw" data from sensor
- * 
- * @return None                       
+ *
+ * @return None
  */
 void SCH16T::getDataDecimated(SCH16T_raw_data *data)
 {
@@ -1177,12 +1177,12 @@ void SCH16T::getDataDecimated(SCH16T_raw_data *data)
     uint64_t temp_raw   = sendRequest(addTargetAddress(request::REQ_READ_TEMP));
 
     // Get possible frame errors
-    uint64_t miso_words[] = {rate_x_raw, rate_y_raw, rate_z_raw, acc_x_raw, acc_y_raw, acc_z_raw, temp_raw};       
+    uint64_t miso_words[] = {rate_x_raw, rate_y_raw, rate_z_raw, acc_x_raw, acc_y_raw, acc_z_raw, temp_raw};
     data->frame_error = check48bitFrameError(miso_words, (sizeof(miso_words) / sizeof(uint64_t)));
     data->generation_consistent=YuEEGSafeSpi::sameGeneration(rate_x_raw,rate_y_raw,rate_z_raw)
         &&YuEEGSafeSpi::sameGeneration(acc_x_raw,acc_y_raw,acc_z_raw)&&YuEEGSafeSpi::sensorData(temp_raw);
     for(int i=0;i<3;++i){data->Rate2_counter[i]=YuEEGSafeSpi::counter(miso_words[i]);data->Acc2_counter[i]=YuEEGSafeSpi::counter(miso_words[i+3]);}
-    
+
     // Parse MISO data to structure
     data->Rate2_raw[SCH16T_AXIS_X] = SPI48_DATA_INT32(rate_x_raw);
     data->Rate2_raw[SCH16T_AXIS_Y] = SPI48_DATA_INT32(rate_y_raw);
@@ -1199,8 +1199,8 @@ void SCH16T::getDataDecimated(SCH16T_raw_data *data)
  * @brief Read rate, acceleration and temperature data from sensor. Called by sampling_callback()
  *
  * @param data - pointer to "raw" data from sensor
- * 
- * @return None                       
+ *
+ * @return None
  */
 void SCH16T::getDataAux(SCH16T_raw_data *data)
 {
@@ -1212,9 +1212,9 @@ void SCH16T::getDataAux(SCH16T_raw_data *data)
     uint64_t temp_raw   = sendRequest(addTargetAddress(request::REQ_READ_TEMP));
 
     // Get possible frame errors
-    uint64_t miso_words[] = {acc_x_raw, acc_y_raw, acc_z_raw, temp_raw};       
+    uint64_t miso_words[] = {acc_x_raw, acc_y_raw, acc_z_raw, temp_raw};
     data->frame_error = check48bitFrameError(miso_words, (sizeof(miso_words) / sizeof(uint64_t)));
-    
+
     // Parse MISO data to structure
     data->Acc3_raw[SCH16T_AXIS_X]  = SPI48_DATA_INT32(acc_x_raw);
     data->Acc3_raw[SCH16T_AXIS_Y]  = SPI48_DATA_INT32(acc_y_raw);
@@ -1230,8 +1230,8 @@ void SCH16T::getDataAux(SCH16T_raw_data *data)
  *
  * @param data_in - pointer to summed raw data from sensor
  *        data_out - pointer to converted values
- * 
- * @return None                       
+ *
+ * @return None
  */
 void SCH16T::convertData(SCH16T_raw_data *data_in, SCH16T_result *data_out)
 {
@@ -1253,8 +1253,8 @@ void SCH16T::convertData(SCH16T_raw_data *data_in, SCH16T_result *data_out)
  *
  * @param data_in - pointer to summed raw data from sensor
  *        data_out - pointer to converted values
- * 
- * @return None                       
+ *
+ * @return None
  */
 void SCH16T::convertDataDecimated(SCH16T_raw_data *data_in, SCH16T_result *data_out)
 {
@@ -1276,8 +1276,8 @@ void SCH16T::convertDataDecimated(SCH16T_raw_data *data_in, SCH16T_result *data_
  *
  * @param data_in - pointer to summed raw data from sensor
  *        data_out - pointer to converted values
- * 
- * @return None                       
+ *
+ * @return None
  */
 void SCH16T::convertDataAux(SCH16T_raw_data *data_in, SCH16T_result *data_out)
 {
@@ -1296,19 +1296,19 @@ void SCH16T::convertDataAux(SCH16T_raw_data *data_in, SCH16T_result *data_out)
  *
  * @param data - pointer to 48-bit MISO frames from sensor
  *        size - number of frames to check
- * 
+ *
  * @return true = any error bit set
  *         false = no error
  */
 bool SCH16T::check48bitFrameError(uint64_t *data, int size)
 {
-    for (int i = 0; i < size; i++) 
+    for (int i = 0; i < size; i++)
     {
         uint64_t value = data[i];
         if (_transportError || !checkCRC8(value) || (value & frame_mask::ERROR_FIELD_MASK))
             return true;
     }
-    
+
     return false;
 }
 
@@ -1350,13 +1350,13 @@ SCH16T_K10::SCH16T_K10(spi_device_handle_t spi, int cs_pin, int reset_pin, int t
  * @brief Checks if the sensitivity value given as parameter is a valid rate sensitivity.
  *
  * @param Sens - Sensitivity value [LSB/dps]
- * 
+ *
  * @return true = valid
- *         false = invalid                          
+ *         false = invalid
  */
 bool SCH16T_K10::isValidRateSens(uint32_t Sens)
-{   
-    if (Sens == 100 || Sens == 200 || Sens == 400) 
+{
+    if (Sens == 100 || Sens == 200 || Sens == 400)
         return true;
     else
         return false;
@@ -1365,12 +1365,12 @@ bool SCH16T_K10::isValidRateSens(uint32_t Sens)
 
 /**
  * @brief Returns bitfield for setting output channel rate sensitivities to desired value.
- * 
+ *
  * @note Valid sensitivity values for all rate channels are: 1600, 3200, 6400 [LSB/dps]
  *
  * @param Sens - Sensitivity for a rate output channel (Rate_XYZ1 & Rate_XYZ2).
- * 
- * @return Equivalent bit field for building the rate sensitivity setting SPI-frame.                   
+ *
+ * @return Equivalent bit field for building the rate sensitivity setting SPI-frame.
  */
 uint32_t SCH16T_K10::convertRateSensToBitfield(uint32_t Sens)
 {
@@ -1379,11 +1379,11 @@ uint32_t SCH16T_K10::convertRateSensToBitfield(uint32_t Sens)
         case 100:
             return 0x02;   // 010
         case 200:
-            return 0x03;   // 011      
+            return 0x03;   // 011
         case 400:
             return 0x04;   // 100
         default:
-            return 0x01;       
+            return 0x01;
     }
 }
 
@@ -1392,8 +1392,8 @@ uint32_t SCH16T_K10::convertRateSensToBitfield(uint32_t Sens)
  * @brief Returns rate sensitivity that equals to RATE_CTRL-register bitfield.
  *
  * @param bitfield - RATE_CTRL-register bitfield for a rate output channel (Rate_XYZ1 & Rate_XYZ2).
- * 
- * @return Equivalent sensitivity for Rate channels.                   
+ *
+ * @return Equivalent sensitivity for Rate channels.
  */
 uint32_t SCH16T_K10::convertBitfieldToRateSens(uint32_t bitfield)
 {
@@ -1402,10 +1402,10 @@ uint32_t SCH16T_K10::convertBitfieldToRateSens(uint32_t bitfield)
         case 0x02:          // 010
             return 100;
         case 0x03:          // 011
-            return 200;      
+            return 200;
         case 0x04:          // 100
             return 400;
         default:
-            return 0x00;       
+            return 0x00;
     }
 }

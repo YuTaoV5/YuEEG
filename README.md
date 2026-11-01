@@ -2,7 +2,7 @@
 
 正在开发 **Rev H：NP-BX1 单节电池、独立模拟／数字板叠放、SCH16T-K01 IMU**，见 [Rev H 状态](hardware/YuEEG_8CH_RevH_Stack/README.md)。主三板与无源屏幕延长板已布线并通过静态检查；探针固定、公差、屏幕最终装配及实物采集仍待验证。当前 `Firmware/ads1299_driver/` 实现连续相对姿态和静止对准后的3秒相对轨迹，用户已选择不部署基站；[使用说明](docs/REVH_INDOOR_NAV.md)包含有效性与漂移边界。开发固件已编译并通过软件测试，尚未实物验证。Rev G 固件和二进制保存在其[冻结目录](hardware/YuEEG_8CH_RevG/firmware/)，以下 Rev G 内容仍是此前已发布的工程评审版本。
 
-当前为 **Rev G 工程评审版**：ADS1299 + ESP32-S3-WROOM-1-N16R8，主板 **70 × 80 mm**、隔离充电副板 **44 × 48 mm**，另有 35 × 67 mm 屏幕载板，各板元件均在正面，AMOLED 在主板上方叠装。
+以下为**此前发布的 Rev G 工程评审记录**：ADS1299 + ESP32-S3-WROOM-1-N16R8，主板 **70 × 80 mm**、隔离充电副板 **44 × 48 mm**，另有 35 × 67 mm 屏幕载板，各板元件均在正面，AMOLED 在主板上方叠装。
 
 支持隔离 USB CDC 与 Wi-Fi UDP 并行、microSD 原始帧备份、状态灯和 CO5300 AMOLED。主板仅由受保护的 2S 电池供电采集，副板提供独立充电 Type-C。**充电前拔下整个电极线束。**
 
@@ -12,7 +12,7 @@
 - [完整评审包](hardware/YuEEG_8CH_RevG_AM178_review.zip)
 - [目录说明](docs/PROJECT_STRUCTURE.md) · [更新记录](CHANGELOG.md)
 
-| 项目 | 当前设计 |
+| 项目 | Rev G 历史设计 |
 |---|---|
 | 采集 | ADS1299，8 通道湿电极，默认 500 SPS、增益 12，共享 REF、独立 BIAS |
 | 控制器 | ESP32-S3-WROOM-1-N16R8，双核 240 MHz、16 MB Flash、8 MB PSRAM |
@@ -33,3 +33,5 @@ python scripts/verify_review.py
 ```
 
 Rev D、Rev E、Rev F 保持冻结，可从 [历史索引](hardware/archive/README.md) 回溯。项目许可为仓库中的 [MIT License with Restrictions](LICENSE)，不是不附加限制的标准 MIT。
+
+2026-11-01：Rev H 模拟／数字板的层间接口已改为专用贴片 BTB（0.8mm、20触点、8.5mm合高），撤销排针／排母方案；原生检查已通过，具体淘宝配对SKU仍待确认。详见[贴片板间连接说明](docs/REVH_SMT_BTB.md)。

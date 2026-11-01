@@ -290,9 +290,9 @@
   {
     "board": "afe",
     "reference": "JH1",
-    "value": "SQT-110-01-L-D / SOCKET / logical pins",
+    "value": "5001-BTB0845-20FR / SMT BTB",
     "models": [
-      "${KIPRJMOD}/../models/SQT_110_01_envelope.wrl"
+      "${KIPRJMOD}/../models/JME_BTB0845_20FR_Logical.wrl"
     ],
     "existing": [
       true
@@ -3499,20 +3499,6 @@
   },
   {
     "board": "digital",
-    "reference": "JH1",
-    "value": "TMM-110-03-L-D / 4mm POST / bottom logical",
-    "models": [
-      "${KIPRJMOD}/../models/TMM_110_03_envelope.wrl"
-    ],
-    "existing": [
-      true
-    ],
-    "available_wrl_alternative": [
-      true
-    ]
-  },
-  {
-    "board": "digital",
     "reference": "R301",
     "value": "33R",
     "models": [
@@ -3559,6 +3545,20 @@
     "value": "33R",
     "models": [
       "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "JH1",
+    "value": "5001-BTB0840-20MR / SMT BTB",
+    "models": [
+      "${KIPRJMOD}/../models/JME_BTB0840_20MR_Logical.wrl"
     ],
     "existing": [
       true

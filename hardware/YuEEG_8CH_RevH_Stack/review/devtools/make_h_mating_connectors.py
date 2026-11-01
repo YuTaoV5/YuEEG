@@ -1,3 +1,5 @@
+"""Historical THT migration, disabled after the user required SMT BTB."""
+raise RuntimeError("Deprecated THT connector generator: current design uses SMT BTB; see docs/REVH_SMT_BTB.md")
 from pathlib import Path
 import sys,json,copy
 sys.path.insert(0,'hardware/YuEEG_8CH_RevG/review');from sexpr_io import loads,dumps,sub

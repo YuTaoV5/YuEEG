@@ -1,5 +1,5 @@
-04:16:15: Error: Can't create registry key 'HKCU\Software\kicad-cli' (error 5: 拒绝访问。)
-04:16:15: Error: Can't open registry key 'HKCU\Software\kicad-cli' (error 5: 拒绝访问。)
+11:00:00: Error: Can't create registry key 'HKCU\Software\kicad-cli' (error 5: 拒绝访问。)
+11:00:00: Error: Can't open registry key 'HKCU\Software\kicad-cli' (error 5: 拒绝访问。)
 Plotted to 'hardware\YuEEG_8CH_RevH_Stack\fabrication_engineering\power\YuEEG_H_POWER-F_Cu.gtl'.
 Plotted to 'hardware\YuEEG_8CH_RevH_Stack\fabrication_engineering\power\YuEEG_H_POWER-B_Cu.gbl'.
 Plotted to 'hardware\YuEEG_8CH_RevH_Stack\fabrication_engineering\power\YuEEG_H_POWER-F_Paste.gtp'.
@@ -9,14 +9,14 @@ Plotted to 'hardware\YuEEG_8CH_RevH_Stack\fabrication_engineering\power\YuEEG_H_
 Plotted to 'hardware\YuEEG_8CH_RevH_Stack\fabrication_engineering\power\YuEEG_H_POWER-F_Mask.gts'.
 Plotted to 'hardware\YuEEG_8CH_RevH_Stack\fabrication_engineering\power\YuEEG_H_POWER-B_Mask.gbs'.
 Plotted to 'hardware\YuEEG_8CH_RevH_Stack\fabrication_engineering\power\YuEEG_H_POWER-Edge_Cuts.gm1'.
-04:16:15: Error: Can't create registry key 'HKCU\Software\kicad-cli' (error 5: 拒绝访问。)
-04:16:15: Error: Can't open registry key 'HKCU\Software\kicad-cli' (error 5: 拒绝访问。)
+11:00:00: Error: Can't create registry key 'HKCU\Software\kicad-cli' (error 5: 拒绝访问。)
+11:00:00: Error: Can't open registry key 'HKCU\Software\kicad-cli' (error 5: 拒绝访问。)
 已创建文件 'hardware\YuEEG_8CH_RevH_Stack\fabrication_engineering\power\YuEEG_H_POWER-PTH.drl'
 已创建文件 'hardware\YuEEG_8CH_RevH_Stack\fabrication_engineering\power\YuEEG_H_POWER-NPTH.drl'
 完成。
-04:16:16: Error: Can't create registry key 'HKCU\Software\kicad-cli' (error 5: 拒绝访问。)
-04:16:16: Error: Can't open registry key 'HKCU\Software\kicad-cli' (error 5: 拒绝访问。)
+11:00:00: Error: Can't create registry key 'HKCU\Software\kicad-cli' (error 5: 拒绝访问。)
+11:00:00: Error: Can't open registry key 'HKCU\Software\kicad-cli' (error 5: 拒绝访问。)
 Wrote position data to 'hardware\YuEEG_8CH_RevH_Stack\fabrication_engineering\power\placement_front.csv'.
-04:16:16: Error: Can't create registry key 'HKCU\Software\kicad-cli' (error 5: 拒绝访问。)
-04:16:16: Error: Can't open registry key 'HKCU\Software\kicad-cli' (error 5: 拒绝访问。)
+11:00:01: Error: Can't create registry key 'HKCU\Software\kicad-cli' (error 5: 拒绝访问。)
+11:00:01: Error: Can't open registry key 'HKCU\Software\kicad-cli' (error 5: 拒绝访问。)
 Wrote position data to 'hardware\YuEEG_8CH_RevH_Stack\fabrication_engineering\power\placement_back.csv'.

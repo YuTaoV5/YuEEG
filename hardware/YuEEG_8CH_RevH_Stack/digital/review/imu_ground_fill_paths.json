@@ -1,5 +1,5 @@
 {
-  "source_sha256": "157ffd1e0412ff2283224bd3119d5567486dd6dca845c1c37716d3a30bcbd80c",
+  "source_sha256": "9407948570a5ba2f7ba6700888929932599c12ad0884c823c179237d57320851",
   "rows": [
     {
       "reference": "C1802",
@@ -53,7 +53,7 @@
         36.765,
         4.1
       ],
-      "estimated_track_path_to_via_meeting_ground_fill_mm": 1.3196083699340522
+      "estimated_track_path_to_via_meeting_ground_fill_mm": 1.319608372727556
     },
     {
       "reference": "U1801",
@@ -98,7 +98,7 @@
         36.765,
         10.5
       ],
-      "estimated_track_path_to_via_meeting_ground_fill_mm": 11.0711399146815
+      "estimated_track_path_to_via_meeting_ground_fill_mm": 11.07113880909712
     },
     {
       "reference": "U1801",

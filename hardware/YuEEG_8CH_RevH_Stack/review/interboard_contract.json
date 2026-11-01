@@ -1,10 +1,11 @@
 {
-  "pitch_mm": 2.0,
-  "socket_body_height_mm": 6.35,
-  "header_body_height_mm": 1.5,
-  "header_mating_length_mm": 4,
+  "pitch_mm": 0.8,
+  "mounting": "SMT mezzanine; no pin headers",
+  "socket_body_height_mm": 4.5,
+  "header_body_height_mm": 4.0,
   "nominal_pcb_clear_gap_mm": 8.5,
-  "note": "Manufacturer dimensional reference selected. Exact Taobao SKU or qualified equivalent remains unverified; assembly coordinates use project logical pin numbers.",
+  "drawing_mated_height_tolerance_mm": 0.15,
+  "note": "JMEconn dual slot BTB drawing B. Project logical pin numbering; male footprint mirrored. Exact delivered pair and Taobao SKU still unconfirmed.",
   "AFE_DIGITAL": {
     "1": "SYS_5V",
     "2": "GND",
@@ -27,13 +28,8 @@
     "19": "SYS_5V",
     "20": "GND"
   },
-  "nominal_insertion_mm": 3.35,
-  "socket_insertion_range_mm": [
-    2.62,
-    5.03
-  ],
-  "socket_reference": "SQT-110-01-L-D",
-  "header_reference": "TMM-110-03-L-D",
+  "socket_reference": "5001-BTB0845-20FR",
+  "header_reference": "5001-BTB0840-20MR",
   "POWER_DIGITAL": {
     "connector": "JST PH 4-pin side-entry; JP2 to JH2",
     "1": "SYS_5V",

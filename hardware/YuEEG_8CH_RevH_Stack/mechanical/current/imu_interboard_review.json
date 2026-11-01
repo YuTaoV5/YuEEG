@@ -1,7 +1,7 @@
 {
   "status": "CONDITIONAL_INTERBOARD_HEIGHT_BUDGET_NOT_ASSEMBLY_RELEASE",
-  "digital_pcb_sha256": "157ffd1e0412ff2283224bd3119d5567486dd6dca845c1c37716d3a30bcbd80c",
-  "afe_pcb_sha256": "2eb85cbd1e8bc271004dadf2321513e58e03e8ef493d7506ea8eff0663e4da2a",
+  "digital_pcb_sha256": "9407948570a5ba2f7ba6700888929932599c12ad0884c823c179237d57320851",
+  "afe_pcb_sha256": "a21378ccdee99483476029f1a83178f06f04ec7765870b2a36bc914ee907312b",
   "nominal_surface_gap_mm": 8.5,
   "required_minimum_local_gap_mm": 8.3,
   "rows": [

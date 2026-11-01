@@ -1,0 +1,32 @@
+{
+  "pcb_sha256": "9407948570a5ba2f7ba6700888929932599c12ad0884c823c179237d57320851",
+  "historical_via_selection_sha256": "6171fe2235ec86f0c6cbaba3a55e959667882b4469532d1f494917008d476fe2",
+  "minimum_hole_to_smt_copper_mm": 0.25,
+  "vias": [
+    {
+      "xy_mm": [
+        35.45,
+        8.75
+      ],
+      "uuid": "d3cb0416-b929-4060-9407-ef63ba523593",
+      "hits": []
+    },
+    {
+      "xy_mm": [
+        33.55,
+        10.5
+      ],
+      "uuid": "ec4ac6c2-095b-42d3-a901-52c32fbf033b",
+      "hits": []
+    },
+    {
+      "xy_mm": [
+        38.165,
+        8.7
+      ],
+      "uuid": "a714ffe1-c7fd-4118-bcdd-8c85eadd0227",
+      "hits": []
+    }
+  ],
+  "scope": "Current native check of the three previously selected IMU ground vias, including same-net SMT pads. Migration new vias are checked separately in smt_btb_adoption.json. Not fabrication qualification."
+}

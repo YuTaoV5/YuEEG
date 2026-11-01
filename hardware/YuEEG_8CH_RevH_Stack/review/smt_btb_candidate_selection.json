@@ -1,0 +1,40 @@
+{
+  "status": "DRAWING_SELECTION_BASIS_ADOPTED_CURRENT_PAIR",
+  "manufacturer": "JMEconn / 文章济美",
+  "family": "0.8mm dual-slot SMT BTB",
+  "pitch_mm": 0.8,
+  "electrical_contacts": 20,
+  "nominal_surface_gap_mm": 8.5,
+  "drawing_mated_height_tolerance_mm": 0.15,
+  "male_height_grade_mm": 4.0,
+  "female_height_grade_mm": 4.5,
+  "body_length_mm": 9.9,
+  "pad_size_mm": [
+    0.35,
+    1.8
+  ],
+  "row_centers_mm": 4.0,
+  "plastic_locator_finished_hole_mm": 0.65,
+  "contact_rating_A": 0.5,
+  "source_pdf": "https://www.wzjm5001.com/data/upload/2022-03-18/62342c4418c0d.pdf",
+  "source_pdf_sha256": "2fb09e9820767e83a0f8a32d958b34b5cdacb71f4c2631dcb50154f5ab2625ba",
+  "drawing_revision": "B, 2017-02-17",
+  "afe_reference": "5001-BTB0845-20FR",
+  "digital_reference": "5001-BTB0840-20MR",
+  "order_code_status": "Derived from drawing coding/table; exact delivered full part numbers/variant must be confirmed by supplier",
+  "taobao_sku_status": "NOT_VERIFIED_FOR_THIS_20_CONTACT_8P5_MM_PAIR",
+  "numbering": "Project logical numbers, absent from supplier drawing; mirrored male/female footprints; assembled XY/net equality required",
+  "required_minimum_local_surface_gap_mm": 8.3,
+  "models": "Original bounding illustration, not supplier STEP or toleranced internal contact model",
+  "sources": [
+    "https://www.wzjm5001.com/home/listn/details/id/73.html",
+    "https://www.wzjm5001.com/data/upload/2022-03-18/62342c4418c0d.pdf",
+    "https://csconn.com.cn/UserFiles/upload/file/CBT-0820XXM-XX.pdf",
+    "https://csconn.com.cn/UserFiles/upload/file/CBT-0820XXF-XX.pdf"
+  ],
+  "selected_center_xy_mm": [
+    43.7,
+    21
+  ],
+  "selected_orientation_deg": 90
+}
