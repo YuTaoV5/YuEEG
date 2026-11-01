@@ -1,0 +1,231 @@
+{
+  "status": "VENDOR_DRAWING_REVIEW_NOT_ASSEMBLY_RELEASE",
+  "source_pdf": "hardware/YuEEG_8CH_RevG/reference/AM178Q368448LK.pdf",
+  "source_pdf_sha256": "878311f5d5594db6a4320401569f575e0a8c56ad5a4073d6acb63c8b05b0cba9",
+  "source_pdf_public_url": "https://yuyinglcd.com/strapi-uploads/AM_178_Q368448_LK_73cb5aa60f.pdf",
+  "vendor_product_url": "https://yuyinglcd.com/products/2/5/493",
+  "local_vendor_dwg": "hardware/display-amoled-1.78inch-368x448-main/versions/AM178Q368448LK/cad/AM178Q368448LK1.dwg",
+  "local_vendor_dwg_sha256": "51cbc87c380fed35f57106c82f979135eaf1830a2cb55332902df9fe99982cf4",
+  "local_vendor_dwg_bytes": 798464,
+  "converter": {
+    "name": "GNU LibreDWG",
+    "version": "0.14",
+    "official_release": "https://github.com/LibreDWG/libredwg/releases/tag/0.14",
+    "win64_zip_sha256": "1ad7e15344d20b3426c3435b078d82fb84b35062815946b2cca9c5fc9810fea8",
+    "decode_log": "SUCCESS; JSON nonfinite metadata normalized to null for parsing",
+    "nonfinite_values_normalized": 9
+  },
+  "decoded_objects": 15312,
+  "entity_counts": {
+    "BLOCK": 229,
+    "ENDBLK": 229,
+    "VIEWPORT": 4,
+    "HATCH": 84,
+    "ARC": 190,
+    "LINE": 4343,
+    "INSERT": 1012,
+    "CIRCLE": 113,
+    "MTEXT": 375,
+    "LEADER": 25,
+    "LWPOLYLINE": 5041,
+    "TEXT": 1465,
+    "SOLID": 640,
+    "POINT": 228,
+    "DIMENSION_LINEAR": 42,
+    "SPLINE": 362,
+    "ELLIPSE": 52
+  },
+  "selected_native_dimensions": [
+    {
+      "index": 14906,
+      "handle": [
+        0,
+        4,
+        724367739
+      ],
+      "act_measurement": 34.14441752205403,
+      "user_text": "<>(OD)",
+      "xline1_pt": [
+        3235.63567078332,
+        -135.02585521657284,
+        0.0
+      ],
+      "xline2_pt": [
+        3269.780088305374,
+        -134.50343575243824,
+        0.0
+      ],
+      "interpretation": "front-view outer width; drawing rounded 34.14 +/- .04"
+    },
+    {
+      "index": 14911,
+      "handle": [
+        0,
+        4,
+        724367744
+      ],
+      "act_measurement": 42.74440211499994,
+      "user_text": "<>(OD)",
+      "xline1_pt": [
+        3246.056136629903,
+        -123.94644945415726,
+        0.0
+      ],
+      "xline2_pt": [
+        3246.3589693155177,
+        -166.6908515691572,
+        0.0
+      ],
+      "interpretation": "front-view outer length; drawing rounded 42.74 +/- .04"
+    },
+    {
+      "index": 15005,
+      "handle": [
+        0,
+        4,
+        724368076
+      ],
+      "act_measurement": 2.57999999999856,
+      "user_text": "ATC <>",
+      "xline1_pt": [
+        3293.2349913666403,
+        -130.01162432984165,
+        0.0
+      ],
+      "xline2_pt": [
+        3295.814991366639,
+        -130.01162432984165,
+        0.0
+      ],
+      "interpretation": "side-view ATC glass/module stack thickness; not folded-FPC overall height"
+    },
+    {
+      "index": 14992,
+      "handle": [
+        0,
+        4,
+        724368063
+      ],
+      "act_measurement": 0.80499999999756,
+      "user_text": "<>(Outline)(\u4e0d\u542b\u4fdd\u62a4\u819c+FPC)",
+      "xline1_pt": [
+        3295.009991366641,
+        -126.78315827326746,
+        0.0
+      ],
+      "xline2_pt": [
+        3295.8149913666384,
+        -126.88809923349531,
+        0.0
+      ],
+      "interpretation": "panel outline thickness explicitly excludes protective film and FPC"
+    },
+    {
+      "index": 14553,
+      "handle": [
+        0,
+        4,
+        724366913
+      ],
+      "act_measurement": 0.79999999999998,
+      "user_text": "<>MAX",
+      "xline1_pt": [
+        3394.7010302817685,
+        -165.37715827326744,
+        0.0
+      ],
+      "xline2_pt": [
+        3394.7010302817685,
+        -164.57715827326746,
+        0.0
+      ],
+      "interpretation": "folded back-view in-plane lower-edge overhang; not a Z height"
+    },
+    {
+      "index": 14556,
+      "handle": [
+        0,
+        4,
+        724366916
+      ],
+      "act_measurement": 0.79793534099565,
+      "user_text": "<>MAX",
+      "xline1_pt": [
+        3381.565921152893,
+        -165.37715827326744,
+        0.0
+      ],
+      "xline2_pt": [
+        3381.5867024295517,
+        -164.5792229322718,
+        0.0
+      ],
+      "interpretation": "second folded back-view in-plane lower-edge overhang"
+    },
+    {
+      "index": 14565,
+      "handle": [
+        0,
+        4,
+        724366925
+      ],
+      "act_measurement": 21.97983296380146,
+      "user_text": "",
+      "xline1_pt": [
+        3378.980525777974,
+        -148.5629912370689,
+        0.0
+      ],
+      "xline2_pt": [
+        3383.406184369707,
+        -126.58315827326746,
+        0.0
+      ],
+      "interpretation": "folded back-view in-plane connector position"
+    },
+    {
+      "index": 14568,
+      "handle": [
+        0,
+        4,
+        724366928
+      ],
+      "act_measurement": 9.95289956028182,
+      "user_text": "",
+      "xline1_pt": [
+        3375.5549196491343,
+        -134.42092947825404,
+        0.0
+      ],
+      "xline2_pt": [
+        3385.507819209416,
+        -145.1142396958719,
+        0.0
+      ],
+      "interpretation": "folded back-view in-plane connector position"
+    }
+  ],
+  "pdf_page5_visual_observations": {
+    "ATC_mm": 2.58,
+    "ATC_tolerance_mm": 0.2,
+    "outer_width_mm": 34.14,
+    "outer_length_mm": 42.74,
+    "component_fpc_steel_insulation_local_stack_maxima_mm": [
+      1.0,
+      1.2
+    ],
+    "local_stack_maxima_datum": "Local layers listed in the callout, not complete folded assembly above the screen back.",
+    "steel_stiffener_callouts_mm": [
+      0.1,
+      0.2
+    ],
+    "adhesive_callout_mm": 0.05,
+    "factory_ships_folded": true,
+    "folded_male_solder_plane_to_screen_back_Z_offset_mm": null,
+    "complete_folded_back_conductive_envelope_qualified": false
+  },
+  "display_link_contract_sha256": "ba84db7ae22199cc02e52a775d5694b3dc58a4663b36ace4a7b8d2a99e209aac",
+  "connector_mounting_plane_separation_target_mm": 6.0,
+  "mechanical_decision": "Keep screen on top and use a separate insulating support. Do not equate the 6mm flex-plane target with the support height. Current factory 2D CAD and PDF do not close the folded connector Z datum; retain engineering prototype status.",
+  "scope": "Selected numeric DWG entities cross-checked against rendered manufacturer PDF pages4/5. No full CAD solid reconstruction, delivered-SKU equivalence, complete folded assembly clearance or physical validation claimed. The public product table has an inconsistent 35.14mm outer length; use the drawing 42.74mm. The local DWG is not added to this review delivery."
+}

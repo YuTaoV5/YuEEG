@@ -1,0 +1,94 @@
+{
+  "status": "PROCUREMENT_VERSION_CONFLICT_NOT_CLOSED",
+  "native_footprints": [
+    {
+      "footprint": "JME_BTB0840_20MR_Logical",
+      "sha256": "d520555fd34cd238e223d9fe6ef71991f4c87c21c8099dc70d15f6679ebc710b",
+      "pad_size_mm": [
+        0.35,
+        1.8
+      ],
+      "locator_xy_mm": [
+        [
+          -4.5,
+          1.25
+        ],
+        [
+          4.5,
+          1.25
+        ]
+      ],
+      "locator_drill_mm": 0.65
+    },
+    {
+      "footprint": "JME_BTB0845_20FR_Logical",
+      "sha256": "1eee0fbbd64ee708d63aee9bc447a0c574b734c98ec37dc0fe237a975add7c0c",
+      "pad_size_mm": [
+        0.35,
+        1.8
+      ],
+      "locator_xy_mm": [
+        [
+          -4.5,
+          1.25
+        ],
+        [
+          4.5,
+          1.25
+        ]
+      ],
+      "locator_drill_mm": 0.65
+    }
+  ],
+  "cases": [
+    {
+      "drawing": "2017_REV_B",
+      "locator_span_mm": 9.0,
+      "pad_size_mm": [
+        0.35,
+        1.8
+      ],
+      "pad_row_center_spacing_mm": 4.0,
+      "nominal_hole_diameter_mm": 0.65,
+      "minimum_nominal_locator_hole_to_pad_copper_mm": 0.4,
+      "meets_current_0p25mm_hole_clearance": true
+    },
+    {
+      "drawing": "2021_REV_1P0_PCB_LAYOUT_C_INTERPRETATION",
+      "locator_span_mm": 8.2,
+      "pad_size_mm": [
+        0.3,
+        2.0
+      ],
+      "pad_row_center_spacing_mm": 4.0,
+      "nominal_hole_diameter_mm": 0.65,
+      "minimum_nominal_locator_hole_to_pad_copper_mm": 0.025,
+      "meets_current_0p25mm_hole_clearance": false
+    }
+  ],
+  "mated_height_both_drawings_mm": 8.5,
+  "2021_locator_shift_per_side_relative_to_current_mm": 0.4,
+  "interpretation": "2021 PCB LAYOUT dimension C and table C=8.2 at20contacts; supplier must resolve intended locator/land pattern and confirm delivered variant. Current PCB follows the2017 drawing, not a qualified fit for these later catalog listings.",
+  "catalog_candidates": [
+    {
+      "mpn": "5001-BTB0840-20MR-00",
+      "catalog": "https://www.lcsc.com/product-detail/C48688647.html",
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/94afc7f6e0bd0ea03f46e9c7facf6f62.pdf?productCode=C48688647",
+      "pdf_sha256": "fd2a40523e53600771e5d597379b0e4a82d2a8c5ae6d9810d96853594f2ceb5e",
+      "pages": 2,
+      "drawing_date": "2021-07-08",
+      "qualified_drop_in": false
+    },
+    {
+      "mpn": "5001-BTB0845-20FR-00-B",
+      "catalog": "https://jlcpcb.com/partdetail/JMEconn-5001_BTB0845_20FR_00B/C53277662",
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/c221b29b3e69466c70c42f83db0b10dd.pdf?productCode=C53277662",
+      "pdf_sha256": "8e92c3027caa1e2379a264a09367613ea36d3d541ed35253baebf3c6e02538f7",
+      "pages": 2,
+      "drawing_date": "2021-07-08",
+      "qualified_drop_in": false
+    }
+  ],
+  "taobao_qualified_sku": null,
+  "scope": "Drawing revision comparison and a nominal circle/rectangle clearance calculation only. No statement of stock, exact delivery version, fit, manufacturing approval or acquisition validation."
+}

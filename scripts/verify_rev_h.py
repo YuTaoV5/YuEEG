@@ -76,6 +76,13 @@ def verify():
  header=ports['digital']['interboard_header']
  require(all(abs(a-b)<.00001 for pin,xy in [('1',[45.7,24.6]),('20',[41.7,17.4])] for a,b in zip(header['pad_centers_mm'][pin],xy)),'Stale SMT interboard projection')
  require(header['mounting']=='SMT_B_NO_F_SIDE_METAL_TAILS' and header['F_side_metal_tail_protrusion_mm']==0,'Interboard connector must be SMT without front metal tails')
+ screen_source=json.loads((H/'review/am178_vendor_mechanical_review.json').read_text(encoding='utf8'))
+ require(screen_source['status']=='VENDOR_DRAWING_REVIEW_NOT_ASSEMBLY_RELEASE','Re-audit screen source review before changing release status')
+ require(sha(ROOT/screen_source['source_pdf'])==screen_source['source_pdf_sha256'],'Changed screen source PDF')
+ require(sha(H/'display_link/review/design_contract.json')==screen_source['display_link_contract_sha256'],'Stale screen/FPC target binding')
+ require(len(screen_source['selected_native_dimensions'])==8 and screen_source['pdf_page5_visual_observations']['folded_male_solder_plane_to_screen_back_Z_offset_mm'] is None,'Re-audit screen source dimensions before claiming folded Z closure')
+ procurement=json.loads((H/'review/smt_btb_procurement_revision_review.json').read_text(encoding='utf8'));require(procurement['status']=='PROCUREMENT_VERSION_CONFLICT_NOT_CLOSED' and procurement['taobao_qualified_sku'] is None,'Re-audit the supplier drawing gate before closing procurement')
+ for f in procurement['native_footprints']:require(sha(H/'footprints/YuEEG.pretty'/(f['footprint']+'.kicad_mod'))==f['sha256'],'Stale BTB drawing/native comparison')
  mating=json.loads((H/'review/interboard_xy_check.json').read_text(encoding='utf8'));require(mating['pins_checked']==20 and mating['mismatches']==0 and mating['electrical_drills']==0,'Missing checked SMT mating contract')
  for board,digest in mating['pcb_sha256'].items():require(digest==summary['boards'][board]['pcb_sha256'],'Stale SMT mapping source '+board)
  for name,digest in mating['footprint_sha256'].items():require(sha(H/'footprints/YuEEG.pretty'/name)==digest,'Changed SMT mating library '+name)

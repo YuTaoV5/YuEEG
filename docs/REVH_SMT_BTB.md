@@ -36,3 +36,5 @@
 当前权威文件为 `hardware/YuEEG_8CH_RevH_Stack/afe/YuEEG_H_AFE.kicad_pcb` 和 `digital/YuEEG_H_DIGITAL.kicad_pcb`。JH1 中心为 (43.7,21) mm、原生旋转 90°；模拟板正面、数字板背面。20 针装配 XY／网络、表面禁布区、非金属定位孔及新增过孔到全部贴片焊盘的至少 0.25 mm 孔距均已检查。除 JH1 外，所有元件的位置和朝向保持；数字板背面 SMT 从 25 个增至 26 个。
 
 换座后重新布线。当前数字板的中心线静态采样中，ADS_SCLK 所采样位置均有相应接地平面；ADS_CS／MOSI／MISO 的缺铜样本均落在信号过孔反焊盘邻域。DRDY／RESET／START 仍经过 IMU 下方的既有无铺铜区域；接地走线连通和静态采样不能证明信号边沿、时序或脑电噪声已验证。详见 `digital/review/smt_spi2_reference_screen.json` 和[IMU 设计说明](REVH_IMU_DESIGN.md)。
+
+2026-11-01 采购复核补充：新找到的完整商品料号所附2021版图与现用2017版的定位孔跨度和焊盘不同，尚不能直接代换。具体数值、完整料号和厂家PDF见[采购图纸版本复核](REVH_CONNECTOR_PROCUREMENT_REVIEW.md)。后续仍按用户要求自行查找带详细尺寸图的淘宝公母配对商品。

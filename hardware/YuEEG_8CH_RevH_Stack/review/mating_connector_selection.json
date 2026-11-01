@@ -39,5 +39,7 @@
   ],
   "pcb_surface_gap_mm": 8.5,
   "afe_socket_reference": "5001-BTB0845-20FR",
-  "digital_header_reference": "5001-BTB0840-20MR"
+  "digital_header_reference": "5001-BTB0840-20MR",
+  "procurement_revision_review": "smt_btb_procurement_revision_review.json",
+  "catalog_2021_parts_qualified_drop_in": false
 }
