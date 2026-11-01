@@ -1,19 +1,19 @@
 {
   "status": "CONDITIONAL_REVIEW_ARTIFACTS_NOT_ASSEMBLY_RELEASE",
   "files_sha256": {
-    "power_ports_native.json": "eab7de795b52541700a28f487b08c29e3c3e64635492b061df9e5eb128ab7ec2",
-    "power_harness_routing_review.json": "622e46de72aefa144879b91b5b068b5cfba73e68302f792486dab79bb58d5d33",
-    "power_harness_routing_review.png": "f3f86dcfe31025213000140020278148613d2f4185af401d8993d72324a65bef",
-    "power_harness_routing_review.svg": "8ca87b172b89a63335be593847a292d5e0e9ae601410ecc3f3fd7c604b520642",
+    "power_ports_native.json": "e34fe4824460c4af90d22724514ecb751a65cd42607020d7e491a0daf682220b",
+    "power_harness_routing_review.json": "bfb6476f84ded1e50818f3b7a11af1870872708e9b128290a30651860235cebe",
+    "power_harness_routing_review.png": "9090d5cc5c2c803fe40c4de0bf52a7e554b83299efec3b5811e403348b7d9873",
+    "power_harness_routing_review.svg": "9660e79b1675017a88b80a24d393db53d4d7b1f942643fb944351de6adece465",
     "power_port_tail_review.json": "03a91ec410657d20a1f465373f897e9d3090fa2b6a66efc72b0d344e3aaafd93",
-    "complete_power_harness_review.json": "21dbdb63e62a02eb4298c52457bc9307d8422d90745be193c3e3c27ccb5d31a6",
-    "complete_power_harness_review.png": "d7e8cda933a23fd32d24e802fb69bf1a6bb85b85a1d4e803e8f1ecbace5aeefb",
-    "complete_power_harness_review.svg": "d772a4e45f50b6b8b51afdc2d49536fe675a99287522a8a044d22bfa4f1bff49"
+    "complete_power_harness_review.json": "cd4fa357e4f743e704f8339d6e0bc632c3be08e8a4701af77a813ef9e44017cf",
+    "complete_power_harness_review.png": "79ce41da391e920ee2e97c76c993c5ca76c8ae57dfb11b4ffb96556b8d535d84",
+    "complete_power_harness_review.svg": "8cc06d228f12f0f338e240f15802f7530ae3e8dbe7cb9cb63cf9d38ba2390065"
   },
   "pcb_sha256": {
     "afe": "a21378ccdee99483476029f1a83178f06f04ec7765870b2a36bc914ee907312b",
     "digital": "9407948570a5ba2f7ba6700888929932599c12ad0884c823c179237d57320851",
-    "power": "07b9161688a09dfbe1dbef2a7237308e407affba4f59a0fe9e27f99c976f8695"
+    "power": "37bd0a3087d20760dc784c89024cb8c6144ad6833b5efe219a2365d07d92b3e1"
   },
   "scope": "Binds engineering reports and plan-view image artifacts. No measurement, thermal/EEG validation or production release."
 }

@@ -1,6 +1,6 @@
 {
   "status": "NOMINAL_PROBE_ALIGNMENT_NOT_HOLDER_OR_ASSEMBLY_RELEASE",
-  "power_pcb_sha256": "07b9161688a09dfbe1dbef2a7237308e407affba4f59a0fe9e27f99c976f8695",
+  "power_pcb_sha256": "37bd0a3087d20760dc784c89024cb8c6144ad6833b5efe219a2365d07d92b3e1",
   "user_model_sha256": "062b7daeb175079f8d2fec2f208dcf92b4c65887bfde244dd193765d4dfb91f3",
   "terminal_confirmation_file_sha256": "39fc0de35a61568f5b62d811bcf73fead2d8d01da1dd0858c6feda5ffecab0de",
   "rows": [
@@ -58,20 +58,20 @@
   "model_transform": "Model_X=PCB_X-20; Model_Y=3.4-PCB_Y; Model_Z=25.425+PCB_Z, where PCB_Z=0 at F and -1 at B.",
   "proposed_product_pose": {
     "power_pcb_x_mm": [
-      48.95,
-      82.95
+      49.95,
+      83.95
     ],
     "power_pcb_z_mm": [
-      0,
-      18
+      -1.4,
+      16.6
     ],
     "power_F_y_mm": -4.05,
     "power_B_y_mm": -3.05,
     "battery_front_y_mm": 0,
-    "battery_bottom_z_mm": 10.1,
-    "battery_model_top_z_mm": 19.1,
-    "battery_sony_nominal_top_z_mm": 19.3,
-    "basis": "Existing right-side battery X=54..83.9. Raise battery above strip lower edge to reuse stack height. Provisional nominal pose, not a completed enclosure."
+    "battery_bottom_z_mm": 8.7,
+    "battery_model_top_z_mm": 17.7,
+    "battery_sony_nominal_top_z_mm": 17.9,
+    "basis": "Side port adoption: battery X=55..84.9,7mm side channel; lower the strip and battery together1.4mm relative to the former pose. Nominal pose only; holder remains unqualified."
   },
   "open_items": [
     "Qualified holder stops and retention; probes must not carry insertion or case loads",

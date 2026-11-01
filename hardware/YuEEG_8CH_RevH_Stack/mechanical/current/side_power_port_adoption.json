@@ -1,0 +1,103 @@
+{
+  "baseline_sha256": "07b9161688a09dfbe1dbef2a7237308e407affba4f59a0fe9e27f99c976f8695",
+  "candidate_sha256": "37bd0a3087d20760dc784c89024cb8c6144ad6833b5efe219a2365d07d92b3e1",
+  "changed_poses": [
+    "RP4",
+    "JP2"
+  ],
+  "track_changes_by_net": {
+    "GND": {
+      "removed": 38,
+      "added": 25
+    },
+    "SYS_5V": {
+      "removed": 4,
+      "added": 38
+    },
+    "BAT_PROTECTED_SENSE": {
+      "removed": 39,
+      "added": 19
+    },
+    "P_GATE": {
+      "removed": 37,
+      "added": 22
+    }
+  },
+  "P_SW_and_P_FB_geometry_unchanged": true,
+  "status": "ADOPTED_SIDE_PORT_ENGINEERING_NOT_ASSEMBLY_RELEASE",
+  "current_pcb_sha256": "37bd0a3087d20760dc784c89024cb8c6144ad6833b5efe219a2365d07d92b3e1",
+  "baseline_git_commit": "21618f34c2ccfb7e3641fe9aaab040dd30c9e255",
+  "native_drc_report_sha256": "1edb364fd82ac6baa8d3df558d1c9e1ab035262f19fccab3829083a2a50eca96",
+  "checks": {
+    "drc": 0,
+    "unconnected": 0,
+    "schematic_parity": 0,
+    "all_pad_nets_preserved": true
+  },
+  "positions_mm": {
+    "JP2": [
+      7.5,
+      11.4,
+      270
+    ],
+    "RP4": [
+      7.0,
+      2.8,
+      90
+    ]
+  },
+  "scope": "Local power-port and gate-pulldown repositioning. P_SW/P_FB track geometry preserved exactly; GND,protected-battery,5V and gate branches rerouted. Nominal assembly comparison is separate and does not qualify parts,holder,screen,wire bend capability or acquisition performance.",
+  "added_vias": [
+    {
+      "uuid": "3f3359f4-d2ab-4b10-bf3b-298030c638d2",
+      "xy_mm": [
+        16.1,
+        10.45
+      ],
+      "net": "BAT_PROTECTED_SENSE",
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "uuid": "acaa413c-2734-42bf-93f7-2c0b44a2310f",
+      "xy_mm": [
+        18.0,
+        9.1
+      ],
+      "net": "BAT_PROTECTED_SENSE",
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "uuid": "1639edc9-c98e-4071-8fc3-38ce62e83bfd",
+      "xy_mm": [
+        25.4,
+        12.9
+      ],
+      "net": "SYS_5V",
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    },
+    {
+      "uuid": "62842181-66c0-42a4-8329-cf870eec0736",
+      "xy_mm": [
+        14.15,
+        9.65
+      ],
+      "net": "SYS_5V",
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2
+    }
+  ],
+  "same_net_via_correction": {
+    "from_mm": [
+      24.5,
+      11.65
+    ],
+    "to_mm": [
+      25.4,
+      12.9
+    ],
+    "reason": "Move new SYS_5V hole outside RP5 SMD pad clearance; .25mm checked including same net."
+  }
+}

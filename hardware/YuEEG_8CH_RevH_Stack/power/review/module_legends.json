@@ -3,16 +3,20 @@
     {
       "text": "1S POWER",
       "center_mm": [
-        5.6,
-        2.0
-      ]
+        0.9,
+        6
+      ],
+      "rotation_deg": 90,
+      "font_height_mm": 0.8
     },
     {
       "text": "PROTECT",
       "center_mm": [
-        6.0,
-        4.4
-      ]
+        0.9,
+        13
+      ],
+      "rotation_deg": 90,
+      "font_height_mm": 0.8
     }
   ],
   "regions_mm": [
@@ -30,6 +34,6 @@
     ]
   ],
   "silk_border_segments": 7,
-  "source_sha256": "07b9161688a09dfbe1dbef2a7237308e407affba4f59a0fe9e27f99c976f8695",
+  "source_sha256": "37bd0a3087d20760dc784c89024cb8c6144ad6833b5efe219a2365d07d92b3e1",
   "scope": "Functional grouping marks, clipped around front courtyards, pads and existing legends. Full outlines on Dwgs.User are assembly guides, not electrical isolation boundaries."
 }

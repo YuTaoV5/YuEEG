@@ -12,8 +12,8 @@
     "review/design_contract.json": "ba84db7ae22199cc02e52a775d5694b3dc58a4663b36ace4a7b8d2a99e209aac",
     "review/fold_alignment.json": "ee95c5bf068181679bf2e8795bcbde05dae8d52b06eaadddbe14cb62d77b4a2a",
     "review/expected_connections.json": "1ae5ad55bb348ecfc4bffedfce0d61f58a91911f8bc7a0364c7ba64039a88266",
-    "review/drc_current.json": "5b308bea4b4c6877596ed58cedb2908c0eaa0c5f1abc1b759dc7e3812c834207",
-    "review/erc_current.json": "2b9199b3d4343b58f374df8f2d012e0b00129456289f6a1e87baa41b311e36ea",
+    "review/drc_current.json": "246f5384ab464ca94e3db961ccaa119c4cdc5d36a7a20b1cc73983168e4d2158",
+    "review/erc_current.json": "639d2462bb307ef2e47e9749828b3a4e84dd37cbd7846e850815feb15abafb9d",
     "review/netlist.xml": "f61ffcb4cc6be98eb85e53d0cf13f9d3204ed950293717aa52a9036967a95165",
     "review/geometry.json": "bba6dc05bca630585621c7fea3d62c1b3a01319d0219ad62ac974536707dfbc5",
     "review/fold_space.json": "e561eed12f5cc1f9c9451ab0c4805053d463fba14bc163b939c0d334da81fd42",
@@ -21,12 +21,12 @@
     "review/flat_and_fold.png": "1bf376ea66bf813735c28433133cd48f618637e37b6bb33716d675a899c4a8de",
     "review/flat_and_fold.svg": "7909b09a0ab06eac4ea50be3b91632d7156fe9a1c5e6ec77088108dac944a7cb",
     "review/fold_space.png": "0f28b740015bee19db9c9f822fd2a5bc173dc96815059a8c4f96b28e0d386054",
-    "review/fold_space.svg": "9165e274ecfb0a94a4d56a418cd8c1095a19979bcce9129e8c63d4a3fc8bd360"
+    "review/fold_space.svg": "fdb4f79d92dcfc29c305a75eb95bb75799110c0e1c4667162f5321bbd99d4dd9"
   },
   "baseline_pcb_sha256": {
     "afe": "a21378ccdee99483476029f1a83178f06f04ec7765870b2a36bc914ee907312b",
     "digital": "9407948570a5ba2f7ba6700888929932599c12ad0884c823c179237d57320851",
-    "power": "07b9161688a09dfbe1dbef2a7237308e407affba4f59a0fe9e27f99c976f8695"
+    "power": "37bd0a3087d20760dc784c89024cb8c6144ad6833b5efe219a2365d07d92b3e1"
   },
   "checks": {
     "erc": 0,

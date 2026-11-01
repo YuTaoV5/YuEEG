@@ -8,12 +8,12 @@ H=Path('hardware/YuEEG_8CH_RevH_Stack');M=H/'mechanical/current';r=json.loads((M
 def rect(ax,bb,color,label=None,alpha=.3):
  x,y,X,Y=bb;ax.add_patch(Rectangle((x,y),X-x,Y-y,edgecolor=color,facecolor=color,alpha=alpha));
  if label:ax.text((x+X)/2,(y+Y)/2,label,ha='center',va='center',fontsize=9)
-rect(ax,[0,0,48,60],'#476c60','AFE / digital\n48 x 60',.12);rect(ax,[0,40.55,48,49.05],'#cc8747','USB barrier',.18);rect(ax,[0,49.05,48,60],'#79649b','USB HOST',.25);rect(ax,[54,0,83.9,42.7],'#7194ba','Sony NP-BX1\nbody envelope',.25);rect(ax,[6,.4,40.14,43.14],'#65a4b3',None,.09);ax.text(8,4,'Screen projection',fontsize=9)
+rect(ax,[0,0,48,60],'#476c60','AFE / digital\n48 x 60',.12);rect(ax,[0,40.55,48,49.05],'#cc8747','USB barrier',.18);rect(ax,[0,49.05,48,60],'#79649b','USB HOST',.25);rect(ax,[55,0,84.9,42.7],'#7194ba','Sony NP-BX1\nbody envelope',.25);rect(ax,[6,.4,40.14,43.14],'#65a4b3',None,.09);ax.text(8,4,'Screen projection',fontsize=9)
 fpc=[26.19,20.58,34.19,25.985];rect(ax,fpc,'#b68a15','FPC',.4);b=r['reference_mated_body_box_mm'];rect(ax,[b[0],b[1],b[3],b[4]],'#2d7a67','PH4 mate',.35);h=r['conditional_JH1_post_envelope_mm'];rect(ax,[h[0],h[1],h[3],h[4]],'#666666',None,.15);ax.text(45,21,'JH1',fontsize=8)
 colors=['#b94b40','#b58c20','#347ca4','#614b94']
 for w,color in zip(r['current_right_exit_wires'],colors):
  pts=w['points'];ax.plot([p[0] for p in pts],[p[1] for p in pts],color=color,lw=2,label=w['pin']+': '+w['net'])
-ax.text(54,-4,'Power strip / battery contacts pending',fontsize=8);ax.annotate('6 mm cable channel',(51,15),(60,51),arrowprops=dict(arrowstyle='->'),fontsize=9);ax.set(xlim=(-2,87),ylim=(64,-8),xlabel='Main X / mm',ylabel='Main Y / mm',title='Implemented right-facing port; conditional cable path');ax.set_aspect('equal');ax.grid(alpha=.15);ax.legend(loc='lower right',fontsize=8)
+ax.text(54,-4,'Comparison only; see full3D route',fontsize=8);ax.annotate('7 mm cable channel',(51,15),(60,51),arrowprops=dict(arrowstyle='->'),fontsize=9);ax.set(xlim=(-2,87),ylim=(64,-8),xlabel='Main X / mm',ylabel='Main Y / mm',title='Port-direction comparison; full3D route is separate');ax.set_aspect('equal');ax.grid(alpha=.15);ax.legend(loc='lower right',fontsize=8)
 rect(zoom,fpc,'#b68a15','FPC',.35)
 for w,color in zip(r['former_forward_exit_wires'],colors):
  pts=w['points'];zoom.plot([p[0] for p in pts],[p[1] for p in pts],color=color,lw=2)

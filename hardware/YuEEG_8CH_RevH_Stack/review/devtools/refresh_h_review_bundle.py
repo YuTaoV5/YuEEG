@@ -3,7 +3,7 @@ from pathlib import Path
 import subprocess,sys,json,hashlib
 H=Path('hardware/YuEEG_8CH_RevH_Stack');native='X:/SoftWare/Kicad/bin/python.exe';default=sys.executable
 subprocess.run([default,str(Path(__file__).resolve().parent/'refresh_h_static_checkpoint.py')],check=True)
-jobs=[(native,n) for n in ['rebind_h_graphic_evidence','capture_h_current_placement','audit_h_models','audit_h_usb_geometry','audit_h_usb_reference','audit_h_decoupler_ground','check_h_imu_stack','check_h_imu_underbody','audit_h_imu_ground','check_h_current_imu_vias','check_h_mating_geometry','check_h_btb_drawing_revisions','check_h_screen_envelope','check_h_battery_side_envelope','extract_h_power_ports','check_h_power_port_tails','extract_h_host_external','check_h_afe_host_screen','audit_h_display_link_fold','inspect_h_fpc_neighbors']]
+jobs=[(native,n) for n in ['rebind_h_graphic_evidence','capture_h_current_placement','audit_h_models','audit_h_usb_geometry','audit_h_usb_reference','audit_h_decoupler_ground','check_h_side_power_vias','check_h_imu_stack','check_h_imu_underbody','audit_h_imu_ground','check_h_current_imu_vias','check_h_mating_geometry','check_h_btb_drawing_revisions','check_h_screen_envelope','review_pogo_assembly','check_h_battery_side_envelope','extract_h_power_ports','check_h_power_port_tails','extract_h_host_external','check_h_afe_host_screen','audit_h_display_link_fold','inspect_h_fpc_neighbors']]
 jobs += [(default,n) for n in ['review_h_right_power_harness','plot_h_right_power_harness','plot_h_battery_side_envelope','check_h_display_fold_space','plot_h_display_fold_space','review_h_complete_power_harness']]
 jobs += [(native,'checkpoint_h_display_link'),(default,'finalize_h_power_review')]
 for exe,name in jobs:
