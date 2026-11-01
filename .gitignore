@@ -156,3 +156,10 @@ Thumbs.db
 /hardware/YuEEG_8CH_RevH_Stack/review/procurement/*
 !/hardware/YuEEG_8CH_RevH_Stack/review/procurement/sgd_h40_ph08.jpg
 !/hardware/YuEEG_8CH_RevH_Stack/review/procurement/sgd_h45_ph08.jpg
+
+# Official AMOLED procurement facts and inspected technical-only crops.
+!/hardware/YuEEG_8CH_RevH_Stack/review/am178_upstream_materials_review.json
+!/hardware/YuEEG_8CH_RevH_Stack/review/am178_procurement_review.json
+!/hardware/YuEEG_8CH_RevH_Stack/review/procurement/am178_single_option.jpg
+!/hardware/YuEEG_8CH_RevH_Stack/review/procurement/am178_connector_option.jpg
+!/hardware/YuEEG_8CH_RevH_Stack/review/procurement/am178_technical_title.jpg

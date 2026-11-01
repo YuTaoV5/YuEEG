@@ -1,0 +1,478 @@
+{
+  "status": "UPSTREAM_MECHANICAL_MATCH_ELECTRICAL_VARIANT_REVIEWED_NOT_RELEASE",
+  "observed_date": "2026-11-01",
+  "official_repository": "https://github.com/osptek/display-amoled-1.78inch-368x448.git",
+  "commit": "9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70",
+  "commit_date": "2026-10-30T13:56:40+08:00",
+  "upstream_file_count": 40,
+  "local_reference_file_count": 40,
+  "new_upstream_paths": [],
+  "files": [
+    {
+      "path": "LICENSE",
+      "upstream_blob_sha256": "42d49efd72a6ac60f128b5f7d51f5bf0e34844696605d5e71b687f80bfe805b9",
+      "local_reference_sha256": "42d49efd72a6ac60f128b5f7d51f5bf0e34844696605d5e71b687f80bfe805b9",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/LICENSE"
+    },
+    {
+      "path": "README.md",
+      "upstream_blob_sha256": "4f3ede21831235ccfc01961f19187b232ef8f299b0061f9fc4a7200ec72456ed",
+      "local_reference_sha256": "4f3ede21831235ccfc01961f19187b232ef8f299b0061f9fc4a7200ec72456ed",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/README.md"
+    },
+    {
+      "path": "README_EN.md",
+      "upstream_blob_sha256": "6624e7ec53da1f46c93b8fafabdd76d4469f52c77f107e1ef8511ec7563af2f7",
+      "local_reference_sha256": "6624e7ec53da1f46c93b8fafabdd76d4469f52c77f107e1ef8511ec7563af2f7",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/README_EN.md"
+    },
+    {
+      "path": "examples/README.md",
+      "upstream_blob_sha256": "0084b661c049a041677f1f88ed8c84b6e60866275932364834dce01cafb0ecfc",
+      "local_reference_sha256": "0084b661c049a041677f1f88ed8c84b6e60866275932364834dce01cafb0ecfc",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/README.md"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/.gitignore",
+      "upstream_blob_sha256": "5e88c855bee717d0df4d849b6efdd12fd2c221085eebcef797a822b9b515b130",
+      "local_reference_sha256": "5e88c855bee717d0df4d849b6efdd12fd2c221085eebcef797a822b9b515b130",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/.gitignore"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/CMakeLists.txt",
+      "upstream_blob_sha256": "193888d4bc536751fe36b89c8a49e1000b0e07e34c3f6a10648a8a6ed2bf1351",
+      "local_reference_sha256": "193888d4bc536751fe36b89c8a49e1000b0e07e34c3f6a10648a8a6ed2bf1351",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/CMakeLists.txt"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/components/esp_lcd_qspi_amoled/.component_hash",
+      "upstream_blob_sha256": "725736b7264da57ab51941f8a2ba18feb9a001fd4f5c7faa37a37daf5a017b49",
+      "local_reference_sha256": "725736b7264da57ab51941f8a2ba18feb9a001fd4f5c7faa37a37daf5a017b49",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/components/esp_lcd_qspi_amoled/.component_hash"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/components/esp_lcd_qspi_amoled/CHANGELOG.md",
+      "upstream_blob_sha256": "bcfe42bad7280aa829b8170ebc92b0948e6a179cf09be74f6c7cb052d725d125",
+      "local_reference_sha256": "bcfe42bad7280aa829b8170ebc92b0948e6a179cf09be74f6c7cb052d725d125",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/components/esp_lcd_qspi_amoled/CHANGELOG.md"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/components/esp_lcd_qspi_amoled/CMakeLists.txt",
+      "upstream_blob_sha256": "d21fb055b69dac8923390cb06099a468d2beab86fc1c77e1b6cf5969b570ce69",
+      "local_reference_sha256": "d21fb055b69dac8923390cb06099a468d2beab86fc1c77e1b6cf5969b570ce69",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/components/esp_lcd_qspi_amoled/CMakeLists.txt"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/components/esp_lcd_qspi_amoled/README.md",
+      "upstream_blob_sha256": "97b6d5a31fb708727495fe9257cf99c3939f16085611518497d37a67d28649f4",
+      "local_reference_sha256": "97b6d5a31fb708727495fe9257cf99c3939f16085611518497d37a67d28649f4",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/components/esp_lcd_qspi_amoled/README.md"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/components/esp_lcd_qspi_amoled/esp_lcd_qspi_amoled.c",
+      "upstream_blob_sha256": "eb3a3d7652b65e26eb73d65e25d3f0845a4460108e2c40bf448376b75ba72cd4",
+      "local_reference_sha256": "eb3a3d7652b65e26eb73d65e25d3f0845a4460108e2c40bf448376b75ba72cd4",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/components/esp_lcd_qspi_amoled/esp_lcd_qspi_amoled.c"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/components/esp_lcd_qspi_amoled/idf_component.yml",
+      "upstream_blob_sha256": "ce7c9440a30ea48d786dd5e0718fbae6f99bca17a20178e173edae06f7a8ca84",
+      "local_reference_sha256": "ce7c9440a30ea48d786dd5e0718fbae6f99bca17a20178e173edae06f7a8ca84",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/components/esp_lcd_qspi_amoled/idf_component.yml"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/components/esp_lcd_qspi_amoled/include/esp_lcd_qspi_amoled.h",
+      "upstream_blob_sha256": "fa35686da9a48a1b3f59fbf7fae10cdb3466ddbb9595726d2a76e7c980f5294c",
+      "local_reference_sha256": "fa35686da9a48a1b3f59fbf7fae10cdb3466ddbb9595726d2a76e7c980f5294c",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/components/esp_lcd_qspi_amoled/include/esp_lcd_qspi_amoled.h"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/components/esp_lcd_qspi_amoled/license.txt",
+      "upstream_blob_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "local_reference_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/components/esp_lcd_qspi_amoled/license.txt"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/components/esp_lcd_touch_chsc6417/CMakeLists.txt",
+      "upstream_blob_sha256": "c0a200f9880035bd4ea5bc06514e30a8f156234c12c094e0f4483801d9966fe3",
+      "local_reference_sha256": "c0a200f9880035bd4ea5bc06514e30a8f156234c12c094e0f4483801d9966fe3",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/components/esp_lcd_touch_chsc6417/CMakeLists.txt"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/components/esp_lcd_touch_chsc6417/esp_lcd_touch_chsc6417.c",
+      "upstream_blob_sha256": "3ebadc5cc30e2b7d65391e293d472e36b5bcf17c2196bd3446f60afdd8c47ced",
+      "local_reference_sha256": "3ebadc5cc30e2b7d65391e293d472e36b5bcf17c2196bd3446f60afdd8c47ced",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/components/esp_lcd_touch_chsc6417/esp_lcd_touch_chsc6417.c"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/components/esp_lcd_touch_chsc6417/include/esp_lcd_touch_chsc6417.h",
+      "upstream_blob_sha256": "d89b382335b5e59bde99c9d31cd1d1d5cbec36af71f41e11dd21dd88f58cb6f4",
+      "local_reference_sha256": "d89b382335b5e59bde99c9d31cd1d1d5cbec36af71f41e11dd21dd88f58cb6f4",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/components/esp_lcd_touch_chsc6417/include/esp_lcd_touch_chsc6417.h"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/dependencies.lock",
+      "upstream_blob_sha256": "5bcbbb200ea90da4d3ef9c4e7559e383d050ab0df5b5881e5cfb737c559aaa00",
+      "local_reference_sha256": "5bcbbb200ea90da4d3ef9c4e7559e383d050ab0df5b5881e5cfb737c559aaa00",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/dependencies.lock"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/main/CMakeLists.txt",
+      "upstream_blob_sha256": "b6cdbf638c087c57edab3e8d7964fb0c35ab917de524f78f1a9d86f527178fb0",
+      "local_reference_sha256": "b6cdbf638c087c57edab3e8d7964fb0c35ab917de524f78f1a9d86f527178fb0",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/main/CMakeLists.txt"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/main/app_init/app_init.c",
+      "upstream_blob_sha256": "c129144ded475ef9d133b842a9960977317311c82da0ae2ac330feeb8a49347e",
+      "local_reference_sha256": "c129144ded475ef9d133b842a9960977317311c82da0ae2ac330feeb8a49347e",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/main/app_init/app_init.c"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/main/app_init/app_init.h",
+      "upstream_blob_sha256": "34ee8f12cf1599166689bf9e1a6688c632f262584af610dfbb26f81dec91c5f7",
+      "local_reference_sha256": "34ee8f12cf1599166689bf9e1a6688c632f262584af610dfbb26f81dec91c5f7",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/main/app_init/app_init.h"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/main/app_init/board_pins.h",
+      "upstream_blob_sha256": "8bf91add25f55e846b9bca16abbbac450660681053b73e050271e3c3e5c2ddc6",
+      "local_reference_sha256": "8bf91add25f55e846b9bca16abbbac450660681053b73e050271e3c3e5c2ddc6",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/main/app_init/board_pins.h"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/main/app_init/lcd_init.c",
+      "upstream_blob_sha256": "542d9f0e0d01353e5c7f2c7158e44cc6a77455ea21e6942032622ae08333503e",
+      "local_reference_sha256": "542d9f0e0d01353e5c7f2c7158e44cc6a77455ea21e6942032622ae08333503e",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/main/app_init/lcd_init.c"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/main/app_init/lcd_init.h",
+      "upstream_blob_sha256": "969da852d87dd5c0ad90cc2cd49a81bc0b9132f9d364b7bcd570007774583ecf",
+      "local_reference_sha256": "969da852d87dd5c0ad90cc2cd49a81bc0b9132f9d364b7bcd570007774583ecf",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/main/app_init/lcd_init.h"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/main/idf_component.yml",
+      "upstream_blob_sha256": "176a1a445cb469847450194a092e45ecb9efb99349ef572ba08598f2bffcdcf5",
+      "local_reference_sha256": "176a1a445cb469847450194a092e45ecb9efb99349ef572ba08598f2bffcdcf5",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/main/idf_component.yml"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/main/main.c",
+      "upstream_blob_sha256": "cc0999ce752155f5a27c2dfe2b1be799aaf7598c4393820eda5274f099f0ba38",
+      "local_reference_sha256": "cc0999ce752155f5a27c2dfe2b1be799aaf7598c4393820eda5274f099f0ba38",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/main/main.c"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/sdkconfig",
+      "upstream_blob_sha256": "3a515b0892bf660a69e32253129083b83165f94c32328bf3310009b2da0f0e81",
+      "local_reference_sha256": "3a515b0892bf660a69e32253129083b83165f94c32328bf3310009b2da0f0e81",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/sdkconfig"
+    },
+    {
+      "path": "examples/esp32s3-co5300-qspi-bringup/sdkconfig.defaults",
+      "upstream_blob_sha256": "1b60aea3475750f25f5db71e834d3d55af5a2904526817cef174ac9bfb70d800",
+      "local_reference_sha256": "1b60aea3475750f25f5db71e834d3d55af5a2904526817cef174ac9bfb70d800",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/examples/esp32s3-co5300-qspi-bringup/sdkconfig.defaults"
+    },
+    {
+      "path": "images/logo.png",
+      "upstream_blob_sha256": "d348f0345f2d26bc73574469bb6131fb3e43badf4c2a1399ba5aea514ccc198f",
+      "local_reference_sha256": "d348f0345f2d26bc73574469bb6131fb3e43badf4c2a1399ba5aea514ccc198f",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/images/logo.png"
+    },
+    {
+      "path": "versions/AM178Q368448LK/README.md",
+      "upstream_blob_sha256": "b842466eed2add74a9c71899346eaf1b5e42aaeee0c8a13c468fc1a76d23ef8e",
+      "local_reference_sha256": "b842466eed2add74a9c71899346eaf1b5e42aaeee0c8a13c468fc1a76d23ef8e",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/versions/AM178Q368448LK/README.md"
+    },
+    {
+      "path": "versions/AM178Q368448LK/README_EN.md",
+      "upstream_blob_sha256": "ccff63874e8f6b2e2e8f1e26b901b9478120ea90f960cd4e9cc54c4156677369",
+      "local_reference_sha256": "ccff63874e8f6b2e2e8f1e26b901b9478120ea90f960cd4e9cc54c4156677369",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/versions/AM178Q368448LK/README_EN.md"
+    },
+    {
+      "path": "versions/AM178Q368448LK/adapter/\u8f6c\u63a5\u677f1 \u539f\u7406\u56fe1.96_1.78_AMOLED\u8f6c\u63a5\u677fV1.0.pdf",
+      "upstream_blob_sha256": "c2465b287c0a14e84b860b28bacea939a4f8bd67f22f069323fd009e48ca6a2c",
+      "local_reference_sha256": "c2465b287c0a14e84b860b28bacea939a4f8bd67f22f069323fd009e48ca6a2c",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/versions/AM178Q368448LK/adapter/%E8%BD%AC%E6%8E%A5%E6%9D%BF1%20%E5%8E%9F%E7%90%86%E5%9B%BE1.96_1.78_AMOLED%E8%BD%AC%E6%8E%A5%E6%9D%BFV1.0.pdf"
+    },
+    {
+      "path": "versions/AM178Q368448LK/adapter/\u8f6c\u63a5\u677f2 \u539f\u7406\u56fe-1.78demo\u8f6c\u63a5\u677f.pdf",
+      "upstream_blob_sha256": "4e571dd25f40d818867e630b976533cba773be1b0bab3052febe3511d6b98659",
+      "local_reference_sha256": "4e571dd25f40d818867e630b976533cba773be1b0bab3052febe3511d6b98659",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/versions/AM178Q368448LK/adapter/%E8%BD%AC%E6%8E%A5%E6%9D%BF2%20%E5%8E%9F%E7%90%86%E5%9B%BE-1.78demo%E8%BD%AC%E6%8E%A5%E6%9D%BF.pdf"
+    },
+    {
+      "path": "versions/AM178Q368448LK/cad/AM178Q368448LK1.dwg",
+      "upstream_blob_sha256": "51cbc87c380fed35f57106c82f979135eaf1830a2cb55332902df9fe99982cf4",
+      "local_reference_sha256": "51cbc87c380fed35f57106c82f979135eaf1830a2cb55332902df9fe99982cf4",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/versions/AM178Q368448LK/cad/AM178Q368448LK1.dwg"
+    },
+    {
+      "path": "versions/AM178Q368448LK/cad/OK-14F024-04.pdf",
+      "upstream_blob_sha256": "87eed9ad728bea68bc335b66391e6f8c5be1c8f1b2998fa7fdd8a19d80f9e692",
+      "local_reference_sha256": "87eed9ad728bea68bc335b66391e6f8c5be1c8f1b2998fa7fdd8a19d80f9e692",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/versions/AM178Q368448LK/cad/OK-14F024-04.pdf"
+    },
+    {
+      "path": "versions/AM178Q368448LK/datasheets/AM178Q368448LK.pdf",
+      "upstream_blob_sha256": "31c003ff69da5087a9f457a8f0a2fa68e12ec1111d5700c909edf55d64774917",
+      "local_reference_sha256": "878311f5d5594db6a4320401569f575e0a8c56ad5a4073d6acb63c8b05b0cba9",
+      "comparison": "CHANGED_CONTENT_OR_CONTAINER",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/versions/AM178Q368448LK/datasheets/AM178Q368448LK.pdf"
+    },
+    {
+      "path": "versions/AM178Q368448LK/datasheets/CO_5300_Datasheet_V0_00_20230328_07edb82936.pdf",
+      "upstream_blob_sha256": "20161057fcb09a02f4abb1573b3fe54387437fe4c79e166bf516440f6357cfc8",
+      "local_reference_sha256": "20161057fcb09a02f4abb1573b3fe54387437fe4c79e166bf516440f6357cfc8",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/versions/AM178Q368448LK/datasheets/CO_5300_Datasheet_V0_00_20230328_07edb82936.pdf"
+    },
+    {
+      "path": "versions/AM178Q368448LK/datasheets/DS_CHSC_6417_EU_24_v1_3_1_f66256c159.pdf",
+      "upstream_blob_sha256": "da4d7273e871acf50c5197df67dbb1cf65783b1575fe777f29147728fe2fc500",
+      "local_reference_sha256": "da4d7273e871acf50c5197df67dbb1cf65783b1575fe777f29147728fe2fc500",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/versions/AM178Q368448LK/datasheets/DS_CHSC_6417_EU_24_v1_3_1_f66256c159.pdf"
+    },
+    {
+      "path": "versions/AM178Q368448LK/images/product.png",
+      "upstream_blob_sha256": "0b4096b608e5b567ea0c301d17132d884b4237936af5e5a7423c7ce740658744",
+      "local_reference_sha256": "0b4096b608e5b567ea0c301d17132d884b4237936af5e5a7423c7ce740658744",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/versions/AM178Q368448LK/images/product.png"
+    },
+    {
+      "path": "versions/AM178Q368448LK/osptek.yml",
+      "upstream_blob_sha256": "eca50f6ad6c6e3f98aec2c45052eeb1df5a8fa736de1b21415506bfcea069e65",
+      "local_reference_sha256": "eca50f6ad6c6e3f98aec2c45052eeb1df5a8fa736de1b21415506bfcea069e65",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/versions/AM178Q368448LK/osptek.yml"
+    }
+  ],
+  "selected_mechanical_sources": {
+    "versions/AM178Q368448LK/cad/AM178Q368448LK1.dwg": {
+      "path": "versions/AM178Q368448LK/cad/AM178Q368448LK1.dwg",
+      "upstream_blob_sha256": "51cbc87c380fed35f57106c82f979135eaf1830a2cb55332902df9fe99982cf4",
+      "local_reference_sha256": "51cbc87c380fed35f57106c82f979135eaf1830a2cb55332902df9fe99982cf4",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/versions/AM178Q368448LK/cad/AM178Q368448LK1.dwg"
+    },
+    "versions/AM178Q368448LK/cad/OK-14F024-04.pdf": {
+      "path": "versions/AM178Q368448LK/cad/OK-14F024-04.pdf",
+      "upstream_blob_sha256": "87eed9ad728bea68bc335b66391e6f8c5be1c8f1b2998fa7fdd8a19d80f9e692",
+      "local_reference_sha256": "87eed9ad728bea68bc335b66391e6f8c5be1c8f1b2998fa7fdd8a19d80f9e692",
+      "comparison": "BYTE_IDENTICAL",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/versions/AM178Q368448LK/cad/OK-14F024-04.pdf"
+    },
+    "versions/AM178Q368448LK/datasheets/AM178Q368448LK.pdf": {
+      "path": "versions/AM178Q368448LK/datasheets/AM178Q368448LK.pdf",
+      "upstream_blob_sha256": "31c003ff69da5087a9f457a8f0a2fa68e12ec1111d5700c909edf55d64774917",
+      "local_reference_sha256": "878311f5d5594db6a4320401569f575e0a8c56ad5a4073d6acb63c8b05b0cba9",
+      "comparison": "CHANGED_CONTENT_OR_CONTAINER",
+      "upstream_url": "https://github.com/osptek/display-amoled-1.78inch-368x448/blob/9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70/versions/AM178Q368448LK/datasheets/AM178Q368448LK.pdf"
+    }
+  },
+  "renderer_scale_to_px": 1600,
+  "renderer_warnings": {
+    "local": [
+      "Syntax Error: No display font for 'ArialUnicode'",
+      "Syntax Error: No display font for 'Symbol'"
+    ],
+    "upstream": [
+      "Syntax Error: No display font for 'ArialUnicode'",
+      "Syntax Error: No display font for 'Symbol'"
+    ]
+  },
+  "render_checks": [
+    {
+      "page": 1,
+      "render_size_px": [
+        1132,
+        1600
+      ],
+      "same_rendered_RGB": true,
+      "local_RGB_sha256": "3043eb95d471ad26d75da894cda5986e22a3ba4a07cd41546c954f658ad07168",
+      "upstream_RGB_sha256": "3043eb95d471ad26d75da894cda5986e22a3ba4a07cd41546c954f658ad07168"
+    },
+    {
+      "page": 2,
+      "render_size_px": [
+        1132,
+        1600
+      ],
+      "same_rendered_RGB": true,
+      "local_RGB_sha256": "ab7504a90b55e3e379e2154c5acd3d85564117bf134cce7214f028572377fc84",
+      "upstream_RGB_sha256": "ab7504a90b55e3e379e2154c5acd3d85564117bf134cce7214f028572377fc84"
+    },
+    {
+      "page": 3,
+      "render_size_px": [
+        1132,
+        1600
+      ],
+      "same_rendered_RGB": true,
+      "local_RGB_sha256": "e0f28de52086ed531441424502919f98b99699ca3fc2dc2ab681affab20e4686",
+      "upstream_RGB_sha256": "e0f28de52086ed531441424502919f98b99699ca3fc2dc2ab681affab20e4686"
+    },
+    {
+      "page": 4,
+      "render_size_px": [
+        1132,
+        1600
+      ],
+      "same_rendered_RGB": true,
+      "local_RGB_sha256": "e1c14e60872934c3a2dbe2e303a6cff62550adbaa59622330b875936e948fd03",
+      "upstream_RGB_sha256": "e1c14e60872934c3a2dbe2e303a6cff62550adbaa59622330b875936e948fd03"
+    },
+    {
+      "page": 5,
+      "render_size_px": [
+        1132,
+        1600
+      ],
+      "same_rendered_RGB": true,
+      "local_RGB_sha256": "3ce1e043833ab5d8da9e97dcd54943b3601b0d25cca23a3edb329b7b18a25fe6",
+      "upstream_RGB_sha256": "3ce1e043833ab5d8da9e97dcd54943b3601b0d25cca23a3edb329b7b18a25fe6"
+    },
+    {
+      "page": 6,
+      "render_size_px": [
+        1132,
+        1600
+      ],
+      "same_rendered_RGB": false,
+      "local_RGB_sha256": "7d4ae7e7ac8dd6276cdadf54359fb6926872dab09c0d3ff36656dec058400df5",
+      "upstream_RGB_sha256": "8080c14b2f154a08e86595d9302d51f87781f7c8adac13e5d3597728a6373e7a"
+    },
+    {
+      "page": 7,
+      "render_size_px": [
+        1132,
+        1600
+      ],
+      "same_rendered_RGB": true,
+      "local_RGB_sha256": "b77b586c28b5f6e74d8c352b61f3276eb2d9008ebd564de78db8fa9646333a25",
+      "upstream_RGB_sha256": "b77b586c28b5f6e74d8c352b61f3276eb2d9008ebd564de78db8fa9646333a25"
+    },
+    {
+      "page": 8,
+      "render_size_px": [
+        1132,
+        1600
+      ],
+      "same_rendered_RGB": true,
+      "local_RGB_sha256": "6ca11c1879d4a365b3ddb8667081e2ffcc9db31edb1b30775b229d08c553fd40",
+      "upstream_RGB_sha256": "6ca11c1879d4a365b3ddb8667081e2ffcc9db31edb1b30775b229d08c553fd40"
+    },
+    {
+      "page": 9,
+      "render_size_px": [
+        1132,
+        1600
+      ],
+      "same_rendered_RGB": true,
+      "local_RGB_sha256": "5e508fec5dc725077290ede3d000d0d0fc0f0b7e7e24106727b329dbc35511a0",
+      "upstream_RGB_sha256": "5e508fec5dc725077290ede3d000d0d0fc0f0b7e7e24106727b329dbc35511a0"
+    },
+    {
+      "page": 10,
+      "render_size_px": [
+        1132,
+        1600
+      ],
+      "same_rendered_RGB": true,
+      "local_RGB_sha256": "b11271e73d37e256215300cd4baa72b4f55188a54a2e792e97103dde563f7070",
+      "upstream_RGB_sha256": "b11271e73d37e256215300cd4baa72b4f55188a54a2e792e97103dde563f7070"
+    },
+    {
+      "page": 11,
+      "render_size_px": [
+        1132,
+        1600
+      ],
+      "same_rendered_RGB": true,
+      "local_RGB_sha256": "851c9daff6f9103822e5a939a68b26fae59d738c40503c4cb277e7a51abbd2e3",
+      "upstream_RGB_sha256": "851c9daff6f9103822e5a939a68b26fae59d738c40503c4cb277e7a51abbd2e3"
+    }
+  ],
+  "changed_render_pages": [
+    6
+  ],
+  "mechanical_pages_visual_review": [
+    4,
+    5
+  ],
+  "electrical_difference_review": {
+    "page": 6,
+    "local_VDDIO_min_typ_max_V": [
+      1.7,
+      1.8,
+      1.95
+    ],
+    "upstream_VDDIO_min_typ_max_V": [
+      1.7,
+      1.8,
+      3.35
+    ],
+    "printed_revision_record": "V1.0 preliminary first release2024-03-16; unchanged in both renders",
+    "interpretation": "One visually identified table change; no new explicit PCN or actual shipped-part voltage qualification inferred.",
+    "current_regulator": "TPS7A2018PDBVR",
+    "current_nominal_VDDIO_V": 1.8,
+    "native_exported_pins": {
+      "U1003.5": "AM_1V8",
+      "U1004.23": "AM_1V8",
+      "U1004.24": "AM_1V8",
+      "J2002.15": "AM_1V8"
+    },
+    "native_netlist_sha256": "8dcb2b955f420826735848a925490ae42744be0f22dba700b6a2d83937853771",
+    "digital_pcb_sha256": "e4ec2796baec9bfced51394bc5c8ac8c5172db75c834cd15c4a2eb06d868470f",
+    "hardware_rail_or_level_shift_changed": false,
+    "scope": "Current nominal1.8V rail and level-shifter supply satisfy both displayed VDDIO ranges; this is not output tolerance, startup/overshoot, shipping-SKU or functional qualification."
+  },
+  "current_review_sha256": "9010c081da02a50bc07cfcdc5b58cb1e6cc4b9a0faae91f9e9cc206f202c8015",
+  "source_frozen_pdf_sha256": "878311f5d5594db6a4320401569f575e0a8c56ad5a4073d6acb63c8b05b0cba9",
+  "checker_sha256": "7873aa55f8d4d5d912911a6ead6ef1fe21bf25a155825bd960fe3805da539677",
+  "folded_male_solder_plane_to_screen_back_Z_offset_mm": null,
+  "source_PDF_or_DWG_copied_to_delivery": false,
+  "scope": "Official git commit fetched read-only, canonical blobs compared with user-provided material;10 of11 PDF pages RGB-identical at1600px, including mechanical4/5. Changed page6 visually reviewed, VDDIO Max1.95->3.35V recorded with unchanged1.8V design. DWG and OCN connector PDF byte-identical. Poppler font warnings retained; relevant labels reviewed against existing DWG audit. No inferred depth from photographs, actual SKU confirmation, complete electrical/physical fit, support height or insulation qualification."
+}

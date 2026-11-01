@@ -1,0 +1,55 @@
+{
+  "status": "OFFICIAL_LISTING_OPTIONS_VERIFIED_EXACT_MPN_AND_Z_PENDING",
+  "observed_date": "2026-11-01",
+  "seller": "\u9c7c\u9e70\u5149\u7535\u5de5\u5382\u5e97",
+  "brand": "OSPTEK",
+  "item_id": "1093955859177",
+  "item_url": "https://item.taobao.com/item.htm?id=1093955859177",
+  "official_store_url": "https://shop110742373.taobao.com/",
+  "official_source_relation": "The official osptek repository README links this exact Taobao shop; current listing opened from its shop page.",
+  "single_screen": {
+    "sku_id": "6316603615289",
+    "selected_ui_option": "\u5355\u5c4f",
+    "observed_price_CNY": 37,
+    "stock_ui": "\u5373\u5c06\u552e\u7f44",
+    "stock_scope": "Observed UI only; no stock guarantee, order or purchase."
+  },
+  "connector_option": {
+    "sku_id": "6316603615291",
+    "selected_ui_option": "\u8fde\u63a5\u5668",
+    "observed_price_CNY": 1,
+    "stock_ui": "\u6709\u8d27",
+    "exact_MPN": null,
+    "scope": "Only a generic connector option is named; do not equate it with OK-14GM024-04 or OK-14F024-04 without seller evidence."
+  },
+  "product_image_claims": {
+    "diagonal_inch": 1.78,
+    "resolution": [
+      368,
+      448
+    ],
+    "display_driver": "CO5300",
+    "touch_driver": "CHSC6417",
+    "scope": "Listing title and main image, not delivered-part verification. The listing does not explicitly name AM178Q368448LK in its currently readable text."
+  },
+  "official_repository_commit": "9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70",
+  "upstream_materials_review_sha256": "f9b49cda2923fd2214d299cac6e06bc97ff91ed841796d259d022b13ba379024",
+  "files_sha256": {
+    "am178_single_option.jpg": "54abfe2d361158add6d2f4cdee50fc4c9e56ac3690dc5629da8fbe32c7ffb0ed",
+    "am178_connector_option.jpg": "cdc0319786c84b55c19739604771b500e5c7566a4df31df2f007b0251e907840",
+    "am178_technical_title.jpg": "159eb3d552c67f43ab556a0036886a13bfe9de4e798856107dc5f1403ac4ba0b"
+  },
+  "source_photo_review": {
+    "back_photo_url": "https://img.alicdn.com/imgextra/i1/754167209/O1CN01VRukWl237mGvwz1SM_!!754167209.jpg_q50.jpg_.webp",
+    "notes": "Folded FPC,24-contact connector and exposed rear components visible. Photograph has no dimensioned Z datum and cannot determine support height or connector gender/variant by itself.",
+    "original_photo_republished": false
+  },
+  "current_hardware_touch_scope": "Display only. J2002.18 tied to GND;19/20 only biased idle, no MCU touch-data connection. No touch firmware feature claimed.",
+  "digital_pcb_sha256": "e4ec2796baec9bfced51394bc5c8ac8c5172db75c834cd15c4a2eb06d868470f",
+  "digital_expected_connections_sha256": "e66938b0a02ef96282b856e4e4f22fe70e9befaf20bd7bd842ae5bf5923dc7d9",
+  "questions_draft_sha256": "05411dcbc7954234ecda94f2da52b009f4f4c50947fc685dda585a10045c7e4f",
+  "seller_message_sent": false,
+  "folded_male_solder_plane_to_screen_back_Z_offset_mm": null,
+  "screenshot_scope": "Three curated technical/option crops, individually inspected. No account header, shipping region, address, basket, tracking URL or raw page capture included.",
+  "scope": "Official shop listing, selected single-screen and generic connector options, main-image IC/resolution claims, and public upstream provenance reviewed. Exact panel/connector MPN, folded-FPC Z, delivered parts and full assembly remain unqualified. No seller messages, purchases or uploads."
+}
