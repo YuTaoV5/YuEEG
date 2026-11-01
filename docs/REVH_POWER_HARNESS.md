@@ -44,6 +44,8 @@ JH2 的 2／3／4 针背面焊尾扩大预留框，在 XY 投影上与 AFE 的 C
 
 ## 文件与开放项
 
+2026-11-01 已补充从数字板到竖置条板的[完整名义线束路径](REVH_COMPLETE_POWER_HARNESS.md)。上文 Y=0 截止路径保留作前一阶段比较；新模型覆盖两端对应针号、分层转弯及名义空间检查，但胶壳出线轴、具体线材、应力释放与完整装配仍未核定。新路径还显示朝上插头会增加高度，后续需要优化，不能按旧二维图冻结外壳。
+
 当前原生项目为 `hardware/YuEEG_8CH_RevH_Stack/digital/YuEEG_H_DIGITAL.kicad_pcb`，变更记录在 `digital/review/right_power_port.json`。`mechanical/current/power_ports_native.json` 记录当前两端的原生针号和坐标，`power_harness_routing_review.json` 记录有条件的线束路径，`power_port_tail_review.json` 记录 AFE 侧焊尾筛查。新的工程 Gerber／钻孔已更新，并仍标记 **NOT FOR ORDER**。
 
 线束具体采购件、出线轴高度、允许弯曲半径、焊尾处理、完整应力释放及电池前端电源条板位置仍需定型。电池端 JP1 已在本地改为 D+/B− 双探针、10mm 间距和1mm板厚；其固定止挡、公差及完整前端线束仍待复核，详见 REVH_POGO_INTEGRATION.md。整机尚未制造放行。

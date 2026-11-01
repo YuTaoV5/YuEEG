@@ -1,0 +1,712 @@
+{
+  "status": "COMPLETE_NOMINAL_ENDPOINT_ROUTE_NOT_QUALIFIED_HARNESS",
+  "source_sha256": {
+    "power_ports_native.json": "eab7de795b52541700a28f487b08c29e3c3e64635492b061df9e5eb128ab7ec2",
+    "pogo_assembly_review.json": "442e3b5cf444b5bd68ec4296d5f03df25f1b0970a68f50af88a2d0683077778b",
+    "interboard_contract.json": "f4920ba33760304a0261ff5a3972eb21fb74d23f2a097d0be57bec090f2c7adc",
+    "design_contract.json": "ba84db7ae22199cc02e52a775d5694b3dc58a4663b36ace4a7b8d2a99e209aac"
+  },
+  "catalog": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+  "catalog_reference_pages": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "product_frame": {
+    "AFE_F_z_mm": 0.0,
+    "digital_B_z_mm": 8.5,
+    "digital_F_z_mm": 10.1,
+    "power_transform": "X=48.95+PCB_X; Y=-4.05-PCB_local_Z; Z=18-PCB_Y; local_Z positive away from F"
+  },
+  "assumptions": {
+    "wire_AWG": 24,
+    "wire_OD_max_mm": 1.1,
+    "wire_axis_height_from_connector_board_F_mm": 2.75,
+    "axis_height_status": "Assumed; not supplied as a dimensional datum by catalog.",
+    "minimum_centerline_radius_target_mm": 3.3,
+    "allowed_wire_bend_radius_qualified": false,
+    "straight_free_wire_at_power_exit_mm": 2.2,
+    "straight_length_status": "Proposed, not a catalog requirement or a qualified strain relief.",
+    "power_mated_exit_local_Y_mm": 8.0,
+    "power_exit_datum_status": "Nominal derivation from catalog central header rear,6mm body and9.6mm mated length; not a toleranced assembly drawing.",
+    "terminal_insertion_depths_and_cut_lengths_qualified": false
+  },
+  "sampling_max_axis_step_mm": 0.02,
+  "distance_bound_method": "Point-to-box minus OD/2 and ds/2; wire pairs minus OD and ds. Polyline sampling of specified analytic curves only, not tolerance or collision-kernel validation.",
+  "wires": [
+    {
+      "pin": "1",
+      "net": "SYS_5V",
+      "segments": [
+        {
+          "type": "line",
+          "a": [
+            40.65,
+            38.5,
+            12.85
+          ],
+          "b": [
+            49.65,
+            38.5,
+            12.85
+          ]
+        },
+        {
+          "type": "xy_right_to_forward",
+          "a": [
+            49.65,
+            38.5,
+            12.85
+          ],
+          "radius_mm": 3.3
+        },
+        {
+          "type": "line",
+          "a": [
+            52.949999999999996,
+            35.2,
+            12.85
+          ],
+          "b": [
+            52.949999999999996,
+            28.5,
+            12.85
+          ]
+        },
+        {
+          "type": "blend_y",
+          "a": [
+            52.949999999999996,
+            28.5,
+            12.85
+          ],
+          "b": [
+            52.949999999999996,
+            10.5,
+            24.4
+          ]
+        },
+        {
+          "type": "blend_y",
+          "a": [
+            52.949999999999996,
+            10.5,
+            24.4
+          ],
+          "b": [
+            48.95,
+            0.5,
+            24.4
+          ]
+        },
+        {
+          "type": "line",
+          "a": [
+            48.95,
+            0.5,
+            24.4
+          ],
+          "b": [
+            48.95,
+            -3.5,
+            24.4
+          ]
+        },
+        {
+          "type": "xy_forward_to_right",
+          "a": [
+            48.95,
+            -3.5,
+            24.4
+          ],
+          "radius_mm": 3.3
+        },
+        {
+          "type": "xz_right_to_down",
+          "a": [
+            52.25,
+            -6.8,
+            24.4
+          ],
+          "radius_mm": 7.2
+        },
+        {
+          "type": "line",
+          "a": [
+            59.45,
+            -6.8,
+            17.2
+          ],
+          "b": [
+            59.45,
+            -6.8,
+            15.0
+          ]
+        }
+      ],
+      "start_product_xyz_mm": [
+        40.65,
+        38.5,
+        12.85
+      ],
+      "end_product_xyz_mm": [
+        59.45,
+        -6.8,
+        15.0
+      ],
+      "centerline_length_mm": 76.34739663022063,
+      "minimum_centerline_bend_radius_lower_bound_mm": 3.3,
+      "wire_tube_bounds_product_mm": [
+        40.1,
+        -7.35,
+        12.299999999999999,
+        60.0,
+        39.05,
+        24.95
+      ]
+    },
+    {
+      "pin": "2",
+      "net": "BAT_PROTECTED_SENSE",
+      "segments": [
+        {
+          "type": "line",
+          "a": [
+            40.65,
+            36.5,
+            12.85
+          ],
+          "b": [
+            48.35,
+            36.5,
+            12.85
+          ]
+        },
+        {
+          "type": "xy_right_to_forward",
+          "a": [
+            48.35,
+            36.5,
+            12.85
+          ],
+          "radius_mm": 3.3
+        },
+        {
+          "type": "line",
+          "a": [
+            51.65,
+            33.2,
+            12.85
+          ],
+          "b": [
+            51.65,
+            28.5,
+            12.85
+          ]
+        },
+        {
+          "type": "blend_y",
+          "a": [
+            51.65,
+            28.5,
+            12.85
+          ],
+          "b": [
+            51.65,
+            10.5,
+            23.1
+          ]
+        },
+        {
+          "type": "blend_y",
+          "a": [
+            51.65,
+            10.5,
+            23.1
+          ],
+          "b": [
+            48.25000000000001,
+            0.5,
+            23.1
+          ]
+        },
+        {
+          "type": "line",
+          "a": [
+            48.25000000000001,
+            0.5,
+            23.1
+          ],
+          "b": [
+            48.25000000000001,
+            -3.5,
+            23.1
+          ]
+        },
+        {
+          "type": "xy_forward_to_right",
+          "a": [
+            48.25000000000001,
+            -3.5,
+            23.1
+          ],
+          "radius_mm": 3.3
+        },
+        {
+          "type": "xz_right_to_down",
+          "a": [
+            51.550000000000004,
+            -6.8,
+            23.1
+          ],
+          "radius_mm": 5.9
+        },
+        {
+          "type": "line",
+          "a": [
+            57.45,
+            -6.8,
+            17.2
+          ],
+          "b": [
+            57.45,
+            -6.8,
+            15.0
+          ]
+        }
+      ],
+      "start_product_xyz_mm": [
+        40.65,
+        36.5,
+        12.85
+      ],
+      "end_product_xyz_mm": [
+        57.45,
+        -6.8,
+        15.0
+      ],
+      "centerline_length_mm": 70.02059655696907,
+      "minimum_centerline_bend_radius_lower_bound_mm": 3.3,
+      "wire_tube_bounds_product_mm": [
+        40.1,
+        -7.35,
+        12.299999999999999,
+        58.0,
+        37.05,
+        23.650000000000002
+      ]
+    },
+    {
+      "pin": "3",
+      "net": "GND",
+      "segments": [
+        {
+          "type": "line",
+          "a": [
+            40.65,
+            34.5,
+            12.85
+          ],
+          "b": [
+            47.05,
+            34.5,
+            12.85
+          ]
+        },
+        {
+          "type": "xy_right_to_forward",
+          "a": [
+            47.05,
+            34.5,
+            12.85
+          ],
+          "radius_mm": 3.3
+        },
+        {
+          "type": "line",
+          "a": [
+            50.349999999999994,
+            31.2,
+            12.85
+          ],
+          "b": [
+            50.349999999999994,
+            28.5,
+            12.85
+          ]
+        },
+        {
+          "type": "blend_y",
+          "a": [
+            50.349999999999994,
+            28.5,
+            12.85
+          ],
+          "b": [
+            50.349999999999994,
+            10.5,
+            21.799999999999997
+          ]
+        },
+        {
+          "type": "blend_y",
+          "a": [
+            50.349999999999994,
+            10.5,
+            21.799999999999997
+          ],
+          "b": [
+            47.550000000000004,
+            0.5,
+            21.799999999999997
+          ]
+        },
+        {
+          "type": "line",
+          "a": [
+            47.550000000000004,
+            0.5,
+            21.799999999999997
+          ],
+          "b": [
+            47.550000000000004,
+            -3.5,
+            21.799999999999997
+          ]
+        },
+        {
+          "type": "xy_forward_to_right",
+          "a": [
+            47.550000000000004,
+            -3.5,
+            21.799999999999997
+          ],
+          "radius_mm": 3.3
+        },
+        {
+          "type": "xz_right_to_down",
+          "a": [
+            50.85,
+            -6.8,
+            21.799999999999997
+          ],
+          "radius_mm": 4.6
+        },
+        {
+          "type": "line",
+          "a": [
+            55.45,
+            -6.8,
+            17.2
+          ],
+          "b": [
+            55.45,
+            -6.8,
+            15.0
+          ]
+        }
+      ],
+      "start_product_xyz_mm": [
+        40.65,
+        34.5,
+        12.85
+      ],
+      "end_product_xyz_mm": [
+        55.45,
+        -6.8,
+        15.0
+      ],
+      "centerline_length_mm": 63.786743619969,
+      "minimum_centerline_bend_radius_lower_bound_mm": 3.3,
+      "wire_tube_bounds_product_mm": [
+        40.1,
+        -7.35,
+        12.299999999999999,
+        56.0,
+        35.05,
+        22.349999999999998
+      ]
+    },
+    {
+      "pin": "4",
+      "net": "GND",
+      "segments": [
+        {
+          "type": "line",
+          "a": [
+            40.65,
+            32.5,
+            12.85
+          ],
+          "b": [
+            45.75,
+            32.5,
+            12.85
+          ]
+        },
+        {
+          "type": "xy_right_to_forward",
+          "a": [
+            45.75,
+            32.5,
+            12.85
+          ],
+          "radius_mm": 3.3
+        },
+        {
+          "type": "line",
+          "a": [
+            49.05,
+            29.2,
+            12.85
+          ],
+          "b": [
+            49.05,
+            28.5,
+            12.85
+          ]
+        },
+        {
+          "type": "blend_y",
+          "a": [
+            49.05,
+            28.5,
+            12.85
+          ],
+          "b": [
+            49.05,
+            10.5,
+            20.5
+          ]
+        },
+        {
+          "type": "blend_y",
+          "a": [
+            49.05,
+            10.5,
+            20.5
+          ],
+          "b": [
+            46.85000000000001,
+            0.5,
+            20.5
+          ]
+        },
+        {
+          "type": "line",
+          "a": [
+            46.85000000000001,
+            0.5,
+            20.5
+          ],
+          "b": [
+            46.85000000000001,
+            -3.5,
+            20.5
+          ]
+        },
+        {
+          "type": "xy_forward_to_right",
+          "a": [
+            46.85000000000001,
+            -3.5,
+            20.5
+          ],
+          "radius_mm": 3.3
+        },
+        {
+          "type": "xz_right_to_down",
+          "a": [
+            50.150000000000006,
+            -6.8,
+            20.5
+          ],
+          "radius_mm": 3.3
+        },
+        {
+          "type": "line",
+          "a": [
+            53.45,
+            -6.8,
+            17.2
+          ],
+          "b": [
+            53.45,
+            -6.8,
+            15.0
+          ]
+        }
+      ],
+      "start_product_xyz_mm": [
+        40.65,
+        32.5,
+        12.85
+      ],
+      "end_product_xyz_mm": [
+        53.45,
+        -6.8,
+        15.0
+      ],
+      "centerline_length_mm": 57.6563962382693,
+      "minimum_centerline_bend_radius_lower_bound_mm": 3.3,
+      "wire_tube_bounds_product_mm": [
+        40.1,
+        -7.35,
+        12.299999999999999,
+        54.0,
+        33.05,
+        21.05
+      ]
+    }
+  ],
+  "wire_pair_clearances": [
+    {
+      "pins": [
+        "1",
+        "2"
+      ],
+      "sampled_axis_distance_mm": 1.2999999999999972,
+      "tube_gap_lower_bound_mm": 0.17999999999999708
+    },
+    {
+      "pins": [
+        "1",
+        "3"
+      ],
+      "sampled_axis_distance_mm": 2.6000000000000014,
+      "tube_gap_lower_bound_mm": 1.4800000000000013
+    },
+    {
+      "pins": [
+        "2",
+        "3"
+      ],
+      "sampled_axis_distance_mm": 1.3000000000000043,
+      "tube_gap_lower_bound_mm": 0.18000000000000418
+    },
+    {
+      "pins": [
+        "1",
+        "4"
+      ],
+      "sampled_axis_distance_mm": 3.8999999999999986,
+      "tube_gap_lower_bound_mm": 2.7799999999999985
+    },
+    {
+      "pins": [
+        "2",
+        "4"
+      ],
+      "sampled_axis_distance_mm": 2.6000000000000014,
+      "tube_gap_lower_bound_mm": 1.4800000000000013
+    },
+    {
+      "pins": [
+        "3",
+        "4"
+      ],
+      "sampled_axis_distance_mm": 1.2999999999999972,
+      "tube_gap_lower_bound_mm": 0.17999999999999708
+    }
+  ],
+  "obstacles_checked": {
+    "AFE_substrate": {
+      "box_product_mm": [
+        0,
+        0,
+        -1.6,
+        48,
+        60,
+        0
+      ],
+      "wire_tube_gap_lower_bound_mm": 12.29
+    },
+    "digital_substrate": {
+      "box_product_mm": [
+        0,
+        0,
+        8.5,
+        48,
+        60,
+        10.1
+      ],
+      "wire_tube_gap_lower_bound_mm": 2.1900000000000004
+    },
+    "power_substrate": {
+      "box_product_mm": [
+        48.95,
+        -4.05,
+        0,
+        82.95,
+        -3.05,
+        18
+      ],
+      "wire_tube_gap_lower_bound_mm": 2.1900000000000004
+    },
+    "battery_nominal": {
+      "box_product_mm": [
+        54,
+        0,
+        10.1,
+        83.9,
+        42.7,
+        19.3
+      ],
+      "wire_tube_gap_lower_bound_mm": 0.4900000000000042
+    }
+  },
+  "selected_extension_FPC_tube_gap_lower_bound_mm": 9.687600938756345,
+  "fixing_cylinder_XY_screens": [
+    {
+      "xy_mm": [
+        44,
+        4
+      ],
+      "assumed_cylinder_diameter_mm": 4.0,
+      "XY_wire_gap_lower_bound_mm": 0.7814789317915372
+    },
+    {
+      "xy_mm": [
+        44,
+        51
+      ],
+      "assumed_cylinder_diameter_mm": 4.0,
+      "XY_wire_gap_lower_bound_mm": 9.940003999999359
+    },
+    {
+      "xy_mm": [
+        4,
+        55
+      ],
+      "assumed_cylinder_diameter_mm": 4.0,
+      "XY_wire_gap_lower_bound_mm": 37.63294092250529
+    }
+  ],
+  "route_tube_union_bounds_product_mm": [
+    40.1,
+    -7.35,
+    12.299999999999999,
+    60.0,
+    39.05,
+    24.95
+  ],
+  "power_mated_reference_envelope_product_mm": [
+    50.5,
+    -9.55,
+    3.8,
+    62.4,
+    -4.05,
+    15.0
+  ],
+  "power_front_nonconnector_component_height_allowance_at_wire_axis_mm": 2.2,
+  "open_items": [
+    "Exact crimped-wire exit axes and tolerances at both headers",
+    "Qualified wire OD, allowable static bend radius and stripped/inserted terminal lengths",
+    "Tie-downs and strain relief outside each modeled free-wire segment",
+    "All actual component, screen-back/FPC, enclosure, RF, metal and dielectric geometries",
+    "Delivered battery/model agreement and holder stops/retention",
+    "Complete system clearance/creepage, contact heating and concurrent EEG noise validation"
+  ],
+  "scope": "A specific full nominal route reaches all four same-number power-port wires and includes the former missing front segment. Substrate/battery boxes, selected flex model, wire pairs and assumed4mm fixing cylinders only. Does not establish the exact delivered connector geometry, full SMT component envelopes, full holder, RF/noise performance or assembly release. Centerline lengths exclude lengths inside terminals and are not wire cut lengths."
+}

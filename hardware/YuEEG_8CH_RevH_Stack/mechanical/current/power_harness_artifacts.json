@@ -5,7 +5,10 @@
     "power_harness_routing_review.json": "622e46de72aefa144879b91b5b068b5cfba73e68302f792486dab79bb58d5d33",
     "power_harness_routing_review.png": "f3f86dcfe31025213000140020278148613d2f4185af401d8993d72324a65bef",
     "power_harness_routing_review.svg": "8ca87b172b89a63335be593847a292d5e0e9ae601410ecc3f3fd7c604b520642",
-    "power_port_tail_review.json": "03a91ec410657d20a1f465373f897e9d3090fa2b6a66efc72b0d344e3aaafd93"
+    "power_port_tail_review.json": "03a91ec410657d20a1f465373f897e9d3090fa2b6a66efc72b0d344e3aaafd93",
+    "complete_power_harness_review.json": "21dbdb63e62a02eb4298c52457bc9307d8422d90745be193c3e3c27ccb5d31a6",
+    "complete_power_harness_review.png": "d7e8cda933a23fd32d24e802fb69bf1a6bb85b85a1d4e803e8f1ecbace5aeefb",
+    "complete_power_harness_review.svg": "d772a4e45f50b6b8b51afdc2d49536fe675a99287522a8a044d22bfa4f1bff49"
   },
   "pcb_sha256": {
     "afe": "a21378ccdee99483476029f1a83178f06f04ec7765870b2a36bc914ee907312b",

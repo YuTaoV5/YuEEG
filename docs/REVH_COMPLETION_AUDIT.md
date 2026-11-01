@@ -7,7 +7,7 @@
 | 湿电极八通道、REF／BIAS 同排、ADS1299 及输入保护 | AFE 原理图、BOM、`review/expected_connections.json`、原生 PCB | 已实现电路与布线；采集噪声、接触阻抗及保护实测未完成 |
 | 模拟前端／数字处理分板，外形统一 | 两板原生 PCB 均为 48×60 mm，4／6 层；当前检查摘要 | 已实现，两板 USB 嘴部避让同形 |
 | NP-BX1 与叠层体并排 | `mechanical/current/battery_side_envelope.json`，Sony 公开外形资料 | 右侧 6 mm 通道是条件候选，尚非完整装配 |
-| 电池端探针条板、短线供电 | 电源条板原理图／PCB、`pogo_reference.json`、PH4 原生针号提取 | 双探针电气设计已集成；用户确认 D+/B−，10mm 间距；固定止挡、实物公差与完整条板装配仍未核定 |
+| 电池端探针条板、短线供电 | 电源条板原理图／PCB、`pogo_reference.json`、PH4 原生针号提取、`complete_power_harness_review.json` | 双探针已集成；D+/B−、10mm 间距；完整名义四线模型已接到条板，显示朝上出线的高度代价。固定止挡、真实线材与完整条板装配仍未核定 |
 | 电池拆下外充及保护／升压 | 电源板 21 器件 BOM、NP-BX1 电源说明 | 1S 保护与升压已实现；不含板载充电，温升和瞬态需实测 |
 | 板间连接器针号与插接几何 | `review/interboard_xy_check.json`，20 针原生坐标／网络 | 已改专用0.8mm SMT BTB；静态XY／网络一致，8.5mm合高的实际配对、淘宝SKU及支柱公差仍需确认 |
 | 顶层 AMOLED、可采购公母连接器 | 用户确认、厂商模块／连接器图纸，`display_link/` 原生文件 | 无源延长板完成布线；原屏折回 FPC 的焊接面 Z 偏置、原屏背面包络与真实插接未核定 |
