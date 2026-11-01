@@ -1,0 +1,101 @@
+{
+  "status": "SOURCE_AND_FABRICATION_TOLERANCE_REVIEW_NOT_DELIVERED_PART_QUALIFICATION",
+  "observed_date": "2026-11-01",
+  "part": "0906-1-15-20-75-14-11-0",
+  "manufacturer_authored_pdf": {
+    "url": "https://static.chipdip.ru/lib/770/DOC031770063.pdf",
+    "sha256": "5ea0a656e496c8085d70879ea2d2271581971c2a8291008fe647df206b1cbe1b",
+    "pages": 4,
+    "date": "2021-12-21",
+    "source_type": "Mill-Max-authored part datasheet mirrored by distributor; original kept locally only"
+  },
+  "primary_catalog_url": "https://www.mill-max.com/sites/default/files/external/catalog/2019-04/023M-028M.pdf",
+  "catalog_source_sha256": "fb4c05618ff3e81ab1030eab7b90adc6797933565ab86f4dfed53cbf4c6a35a0",
+  "resolved_dimensions": {
+    "tail_diameter_nominal_inch": 0.017,
+    "diameter_tolerance_inch": 0.002,
+    "recommended_minimum_hole_diametral_clearance_inch": 0.004,
+    "tail_worst_case_max_mm": 0.4826,
+    "recommended_worst_case_minimum_finished_hole_mm": 0.5842,
+    "project_finished_hole_mm": 0.7,
+    "free_height_mm": 4.5,
+    "midstroke_mm": 0.7,
+    "maxstroke_mm": 1.4
+  },
+  "source_conflicts": [
+    {
+      "field": "Initial height",
+      "exact_part_general_table_mm": 3.48,
+      "exact_part_drawing_0906_1_A_inch": 0.177,
+      "exact_part_drawing_A_mm": 4.4958,
+      "catalog_0906_1_A_mm": 4.5,
+      "decision": "Use explicit0906-1 drawing/table row supported by2019catalog, not general-info3.48mm (which matches0906-0). Receiving inspection must confirm exact grade."
+    },
+    {
+      "field": "Current rating",
+      "catalog_continuous_peak_A": [
+        2,
+        3
+      ],
+      "part_pdf_page3_maximum_at_30C_rise_A": 6.5,
+      "decision": "Retain conservative project2A continuous/3A peak; no uprating or thermal validation implied."
+    },
+    {
+      "field": "Initial spring force",
+      "catalog_spring75_gf": 25,
+      "distributor_table_gf": 10,
+      "decision": "Do not use distributor preload to size latch. Midstroke60gf is consistent with manufacturer documents; actual force curve/retention load unqualified."
+    }
+  ],
+  "fabricator_reference": {
+    "url": "https://www.jlc.com/portal/vtechnology.html",
+    "PTH_tolerance_mm": {
+      "plus": 0.13,
+      "minus": 0.08
+    },
+    "NPTH_tolerance_mm": {
+      "plus": 0.1,
+      "minus": 0.1
+    },
+    "scope": "Observed reference capability, not proof of an accepted order or the eventual fabricator process."
+  },
+  "pogo_process_comparison": {
+    "old_nominal_mm": 0.6,
+    "old_reference_finished_bounds_mm": [
+      0.52,
+      0.73
+    ],
+    "old_worst_case_diametral_clearance_mm": 0.0374,
+    "new_nominal_mm": 0.7,
+    "new_reference_finished_bounds_mm": [
+      0.62,
+      0.83
+    ],
+    "new_worst_case_diametral_clearance_mm": 0.1374,
+    "margin_above_0p1016_recommendation_mm": 0.0358,
+    "minimum_geometric_annular_ring_at_0p83mm_hole_mm": 0.235,
+    "annular_scope": "Nominal1.30mm pad versus maximum reference-process hole diameter only; excludes registration and copper etching tolerance."
+  },
+  "SGD_locator_process_gap": {
+    "drawing_hole_mm": 0.65,
+    "drawing_plus_minus_mm": [
+      0.03,
+      0
+    ],
+    "reference_standard_NPTH_bounds_mm": [
+      0.55,
+      0.75
+    ],
+    "standard_reference_process_meets_drawing": false,
+    "required_action": "AFE/digital two JH1 locator holes per board need separately accepted0.65+0.03/-0mm finished-hole capability. Do not silently place a standardNPTH order or enlarge holes as an undocumented alternate."
+  },
+  "procurement": {
+    "distributor": "DigiKey",
+    "part_number": "ED8181-ND",
+    "url": "https://www.digikey.com/en/products/detail/mill-max-manufacturing-corp/0906-1-15-20-75-14-11-0/1147049",
+    "page_displayed_in_stock": true,
+    "minimum_displayed_order_quantity": 1,
+    "scope": "Public listing observed; availability/shipping/receiving dimensions unqualified. No order placed; not a verified Taobao source."
+  },
+  "scope": "Source inconsistencies and reference manufacturing bounds only. Unchanged nominal probe pose; does not qualify holder,actual solder joints,force curve,battery,patient connection or production."
+}

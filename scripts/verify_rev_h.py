@@ -145,7 +145,13 @@ def verify():
  pt=loads((power/'YuEEG_H_POWER.kicad_pcb').read_text(encoding='utf8'));require(float(sub(sub(pt,'general'),'thickness')[1])==1.0,'Pogo board must be nominal 1mm')
  stack=sub(sub(pt,'setup'),'stackup');require(abs(sum(float(sub(v,'thickness')[1]) for v in stack if isinstance(v,list) and v[0]=='layer')-1)<1e-8,'Power stackup and general thickness differ')
  pogo=json.loads((H/'mechanical/current/pogo_assembly_review.json').read_text(encoding='utf8'));require(pogo['power_pcb_sha256']==summary['boards']['power']['pcb_sha256'],'Stale pogo assembly evidence')
- require(all(v['error_mm']<1e-6 and v['drill_mm']==.6 for v in pogo['rows']),'Pogo nominal alignment or drill changed')
+ require(all(v['error_mm']<1e-6 and v['drill_mm']==.7 for v in pogo['rows']),'Pogo nominal alignment or drill changed')
+ hole_adopt=H/'mechanical/current/pogo_hole_tolerance_adoption.json';ha=json.loads(hole_adopt.read_text(encoding='utf8'));fit=json.loads((H/'mechanical/current/pogo_hole_fit_review.json').read_text(encoding='utf8'))
+ require(ha['current_pcb_sha256']==summary['boards']['power']['pcb_sha256'] and ha['all_tracks_vias_unchanged'] and ha['all_other_footprints_unchanged'] and ha['JP1_only_description_and_drill_changed'] and not ha['same_net_smt_hole_hits'],'Dirty/stale pogo drill migration')
+ require(side_port['pogo_hole_followup_proof_sha256']==sha(hole_adopt) and fit['adoption_sha256']==sha(hole_adopt),'Missing side-port/pogo follow-up chain')
+ require(fit['pcb_sha256']==summary['boards']['power']['pcb_sha256'] and fit['source_fact_sha256']==sha(H/'mechanical/current/pogo_source_and_hole_review.json') and fit['probe_reference_sha256']==sha(H/'mechanical/current/pogo_reference.json'),'Stale pogo diameter-process evidence')
+ require(fit['footprint_library_sha256']==sha(H/'footprints/YuEEG.pretty/NPBX1_MillMax0906_Dplus_Bminus_10mm.kicad_mod'),'Stale probe hole library evidence')
+ require(len(fit['rows'])==2 and all(v['margin_over_part_recommendation_mm']>0 for v in fit['rows']) and not fit['hits'],'Pogo hole process or SMT clearance failed')
  require(pogo['terminal_confirmation_file_sha256']==sha(H/'mechanical/current/npbx1_user_terminal_order.json'),'Changed user terminal confirmation')
  selected=json.loads((H/'digital/review/r1101_height_selection.json').read_text(encoding='utf8'))
  require(selected.get('current_pcb_sha256',selected['after_pcb_sha256'])==summary['boards']['digital']['pcb_sha256'],'Stale R1101 height selection record')
@@ -183,6 +189,14 @@ def verify():
   elif selection:active=selection[1]
   elif point and tools.get(active)==.75:holes.append((float(point[1]),float(point[2])))
  require(sorted(holes)==sorted((v['xy_mm'][0],-v['xy_mm'][1]) for v in ports['digital']['pads'].values()),'PH4 0.75mm plated drill export mismatch')
+ power_drill=(H/'fabrication_engineering/power/YuEEG_H_POWER-PTH.drl').read_text(encoding='utf8');power_tools={};power_active=None;power_probe_holes=[]
+ require('METRIC' in power_drill,'Unexpected probe drill units')
+ for line in power_drill.splitlines():
+  definition=re.fullmatch(r'T(\d+)C([\d.]+)',line);selection=re.fullmatch(r'T(\d+)',line);point=re.fullmatch(r'X(-?[\d.]+)Y(-?[\d.]+)',line)
+  if definition:power_tools[definition[1]]=float(definition[2])
+  elif selection:power_active=selection[1]
+  elif point and power_tools.get(power_active)==.7:power_probe_holes.append((float(point[1]),float(point[2])))
+ require(sorted(power_probe_holes)==[(18.9,-1.5),(28.9,-1.5)],'JP1 0.70mm plated drill export mismatch')
  with (H/'fabrication_engineering/digital/placement_front.csv').open(encoding='utf8',newline='') as stream:require(all(r['Ref']!='JH2' for r in csv.DictReader(stream)),'TH PH4 must not be listed as an SMT placement')
  if (H/'display_link').exists():
   from verify_display_link import verify as verify_fpc

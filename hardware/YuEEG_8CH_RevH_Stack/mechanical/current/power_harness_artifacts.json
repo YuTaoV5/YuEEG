@@ -1,19 +1,19 @@
 {
   "status": "CONDITIONAL_REVIEW_ARTIFACTS_NOT_ASSEMBLY_RELEASE",
   "files_sha256": {
-    "power_ports_native.json": "9f92fb2b00e30654140c723743e41faf9f638cd1ea72c8e1772234c65119e2b1",
-    "power_harness_routing_review.json": "43dcc155ae671b12381136c35cb754b1c833fde0a0b46b4a48d7770da41bcd70",
+    "power_ports_native.json": "575571e068ea78f073d59e6358f8f80e043c503dae0e748f79275a001ee1982d",
+    "power_harness_routing_review.json": "5deb26b6f0232117a5e78013380e1186427914690e13123769948d01857b80a8",
     "power_harness_routing_review.png": "e3a9cf6ca704c5dc6441e6c850ba033e1d30fced5a48392ebf627abdfe06e35e",
-    "power_harness_routing_review.svg": "5e53b1c137923512afeb0204a06c0dd93be49b869f6b1ac1df6ef217aff8f286",
+    "power_harness_routing_review.svg": "741bc805dd2ba80d9baff3ad2d1c4c762130f5fc823a0c43671a17e2146a6ca7",
     "power_port_tail_review.json": "d9db4088dab6b50056aafd56ce15b8977c8b41810a2d54070cb8d5ce610548c3",
-    "complete_power_harness_review.json": "d9ca0947b1d218d92b019e02259432d8892968a6fa4920fb4652af55cc5c4883",
+    "complete_power_harness_review.json": "0d72961604a1c62252034c7d7fb908e55b60c69e5b142d5e17fa5f768e562945",
     "complete_power_harness_review.png": "79ce41da391e920ee2e97c76c993c5ca76c8ae57dfb11b4ffb96556b8d535d84",
-    "complete_power_harness_review.svg": "3325b1f619ecc1cd1e8994aac43ff7f3c424ee275f6b578466a16148011aaa5c"
+    "complete_power_harness_review.svg": "43f71f4de36dccadf8766ee5af7b7da409f7096e51369cd6fd5df0abe93d5a46"
   },
   "pcb_sha256": {
     "afe": "61f639e6cd2ab0925f28603e0191da73723e721caa7f991c334818731c2a21b8",
     "digital": "e4ec2796baec9bfced51394bc5c8ac8c5172db75c834cd15c4a2eb06d868470f",
-    "power": "37bd0a3087d20760dc784c89024cb8c6144ad6833b5efe219a2365d07d92b3e1"
+    "power": "db28c24a71fb837f4e15c4a56017e570991aacc7b19b210fa71dfbc8c3f8eb81"
   },
   "scope": "Binds engineering reports and plan-view image artifacts. No measurement, thermal/EEG validation or production release."
 }

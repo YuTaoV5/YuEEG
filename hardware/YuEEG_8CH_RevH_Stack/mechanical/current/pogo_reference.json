@@ -16,7 +16,7 @@
   "tail_diameter_mm": 0.43,
   "diameter_tolerance_mm": 0.051,
   "manufacturer_minimum_mounting_hole_mm": 0.51,
-  "project_finished_hole_mm": 0.6,
+  "project_finished_hole_mm": 0.7,
   "continuous_current_A": 2,
   "peak_current_A": 3,
   "max_contact_resistance_ohm": 0.02,
@@ -53,11 +53,13 @@
     "status": "Author sample measurements, NOT Sony tolerance drawing. Polarity orientation and 1.07mm tip fit unresolved."
   },
   "not_yet_installed_on_power_pcb": false,
-  "procurement_status": "Manufacturer dimensional reference verified; exact Taobao seller or interchangeable part not verified",
+  "procurement_status": "Exact DigiKey ED8181-ND listing observed; original manufacturer dimensions crosschecked; not a verified Taobao source or delivered fit",
   "scope": "Selected pair footprint installed and routed; nominal battery pose, procurement and full assembly qualification remain conditional.",
   "confirmed_pin_map": {
     "JP1.1": "D / BAT+ / PACK_POS",
     "JP1.2": "B / BAT- / GND"
   },
-  "power_pcb_nominal_thickness_mm": 1.0
+  "power_pcb_nominal_thickness_mm": 1.0,
+  "part_specific_source_review": "pogo_source_and_hole_review.json",
+  "recommended_worst_case_minimum_finished_hole_mm": 0.5842
 }

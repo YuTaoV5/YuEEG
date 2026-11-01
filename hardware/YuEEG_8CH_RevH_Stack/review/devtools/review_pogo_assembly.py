@@ -1,8 +1,9 @@
 """Conditional nominal probe-to-user-model alignment, no final case/holder qualification."""
 from pathlib import Path
 import json,hashlib,math,pcbnew as p,wx
-wx.DisableAsserts();H=Path('hardware/YuEEG_8CH_RevH_Stack');M=H/'mechanical/current';path=H/'power/YuEEG_H_POWER.kicad_pcb';b=p.LoadBoard(str(path));f=next(f for f in b.GetFootprints() if f.GetReference()=='JP1');model=json.loads((M/'npbx1_user_model_comparison.json').read_text(encoding='utf8'));contacts={v['label']:v for v in model['recess_base_faces']};rows=[]
+wx.DisableAsserts();H=Path('hardware/YuEEG_8CH_RevH_Stack');M=H/'mechanical/current';path=H/'power/YuEEG_H_POWER.kicad_pcb';b=p.LoadBoard(str(path));f=next(f for f in b.GetFootprints() if f.GetReference()=='JP1');model=json.loads((M/'npbx1_user_model_comparison.json').read_text(encoding='utf8'));contacts={v['label']:v for v in model['recess_base_faces']};rows=[];reference=json.loads((M/'pogo_reference.json').read_text());expected_drill=reference['project_finished_hole_mm']
 for pad in f.Pads():
+ assert abs(p.ToMM(pad.GetDrillSize().x)-expected_drill)<1e-8
  n=pad.GetNumber();label='D' if n=='1' else 'B';xy=[p.ToMM(pad.GetPosition().x),p.ToMM(pad.GetPosition().y)];tip=[xy[0]-20,3.4-xy[1],24.425-3.8];target=contacts[label]['center_xy_mm']+[20.625];err=math.dist(tip,target);assert err<1e-6
  rows.append(dict(pin=n,model_label=label,net=pad.GetNetname(),pcb_xy_mm=xy,nominal_tip_model_xyz_mm=tip,target_model_xyz_mm=target,error_mm=err,drill_mm=p.ToMM(pad.GetDrillSize().x)))
 assert p.ToMM(b.GetDesignSettings().GetBoardThickness())==1.0;assert f.GetLayer()==p.B_Cu

@@ -1,0 +1,42 @@
+{
+  "status": "PASS_REFERENCE_PROCESS_GEOMETRY_NOT_SOLDER_HOLDER_QUALIFICATION",
+  "pcb_sha256": "db28c24a71fb837f4e15c4a56017e570991aacc7b19b210fa71dfbc8c3f8eb81",
+  "source_fact_sha256": "f5fa616b02ae1f1fefd9a100e0f499a4ceec7a1ee2dbaab7c10704952d421e62",
+  "probe_reference_sha256": "881d1abdf16373985fb8d4380abb7afac1b56d5380a6837f2e0491b4a5879a32",
+  "footprint_library_sha256": "b2c745bb7190d0f3b7551499c9bb3ddd91d51fcc826d787a63ca45534a01b07a",
+  "adoption_sha256": "2f680e5a64348f40534b709c72c0cf60b63a258f7b54093ba767230ece1a77f4",
+  "required_worst_case_minimum_finished_hole_mm": 0.5842,
+  "minimum_hole_to_other_SMD_copper_mm": 0.25,
+  "rows": [
+    {
+      "pin": "1",
+      "net": "PACK_POS",
+      "nominal_finished_hole_mm": 0.7,
+      "reference_process_finished_bounds_mm": [
+        0.62,
+        0.83
+      ],
+      "diametral_clearance_at_max_tail_and_min_hole_mm": 0.1374,
+      "margin_over_part_recommendation_mm": 0.0358,
+      "pad_minimum_copper_span_mm": 1.3,
+      "nominal_geometric_annular_ring_mm": 0.3,
+      "geometric_annular_ring_at_largest_reference_hole_mm": 0.235
+    },
+    {
+      "pin": "2",
+      "net": "GND",
+      "nominal_finished_hole_mm": 0.7,
+      "reference_process_finished_bounds_mm": [
+        0.62,
+        0.83
+      ],
+      "diametral_clearance_at_max_tail_and_min_hole_mm": 0.1374,
+      "margin_over_part_recommendation_mm": 0.0358,
+      "pad_minimum_copper_span_mm": 1.3,
+      "nominal_geometric_annular_ring_mm": 0.3,
+      "geometric_annular_ring_at_largest_reference_hole_mm": 0.235
+    }
+  ],
+  "hits": [],
+  "scope": "Two native JP1 bores, fullSMD hole/copper check including same-net, plus stated part/fabricator diameter bounds. Ring result excludes hole-position/copper etch variation. No claim of actual accepted fab tolerance, pin-centering, solder fillet, contact alignment tolerance, retention or physical fit."
+}

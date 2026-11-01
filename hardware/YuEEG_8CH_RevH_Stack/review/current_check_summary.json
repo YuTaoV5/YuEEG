@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-01T13:39:06.130251+08:00",
+  "timestamp": "2026-11-01T14:07:41.202750+08:00",
   "battery": "Sony NP-BX1, 1S; supersedes NP-FW50 goal wording",
   "release_status": "DEVELOPMENT; contact mechanics, display FPC and system verification unresolved",
   "boards": {
@@ -39,7 +39,7 @@
         "circuit_24.kicad_sch": "2a62db0a53d90501899b6b8c0fe3af4100114248ef3ebb5415ee31145e045752",
         "fp-lib-table": "7fee321fac63dfa191da7d740e87f96a5395da8fc76fa626673a9cb152a2124a",
         "review/expected_connections.json": "eb98f108f557b03612e13be82d2b017bf8d88fa55cc2ff8bfdd0b41a2e3f44b6",
-        "review/netlist.xml": "c0e1a7e61ad54b904cb7f0f22186893a5786034964c5ff74754a41ccf9257177",
+        "review/netlist.xml": "3253fc010e835575e42c7a502f9539f94b28fe400e7d0309e7dba8bba0e534d8",
         "sym-lib-table": "6cf4513f28ea28ee6b2f4ae3e0b4f779ca0736a738bdbed1bd2e64672348b99f"
       }
     },
@@ -79,7 +79,7 @@
         "circuit_21_imu.kicad_sch": "78ebbab926de25b66712681449125004c26a535352adfceb839146b63327a9c6",
         "fp-lib-table": "4944c0e4f8dcbd72e4e42f6a53dd3ea369b1494a3a9cfdeb8ccc1270c050910c",
         "review/expected_connections.json": "e66938b0a02ef96282b856e4e4f22fe70e9befaf20bd7bd842ae5bf5923dc7d9",
-        "review/netlist.xml": "0b2f6495479d270737f9d6b4829d8f915fb50aa4114bdcd4b0785b98e6f1c8c3",
+        "review/netlist.xml": "8dcb2b955f420826735848a925490ae42744be0f22dba700b6a2d83937853771",
         "sym-lib-table": "cbbbc7ca2d814abf8c8999ebfb6280b20bc4119904e48ccbbadcf20a257be558"
       }
     },
@@ -88,7 +88,7 @@
       "unconnected": 0,
       "parity": 0,
       "erc": 0,
-      "pcb_sha256": "37bd0a3087d20760dc784c89024cb8c6144ad6833b5efe219a2365d07d92b3e1",
+      "pcb_sha256": "db28c24a71fb837f4e15c4a56017e570991aacc7b19b210fa71dfbc8c3f8eb81",
       "source_files_sha256": {
         "BOM.csv": "eb905731c619732601bdabc7fe327e98814ebd689a3756843cc68c42a3f3bc0a",
         "YuEEG_H_POWER.kicad_pro": "4f97627ec6c1ef1225020b55138c5b29867fb1ba3f9dd9945d2673952d7267f7",
@@ -99,7 +99,7 @@
         "power_3.kicad_sch": "83d3419f4646b6905e094236367790a890d7e3278689516498edaa4f67c91c98",
         "power_4.kicad_sch": "83ef111fff7ddbd69ee9107e982d9debfe69cd7bf251eb0955b7459118273f47",
         "review/expected_connections.json": "91690148352bd0e26c48eea1f76c8679b5794c15e2a0bdda2f26a9fb124dceaf",
-        "review/netlist.xml": "5bd8fcb0d4ded82b3d238ffe80f3c845e774d609aad1ae927cd428c500739e47",
+        "review/netlist.xml": "670ef413230499bda4a5cfe8636605c9ab658eb38a18ddb12c1983e372d4a638",
         "sym-lib-table": "6cf4513f28ea28ee6b2f4ae3e0b4f779ca0736a738bdbed1bd2e64672348b99f"
       }
     }

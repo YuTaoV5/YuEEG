@@ -1,0 +1,21 @@
+{
+  "status": "ADOPTED_DRILL_ONLY_ENGINEERING_NOT_HOLDER_RELEASE",
+  "baseline_git_commit": "87b5082a271e9986d702b8e01193958f1f626a15",
+  "before_pcb_sha256": "37bd0a3087d20760dc784c89024cb8c6144ad6833b5efe219a2365d07d92b3e1",
+  "current_pcb_sha256": "db28c24a71fb837f4e15c4a56017e570991aacc7b19b210fa71dfbc8c3f8eb81",
+  "changed_reference": "JP1",
+  "old_finished_hole_mm": 0.6,
+  "new_finished_hole_mm": 0.7,
+  "all_tracks_vias_unchanged": true,
+  "all_other_footprints_unchanged": true,
+  "JP1_only_description_and_drill_changed": true,
+  "pad_nets_centers_copper_sizes_unchanged": true,
+  "all2_holes_vs_all_SMD_pads_minimum_mm": 0.25,
+  "same_net_smt_hole_hits": [],
+  "native_checks": {
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0
+  },
+  "scope": "TwoPTH diameters and metadata only; current pad/nets/centers,all tracks/vias/other footprints retained. Does not qualify solder process,holder,force,battery fit or production."
+}

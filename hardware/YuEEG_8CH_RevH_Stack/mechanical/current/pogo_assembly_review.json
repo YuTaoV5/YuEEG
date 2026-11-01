@@ -1,6 +1,6 @@
 {
   "status": "NOMINAL_PROBE_ALIGNMENT_NOT_HOLDER_OR_ASSEMBLY_RELEASE",
-  "power_pcb_sha256": "37bd0a3087d20760dc784c89024cb8c6144ad6833b5efe219a2365d07d92b3e1",
+  "power_pcb_sha256": "db28c24a71fb837f4e15c4a56017e570991aacc7b19b210fa71dfbc8c3f8eb81",
   "user_model_sha256": "062b7daeb175079f8d2fec2f208dcf92b4c65887bfde244dd193765d4dfb91f3",
   "terminal_confirmation_file_sha256": "39fc0de35a61568f5b62d811bcf73fead2d8d01da1dd0858c6feda5ffecab0de",
   "rows": [
@@ -23,7 +23,7 @@
         20.625
       ],
       "error_mm": 6.0402662910232525e-15,
-      "drill_mm": 0.6
+      "drill_mm": 0.7
     },
     {
       "pin": "2",
@@ -44,7 +44,7 @@
         20.625
       ],
       "error_mm": 5.7902148899581444e-15,
-      "drill_mm": 0.6
+      "drill_mm": 0.7
     }
   ],
   "probe_side": "B",

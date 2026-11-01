@@ -25,7 +25,7 @@
   },
   "P_SW_and_P_FB_geometry_unchanged": true,
   "status": "ADOPTED_SIDE_PORT_ENGINEERING_NOT_ASSEMBLY_RELEASE",
-  "current_pcb_sha256": "37bd0a3087d20760dc784c89024cb8c6144ad6833b5efe219a2365d07d92b3e1",
+  "current_pcb_sha256": "db28c24a71fb837f4e15c4a56017e570991aacc7b19b210fa71dfbc8c3f8eb81",
   "baseline_git_commit": "21618f34c2ccfb7e3641fe9aaab040dd30c9e255",
   "native_drc_report_sha256": "1edb364fd82ac6baa8d3df558d1c9e1ab035262f19fccab3829083a2a50eca96",
   "checks": {
@@ -99,5 +99,7 @@
       12.9
     ],
     "reason": "Move new SYS_5V hole outside RP5 SMD pad clearance; .25mm checked including same net."
-  }
+  },
+  "before_pogo_hole_change_pcb_sha256": "37bd0a3087d20760dc784c89024cb8c6144ad6833b5efe219a2365d07d92b3e1",
+  "pogo_hole_followup_proof_sha256": "2f680e5a64348f40534b709c72c0cf60b63a258f7b54093ba767230ece1a77f4"
 }

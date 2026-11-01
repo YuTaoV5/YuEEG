@@ -1,6 +1,6 @@
 {
-  "pcb_sha256": "37bd0a3087d20760dc784c89024cb8c6144ad6833b5efe219a2365d07d92b3e1",
-  "selection_source_sha256": "afb7394c3192cbec483ee23e889adb30fca46cc2bc39ee9910fb676df707291f",
+  "pcb_sha256": "db28c24a71fb837f4e15c4a56017e570991aacc7b19b210fa71dfbc8c3f8eb81",
+  "selection_source_sha256": "99920a1eacaf439ed7b29c78ff933b7ac86ded29acd3aa1d6b6cb48eddd5c066",
   "minimum_hole_to_smt_copper_mm": 0.25,
   "new_vias": [
     {

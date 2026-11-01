@@ -1,8 +1,8 @@
 {
   "status": "COMPLETE_NOMINAL_ENDPOINT_ROUTE_NOT_QUALIFIED_HARNESS",
   "source_sha256": {
-    "power_ports_native.json": "9f92fb2b00e30654140c723743e41faf9f638cd1ea72c8e1772234c65119e2b1",
-    "pogo_assembly_review.json": "3eebac4da342adb98ad7d2940a44f6b53797e36f8225f88444098881526cd278",
+    "power_ports_native.json": "575571e068ea78f073d59e6358f8f80e043c503dae0e748f79275a001ee1982d",
+    "pogo_assembly_review.json": "00e92c491dddce7976a8c61d977e1db6fc535a0370024d93201cabba011b1b29",
     "interboard_contract.json": "74f413e8f602520af97d4c58ac982c88bcd8967f2ae5b97f5a8cc803a460fee2",
     "design_contract.json": "ba84db7ae22199cc02e52a775d5694b3dc58a4663b36ace4a7b8d2a99e209aac"
   },

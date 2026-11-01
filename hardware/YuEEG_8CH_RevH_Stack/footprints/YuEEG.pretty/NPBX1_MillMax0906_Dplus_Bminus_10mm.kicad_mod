@@ -9,7 +9,7 @@
 (attr
 through_hole)
 (descr
-"Mill-Max 0906-1-15-20-75-14-11-0, 2A continuous, hole min .51mm; .60mm finished project hole; model at .7mm compression")
+"Mill-Max 0906-1-15-20-75-14-11-0, 2A continuous, hole min .51mm; .70mm finished project hole; account for fabricator +.13/-.08mm PTH range; model at .7mm compression")
 (property
 "Reference"
 "REF**"
@@ -99,7 +99,7 @@ circle
 1.3
 1.3)
 (drill
-.6)
+.7)
 (layers
 "*.Cu"
 "*.Mask"))
@@ -179,7 +179,7 @@ circle
 1.3
 1.3)
 (drill
-.6)
+.7)
 (layers
 "*.Cu"
 "*.Mask"))

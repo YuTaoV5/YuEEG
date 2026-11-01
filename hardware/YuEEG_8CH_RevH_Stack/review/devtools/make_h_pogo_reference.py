@@ -1,5 +1,7 @@
 from pathlib import Path
 import json,hashlib,math
+_current=Path('hardware/YuEEG_8CH_RevH_Stack/mechanical/current/pogo_reference.json')
+assert not _current.exists() or json.loads(_current.read_text()).get('not_yet_installed_on_power_pcb',True),'Historical pre-integration generator; current adopted probe design must not be overwritten'
 R=Path('hardware/YuEEG_8CH_RevH_Stack');name='MillMax_0906_1_TH_1Pin';M=R/'models'/('MillMax_0906_1_midstroke.wrl');out=['#VRML V2.0 utf8','# Original envelope from Mill-Max catalog page 25 metric. MIDSTROKE, not supplier CAD.']
 def cylinder(radius,z0,z1,color):
  n=24;pts=[(radius*math.cos(i*2*math.pi/n)/2.54,radius*math.sin(i*2*math.pi/n)/2.54,z/2.54) for z in [z0,z1] for i in range(n)];faces=[]

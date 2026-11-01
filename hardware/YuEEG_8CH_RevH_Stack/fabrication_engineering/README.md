@@ -8,6 +8,8 @@ AFE: 48×60mm, four copper layers. Digital: 48×60mm, six copper layers. Power s
 
 AFE and digital each have three 2.4mm round internal openings at (44,4), (44,51), (4,55), represented in **Edge.Cuts**. They are not duplicated as Excellon drill hits. CAM must preserve all three internal circles. M2 mounting screws, spacers and washers must be insulating.
 
+JP1 probe finished PTHs are now0.70mm (pads1.30mm), reviewed against0.4826mm max tail and0.1016mm diametral clearance recommendation. Under reference +0.13/-0.08mm PTH tolerance, holes are0.62..0.83mm. Use a centering fixture and keep probe flanges seated on B. Follow docs/REVH_POGO_HOLE_TOLERANCE.md. JH1 locator holes on AFE/digital require separately accepted0.65+0.03/-0mm; standard+/-0.10mm NPTH does not meet that drawing requirement.
+
 JP1 is now a routed 10mm pair of B-side Mill-Max 0906 probes, D+/B- confirmed by the user; BOM Quantity=2 at JP1. Holder stops, compression/tolerances, delivered-part matching, full 3D harness and screen support remain unqualified. The user confirmed display connector procurement. The user explicitly authorized derived probe dimensions, diagrams, hashes and resultingPCB/docs publication on2026-11-01; originalSTEP/JPG are excluded. Read `docs/REVH_MECHANICAL_REVIEW.md` and `docs/REVH_NPBX1_POWER.md` before using these exports.
 
 Power JP2 is side-facing at(7.5,11.4),270deg; RP4 at(7.0,2.8). All pad nets and P_SW/P_FB track geometry are preserved. The nominal battery-side channel is7mm; strip/battery are shifted1mm right and1.4mm down. Follow docs/REVH_SIDE_POWER_PORT.md and REVH_COMPLETE_POWER_HARNESS.md. No qualified wire,screen support or holder release.
