@@ -1,0 +1,10 @@
+id: AM200Q460460LK
+category: displays
+size: "2"
+panel: amoled
+resolution: 460x460
+interface: [qspi]
+driver: CO5300
+touch: CST820
+outline: 38.50 x 39.20 mm
+active_area: 35.88 x 35.88 mm

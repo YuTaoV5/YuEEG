@@ -1,0 +1,4 @@
+(version 1)
+(rule "Exposed connector pad to other-net copper"
+ (condition "A.Type == 'Pad' || B.Type == 'Pad'")
+ (constraint clearance (min 0.15mm)))

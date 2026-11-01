@@ -1,0 +1,148 @@
+{
+  "status": "AM200_REMAP_ENGINEERING_NOT_FOR_ORDER",
+  "outline_mm": [
+    8.0,
+    15.530707511102651
+  ],
+  "neck_width_mm": 5.1,
+  "end_taper_offsets_from_connector_mm": [
+    1.55,
+    2.05
+  ],
+  "finished_fpc_thickness_mm": 0.11,
+  "copper_layers": 2,
+  "connector_centers_flat_mm": {
+    "JF1": [
+      4.0,
+      1.8
+    ],
+    "JF2": [
+      4.0,
+      13.73070751110265
+    ]
+  },
+  "B_side_rotations_deg": {
+    "JF1": 0,
+    "JF2": 0
+  },
+  "connector_mounting_plane_separation_target_mm": 6.0,
+  "warning_plane_datum": "6 mm is between main PCB and factory male FPC solder mounting plane, not a verified screen-back spacing. Factory folded FPC offset remains unknown.",
+  "U_fold_neutral_radius_mm": 1.7,
+  "vertical_centerline_section_mm": 0.8900000000000001,
+  "straight_center_to_bend_mm": 2.85,
+  "bend_interval_flat_y_mm": [
+    4.65,
+    10.880707511102651
+  ],
+  "pins": {
+    "1": "AM_RST_P",
+    "2": "GND",
+    "3": null,
+    "4": "AM_CS_P",
+    "5": "AM_CLK_P",
+    "6": "AM_D1_P",
+    "7": "AM_D0_P",
+    "8": "GND",
+    "9": null,
+    "10": null,
+    "11": "AM_RAW",
+    "12": "AM_RAW",
+    "13": "GND",
+    "14": "GND",
+    "15": "AM_1V8",
+    "16": "AM_RAW",
+    "17": null,
+    "18": "GND",
+    "19": null,
+    "20": null,
+    "21": "GND",
+    "22": "AM_D3_P",
+    "23": "AM_D2_P",
+    "24": "VCI_EN",
+    "25": "GND",
+    "26": "GND",
+    "27": "GND",
+    "28": "GND"
+  },
+  "drawing_path": "hardware/display-amoled-1.78inch-368x448-main/versions/AM178Q368448LK/cad/OK-14F024-04.pdf",
+  "drawing_sha256": "87eed9ad728bea68bc335b66391e6f8c5be1c8f1b2998fa7fdd8a19d80f9e692",
+  "male_drawing_page": 1,
+  "female_drawing_page": 3,
+  "fabrication_reference": "https://jlcpcb.com/capabilities/flex-pcb-capabilities",
+  "fabrication_proposal": "Two-layer PI FPC, nominal .11 mm finished, 12um copper; end PI stiffeners on F side, .20mm proposal. Advanced .10/.30mm drill/diameter vias in end areas only require fabricator confirmation. Yellow coverlay, gang opening under each fine-pitch connector. Final fab stackup, thickness maximum for bend radius, stiffener support and assembly process not qualified.",
+  "procurement": "User specifies OCN/\u4e9a\u5947 OK-14F024-04 0.4mm female socket. Matching original panel male is shown in vendor drawing. Actual delivered pair and contact numbering require sample verification.",
+  "scope": "JF1 mates to unchanged Rev H J2002 legacy electrical pinout; JF2 is AM200Q460460LK. Never use the old straight-through AM178 link. Display only; CST820 reset held low and no MCU touch bus. Pin13 is NC per interface table and official adapter schematic; drawing label differs.",
+  "panel": "AM200Q460460LK",
+  "pins_by_connector": {
+    "JF1": {
+      "1": "AM_RST_P",
+      "2": "GND",
+      "3": null,
+      "4": "AM_CS_P",
+      "5": "AM_CLK_P",
+      "6": "AM_D1_P",
+      "7": "AM_D0_P",
+      "8": "GND",
+      "9": null,
+      "10": null,
+      "11": "AM_RAW",
+      "12": "AM_RAW",
+      "13": "GND",
+      "14": "GND",
+      "15": "AM_1V8",
+      "16": "AM_RAW",
+      "17": null,
+      "18": "GND",
+      "19": null,
+      "20": null,
+      "21": "GND",
+      "22": "AM_D3_P",
+      "23": "AM_D2_P",
+      "24": "VCI_EN",
+      "25": "GND",
+      "26": "GND",
+      "27": "GND",
+      "28": "GND"
+    },
+    "JF2": {
+      "1": "VCI_EN",
+      "2": "AM_D3_P",
+      "3": "AM_D2_P",
+      "4": "AM_D1_P",
+      "5": "AM_D0_P",
+      "6": "AM_CLK_P",
+      "7": "AM_CS_P",
+      "8": "AM_RST_P",
+      "9": null,
+      "10": "GND",
+      "11": null,
+      "12": null,
+      "13": null,
+      "14": "AM_1V8",
+      "15": "AM_RAW",
+      "16": "GND",
+      "17": null,
+      "18": "GND",
+      "19": null,
+      "20": null,
+      "21": "GND",
+      "22": "AM_RAW",
+      "23": "AM_RAW",
+      "24": null,
+      "25": "GND",
+      "26": "GND",
+      "27": "GND",
+      "28": "GND"
+    }
+  },
+  "end_taper_offsets_by_connector_mm": {
+    "JF1": [
+      1.55,
+      2.05
+    ],
+    "JF2": [
+      1.65,
+      2.05
+    ]
+  }
+}

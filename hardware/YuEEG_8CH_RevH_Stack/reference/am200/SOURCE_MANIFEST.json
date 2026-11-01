@@ -1,0 +1,96 @@
+{
+  "status": "USER_SELECTED_VENDOR_REFERENCE_NOT_HARDWARE_RELEASE",
+  "source_repository": "https://github.com/osptek/display-amoled-2inch-460x460",
+  "source_archive": "display-amoled-2inch-460x460-main (user supplied 2026-11-01)",
+  "license": "OSPTEK material CC BY 4.0; third-party documents retain their own rights",
+  "selected_panel": "AM200Q460460LK",
+  "vendor_code_executed": false,
+  "example_scope": "Selected source files for reference, not a standalone complete ESP-IDF distribution",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 19518,
+      "sha256": "42d49efd72a6ac60f128b5f7d51f5bf0e34844696605d5e71b687f80bfe805b9"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3262,
+      "sha256": "9db4282009ab75db839fceda93c182dcfa30ff665d7ac53b191fccb2bada817d"
+    },
+    {
+      "path": "README_EN.md",
+      "bytes": 3242,
+      "sha256": "a0b560db1d4c52b30332b2c705aa1b9c569fcb60868e543d1ea2f97cc489908e"
+    },
+    {
+      "path": "versions/AM200Q460460LK/README.md",
+      "bytes": 2997,
+      "sha256": "7dab0ca1f2febfe935f944551a5a2e88a4038d7941ce460d79cef886d672659a"
+    },
+    {
+      "path": "versions/AM200Q460460LK/README_EN.md",
+      "bytes": 2974,
+      "sha256": "ea51ccd98d6b85aa1326e4c7940439364372d8b1b064f2125e8b72a076065deb"
+    },
+    {
+      "path": "versions/AM200Q460460LK/osptek.yml",
+      "bytes": 185,
+      "sha256": "a25750d3b39b2f0365a3085f3269c000e63855e5df347c6aeb3daee0cc457469"
+    },
+    {
+      "path": "versions/AM200Q460460LK/datasheets/AM_200_Q460460_LK_ed30462590.pdf",
+      "bytes": 3379038,
+      "sha256": "5be450b588676e5da955057ac4231c2c6a298e7da4f1cfa515c673002547547d"
+    },
+    {
+      "path": "versions/AM200Q460460LK/cad/AM_200_Q460460.step",
+      "bytes": 187792,
+      "sha256": "8a66c18c54924cc0db2ca22bc55f5100bbab2b956e771edd736f176568f01f88"
+    },
+    {
+      "path": "versions/AM200Q460460LK/adapter/PCB-2.0\u5bf8AMOLED\u5c4f\u8f6c\u63a5\u677fV2.0.pdf",
+      "bytes": 240236,
+      "sha256": "3c70b94aae8b12f59dd12cfb6437348fcb3b2a02526391b85a8a3ff28db0e383"
+    },
+    {
+      "path": "versions/AM200Q460460LK/adapter/2\u5bf8\u5c4f\u5e55\u8f6c\u63a5\u677f.SchDoc",
+      "bytes": 109568,
+      "sha256": "d5032a18c121923c9588744fef1d47479066555d8bac0d04ac7ad096d85135b9"
+    },
+    {
+      "path": "versions/AM200Q460460LK/adapter/2\u5bf8\u5c4f\u5e55\u8f6c\u63a5\u677f.PcbDoc",
+      "bytes": 2545152,
+      "sha256": "2f3771066b7c43861d47c76eebc3eaa9d15c8d03a927f5a05061bc969dc5d2d0"
+    },
+    {
+      "path": "examples/esp32s3-idf5-co5300-qspi-lvgl-adapter-lvgl9/README.md",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "examples/esp32s3-idf5-co5300-qspi-lvgl-adapter-lvgl9/CMakeLists.txt",
+      "bytes": 406,
+      "sha256": "558bafb06fefcdfbec351e164cf5ee30ed2abdbcf5263b0df41b61aa7d27e898"
+    },
+    {
+      "path": "examples/esp32s3-idf5-co5300-qspi-lvgl-adapter-lvgl9/main/main.c",
+      "bytes": 7765,
+      "sha256": "745c70d12a7fb67d1aaadcb6414f1c6d8735a20f11b4e7f02785be0c11a937b3"
+    },
+    {
+      "path": "examples/esp32s3-idf5-co5300-qspi-lvgl-adapter-lvgl9/main/co5300_init_cmds.h",
+      "bytes": 989,
+      "sha256": "b1f32a96b5b4f98013379bca34bd0337d51e53ca3b8f96c5da090896563b76da"
+    },
+    {
+      "path": "examples/esp32s3-idf5-co5300-qspi-lvgl-adapter-lvgl9/main/CMakeLists.txt",
+      "bytes": 75,
+      "sha256": "27d6d39ef0cb6a9097984b41e080b09f7ff972339a0bb4ddf771db4001cb9782"
+    },
+    {
+      "path": "examples/esp32s3-idf5-co5300-qspi-lvgl-adapter-lvgl9/main/idf_component.yml",
+      "bytes": 223,
+      "sha256": "6859f623e99dd592776616c1f0950ca97ed545bafc07796bfbc74b2c41d65998"
+    }
+  ]
+}

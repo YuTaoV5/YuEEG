@@ -20,3 +20,7 @@
 /hardware/YuEEG_8CH_RevG/** -text -whitespace
 # Engineering hashes also bind Rev H native files and exported fabrication bytes.
 /hardware/YuEEG_8CH_RevH_Stack/** -text -whitespace
+
+# Handoff hashes must survive checkout on the next computer unchanged.
+/tools/legacy_build_support/** -text
+/scripts/check_handover.py -text

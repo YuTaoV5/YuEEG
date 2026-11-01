@@ -1,0 +1,1 @@
+(sym_lib_table (version 7) (lib (name "Connector_Generic") (type "KiCad") (uri "${KIPRJMOD}/Connector_Generic.kicad_sym") (options "") (descr "Pinned passive connector")))

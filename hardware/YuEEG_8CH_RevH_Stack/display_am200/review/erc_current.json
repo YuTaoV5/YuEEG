@@ -1,0 +1,19 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-01T18:37:17+0800",
+    "kicad_version": "9.0.5",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/b8884cbb-fd5b-4e15-b145-657aff2f15d1",
+            "violations": []
+        },
+        {
+            "path": "/display_link/",
+            "uuid_path": "/b8884cbb-fd5b-4e15-b145-657aff2f15d1/f1b4721c-bd8d-4e79-8a1d-52d7b512a267",
+            "violations": []
+        }
+    ],
+    "source": "YuEEG_H_AM200_LINK.kicad_sch"
+}

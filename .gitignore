@@ -165,3 +165,8 @@ Thumbs.db
 !/hardware/YuEEG_8CH_RevH_Stack/review/procurement/am178_technical_title.jpg
 !/hardware/YuEEG_8CH_RevH_Stack/display_link/review/fab_geometry.json
 !/hardware/YuEEG_8CH_RevH_Stack/display_link/review/fab_geometry_adoption.json
+
+# Explicitly unfinished AM200 migration evidence for the new-machine handoff.
+!/hardware/YuEEG_8CH_RevH_Stack/display_am200/review/design_contract.json
+!/hardware/YuEEG_8CH_RevH_Stack/display_am200/review/route_progress.json
+!/hardware/YuEEG_8CH_RevH_Stack/display_am200/review/HANDOFF_CHECKPOINT.json

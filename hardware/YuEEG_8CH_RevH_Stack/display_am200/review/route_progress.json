@@ -1,0 +1,212 @@
+[
+  {
+    "pin": "JF2.8",
+    "net": "AM_RST_P",
+    "status": "routed"
+  },
+  {
+    "pin": "JF1.1",
+    "net": "AM_RST_P",
+    "status": "routed"
+  },
+  {
+    "pin": "JF2.7",
+    "net": "AM_CS_P",
+    "status": "routed"
+  },
+  {
+    "pin": "JF1.4",
+    "net": "AM_CS_P",
+    "status": "routed"
+  },
+  {
+    "pin": "JF2.6",
+    "net": "AM_CLK_P",
+    "status": "routed"
+  },
+  {
+    "pin": "JF1.5",
+    "net": "AM_CLK_P",
+    "status": "No local route found: 8655 visited, start True, goal True"
+  },
+  {
+    "pin": "JF2.5",
+    "net": "AM_D0_P",
+    "status": "routed"
+  },
+  {
+    "pin": "JF1.7",
+    "net": "AM_D0_P",
+    "status": "No local route found: 8692 visited, start True, goal True"
+  },
+  {
+    "pin": "JF2.4",
+    "net": "AM_D1_P",
+    "status": "routed"
+  },
+  {
+    "pin": "JF1.6",
+    "net": "AM_D1_P",
+    "status": "routed"
+  },
+  {
+    "pin": "JF2.3",
+    "net": "AM_D2_P",
+    "status": "routed"
+  },
+  {
+    "pin": "JF1.23",
+    "net": "AM_D2_P",
+    "status": "No local route found: 7991 visited, start True, goal True"
+  },
+  {
+    "pin": "JF2.2",
+    "net": "AM_D3_P",
+    "status": "routed"
+  },
+  {
+    "pin": "JF1.22",
+    "net": "AM_D3_P",
+    "status": "routed"
+  },
+  {
+    "pin": "JF2.1",
+    "net": "VCI_EN",
+    "status": "routed"
+  },
+  {
+    "pin": "JF1.24",
+    "net": "VCI_EN",
+    "status": "No local route found: 8749 visited, start True, goal True"
+  },
+  {
+    "pin": "JF2.14",
+    "net": "AM_1V8",
+    "status": "routed"
+  },
+  {
+    "pin": "JF1.15",
+    "net": "AM_1V8",
+    "status": "routed"
+  },
+  {
+    "pin": "JF2.15",
+    "net": "AM_RAW",
+    "status": "routed"
+  },
+  {
+    "pin": "JF2.22",
+    "net": "AM_RAW",
+    "status": "routed"
+  },
+  {
+    "pin": "JF2.23",
+    "net": "AM_RAW",
+    "status": "routed"
+  },
+  {
+    "pin": "JF1.16",
+    "net": "AM_RAW",
+    "status": "routed"
+  },
+  {
+    "pin": "JF1.11",
+    "net": "AM_RAW",
+    "status": "routed"
+  },
+  {
+    "pin": "JF1.12",
+    "net": "AM_RAW",
+    "status": "routed"
+  },
+  {
+    "pin": "JF2.16",
+    "net": "GND",
+    "status": "No local route found: 8467 visited, start True, goal True"
+  },
+  {
+    "pin": "JF2.26",
+    "net": "GND",
+    "status": "No local route found: 8467 visited, start True, goal True"
+  },
+  {
+    "pin": "JF2.18",
+    "net": "GND",
+    "status": "routed"
+  },
+  {
+    "pin": "JF2.10",
+    "net": "GND",
+    "status": "routed"
+  },
+  {
+    "pin": "JF2.25",
+    "net": "GND",
+    "status": "routed"
+  },
+  {
+    "pin": "JF2.21",
+    "net": "GND",
+    "status": "routed"
+  },
+  {
+    "pin": "JF2.27",
+    "net": "GND",
+    "status": "routed"
+  },
+  {
+    "pin": "JF2.28",
+    "net": "GND",
+    "status": "routed"
+  },
+  {
+    "pin": "JF1.13",
+    "net": "GND",
+    "status": "routed"
+  },
+  {
+    "pin": "JF1.14",
+    "net": "GND",
+    "status": "routed"
+  },
+  {
+    "pin": "JF1.26",
+    "net": "GND",
+    "status": "routed"
+  },
+  {
+    "pin": "JF1.18",
+    "net": "GND",
+    "status": "routed"
+  },
+  {
+    "pin": "JF1.25",
+    "net": "GND",
+    "status": "routed"
+  },
+  {
+    "pin": "JF1.8",
+    "net": "GND",
+    "status": "routed"
+  },
+  {
+    "pin": "JF1.21",
+    "net": "GND",
+    "status": "routed"
+  },
+  {
+    "pin": "JF1.2",
+    "net": "GND",
+    "status": "routed"
+  },
+  {
+    "pin": "JF1.27",
+    "net": "GND",
+    "status": "routed"
+  },
+  {
+    "pin": "JF1.28",
+    "net": "GND",
+    "status": "routed"
+  }
+]

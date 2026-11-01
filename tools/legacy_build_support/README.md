@@ -1,0 +1,3 @@
+# Historical build helpers
+
+Project-authored helper code needed by the in-progress AM200 generator. The original Rev A builder and Rev F local router existed only in ignored local directories. This copy makes the handoff self-contained without altering frozen historical deliveries. `schematic_helpers.py` contains only the definitions before the old `sheets=[]` build entry; `local_router_f.py` is the original router implementation used as source by the Rev H adapter. Do not execute the router standalone: its historical default paths target old boards. The AM200 wrapper redirects those paths. Existing hardcoded KiCad installation paths still require porting to the new machine.

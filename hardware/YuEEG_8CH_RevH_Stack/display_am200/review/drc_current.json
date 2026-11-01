@@ -1,0 +1,691 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-01T19:51:58+0800",
+    "kicad_version": "9.0.5",
+    "schematic_parity": [],
+    "source": "YuEEG_H_AM200_LINK.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "项目之间的连接缺失",
+            "items": [
+                {
+                    "description": "走线 [VCI_EN] (B.Cu), 长度: 6.2307 mm",
+                    "pos": {
+                        "x": 6.199999,
+                        "y": 3.65
+                    },
+                    "uuid": "1cafec4f-bfe3-417e-b53e-25e5520e3105"
+                },
+                {
+                    "description": "走线 [VCI_EN] (B.Cu), 长度: 0.5250 mm",
+                    "pos": {
+                        "x": 6.2,
+                        "y": 2.675
+                    },
+                    "uuid": "0159cf2d-5607-417f-9856-a325cca2d7a1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "项目之间的连接缺失",
+            "items": [
+                {
+                    "description": "走线 [GND] (B.Cu), 长度: 6.2307 mm",
+                    "pos": {
+                        "x": 1.909999,
+                        "y": 3.65
+                    },
+                    "uuid": "1800aec4-969a-4dd9-8618-8b00152ca309"
+                },
+                {
+                    "description": "B.Cu 上 JF2 的焊盘 16 [GND]",
+                    "pos": {
+                        "x": 3.0,
+                        "y": 10.605707
+                    },
+                    "uuid": "a4aa4f29-65e5-4d82-b89c-f94bb9a91b1d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "项目之间的连接缺失",
+            "items": [
+                {
+                    "description": "走线 [GND] (B.Cu), 长度: 6.2307 mm",
+                    "pos": {
+                        "x": 1.909999,
+                        "y": 3.65
+                    },
+                    "uuid": "1800aec4-969a-4dd9-8618-8b00152ca309"
+                },
+                {
+                    "description": "B.Cu 上 JF2 的焊盘 26 [GND]",
+                    "pos": {
+                        "x": 0.85,
+                        "y": 10.675707
+                    },
+                    "uuid": "67a965ca-7404-45be-9c2d-a580a2bcbd5d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "项目之间的连接缺失",
+            "items": [
+                {
+                    "description": "B.Cu 上 JF2 的焊盘 16 [GND]",
+                    "pos": {
+                        "x": 3.0,
+                        "y": 10.605707
+                    },
+                    "uuid": "a4aa4f29-65e5-4d82-b89c-f94bb9a91b1d"
+                },
+                {
+                    "description": "走线 [GND] (B.Cu), 长度: 0.0500 mm",
+                    "pos": {
+                        "x": 3.4,
+                        "y": 9.95
+                    },
+                    "uuid": "999d3975-da0d-4bf2-b7fb-c24ad877f81d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "项目之间的连接缺失",
+            "items": [
+                {
+                    "description": "走线 [AM_D2_P] (B.Cu), 长度: 0.2750 mm",
+                    "pos": {
+                        "x": 5.8,
+                        "y": 2.675
+                    },
+                    "uuid": "104ae46d-b3ee-46ec-bab5-16c08b3c4218"
+                },
+                {
+                    "description": "走线 [AM_D2_P] (F.Cu), 长度: 6.2307 mm",
+                    "pos": {
+                        "x": 5.8,
+                        "y": 3.65
+                    },
+                    "uuid": "f3addaf1-c2a9-4237-acee-15e9d5fc3c00"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "项目之间的连接缺失",
+            "items": [
+                {
+                    "description": "走线 [AM_CLK_P] (F.Cu), 长度: 6.2307 mm",
+                    "pos": {
+                        "x": 4.6,
+                        "y": 3.65
+                    },
+                    "uuid": "6c4b1715-4c2e-457e-8be4-353e3384fc40"
+                },
+                {
+                    "description": "走线 [AM_CLK_P] (B.Cu), 长度: 0.5250 mm",
+                    "pos": {
+                        "x": 4.6,
+                        "y": 0.925
+                    },
+                    "uuid": "ac0da25b-1f9a-4740-9624-01865bb21eb9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "项目之间的连接缺失",
+            "items": [
+                {
+                    "description": "走线 [AM_D0_P] (B.Cu), 长度: 0.5250 mm",
+                    "pos": {
+                        "x": 3.8,
+                        "y": 0.925
+                    },
+                    "uuid": "fa22d6c7-371f-46db-8694-7bea1ed4baa1"
+                },
+                {
+                    "description": "走线 [AM_D0_P] (F.Cu), 长度: 6.2307 mm",
+                    "pos": {
+                        "x": 5.0,
+                        "y": 3.65
+                    },
+                    "uuid": "24e292a9-ae5b-4056-8db0-3d38f0992d11"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "项目之间的连接缺失",
+            "items": [
+                {
+                    "description": "走线 [AM_RAW] (B.Cu), 长度: 0.5250 mm",
+                    "pos": {
+                        "x": 2.2,
+                        "y": 0.925
+                    },
+                    "uuid": "cf78fce6-3a61-4003-9d8c-8b3323cb294f"
+                },
+                {
+                    "description": "B.Cu 上 JF1 的焊盘 12 [AM_RAW]",
+                    "pos": {
+                        "x": 1.8,
+                        "y": 0.925
+                    },
+                    "uuid": "f7299db0-ac61-4a06-85dc-52816f146630"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "项目之间的连接缺失",
+            "items": [
+                {
+                    "description": "走线 [AM_RAW] (F.Cu), 长度: 0.0000 mm",
+                    "pos": {
+                        "x": 2.2,
+                        "y": 1.45
+                    },
+                    "uuid": "ee639d01-bf38-4c62-afaf-75edcffc877e"
+                },
+                {
+                    "description": "走线 [AM_RAW] (F.Cu), 长度: 0.4000 mm",
+                    "pos": {
+                        "x": 3.0,
+                        "y": 2.15
+                    },
+                    "uuid": "ee953ac8-08a0-41f9-b7df-d16ef9825e00"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "项目之间的连接缺失",
+            "items": [
+                {
+                    "description": "走线 [AM_RAW] (B.Cu), 长度: 0.7750 mm",
+                    "pos": {
+                        "x": 5.4,
+                        "y": 10.605707
+                    },
+                    "uuid": "4318f627-1c83-467e-8fcd-7e756208ca6c"
+                },
+                {
+                    "description": "走线 [AM_RAW] (B.Cu), 长度: 0.5250 mm",
+                    "pos": {
+                        "x": 2.6,
+                        "y": 10.605707
+                    },
+                    "uuid": "294170c3-b24e-4a3d-8782-a11f2eca59e5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "项目之间的连接缺失",
+            "items": [
+                {
+                    "description": "走线 [AM_RAW] (B.Cu), 长度: 0.5250 mm",
+                    "pos": {
+                        "x": 5.8,
+                        "y": 10.605707
+                    },
+                    "uuid": "a7a13792-1348-4f60-8630-130afbfa8a41"
+                },
+                {
+                    "description": "走线 [AM_RAW] (B.Cu), 长度: 0.7750 mm",
+                    "pos": {
+                        "x": 5.4,
+                        "y": 10.605707
+                    },
+                    "uuid": "4318f627-1c83-467e-8fcd-7e756208ca6c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "间距违规 (规则 'Exposed connector pad to other-net copper' 间距 0.1500 mm; 实际 0.1350 mm)",
+            "items": [
+                {
+                    "description": "过孔 [AM_CS_P] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 5.0,
+                        "y": 1.2
+                    },
+                    "uuid": "1b58795d-0631-45ae-897e-f5363b3e74ad"
+                },
+                {
+                    "description": "B.Cu 上 JF1 的焊盘 3 [unconnected-(JF1-Pin_3-Pad3)]",
+                    "pos": {
+                        "x": 5.4,
+                        "y": 0.925
+                    },
+                    "uuid": "ac3f1ae2-c011-4ea3-8a97-b77f63b87d9d"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 (规则 'Exposed connector pad to other-net copper' 间距 0.1500 mm; 实际 0.1350 mm)",
+            "items": [
+                {
+                    "description": "过孔 [AM_D2_P] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 5.8,
+                        "y": 2.4
+                    },
+                    "uuid": "748518d5-e7d9-4766-b23a-251abd4b3de5"
+                },
+                {
+                    "description": "B.Cu 上 JF1 的焊盘 24 [VCI_EN]",
+                    "pos": {
+                        "x": 6.2,
+                        "y": 2.675
+                    },
+                    "uuid": "c6bb11d1-33c5-483e-b20f-8f3b2dcd76af"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 (规则 'Exposed connector pad to other-net copper' 间距 0.1500 mm; 实际 0.1350 mm)",
+            "items": [
+                {
+                    "description": "B.Cu 上 JF1 的焊盘 16 [AM_RAW]",
+                    "pos": {
+                        "x": 3.0,
+                        "y": 2.675
+                    },
+                    "uuid": "604cfa0c-743d-4366-8538-b3065e4fde96"
+                },
+                {
+                    "description": "过孔 [AM_1V8] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 2.6,
+                        "y": 2.4
+                    },
+                    "uuid": "c612e079-88db-4772-984c-ce6302ce41f3"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 (规则 'Exposed connector pad to other-net copper' 间距 0.1500 mm; 实际 0.1350 mm)",
+            "items": [
+                {
+                    "description": "B.Cu 上 JF1 的焊盘 5 [AM_CLK_P]",
+                    "pos": {
+                        "x": 4.6,
+                        "y": 0.925
+                    },
+                    "uuid": "9a0032ad-0844-46ab-9675-4d39d97e79cc"
+                },
+                {
+                    "description": "过孔 [AM_D1_P] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 4.2,
+                        "y": 1.2
+                    },
+                    "uuid": "c70bc449-c241-4a56-9e2a-17dca65219fc"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "孔间距违规 (board setup constraints hole 间距 0.2500 mm; 实际 0.2350 mm)",
+            "items": [
+                {
+                    "description": "B.Cu 上 JF1 的焊盘 3 [unconnected-(JF1-Pin_3-Pad3)]",
+                    "pos": {
+                        "x": 5.4,
+                        "y": 0.925
+                    },
+                    "uuid": "ac3f1ae2-c011-4ea3-8a97-b77f63b87d9d"
+                },
+                {
+                    "description": "过孔 [AM_CS_P] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 5.0,
+                        "y": 1.2
+                    },
+                    "uuid": "1b58795d-0631-45ae-897e-f5363b3e74ad"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "孔间距违规 (board setup constraints hole 间距 0.2500 mm; 实际 0.2350 mm)",
+            "items": [
+                {
+                    "description": "B.Cu 上 JF1 的焊盘 5 [AM_CLK_P]",
+                    "pos": {
+                        "x": 4.6,
+                        "y": 0.925
+                    },
+                    "uuid": "9a0032ad-0844-46ab-9675-4d39d97e79cc"
+                },
+                {
+                    "description": "过孔 [AM_CS_P] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 5.0,
+                        "y": 1.2
+                    },
+                    "uuid": "1b58795d-0631-45ae-897e-f5363b3e74ad"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "孔间距违规 (board setup constraints hole 间距 0.2500 mm; 实际 0.2350 mm)",
+            "items": [
+                {
+                    "description": "B.Cu 上 JF1 的焊盘 5 [AM_CLK_P]",
+                    "pos": {
+                        "x": 4.6,
+                        "y": 0.925
+                    },
+                    "uuid": "9a0032ad-0844-46ab-9675-4d39d97e79cc"
+                },
+                {
+                    "description": "过孔 [AM_D1_P] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 4.2,
+                        "y": 1.2
+                    },
+                    "uuid": "c70bc449-c241-4a56-9e2a-17dca65219fc"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "孔间距违规 (board setup constraints hole 间距 0.2500 mm; 实际 0.2350 mm)",
+            "items": [
+                {
+                    "description": "B.Cu 上 JF1 的焊盘 7 [AM_D0_P]",
+                    "pos": {
+                        "x": 3.8,
+                        "y": 0.925
+                    },
+                    "uuid": "a4162a74-51e1-4c5d-ad91-63292b783901"
+                },
+                {
+                    "description": "过孔 [AM_D1_P] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 4.2,
+                        "y": 1.2
+                    },
+                    "uuid": "c70bc449-c241-4a56-9e2a-17dca65219fc"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "孔间距违规 (board setup constraints hole 间距 0.2500 mm; 实际 0.2350 mm)",
+            "items": [
+                {
+                    "description": "B.Cu 上 JF1 的焊盘 14 [GND]",
+                    "pos": {
+                        "x": 2.2,
+                        "y": 2.675
+                    },
+                    "uuid": "d2d13f8f-e0e3-4a71-9f4d-288123395bb0"
+                },
+                {
+                    "description": "过孔 [AM_1V8] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 2.6,
+                        "y": 2.4
+                    },
+                    "uuid": "c612e079-88db-4772-984c-ce6302ce41f3"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "孔间距违规 (board setup constraints hole 间距 0.2500 mm; 实际 0.2350 mm)",
+            "items": [
+                {
+                    "description": "B.Cu 上 JF1 的焊盘 16 [AM_RAW]",
+                    "pos": {
+                        "x": 3.0,
+                        "y": 2.675
+                    },
+                    "uuid": "604cfa0c-743d-4366-8538-b3065e4fde96"
+                },
+                {
+                    "description": "过孔 [AM_1V8] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 2.6,
+                        "y": 2.4
+                    },
+                    "uuid": "c612e079-88db-4772-984c-ce6302ce41f3"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "孔间距违规 (board setup constraints hole 间距 0.2500 mm; 实际 0.2350 mm)",
+            "items": [
+                {
+                    "description": "B.Cu 上 JF1 的焊盘 22 [AM_D3_P]",
+                    "pos": {
+                        "x": 5.4,
+                        "y": 2.675
+                    },
+                    "uuid": "d6c02d4f-5c33-4e87-b8e7-b33a6fd42e64"
+                },
+                {
+                    "description": "过孔 [AM_D2_P] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 5.8,
+                        "y": 2.4
+                    },
+                    "uuid": "748518d5-e7d9-4766-b23a-251abd4b3de5"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "孔间距违规 (board setup constraints hole 间距 0.2500 mm; 实际 0.2350 mm)",
+            "items": [
+                {
+                    "description": "B.Cu 上 JF1 的焊盘 24 [VCI_EN]",
+                    "pos": {
+                        "x": 6.2,
+                        "y": 2.675
+                    },
+                    "uuid": "c6bb11d1-33c5-483e-b20f-8f3b2dcd76af"
+                },
+                {
+                    "description": "过孔 [AM_D2_P] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 5.8,
+                        "y": 2.4
+                    },
+                    "uuid": "748518d5-e7d9-4766-b23a-251abd4b3de5"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "走线末端悬空",
+            "items": [
+                {
+                    "description": "走线 [AM_RST_P] (F.Cu), 长度: 0.0000 mm",
+                    "pos": {
+                        "x": 3.8,
+                        "y": 3.65
+                    },
+                    "uuid": "3158a9b7-cf09-4db8-95e4-d74525eaa49d"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "通孔未连接或仅连接了一层",
+            "items": [
+                {
+                    "description": "过孔 [VCI_EN] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 6.2,
+                        "y": 2.15
+                    },
+                    "uuid": "f7bd2c4b-201b-43da-9125-41f255300cd5"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "走线末端悬空",
+            "items": [
+                {
+                    "description": "走线 [VCI_EN] (B.Cu), 长度: 6.2307 mm",
+                    "pos": {
+                        "x": 6.199999,
+                        "y": 3.65
+                    },
+                    "uuid": "1cafec4f-bfe3-417e-b53e-25e5520e3105"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "走线末端悬空",
+            "items": [
+                {
+                    "description": "走线 [GND] (B.Cu), 长度: 6.2307 mm",
+                    "pos": {
+                        "x": 1.909999,
+                        "y": 3.65
+                    },
+                    "uuid": "1800aec4-969a-4dd9-8618-8b00152ca309"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "走线末端悬空",
+            "items": [
+                {
+                    "description": "走线 [AM_D2_P] (F.Cu), 长度: 6.2307 mm",
+                    "pos": {
+                        "x": 5.8,
+                        "y": 3.65
+                    },
+                    "uuid": "f3addaf1-c2a9-4237-acee-15e9d5fc3c00"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "通孔未连接或仅连接了一层",
+            "items": [
+                {
+                    "description": "过孔 [AM_D2_P] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 5.8,
+                        "y": 2.4
+                    },
+                    "uuid": "748518d5-e7d9-4766-b23a-251abd4b3de5"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "走线末端悬空",
+            "items": [
+                {
+                    "description": "走线 [AM_CLK_P] (F.Cu), 长度: 6.2307 mm",
+                    "pos": {
+                        "x": 4.6,
+                        "y": 3.65
+                    },
+                    "uuid": "6c4b1715-4c2e-457e-8be4-353e3384fc40"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "通孔未连接或仅连接了一层",
+            "items": [
+                {
+                    "description": "过孔 [AM_CLK_P] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 4.6,
+                        "y": 1.45
+                    },
+                    "uuid": "c6355335-0750-487e-91aa-8916cc5c014e"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "走线末端悬空",
+            "items": [
+                {
+                    "description": "走线 [AM_D0_P] (F.Cu), 长度: 6.2307 mm",
+                    "pos": {
+                        "x": 5.0,
+                        "y": 3.65
+                    },
+                    "uuid": "24e292a9-ae5b-4056-8db0-3d38f0992d11"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "通孔未连接或仅连接了一层",
+            "items": [
+                {
+                    "description": "过孔 [AM_D0_P] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 3.8,
+                        "y": 1.45
+                    },
+                    "uuid": "9d79345c-7773-4f7d-91b0-e4d49cc5cd34"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

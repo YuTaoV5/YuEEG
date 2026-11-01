@@ -1,0 +1,71 @@
+{
+  "status": "WIP_INCONSISTENT_CONTRACT_AND_PCB_NOT_FOR_ORDER",
+  "date": "2026-11-01",
+  "baseline_commit": "aa1a0656f3b5214ad4c256a55f887246f48a9c7e",
+  "selected_panel": "AM200Q460460LK",
+  "new_layout_and_route_executed_after_contract_change": false,
+  "current_draft_pcb_outline_centerline_mm": [
+    8,
+    13.530707511102651
+  ],
+  "current_draft_pcb_edge_bbox_including_005mm_stroke_mm": [
+    8.05,
+    13.580707
+  ],
+  "latest_contract_outline_mm": [
+    8,
+    15.530707511102651
+  ],
+  "latest_native_pcb_checks": {
+    "drc": 22,
+    "unconnected": 11,
+    "schematic_parity": 0
+  },
+  "firmware_am200_ported": false,
+  "main_pcbs_changed": false,
+  "files_sha256": {
+    "hardware/YuEEG_8CH_RevH_Stack/display_am200/BOM.csv": "2caaa3ca530874fb22da9af7bd040b3cf52c949ef8112e1082f7f938a3befbb8",
+    "hardware/YuEEG_8CH_RevH_Stack/display_am200/Connector_Generic.kicad_sym": "568fe249ea4680c1ed842bee445ca947bd03c1fdd19812a1acb2adab796e74df",
+    "hardware/YuEEG_8CH_RevH_Stack/display_am200/display_link.kicad_sch": "7dba592fd0096a5458ccacc0d918996046048aba872a10198e2093688c25d068",
+    "hardware/YuEEG_8CH_RevH_Stack/display_am200/footprints/YuEEG_Display.pretty/OCN_OK_14F024_04_GangMask.kicad_mod": "583c0baa661e8fbfeae478e8de6b4c2b6672e3e5a2687ccfda6501f1701e613c",
+    "hardware/YuEEG_8CH_RevH_Stack/display_am200/footprints/YuEEG_Display.pretty/OCN_OK_14GM024_04_LogicalMate.kicad_mod": "071d9fa46b067f7375839d0f7296d4f93920aeac79c37a31ef9eafd28694f31e",
+    "hardware/YuEEG_8CH_RevH_Stack/display_am200/fp-lib-table": "dbff298712627d092d9535dbdec8ed6fc22579984ad36f4bfe125ee0f1f9a92a",
+    "hardware/YuEEG_8CH_RevH_Stack/display_am200/README.md": "275f8b3432a8b8dfb2728cb73f5d1b91c9f92e08e7f063498a5a29d2a4729e5d",
+    "hardware/YuEEG_8CH_RevH_Stack/display_am200/review/design_contract.json": "ff7c2e74bbed638da0f909179fbf8c88d38e6931aa656e1b11f03b1297b79996",
+    "hardware/YuEEG_8CH_RevH_Stack/display_am200/review/drc_current.json": "802d8ae010bb95688a3d3202f2454bb5a61ef686c8593d5059555744c2eaafeb",
+    "hardware/YuEEG_8CH_RevH_Stack/display_am200/review/erc_current.json": "fc36605c419ce009a3487d15921c8bd9b30998a49f79ca0ea725c84b4d735a00",
+    "hardware/YuEEG_8CH_RevH_Stack/display_am200/review/expected_connections.json": "867a8e3be8988c0dd03862cb775f5f1743a3233241c7058edd8f70450bec7adb",
+    "hardware/YuEEG_8CH_RevH_Stack/display_am200/review/netlist.xml": "b4755376a11fae73f70f29db482780328166a5ca65708c7b0061f3633dbb8e86",
+    "hardware/YuEEG_8CH_RevH_Stack/display_am200/review/route_progress.json": "0535f4c72203aae98abaad85912edf5b28527257559c3131bea16aa53663ca6c",
+    "hardware/YuEEG_8CH_RevH_Stack/display_am200/sym-lib-table": "712d8b9261b834c6add1e11a65c1158aeb1fb65917cad833bd4987d0c2242a5d",
+    "hardware/YuEEG_8CH_RevH_Stack/display_am200/YuEEG_H_AM200_LINK.kicad_dru": "29b29ead4aa483a6b486f86454d7b4ed67a9050d41af11c76cb4145415544064",
+    "hardware/YuEEG_8CH_RevH_Stack/display_am200/YuEEG_H_AM200_LINK.kicad_pcb": "a780007d8f585547b7223a64d8046d6fb30dd830423462d2f1e6b232f4ec63eb",
+    "hardware/YuEEG_8CH_RevH_Stack/display_am200/YuEEG_H_AM200_LINK.kicad_pro": "d8eacce7c407c1d3d1400bc7f803eaa5f1c9d0ae81e8f0dbbd109e10d4df9dcf",
+    "hardware/YuEEG_8CH_RevH_Stack/display_am200/YuEEG_H_AM200_LINK.kicad_sch": "829a5dad1347333cc4f0904a5d1cb88497771183ec8f303536daf99fe669d1c6",
+    "hardware/YuEEG_8CH_RevH_Stack/reference/am200/ATTRIBUTION.md": "eee40389cf90ca8b31dedc8c024ec215ddd11bffa3c4925e9545508687cdefd8",
+    "hardware/YuEEG_8CH_RevH_Stack/reference/am200/examples/esp32s3-idf5-co5300-qspi-lvgl-adapter-lvgl9/CMakeLists.txt": "558bafb06fefcdfbec351e164cf5ee30ed2abdbcf5263b0df41b61aa7d27e898",
+    "hardware/YuEEG_8CH_RevH_Stack/reference/am200/examples/esp32s3-idf5-co5300-qspi-lvgl-adapter-lvgl9/main/CMakeLists.txt": "27d6d39ef0cb6a9097984b41e080b09f7ff972339a0bb4ddf771db4001cb9782",
+    "hardware/YuEEG_8CH_RevH_Stack/reference/am200/examples/esp32s3-idf5-co5300-qspi-lvgl-adapter-lvgl9/main/co5300_init_cmds.h": "b1f32a96b5b4f98013379bca34bd0337d51e53ca3b8f96c5da090896563b76da",
+    "hardware/YuEEG_8CH_RevH_Stack/reference/am200/examples/esp32s3-idf5-co5300-qspi-lvgl-adapter-lvgl9/main/idf_component.yml": "6859f623e99dd592776616c1f0950ca97ed545bafc07796bfbc74b2c41d65998",
+    "hardware/YuEEG_8CH_RevH_Stack/reference/am200/examples/esp32s3-idf5-co5300-qspi-lvgl-adapter-lvgl9/main/main.c": "745c70d12a7fb67d1aaadcb6414f1c6d8735a20f11b4e7f02785be0c11a937b3",
+    "hardware/YuEEG_8CH_RevH_Stack/reference/am200/examples/esp32s3-idf5-co5300-qspi-lvgl-adapter-lvgl9/README.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "hardware/YuEEG_8CH_RevH_Stack/reference/am200/LICENSE": "42d49efd72a6ac60f128b5f7d51f5bf0e34844696605d5e71b687f80bfe805b9",
+    "hardware/YuEEG_8CH_RevH_Stack/reference/am200/README.md": "9db4282009ab75db839fceda93c182dcfa30ff665d7ac53b191fccb2bada817d",
+    "hardware/YuEEG_8CH_RevH_Stack/reference/am200/README_EN.md": "a0b560db1d4c52b30332b2c705aa1b9c569fcb60868e543d1ea2f97cc489908e",
+    "hardware/YuEEG_8CH_RevH_Stack/reference/am200/SOURCE_MANIFEST.json": "fbb2dfffc31ddf3f90ac6fc2f59723b1417c493aecdfb8e8ea2f4939e27aef5c",
+    "hardware/YuEEG_8CH_RevH_Stack/reference/am200/STEP_INVENTORY.json": "3f7ed7d0f065520014d5940885913eeeecdf23704605552f714ff936b4dec4f2",
+    "hardware/YuEEG_8CH_RevH_Stack/reference/am200/versions/AM200Q460460LK/adapter/2\u5bf8\u5c4f\u5e55\u8f6c\u63a5\u677f.PcbDoc": "2f3771066b7c43861d47c76eebc3eaa9d15c8d03a927f5a05061bc969dc5d2d0",
+    "hardware/YuEEG_8CH_RevH_Stack/reference/am200/versions/AM200Q460460LK/adapter/2\u5bf8\u5c4f\u5e55\u8f6c\u63a5\u677f.SchDoc": "d5032a18c121923c9588744fef1d47479066555d8bac0d04ac7ad096d85135b9",
+    "hardware/YuEEG_8CH_RevH_Stack/reference/am200/versions/AM200Q460460LK/adapter/PCB-2.0\u5bf8AMOLED\u5c4f\u8f6c\u63a5\u677fV2.0.pdf": "3c70b94aae8b12f59dd12cfb6437348fcb3b2a02526391b85a8a3ff28db0e383",
+    "hardware/YuEEG_8CH_RevH_Stack/reference/am200/versions/AM200Q460460LK/cad/AM_200_Q460460.step": "8a66c18c54924cc0db2ca22bc55f5100bbab2b956e771edd736f176568f01f88",
+    "hardware/YuEEG_8CH_RevH_Stack/reference/am200/versions/AM200Q460460LK/datasheets/AM_200_Q460460_LK_ed30462590.pdf": "5be450b588676e5da955057ac4231c2c6a298e7da4f1cfa515c673002547547d",
+    "hardware/YuEEG_8CH_RevH_Stack/reference/am200/versions/AM200Q460460LK/osptek.yml": "a25750d3b39b2f0365a3085f3269c000e63855e5df347c6aeb3daee0cc457469",
+    "hardware/YuEEG_8CH_RevH_Stack/reference/am200/versions/AM200Q460460LK/README.md": "7dab0ca1f2febfe935f944551a5a2e88a4038d7941ce460d79cef886d672659a",
+    "hardware/YuEEG_8CH_RevH_Stack/reference/am200/versions/AM200Q460460LK/README_EN.md": "ea51ccd98d6b85aa1326e4c7940439364372d8b1b064f2125e8b72a076065deb",
+    "hardware/YuEEG_8CH_RevH_Stack/review/devtools/build_h_am200_link.py": "b7ac418f0854a2994dab757821a05802d55f65b9d5dcebab9dcf8de8deb3ba20",
+    "scripts/check_handover.py": "28c3193d7c6836cfd67acb8664dbd8d8b9aa660eae6e03b522f576c5338038d5",
+    "tools/legacy_build_support/local_router_f.py": "cac6c28766a5024c5f7e63acf4cafd79ac82a4e189ba0c5a88672ca939499a24",
+    "tools/legacy_build_support/README.md": "1273ec32fda38dbb79408acd8e5597a4e56c96671931353e41ee5903c9463c3a",
+    "tools/legacy_build_support/schematic_helpers.py": "b16bee00c6ac0daf07a28fcac1e110b935a2c4247f266580ff7503b8213a6faa"
+  }
+}

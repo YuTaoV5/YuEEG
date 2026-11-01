@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "YuEEG_Display") (type "KiCad") (uri "${KIPRJMOD}/footprints/YuEEG_Display.pretty") (options "") (descr "OCN drawing-derived prototype")))
