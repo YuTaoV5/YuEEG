@@ -1,0 +1,388 @@
+{
+  "status": "NATIVE_XY_WITH_IMPOSED_HEIGHT_BUDGETS",
+  "extractor_sha256": "d8c912e7e4ddcc9a3903b902b656f0aa47d4a967a58570b23ba2498a33fff6d0",
+  "source_pcb_sha256": "db28c24a71fb837f4e15c4a56017e570991aacc7b19b210fa71dfbc8c3f8eb81",
+  "outward_height_budget_mm": 5.5,
+  "probe_free_height_nominal_mm": 4.5,
+  "rows": [
+    {
+      "reference": "CP1",
+      "side": "F",
+      "native_courtyard_xy_mm": [
+        15.245,
+        2.495,
+        16.755,
+        5.505
+      ],
+      "product_prism_mm": [
+        65.19500000000001,
+        -9.55,
+        11.095000000000002,
+        66.705,
+        -4.05,
+        14.105
+      ]
+    },
+    {
+      "reference": "CP2",
+      "side": "F",
+      "native_courtyard_xy_mm": [
+        17.925,
+        2.825,
+        22.575,
+        5.175
+      ],
+      "product_prism_mm": [
+        67.875,
+        -9.55,
+        11.425,
+        72.525,
+        -4.05,
+        13.775000000000002
+      ]
+    },
+    {
+      "reference": "CP3",
+      "side": "F",
+      "native_courtyard_xy_mm": [
+        19.995,
+        0.745,
+        23.005,
+        2.255
+      ],
+      "product_prism_mm": [
+        69.94500000000001,
+        -9.55,
+        14.345000000000002,
+        72.955,
+        -4.05,
+        15.855000000000002
+      ]
+    },
+    {
+      "reference": "CP4",
+      "side": "F",
+      "native_courtyard_xy_mm": [
+        25.495,
+        9.745,
+        27.005,
+        12.755
+      ],
+      "product_prism_mm": [
+        75.44500000000001,
+        -9.55,
+        3.8450000000000006,
+        76.955,
+        -4.05,
+        6.855000000000002
+      ]
+    },
+    {
+      "reference": "CP5",
+      "side": "F",
+      "native_courtyard_xy_mm": [
+        26.675,
+        7.075,
+        31.325,
+        9.425
+      ],
+      "product_prism_mm": [
+        76.625,
+        -9.55,
+        7.175000000000001,
+        81.275,
+        -4.05,
+        9.525000000000002
+      ]
+    },
+    {
+      "reference": "CP6",
+      "side": "F",
+      "native_courtyard_xy_mm": [
+        27.425,
+        9.825,
+        32.075,
+        12.175
+      ],
+      "product_prism_mm": [
+        77.375,
+        -9.55,
+        4.425000000000001,
+        82.025,
+        -4.05,
+        6.775000000000002
+      ]
+    },
+    {
+      "reference": "CP7",
+      "side": "F",
+      "native_courtyard_xy_mm": [
+        25.495,
+        12.995,
+        27.005,
+        16.005
+      ],
+      "product_prism_mm": [
+        75.44500000000001,
+        -9.55,
+        0.5950000000000024,
+        76.955,
+        -4.05,
+        3.605000000000002
+      ]
+    },
+    {
+      "reference": "FP1",
+      "side": "F",
+      "native_courtyard_xy_mm": [
+        28.445,
+        2.845,
+        33.055,
+        5.155
+      ],
+      "product_prism_mm": [
+        78.39500000000001,
+        -9.55,
+        11.445,
+        83.005,
+        -4.05,
+        13.755
+      ]
+    },
+    {
+      "reference": "JP1",
+      "side": "B",
+      "native_courtyard_xy_mm": [
+        17.625,
+        0.225,
+        30.175,
+        2.775
+      ],
+      "product_prism_mm": [
+        67.575,
+        -3.05,
+        13.825000000000001,
+        80.125,
+        1.45,
+        16.375
+      ]
+    },
+    {
+      "reference": "JP2",
+      "side": "F",
+      "native_courtyard_xy_mm": [
+        2.375,
+        4.775,
+        12.625,
+        18.025
+      ],
+      "product_prism_mm": [
+        52.325,
+        -9.55,
+        -1.4249999999999972,
+        62.575,
+        -4.05,
+        11.825000000000001
+      ]
+    },
+    {
+      "reference": "LP1",
+      "side": "F",
+      "native_courtyard_xy_mm": [
+        23.075,
+        1.225,
+        27.925,
+        6.775
+      ],
+      "product_prism_mm": [
+        73.025,
+        -9.55,
+        9.825000000000001,
+        77.875,
+        -4.05,
+        15.375000000000002
+      ]
+    },
+    {
+      "reference": "QP1",
+      "side": "F",
+      "native_courtyard_xy_mm": [
+        11.045,
+        1.275,
+        14.955,
+        4.725
+      ],
+      "product_prism_mm": [
+        60.995000000000005,
+        -9.55,
+        11.875000000000002,
+        64.905,
+        -4.05,
+        15.325000000000001
+      ]
+    },
+    {
+      "reference": "RP1",
+      "side": "F",
+      "native_courtyard_xy_mm": [
+        18.745,
+        7.245,
+        20.255,
+        10.255
+      ],
+      "product_prism_mm": [
+        68.69500000000001,
+        -9.55,
+        6.345000000000001,
+        70.205,
+        -4.05,
+        9.355
+      ]
+    },
+    {
+      "reference": "RP2",
+      "side": "F",
+      "native_courtyard_xy_mm": [
+        20.495,
+        7.245,
+        22.005,
+        10.255
+      ],
+      "product_prism_mm": [
+        70.44500000000001,
+        -9.55,
+        6.345000000000001,
+        71.955,
+        -4.05,
+        9.355
+      ]
+    },
+    {
+      "reference": "RP3",
+      "side": "F",
+      "native_courtyard_xy_mm": [
+        18.745,
+        5.495,
+        21.755,
+        7.005
+      ],
+      "product_prism_mm": [
+        68.69500000000001,
+        -9.55,
+        9.595000000000002,
+        71.705,
+        -4.05,
+        11.105
+      ]
+    },
+    {
+      "reference": "RP4",
+      "side": "F",
+      "native_courtyard_xy_mm": [
+        6.245,
+        1.295,
+        7.755,
+        4.305
+      ],
+      "product_prism_mm": [
+        56.195,
+        -9.55,
+        12.295000000000002,
+        57.705000000000005,
+        -4.05,
+        15.305000000000001
+      ]
+    },
+    {
+      "reference": "RP5",
+      "side": "F",
+      "native_courtyard_xy_mm": [
+        23.745,
+        9.745,
+        25.255,
+        12.755
+      ],
+      "product_prism_mm": [
+        73.69500000000001,
+        -9.55,
+        3.8450000000000006,
+        75.205,
+        -4.05,
+        6.855000000000002
+      ]
+    },
+    {
+      "reference": "RP6",
+      "side": "F",
+      "native_courtyard_xy_mm": [
+        23.745,
+        12.995,
+        25.255,
+        16.005
+      ],
+      "product_prism_mm": [
+        73.69500000000001,
+        -9.55,
+        0.5950000000000024,
+        75.205,
+        -4.05,
+        3.605000000000002
+      ]
+    },
+    {
+      "reference": "SWP1",
+      "side": "F",
+      "native_courtyard_xy_mm": [
+        14.575,
+        10.525,
+        23.425,
+        16.425
+      ],
+      "product_prism_mm": [
+        64.525,
+        -9.55,
+        0.1750000000000007,
+        73.375,
+        -4.05,
+        6.075000000000001
+      ]
+    },
+    {
+      "reference": "UP1",
+      "side": "F",
+      "native_courtyard_xy_mm": [
+        15.475,
+        6.225,
+        18.525,
+        8.775
+      ],
+      "product_prism_mm": [
+        65.425,
+        -9.55,
+        7.825000000000001,
+        68.475,
+        -4.05,
+        10.375000000000002
+      ]
+    },
+    {
+      "reference": "UP2",
+      "side": "F",
+      "native_courtyard_xy_mm": [
+        23.775,
+        7.525,
+        26.225,
+        9.475
+      ],
+      "product_prism_mm": [
+        73.725,
+        -9.55,
+        7.125000000000002,
+        76.17500000000001,
+        -4.05,
+        9.075000000000001
+      ]
+    }
+  ],
+  "scope": "Every electrical footprint courtyard including line width, transformed from native power PCB. F heights are clearance budgets rather than manufacturer maximum component heights. B JP1 uses its combined courtyard and nominal free height. No real part-shape, solder or tolerance qualification."
+}

@@ -1,0 +1,121 @@
+{
+  "status": "USER_MODEL_FRONT_KEY_NOTCHES_NOT_SONY_TOLERANCE",
+  "source_model_sha256": "062b7daeb175079f8d2fec2f208dcf92b4c65887bfde244dd193765d4dfb91f3",
+  "method": "Planar STEP-face loops and their topology-vertex bounds; CAD solid checks are separate.",
+  "faces": [
+    {
+      "step_face": 9718,
+      "origin": [
+        11.031512458564812,
+        -1.6628149502777743,
+        19.375000000000004
+      ],
+      "normal": [
+        1.0,
+        6.30808536718839e-16,
+        0.0
+      ],
+      "vertex_bounds": [
+        11.031512458564812,
+        -4.402616924670489,
+        19.375000000000004,
+        11.031512458564814,
+        -1.6628149502777743,
+        21.375
+      ]
+    },
+    {
+      "step_face": 12610,
+      "origin": [
+        -11.031512458564812,
+        -1.6628149502777743,
+        19.375000000000004
+      ],
+      "normal": [
+        1.0,
+        -6.30808536718839e-16,
+        0.0
+      ],
+      "vertex_bounds": [
+        -11.031512458564814,
+        -4.402616924670487,
+        19.375000000000004,
+        -11.031512458564812,
+        -1.6628149502777743,
+        21.375
+      ]
+    },
+    {
+      "step_face": 13654,
+      "origin": [
+        14.331512458564813,
+        -1.6628149502777743,
+        19.375000000000004
+      ],
+      "normal": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "vertex_bounds": [
+        11.031512458564812,
+        -1.6628149502777743,
+        19.375000000000004,
+        14.320748906507408,
+        -1.6628149502777743,
+        21.375
+      ]
+    },
+    {
+      "step_face": 14139,
+      "origin": [
+        -14.331512458564813,
+        -1.6628149502777743,
+        19.375000000000004
+      ],
+      "normal": [
+        -0.0,
+        1.0,
+        0.0
+      ],
+      "vertex_bounds": [
+        -14.320748906507408,
+        -1.6628149502777743,
+        19.375000000000004,
+        -11.031512458564812,
+        -1.6628149502777743,
+        21.375
+      ]
+    }
+  ],
+  "front_plane_model_Z_mm": 21.375,
+  "notch_rear_plane_model_Z_mm": 19.375,
+  "derived_notch_length_mm": 2.0,
+  "lower_cut_vertical_plane_model_Y_mm": -1.6628149502777743,
+  "inner_notch_walls_model_X_mm": [
+    -11.031512458564812,
+    11.031512458564812
+  ],
+  "proposed_key_boxes_model_xyz_mm": [
+    [
+      -13.4,
+      -3.7,
+      20.575,
+      -11.8,
+      -2.4,
+      21.375
+    ],
+    [
+      11.8,
+      -3.7,
+      20.575,
+      13.4,
+      -2.4,
+      21.375
+    ]
+  ],
+  "key_engagement_depth_mm": 0.8,
+  "scope": "Geometry basis for two bottom-corner anti-inversion keys in the holder. This does not prove containment in a delivered Sony pack or unseated insertion, reverse-end blocking, print tolerances or force. Must check with native solids and the actual part.",
+  "nominal_key_inner_wall_clearance_mm": 0.7684875414351886,
+  "nominal_key_upper_clearance_mm": 0.7371850497222256
+}

@@ -1,0 +1,33 @@
+{
+  "status": "ENGINEERING_MECHANICAL_PROTOTYPE_NOT_FOR_PRODUCTION",
+  "units": "mm",
+  "files_sha256": {
+    "cradle.step": "7599514c430e18ba1b8511488d79ebf07ae3061c0626207aa656f106d544c122",
+    "cradle.stl": "46d39fcfc89c6cdab0bf881ca98217dd069cffbc9d9efc17300efb36bcf0c037",
+    "power_clip.step": "d98ad3ad6561fece15eed915abfab2b3661731a327f3117257f8e62a62d53834",
+    "power_clip.stl": "6aaeafb96a1d04863d24ee4dde2a63bbecc8bf00c1034dc4a6e563e2b49ea911",
+    "rear_jaw.step": "04ae987d2fa82f7b73e8b77e44f6a13e90e12aa15029c0200b93c2038bfcd89b",
+    "rear_jaw.stl": "7bf2979ccc798f4baba6f96f75a00d999f9280f7dd916abfb4250fb79c06c248",
+    "cradle_assembly.step": "78c1ccf17867562010514c55825d622c3fa7931d0343d17904f2536578cddb10",
+    "cradle_assembly.png": "ffca7f726d5a7262138bc720a8d321211306ea1e72d8d0f62fdab54fbad7f967",
+    "native_cad_review.json": "8fc15d6867fa56904b9d90e93d897fb1c863c21d690b31e3f329248fa0a9b753",
+    "power_component_envelopes.json": "0173cb87747c18bb5733db9674e38a90c2cdeb263d453b2a530965a6ddd537c1",
+    "clearance_review.json": "a0a7cb6012233917a37f77ffd183728eb276d5cfc312aade551a11c036350362",
+    "README.md": "4b0685e54919810f683851e1615fc2718c1de9e65476d8dea5d6fb118f988cd9"
+  },
+  "inputs_sha256": {
+    "hardware/YuEEG_8CH_RevH_Stack/mechanical/current/battery_cradle_contract.json": "22e2c57509300cb1cefe34af050be6b28b33e44f567e448fc9a328d3fc6ce35a",
+    "hardware/YuEEG_8CH_RevH_Stack/mechanical/current/battery_cradle_hardware.json": "6c09a33ede78d3093fc28691860c3357188cedfb777e394da8700cb860e54cbc",
+    "hardware/YuEEG_8CH_RevH_Stack/mechanical/current/npbx1_key_notch_basis.json": "838dc000296f3d01fca0b6a748cdf7e90b77139fcacaf6fa3ab73057e62ff611",
+    "hardware/YuEEG_8CH_RevH_Stack/mechanical/current/npbx1_user_model_comparison.json": "ed290bc3eb232563f413978704c550239922e69dd5fc2a87aa9ed4091ee97287",
+    "hardware/YuEEG_8CH_RevH_Stack/mechanical/current/pogo_reference.json": "881d1abdf16373985fb8d4380abb7afac1b56d5380a6837f2e0491b4a5879a32",
+    "hardware/YuEEG_8CH_RevH_Stack/mechanical/current/complete_power_harness_review.json": "0d72961604a1c62252034c7d7fb908e55b60c69e5b142d5e17fa5f768e562945",
+    "hardware/YuEEG_8CH_RevH_Stack/review/devtools/build_h_battery_cradle.py": "245a999b513202666194d47f81e6f1b96bcc46d9057dc270c44e9b69850cb844",
+    "hardware/YuEEG_8CH_RevH_Stack/review/devtools/extract_h_cradle_power_envelopes.py": "d8c912e7e4ddcc9a3903b902b656f0aa47d4a967a58570b23ba2498a33fff6d0",
+    "hardware/YuEEG_8CH_RevH_Stack/review/devtools/check_h_battery_cradle_clearance.py": "458ba9b4dd4097e3538f59cf18ae86245caeb9bd38dbd1add9605644ac5ce8b5",
+    "docs/REVH_BATTERY_CRADLE.md": "9a7da1d6ec7bc7ffc3840c7be07cab288fe6b08b63e0021cb370e0952f7ddc3a",
+    "docs/REVH_NPBX1_USER_MODEL.md": "f4cbcf46c4c917919f24ae922c9135284e8a912026d785f390f05d5c2b66fdbf"
+  },
+  "source_battery_geometry_in_CAD_exports": false,
+  "scope": "Authored battery cage only; physical Sony pack, probe compression, part/process tolerances, material/load, enclosure/screen fastening and complete electrical insulation remain unqualified. No original source battery STEP/JPG published."
+}

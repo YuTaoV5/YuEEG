@@ -1,0 +1,50 @@
+{
+  "status": "MANUFACTURER_DRAWINGS_DIMENSIONED_SPACE_SELECTION_NOT_FORCE_QUALIFICATION",
+  "nut": {
+    "MPN": "04M020040HN",
+    "manufacturer": "Essentra / Micro Plastics",
+    "drawing_url": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/936/04M020040HN.PDF",
+    "drawing_sha256": "b2d955258e081d03005747b4c5538c1a850052e41e062bc1b7909aa9828919f7",
+    "material": "Nylon 6/6",
+    "thread": "M2 x 0.40",
+    "hex_flat_span_nominal_mm": 3.9,
+    "hex_flat_span_explicit_tolerance_mm": 0.26,
+    "thickness_nominal_mm": 1.2,
+    "thickness_explicit_tolerance_mm": 0.26,
+    "derived_sharp_regular_hex_corner_diameter_max_mm": 4.803554239657686,
+    "corner_budget_mm": 4.9,
+    "thickness_budget_mm": 1.6,
+    "drawing_note": "3.90 dimension spans opposite parallel hex faces despite diameter symbol; corner envelope derived for a regular hex. Explicit tolerances used once; do not add title-block general tolerances. Round prism budgets intentionally conservative.",
+    "procurement": "Exact maker drawing identified; no Taobao SKU or delivery fit claimed."
+  },
+  "screw": {
+    "MPN": "50M020040P008",
+    "drawing_url": "https://storacesswebpraisstibprd.blob.core.windows.net/stiboassets/D365_DOCS_PDF/std.lang.all/D365_DOCS_PDF!10294789_Technical%20Drawing.pdf",
+    "drawing_sha256": "221c3b9ba8b3b4335441d8e5b2a493f668961dfe1db8912ba1d210596a000bf1",
+    "material": "Nylon 6/6",
+    "thread": "M2 x 0.4",
+    "head_diameter_range_mm": [
+      3.7,
+      4.0
+    ],
+    "head_height_range_mm": [
+      1.4,
+      1.6
+    ],
+    "underhead_length_range_mm": [
+      7.7,
+      8.3
+    ],
+    "head_space_budget_mm": [
+      4.2,
+      1.6
+    ],
+    "major_diameter_space_budget_mm": 2.1,
+    "major_diameter_scope": "Imposed clearance budget; no new manufacturer tolerance assertion."
+  },
+  "layout_resolution": [
+    "Clip screws inserted from outward product -Y, nuts on +Y boss faces; right clip hole X87.8 and guide/lip frontY1.6 clear the full shank/head/nut envelopes. Driver enters from outward -Y.",
+    "Jaw screw axes Y47 stay fixed to cradle while the jaw translates +/-0.5 through slots. Rear floor/foot extend to49.8 for full budget nut bearing footprint."
+  ],
+  "scope": "Rigid nominal and rounded envelope design inputs, not actual load, full thread form, engagement strength, manufacturing tolerance or complete assembly qualification."
+}

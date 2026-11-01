@@ -201,5 +201,7 @@ def verify():
  if (H/'display_link').exists():
   from verify_display_link import verify as verify_fpc
   verify_fpc()
+ from verify_h_battery_cradle import verify as verify_cradle
+ verify_cradle()
  print('PASS: Rev H engineering checkpoint: native pin/BOM/source hashes, zero static reports, firmware and review exports. Mechanical/functional release remains incomplete.')
 if __name__=='__main__':verify()

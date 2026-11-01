@@ -1,0 +1,501 @@
+{
+  "status": "PASS_CONSERVATIVE_NOMINAL_CLEARANCE_NOT_ASSEMBLY_QUALIFICATION",
+  "input_sha256": {
+    "hardware/YuEEG_8CH_RevH_Stack/mechanical/current/battery_cradle_contract.json": "22e2c57509300cb1cefe34af050be6b28b33e44f567e448fc9a328d3fc6ce35a",
+    "hardware/YuEEG_8CH_RevH_Stack/mechanical/current/complete_power_harness_review.json": "0d72961604a1c62252034c7d7fb908e55b60c69e5b142d5e17fa5f768e562945",
+    "hardware/YuEEG_8CH_RevH_Stack/review/devtools/review_h_complete_power_harness.py": "b5d3ca8928136a89183ae690a36597b0820e7d9e3e0ac1253e68c3728e46e58d",
+    "hardware/YuEEG_8CH_RevH_Stack/mechanical/current/pogo_reference.json": "881d1abdf16373985fb8d4380abb7afac1b56d5380a6837f2e0491b4a5879a32",
+    "X:/Items/YuEEG/hardware/YuEEG_8CH_RevH_Stack/review/devtools/check_h_battery_cradle_clearance.py": "458ba9b4dd4097e3538f59cf18ae86245caeb9bd38dbd1add9605644ac5ce8b5",
+    "hardware/YuEEG_8CH_RevH_Stack/afe/YuEEG_H_AFE.kicad_pcb": "61f639e6cd2ab0925f28603e0191da73723e721caa7f991c334818731c2a21b8",
+    "hardware/YuEEG_8CH_RevH_Stack/digital/YuEEG_H_DIGITAL.kicad_pcb": "e4ec2796baec9bfced51394bc5c8ac8c5172db75c834cd15c4a2eb06d868470f",
+    "hardware/YuEEG_8CH_RevH_Stack/power/YuEEG_H_POWER.kicad_pcb": "db28c24a71fb837f4e15c4a56017e570991aacc7b19b210fa71dfbc8c3f8eb81",
+    "hardware/YuEEG_8CH_RevH_Stack/mechanical/current/battery_cradle/native_cad_review.json": "8fc15d6867fa56904b9d90e93d897fb1c863c21d690b31e3f329248fa0a9b753",
+    "hardware/YuEEG_8CH_RevH_Stack/mechanical/current/battery_cradle/power_component_envelopes.json": "0173cb87747c18bb5733db9674e38a90c2cdeb263d453b2a530965a6ddd537c1"
+  },
+  "part_checks_use_uncut_positive_material_boxes": true,
+  "rear_jaw_Y_adjustment_range_mm": [
+    -0.5,
+    0.5
+  ],
+  "obstacle_checks": [
+    {
+      "obstacle": "AFE_substrate",
+      "bounds_product_mm": [
+        0,
+        0,
+        -1.6,
+        48,
+        60,
+        0
+      ],
+      "minimum_box_gap_mm": 1.552417469626002,
+      "closest_holder_feature": "cradle/card_bottom_stop",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "digital_substrate",
+      "bounds_product_mm": [
+        0,
+        0,
+        8.5,
+        48,
+        60,
+        10.1
+      ],
+      "minimum_box_gap_mm": 0.8944271909999153,
+      "closest_holder_feature": "cradle/front_bridge",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "power_substrate",
+      "bounds_product_mm": [
+        49.95,
+        -4.05,
+        -1.4,
+        83.95,
+        -3.05,
+        16.6
+      ],
+      "minimum_box_gap_mm": 0.04999999999999716,
+      "closest_holder_feature": "cradle/right_card_wall",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "power_PH4_mated_reference",
+      "bounds_product_mm": [
+        49.45,
+        -9.55,
+        -0.75,
+        60.65,
+        -4.05,
+        11.15
+      ],
+      "minimum_box_gap_mm": 0.34999999999999964,
+      "closest_holder_feature": "cradle/left_card_wall",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "conditional_flat_screen",
+      "bounds_product_mm": [
+        6,
+        0.4,
+        16.1,
+        40.14,
+        43.14,
+        18.88
+      ],
+      "minimum_box_gap_mm": 4.30930388810072,
+      "closest_holder_feature": "cradle/left_clip_boss",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "power_CP1",
+      "bounds_product_mm": [
+        65.19500000000001,
+        -9.55,
+        11.095000000000002,
+        66.705,
+        -4.05,
+        14.105
+      ],
+      "minimum_box_gap_mm": 2.594999999999999,
+      "closest_holder_feature": "power_clip/upper_bridge",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "power_CP2",
+      "bounds_product_mm": [
+        67.875,
+        -9.55,
+        11.425,
+        72.525,
+        -4.05,
+        13.775000000000002
+      ],
+      "minimum_box_gap_mm": 2.924999999999997,
+      "closest_holder_feature": "power_clip/upper_bridge",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "power_CP3",
+      "bounds_product_mm": [
+        69.94500000000001,
+        -9.55,
+        14.345000000000002,
+        72.955,
+        -4.05,
+        15.855000000000002
+      ],
+      "minimum_box_gap_mm": 0.8449999999999971,
+      "closest_holder_feature": "power_clip/upper_bridge",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "power_CP4",
+      "bounds_product_mm": [
+        75.44500000000001,
+        -9.55,
+        3.8450000000000006,
+        76.955,
+        -4.05,
+        6.855000000000002
+      ],
+      "minimum_box_gap_mm": 1.0999999999999996,
+      "closest_holder_feature": "cradle/front_bridge",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "power_CP5",
+      "bounds_product_mm": [
+        76.625,
+        -9.55,
+        7.175000000000001,
+        81.275,
+        -4.05,
+        9.525000000000002
+      ],
+      "minimum_box_gap_mm": 1.0999999999999996,
+      "closest_holder_feature": "cradle/front_bridge",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "power_CP6",
+      "bounds_product_mm": [
+        77.375,
+        -9.55,
+        4.425000000000001,
+        82.025,
+        -4.05,
+        6.775000000000002
+      ],
+      "minimum_box_gap_mm": 1.0999999999999996,
+      "closest_holder_feature": "cradle/front_bridge",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "power_CP7",
+      "bounds_product_mm": [
+        75.44500000000001,
+        -9.55,
+        0.5950000000000024,
+        76.955,
+        -4.05,
+        3.605000000000002
+      ],
+      "minimum_box_gap_mm": 2.0747349228274947,
+      "closest_holder_feature": "cradle/card_bottom_stop",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "power_FP1",
+      "bounds_product_mm": [
+        78.39500000000001,
+        -9.55,
+        11.445,
+        83.005,
+        -4.05,
+        13.755
+      ],
+      "minimum_box_gap_mm": 1.0547630065564533,
+      "closest_holder_feature": "cradle/right_card_wall",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "power_JP1",
+      "bounds_product_mm": [
+        67.575,
+        -3.05,
+        13.825000000000001,
+        80.125,
+        1.45,
+        16.375
+      ],
+      "minimum_box_gap_mm": 0.7267220926874317,
+      "closest_holder_feature": "power_clip/upper_bridge",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "power_JP2",
+      "bounds_product_mm": [
+        52.325,
+        -9.55,
+        -1.4249999999999972,
+        62.575,
+        -4.05,
+        11.825000000000001
+      ],
+      "minimum_box_gap_mm": 0.3508917211904548,
+      "closest_holder_feature": "cradle/card_bottom_stop",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "power_LP1",
+      "bounds_product_mm": [
+        73.025,
+        -9.55,
+        9.825000000000001,
+        77.875,
+        -4.05,
+        15.375000000000002
+      ],
+      "minimum_box_gap_mm": 1.3249999999999975,
+      "closest_holder_feature": "power_clip/upper_bridge",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "power_QP1",
+      "bounds_product_mm": [
+        60.995000000000005,
+        -9.55,
+        11.875000000000002,
+        64.905,
+        -4.05,
+        15.325000000000001
+      ],
+      "minimum_box_gap_mm": 1.3749999999999982,
+      "closest_holder_feature": "power_clip/upper_bridge",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "power_RP1",
+      "bounds_product_mm": [
+        68.69500000000001,
+        -9.55,
+        6.345000000000001,
+        70.205,
+        -4.05,
+        9.355
+      ],
+      "minimum_box_gap_mm": 1.0999999999999996,
+      "closest_holder_feature": "cradle/front_bridge",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "power_RP2",
+      "bounds_product_mm": [
+        70.44500000000001,
+        -9.55,
+        6.345000000000001,
+        71.955,
+        -4.05,
+        9.355
+      ],
+      "minimum_box_gap_mm": 1.0999999999999996,
+      "closest_holder_feature": "cradle/front_bridge",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "power_RP3",
+      "bounds_product_mm": [
+        68.69500000000001,
+        -9.55,
+        9.595000000000002,
+        71.705,
+        -4.05,
+        11.105
+      ],
+      "minimum_box_gap_mm": 1.4181061314302272,
+      "closest_holder_feature": "cradle/front_bridge",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "power_RP4",
+      "bounds_product_mm": [
+        56.195,
+        -9.55,
+        12.295000000000002,
+        57.705000000000005,
+        -4.05,
+        15.305000000000001
+      ],
+      "minimum_box_gap_mm": 1.3949999999999978,
+      "closest_holder_feature": "power_clip/upper_bridge",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "power_RP5",
+      "bounds_product_mm": [
+        73.69500000000001,
+        -9.55,
+        3.8450000000000006,
+        75.205,
+        -4.05,
+        6.855000000000002
+      ],
+      "minimum_box_gap_mm": 1.0999999999999996,
+      "closest_holder_feature": "cradle/front_bridge",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "power_RP6",
+      "bounds_product_mm": [
+        73.69500000000001,
+        -9.55,
+        0.5950000000000024,
+        75.205,
+        -4.05,
+        3.605000000000002
+      ],
+      "minimum_box_gap_mm": 2.0747349228274947,
+      "closest_holder_feature": "cradle/card_bottom_stop",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "power_SWP1",
+      "bounds_product_mm": [
+        64.525,
+        -9.55,
+        0.1750000000000007,
+        73.375,
+        -4.05,
+        6.075000000000001
+      ],
+      "minimum_box_gap_mm": 1.2651580928879989,
+      "closest_holder_feature": "cradle/front_bridge",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "power_UP1",
+      "bounds_product_mm": [
+        65.425,
+        -9.55,
+        7.825000000000001,
+        68.475,
+        -4.05,
+        10.375000000000002
+      ],
+      "minimum_box_gap_mm": 1.0999999999999996,
+      "closest_holder_feature": "cradle/front_bridge",
+      "material_box_intrusions": []
+    },
+    {
+      "obstacle": "power_UP2",
+      "bounds_product_mm": [
+        73.725,
+        -9.55,
+        7.125000000000002,
+        76.17500000000001,
+        -4.05,
+        9.075000000000001
+      ],
+      "minimum_box_gap_mm": 1.0999999999999996,
+      "closest_holder_feature": "cradle/front_bridge",
+      "material_box_intrusions": []
+    }
+  ],
+  "power_PCB_foreaft_slot_swept_box_product_mm": [
+    49.95,
+    -4.15,
+    -1.4,
+    83.95,
+    -2.95,
+    16.6
+  ],
+  "power_PCB_foreaft_slot_intrusions": [],
+  "wire_checks": [
+    {
+      "pin": "1",
+      "net": "SYS_5V",
+      "sample_count": 4094,
+      "tube_to_holder_lower_bound_mm": 1.3963249695855484,
+      "closest_holder_feature": "power_clip/upper_bridge"
+    },
+    {
+      "pin": "2",
+      "net": "BAT_PROTECTED_SENSE",
+      "sample_count": 4100,
+      "tube_to_holder_lower_bound_mm": 2.54,
+      "closest_holder_feature": "cradle/left_card_wall"
+    },
+    {
+      "pin": "3",
+      "net": "GND",
+      "sample_count": 4106,
+      "tube_to_holder_lower_bound_mm": 2.54,
+      "closest_holder_feature": "cradle/left_card_wall"
+    },
+    {
+      "pin": "4",
+      "net": "GND",
+      "sample_count": 4112,
+      "tube_to_holder_lower_bound_mm": 2.54,
+      "closest_holder_feature": "cradle/left_card_wall"
+    }
+  ],
+  "hardware_to_obstacle_checks": [
+    {
+      "hardware": "power_clip_axisY_1/shaft",
+      "minimum_obstacle_gap_mm": 1.9448650338776752,
+      "closest_obstacle": "power_substrate",
+      "intrusions": []
+    },
+    {
+      "hardware": "power_clip_axisY_1/head",
+      "minimum_obstacle_gap_mm": 1.0559356040971435,
+      "closest_obstacle": "power_substrate",
+      "intrusions": []
+    },
+    {
+      "hardware": "power_clip_axisY_1/nut",
+      "minimum_obstacle_gap_mm": 2.8,
+      "closest_obstacle": "power_substrate",
+      "intrusions": []
+    },
+    {
+      "hardware": "power_clip_axisY_2/shaft",
+      "minimum_obstacle_gap_mm": 3.108456208473907,
+      "closest_obstacle": "power_substrate",
+      "intrusions": []
+    },
+    {
+      "hardware": "power_clip_axisY_2/head",
+      "minimum_obstacle_gap_mm": 2.0137030565602263,
+      "closest_obstacle": "power_substrate",
+      "intrusions": []
+    },
+    {
+      "hardware": "power_clip_axisY_2/nut",
+      "minimum_obstacle_gap_mm": 3.1304951684997016,
+      "closest_obstacle": "power_substrate",
+      "intrusions": []
+    },
+    {
+      "hardware": "rear_jaw_axisZ_1/shaft",
+      "minimum_obstacle_gap_mm": 8.950000000000003,
+      "closest_obstacle": "digital_substrate",
+      "intrusions": []
+    },
+    {
+      "hardware": "rear_jaw_axisZ_1/head",
+      "minimum_obstacle_gap_mm": 7.922752047110901,
+      "closest_obstacle": "digital_substrate",
+      "intrusions": []
+    },
+    {
+      "hardware": "rear_jaw_axisZ_1/nut",
+      "minimum_obstacle_gap_mm": 7.761604215624496,
+      "closest_obstacle": "digital_substrate",
+      "intrusions": []
+    },
+    {
+      "hardware": "rear_jaw_axisZ_2/shaft",
+      "minimum_obstacle_gap_mm": 32.95,
+      "closest_obstacle": "digital_substrate",
+      "intrusions": []
+    },
+    {
+      "hardware": "rear_jaw_axisZ_2/head",
+      "minimum_obstacle_gap_mm": 31.90564213426836,
+      "closest_obstacle": "digital_substrate",
+      "intrusions": []
+    },
+    {
+      "hardware": "rear_jaw_axisZ_2/nut",
+      "minimum_obstacle_gap_mm": 31.601305352785662,
+      "closest_obstacle": "digital_substrate",
+      "intrusions": []
+    }
+  ],
+  "wire_bound_method": "Analytic curve samples step<=0.02 mm; point-to-positive-material-box minus wire OD/2 and maximum sample step/2. Entire jaw adjustment travel included. Holes omitted conservatively.",
+  "scope": "Source-bound native power courtyards with imposed height budgets, PCB substrates, conditional PH4/screen boxes and existing nominal harness paths. No actual component CAD, screen-back/folded FPC datum, solder, part/placement/cable tolerances, strain relief, holder fixation to enclosure, fastener clearance/strength or complete electrical isolation qualification."
+}

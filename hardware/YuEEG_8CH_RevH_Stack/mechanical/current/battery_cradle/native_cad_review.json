@@ -1,0 +1,1594 @@
+{
+  "status": "NATIVE_SOLIDS_PASS_SOURCE_MODEL_NOT_PRODUCTION_QUALIFICATION",
+  "cadquery_version": "2.8.0",
+  "OCP_distribution_version": "7.9.3.1.1",
+  "python_version": "3.13.2",
+  "contract_sha256": "22e2c57509300cb1cefe34af050be6b28b33e44f567e448fc9a328d3fc6ce35a",
+  "source_model_sha256": "062b7daeb175079f8d2fec2f208dcf92b4c65887bfde244dd193765d4dfb91f3",
+  "source_model_native_solids": 1,
+  "source_model_native_bbox_xyz_mm": [
+    -14.650000000000004,
+    -4.500000000000003,
+    -21.3750001,
+    14.650000000000002,
+    4.500000100000007,
+    21.3750001
+  ],
+  "source_model_native_volume_mm3": 10469.0284323776,
+  "product_model_bbox_mm": [
+    55.3,
+    -1e-07,
+    8.699999999999994,
+    84.60000000000001,
+    42.7500001,
+    17.700000100000008
+  ],
+  "rear_jaw_adjustment_for_source_model_mm": 0.050000099999998326,
+  "parts": {
+    "cradle": {
+      "solid_count": 1,
+      "valid": true,
+      "volume_mm3": 4904.3105617092515,
+      "bounds_product_mm": [
+        44.39999989999998,
+        -3.700537181259814,
+        -2.200000100000016,
+        90.60000010000002,
+        49.80000010000001,
+        21.500000100000015
+      ],
+      "files_sha256": {
+        ".step": "7599514c430e18ba1b8511488d79ebf07ae3061c0626207aa656f106d544c122",
+        ".stl": "46d39fcfc89c6cdab0bf881ca98217dd069cffbc9d9efc17300efb36bcf0c037"
+      }
+    },
+    "power_clip": {
+      "solid_count": 1,
+      "valid": true,
+      "volume_mm3": 131.71887710495986,
+      "bounds_product_mm": [
+        44.39999989999997,
+        -5.000537181259814,
+        15.399999899999973,
+        90.60000010000002,
+        -3.6994628187401863,
+        21.50000010000003
+      ],
+      "files_sha256": {
+        ".step": "d98ad3ad6561fece15eed915abfab2b3661731a327f3117257f8e62a62d53834",
+        ".stl": "6aaeafb96a1d04863d24ee4dde2a63bbecc8bf00c1034dc4a6e563e2b49ea911"
+      }
+    },
+    "rear_jaw": {
+      "solid_count": 1,
+      "valid": true,
+      "volume_mm3": 793.704426315323,
+      "bounds_product_mm": [
+        54.999999899999985,
+        41.89999989999999,
+        8.699472903810538,
+        84.90000010000003,
+        49.80000010000001,
+        19.10000010000001
+      ],
+      "files_sha256": {
+        ".step": "04ae987d2fa82f7b73e8b77e44f6a13e90e12aa15029c0200b93c2038bfcd89b",
+        ".stl": "7bf2979ccc798f4baba6f96f75a00d999f9280f7dd916abfb4250fb79c06c248"
+      }
+    }
+  },
+  "static_battery_checks": [
+    {
+      "part": "cradle",
+      "battery_overlap_mm3": 0.0,
+      "minimum_native_distance_mm": 0.0
+    },
+    {
+      "part": "power_clip",
+      "battery_overlap_mm3": 0.0,
+      "minimum_native_distance_mm": 3.7
+    },
+    {
+      "part": "rear_jaw",
+      "battery_overlap_mm3": 0.0,
+      "minimum_native_distance_mm": 1.0000000116860974e-07
+    }
+  ],
+  "interpart_checks": [
+    {
+      "parts": [
+        "cradle",
+        "power_clip"
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
+        "cradle",
+        "rear_jaw"
+      ],
+      "overlap_mm3": 0.0
+    },
+    {
+      "parts": [
+        "power_clip",
+        "rear_jaw"
+      ],
+      "overlap_mm3": 0.0
+    }
+  ],
+  "front_key_checks": [
+    {
+      "orientation": "upside_down",
+      "overlap_if_forced_seated_mm3": 3.011631735528912,
+      "blocking_front_offset_mm": [
+        0.7999954223632812,
+        0.8000030517578125
+      ],
+      "nominal_flat_face_probe_compression_at_block_mm": 0.6499969482421877,
+      "scope": "Source-model nominal geometry only; tolerances, key strength and load deflection unqualified."
+    },
+    {
+      "orientation": "reverse_end",
+      "overlap_if_forced_seated_mm3": 2.973986338834802,
+      "blocking_front_offset_mm": [
+        0.7899932861328125,
+        0.7900009155273438
+      ],
+      "nominal_flat_face_probe_compression_at_block_mm": 0.6599990844726564,
+      "scope": "Source-model nominal geometry only; tolerances, key strength and load deflection unqualified."
+    },
+    {
+      "orientation": "upside_reverse",
+      "overlap_if_forced_seated_mm3": 2.9739863388347985,
+      "blocking_front_offset_mm": [
+        0.7899932861328125,
+        0.7900009155273438
+      ],
+      "nominal_flat_face_probe_compression_at_block_mm": 0.6599990844726564,
+      "scope": "Source-model nominal geometry only; tolerances, key strength and load deflection unqualified."
+    }
+  ],
+  "removal_checks": [
+    {
+      "rear_shift_mm": 0.0,
+      "lift_mm": 0.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 0.25,
+      "lift_mm": 0.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 0.5,
+      "lift_mm": 0.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 0.75,
+      "lift_mm": 0.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 1.0,
+      "lift_mm": 0.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 1.25,
+      "lift_mm": 0.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 1.5,
+      "lift_mm": 0.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 1.75,
+      "lift_mm": 0.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 2.0,
+      "lift_mm": 0.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 2.25,
+      "lift_mm": 0.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 2.5,
+      "lift_mm": 0.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 2.75,
+      "lift_mm": 0.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 3.0,
+      "lift_mm": 0.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 3.25,
+      "lift_mm": 0.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 3.5,
+      "lift_mm": 0.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 3.75,
+      "lift_mm": 0.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.0,
+      "lift_mm": 0.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.25,
+      "lift_mm": 0.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 0.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 0.5,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 1.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 1.5,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 2.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 2.5,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 3.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 3.5,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 4.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 4.5,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 5.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 5.5,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 6.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 6.5,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 7.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 7.5,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 8.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 8.5,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 9.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 9.5,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 10.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 10.5,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 11.0,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 11.5,
+      "maximum_overlap_mm3": 0.0
+    },
+    {
+      "rear_shift_mm": 4.5,
+      "lift_mm": 12.0,
+      "maximum_overlap_mm3": 0.0
+    }
+  ],
+  "assembly_step_sha256": "78c1ccf17867562010514c55825d622c3fa7931d0343d17904f2536578cddb10",
+  "source_geometry_redistributed": false,
+  "open_items": [
+    "Delivered Sony pack must meet dimensional and key/contact receiving requirements",
+    "Print/CNC material, process, strength, creep, wear, force and insulating-fastener exact MPNs/torques",
+    "Full screen-back/FPC/support mechanical datum and whole-system insulation",
+    "Native power component envelopes, cable and external HOST clearances reviewed separately"
+  ],
+  "scope": "Real authored STEP/STL parts with checked OCCT solids, local source-battery nominal interference, three wrong-orientation key tests and 43 sampled removal positions. Not force/deflection/continuous-sweep/production, electrical or patient-isolation qualification.",
+  "builder_sha256": "245a999b513202666194d47f81e6f1b96bcc46d9057dc270c44e9b69850cb844",
+  "hardware_fact_sha256": "6c09a33ede78d3093fc28691860c3357188cedfb777e394da8700cb860e54cbc",
+  "key_notch_basis_sha256": "838dc000296f3d01fca0b6a748cdf7e90b77139fcacaf6fa3ab73057e62ff611",
+  "hardware_space_checks": [
+    {
+      "feature": "power_clip_axisY_1/shaft",
+      "jaw_adjustment_Y_mm": -0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        46.45,
+        -5.0,
+        17.95,
+        48.55,
+        3.3000000000000007,
+        20.05
+      ]
+    },
+    {
+      "feature": "power_clip_axisY_1/head",
+      "jaw_adjustment_Y_mm": -0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        45.4,
+        -6.6,
+        16.9,
+        49.6,
+        -5.0,
+        21.1
+      ]
+    },
+    {
+      "feature": "power_clip_axisY_1/nut",
+      "jaw_adjustment_Y_mm": -0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        45.05,
+        -0.25,
+        16.55,
+        49.95,
+        1.35,
+        21.45
+      ]
+    },
+    {
+      "feature": "power_clip_axisY_2/shaft",
+      "jaw_adjustment_Y_mm": -0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        86.75,
+        -5.0,
+        17.95,
+        88.85,
+        3.3000000000000007,
+        20.05
+      ]
+    },
+    {
+      "feature": "power_clip_axisY_2/head",
+      "jaw_adjustment_Y_mm": -0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        85.7,
+        -6.6,
+        16.9,
+        89.89999999999999,
+        -5.0,
+        21.1
+      ]
+    },
+    {
+      "feature": "power_clip_axisY_2/nut",
+      "jaw_adjustment_Y_mm": -0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        85.35,
+        -0.25,
+        16.55,
+        90.25,
+        1.35,
+        21.45
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_1/shaft",
+      "jaw_adjustment_Y_mm": -0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        56.95,
+        45.95,
+        2.3999999999999986,
+        59.05,
+        48.05,
+        10.7
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_1/head",
+      "jaw_adjustment_Y_mm": -0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        55.9,
+        44.9,
+        10.7,
+        60.1,
+        49.1,
+        12.299999999999999
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_1/nut",
+      "jaw_adjustment_Y_mm": -0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        55.55,
+        44.55,
+        5.1,
+        60.45,
+        49.45,
+        6.7
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_2/shaft",
+      "jaw_adjustment_Y_mm": -0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        80.95,
+        45.95,
+        2.3999999999999986,
+        83.05,
+        48.05,
+        10.7
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_2/head",
+      "jaw_adjustment_Y_mm": -0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        79.9,
+        44.9,
+        10.7,
+        84.1,
+        49.1,
+        12.299999999999999
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_2/nut",
+      "jaw_adjustment_Y_mm": -0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        79.55,
+        44.55,
+        5.1,
+        84.45,
+        49.45,
+        6.7
+      ]
+    },
+    {
+      "feature": "power_clip_axisY_1/shaft",
+      "jaw_adjustment_Y_mm": 0.0,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        46.45,
+        -5.0,
+        17.95,
+        48.55,
+        3.3000000000000007,
+        20.05
+      ]
+    },
+    {
+      "feature": "power_clip_axisY_1/head",
+      "jaw_adjustment_Y_mm": 0.0,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        45.4,
+        -6.6,
+        16.9,
+        49.6,
+        -5.0,
+        21.1
+      ]
+    },
+    {
+      "feature": "power_clip_axisY_1/nut",
+      "jaw_adjustment_Y_mm": 0.0,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        45.05,
+        -0.25,
+        16.55,
+        49.95,
+        1.35,
+        21.45
+      ]
+    },
+    {
+      "feature": "power_clip_axisY_2/shaft",
+      "jaw_adjustment_Y_mm": 0.0,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        86.75,
+        -5.0,
+        17.95,
+        88.85,
+        3.3000000000000007,
+        20.05
+      ]
+    },
+    {
+      "feature": "power_clip_axisY_2/head",
+      "jaw_adjustment_Y_mm": 0.0,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        85.7,
+        -6.6,
+        16.9,
+        89.89999999999999,
+        -5.0,
+        21.1
+      ]
+    },
+    {
+      "feature": "power_clip_axisY_2/nut",
+      "jaw_adjustment_Y_mm": 0.0,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        85.35,
+        -0.25,
+        16.55,
+        90.25,
+        1.35,
+        21.45
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_1/shaft",
+      "jaw_adjustment_Y_mm": 0.0,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        56.95,
+        45.95,
+        2.3999999999999986,
+        59.05,
+        48.05,
+        10.7
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_1/head",
+      "jaw_adjustment_Y_mm": 0.0,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        55.9,
+        44.9,
+        10.7,
+        60.1,
+        49.1,
+        12.299999999999999
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_1/nut",
+      "jaw_adjustment_Y_mm": 0.0,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        55.55,
+        44.55,
+        5.1,
+        60.45,
+        49.45,
+        6.7
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_2/shaft",
+      "jaw_adjustment_Y_mm": 0.0,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        80.95,
+        45.95,
+        2.3999999999999986,
+        83.05,
+        48.05,
+        10.7
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_2/head",
+      "jaw_adjustment_Y_mm": 0.0,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        79.9,
+        44.9,
+        10.7,
+        84.1,
+        49.1,
+        12.299999999999999
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_2/nut",
+      "jaw_adjustment_Y_mm": 0.0,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        79.55,
+        44.55,
+        5.1,
+        84.45,
+        49.45,
+        6.7
+      ]
+    },
+    {
+      "feature": "power_clip_axisY_1/shaft",
+      "jaw_adjustment_Y_mm": 0.050000099999998326,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        46.45,
+        -5.0,
+        17.95,
+        48.55,
+        3.3000000000000007,
+        20.05
+      ]
+    },
+    {
+      "feature": "power_clip_axisY_1/head",
+      "jaw_adjustment_Y_mm": 0.050000099999998326,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        45.4,
+        -6.6,
+        16.9,
+        49.6,
+        -5.0,
+        21.1
+      ]
+    },
+    {
+      "feature": "power_clip_axisY_1/nut",
+      "jaw_adjustment_Y_mm": 0.050000099999998326,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        45.05,
+        -0.25,
+        16.55,
+        49.95,
+        1.35,
+        21.45
+      ]
+    },
+    {
+      "feature": "power_clip_axisY_2/shaft",
+      "jaw_adjustment_Y_mm": 0.050000099999998326,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        86.75,
+        -5.0,
+        17.95,
+        88.85,
+        3.3000000000000007,
+        20.05
+      ]
+    },
+    {
+      "feature": "power_clip_axisY_2/head",
+      "jaw_adjustment_Y_mm": 0.050000099999998326,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        85.7,
+        -6.6,
+        16.9,
+        89.89999999999999,
+        -5.0,
+        21.1
+      ]
+    },
+    {
+      "feature": "power_clip_axisY_2/nut",
+      "jaw_adjustment_Y_mm": 0.050000099999998326,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        85.35,
+        -0.25,
+        16.55,
+        90.25,
+        1.35,
+        21.45
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_1/shaft",
+      "jaw_adjustment_Y_mm": 0.050000099999998326,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        56.95,
+        45.95,
+        2.3999999999999986,
+        59.05,
+        48.05,
+        10.7
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_1/head",
+      "jaw_adjustment_Y_mm": 0.050000099999998326,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        55.9,
+        44.9,
+        10.7,
+        60.1,
+        49.1,
+        12.299999999999999
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_1/nut",
+      "jaw_adjustment_Y_mm": 0.050000099999998326,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        55.55,
+        44.55,
+        5.1,
+        60.45,
+        49.45,
+        6.7
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_2/shaft",
+      "jaw_adjustment_Y_mm": 0.050000099999998326,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        80.95,
+        45.95,
+        2.3999999999999986,
+        83.05,
+        48.05,
+        10.7
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_2/head",
+      "jaw_adjustment_Y_mm": 0.050000099999998326,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        79.9,
+        44.9,
+        10.7,
+        84.1,
+        49.1,
+        12.299999999999999
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_2/nut",
+      "jaw_adjustment_Y_mm": 0.050000099999998326,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        79.55,
+        44.55,
+        5.1,
+        84.45,
+        49.45,
+        6.7
+      ]
+    },
+    {
+      "feature": "power_clip_axisY_1/shaft",
+      "jaw_adjustment_Y_mm": 0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        46.45,
+        -5.0,
+        17.95,
+        48.55,
+        3.3000000000000007,
+        20.05
+      ]
+    },
+    {
+      "feature": "power_clip_axisY_1/head",
+      "jaw_adjustment_Y_mm": 0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        45.4,
+        -6.6,
+        16.9,
+        49.6,
+        -5.0,
+        21.1
+      ]
+    },
+    {
+      "feature": "power_clip_axisY_1/nut",
+      "jaw_adjustment_Y_mm": 0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        45.05,
+        -0.25,
+        16.55,
+        49.95,
+        1.35,
+        21.45
+      ]
+    },
+    {
+      "feature": "power_clip_axisY_2/shaft",
+      "jaw_adjustment_Y_mm": 0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        86.75,
+        -5.0,
+        17.95,
+        88.85,
+        3.3000000000000007,
+        20.05
+      ]
+    },
+    {
+      "feature": "power_clip_axisY_2/head",
+      "jaw_adjustment_Y_mm": 0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        85.7,
+        -6.6,
+        16.9,
+        89.89999999999999,
+        -5.0,
+        21.1
+      ]
+    },
+    {
+      "feature": "power_clip_axisY_2/nut",
+      "jaw_adjustment_Y_mm": 0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        85.35,
+        -0.25,
+        16.55,
+        90.25,
+        1.35,
+        21.45
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_1/shaft",
+      "jaw_adjustment_Y_mm": 0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        56.95,
+        45.95,
+        2.3999999999999986,
+        59.05,
+        48.05,
+        10.7
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_1/head",
+      "jaw_adjustment_Y_mm": 0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        55.9,
+        44.9,
+        10.7,
+        60.1,
+        49.1,
+        12.299999999999999
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_1/nut",
+      "jaw_adjustment_Y_mm": 0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        55.55,
+        44.55,
+        5.1,
+        60.45,
+        49.45,
+        6.7
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_2/shaft",
+      "jaw_adjustment_Y_mm": 0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        80.95,
+        45.95,
+        2.3999999999999986,
+        83.05,
+        48.05,
+        10.7
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_2/head",
+      "jaw_adjustment_Y_mm": 0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        79.9,
+        44.9,
+        10.7,
+        84.1,
+        49.1,
+        12.299999999999999
+      ]
+    },
+    {
+      "feature": "rear_jaw_axisZ_2/nut",
+      "jaw_adjustment_Y_mm": 0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        79.55,
+        44.55,
+        5.1,
+        84.45,
+        49.45,
+        6.7
+      ]
+    }
+  ],
+  "driver_access_space_checks": [
+    {
+      "feature": "tool/power_clip_axisY_1",
+      "jaw_adjustment_Y_mm": -0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        45.4,
+        -21.61,
+        16.9,
+        49.6,
+        -6.61,
+        21.1
+      ]
+    },
+    {
+      "feature": "tool/power_clip_axisY_2",
+      "jaw_adjustment_Y_mm": -0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        85.7,
+        -21.61,
+        16.9,
+        89.89999999999999,
+        -6.61,
+        21.1
+      ]
+    },
+    {
+      "feature": "tool/rear_jaw_axisZ_1",
+      "jaw_adjustment_Y_mm": -0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        55.9,
+        44.9,
+        12.309999999999999,
+        60.1,
+        49.1,
+        27.31
+      ]
+    },
+    {
+      "feature": "tool/rear_jaw_axisZ_2",
+      "jaw_adjustment_Y_mm": -0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        79.9,
+        44.9,
+        12.309999999999999,
+        84.1,
+        49.1,
+        27.31
+      ]
+    },
+    {
+      "feature": "tool/power_clip_axisY_1",
+      "jaw_adjustment_Y_mm": 0.0,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        45.4,
+        -21.61,
+        16.9,
+        49.6,
+        -6.61,
+        21.1
+      ]
+    },
+    {
+      "feature": "tool/power_clip_axisY_2",
+      "jaw_adjustment_Y_mm": 0.0,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        85.7,
+        -21.61,
+        16.9,
+        89.89999999999999,
+        -6.61,
+        21.1
+      ]
+    },
+    {
+      "feature": "tool/rear_jaw_axisZ_1",
+      "jaw_adjustment_Y_mm": 0.0,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        55.9,
+        44.9,
+        12.309999999999999,
+        60.1,
+        49.1,
+        27.31
+      ]
+    },
+    {
+      "feature": "tool/rear_jaw_axisZ_2",
+      "jaw_adjustment_Y_mm": 0.0,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        79.9,
+        44.9,
+        12.309999999999999,
+        84.1,
+        49.1,
+        27.31
+      ]
+    },
+    {
+      "feature": "tool/power_clip_axisY_1",
+      "jaw_adjustment_Y_mm": 0.050000099999998326,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        45.4,
+        -21.61,
+        16.9,
+        49.6,
+        -6.61,
+        21.1
+      ]
+    },
+    {
+      "feature": "tool/power_clip_axisY_2",
+      "jaw_adjustment_Y_mm": 0.050000099999998326,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        85.7,
+        -21.61,
+        16.9,
+        89.89999999999999,
+        -6.61,
+        21.1
+      ]
+    },
+    {
+      "feature": "tool/rear_jaw_axisZ_1",
+      "jaw_adjustment_Y_mm": 0.050000099999998326,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        55.9,
+        44.9,
+        12.309999999999999,
+        60.1,
+        49.1,
+        27.31
+      ]
+    },
+    {
+      "feature": "tool/rear_jaw_axisZ_2",
+      "jaw_adjustment_Y_mm": 0.050000099999998326,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        79.9,
+        44.9,
+        12.309999999999999,
+        84.1,
+        49.1,
+        27.31
+      ]
+    },
+    {
+      "feature": "tool/power_clip_axisY_1",
+      "jaw_adjustment_Y_mm": 0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        45.4,
+        -21.61,
+        16.9,
+        49.6,
+        -6.61,
+        21.1
+      ]
+    },
+    {
+      "feature": "tool/power_clip_axisY_2",
+      "jaw_adjustment_Y_mm": 0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        85.7,
+        -21.61,
+        16.9,
+        89.89999999999999,
+        -6.61,
+        21.1
+      ]
+    },
+    {
+      "feature": "tool/rear_jaw_axisZ_1",
+      "jaw_adjustment_Y_mm": 0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        55.9,
+        44.9,
+        12.309999999999999,
+        60.1,
+        49.1,
+        27.31
+      ]
+    },
+    {
+      "feature": "tool/rear_jaw_axisZ_2",
+      "jaw_adjustment_Y_mm": 0.5,
+      "part_overlap_mm3": {
+        "cradle": 0.0,
+        "power_clip": 0.0,
+        "rear_jaw": 0.0
+      },
+      "source_battery_overlap_mm3": 0.0,
+      "bounds_product_mm": [
+        79.9,
+        44.9,
+        12.309999999999999,
+        84.1,
+        49.1,
+        27.31
+      ]
+    }
+  ],
+  "thread_projection_checks": [
+    {
+      "fixture": "power_clip_axisY_1",
+      "nominal_grip_mm": 4.75,
+      "shortest_screw_projection_beyond_maximum_budget_nut_mm": 1.35,
+      "scope": "Nominal rigid grip and dimensioned hardware envelopes only; no thread-strength, clamp, crush or process tolerance proof."
+    },
+    {
+      "fixture": "power_clip_axisY_2",
+      "nominal_grip_mm": 4.75,
+      "shortest_screw_projection_beyond_maximum_budget_nut_mm": 1.35,
+      "scope": "Nominal rigid grip and dimensioned hardware envelopes only; no thread-strength, clamp, crush or process tolerance proof."
+    },
+    {
+      "fixture": "rear_jaw_axisZ_1",
+      "nominal_grip_mm": 4.0,
+      "shortest_screw_projection_beyond_maximum_budget_nut_mm": 2.1,
+      "scope": "Nominal rigid grip and dimensioned hardware envelopes only; no thread-strength, clamp, crush or process tolerance proof."
+    },
+    {
+      "fixture": "rear_jaw_axisZ_2",
+      "nominal_grip_mm": 4.0,
+      "shortest_screw_projection_beyond_maximum_budget_nut_mm": 2.1,
+      "scope": "Nominal rigid grip and dimensioned hardware envelopes only; no thread-strength, clamp, crush or process tolerance proof."
+    }
+  ],
+  "STEP_export_roundtrip_checks": [
+    {
+      "file": "cradle.step",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 4904.310561709241,
+      "volume_error_mm3": 1.0913936421275139e-11
+    },
+    {
+      "file": "power_clip.step",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 131.71887710495886,
+      "volume_error_mm3": 9.947598300641403e-13
+    },
+    {
+      "file": "rear_jaw.step",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 793.7044263153222,
+      "volume_error_mm3": 7.958078640513122e-13
+    },
+    {
+      "file": "cradle_assembly.step",
+      "valid": true,
+      "solid_count": 3,
+      "volume_mm3": 5829.733865129517,
+      "volume_error_mm3": 1.7280399333685637e-11
+    }
+  ],
+  "assembly_STEP_scope": "Three authored holder parts only; hardware is checked by rounded envelopes and not exported as manufacturer CAD."
+}
