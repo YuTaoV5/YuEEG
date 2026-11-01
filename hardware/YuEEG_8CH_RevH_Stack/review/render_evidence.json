@@ -14,14 +14,15 @@
   },
   {
     "board": "digital",
-    "source_sha256": "e62dbc80c4811195aaf47eaec0ec8931b466e4a04353b59568df75b37cee4926",
+    "source_sha256": "157ffd1e0412ff2283224bd3119d5567486dd6dca845c1c37716d3a30bcbd80c",
     "side": "bottom",
-    "local_model_path_substitutions": 11,
+    "local_model_path_substitutions": 12,
     "referenced_local_model_sha256": {
       "ESP32-S3-WROOM-1U.step": "7be82bdafece2891b297546eb0643ff254e3d8161074ebdc972e0d78e79a4bdb",
       "HRO_TYPE_C_31_M_12_original_envelope.wrl": "f80feb762533f717c6b56387bbc82150dbcc9875c31b10cff8c323e9577f9bd9",
       "JST_S4B_PH_TH_envelope.wrl": "b84f059d595a1877fef5360514bcd1b5e237c7dbc1c6a9991ccfd2ad6ad7a0f9",
       "KINGCONN_7TFCN_FA_1010_C_envelope.wrl": "c2906f2408edeafdd6a2583e5a82a84baac0aebefed0ca5d9d11d7047df5271d",
+      "Murata_SCH16T_SOIC24_nominal.wrl": "8fe7433239f55bbb74aeab46290b551a1d569a5fbbfbaffa5bcf93604cba8e03",
       "OCN_OK_14F024_04_envelope.wrl": "f0dd16e16aa80a33862c9a7fecc44ccda37b163ed3de59f91069d5736f16d2da",
       "SKRTLBE010_envelope.wrl": "fe1db42ad3ad6c383225d37d59a836b2b1a8b24da797db0c3e9cecd12d5d027c",
       "TDK_SPM4015_LR_envelope.wrl": "06ad208ebc2364bc11584af8d96735e0cf38baa16cfbc1fe35931df61f800d2b",
@@ -32,14 +33,15 @@
   },
   {
     "board": "digital",
-    "source_sha256": "e62dbc80c4811195aaf47eaec0ec8931b466e4a04353b59568df75b37cee4926",
+    "source_sha256": "157ffd1e0412ff2283224bd3119d5567486dd6dca845c1c37716d3a30bcbd80c",
     "side": "top",
-    "local_model_path_substitutions": 11,
+    "local_model_path_substitutions": 12,
     "referenced_local_model_sha256": {
       "ESP32-S3-WROOM-1U.step": "7be82bdafece2891b297546eb0643ff254e3d8161074ebdc972e0d78e79a4bdb",
       "HRO_TYPE_C_31_M_12_original_envelope.wrl": "f80feb762533f717c6b56387bbc82150dbcc9875c31b10cff8c323e9577f9bd9",
       "JST_S4B_PH_TH_envelope.wrl": "b84f059d595a1877fef5360514bcd1b5e237c7dbc1c6a9991ccfd2ad6ad7a0f9",
       "KINGCONN_7TFCN_FA_1010_C_envelope.wrl": "c2906f2408edeafdd6a2583e5a82a84baac0aebefed0ca5d9d11d7047df5271d",
+      "Murata_SCH16T_SOIC24_nominal.wrl": "8fe7433239f55bbb74aeab46290b551a1d569a5fbbfbaffa5bcf93604cba8e03",
       "OCN_OK_14F024_04_envelope.wrl": "f0dd16e16aa80a33862c9a7fecc44ccda37b163ed3de59f91069d5736f16d2da",
       "SKRTLBE010_envelope.wrl": "fe1db42ad3ad6c383225d37d59a836b2b1a8b24da797db0c3e9cecd12d5d027c",
       "TDK_SPM4015_LR_envelope.wrl": "06ad208ebc2364bc11584af8d96735e0cf38baa16cfbc1fe35931df61f800d2b",
@@ -50,11 +52,24 @@
   },
   {
     "board": "power",
-    "source_sha256": "772131212bf444de40b23215ee12a9c742a6c3d58acb581afa2b7b963272e4f9",
+    "source_sha256": "07b9161688a09dfbe1dbef2a7237308e407affba4f59a0fe9e27f99c976f8695",
     "side": "top",
-    "local_model_path_substitutions": 2,
+    "local_model_path_substitutions": 4,
     "referenced_local_model_sha256": {
       "JST_S4B_PH_SM4_envelope.wrl": "33e2aa6f578fe34426f520b2b3f83a0a894f6ceda732164440ea7ac835543407",
+      "MillMax_0906_1_midstroke.wrl": "a10a22e42a9f57529a8fb38bdb5e7e9e5686bc97fe2ffbad81060745b0f53083",
+      "TDK_SPM4015_LR_envelope.wrl": "06ad208ebc2364bc11584af8d96735e0cf38baa16cfbc1fe35931df61f800d2b"
+    },
+    "scope": "Rendering copy differs only by absolute local model paths. Main PCB/library keep project-relative paths. Missing models in model_audit.json remain absent."
+  },
+  {
+    "board": "power",
+    "source_sha256": "07b9161688a09dfbe1dbef2a7237308e407affba4f59a0fe9e27f99c976f8695",
+    "side": "bottom",
+    "local_model_path_substitutions": 4,
+    "referenced_local_model_sha256": {
+      "JST_S4B_PH_SM4_envelope.wrl": "33e2aa6f578fe34426f520b2b3f83a0a894f6ceda732164440ea7ac835543407",
+      "MillMax_0906_1_midstroke.wrl": "a10a22e42a9f57529a8fb38bdb5e7e9e5686bc97fe2ffbad81060745b0f53083",
       "TDK_SPM4015_LR_envelope.wrl": "06ad208ebc2364bc11584af8d96735e0cf38baa16cfbc1fe35931df61f800d2b"
     },
     "scope": "Rendering copy differs only by absolute local model paths. Main PCB/library keep project-relative paths. Missing models in model_audit.json remain absent."

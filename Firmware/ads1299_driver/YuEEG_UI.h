@@ -5,14 +5,24 @@
 #pragma once
 #include <SD_MMC.h>
 #include <driver/spi_master.h>
+#include "YuEEG_SPI3.h"
 #include <esp_heap_caps.h>
 #include <freertos/stream_buffer.h>
 std::atomic<uint32_t> sdDrops{0},sdFrames{0};
+std::atomic<uint32_t> sdMotionDrops{0},sdMotionFrames{0};
 std::atomic<bool> sdReady{false},panelReady{false};
 std::atomic<uint32_t> latestSequence{0};
 StreamBufferHandle_t backupStream=nullptr;
 StaticStreamBuffer_t backupControl;
+StreamBufferHandle_t motionBackupStream=nullptr;
+StaticStreamBuffer_t motionBackupControl;
 constexpr size_t BACKUP_BYTES=128*1024;
+constexpr size_t MOTION_BACKUP_BYTES=64*1024;
+void backupMotionFrame(const MotionFrame& f){
+ if(!sdReady)return;
+ if(!motionBackupStream||xStreamBufferSpacesAvailable(motionBackupStream)<MOTION_FRAME_BYTES){++sdMotionDrops;return;}
+ if(xStreamBufferSend(motionBackupStream,f.bytes,MOTION_FRAME_BYTES,0)!=MOTION_FRAME_BYTES)++sdMotionDrops;
+}
 void backupFrame(const RawFrame& f){
  latestSequence=uint32_t(f.bytes[8])|(uint32_t(f.bytes[9])<<8)|(uint32_t(f.bytes[10])<<16)|(uint32_t(f.bytes[11])<<24);
  if(!sdReady)return;
@@ -23,11 +33,11 @@ void sdTask(void*){
  // Dedicated SDMMC 1-bit bus; no formatting and no access to ADS SPI2.
  pinMode(48,INPUT);
  if(!SD_MMC.setPins(18,21,47)||!SD_MMC.begin("/sdcard",true,false,20000))vTaskDelete(nullptr);
- File file;uint32_t index=1,lastFlush=millis();uint8_t block[4000];
+ File file,motionFile;uint32_t index=1,motionIndex=1,lastFlush=millis();uint8_t block[4096];
  sdReady=true;
  for(;;){
   size_t available=xStreamBufferBytesAvailable(backupStream);
-  if(available>=sizeof(block)||(!mode&&available)||uint32_t(millis()-lastFlush)>1000){
+  if(available>=4000||(!mode&&available)||uint32_t(millis()-lastFlush)>1000){
    size_t take=min(available,sizeof(block));take-=take%FRAME_BYTES;
    if(take){
     if(!file){char name[32];while(index<=999999){snprintf(name,sizeof(name),"/eeg_%06lu.yee",(unsigned long)index++);if(!SD_MMC.exists(name)){file=SD_MMC.open(name,FILE_WRITE);break;}}}
@@ -37,13 +47,26 @@ void sdTask(void*){
     if(written!=got){sdDrops+=(got-written+FRAME_BYTES-1)/FRAME_BYTES;sdReady=false;break;}
     sdFrames+=got/FRAME_BYTES;
    }
-   if(uint32_t(millis()-lastFlush)>1000){if(file)file.flush();lastFlush=millis();}
    if(!mode&&!xStreamBufferBytesAvailable(backupStream)&&file){file.flush();file.close();}
   }
+  size_t motionAvailable=motionBackupStream?xStreamBufferBytesAvailable(motionBackupStream):0;
+  if(motionAvailable>=sizeof(block)||(!imuRunning&&motionAvailable)||uint32_t(millis()-lastFlush)>1000){
+   size_t take=min(motionAvailable,sizeof(block));take-=take%MOTION_FRAME_BYTES;
+   if(take){
+    if(!motionFile){char name[32];while(motionIndex<=999999){snprintf(name,sizeof(name),"/imu_%06lu.yim",(unsigned long)motionIndex++);if(!SD_MMC.exists(name)){motionFile=SD_MMC.open(name,FILE_WRITE);break;}}}
+    if(!motionFile){sdReady=false;sdMotionDrops+=take/MOTION_FRAME_BYTES;break;}
+    size_t got=xStreamBufferReceive(motionBackupStream,block,take,0),written=motionFile.write(block,got);
+    if(written!=got){sdMotionDrops+=(got-written+MOTION_FRAME_BYTES-1)/MOTION_FRAME_BYTES;sdReady=false;break;}
+    sdMotionFrames+=got/MOTION_FRAME_BYTES;
+   }
+   if(motionFile&&!imuRunning&&motionBackupStream&&!xStreamBufferBytesAvailable(motionBackupStream)){motionFile.flush();motionFile.close();}
+  }
+  if(uint32_t(millis()-lastFlush)>1000){if(file)file.flush();if(motionFile)motionFile.flush();lastFlush=millis();}
   vTaskDelay(pdMS_TO_TICKS(20));
  }
  sdDrops+=xStreamBufferBytesAvailable(backupStream)/FRAME_BYTES;
- if(file)file.close();SD_MMC.end();vTaskDelete(nullptr);
+ if(motionBackupStream)sdMotionDrops+=xStreamBufferBytesAvailable(motionBackupStream)/MOTION_FRAME_BYTES;
+ if(file)file.close();if(motionFile)motionFile.close();SD_MMC.end();vTaskDelete(nullptr);
 }
 constexpr uint16_t PANEL_WIDTH=368, PANEL_HEIGHT=448, PANEL_X_GAP=16;
 spi_device_handle_t panel=nullptr;
@@ -72,23 +95,26 @@ bool panelLine(uint16_t y,const char* text,uint16_t* pixels){
  memset(pixels,0,width*height*2);
  for(int i=0;text[i]&&i<20;++i){uint16_t g=glyph(text[i]);for(int r=0;r<5;++r)for(int c=0;c<3;++c)if(g&(1<<(14-r*3-c)))
   for(int dy=0;dy<scale;++dy)for(int dx=0;dx<scale;++dx)pixels[(r*scale+dy)*width+i*12+c*scale+dx]=0xFFFF;}
- return panelWindow(0,y,width,height)&&panelWrite(0x2C,pixels,width*height*2,true);
+ for(int row=0;row<height;row+=SHARED_SPI3_PIXEL_ROWS){
+  int h=min(int(SHARED_SPI3_PIXEL_ROWS),height-row);
+  if(!panelWindow(0,y+row,width,h)||!panelWrite(0x2C,pixels+row*width,width*h*2,true))return false;
+  taskYIELD();
+ }
+ return true;
 }
 void panelTask(void*){
  // Configure every input before turning on the load switch / level translator.
  digitalWrite(42,LOW);pinMode(42,OUTPUT);digitalWrite(17,LOW);pinMode(17,OUTPUT);
- for(int gpio:{2,8,9,14,15,16}){digitalWrite(gpio,gpio==2?HIGH:LOW);pinMode(gpio,OUTPUT);}
- spi_bus_config_t bus{};bus.sclk_io_num=8;bus.mosi_io_num=9;bus.miso_io_num=14;bus.quadwp_io_num=15;bus.quadhd_io_num=16;bus.max_transfer_sz=PANEL_WIDTH*18*2;bus.flags=SPICOMMON_BUSFLAG_MASTER|SPICOMMON_BUSFLAG_QUAD;
- spi_device_interface_config_t dev{};dev.clock_speed_hz=10000000;dev.mode=0;dev.spics_io_num=2;dev.queue_size=1;dev.command_bits=8;dev.address_bits=24;dev.flags=SPI_DEVICE_HALFDUPLEX;
+ spi_device_interface_config_t dev{};dev.clock_speed_hz=10000000;dev.mode=0;dev.spics_io_num=SPI3_PANEL_CS;dev.queue_size=1;dev.command_bits=8;dev.address_bits=24;dev.flags=SPI_DEVICE_HALFDUPLEX;
  uint16_t* pixels=(uint16_t*)heap_caps_malloc(PANEL_WIDTH*18*2,MALLOC_CAP_DMA|MALLOC_CAP_INTERNAL);
- if(!pixels||spi_bus_initialize(SPI3_HOST,&bus,SPI_DMA_CH_AUTO)!=ESP_OK||spi_bus_add_device(SPI3_HOST,&dev,&panel)!=ESP_OK){if(pixels)free(pixels);vTaskDelete(nullptr);}
+ if(!pixels||!attachSharedSpi3(dev,&panel)){if(pixels)free(pixels);vTaskDelete(nullptr);}
  digitalWrite(42,HIGH);vTaskDelay(pdMS_TO_TICKS(20));digitalWrite(17,HIGH);vTaskDelay(pdMS_TO_TICKS(150));
  bool ok=panelReg(0xFE,0x00)&&panelWrite(0x11,nullptr,0);vTaskDelay(pdMS_TO_TICKS(120));
  ok=ok&&panelReg(0xFE,0x00)&&panelReg(0xC4,0x80)&&panelReg(0x3A,0x55)
    &&panelReg(0x36,0)&&panelReg(0x53,0x20)&&panelReg(0x63,0xFF)
    &&panelWrite(0x34,nullptr,0)&&panelReg(0x51,0x40); // TE disabled, low brightness
  memset(pixels,0,PANEL_WIDTH*18*2);
- for(int y=0;ok&&y<PANEL_HEIGHT;y+=18){int h=min(18,int(PANEL_HEIGHT)-y);ok=panelWindow(0,y,PANEL_WIDTH,h)&&panelWrite(0x2C,pixels,PANEL_WIDTH*h*2,true);}
+ for(int y=0;ok&&y<PANEL_HEIGHT;y+=SHARED_SPI3_PIXEL_ROWS){int h=min(int(SHARED_SPI3_PIXEL_ROWS),int(PANEL_HEIGHT)-y);ok=panelWindow(0,y,PANEL_WIDTH,h)&&panelWrite(0x2C,pixels,PANEL_WIDTH*h*2,true);}
  ok=ok&&panelWrite(0x29,nullptr,0);vTaskDelay(pdMS_TO_TICKS(60));
  ok=ok&&panelReg(0x58,0x07);vTaskDelay(pdMS_TO_TICKS(10));panelReady=ok;
  while(ok){char text[24];
@@ -101,17 +127,20 @@ void panelTask(void*){
   snprintf(text,sizeof(text),"SD DROP %lu",(unsigned long)sdDrops.load());ok=ok&&panelLine(252,text,pixels);
   snprintf(text,sizeof(text),"ADC MISS %lu",(unsigned long)missed.load());ok=ok&&panelLine(288,text,pixels);
   batteryText(text,sizeof(text));ok=ok&&panelLine(324,text,pixels);
-  ok=ok&&panelLine(360,"REC START / STOP",pixels);vTaskDelay(pdMS_TO_TICKS(1000));
+  uint16_t mf=currentMotionFlags();snprintf(text,sizeof(text),"IMU %s",!imuRunning?"OFF":(mf&YuEEGMotion::SENSOR_FAULT)?"FAULT":(mf&YuEEGMotion::ALIGNING)?"ALIGN":(mf&YuEEGMotion::TRAJECTORY_VALID)?"RELATIVE 3S":(mf&YuEEGMotion::ATTITUDE_VALID)?"ATTITUDE":"NEED ALIGN");ok=ok&&panelLine(360,text,pixels);
+  ok=ok&&panelLine(400,"REC START / STOP",pixels);vTaskDelay(pdMS_TO_TICKS(1000));
  }
  panelReady=false;digitalWrite(17,LOW);digitalWrite(42,LOW);
- spi_bus_remove_device(panel);spi_bus_free(SPI3_HOST);free(pixels);vTaskDelete(nullptr);
+ spi_bus_remove_device(panel);free(pixels);vTaskDelete(nullptr);
 }
 void startUI(){
  pinMode(41,INPUT);
  auto* memory=(uint8_t*)heap_caps_malloc(BACKUP_BYTES+1,MALLOC_CAP_SPIRAM|MALLOC_CAP_8BIT);
  if(memory)backupStream=xStreamBufferCreateStatic(BACKUP_BYTES,FRAME_BYTES,memory,&backupControl);
+ auto* motionMemory=(uint8_t*)heap_caps_malloc(MOTION_BACKUP_BYTES+1,MALLOC_CAP_SPIRAM|MALLOC_CAP_8BIT);
+ if(motionMemory)motionBackupStream=xStreamBufferCreateStatic(MOTION_BACKUP_BYTES,MOTION_FRAME_BYTES,motionMemory,&motionBackupControl);
  if(backupStream)xTaskCreatePinnedToCore(sdTask,"sd_backup",6144,nullptr,1,nullptr,0);
- xTaskCreatePinnedToCore(panelTask,"amoled",4096,nullptr,1,nullptr,0);
+ if(beginSharedSpi3())xTaskCreatePinnedToCore(panelTask,"amoled",4096,nullptr,1,nullptr,0);
 }
 void pollRecButton(){
  static bool last=HIGH,stable=HIGH;static uint32_t changed=0;bool now=digitalRead(41);

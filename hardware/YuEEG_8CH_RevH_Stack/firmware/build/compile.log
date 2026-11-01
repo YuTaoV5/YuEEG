@@ -1,5 +1,5 @@
-Sketch uses 779901 bytes (24%) of program storage space. Maximum is 3145728 bytes.
-Global variables use 46444 bytes (14%) of dynamic memory, leaving 281236 bytes for local variables. Maximum is 327680 bytes.
+Sketch uses 809193 bytes (25%) of program storage space. Maximum is 3145728 bytes.
+Global variables use 46592 bytes (14%) of dynamic memory, leaving 281088 bytes for local variables. Maximum is 327680 bytes.
 
 Used library Version Path
 SPI          2.0.0   C:\Users\YuTao\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.11\libraries\SPI

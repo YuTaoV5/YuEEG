@@ -1,0 +1,18 @@
+{
+  "status": "NOMINAL_VISUAL_MODEL_NOT_MANUFACTURER_CAD",
+  "source_pdf_sha256": "c513b77f7d40a2771cf37a8f5c7c42654f045382fbd3958bd68f38c0efe3f438",
+  "source_page": 19,
+  "body_nominal_mm": [
+    9.8,
+    11.8,
+    2.87
+  ],
+  "nominal_total_lead_span_mm": 13.4,
+  "nominal_lead_width_pitch_mm": [
+    0.4,
+    0.8
+  ],
+  "height_maximum_drawing_mm": 3.0,
+  "scope": "Body dimensions transposed into the recommended footprint axes. Rectangular3-piece leads are an illustrative approximation; no exact gullwing bend, mold-flash, metal-burr or manufacturing tolerance solid. No assembly clearance certification.",
+  "wrl_sha256": "8fe7433239f55bbb74aeab46290b551a1d569a5fbbfbaffa5bcf93604cba8e03"
+}

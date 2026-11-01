@@ -1,25 +1,70 @@
 {
   "status": "REV_H_DEVELOPMENT_NOT_FLASHED_OR_RELEASED",
   "battery": "Sony NP-BX1 single cell; loaded-voltage telemetry before boost",
-  "timestamp": "2026-10-30T20:58:39.755857+08:00",
+  "timestamp": "2026-11-01T10:06:02.411635+08:00",
   "fqbn": "esp32:esp32:esp32s3:FlashSize=16M,FlashMode=qio,PSRAM=opi,USBMode=hwcdc,CDCOnBoot=cdc,PartitionScheme=app3M_fat9M_16MB",
   "arduino_esp32_core": "2.0.11",
   "source_sha256": {
-    "YuEEG.h": "7f48f7395040ff1bf3f63792952dd46bcd48152591a84f39717bf305747e9031",
+    "YuEEG.h": "dde1fcec049343e1ea99f96f740136a2f97c1b06a3cea458b36c150066ea25a4",
     "YuEEG_Battery.h": "6001af38c19b72576b84f9dd2a7354768ef94bdb08fc181dfbb4dde96efa1471",
-    "YuEEG_UI.h": "707290f8539d2c634e44751b0214d799ad65593c2d34a495976c12fd58e2ec7a",
-    "ads1299_driver.ino": "c06fdc00da6d1214178b67520373361d29e7de04c28974112ffeaab52be07cc7"
+    "YuEEG_Motion.h": "fa9a0790df2227783b39754d313d892885f235454794478d0271518eed20dbff",
+    "YuEEG_MotionGate.h": "170677a9dea51af9da65479c2d155dd8ed99ff080b14d9c7911c308c9b2195a8",
+    "YuEEG_MotionWire.h": "64cb2ca3e5e9be3595ec5360c727ff51cc6ffcfa30910a3163df6a180f13b37c",
+    "YuEEG_RelativeMotion.h": "52d8f06c2d572c2157994e433739c1674bef8112f52c596c83ca670dc2b1c1dc",
+    "YuEEG_SafeSpi.h": "8ca73cd97530d3132e26af984955e95cdc4096e80194be979891b069565fb5c8",
+    "YuEEG_SCH16T.h": "3a5c6364fae41a8cf6fda267fe93fe4ec08fa9ca3ee35fe7b1d4f375f18c1c02",
+    "YuEEG_SPI3.h": "c3a65f9bea12fd39ca13026e13d6b26654078b9470300dc8ee99f9a0b0e477ae",
+    "YuEEG_UI.h": "f60527a54247cfa361ce15268c70e371f8a3053efc106336394578bc15e2bb69",
+    "YuEEG_SCH16T.cpp": "48321cfcc6bfadba5b1b300575ce0fd969542235df802414107384afe14dbe3c",
+    "ads1299_driver.ino": "c06fdc00da6d1214178b67520373361d29e7de04c28974112ffeaab52be07cc7",
+    "MURATA_SCH16T_LICENSE.txt": "68f48800c7901c55dd51cee0160b681458b39618aea5240d6f1a491f6adffbcd",
+    "SCH16T_UPSTREAM_LICENSE.txt": "78c75294ed88d79326fa33075dc9476514ec7ad0c09c235f7d91fe7468989145"
   },
   "binaries_sha256": {
-    "ads1299_driver.ino.bin": "95593adf174630b5f69afb3a0501abed668dc8bf5b30c179289c080f0e38c0fa",
+    "ads1299_driver.ino.bin": "284a7cd376fe9bfc8d01cb4349f4418fc7981b1fb374297bf888eadc089559c4",
     "ads1299_driver.ino.bootloader.bin": "d0b02b860147ace6a607985a3123a977b9451fa5d54a24ca6db59be4a2e4c345",
     "ads1299_driver.ino.partitions.bin": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9"
   },
   "protocol_tests_passed": 6,
-  "flash_bytes": 779901,
-  "static_ram_bytes": 46444,
+  "flash_bytes": 809193,
+  "static_ram_bytes": 46592,
   "battery_pin_contract": "../review/firmware_battery_contract.json",
   "physical_flash_or_transport_tested": false,
   "battery_voltage_calibration_tested": false,
-  "acquisition_timing_with_battery_monitor_tested": false
+  "acquisition_timing_with_battery_monitor_tested": false,
+  "imu_part": "SCH16T-K01-1",
+  "imu_scope": "DRDY continuous sampling; explicit stationary alignment; arbitrary-yaw3s relative trajectory; sharedSPI3",
+  "imu_continuous_sampling_implemented": true,
+  "navigation_implemented": true,
+  "navigation_scope": "RELATIVE_ATTITUDE_3S_UNREFERENCED_NO_UWB",
+  "motion_protocol_tests_passed": 10,
+  "relative_motion_checks_passed": 36,
+  "tools_source_sha256": {
+    "imu_protocol.py": "5b7ece2a9dd0f803d4467a879c8c480baa99c72a022076099b5a262decde2279",
+    "receive_eeg.py": "10d0198a712da75f1f01ddfd224b3150a4917cbb480e849e9c005a2eb954f772",
+    "receive_motion.py": "beaa684f8845378be6dc495d64057a5cc5ef05821bf8d99b3d05a989a8941ff9",
+    "requirements.txt": "785558ac5cdbd31e9f2dc373d840c6f3d72a4a778d98a99ed15c7f6c712b60c5",
+    "send_eeg_command.py": "01a759c88e7360ff64c216617a52562e93e7ccce177fefc5bea02b8aa5378943",
+    "test_motion_protocol.py": "26481cef2a75870ff50a699c7ad8f5b577b26957c7f33f1a3e9740bfd3d2bc27",
+    "test_protocol.py": "4ab11e23871be3f08a49a8c2d1d87a6f248ad7b2781dcb092cf436feb40df6cd",
+    "test_relative_motion.cpp": "5ef90e54ca6438993fe688dbde86d30cdb2f3a29d54ceecc414568897c1dea01",
+    "fixtures/motion_invalid_v1.hex": "5be138ba4fa8abeebceafe604e677cd8c9f59372d03d3888d1476cca96a55eef",
+    "fixtures/motion_v1.hex": "69bd03419bb5d5a4b91066f9c19a46f543865401680ac490eea8f90134791b80"
+  },
+  "motion_tests_sha256": {
+    "motion_protocol_tests.log": "085a983abc08a5a85a0ed304af91bb74e754a48eb61b0a3528c8740fcbc5a29d",
+    "relative_motion_tests.log": "49769a31942768c1f97925ba82a5d21a22242eee35244660964923dedd149342"
+  },
+  "trajectory_window_seconds": 3.0,
+  "imu_hardware_tested": false,
+  "imu_upstream": {
+    "url": "https://github.com/HTY2003/smplboards-SCH16T",
+    "commit": "86e1832db6091c774741fe5eb3130e60e23a30a8",
+    "source_sha256": {
+      "SCH16T.h": "be7b359adf7c1e5c8a93ba844cdcfdba5b092e33a53f2727cbcfb02d8c7ebe96",
+      "SCH16T.cpp": "7710a55cea0f460bbccb464f82a8e10dc1e8039ef2f22b747973ea235e79b368",
+      "LICENSE": "78c75294ed88d79326fa33075dc9476514ec7ad0c09c235f7d91fe7468989145"
+    },
+    "scope": "Modified K01 driver in active RevH development firmware, with single-owner DRDY streaming and burst generation checks. No hardware or navigation accuracy validation."
+  }
 }

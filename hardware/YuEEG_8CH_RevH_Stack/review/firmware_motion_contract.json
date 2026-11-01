@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "firmware_spi3_source_sha256": "c3a65f9bea12fd39ca13026e13d6b26654078b9470300dc8ee99f9a0b0e477ae",
+  "exported_netlist_sha256": "f957745454e5d25e791ce2e7b054133f874467637e46fb7c02d76ed51b74152e",
+  "uart_alias_source": "https://documentation.espressif.com/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf, module pad37 TXD0=GPIO43; pad36 RXD0=GPIO44",
+  "pins": {
+    "SPI3_PANEL_CS": {
+      "gpio": 2,
+      "native_net": "AM_CS_A"
+    },
+    "SPI3_IMU_CS": {
+      "gpio": 43,
+      "native_net": "IMU_CS_MCU"
+    },
+    "IMU_DRDY_GPIO": {
+      "gpio": 44,
+      "native_net": "IMU_DRDY_MCU"
+    },
+    "SPI3_CLK_GPIO": {
+      "gpio": 8,
+      "native_net": "AM_CLK_A"
+    },
+    "SPI3_MOSI_GPIO": {
+      "gpio": 9,
+      "native_net": "AM_D0_A"
+    },
+    "SPI3_MISO_GPIO": {
+      "gpio": 14,
+      "native_net": "AM_D1_A"
+    },
+    "SPI3_D2_GPIO": {
+      "gpio": 15,
+      "native_net": "AM_D2_A"
+    },
+    "SPI3_D3_GPIO": {
+      "gpio": 16,
+      "native_net": "AM_D3_A"
+    }
+  },
+  "scope": "Firmware named GPIO constants versus actual ESP32 pinfunction in native KiCad export. No electrical direction, timing or physical validation."
+}

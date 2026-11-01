@@ -30,6 +30,6 @@
     ]
   ],
   "silk_border_segments": 7,
-  "source_sha256": "772131212bf444de40b23215ee12a9c742a6c3d58acb581afa2b7b963272e4f9",
+  "source_sha256": "07b9161688a09dfbe1dbef2a7237308e407affba4f59a0fe9e27f99c976f8695",
   "scope": "Functional grouping marks, clipped around front courtyards, pads and existing legends. Full outlines on Dwgs.User are assembly guides, not electrical isolation boundaries."
 }

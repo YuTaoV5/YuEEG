@@ -1,0 +1,57 @@
+{
+  "user_order": {
+    "source": "User reply 2026-10-31",
+    "verbatim_zh": "如果接口朝左，缺口朝下，从下到上接口是 正极+ T 负极- c",
+    "orientation_zh": "接口朝左、缺口朝下；从下到上",
+    "bottom_to_top": [
+      "BAT+",
+      "T",
+      "BAT-",
+      "C"
+    ],
+    "status": "PHYSICAL_ORDER_AND_CAD_LABEL_MAPPING_USER_CONFIRMED",
+    "interface_design_intent": "Only BAT+ and BAT- are used for battery power. T/C remain unconnected unless separately specified; their electrical functions are not inferred from letters."
+  },
+  "possible_order_mappings": [
+    {
+      "model_A_to_D": [
+        "BAT+",
+        "T",
+        "BAT-",
+        "C"
+      ],
+      "power_pair": [
+        "A",
+        "C"
+      ],
+      "power_pitch_mm": 9.25
+    },
+    {
+      "model_A_to_D": [
+        "C",
+        "BAT-",
+        "T",
+        "BAT+"
+      ],
+      "power_pair": [
+        "D",
+        "B"
+      ],
+      "power_pitch_mm": 9.999999999999998
+    }
+  ],
+  "cad_mapping_confirmed": true,
+  "confirmed_model_labels": {
+    "A": "C",
+    "B": "BAT-",
+    "C": "T",
+    "D": "BAT+"
+  },
+  "power_pair_positive_negative": [
+    "D",
+    "B"
+  ],
+  "confirmed_power_pitch_mm": 10.0,
+  "confirmation_source": "User 2026-11-01: D是正极; combined with prior bottom-to-top +/T/-/C order.",
+  "confirmation_scope": "User confirmed CAD-label polarity. Does not establish supplier tolerances or qualify the holder assembly."
+}

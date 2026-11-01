@@ -24,5 +24,8 @@
   "pad_geometry_and_pose_unchanged": true,
   "tracks_vias_and_zones_unchanged": true,
   "procurement_scope": "Exact MPN selected from manufacturer data; no Taobao stock assertion. Substitutions require equivalent electrical rating and maximum envelope, including installed solder height.",
-  "scope": "Closes the unselected resistor MPN used by fold screening; not full display assembly qualification."
+  "scope": "Closes the unselected resistor MPN used by fold screening; not full display assembly qualification.",
+  "current_pcb_sha256": "157ffd1e0412ff2283224bd3119d5567486dd6dca845c1c37716d3a30bcbd80c",
+  "imu_adoption_revalidation": "Same native pad geometry, pose, properties and model as pre-IMU main; copper elsewhere changed.",
+  "underbody_plane_revalidation": "R1101 native pads, pose, properties and model unchanged; updated ground pours elsewhere."
 }

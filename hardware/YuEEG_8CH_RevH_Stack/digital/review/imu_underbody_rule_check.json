@@ -1,0 +1,59 @@
+{
+  "status": "NATIVE_RULE_AND_FILLED_POUR_SCREEN_PASS_NOT_PERFORMANCE_VALIDATION",
+  "pcb_sha256": "157ffd1e0412ff2283224bd3119d5567486dd6dca845c1c37716d3a30bcbd80c",
+  "rule_attached_to": "U1801",
+  "footprint_library_sha256": "8629cc82418a2dfa7b1543e668023c31ab34bce03a4cc0d393cbf236c8b3259f",
+  "global_bounds_mm": [
+    25.2,
+    1.8,
+    36.0,
+    15.2
+  ],
+  "local_body_envelope_mm": [
+    -5.4,
+    -6.7,
+    5.4,
+    6.7
+  ],
+  "rules": {
+    "copperpour_forbidden": true,
+    "tracks_allowed": true,
+    "vias_allowed": true,
+    "pads_allowed": true
+  },
+  "layers": [
+    {
+      "layer": "F.Cu",
+      "samples": 14472,
+      "pour_covered_samples": 0
+    },
+    {
+      "layer": "B.Cu",
+      "samples": 14472,
+      "pour_covered_samples": 0
+    },
+    {
+      "layer": "In1.Cu",
+      "samples": 14472,
+      "pour_covered_samples": 0
+    },
+    {
+      "layer": "In2.Cu",
+      "samples": 14472,
+      "pour_covered_samples": 0
+    },
+    {
+      "layer": "In3.Cu",
+      "samples": 14472,
+      "pour_covered_samples": 0
+    },
+    {
+      "layer": "In4.Cu",
+      "samples": 14472,
+      "pour_covered_samples": 0
+    }
+  ],
+  "source": "https://sensorsandpower.angst-pfister.com/fileadmin/products/datasheets/191/SCH16T-K01-rev6_1630-21648-0045-E-1125.pdf",
+  "source_section": "Murata Doc11624 Rev6 section8.2, publicly indexed excerpt. No direct fullPDF download or possession claim.",
+  "scope": "Native footprint rule follows move/flip/rotation; all6Cu covered. Filled-pour sampling at0.1mm pitch inside its rectangle, not a proof of field performance or complete continuous-area topology. Routed GND lines/vias under body are explicitly permitted by the reviewed manufacturer recommendation."
+}

@@ -1,0 +1,34 @@
+{
+  "before_pcb_sha256": "3b147f0fc0ede321edb8e9d7f102aac338d5d1f1c03fb6ba0b1d17cba90ee977",
+  "after_pcb_sha256": "157ffd1e0412ff2283224bd3119d5567486dd6dca845c1c37716d3a30bcbd80c",
+  "new_vias": [
+    {
+      "uuid": "203c2df2-03ff-40c0-b9a1-bea779c1387b",
+      "xy_mm": [
+        35.45,
+        8.75
+      ],
+      "drill_mm": 0.2,
+      "near_smd_pad_hits_at_0p25_clearance": []
+    },
+    {
+      "uuid": "285cfb89-ac0c-4194-8132-f70f5cd08c50",
+      "xy_mm": [
+        33.549999,
+        10.5
+      ],
+      "drill_mm": 0.2,
+      "near_smd_pad_hits_at_0p25_clearance": []
+    },
+    {
+      "uuid": "b10897fc-9c9d-44eb-a9ca-0e4f4e38736a",
+      "xy_mm": [
+        38.165,
+        8.7
+      ],
+      "drill_mm": 0.2,
+      "near_smd_pad_hits_at_0p25_clearance": []
+    }
+  ],
+  "scope": "Native drill-circle versus all SMD copper-pad shapes on all6Cu, including same-net pads. New ground return changes only. Does not qualify historical via-in-pad use or solder-mask/process tolerances."
+}

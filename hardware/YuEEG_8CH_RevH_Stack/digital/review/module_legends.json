@@ -63,7 +63,7 @@
     ]
   ],
   "silk_border_segments": 16,
-  "source_sha256": "e62dbc80c4811195aaf47eaec0ec8931b466e4a04353b59568df75b37cee4926",
+  "source_sha256": "157ffd1e0412ff2283224bd3119d5567486dd6dca845c1c37716d3a30bcbd80c",
   "scope": "Functional grouping marks, clipped around front courtyards, pads and existing legends. Full outlines on Dwgs.User are assembly guides, not electrical isolation boundaries.",
   "mcu_leader_arrow": "Points left from label to ESP module; label is offset to available silk space."
 }

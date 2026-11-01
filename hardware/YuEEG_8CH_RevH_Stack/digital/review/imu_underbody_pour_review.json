@@ -1,0 +1,981 @@
+{
+  "before_pcb_sha256": "3b147f0fc0ede321edb8e9d7f102aac338d5d1f1c03fb6ba0b1d17cba90ee977",
+  "trial_pcb_sha256": "157ffd1e0412ff2283224bd3119d5567486dd6dca845c1c37716d3a30bcbd80c",
+  "pitch_max_mm": 0.1,
+  "underbody_no_pour_xy_mm": [
+    25.2,
+    1.8,
+    36.0,
+    15.2
+  ],
+  "nets": {
+    "ADS_CS": {
+      "samples": 356,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "B.Cu"
+      ]
+    },
+    "ADS_DRDY": {
+      "samples": 523,
+      "newly_missing_any_reference": 108,
+      "newly_missing_all_references": 108,
+      "changed_locations_examples": [
+        [
+          35.92916,
+          7.6945
+        ],
+        [
+          35.829404,
+          7.6945
+        ],
+        [
+          35.729649,
+          7.6945
+        ],
+        [
+          35.629893,
+          7.6945
+        ],
+        [
+          35.530137,
+          7.6945
+        ]
+      ],
+      "signal_layers": [
+        "F.Cu",
+        "In2.Cu"
+      ]
+    },
+    "ADS_MISO": {
+      "samples": 333,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "F.Cu",
+        "In2.Cu"
+      ]
+    },
+    "ADS_MOSI": {
+      "samples": 369,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "B.Cu"
+      ]
+    },
+    "ADS_PWDN": {
+      "samples": 371,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "B.Cu"
+      ]
+    },
+    "ADS_RESET": {
+      "samples": 463,
+      "newly_missing_any_reference": 137,
+      "newly_missing_all_references": 137,
+      "changed_locations_examples": [
+        [
+          32.05,
+          15.1
+        ],
+        [
+          32.0,
+          15.1
+        ],
+        [
+          32.0,
+          15.1
+        ],
+        [
+          31.95,
+          15.15
+        ],
+        [
+          35.621429,
+          15.171429
+        ]
+      ],
+      "signal_layers": [
+        "B.Cu",
+        "In2.Cu"
+      ]
+    },
+    "ADS_SCLK": {
+      "samples": 469,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "B.Cu"
+      ]
+    },
+    "ADS_START": {
+      "samples": 401,
+      "newly_missing_any_reference": 130,
+      "newly_missing_all_references": 130,
+      "changed_locations_examples": [
+        [
+          35.94732,
+          13.0503
+        ],
+        [
+          35.848428,
+          13.0503
+        ],
+        [
+          35.749536,
+          13.0503
+        ],
+        [
+          35.650644,
+          13.0503
+        ],
+        [
+          35.551752,
+          13.0503
+        ]
+      ],
+      "signal_layers": [
+        "B.Cu",
+        "In2.Cu"
+      ]
+    },
+    "AM_CLK_A": {
+      "samples": 737,
+      "newly_missing_any_reference": 62,
+      "newly_missing_all_references": 62,
+      "changed_locations_examples": [
+        [
+          26.7555,
+          9.375
+        ],
+        [
+          26.823338,
+          9.307162
+        ],
+        [
+          26.891177,
+          9.239323
+        ],
+        [
+          26.959015,
+          9.171485
+        ],
+        [
+          27.026854,
+          9.103646
+        ]
+      ],
+      "signal_layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu",
+        "In4.Cu"
+      ]
+    },
+    "AM_CLK_B": {
+      "samples": 308,
+      "newly_missing_any_reference": 33,
+      "newly_missing_all_references": 33,
+      "changed_locations_examples": [
+        [
+          31.8625,
+          10.025
+        ],
+        [
+          31.962133,
+          10.025
+        ],
+        [
+          32.061767,
+          10.025
+        ],
+        [
+          32.1614,
+          10.025
+        ],
+        [
+          32.261033,
+          10.025
+        ]
+      ],
+      "signal_layers": [
+        "F.Cu",
+        "In2.Cu",
+        "In4.Cu"
+      ]
+    },
+    "AM_CLK_P": {
+      "samples": 258,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "F.Cu",
+        "In2.Cu"
+      ]
+    },
+    "AM_CS_A": {
+      "samples": 465,
+      "newly_missing_any_reference": 158,
+      "newly_missing_all_references": 158,
+      "changed_locations_examples": [
+        [
+          26.726,
+          8.725
+        ],
+        [
+          26.790383,
+          8.660617
+        ],
+        [
+          26.854767,
+          8.596233
+        ],
+        [
+          26.91915,
+          8.53185
+        ],
+        [
+          26.983533,
+          8.467467
+        ]
+      ],
+      "signal_layers": [
+        "F.Cu",
+        "In4.Cu"
+      ]
+    },
+    "AM_CS_B": {
+      "samples": 239,
+      "newly_missing_any_reference": 79,
+      "newly_missing_all_references": 79,
+      "changed_locations_examples": [
+        [
+          31.2794,
+          9.375
+        ],
+        [
+          31.376583,
+          9.375
+        ],
+        [
+          31.473767,
+          9.375
+        ],
+        [
+          31.57095,
+          9.375
+        ],
+        [
+          31.668133,
+          9.375
+        ]
+      ],
+      "signal_layers": [
+        "F.Cu",
+        "In4.Cu"
+      ]
+    },
+    "AM_CS_P": {
+      "samples": 151,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "F.Cu",
+        "In2.Cu"
+      ]
+    },
+    "AM_D0_A": {
+      "samples": 625,
+      "newly_missing_any_reference": 202,
+      "newly_missing_all_references": 202,
+      "changed_locations_examples": [
+        [
+          35.98146,
+          15.05286
+        ],
+        [
+          35.92362,
+          14.99502
+        ],
+        [
+          35.86578,
+          14.93718
+        ],
+        [
+          35.80794,
+          14.87934
+        ],
+        [
+          35.7501,
+          14.8215
+        ]
+      ],
+      "signal_layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu",
+        "In4.Cu"
+      ]
+    },
+    "AM_D0_B": {
+      "samples": 295,
+      "newly_missing_any_reference": 126,
+      "newly_missing_all_references": 126,
+      "changed_locations_examples": [
+        [
+          30.2114,
+          11.4744
+        ],
+        [
+          30.12362,
+          11.4744
+        ],
+        [
+          30.03584,
+          11.4744
+        ],
+        [
+          29.94806,
+          11.4744
+        ],
+        [
+          29.86028,
+          11.4744
+        ]
+      ],
+      "signal_layers": [
+        "F.Cu",
+        "In4.Cu"
+      ]
+    },
+    "AM_D0_P": {
+      "samples": 175,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "F.Cu",
+        "In2.Cu"
+      ]
+    },
+    "AM_D1_A": {
+      "samples": 523,
+      "newly_missing_any_reference": 94,
+      "newly_missing_all_references": 94,
+      "changed_locations_examples": [
+        [
+          26.1375,
+          10.675
+        ],
+        [
+          26.234157,
+          10.675
+        ],
+        [
+          26.330814,
+          10.675
+        ],
+        [
+          26.427471,
+          10.675
+        ],
+        [
+          26.524129,
+          10.675
+        ]
+      ],
+      "signal_layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu",
+        "In4.Cu"
+      ]
+    },
+    "AM_D1_B": {
+      "samples": 308,
+      "newly_missing_any_reference": 61,
+      "newly_missing_all_references": 61,
+      "changed_locations_examples": [
+        [
+          31.8625,
+          11.325
+        ],
+        [
+          31.776329,
+          11.325
+        ],
+        [
+          31.690157,
+          11.325
+        ],
+        [
+          31.603986,
+          11.325
+        ],
+        [
+          31.517814,
+          11.325
+        ]
+      ],
+      "signal_layers": [
+        "F.Cu",
+        "In2.Cu"
+      ]
+    },
+    "AM_D1_P": {
+      "samples": 216,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "F.Cu",
+        "In2.Cu"
+      ]
+    },
+    "AM_D2_A": {
+      "samples": 328,
+      "newly_missing_any_reference": 58,
+      "newly_missing_all_references": 58,
+      "changed_locations_examples": [
+        [
+          27.5364,
+          11.325
+        ],
+        [
+          27.436479,
+          11.325
+        ],
+        [
+          27.336557,
+          11.325
+        ],
+        [
+          27.236636,
+          11.325
+        ],
+        [
+          27.136714,
+          11.325
+        ]
+      ],
+      "signal_layers": [
+        "F.Cu",
+        "In2.Cu"
+      ]
+    },
+    "AM_D2_B": {
+      "samples": 169,
+      "newly_missing_any_reference": 49,
+      "newly_missing_all_references": 49,
+      "changed_locations_examples": [
+        [
+          31.8625,
+          11.975
+        ],
+        [
+          31.961873,
+          11.975
+        ],
+        [
+          32.061247,
+          11.975
+        ],
+        [
+          32.16062,
+          11.975
+        ],
+        [
+          32.259993,
+          11.975
+        ]
+      ],
+      "signal_layers": [
+        "B.Cu",
+        "F.Cu"
+      ]
+    },
+    "AM_D2_P": {
+      "samples": 308,
+      "newly_missing_any_reference": 13,
+      "newly_missing_all_references": 13,
+      "changed_locations_examples": [
+        [
+          30.539575,
+          14.786875
+        ],
+        [
+          30.60973,
+          14.85703
+        ],
+        [
+          30.679885,
+          14.927185
+        ],
+        [
+          30.75004,
+          14.99734
+        ],
+        [
+          30.820195,
+          15.067495
+        ]
+      ],
+      "signal_layers": [
+        "F.Cu",
+        "In2.Cu",
+        "In4.Cu"
+      ]
+    },
+    "AM_D3_A": {
+      "samples": 527,
+      "newly_missing_any_reference": 132,
+      "newly_missing_all_references": 132,
+      "changed_locations_examples": [
+        [
+          26.1375,
+          11.975
+        ],
+        [
+          26.235562,
+          11.975
+        ],
+        [
+          26.333623,
+          11.975
+        ],
+        [
+          26.431685,
+          11.975
+        ],
+        [
+          26.529746,
+          11.975
+        ]
+      ],
+      "signal_layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu",
+        "In4.Cu"
+      ]
+    },
+    "AM_D3_B": {
+      "samples": 259,
+      "newly_missing_any_reference": 42,
+      "newly_missing_all_references": 42,
+      "changed_locations_examples": [
+        [
+          31.2573,
+          12.625
+        ],
+        [
+          31.188013,
+          12.694287
+        ],
+        [
+          31.118726,
+          12.763574
+        ],
+        [
+          31.049439,
+          12.832861
+        ],
+        [
+          30.980152,
+          12.902148
+        ]
+      ],
+      "signal_layers": [
+        "F.Cu",
+        "In2.Cu"
+      ]
+    },
+    "AM_D3_P": {
+      "samples": 219,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ]
+    },
+    "IMU_DRDY_MCU": {
+      "samples": 448,
+      "newly_missing_any_reference": 113,
+      "newly_missing_all_references": 113,
+      "changed_locations_examples": [
+        [
+          30.3743,
+          10.0856
+        ],
+        [
+          30.276932,
+          10.0856
+        ],
+        [
+          30.179564,
+          10.0856
+        ],
+        [
+          30.082196,
+          10.0856
+        ],
+        [
+          29.984828,
+          10.0856
+        ]
+      ],
+      "signal_layers": [
+        "B.Cu",
+        "F.Cu",
+        "In4.Cu"
+      ]
+    },
+    "IMU_CS_MCU": {
+      "samples": 420,
+      "newly_missing_any_reference": 127,
+      "newly_missing_all_references": 127,
+      "changed_locations_examples": [
+        [
+          29.288,
+          9.7855
+        ],
+        [
+          29.217308,
+          9.714808
+        ],
+        [
+          29.146616,
+          9.644116
+        ],
+        [
+          29.075924,
+          9.573424
+        ],
+        [
+          29.005232,
+          9.502732
+        ]
+      ],
+      "signal_layers": [
+        "B.Cu",
+        "F.Cu",
+        "In4.Cu"
+      ]
+    },
+    "USB_CC1": {
+      "samples": 249,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "F.Cu",
+        "In2.Cu"
+      ]
+    },
+    "USB_CC2": {
+      "samples": 179,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "F.Cu",
+        "In4.Cu"
+      ]
+    },
+    "USB_DOWN_DM": {
+      "samples": 347,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "F.Cu",
+        "In2.Cu"
+      ]
+    },
+    "USB_DOWN_DP": {
+      "samples": 351,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "F.Cu",
+        "In2.Cu"
+      ]
+    },
+    "USB_HOST_DM": {
+      "samples": 223,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "F.Cu"
+      ]
+    },
+    "USB_HOST_DP": {
+      "samples": 257,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "F.Cu",
+        "In2.Cu"
+      ]
+    },
+    "USB_MCU_DM": {
+      "samples": 23,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "F.Cu"
+      ]
+    },
+    "USB_MCU_DP": {
+      "samples": 23,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "F.Cu"
+      ]
+    },
+    "USB_UP_DM": {
+      "samples": 25,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "F.Cu"
+      ]
+    },
+    "USB_UP_DP": {
+      "samples": 53,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "F.Cu"
+      ]
+    },
+    "USB_VDD1": {
+      "samples": 51,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "F.Cu"
+      ]
+    },
+    "IMU_RESET_N": {
+      "samples": 44,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "B.Cu"
+      ]
+    },
+    "IMU_CS_N": {
+      "samples": 327,
+      "newly_missing_any_reference": 35,
+      "newly_missing_all_references": 35,
+      "changed_locations_examples": [
+        [
+          25.5951,
+          3.5734
+        ],
+        [
+          25.529256,
+          3.507556
+        ],
+        [
+          25.463411,
+          3.441711
+        ],
+        [
+          25.397567,
+          3.375867
+        ],
+        [
+          25.331722,
+          3.310022
+        ]
+      ],
+      "signal_layers": [
+        "B.Cu"
+      ]
+    },
+    "IMU_VREGD": {
+      "samples": 81,
+      "newly_missing_any_reference": 19,
+      "newly_missing_all_references": 19,
+      "changed_locations_examples": [
+        [
+          25.2084,
+          11.3
+        ],
+        [
+          25.305075,
+          11.3
+        ],
+        [
+          25.40175,
+          11.3
+        ],
+        [
+          25.498425,
+          11.3
+        ],
+        [
+          25.5951,
+          11.3
+        ]
+      ],
+      "signal_layers": [
+        "B.Cu"
+      ]
+    },
+    "IMU_SCLK": {
+      "samples": 111,
+      "newly_missing_any_reference": 17,
+      "newly_missing_all_references": 17,
+      "changed_locations_examples": [
+        [
+          25.85,
+          5.95
+        ],
+        [
+          25.8,
+          6.0
+        ],
+        [
+          25.7,
+          6.0
+        ],
+        [
+          25.633333,
+          6.066667
+        ],
+        [
+          25.566667,
+          6.133333
+        ]
+      ],
+      "signal_layers": [
+        "B.Cu",
+        "In2.Cu"
+      ]
+    },
+    "IMU_MOSI": {
+      "samples": 34,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "B.Cu"
+      ]
+    },
+    "IMU_DRDY": {
+      "samples": 197,
+      "newly_missing_any_reference": 77,
+      "newly_missing_all_references": 77,
+      "changed_locations_examples": [
+        [
+          27.3858,
+          7.3812
+        ],
+        [
+          27.45439,
+          7.31261
+        ],
+        [
+          27.52298,
+          7.24402
+        ],
+        [
+          27.59157,
+          7.17543
+        ],
+        [
+          27.66016,
+          7.10684
+        ]
+      ],
+      "signal_layers": [
+        "B.Cu",
+        "In2.Cu"
+      ]
+    },
+    "IMU_VREGA": {
+      "samples": 56,
+      "newly_missing_any_reference": 0,
+      "newly_missing_all_references": 0,
+      "changed_locations_examples": [],
+      "signal_layers": [
+        "B.Cu"
+      ]
+    },
+    "IMU_MISO": {
+      "samples": 199,
+      "newly_missing_any_reference": 85,
+      "newly_missing_all_references": 85,
+      "changed_locations_examples": [
+        [
+          25.21117,
+          8.1
+        ],
+        [
+          25.308191,
+          8.1
+        ],
+        [
+          25.405212,
+          8.1
+        ],
+        [
+          25.502233,
+          8.1
+        ],
+        [
+          25.599255,
+          8.1
+        ]
+      ],
+      "signal_layers": [
+        "B.Cu",
+        "In4.Cu"
+      ]
+    }
+  },
+  "scope": "Native filled-plane centerline comparison along pre-change tracks only. New GND lines are not counted as planes. Samples at segment joins repeat. This is neither trace-width or return-path proof, field/impedance analysis nor waveform/noise validation.",
+  "status": "ADOPTED_UNDERBODY_POUR_VOID_NOT_WAVEFORM_OR_NOISE_VALIDATED",
+  "source": "https://sensorsandpower.angst-pfister.com/fileadmin/products/datasheets/191/SCH16T-K01-rev6_1630-21648-0045-E-1125.pdf",
+  "source_scope": "Manufacturer Rev6 section8.2 text indexed publicly; fullPDF direct retrieval returned403 previously, not bypassed. The rule is a recommendation; only excerpt reviewed, no claim to possession of full protocol.",
+  "native_drc_unconnected_parity": [
+    0,
+    0,
+    0
+  ],
+  "keepout_follows_footprint": true,
+  "unqualified_changes": "ADS_DRDY/RESET/START and sharedSPI3/display signals lose plane coverage locally; routedGNDlines restore connectivity but do not prove high-frequency return integrity. Require waveform and simultaneous EEG noise measurements.",
+  "new_ground_via_clearance_review": "new_ground_via_smd_clearance.json",
+  "courtyard_mm": [
+    14.7,
+    13.4
+  ],
+  "nonGND_copper_unchanged_from_before_plane_change": true
+}

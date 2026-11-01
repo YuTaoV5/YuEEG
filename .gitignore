@@ -127,3 +127,12 @@ Thumbs.db
 !/hardware/YuEEG_8CH_RevH_Stack/digital/review/right_power_port.json
 !/hardware/YuEEG_8CH_RevH_Stack/afe/review/power_shadow_change.json
 !/hardware/YuEEG_8CH_RevH_Stack/digital/review/r1101_height_selection.json
+
+# Current IMU and explicitly authorized publication evidence.
+!/hardware/YuEEG_8CH_RevH_Stack/digital/review/merge_contract.json
+!/hardware/YuEEG_8CH_RevH_Stack/digital/review/imu_underbody_rule_check.json
+!/hardware/YuEEG_8CH_RevH_Stack/digital/review/imu_underbody_pour_review.json
+!/hardware/YuEEG_8CH_RevH_Stack/digital/review/new_ground_via_smd_clearance.json
+!/hardware/YuEEG_8CH_RevH_Stack/digital/review/imu_ground_fill_paths.json
+!/hardware/YuEEG_8CH_RevH_Stack/review/firmware_motion_contract.json
+!/hardware/YuEEG_8CH_RevH_Stack/review/publication_authorization.json

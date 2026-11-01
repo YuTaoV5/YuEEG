@@ -1,7 +1,7 @@
 {
     "$schema": "https://schemas.kicad.org/erc.v1.json",
     "coordinate_units": "mm",
-    "date": "2026-10-31T09:25:27+0800",
+    "date": "2026-11-01T04:11:16+0800",
     "kicad_version": "9.0.5",
     "sheets": [
         {
@@ -107,6 +107,11 @@
         {
             "path": "/circuit_20/",
             "uuid_path": "/02970b79-f346-4815-8bdc-e4144cdf39f2/a489a065-f1be-4360-9488-f884ddccfa60",
+            "violations": []
+        },
+        {
+            "path": "/circuit_21_IMU/",
+            "uuid_path": "/02970b79-f346-4815-8bdc-e4144cdf39f2/006aeea3-b8ab-4d47-bf10-45487f6ecbcd",
             "violations": []
         }
     ],

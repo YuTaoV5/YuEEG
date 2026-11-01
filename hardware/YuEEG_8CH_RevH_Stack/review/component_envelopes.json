@@ -504,6 +504,28 @@
       "scope": "Maximum body incl manufacturer tolerance. Separate .10mm solder-lift allowance is used by fold screening.",
       "coordinate_convention": "VRML Y is negative footprint Y; units 2.54 mm",
       "sha256": "21ed4d1db6c73d46b3479ec8a32371d018f25329c8724ec4cafeaf48151b5054"
+    },
+    {
+      "model": "MillMax_0906_1_midstroke.wrl",
+      "boxes_footprint_mm": [
+        {
+          "min": [
+            -0.915,
+            -0.915,
+            -1.75
+          ],
+          "max": [
+            0.915,
+            0.915,
+            3.8
+          ]
+        }
+      ],
+      "source": [
+        "https://www.mill-max.com/sites/default/files/external/catalog/2019-04/023M-028M.pdf metric page25"
+      ],
+      "scope": "Original nominal single probe model at .7mm compression. Pair footprint has two instances. Not maximum free-height geometry or supplier CAD.",
+      "sha256": "a10a22e42a9f57529a8fb38bdb5e7e9e5686bc97fe2ffbad81060745b0f53083"
     }
   ],
   "bindings": [
@@ -656,6 +678,11 @@
       "board": "digital",
       "reference": "R1101",
       "model": "YAGEO_RC0402FR_0722RL_max_envelope.wrl"
+    },
+    {
+      "board": "power",
+      "reference": "JP1",
+      "model": "MillMax_0906_1_midstroke.wrl"
     }
   ],
   "standard_model_aliases": {

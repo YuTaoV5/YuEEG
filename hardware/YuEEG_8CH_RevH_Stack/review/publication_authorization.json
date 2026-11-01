@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-01",
+  "destination": "https://github.com/YuTaoV5/YuEEG",
+  "derived_model_publication": {
+    "question": "是否允许把 NP-BX1 模型派生的触点尺寸、图示、校验散列，以及据此修改的 PCB／文档，上传到 GitHub 仓库 YuTaoV5/YuEEG？原始 STEP／JPG 不上传。",
+    "user_answer": "允许上传上述派生设计和资料",
+    "authorized": true,
+    "excluded_original_files": [
+      "NPBX1.STEP",
+      "NPBX1.JPG"
+    ]
+  },
+  "navigation_choice": {
+    "user_answer": "不部署基站，先实现姿态与短时相对轨迹",
+    "uwb_anchors": false,
+    "absolute_heading_or_bounded_long_term_position_claim": false
+  },
+  "scope": "Records explicit user decisions. Does not constitute manufacturing, assembly, sensor performance or patient-safety qualification."
+}

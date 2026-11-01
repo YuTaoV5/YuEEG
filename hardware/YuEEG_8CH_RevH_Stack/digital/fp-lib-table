@@ -187,4 +187,15 @@
 (options
 "")
 (descr
-"Rev H local")))
+"Rev H local"))
+(lib
+(name
+"YuEEG_IMU")
+(type
+"KiCad")
+(uri
+"${KIPRJMOD}/../footprints/YuEEG_IMU.pretty")
+(options
+"")
+(descr
+"SCH16T and named capacitor variants")))

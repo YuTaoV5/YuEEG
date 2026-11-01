@@ -1,0 +1,178 @@
+{
+  "status": "USER_MODEL_GEOMETRY_WITH_USER_POLARITY_NOT_SONY_TOLERANCE",
+  "source_path": "User-supplied NPBX1.STEP (original not distributed)",
+  "source_sha256": "062b7daeb175079f8d2fec2f208dcf92b4c65887bfde244dd193765d4dfb91f3",
+  "image_sha256": "5b6b94529446dd04459529f8f940aab4d3db1a1ea66805a4dd8e73b2b72bd3d5",
+  "source_identity": "STEP header SolidWorks 2021, 2023-05-26; author unspecified. Companion render says RAYPRO NP-BX1 3.6V 1800mAh.",
+  "method": "STEP topological vertices and planar-face edge loops, mm. Not a CAD-kernel curved-surface bounding-box calculation.",
+  "vertex_extent_xyz_mm": [
+    29.29,
+    9.0,
+    42.75
+  ],
+  "vertex_bounds_mm": [
+    -14.65,
+    -4.5,
+    -21.375,
+    14.64,
+    4.5,
+    21.375
+  ],
+  "sony_public_nominal_width_thickness_length_mm": [
+    29.9,
+    9.2,
+    42.7
+  ],
+  "vertex_extent_difference_from_sony_mm": [
+    -0.61,
+    -0.2,
+    0.05
+  ],
+  "front_plane_model_z_mm": 21.375,
+  "view_convention": "Contact face viewed from +Z toward-Z; model+X right,+Y up; A-D left to right. Electrical labels come from separate user confirmation.",
+  "recess_base_faces": [
+    {
+      "label": "A",
+      "step_face": 5817,
+      "bounds_xyz_mm": [
+        -6.850000000000003,
+        0.30000000000000554,
+        20.625,
+        -4.100000000000001,
+        3.5000000000000058,
+        20.625
+      ],
+      "center_xy_mm": [
+        -5.475000000000002,
+        1.9000000000000057
+      ],
+      "width_mm": 2.7500000000000018,
+      "height_mm": 3.2,
+      "recess_from_front_plane_mm": 0.75,
+      "polarity": "C"
+    },
+    {
+      "label": "B",
+      "step_face": 11569,
+      "bounds_xyz_mm": [
+        -3.1000000000000023,
+        0.30000000000000554,
+        20.625,
+        0.8999999999999985,
+        3.5000000000000058,
+        20.625
+      ],
+      "center_xy_mm": [
+        -1.1000000000000019,
+        1.9000000000000057
+      ],
+      "width_mm": 4.000000000000001,
+      "height_mm": 3.2,
+      "recess_from_front_plane_mm": 0.75,
+      "polarity": "BAT-"
+    },
+    {
+      "label": "C",
+      "step_face": 14820,
+      "bounds_xyz_mm": [
+        2.399999999999998,
+        0.30000000000000554,
+        20.625,
+        5.149999999999999,
+        3.5000000000000058,
+        20.625
+      ],
+      "center_xy_mm": [
+        3.7749999999999986,
+        1.9000000000000057
+      ],
+      "width_mm": 2.7500000000000004,
+      "height_mm": 3.2,
+      "recess_from_front_plane_mm": 0.75,
+      "polarity": "T"
+    },
+    {
+      "label": "D",
+      "step_face": 5965,
+      "bounds_xyz_mm": [
+        6.649999999999998,
+        0.30000000000000554,
+        20.625,
+        11.149999999999997,
+        3.5000000000000058,
+        20.625
+      ],
+      "center_xy_mm": [
+        8.899999999999997,
+        1.9000000000000057
+      ],
+      "width_mm": 4.499999999999999,
+      "height_mm": 3.2,
+      "recess_from_front_plane_mm": 0.75,
+      "polarity": "BAT+"
+    }
+  ],
+  "candidate_B_D_pitch_mm": 9.999999999999998,
+  "candidate_B_D_center_offsets_from_model_vertex_xmax_mm": [
+    5.740000000000004,
+    15.740000000000002
+  ],
+  "candidate_contact_height_above_model_ymin_mm": 6.4,
+  "reference_comparison": "B/D center pitch 10mm and recess .75mm agree with old sample reference. Offsets from model vertex xmax are 5.74/15.74mm versus author CAD Y=6/16mm; model +Y-up center height 6.4mm versus author sample6.2mm. This does not establish common datum or polarity.",
+  "design_action": "PowerPCB uses confirmedD+/B- pair; delivered pack / holder tolerances and compression remain unqualified.",
+  "remaining": [
+    "Whether the replacement-pack model matches the delivered Sony pack",
+    "Body curved extrema, supplier tolerances, contact material, stop/retention and compression",
+    "Screen-back/FPC Z datum independently unresolved"
+  ],
+  "redistribution": "User explicitly authorized derived dimensions, diagrams, hashes and resulting PCB/docs on2026-11-01. Original STEP/JPG excluded.",
+  "user_confirmed_terminal_order": {
+    "source": "User reply 2026-10-31",
+    "verbatim_zh": "\u5982\u679c\u63a5\u53e3\u671d\u5de6\uff0c\u7f3a\u53e3\u671d\u4e0b\uff0c\u4ece\u4e0b\u5230\u4e0a\u63a5\u53e3\u662f \u6b63\u6781+ T \u8d1f\u6781- c",
+    "orientation_zh": "\u63a5\u53e3\u671d\u5de6\u3001\u7f3a\u53e3\u671d\u4e0b\uff1b\u4ece\u4e0b\u5230\u4e0a",
+    "bottom_to_top": [
+      "BAT+",
+      "T",
+      "BAT-",
+      "C"
+    ],
+    "status": "PHYSICAL_ORDER_AND_CAD_LABEL_MAPPING_USER_CONFIRMED",
+    "interface_design_intent": "Only BAT+ and BAT- are used for battery power. T/C remain unconnected unless separately specified; their electrical functions are not inferred from letters."
+  },
+  "possible_order_mappings": [
+    {
+      "model_A_to_D": [
+        "BAT+",
+        "T",
+        "BAT-",
+        "C"
+      ],
+      "power_pair": [
+        "A",
+        "C"
+      ],
+      "power_pitch_mm": 9.25
+    },
+    {
+      "model_A_to_D": [
+        "C",
+        "BAT-",
+        "T",
+        "BAT+"
+      ],
+      "power_pair": [
+        "D",
+        "B"
+      ],
+      "power_pitch_mm": 9.999999999999998
+    }
+  ],
+  "confirmed_model_labels": {
+    "A": "C",
+    "B": "BAT-",
+    "C": "T",
+    "D": "BAT+"
+  },
+  "cad_mapping_confirmed": true,
+  "terminal_confirmation_sha256": "39fc0de35a61568f5b62d811bcf73fead2d8d01da1dd0858c6feda5ffecab0de"
+}

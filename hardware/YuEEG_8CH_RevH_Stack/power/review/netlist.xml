@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>X:\Items\YuEEG\hardware\YuEEG_8CH_RevH_Stack\power\YuEEG_H_POWER.kicad_sch</source>
-    <date>2026-10-30T20:15:01+0800</date>
+    <date>2026-11-01T00:20:13+0800</date>
     <tool>Eeschema 9.0.5</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -97,12 +97,12 @@
   </design>
   <components>
     <comp ref="JP1">
-      <value>NP-BX1 + / - contacts: NOT FINAL MECHANICS</value>
-      <footprint>Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical</footprint>
-      <datasheet>~</datasheet>
+      <value>2x Mill-Max 0906-1-15-20-75-14-11-0 / D+ B-</value>
+      <footprint>YuEEG:NPBX1_MillMax0906_Dplus_Bminus_10mm</footprint>
+      <datasheet>https://www.mill-max.com/sites/default/files/external/catalog/2019-04/023M-028M.pdf</datasheet>
       <fields>
-        <field name="Footprint">Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical</field>
-        <field name="Datasheet">~</field>
+        <field name="Footprint">YuEEG:NPBX1_MillMax0906_Dplus_Bminus_10mm</field>
+        <field name="Datasheet">https://www.mill-max.com/sites/default/files/external/catalog/2019-04/023M-028M.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>

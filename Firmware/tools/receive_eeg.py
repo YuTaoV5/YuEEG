@@ -4,6 +4,7 @@ python receive_eeg.py --serial COM8 --command start > samples.csv
 USB requires pyserial; UDP and protocol tests use only the standard library.
 """
 import argparse,binascii,csv,socket,struct,sys
+from imu_protocol import MixedDecoder
 FRAME_SIZE=50
 def decode(frame):
     if len(frame)!=50 or frame[:5]!=b'YEEG\x01':raise ValueError('frame/version')
@@ -15,18 +16,14 @@ def decode(frame):
     raw=[int.from_bytes(frame[23+3*i:26+3*i],'big',signed=True) for i in range(8)]
     return {'seq':seq,'device_us':us,'missed_drdy':missed,'mode':mode,'gain':gain,'probe_channel':probe,'status':status,'flags':frame[47],'raw':raw,'uV':[v*4.5e6/(gain*8388608) for v in raw]}
 class Decoder:
-    def __init__(self):self.buffer=bytearray();self.bad_crc=0
+    def __init__(self):self._mixed=MixedDecoder(decode);self.imu_discarded=0
+    @property
+    def bad_crc(self):return self._mixed.bad_crc
+    @property
+    def buffer(self):return self._mixed.buffer
     def feed(self,data):
-        self.buffer.extend(data);out=[]
-        while True:
-            pos=self.buffer.find(b'YEEG')
-            if pos<0:self.buffer=self.buffer[-3:];break
-            if pos:del self.buffer[:pos]
-            if len(self.buffer)<FRAME_SIZE:break
-            try:r=decode(bytes(self.buffer[:FRAME_SIZE]))
-            except ValueError:self.bad_crc+=1;del self.buffer[0];continue
-            out.append(r);del self.buffer[:FRAME_SIZE]
-        return out
+        frames=self._mixed.feed(data);self.imu_discarded+=sum(kind=='imu' for kind,_ in frames)
+        return [r for kind,r in frames if kind=='eeg']
 def main():
     p=argparse.ArgumentParser();g=p.add_mutually_exclusive_group(required=True);g.add_argument('--udp',type=int);g.add_argument('--serial');g.add_argument('--file',help='Rev E raw .yee backup');p.add_argument('--command',default='start');a=p.parse_args()
     if a.file:

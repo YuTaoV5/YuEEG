@@ -7,7 +7,7 @@
 (type
 "KiCad")
 (uri
-"${KIPRJMOD}/../libraries/Connector.kicad_sym")
+"X:/Items/YuEEG/hardware/YuEEG_8CH_RevH_Stack/libraries/Connector.kicad_sym")
 (options
 "")
 (descr
@@ -18,7 +18,7 @@
 (type
 "KiCad")
 (uri
-"${KIPRJMOD}/../libraries/Connector_Generic.kicad_sym")
+"X:/Items/YuEEG/hardware/YuEEG_8CH_RevH_Stack/libraries/Connector_Generic.kicad_sym")
 (options
 "")
 (descr
@@ -29,7 +29,7 @@
 (type
 "KiCad")
 (uri
-"${KIPRJMOD}/../libraries/Device.kicad_sym")
+"X:/Items/YuEEG/hardware/YuEEG_8CH_RevH_Stack/libraries/Device.kicad_sym")
 (options
 "")
 (descr
@@ -40,7 +40,7 @@
 (type
 "KiCad")
 (uri
-"${KIPRJMOD}/../libraries/Interface_USB.kicad_sym")
+"X:/Items/YuEEG/hardware/YuEEG_8CH_RevH_Stack/libraries/Interface_USB.kicad_sym")
 (options
 "")
 (descr
@@ -51,7 +51,7 @@
 (type
 "KiCad")
 (uri
-"${KIPRJMOD}/../libraries/RF_Module.kicad_sym")
+"X:/Items/YuEEG/hardware/YuEEG_8CH_RevH_Stack/libraries/RF_Module.kicad_sym")
 (options
 "")
 (descr
@@ -62,7 +62,7 @@
 (type
 "KiCad")
 (uri
-"${KIPRJMOD}/../libraries/Regulator_Linear.kicad_sym")
+"X:/Items/YuEEG/hardware/YuEEG_8CH_RevH_Stack/libraries/Regulator_Linear.kicad_sym")
 (options
 "")
 (descr
@@ -73,7 +73,7 @@
 (type
 "KiCad")
 (uri
-"${KIPRJMOD}/../libraries/Regulator_SwitchedCapacitor.kicad_sym")
+"X:/Items/YuEEG/hardware/YuEEG_8CH_RevH_Stack/libraries/Regulator_SwitchedCapacitor.kicad_sym")
 (options
 "")
 (descr
@@ -84,7 +84,7 @@
 (type
 "KiCad")
 (uri
-"${KIPRJMOD}/../libraries/Regulator_Switching.kicad_sym")
+"X:/Items/YuEEG/hardware/YuEEG_8CH_RevH_Stack/libraries/Regulator_Switching.kicad_sym")
 (options
 "")
 (descr
@@ -95,7 +95,7 @@
 (type
 "KiCad")
 (uri
-"${KIPRJMOD}/../libraries/Switch.kicad_sym")
+"X:/Items/YuEEG/hardware/YuEEG_8CH_RevH_Stack/libraries/Switch.kicad_sym")
 (options
 "")
 (descr
@@ -106,7 +106,7 @@
 (type
 "KiCad")
 (uri
-"${KIPRJMOD}/../libraries/Transistor_BJT.kicad_sym")
+"X:/Items/YuEEG/hardware/YuEEG_8CH_RevH_Stack/libraries/Transistor_BJT.kicad_sym")
 (options
 "")
 (descr
@@ -117,7 +117,7 @@
 (type
 "KiCad")
 (uri
-"${KIPRJMOD}/../YuEEG.kicad_sym")
+"${KIPRJMOD}/YuEEG.kicad_sym")
 (options
 "")
 (descr
@@ -128,7 +128,7 @@
 (type
 "KiCad")
 (uri
-"${KIPRJMOD}/../libraries/power.kicad_sym")
+"X:/Items/YuEEG/hardware/YuEEG_8CH_RevH_Stack/libraries/power.kicad_sym")
 (options
 "")
 (descr

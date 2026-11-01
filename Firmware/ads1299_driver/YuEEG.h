@@ -7,6 +7,7 @@
 #include <Preferences.h>
 #include <esp_system.h>
 #include <atomic>
+#include "YuEEG_MotionWire.h"
 constexpr uint8_t CS=10,SCLK_GPIO=12,MOSI_GPIO=11,MISO_GPIO=13;
 constexpr uint8_t DRDY=4,ADS_RESET=5,PWDN=6,ADS_START=7,FRAME_BYTES=50;
 struct RawFrame { uint8_t bytes[FRAME_BYTES]; };
@@ -20,6 +21,11 @@ uint32_t sequence=0;
 std::atomic<uint32_t> missed{0};
 std::atomic<uint32_t> queueDrops{0},usbDrops{0},udpDrops{0};
 std::atomic<uint8_t> mode{0};
+std::atomic<bool> imuRunning{false};
+std::atomic<uint16_t> motionFlags{YuEEGMotion::STOPPED|YuEEGMotion::YAW_UNREFERENCED|YuEEGMotion::POSITION_RELATIVE|YuEEGMotion::HARDWARE_UNVERIFIED};
+std::atomic<uint32_t> motionLastPublishMs{0};
+uint16_t currentMotionFlags(){uint16_t f=motionFlags.load();if(imuRunning&&uint32_t(millis()-motionLastPublishMs.load())>250)f=uint16_t((f&~7U)|YuEEGMotion::SENSOR_FAULT);return f;}
+uint32_t motionEegSeq=0,motionEegUs=0; // coherent pair, protected by irqMux
 uint8_t gain=12,testChannel=0; // 0 stopped;1 EEG;2 internal test;3 electrode probe
 std::atomic<bool> adcOK{false};
 constexpr uint8_t LED_RUN=38,LED_WIFI=39,LED_FAULT=40; // active low, 2.2k series, no PWM
@@ -85,10 +91,12 @@ void capture() {
  SPI.beginTransaction(SPISettings(2000000,MSBFIRST,SPI_MODE1));digitalWrite(CS,LOW);
  for(int i=0;i<27;++i)f.bytes[20+i]=SPI.transfer(0);digitalWrite(CS,HIGH);SPI.endTransaction();
  f.bytes[47]=(f.bytes[20]&0xF0)==0xC0?0:1;
+ portENTER_CRITICAL(&irqMux);motionEegSeq=sequence-1;motionEegUs=stamp;portEXIT_CRITICAL(&irqMux);
  uint16_t c=crc16(f.bytes,48);f.bytes[48]=c;f.bytes[49]=c>>8;
  if(xQueueSend(outputQueue,&f,0)!=pdTRUE)++queueDrops;
 }
 #include "YuEEG_UI.h"
+#include "YuEEG_Motion.h"
 void receiveControl(WiFiUDP& udp) {
  int size=udp.parsePacket();if(size<=0)return;
  IPAddress source=udp.remoteIP();uint16_t port=udp.remotePort();
@@ -98,7 +106,9 @@ void receiveControl(WiFiUDP& udp) {
  String cmd=text.substring(prefix.length());cmd.trim();if(cmd.length()>160)return;String reply;
  if(cmd=="status"){
   char status[160],battery[40];batteryText(battery,sizeof(battery));snprintf(status,sizeof(status),"# ADC=%s mode=%u missed=%lu queue_drop=%lu usb_drop=%lu udp_drop=%lu",adcOK?"ready":"FAULT",mode.load(),(unsigned long)missed.load(),(unsigned long)queueDrops.load(),(unsigned long)usbDrops.load(),(unsigned long)udpDrops.load());reply=String(status)+"\n# "+battery;
- }else if(cmd=="start"||cmd=="stop"||cmd=="test"||cmd.startsWith("probe ")||cmd.startsWith("gain ")||cmd.startsWith("udp ")){
+ }else if(cmd=="imu status"){
+  char status[180];snprintf(status,sizeof(status),"# IMU running=%u flags=%u period_us=%lu rejected=%lu missed=%lu usb_drop=%lu udp_drop=%lu sd_drop=%lu",imuRunning.load(),currentMotionFlags(),(unsigned long)motionPeriodUs.load(),(unsigned long)motionRejected.load(),(unsigned long)motionMissed.load(),(unsigned long)motionUsbDrops.load(),(unsigned long)motionUdpDrops.load(),(unsigned long)sdMotionDrops.load());reply=status;
+ }else if(cmd=="start"||cmd=="stop"||cmd=="test"||cmd.startsWith("probe ")||cmd.startsWith("gain ")||cmd.startsWith("udp ")||cmd=="imu start"||cmd=="imu stop"||cmd=="imu align"||cmd=="imu zero"||cmd=="imu probe"){
   ControlCommand c{};cmd.toCharArray(c.text,sizeof(c.text));reply=xQueueSend(controlQueue,&c,0)==pdTRUE?"# queued; query status to confirm":"# busy";
  }else reply="# rejected";
  if(udp.beginPacket(source,port)){udp.write((const uint8_t*)reply.c_str(),reply.length());udp.endPacket();}
@@ -116,11 +126,20 @@ void outputTask(void*) {
    if(udp.beginPacket(target,port)){udp.write(batch,count*FRAME_BYTES);if(!udp.endPacket())udpDrops+=count;}else udpDrops+=count;
    count=0;
   }
+  MotionFrame motion;
+  if(motionOutputQueue&&xQueueReceive(motionOutputQueue,&motion,0)==pdTRUE){
+   backupMotionFrame(motion);
+   if(Serial&&Serial.availableForWrite()>=MOTION_FRAME_BYTES){if(Serial.write(motion.bytes,MOTION_FRAME_BYTES)!=MOTION_FRAME_BYTES)++motionUsbDrops;}else ++motionUsbDrops;
+   IPAddress target;portENTER_CRITICAL(&targetMux);target=udpAddress;portEXIT_CRITICAL(&targetMux);
+   if(udp.beginPacket(target,9002)){udp.write(motion.bytes,MOTION_FRAME_BYTES);if(!udp.endPacket())++motionUdpDrops;}else ++motionUdpDrops;
+  }
+  MotionText note;
+  if(motionTextQueue&&xQueueReceive(motionTextQueue,&note,0)==pdTRUE&&Serial){size_t n=strlen(note.text);if(Serial.availableForWrite()>=n)Serial.write((const uint8_t*)note.text,n);}
   receiveControl(udp); // enqueue only; all ADC/SPI configuration stays in loop task
   bool blink=(millis()/500)&1;
   digitalWrite(LED_RUN,mode?(!blink):HIGH);
   digitalWrite(LED_WIFI,(WiFi.softAPgetStationNum()||WiFi.status()==WL_CONNECTED)?LOW:!blink);
-  digitalWrite(LED_FAULT,(!adcOK||queueDrops.load()||missed||batteryLow())?LOW:HIGH);
+  digitalWrite(LED_FAULT,(!adcOK||queueDrops.load()||missed||batteryLow()||(currentMotionFlags()&YuEEGMotion::SENSOR_FAULT))?LOW:HIGH);
  }
 }
 void startWiFi() {
@@ -140,6 +159,7 @@ void report() {
  Serial.printf("# CPU=%uMHz Flash=%lu PSRAM=%lu bytes\n",ESP.getCpuFreqMHz(),(unsigned long)ESP.getFlashChipSize(),(unsigned long)ESP.getPsramSize());
  Serial.println("# start | stop | test | probe 1..8 | gain 1/2/4/6/8/12/24 | udp IP PORT | wifi SSID<TAB>PASSWORD | status");
  Serial.println("# Probe returns excited-loop data, not calibrated independent electrode impedance. UDP default 192.168.4.255:9000.");
+ Serial.println("# imu start | imu align (hold stationary) | imu zero | imu stop | imu status | imu probe; motion UDP9002");
 }
 void handleCommand(String cmd) {
  cmd.trim();
@@ -150,6 +170,11 @@ void handleCommand(String cmd) {
  else if(cmd.startsWith("gain ")){int g=cmd.substring(5).toInt();if(g==1||g==2||g==4||g==6||g==8||g==12||g==24){uint8_t old=mode;stopADC();gain=g;if(old)configureADC(old,testChannel);}}
  else if(cmd.startsWith("udp ")){int s=cmd.indexOf(' ',4);IPAddress ip;long port=cmd.substring(s+1).toInt();if(s>4&&ip.fromString(cmd.substring(4,s))&&port>0&&port<=65535){portENTER_CRITICAL(&targetMux);udpAddress=ip;udpPort=port;portEXIT_CRITICAL(&targetMux);}}
  else if(cmd.startsWith("wifi ")){int s=cmd.indexOf('\t',5);if(s>5){String ssid=cmd.substring(5,s),pass=cmd.substring(s+1);prefs.putString("ssid",ssid);prefs.putString("pass",pass);WiFi.begin(ssid.c_str(),pass.c_str());}}
+ else if(cmd=="imu probe")queueMotion(MotionCommand::Probe);
+ else if(cmd=="imu start")queueMotion(MotionCommand::Start);
+ else if(cmd=="imu stop")queueMotion(MotionCommand::Stop);
+ else if(cmd=="imu align"||cmd=="imu zero")queueMotion(MotionCommand::Align);
+ else if(cmd=="imu status")motionStatus();
  else if(cmd=="status"||cmd=="?")report();
 }
 void setup() {
@@ -161,7 +186,7 @@ void setup() {
  outputQueue=xQueueCreate(128,sizeof(RawFrame));controlQueue=xQueueCreate(4,sizeof(ControlCommand));if(!outputQueue||!controlQueue){digitalWrite(LED_FAULT,LOW);while(true)delay(1000);}
  delay(500);digitalWrite(PWDN,HIGH);delay(10000); // verify VCAP1-AVSS>1.1V; no rail fault monitor
  digitalWrite(ADS_RESET,HIGH);delay(1);adcCommand(0x11);uint8_t id=regRead(0);adcOK=(id&0x1F)==0x1E;
- startBatteryMonitor();startWiFi();startUI();xTaskCreatePinnedToCore(outputTask,"eeg_output",6144,nullptr,2,nullptr,0);
+ startBatteryMonitor();startWiFi();startUI();startMotionRuntime();xTaskCreatePinnedToCore(outputTask,"eeg_output",6144,nullptr,2,nullptr,0);
  attachInterrupt(digitalPinToInterrupt(DRDY),onDRDY,FALLING);report(); // stopped until host command
 }
 void loop() {

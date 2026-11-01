@@ -46,6 +46,6 @@ JH2 的 2／3／4 针背面焊尾扩大预留框，在 XY 投影上与 AFE 的 C
 
 当前原生项目为 `hardware/YuEEG_8CH_RevH_Stack/digital/YuEEG_H_DIGITAL.kicad_pcb`，变更记录在 `digital/review/right_power_port.json`。`mechanical/current/power_ports_native.json` 记录当前两端的原生针号和坐标，`power_harness_routing_review.json` 记录有条件的线束路径，`power_port_tail_review.json` 记录 AFE 侧焊尾筛查。新的工程 Gerber／钻孔已更新，并仍标记 **NOT FOR ORDER**。
 
-线束具体采购件、出线轴高度、允许弯曲半径、焊尾处理、完整应力释放及电池前端电源条板位置仍需定型。电池座 JP1 依旧是临时端子；缺少 NP-BX1 触点与正负极机械基准，不能以本次线束改版代替电池座完成。整机尚未制造放行。
+线束具体采购件、出线轴高度、允许弯曲半径、焊尾处理、完整应力释放及电池前端电源条板位置仍需定型。电池端 JP1 已在本地改为 D+/B− 双探针、10mm 间距和1mm板厚；其固定止挡、公差及完整前端线束仍待复核，详见 REVH_POGO_INTEGRATION.md。整机尚未制造放行。
 
 尺寸依据：[JST PH 官方目录](https://www.jst-mfg.com/product/pdf/eng/ePH.pdf)第 1／2 页装配图及第 3 页胶壳／通孔侧入针座；[Panasonic FT 官方目录](https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1240.pdf)中的 EEEFT1E101AP。

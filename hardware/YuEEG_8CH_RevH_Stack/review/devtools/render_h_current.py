@@ -1,7 +1,7 @@
 from pathlib import Path
 import subprocess,json,hashlib,re
 R=Path('hardware/YuEEG_8CH_RevH_Stack').resolve();records=[]
-for board,side in [('afe','top'),('digital','bottom'),('digital','top'),('power','top')]:
+for board,side in [('afe','top'),('digital','bottom'),('digital','top'),('power','top'),('power','bottom')]:
  source=R/board/('YuEEG_H_'+board.upper()+'.kicad_pcb');s=source.read_text();prefix='${KIPRJMOD}/../models/'
  # CLI 9.0.5 did not load these project-relative local models in a bare PCB render.
  # Change paths only in a disposable rendering copy; the authoritative PCB stays portable.

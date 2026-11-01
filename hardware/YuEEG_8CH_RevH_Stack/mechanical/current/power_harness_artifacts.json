@@ -1,16 +1,16 @@
 {
   "status": "CONDITIONAL_REVIEW_ARTIFACTS_NOT_ASSEMBLY_RELEASE",
   "files_sha256": {
-    "power_ports_native.json": "e88c792ec34692860fa3bb716eb2adab2bcdd7778b0f3d8f211afe89c2a65da9",
-    "power_harness_routing_review.json": "c10d6a238696df4231b75138615752605303ffffede9eb800d026987826a9bb1",
+    "power_ports_native.json": "566f3de35f0e79a5d94bbc55259551510db4bf2480bb217aded71df26ff2cf4b",
+    "power_harness_routing_review.json": "8799a0038d3734411f32a4fd9297a850ac489b7c5887d9b9129886785607778d",
     "power_harness_routing_review.png": "d9124f6300fb3d5f9d3598e6532357e62f190a72c9ac339ced31f4d0318c280d",
-    "power_harness_routing_review.svg": "360a94b04b7038aa194302c65d4769e68ed12b12d062c58e6ffc768b9f39b955",
-    "power_port_tail_review.json": "cd8e209b6f0cfc45dc30e949b30aa8497182bdc77216ecadf6f299ead1646dc2"
+    "power_harness_routing_review.svg": "76c1759a378c709a9590a9b7a8e5dfd631a5e6070c678017dc1add0f05b722bb",
+    "power_port_tail_review.json": "b199e44804d07627beb5994de6dab30de0e37ef50dc993981c4b2cdc4d9c872f"
   },
   "pcb_sha256": {
     "afe": "2eb85cbd1e8bc271004dadf2321513e58e03e8ef493d7506ea8eff0663e4da2a",
-    "digital": "e62dbc80c4811195aaf47eaec0ec8931b466e4a04353b59568df75b37cee4926",
-    "power": "772131212bf444de40b23215ee12a9c742a6c3d58acb581afa2b7b963272e4f9"
+    "digital": "157ffd1e0412ff2283224bd3119d5567486dd6dca845c1c37716d3a30bcbd80c",
+    "power": "07b9161688a09dfbe1dbef2a7237308e407affba4f59a0fe9e27f99c976f8695"
   },
   "scope": "Binds engineering reports and plan-view image artifacts. No measurement, thermal/EEG validation or production release."
 }

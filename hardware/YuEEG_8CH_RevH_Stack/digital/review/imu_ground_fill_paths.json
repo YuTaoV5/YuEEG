@@ -1,0 +1,168 @@
+{
+  "source_sha256": "157ffd1e0412ff2283224bd3119d5567486dd6dca845c1c37716d3a30bcbd80c",
+  "rows": [
+    {
+      "reference": "C1802",
+      "pad": "2",
+      "xy_mm": [
+        39.2,
+        13.175
+      ],
+      "estimated_track_path_to_via_meeting_ground_fill_mm": 2.3653420253915987
+    },
+    {
+      "reference": "C1801",
+      "pad": "2",
+      "xy_mm": [
+        21.1,
+        14.15
+      ],
+      "estimated_track_path_to_via_meeting_ground_fill_mm": 3.0699612895878494
+    },
+    {
+      "reference": "C1807",
+      "pad": "2",
+      "xy_mm": [
+        34.5,
+        34.95
+      ],
+      "estimated_track_path_to_via_meeting_ground_fill_mm": 1.048334299707376
+    },
+    {
+      "reference": "U1802",
+      "pad": "2",
+      "xy_mm": [
+        32.3625,
+        30.5
+      ],
+      "estimated_track_path_to_via_meeting_ground_fill_mm": 2.448458267916802
+    },
+    {
+      "reference": "C1803",
+      "pad": "2",
+      "xy_mm": [
+        21.1,
+        10.25
+      ],
+      "estimated_track_path_to_via_meeting_ground_fill_mm": 1.354678614027333
+    },
+    {
+      "reference": "U1801",
+      "pad": "1",
+      "xy_mm": [
+        36.765,
+        4.1
+      ],
+      "estimated_track_path_to_via_meeting_ground_fill_mm": 1.3196083699340522
+    },
+    {
+      "reference": "U1801",
+      "pad": "3",
+      "xy_mm": [
+        36.765,
+        5.7
+      ],
+      "estimated_track_path_to_via_meeting_ground_fill_mm": 4.745262246497592
+    },
+    {
+      "reference": "U1801",
+      "pad": "4",
+      "xy_mm": [
+        36.765,
+        6.5
+      ],
+      "estimated_track_path_to_via_meeting_ground_fill_mm": 6.380598094027144
+    },
+    {
+      "reference": "U1801",
+      "pad": "5",
+      "xy_mm": [
+        36.765,
+        7.3
+      ],
+      "estimated_track_path_to_via_meeting_ground_fill_mm": 7.180598094027144
+    },
+    {
+      "reference": "U1801",
+      "pad": "7",
+      "xy_mm": [
+        36.765,
+        8.9
+      ],
+      "estimated_track_path_to_via_meeting_ground_fill_mm": 1.4142135623730938
+    },
+    {
+      "reference": "U1801",
+      "pad": "9",
+      "xy_mm": [
+        36.765,
+        10.5
+      ],
+      "estimated_track_path_to_via_meeting_ground_fill_mm": 11.0711399146815
+    },
+    {
+      "reference": "U1801",
+      "pad": "12",
+      "xy_mm": [
+        36.765,
+        12.9
+      ],
+      "estimated_track_path_to_via_meeting_ground_fill_mm": 3.2962507550441935
+    },
+    {
+      "reference": "U1801",
+      "pad": "13",
+      "xy_mm": [
+        24.435,
+        12.9
+      ],
+      "estimated_track_path_to_via_meeting_ground_fill_mm": 7.181257646462883
+    },
+    {
+      "reference": "U1801",
+      "pad": "16",
+      "xy_mm": [
+        24.435,
+        10.5
+      ],
+      "estimated_track_path_to_via_meeting_ground_fill_mm": 2.187925223434061
+    },
+    {
+      "reference": "U1801",
+      "pad": "24",
+      "xy_mm": [
+        24.435,
+        4.1
+      ],
+      "estimated_track_path_to_via_meeting_ground_fill_mm": 0.8363821853648026
+    },
+    {
+      "reference": "C1804",
+      "pad": "2",
+      "xy_mm": [
+        39.4,
+        6.975
+      ],
+      "estimated_track_path_to_via_meeting_ground_fill_mm": 0.874897423921632
+    },
+    {
+      "reference": "C1805",
+      "pad": "2",
+      "xy_mm": [
+        20.625,
+        6.15
+      ],
+      "estimated_track_path_to_via_meeting_ground_fill_mm": 0.9438308587877383
+    },
+    {
+      "reference": "C1806",
+      "pad": "2",
+      "xy_mm": [
+        28.55,
+        31.5
+      ],
+      "estimated_track_path_to_via_meeting_ground_fill_mm": 1.26320009281357
+    }
+  ],
+  "scope": "Native track graph to a via whose annulus neighborhood meets In1/In3GND fill. A through via inside the no-pour body is not sufficient. Endpoint-based lengths screen geometry; plane-island connectivity, return current distribution, inductance and impedance are not proven. Zones are not traversed. None means no such via found within15mm traversal, not an isolation claim."
+}

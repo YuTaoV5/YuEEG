@@ -1,6 +1,6 @@
 # YuEEG · 八通道湿电极 EEG 工程
 
-正在开发 **Rev H：NP-BX1 单节电池、独立模拟／数字板叠放**，见 [Rev H 状态](hardware/YuEEG_8CH_RevH_Stack/README.md)。当前 `Firmware/ads1299_driver/` 已切换为 Rev H 开发源码；Rev G 的固件和二进制保存在其[冻结目录](hardware/YuEEG_8CH_RevG/firmware/)。Rev H 的电池触点、屏幕 FPC 与最终装配尚未定型，以下 Rev G 内容仍是此前已发布的工程评审版本。
+正在开发 **Rev H：NP-BX1 单节电池、独立模拟／数字板叠放、SCH16T-K01 IMU**，见 [Rev H 状态](hardware/YuEEG_8CH_RevH_Stack/README.md)。主三板与无源屏幕延长板已布线并通过静态检查；探针固定、公差、屏幕最终装配及实物采集仍待验证。当前 `Firmware/ads1299_driver/` 实现连续相对姿态和静止对准后的3秒相对轨迹，用户已选择不部署基站；[使用说明](docs/REVH_INDOOR_NAV.md)包含有效性与漂移边界。开发固件已编译并通过软件测试，尚未实物验证。Rev G 固件和二进制保存在其[冻结目录](hardware/YuEEG_8CH_RevG/firmware/)，以下 Rev G 内容仍是此前已发布的工程评审版本。
 
 当前为 **Rev G 工程评审版**：ADS1299 + ESP32-S3-WROOM-1-N16R8，主板 **70 × 80 mm**、隔离充电副板 **44 × 48 mm**，另有 35 × 67 mm 屏幕载板，各板元件均在正面，AMOLED 在主板上方叠装。
 

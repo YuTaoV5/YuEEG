@@ -1,5 +1,5 @@
 {
-  "pcb_sha256": "e62dbc80c4811195aaf47eaec0ec8931b466e4a04353b59568df75b37cee4926",
+  "pcb_sha256": "157ffd1e0412ff2283224bd3119d5567486dd6dca845c1c37716d3a30bcbd80c",
   "nets": {
     "USB_DOWN_DM": {
       "planar_track_length_mm": 33.72152261578638,
@@ -19,12 +19,12 @@
       ],
       "signal_vias_xy_mm": [
         [
-          13.905,
-          38.65
-        ],
-        [
           2.35,
           18.83
+        ],
+        [
+          13.905,
+          38.65
         ]
       ]
     },
@@ -41,7 +41,7 @@
           "layer": "In2.Cu",
           "width_mm": 0.15,
           "segments": 9,
-          "length_mm": 31.78147798911886
+          "length_mm": 31.781477989118862
         }
       ],
       "signal_vias_xy_mm": [
@@ -104,13 +104,13 @@
       "signal_vias_xy_mm": []
     },
     "USB_HOST_DM": {
-      "planar_track_length_mm": 20.828039231399835,
+      "planar_track_length_mm": 20.82803923139983,
       "segments_by_layer_width": [
         {
           "layer": "F.Cu",
           "width_mm": 0.15,
           "segments": 10,
-          "length_mm": 20.828039231399835
+          "length_mm": 20.82803923139983
         }
       ],
       "signal_vias_xy_mm": []

@@ -1,0 +1,115 @@
+{
+  "status": "ROUTED_NATIVE_CHECKS_PASS_NOT_ASSEMBLY_OR_PERFORMANCE_RELEASE",
+  "parts": 129,
+  "new_parts": 16,
+  "original113_component_poses_unchanged": true,
+  "board_mm": [
+    48,
+    60
+  ],
+  "copper_layers": 6,
+  "back_smd": 25,
+  "erc": 0,
+  "drc": 0,
+  "unconnected": 0,
+  "schematic_parity": 0,
+  "pin_mismatches": 0,
+  "pcb_sha256": "157ffd1e0412ff2283224bd3119d5567486dd6dca845c1c37716d3a30bcbd80c",
+  "before_imu_digital_sha256": "e62dbc80c4811195aaf47eaec0ec8931b466e4a04353b59568df75b37cee4926",
+  "new_part_positions_mm_deg": {
+    "U1801": [
+      30.6,
+      8.5,
+      180
+    ],
+    "U1802": [
+      33.5,
+      30.5,
+      0
+    ],
+    "C1802": [
+      39.2,
+      11.7,
+      270
+    ],
+    "C1806": [
+      29.5,
+      31.5,
+      180
+    ],
+    "C1807": [
+      34.5,
+      34.0,
+      270
+    ],
+    "C1801": [
+      21.1,
+      13.2,
+      270
+    ],
+    "C1803": [
+      21.1,
+      9.3,
+      270
+    ],
+    "C1804": [
+      39.4,
+      7.75,
+      90
+    ],
+    "C1805": [
+      21.4,
+      6.15,
+      180
+    ],
+    "R1801": [
+      39.0,
+      5.5,
+      180
+    ],
+    "R1802": [
+      21.1,
+      4.75,
+      0
+    ],
+    "R1803": [
+      21.6,
+      3.55,
+      0
+    ],
+    "R1804": [
+      19.35,
+      8.9,
+      270
+    ],
+    "R1805": [
+      19.0,
+      4.9,
+      0
+    ],
+    "R1806": [
+      21.6,
+      15.6,
+      180
+    ],
+    "R1807": [
+      17.9,
+      7.9,
+      270
+    ]
+  },
+  "host_pin_contract": {
+    "GPIO43": "IMU_CS_MCU",
+    "GPIO44": "IMU_DRDY_MCU",
+    "GPIO8": "SPI3_CLK",
+    "GPIO9": "SPI3_MOSI",
+    "GPIO14": "SPI3_MISO/QSPI_D1"
+  },
+  "firmware_scope": "Continuous DRDY sampling and manually aligned3s relative trajectory implemented; no external reference or hardware validation.",
+  "remaining": "Sourcing / complete tolerance and assembly closure; physical bus, acquisition-noise, temperature and relative-motion validation.",
+  "routed_candidate_sha256": "5cc356a669f1ae0a2111a6388d61a6fcaa7a3787ef29aff94cfced9c6dc6ce88",
+  "adopted_main_development": true,
+  "nominal_model_sha256": "8fe7433239f55bbb74aeab46290b551a1d569a5fbbfbaffa5bcf93604cba8e03",
+  "before_underbody_change_pcb_sha256": "3b147f0fc0ede321edb8e9d7f102aac338d5d1f1c03fb6ba0b1d17cba90ee977",
+  "underbody_no_pour_review": "imu_underbody_pour_review.json"
+}

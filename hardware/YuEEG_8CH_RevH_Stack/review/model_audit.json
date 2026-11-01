@@ -2586,7 +2586,7 @@
   {
     "board": "digital",
     "reference": "J301",
-    "value": "DEBUG POGO / NO HEADER FITTED",
+    "value": "3V3 / IMU_CS / IMU_DRDY / EN / BOOT / GND",
     "models": [],
     "existing": [],
     "available_wrl_alternative": []
@@ -3345,10 +3345,136 @@
   },
   {
     "board": "digital",
+    "reference": "R1804",
+    "value": "22R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1807",
+    "value": "100R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1802",
+    "value": "22R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1806",
+    "value": "10k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C1802",
+    "value": "10u 25V X7R / eff4.6..15u",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
     "reference": "R303",
     "value": "33R",
     "models": [
       "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C1801",
+    "value": "1u 50V 5% X7R / eff0.7..1.3u",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C1807",
+    "value": "4.7u 25V X7R / LDO eff>=1u",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1801",
+    "value": "10k",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "U1802",
+    "value": "TPS7A2033PDBVR",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
     ],
     "existing": [
       true
@@ -3401,6 +3527,20 @@
   },
   {
     "board": "digital",
+    "reference": "C1803",
+    "value": "1u 50V 5% X7R / eff0.7..1.3u",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
     "reference": "R304",
     "value": "33R",
     "models": [
@@ -3429,10 +3569,66 @@
   },
   {
     "board": "digital",
+    "reference": "R1805",
+    "value": "22R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "R1803",
+    "value": "22R",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "U1801",
+    "value": "SCH16T-K01-1",
+    "models": [
+      "${KIPRJMOD}/../models/Murata_SCH16T_SOIC24_nominal.wrl"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
     "reference": "R307",
     "value": "10k",
     "models": [
       "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C1804",
+    "value": "100n 50V 5% X7R / eff70..130n",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
     ],
     "existing": [
       true
@@ -3471,10 +3667,38 @@
   },
   {
     "board": "digital",
+    "reference": "C1805",
+    "value": "100n 50V 5% X7R / eff70..130n",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
     "reference": "C406",
     "value": "22u 25V X5R / C3216X5R1E226M160AB H1.8max",
     "models": [
       "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step"
+    ],
+    "existing": [
+      true
+    ],
+    "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "digital",
+    "reference": "C1806",
+    "value": "4.7u 25V X7R / LDO eff>=1u",
+    "models": [
+      "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
     ],
     "existing": [
       true
@@ -3625,20 +3849,6 @@
   },
   {
     "board": "power",
-    "reference": "JP1",
-    "value": "NP-BX1 + / - contacts: NOT FINAL MECHANICS",
-    "models": [
-      "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.00mm.3dshapes/PinHeader_1x02_P2.00mm_Vertical.step"
-    ],
-    "existing": [
-      true
-    ],
-    "available_wrl_alternative": [
-      true
-    ]
-  },
-  {
-    "board": "power",
     "reference": "RP5",
     "value": "732k 0.1%",
     "models": [
@@ -3774,6 +3984,23 @@
       true
     ],
     "available_wrl_alternative": [
+      true
+    ]
+  },
+  {
+    "board": "power",
+    "reference": "JP1",
+    "value": "2x Mill-Max 0906-1-15-20-75-14-11-0 / D+ B-",
+    "models": [
+      "${KIPRJMOD}/../models/MillMax_0906_1_midstroke.wrl",
+      "${KIPRJMOD}/../models/MillMax_0906_1_midstroke.wrl"
+    ],
+    "existing": [
+      true,
+      true
+    ],
+    "available_wrl_alternative": [
+      true,
       true
     ]
   }

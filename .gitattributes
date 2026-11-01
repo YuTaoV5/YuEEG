@@ -10,6 +10,7 @@
 /hardware/YuEEG_8CH_RevD/** -text -whitespace
 /Firmware/ads1299_driver/** -text
 /Firmware/tools/*.py -text
+/Firmware/tools/** -text
 /Firmware/ads1299_driver/ads1299_driver_legacy.txt -whitespace
 /docs/archive/** -whitespace
 

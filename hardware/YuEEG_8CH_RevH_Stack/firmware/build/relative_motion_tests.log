@@ -1,0 +1,2 @@
+test_relative_motion.cpp
+PASS 36 relative-motion and wire checks (actual firmware core)

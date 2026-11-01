@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/HTY2003/smplboards-SCH16T",
+  "commit": "86e1832db6091c774741fe5eb3130e60e23a30a8",
+  "source_sha256": {
+    "SCH16T.h": "be7b359adf7c1e5c8a93ba844cdcfdba5b092e33a53f2727cbcfb02d8c7ebe96",
+    "SCH16T.cpp": "7710a55cea0f460bbccb464f82a8e10dc1e8039ef2f22b747973ea235e79b368",
+    "LICENSE": "78c75294ed88d79326fa33075dc9476514ec7ad0c09c235f7d91fe7468989145"
+  },
+  "scope": "Modified K01 driver in active RevH development firmware, with single-owner DRDY streaming and burst generation checks. No hardware or navigation accuracy validation."
+}

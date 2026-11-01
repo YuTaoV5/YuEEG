@@ -3,7 +3,7 @@
   "native_ports": {
     "digital": {
       "reference": "JH2",
-      "pcb_sha256": "e62dbc80c4811195aaf47eaec0ec8931b466e4a04353b59568df75b37cee4926",
+      "pcb_sha256": "157ffd1e0412ff2283224bd3119d5567486dd6dca845c1c37716d3a30bcbd80c",
       "xy_mm": [
         32.4,
         38.5
@@ -163,7 +163,7 @@
     },
     "power": {
       "reference": "JP2",
-      "pcb_sha256": "772131212bf444de40b23215ee12a9c742a6c3d58acb581afa2b7b963272e4f9",
+      "pcb_sha256": "07b9161688a09dfbe1dbef2a7237308e407affba4f59a0fe9e27f99c976f8695",
       "xy_mm": [
         7.5,
         11.0
@@ -323,7 +323,7 @@
       }
     }
   },
-  "native_ports_sha256": "e88c792ec34692860fa3bb716eb2adab2bcdd7778b0f3d8f211afe89c2a65da9",
+  "native_ports_sha256": "566f3de35f0e79a5d94bbc55259551510db4bf2480bb217aded71df26ff2cf4b",
   "display_fpc_pcb_sha256": "51979b486cb4e063baf91e5e389caad5001929970646c76e1cca3f596b3a5b12",
   "source": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
   "reference_pages": [

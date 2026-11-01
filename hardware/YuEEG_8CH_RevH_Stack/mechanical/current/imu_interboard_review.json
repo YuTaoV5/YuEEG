@@ -1,0 +1,470 @@
+{
+  "status": "CONDITIONAL_INTERBOARD_HEIGHT_BUDGET_NOT_ASSEMBLY_RELEASE",
+  "digital_pcb_sha256": "157ffd1e0412ff2283224bd3119d5567486dd6dca845c1c37716d3a30bcbd80c",
+  "afe_pcb_sha256": "2eb85cbd1e8bc271004dadf2321513e58e03e8ef493d7506ea8eff0663e4da2a",
+  "nominal_surface_gap_mm": 8.5,
+  "required_minimum_local_gap_mm": 8.3,
+  "rows": [
+    {
+      "reference": "R1804",
+      "conservative_xy_mm": [
+        18.855,
+        7.945,
+        19.845,
+        9.855
+      ],
+      "maximum_component_height_mm": 0.45,
+      "assumed_solder_lift_mm": 0.1,
+      "opposing_afe_height_budget_with_0p5mm_margin_at_required_8p3_gap_mm": 7.25,
+      "opposing_afe": []
+    },
+    {
+      "reference": "R1807",
+      "conservative_xy_mm": [
+        17.405,
+        6.945,
+        18.395,
+        8.855
+      ],
+      "maximum_component_height_mm": 0.45,
+      "assumed_solder_lift_mm": 0.1,
+      "opposing_afe_height_budget_with_0p5mm_margin_at_required_8p3_gap_mm": 7.25,
+      "opposing_afe": []
+    },
+    {
+      "reference": "R1802",
+      "conservative_xy_mm": [
+        20.145,
+        4.255,
+        22.055,
+        5.245
+      ],
+      "maximum_component_height_mm": 0.45,
+      "assumed_solder_lift_mm": 0.1,
+      "opposing_afe_height_budget_with_0p5mm_margin_at_required_8p3_gap_mm": 7.25,
+      "opposing_afe": [
+        {
+          "reference": "D801",
+          "value": "BAV199 BIAS CLAMP",
+          "footprint": "Package_TO_SOT_SMD:SOT-23",
+          "courtyard_mm": [
+            17.045,
+            3.275,
+            20.955,
+            6.725
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "R1806",
+      "conservative_xy_mm": [
+        20.645,
+        15.105,
+        22.555,
+        16.095
+      ],
+      "maximum_component_height_mm": 0.45,
+      "assumed_solder_lift_mm": 0.1,
+      "opposing_afe_height_budget_with_0p5mm_margin_at_required_8p3_gap_mm": 7.25,
+      "opposing_afe": [
+        {
+          "reference": "U1",
+          "value": "ADS1299PAG",
+          "footprint": "Package_QFP:TQFP-64_10x10mm_P0.5mm",
+          "courtyard_mm": [
+            16.825,
+            11.325,
+            30.175,
+            24.675
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "C1802",
+      "conservative_xy_mm": [
+        38.025,
+        9.375,
+        40.375,
+        14.025
+      ],
+      "maximum_component_height_mm": 1.8,
+      "assumed_solder_lift_mm": 0.1,
+      "opposing_afe_height_budget_with_0p5mm_margin_at_required_8p3_gap_mm": 5.9,
+      "opposing_afe": []
+    },
+    {
+      "reference": "C1801",
+      "conservative_xy_mm": [
+        20.025,
+        11.475,
+        22.175,
+        14.925
+      ],
+      "maximum_component_height_mm": 1.55,
+      "assumed_solder_lift_mm": 0.1,
+      "opposing_afe_height_budget_with_0p5mm_margin_at_required_8p3_gap_mm": 6.15,
+      "opposing_afe": [
+        {
+          "reference": "U1",
+          "value": "ADS1299PAG",
+          "footprint": "Package_QFP:TQFP-64_10x10mm_P0.5mm",
+          "courtyard_mm": [
+            16.825,
+            11.325,
+            30.175,
+            24.675
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "C1807",
+      "conservative_xy_mm": [
+        33.495,
+        32.275,
+        35.505,
+        35.725
+      ],
+      "maximum_component_height_mm": 1.45,
+      "assumed_solder_lift_mm": 0.1,
+      "opposing_afe_height_budget_with_0p5mm_margin_at_required_8p3_gap_mm": 6.25,
+      "opposing_afe": []
+    },
+    {
+      "reference": "R1801",
+      "conservative_xy_mm": [
+        38.045,
+        5.005,
+        39.955,
+        5.995
+      ],
+      "maximum_component_height_mm": 0.45,
+      "assumed_solder_lift_mm": 0.1,
+      "opposing_afe_height_budget_with_0p5mm_margin_at_required_8p3_gap_mm": 7.25,
+      "opposing_afe": []
+    },
+    {
+      "reference": "U1802",
+      "conservative_xy_mm": [
+        31.425,
+        28.775,
+        35.575,
+        32.225
+      ],
+      "maximum_component_height_mm": 1.45,
+      "assumed_solder_lift_mm": 0.1,
+      "opposing_afe_height_budget_with_0p5mm_margin_at_required_8p3_gap_mm": 6.25,
+      "opposing_afe": [
+        {
+          "reference": "C220",
+          "value": "100u 25V EEEFT1E101AP H5.8",
+          "footprint": "Capacitor_SMD:CP_Elec_6.3x5.8",
+          "courtyard_mm": [
+            24.425,
+            26.775,
+            31.575,
+            36.225
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "C1803",
+      "conservative_xy_mm": [
+        20.025,
+        7.575,
+        22.175,
+        11.025
+      ],
+      "maximum_component_height_mm": 1.55,
+      "assumed_solder_lift_mm": 0.1,
+      "opposing_afe_height_budget_with_0p5mm_margin_at_required_8p3_gap_mm": 6.15,
+      "opposing_afe": [
+        {
+          "reference": "C215",
+          "value": "1u 10V X7R",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "courtyard_mm": [
+            19.995,
+            9.245,
+            23.005,
+            10.755
+          ]
+        },
+        {
+          "reference": "R210",
+          "value": "1M 1%",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "courtyard_mm": [
+            20.045,
+            8.005,
+            21.955,
+            8.995
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "R1805",
+      "conservative_xy_mm": [
+        18.045,
+        4.405,
+        19.955,
+        5.395
+      ],
+      "maximum_component_height_mm": 0.45,
+      "assumed_solder_lift_mm": 0.1,
+      "opposing_afe_height_budget_with_0p5mm_margin_at_required_8p3_gap_mm": 7.25,
+      "opposing_afe": [
+        {
+          "reference": "D801",
+          "value": "BAV199 BIAS CLAMP",
+          "footprint": "Package_TO_SOT_SMD:SOT-23",
+          "courtyard_mm": [
+            17.045,
+            3.275,
+            20.955,
+            6.725
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "R1803",
+      "conservative_xy_mm": [
+        20.645,
+        3.055,
+        22.555,
+        4.045
+      ],
+      "maximum_component_height_mm": 0.45,
+      "assumed_solder_lift_mm": 0.1,
+      "opposing_afe_height_budget_with_0p5mm_margin_at_required_8p3_gap_mm": 7.25,
+      "opposing_afe": [
+        {
+          "reference": "D801",
+          "value": "BAV199 BIAS CLAMP",
+          "footprint": "Package_TO_SOT_SMD:SOT-23",
+          "courtyard_mm": [
+            17.045,
+            3.275,
+            20.955,
+            6.725
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "U1801",
+      "conservative_xy_mm": [
+        23.25,
+        1.7999999999999998,
+        37.95,
+        15.2
+      ],
+      "maximum_component_height_mm": 3.0,
+      "assumed_solder_lift_mm": 0.1,
+      "opposing_afe_height_budget_with_0p5mm_margin_at_required_8p3_gap_mm": 4.7,
+      "opposing_afe": [
+        {
+          "reference": "R204",
+          "value": "10k",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "courtyard_mm": [
+            35.045,
+            8.755,
+            36.955,
+            9.745
+          ]
+        },
+        {
+          "reference": "C214",
+          "value": "1u 10V X7R",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "courtyard_mm": [
+            23.495,
+            9.245,
+            26.505,
+            10.755
+          ]
+        },
+        {
+          "reference": "U1",
+          "value": "ADS1299PAG",
+          "footprint": "Package_QFP:TQFP-64_10x10mm_P0.5mm",
+          "courtyard_mm": [
+            16.825,
+            11.325,
+            30.175,
+            24.675
+          ]
+        },
+        {
+          "reference": "R203",
+          "value": "10k",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "courtyard_mm": [
+            21.795,
+            6.255,
+            23.705,
+            7.245
+          ]
+        },
+        {
+          "reference": "C222",
+          "value": "1u 10V",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "courtyard_mm": [
+            30.745,
+            9.495,
+            32.255,
+            12.505
+          ]
+        },
+        {
+          "reference": "C216",
+          "value": "1u 10V X7R",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "courtyard_mm": [
+            30.745,
+            12.995,
+            32.255,
+            16.005
+          ]
+        },
+        {
+          "reference": "C217",
+          "value": "1u 10V X7R",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "courtyard_mm": [
+            36.995,
+            0.745,
+            38.505,
+            3.755
+          ]
+        },
+        {
+          "reference": "C213",
+          "value": "1u 10V X7R",
+          "footprint": "Capacitor_SMD:C_0603_1608Metric",
+          "courtyard_mm": [
+            26.995,
+            9.245,
+            30.005,
+            10.755
+          ]
+        },
+        {
+          "reference": "R206",
+          "value": "10k",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "courtyard_mm": [
+            31.295,
+            8.005,
+            33.205,
+            8.995
+          ]
+        },
+        {
+          "reference": "R209",
+          "value": "10k",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "courtyard_mm": [
+            32.505,
+            9.045,
+            33.495,
+            10.955
+          ]
+        },
+        {
+          "reference": "C223",
+          "value": "100n 10V",
+          "footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "courtyard_mm": [
+            22.515,
+            7.315,
+            23.485,
+            9.185
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "C1804",
+      "conservative_xy_mm": [
+        38.645,
+        6.245,
+        40.155,
+        9.255
+      ],
+      "maximum_component_height_mm": 0.95,
+      "assumed_solder_lift_mm": 0.1,
+      "opposing_afe_height_budget_with_0p5mm_margin_at_required_8p3_gap_mm": 6.75,
+      "opposing_afe": []
+    },
+    {
+      "reference": "C1805",
+      "conservative_xy_mm": [
+        19.895,
+        5.395,
+        22.905,
+        6.905
+      ],
+      "maximum_component_height_mm": 0.95,
+      "assumed_solder_lift_mm": 0.1,
+      "opposing_afe_height_budget_with_0p5mm_margin_at_required_8p3_gap_mm": 6.75,
+      "opposing_afe": [
+        {
+          "reference": "R203",
+          "value": "10k",
+          "footprint": "Resistor_SMD:R_0402_1005Metric",
+          "courtyard_mm": [
+            21.795,
+            6.255,
+            23.705,
+            7.245
+          ]
+        },
+        {
+          "reference": "D801",
+          "value": "BAV199 BIAS CLAMP",
+          "footprint": "Package_TO_SOT_SMD:SOT-23",
+          "courtyard_mm": [
+            17.045,
+            3.275,
+            20.955,
+            6.725
+          ]
+        }
+      ]
+    },
+    {
+      "reference": "C1806",
+      "conservative_xy_mm": [
+        27.775,
+        30.495,
+        31.225,
+        32.505
+      ],
+      "maximum_component_height_mm": 1.45,
+      "assumed_solder_lift_mm": 0.1,
+      "opposing_afe_height_budget_with_0p5mm_margin_at_required_8p3_gap_mm": 6.25,
+      "opposing_afe": [
+        {
+          "reference": "C220",
+          "value": "100u 25V EEEFT1E101AP H5.8",
+          "footprint": "Capacitor_SMD:CP_Elec_6.3x5.8",
+          "courtyard_mm": [
+            24.425,
+            26.775,
+            31.575,
+            36.225
+          ]
+        }
+      ]
+    }
+  ],
+  "scope": "Require measured local surface gap at least8.3mm, mounted C220 at most6.2mm including solder, and LDO/C1806 at most1.55mm including solder; this leaves at least0.55mm nominal-envelope separation there. This is an assembly acceptance condition, not a verified tolerance. Conservative courtyard XY screening of all16 new backside parts. Sensor envelope intentionally exceeds nominal. Sensor/cap/LDO heights from selected-package documentation; resistor .45mm is an imposed procurement envelope. Opposing AFE heights must be bound to delivered parts, local gap/warpage and supports measured. No complete tolerance stack, CAD solid collision or physical validation claim."
+}

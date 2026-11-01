@@ -1,0 +1,85 @@
+{
+  "status": "NOMINAL_PROBE_ALIGNMENT_NOT_HOLDER_OR_ASSEMBLY_RELEASE",
+  "power_pcb_sha256": "07b9161688a09dfbe1dbef2a7237308e407affba4f59a0fe9e27f99c976f8695",
+  "user_model_sha256": "062b7daeb175079f8d2fec2f208dcf92b4c65887bfde244dd193765d4dfb91f3",
+  "terminal_confirmation_file_sha256": "39fc0de35a61568f5b62d811bcf73fead2d8d01da1dd0858c6feda5ffecab0de",
+  "rows": [
+    {
+      "pin": "1",
+      "model_label": "D",
+      "net": "PACK_POS",
+      "pcb_xy_mm": [
+        28.9,
+        1.5
+      ],
+      "nominal_tip_model_xyz_mm": [
+        8.899999999999999,
+        1.9,
+        20.625
+      ],
+      "target_model_xyz_mm": [
+        8.899999999999997,
+        1.9000000000000057,
+        20.625
+      ],
+      "error_mm": 6.0402662910232525e-15,
+      "drill_mm": 0.6
+    },
+    {
+      "pin": "2",
+      "model_label": "B",
+      "net": "GND",
+      "pcb_xy_mm": [
+        18.9,
+        1.5
+      ],
+      "nominal_tip_model_xyz_mm": [
+        -1.1000000000000014,
+        1.9,
+        20.625
+      ],
+      "target_model_xyz_mm": [
+        -1.1000000000000019,
+        1.9000000000000057,
+        20.625
+      ],
+      "error_mm": 5.7902148899581444e-15,
+      "drill_mm": 0.6
+    }
+  ],
+  "probe_side": "B",
+  "board_nominal_thickness_mm": 1.0,
+  "reference_free_height_mm": 4.5,
+  "nominal_compression_mm": 0.7,
+  "nominal_tip_height_from_B_mm": 3.8,
+  "nominal_B_to_battery_front_mm": 3.05,
+  "nominal_solder_tail_projection_above_F_mm": 0.75,
+  "front_tail_solder_height_reservation_mm": 1.2,
+  "model_transform": "Model_X=PCB_X-20; Model_Y=3.4-PCB_Y; Model_Z=25.425+PCB_Z, where PCB_Z=0 at F and -1 at B.",
+  "proposed_product_pose": {
+    "power_pcb_x_mm": [
+      48.95,
+      82.95
+    ],
+    "power_pcb_z_mm": [
+      0,
+      18
+    ],
+    "power_F_y_mm": -4.05,
+    "power_B_y_mm": -3.05,
+    "battery_front_y_mm": 0,
+    "battery_bottom_z_mm": 10.1,
+    "battery_model_top_z_mm": 19.1,
+    "battery_sony_nominal_top_z_mm": 19.3,
+    "basis": "Existing right-side battery X=54..83.9. Raise battery above strip lower edge to reuse stack height. Provisional nominal pose, not a completed enclosure."
+  },
+  "open_items": [
+    "Qualified holder stops and retention; probes must not carry insertion or case loads",
+    "Delivered pack matches user-model datum, widths/recesses and confirmed terminal labels",
+    "Tolerance/wear/board bow and contact compression/force",
+    "Exact probe procurement and incoming inspection",
+    "Power-strip mated PH4 body/wire exit, strain relief and full 3D harness route",
+    "Screen back/support datum and assembled system isolation"
+  ],
+  "scope": "Checks nominal point alignment to user-provided model only. No claimed battery tolerance, fit force, isolation certification or performance validation. Do not release manufacture based on nominal alignment alone."
+}
