@@ -4,24 +4,27 @@
     "BOM.csv": "2c59877a0a700a486f2a85e2ba132352ed9a1f867c7020e66fd4b350d0d6c209",
     "Connector_Generic.kicad_sym": "568fe249ea4680c1ed842bee445ca947bd03c1fdd19812a1acb2adab796e74df",
     "display_link.kicad_sch": "6330901b8fc8c29d85a99c3a870bde10c1627cf515dc8e19a221927ea6372e07",
-    "YuEEG_H_DISPLAY_LINK.kicad_pcb": "51979b486cb4e063baf91e5e389caad5001929970646c76e1cca3f596b3a5b12",
-    "YuEEG_H_DISPLAY_LINK.kicad_pro": "8141213a6f3bd5a8db0fc230e6aa2fe5585da72d152080f6c800bc6d512f4aad",
+    "YuEEG_H_DISPLAY_LINK.kicad_dru": "29b29ead4aa483a6b486f86454d7b4ed67a9050d41af11c76cb4145415544064",
+    "YuEEG_H_DISPLAY_LINK.kicad_pcb": "6ce7b60e96179da0bd3e42f352f31eb3f3b1b8d94331982284aee869ba9d33a5",
+    "YuEEG_H_DISPLAY_LINK.kicad_pro": "d8eacce7c407c1d3d1400bc7f803eaa5f1c9d0ae81e8f0dbbd109e10d4df9dcf",
     "YuEEG_H_DISPLAY_LINK.kicad_sch": "7b8e9b4accc323bce52de23f84eca9f15cc29d6c7f0c127f8f621588cd61fe90",
     "footprints/YuEEG_Display.pretty/OCN_OK_14F024_04_GangMask.kicad_mod": "583c0baa661e8fbfeae478e8de6b4c2b6672e3e5a2687ccfda6501f1701e613c",
     "footprints/YuEEG_Display.pretty/OCN_OK_14GM024_04_LogicalMate.kicad_mod": "071d9fa46b067f7375839d0f7296d4f93920aeac79c37a31ef9eafd28694f31e",
-    "review/design_contract.json": "ba84db7ae22199cc02e52a775d5694b3dc58a4663b36ace4a7b8d2a99e209aac",
-    "review/fold_alignment.json": "7c2a2e81b9f0119abdbb8215291bfd9e063d13e8ab8b2d715a2d225fa5058d4a",
+    "review/design_contract.json": "a389edf651319b6633804a02e41e7c9197e9c469491d17878dbc76bfef86de12",
+    "review/fold_alignment.json": "23c460f5558d0e813192363594e6eeed30cecca01e6728a5df9885260f690d75",
     "review/expected_connections.json": "1ae5ad55bb348ecfc4bffedfce0d61f58a91911f8bc7a0364c7ba64039a88266",
-    "review/drc_current.json": "66537aa18e7b2852f8bf62bcdb79a19136d9dce4f963c0dd10642c98abfc621c",
-    "review/erc_current.json": "036e5d7d43b2dee77c7d8548518153cea51f038f0cbf43a1ad9293b6a9e9f447",
+    "review/drc_current.json": "d54e02fd0ad2566d39505e88fd8cbbec7f2ef48a05313add42aab6ffaef868ea",
+    "review/erc_current.json": "f372af47a7782e5f8df932d7442f3aa17dfa5922b95ee7427bc5660c1f338c81",
     "review/netlist.xml": "f61ffcb4cc6be98eb85e53d0cf13f9d3204ed950293717aa52a9036967a95165",
-    "review/geometry.json": "bba6dc05bca630585621c7fea3d62c1b3a01319d0219ad62ac974536707dfbc5",
-    "review/fold_space.json": "58d89b9f1920ff5eaa02c7408e217c52f0a1a4bd05a0e43a0228403041359fd7",
+    "review/geometry.json": "54c84b6f2aa30eadcd6ee03383e1c88b858862aa4a44f951d4e3c075e1a477f2",
+    "review/fold_space.json": "d007d212dd5f2aa9021401f6607795055d540649f08f87419de7c08ec372a825",
     "review/neighbor_native.json": "7230c625e90738deb6d74cf2ea264dcae80f757acb8a6af03d995d585c744ff9",
-    "review/flat_and_fold.png": "1bf376ea66bf813735c28433133cd48f618637e37b6bb33716d675a899c4a8de",
-    "review/flat_and_fold.svg": "7909b09a0ab06eac4ea50be3b91632d7156fe9a1c5e6ec77088108dac944a7cb",
-    "review/fold_space.png": "0f28b740015bee19db9c9f822fd2a5bc173dc96815059a8c4f96b28e0d386054",
-    "review/fold_space.svg": "047e21de099686b61a42417d9ba80ba4dabf30313cf2e11ed2c22ff40b662ebf"
+    "review/fab_geometry.json": "d5604f92edda97e727d17ef4d35c59798ab754c44758b988c7ca9ccea268534b",
+    "review/fab_geometry_adoption.json": "b97c41c4b4d4a08b06e732c16b0657dabecb5a68fc5e6b7ce3ffdcd1881a4e5a",
+    "review/flat_and_fold.png": "c9b92279bb576df7ca77b3b597de786e573e3fc0bdd5460503e54ffbfa3e872c",
+    "review/flat_and_fold.svg": "0fffae7d40355263a407536e232011cfa70b7de5b783eb2cfa97f60c2b4eee6d",
+    "review/fold_space.png": "d94ccc70babe5625d5b657949a6a0c4f53a6013c8c6659845de946d43696133b",
+    "review/fold_space.svg": "9f50cbf88a86a36c08ee346e3724ad6a1e85426fdd6592f66e85a736d856b039"
   },
   "baseline_pcb_sha256": {
     "afe": "61f639e6cd2ab0925f28603e0191da73723e721caa7f991c334818731c2a21b8",
@@ -35,13 +38,14 @@
     "schematic_parity": 0,
     "pad_contract": true,
     "bend_vias": 0,
-    "nonparallel_bend_tracks": 0
+    "nonparallel_bend_tracks": 0,
+    "nominal_fabrication_geometry": true
   },
   "main_boards_modified_by_this_accessory_build": false,
   "release_gates": [
     "Delivered connector pin-1 and end-to-end continuity",
     "Fabricator stackup, advanced vias, gang coverlay and stiffeners",
     "Screen FPC mounting datum, adjacent component collision and full assembly isolation",
-    "Powered display/touch test at current firmware 10 MHz QSPI"
+    "Powered display test at current firmware10MHz QSPI; touch disabled by current hardware"
   ]
 }

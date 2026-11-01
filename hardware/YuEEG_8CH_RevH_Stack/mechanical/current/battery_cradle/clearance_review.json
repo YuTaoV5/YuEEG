@@ -2,8 +2,8 @@
   "status": "PASS_CONSERVATIVE_NOMINAL_CLEARANCE_NOT_ASSEMBLY_QUALIFICATION",
   "input_sha256": {
     "hardware/YuEEG_8CH_RevH_Stack/mechanical/current/battery_cradle_contract.json": "22e2c57509300cb1cefe34af050be6b28b33e44f567e448fc9a328d3fc6ce35a",
-    "hardware/YuEEG_8CH_RevH_Stack/mechanical/current/complete_power_harness_review.json": "0d72961604a1c62252034c7d7fb908e55b60c69e5b142d5e17fa5f768e562945",
-    "hardware/YuEEG_8CH_RevH_Stack/review/devtools/review_h_complete_power_harness.py": "b5d3ca8928136a89183ae690a36597b0820e7d9e3e0ac1253e68c3728e46e58d",
+    "hardware/YuEEG_8CH_RevH_Stack/mechanical/current/complete_power_harness_review.json": "33063cb331629f488868ad94867be3e8dc82deb09cff8fd21618a2fdff353968",
+    "hardware/YuEEG_8CH_RevH_Stack/review/devtools/review_h_complete_power_harness.py": "d5e5ff837cde7234840ffe9658a2f93b641a87a2ae16c8a238242bb24ecb9fd5",
     "hardware/YuEEG_8CH_RevH_Stack/mechanical/current/pogo_reference.json": "881d1abdf16373985fb8d4380abb7afac1b56d5380a6837f2e0491b4a5879a32",
     "X:/Items/YuEEG/hardware/YuEEG_8CH_RevH_Stack/review/devtools/check_h_battery_cradle_clearance.py": "458ba9b4dd4097e3538f59cf18ae86245caeb9bd38dbd1add9605644ac5ce8b5",
     "hardware/YuEEG_8CH_RevH_Stack/afe/YuEEG_H_AFE.kicad_pcb": "61f639e6cd2ab0925f28603e0191da73723e721caa7f991c334818731c2a21b8",

@@ -69,7 +69,27 @@
   "male_drawing_page": 1,
   "female_drawing_page": 3,
   "fabrication_reference": "https://jlcpcb.com/capabilities/flex-pcb-capabilities",
-  "fabrication_proposal": "Two-layer PI FPC, nominal .11 mm finished, 12um copper; end PI stiffeners on F side, .20mm proposal. Advanced .10/.30mm drill/diameter vias in end areas only require fabricator confirmation. Yellow coverlay, gang opening under each fine-pitch connector. Final fab stackup, thickness maximum for bend radius, stiffener support and assembly process not qualified.",
+  "fabrication_proposal": "Two-layer PI FPC;25um polyimide core and12um base copper per side, nominal .11mm finished yellow-coverlay target. Individual coverlay/adhesive/plating thickness allocation not factory-approved; no invented numeric KiCad laminate stack. F-side .20mm PI stiffeners are proposed filled F.Adhes regions. Advanced .10/.30mm vias, gang coverlay windows and final stackup, tolerances, support and assembly process need fabricator confirmation.",
   "procurement": "User confirmed both exact-series male and matching socket are available on Taobao. Specific SKU, delivered version and mating samples have not been independently verified.",
-  "scope": "This passive accessory does not itself modify the three main boards. Main-board fingerprints follow the current engineering checkpoint. Four unused signal pins remain NC at both ends. Retention fittings remain acquisition GND. Both components on B in flat artwork; one-time U fold toward +Y with a narrow neck to avoid adjacent power ICs. Geometric mating/numbering and all clearances require sample verification."
+  "scope": "This passive accessory does not itself modify the three main boards. Main-board fingerprints follow the current engineering checkpoint. Four unused signal pins remain NC at both ends. Retention fittings remain acquisition GND. Both components on B in flat artwork; one-time U fold toward +Y with a narrow neck to avoid adjacent power ICs. Geometric mating/numbering and all clearances require sample verification.",
+  "end_taper_offsets_by_connector_mm": {
+    "JF1": [
+      1.55,
+      2.05
+    ],
+    "JF2": [
+      1.65,
+      2.05
+    ]
+  },
+  "material_declaration_layer": "Cmts.User",
+  "stiffener_definition": {
+    "layer": "F.Adhes",
+    "side": "F",
+    "material": "PI",
+    "proposed_thickness_mm": 0.2,
+    "filled_regions": true
+  },
+  "minimum_copper_edge_clearance_mm": 0.3,
+  "exposed_SMD_pad_to_other_net_copper_clearance_mm": 0.15
 }

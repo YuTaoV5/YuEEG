@@ -4,7 +4,11 @@
     "power_ports_native.json": "575571e068ea78f073d59e6358f8f80e043c503dae0e748f79275a001ee1982d",
     "pogo_assembly_review.json": "00e92c491dddce7976a8c61d977e1db6fc535a0370024d93201cabba011b1b29",
     "interboard_contract.json": "74f413e8f602520af97d4c58ac982c88bcd8967f2ae5b97f5a8cc803a460fee2",
-    "design_contract.json": "ba84db7ae22199cc02e52a775d5694b3dc58a4663b36ace4a7b8d2a99e209aac"
+    "design_contract.json": "a389edf651319b6633804a02e41e7c9197e9c469491d17878dbc76bfef86de12"
+  },
+  "source_code_sha256": {
+    "review_h_complete_power_harness.py": "d5e5ff837cde7234840ffe9658a2f93b641a87a2ae16c8a238242bb24ecb9fd5",
+    "check_h_display_fold_space.py": "037ae3fb8fd49e28ec77a1512f657717a1eb8b9f60dde668ab6a588b20cb0656"
   },
   "catalog": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
   "catalog_reference_pages": [

@@ -1,0 +1,159 @@
+{
+  "status": "FPC_DFM_GEOMETRY_ADOPTED_NOT_ASSEMBLY_OR_FAB_RELEASE",
+  "baseline_pcb_sha256": "51979b486cb4e063baf91e5e389caad5001929970646c76e1cca3f596b3a5b12",
+  "current_pcb_sha256": "6ce7b60e96179da0bd3e42f352f31eb3f3b1b8d94331982284aee869ba9d33a5",
+  "all_56_pad_geometry_nets_and_both_connector_poses_unchanged": true,
+  "only_GND_four_track_endpoint_adjustments": [
+    {
+      "uuid": "276aec77-5645-4d10-9826-915324742be8",
+      "before": {
+        "net": "GND",
+        "width": 0.15,
+        "kind": "track",
+        "start": [
+          1.85,
+          3.6
+        ],
+        "end": [
+          1.9,
+          3.65
+        ],
+        "layer": 2
+      },
+      "after": {
+        "net": "GND",
+        "width": 0.15,
+        "kind": "track",
+        "start": [
+          1.85,
+          3.6
+        ],
+        "end": [
+          1.91,
+          3.65
+        ],
+        "layer": 2
+      }
+    },
+    {
+      "uuid": "6d9bf713-f46d-4701-8892-8a6e262672b3",
+      "before": {
+        "net": "GND",
+        "width": 0.3,
+        "kind": "track",
+        "start": [
+          1.899999,
+          3.65
+        ],
+        "end": [
+          1.899999,
+          9.880707
+        ],
+        "layer": 2
+      },
+      "after": {
+        "net": "GND",
+        "width": 0.3,
+        "kind": "track",
+        "start": [
+          1.91,
+          3.65
+        ],
+        "end": [
+          1.91,
+          9.880707
+        ],
+        "layer": 2
+      }
+    },
+    {
+      "uuid": "72bd2b8f-5939-4aff-94c9-f44889f921c9",
+      "before": {
+        "net": "GND",
+        "width": 0.15,
+        "kind": "track",
+        "start": [
+          1.85,
+          9.95
+        ],
+        "end": [
+          1.9,
+          9.9
+        ],
+        "layer": 2
+      },
+      "after": {
+        "net": "GND",
+        "width": 0.15,
+        "kind": "track",
+        "start": [
+          1.85,
+          9.95
+        ],
+        "end": [
+          1.91,
+          9.9
+        ],
+        "layer": 2
+      }
+    },
+    {
+      "uuid": "d628b78b-bcf1-4d35-8710-001474ab5da2",
+      "before": {
+        "net": "GND",
+        "width": 0.15,
+        "kind": "track",
+        "start": [
+          1.899999,
+          9.880707
+        ],
+        "end": [
+          1.9,
+          9.9
+        ],
+        "layer": 2
+      },
+      "after": {
+        "net": "GND",
+        "width": 0.15,
+        "kind": "track",
+        "start": [
+          1.91,
+          9.880707
+        ],
+        "end": [
+          1.91,
+          9.9
+        ],
+        "layer": 2
+      }
+    }
+  ],
+  "all_vias_unchanged": true,
+  "upper_taper_start_offset_from_connector_mm": [
+    1.55,
+    1.65
+  ],
+  "lower_taper_and_connector_placement_unchanged": true,
+  "DRC_constraints": {
+    "copper_edge_minimum_mm": 0.3,
+    "SMD_pad_other_net_copper_mm": 0.15
+  },
+  "flat_end_ground_pour_clearance_mm": [
+    0.1,
+    0.15
+  ],
+  "checks": {
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0
+  },
+  "main_pcb_sha256": {
+    "afe": "61f639e6cd2ab0925f28603e0191da73723e721caa7f991c334818731c2a21b8",
+    "digital": "e4ec2796baec9bfced51394bc5c8ac8c5172db75c834cd15c4a2eb06d868470f",
+    "power": "db28c24a71fb837f4e15c4a56017e570991aacc7b19b210fa71dfbc8c3f8eb81"
+  },
+  "main_pcbs_changed": false,
+  "adoption_script_sha256": "6df25b1c2bbdc4cde2c03d803e5be6b535681701b51a46bfaf5879bd23a8675e",
+  "scope": "Upper end locally widened for retaining-pad/edge clearance;4 GND segments shifted X1.899999/1.9->1.91mm; flat end pours refilled with.15mm clearance and all SMD-pad/other-net copper constrained to.15mm. No electrical or main-board changes. Stiffeners now filled zero-stroke regions and PI fabrication targets explicitly annotated outside board. No approved per-layer laminate, folded-screen Z datum, part mating, manufacturing tolerance or full assembly release."
+}

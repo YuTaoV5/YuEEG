@@ -9,7 +9,7 @@ for ref,name in [('JF1','OCN_OK_14GM024_04_LogicalMate'),('JF2','OCN_OK_14F024_0
   if net not in nets:n=p.NETINFO_ITEM(b,net);b.Add(n);nets[net]=n
   pad.SetNet(nets[net])
 my=q['connector_centers_flat_mm']['JF1'][1];fy=q['connector_centers_flat_mm']['JF2'][1];lo=(W-q['neck_width_mm'])/2;hi=W-lo
-t0,t1=q['end_taper_offsets_from_connector_mm'];outline=[(0,0),(W,0),(W,my+t0),(hi,my+t1),(hi,fy-t1),(W,fy-t0),(W,B),(0,B),(0,fy-t0),(lo,fy-t1),(lo,my+t1),(0,my+t0),(0,0)]
+lt0,lt1=q.get('end_taper_offsets_by_connector_mm',{}).get('JF1',q['end_taper_offsets_from_connector_mm']);ut0,ut1=q.get('end_taper_offsets_by_connector_mm',{}).get('JF2',q['end_taper_offsets_from_connector_mm']);outline=[(0,0),(W,0),(W,my+lt0),(hi,my+lt1),(hi,fy-ut1),(W,fy-ut0),(W,B),(0,B),(0,fy-ut0),(lo,fy-ut1),(lo,my+lt1),(0,my+lt0),(0,0)]
 for a,c in zip(outline,outline[1:]):
  g=p.PCB_SHAPE(b);g.SetShape(p.SHAPE_T_SEGMENT);g.SetStart(xy(*a));g.SetEnd(xy(*c));g.SetLayer(p.Edge_Cuts);g.SetWidth(p.FromMM(.05));b.Add(g)
 path=D/(stem+'.kicad_pcb');p.SaveBoard(str(path),b);project.write_bytes(project_bytes)

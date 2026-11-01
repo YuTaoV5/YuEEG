@@ -33,7 +33,7 @@
     "scope": "Listing title and main image, not delivered-part verification. The listing does not explicitly name AM178Q368448LK in its currently readable text."
   },
   "official_repository_commit": "9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70",
-  "upstream_materials_review_sha256": "f9b49cda2923fd2214d299cac6e06bc97ff91ed841796d259d022b13ba379024",
+  "upstream_materials_review_sha256": "cfa8007827be2642accc58492f90ac414f44d38a9248efd7ab0b1e610c40b160",
   "files_sha256": {
     "am178_single_option.jpg": "54abfe2d361158add6d2f4cdee50fc4c9e56ac3690dc5629da8fbe32c7ffb0ed",
     "am178_connector_option.jpg": "cdc0319786c84b55c19739604771b500e5c7566a4df31df2f007b0251e907840",

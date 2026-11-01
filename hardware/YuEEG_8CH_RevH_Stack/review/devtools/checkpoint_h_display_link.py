@@ -1,11 +1,12 @@
 """Bind the passive FPC prototype to sources and extract native geometry for review."""
 from pathlib import Path
-import hashlib,json,subprocess,xml.etree.ElementTree as ET
+import hashlib,json,subprocess,sys,xml.etree.ElementTree as ET
 import pcbnew as p,wx
 wx.DisableAsserts()
 H=Path('hardware/YuEEG_8CH_RevH_Stack');D=H/'display_link';R=D/'review';pcb=D/'YuEEG_H_DISPLAY_LINK.kicad_pcb'
 sha=lambda f:hashlib.sha256(f.read_bytes()).hexdigest()
 cli='X:/SoftWare/Kicad/bin/kicad-cli.exe'
+subprocess.run([sys.executable,str(H/'review/devtools/check_h_fpc_fab_geometry.py')],check=True)
 for kind,args in [('drc',['pcb','drc','--schematic-parity']),('erc',['sch','erc'])]:
  src=pcb if kind=='drc' else pcb.with_suffix('.kicad_sch')
  subprocess.run([cli,*args,'--format','json','-o',str(R/(kind+'_current.json')),str(src)],check=True,stdout=subprocess.DEVNULL)
@@ -27,9 +28,10 @@ for g in b.GetDrawings():
 baseline=json.loads((H/'review/current_check_summary.json').read_text());unchanged={}
 for name,r in baseline['boards'].items():
  f=H/name/('YuEEG_H_'+name.upper()+'.kicad_pcb');assert sha(f)==r['pcb_sha256'];unchanged[name]=sha(f)
-files={f.relative_to(D).as_posix():sha(f) for f in D.rglob('*') if f.is_file() and f.suffix in ['.kicad_pcb','.kicad_sch','.kicad_pro','.kicad_mod','.kicad_sym','.csv']}
+files={f.relative_to(D).as_posix():sha(f) for f in D.rglob('*') if f.is_file() and f.suffix in ['.kicad_pcb','.kicad_sch','.kicad_pro','.kicad_dru','.kicad_mod','.kicad_sym','.csv']}
 for name in ['design_contract.json','fold_alignment.json','expected_connections.json','drc_current.json','erc_current.json','netlist.xml','geometry.json','fold_space.json','neighbor_native.json']:files['review/'+name]=sha(R/name)
+for name in ['fab_geometry.json','fab_geometry_adoption.json']:files['review/'+name]=sha(R/name)
 for name in ['flat_and_fold.png','flat_and_fold.svg','fold_space.png','fold_space.svg']:
  if (R/name).exists():files['review/'+name]=sha(R/name)
-record=dict(status='PROTOTYPE_NOT_FOR_ORDER',source_files_sha256=files,baseline_pcb_sha256=unchanged,checks=dict(erc=0,drc=0,unconnected=0,schematic_parity=0,pad_contract=True,bend_vias=0,nonparallel_bend_tracks=0),main_boards_modified_by_this_accessory_build=False,release_gates=['Delivered connector pin-1 and end-to-end continuity','Fabricator stackup, advanced vias, gang coverlay and stiffeners','Screen FPC mounting datum, adjacent component collision and full assembly isolation','Powered display/touch test at current firmware 10 MHz QSPI'])
+record=dict(status='PROTOTYPE_NOT_FOR_ORDER',source_files_sha256=files,baseline_pcb_sha256=unchanged,checks=dict(erc=0,drc=0,unconnected=0,schematic_parity=0,pad_contract=True,bend_vias=0,nonparallel_bend_tracks=0,nominal_fabrication_geometry=True),main_boards_modified_by_this_accessory_build=False,release_gates=['Delivered connector pin-1 and end-to-end continuity','Fabricator stackup, advanced vias, gang coverlay and stiffeners','Screen FPC mounting datum, adjacent component collision and full assembly isolation','Powered display test at current firmware10MHz QSPI; touch disabled by current hardware'])
 (R/'checkpoint.json').write_text(json.dumps(record,indent=2));print('FPC prototype checks passed; three main PCBs match current engineering checkpoint')

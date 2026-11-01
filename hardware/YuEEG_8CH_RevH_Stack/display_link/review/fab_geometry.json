@@ -1,0 +1,2349 @@
+{
+  "status": "PASS_NOMINAL_FPC_FAB_GEOMETRY_NOT_PROCESS_OR_ASSEMBLY_RELEASE",
+  "pcb_sha256": "6ce7b60e96179da0bd3e42f352f31eb3f3b1b8d94331982284aee869ba9d33a5",
+  "project_sha256": "d8eacce7c407c1d3d1400bc7f803eaa5f1c9d0ae81e8f0dbbd109e10d4df9dcf",
+  "rules_sha256": "29b29ead4aa483a6b486f86454d7b4ed67a9050d41af11c76cb4145415544064",
+  "contract_sha256": "a389edf651319b6633804a02e41e7c9197e9c469491d17878dbc76bfef86de12",
+  "checker_sha256": "6083e7b1b63b0ff3b5a8ed495515bc92b6c979f7a628b9e39eb284d4c21bb352",
+  "reference_capabilities": "https://jlcpcb.com/capabilities/flex-pcb-capabilities",
+  "minimum_copper_edge_constraint_mm": 0.3,
+  "minimum_exposed_pad_other_net_copper_constraint_mm": 0.15,
+  "minimum_pad_edge_gap_mm": 0.3257623335293432,
+  "minimum_track_via_edge_gap_mm": 0.3000009999999998,
+  "all56_rectangular_SMD_pads": [
+    {
+      "pin": "JF2.1",
+      "net": "AM_RST_P",
+      "edge_gap_mm": 0.34999999999999964
+    },
+    {
+      "pin": "JF2.2",
+      "net": "GND",
+      "edge_gap_mm": 0.34999999999999964
+    },
+    {
+      "pin": "JF2.3",
+      "net": "unconnected-(JF2-Pin_3-Pad3)",
+      "edge_gap_mm": 0.34999999999999964
+    },
+    {
+      "pin": "JF2.4",
+      "net": "AM_CS_P",
+      "edge_gap_mm": 0.34999999999999964
+    },
+    {
+      "pin": "JF2.5",
+      "net": "AM_CLK_P",
+      "edge_gap_mm": 0.34999999999999964
+    },
+    {
+      "pin": "JF2.6",
+      "net": "AM_D1_P",
+      "edge_gap_mm": 0.34999999999999964
+    },
+    {
+      "pin": "JF2.7",
+      "net": "AM_D0_P",
+      "edge_gap_mm": 0.34999999999999964
+    },
+    {
+      "pin": "JF2.8",
+      "net": "GND",
+      "edge_gap_mm": 0.34999999999999964
+    },
+    {
+      "pin": "JF2.9",
+      "net": "unconnected-(JF2-Pin_9-Pad9)",
+      "edge_gap_mm": 0.34999999999999964
+    },
+    {
+      "pin": "JF2.10",
+      "net": "unconnected-(JF2-Pin_10-Pad10)",
+      "edge_gap_mm": 0.34999999999999964
+    },
+    {
+      "pin": "JF2.11",
+      "net": "AM_RAW",
+      "edge_gap_mm": 0.34999999999999964
+    },
+    {
+      "pin": "JF2.12",
+      "net": "AM_RAW",
+      "edge_gap_mm": 0.34999999999999964
+    },
+    {
+      "pin": "JF2.13",
+      "net": "GND",
+      "edge_gap_mm": 0.6443795465407028
+    },
+    {
+      "pin": "JF2.14",
+      "net": "GND",
+      "edge_gap_mm": 0.8736274949885687
+    },
+    {
+      "pin": "JF2.15",
+      "net": "AM_1V8",
+      "edge_gap_mm": 1.1963381628954255
+    },
+    {
+      "pin": "JF2.16",
+      "net": "AM_RAW",
+      "edge_gap_mm": 1.5553858042299349
+    },
+    {
+      "pin": "JF2.17",
+      "net": "unconnected-(JF2-Pin_17-Pad17)",
+      "edge_gap_mm": 1.930602237645031
+    },
+    {
+      "pin": "JF2.18",
+      "net": "GND",
+      "edge_gap_mm": 2.314135907849839
+    },
+    {
+      "pin": "JF2.19",
+      "net": "TP_SDA_IDLE",
+      "edge_gap_mm": 2.314135907849839
+    },
+    {
+      "pin": "JF2.20",
+      "net": "TP_SCL_IDLE",
+      "edge_gap_mm": 1.9306022376450311
+    },
+    {
+      "pin": "JF2.21",
+      "net": "GND",
+      "edge_gap_mm": 1.5553858042299347
+    },
+    {
+      "pin": "JF2.22",
+      "net": "AM_D3_P",
+      "edge_gap_mm": 1.1963381628954248
+    },
+    {
+      "pin": "JF2.23",
+      "net": "AM_D2_P",
+      "edge_gap_mm": 0.8736274949885686
+    },
+    {
+      "pin": "JF2.24",
+      "net": "VCI_EN",
+      "edge_gap_mm": 0.6443795465407025
+    },
+    {
+      "pin": "JF2.25",
+      "net": "GND",
+      "edge_gap_mm": 0.34999999999999964
+    },
+    {
+      "pin": "JF2.26",
+      "net": "GND",
+      "edge_gap_mm": 0.32576233352934325
+    },
+    {
+      "pin": "JF2.27",
+      "net": "GND",
+      "edge_gap_mm": 0.3257623335293432
+    },
+    {
+      "pin": "JF2.28",
+      "net": "GND",
+      "edge_gap_mm": 0.34999999999999964
+    },
+    {
+      "pin": "JF1.1",
+      "net": "AM_RST_P",
+      "edge_gap_mm": 0.6000000000000001
+    },
+    {
+      "pin": "JF1.2",
+      "net": "GND",
+      "edge_gap_mm": 0.6000000000000001
+    },
+    {
+      "pin": "JF1.3",
+      "net": "unconnected-(JF1-Pin_3-Pad3)",
+      "edge_gap_mm": 0.6000000000000001
+    },
+    {
+      "pin": "JF1.4",
+      "net": "AM_CS_P",
+      "edge_gap_mm": 0.6000000000000001
+    },
+    {
+      "pin": "JF1.5",
+      "net": "AM_CLK_P",
+      "edge_gap_mm": 0.6000000000000001
+    },
+    {
+      "pin": "JF1.6",
+      "net": "AM_D1_P",
+      "edge_gap_mm": 0.6000000000000001
+    },
+    {
+      "pin": "JF1.7",
+      "net": "AM_D0_P",
+      "edge_gap_mm": 0.6000000000000001
+    },
+    {
+      "pin": "JF1.8",
+      "net": "GND",
+      "edge_gap_mm": 0.6000000000000001
+    },
+    {
+      "pin": "JF1.9",
+      "net": "unconnected-(JF1-Pin_9-Pad9)",
+      "edge_gap_mm": 0.6000000000000001
+    },
+    {
+      "pin": "JF1.10",
+      "net": "unconnected-(JF1-Pin_10-Pad10)",
+      "edge_gap_mm": 0.6000000000000001
+    },
+    {
+      "pin": "JF1.11",
+      "net": "AM_RAW",
+      "edge_gap_mm": 0.6000000000000001
+    },
+    {
+      "pin": "JF1.12",
+      "net": "AM_RAW",
+      "edge_gap_mm": 0.6000000000000001
+    },
+    {
+      "pin": "JF1.13",
+      "net": "GND",
+      "edge_gap_mm": 0.8801739334456582
+    },
+    {
+      "pin": "JF1.14",
+      "net": "GND",
+      "edge_gap_mm": 1.0610010838830468
+    },
+    {
+      "pin": "JF1.15",
+      "net": "AM_1V8",
+      "edge_gap_mm": 1.3392995557383718
+    },
+    {
+      "pin": "JF1.16",
+      "net": "AM_RAW",
+      "edge_gap_mm": 1.6678499033189407
+    },
+    {
+      "pin": "JF1.17",
+      "net": "unconnected-(JF1-Pin_17-Pad17)",
+      "edge_gap_mm": 2.02230643078664
+    },
+    {
+      "pin": "JF1.18",
+      "net": "GND",
+      "edge_gap_mm": 2.3499999999999996
+    },
+    {
+      "pin": "JF1.19",
+      "net": "TP_SDA_IDLE",
+      "edge_gap_mm": 2.3499999999999996
+    },
+    {
+      "pin": "JF1.20",
+      "net": "TP_SCL_IDLE",
+      "edge_gap_mm": 2.02230643078664
+    },
+    {
+      "pin": "JF1.21",
+      "net": "GND",
+      "edge_gap_mm": 1.6678499033189405
+    },
+    {
+      "pin": "JF1.22",
+      "net": "AM_D3_P",
+      "edge_gap_mm": 1.3392995557383711
+    },
+    {
+      "pin": "JF1.23",
+      "net": "AM_D2_P",
+      "edge_gap_mm": 1.0610010838830466
+    },
+    {
+      "pin": "JF1.24",
+      "net": "VCI_EN",
+      "edge_gap_mm": 0.880173933445658
+    },
+    {
+      "pin": "JF1.25",
+      "net": "GND",
+      "edge_gap_mm": 0.77
+    },
+    {
+      "pin": "JF1.26",
+      "net": "GND",
+      "edge_gap_mm": 0.77
+    },
+    {
+      "pin": "JF1.27",
+      "net": "GND",
+      "edge_gap_mm": 0.7700000000000005
+    },
+    {
+      "pin": "JF1.28",
+      "net": "GND",
+      "edge_gap_mm": 0.7700000000000005
+    }
+  ],
+  "all_tracks_and_vias": [
+    {
+      "uuid": "02b4a4ac-20b1-4344-909d-f848099a5763",
+      "net": "AM_RST_P",
+      "kind": "track",
+      "edge_gap_mm": 0.3531123912769239
+    },
+    {
+      "uuid": "637d36e6-053d-4918-b1fb-6aa2aef3d376",
+      "net": "AM_RST_P",
+      "kind": "track",
+      "edge_gap_mm": 0.3531137556583744
+    },
+    {
+      "uuid": "74b1dbe9-b541-455d-aa87-42d3c63d62b0",
+      "net": "AM_RST_P",
+      "kind": "track",
+      "edge_gap_mm": 0.3000009999999998
+    },
+    {
+      "uuid": "f75840db-d038-4c19-8b47-47a3c81be8b9",
+      "net": "AM_RST_P",
+      "kind": "track",
+      "edge_gap_mm": 0.3531123912769239
+    },
+    {
+      "uuid": "fd1660a4-dccb-4311-ad17-3399eb3e2067",
+      "net": "AM_RST_P",
+      "kind": "track",
+      "edge_gap_mm": 0.36302472062698615
+    },
+    {
+      "uuid": "23290bbb-ecb4-4f00-8b27-0886a8088685",
+      "net": "AM_RST_P",
+      "kind": "via",
+      "edge_gap_mm": 1.35
+    },
+    {
+      "uuid": "9de66560-dfc9-4acc-8fc2-d7d9c39d93eb",
+      "net": "AM_RST_P",
+      "kind": "via",
+      "edge_gap_mm": 1.080706999999999
+    },
+    {
+      "uuid": "21c24809-78a8-4eb7-bafa-a0e01c461869",
+      "net": "AM_RST_P",
+      "kind": "track",
+      "edge_gap_mm": 0.6307069999999999
+    },
+    {
+      "uuid": "41183d52-981d-487c-84cf-afb112c8f0ac",
+      "net": "AM_RST_P",
+      "kind": "track",
+      "edge_gap_mm": 0.875
+    },
+    {
+      "uuid": "4a573231-7b5d-491f-85c7-6c0def69e66c",
+      "net": "AM_RST_P",
+      "kind": "track",
+      "edge_gap_mm": 0.6249999999999989
+    },
+    {
+      "uuid": "cfe19383-0a8f-4296-a9e5-1914c2fd28d0",
+      "net": "AM_RST_P",
+      "kind": "track",
+      "edge_gap_mm": 0.8999999999999999
+    },
+    {
+      "uuid": "4c185758-37a4-4dea-9c8a-e61bedbe476e",
+      "net": "VCI_EN",
+      "kind": "track",
+      "edge_gap_mm": 1.1749090793479622
+    },
+    {
+      "uuid": "60ca625f-2111-412a-acd6-601e24739d75",
+      "net": "VCI_EN",
+      "kind": "track",
+      "edge_gap_mm": 0.3531123912769239
+    },
+    {
+      "uuid": "85e26c98-2092-44a0-8e00-12675524da0d",
+      "net": "VCI_EN",
+      "kind": "track",
+      "edge_gap_mm": 0.3531137556583744
+    },
+    {
+      "uuid": "89a67425-006c-49e5-9cef-e903207cad54",
+      "net": "VCI_EN",
+      "kind": "track",
+      "edge_gap_mm": 0.933666416956988
+    },
+    {
+      "uuid": "99bf2832-2777-4147-82b0-e03ad4704259",
+      "net": "VCI_EN",
+      "kind": "track",
+      "edge_gap_mm": 0.36302472062698615
+    },
+    {
+      "uuid": "aeb72e38-ffd1-48a8-b671-72de3aecb80d",
+      "net": "VCI_EN",
+      "kind": "track",
+      "edge_gap_mm": 0.3000009999999998
+    },
+    {
+      "uuid": "b381444c-90ad-4016-883c-1bf57180f824",
+      "net": "VCI_EN",
+      "kind": "track",
+      "edge_gap_mm": 0.3531123912769239
+    },
+    {
+      "uuid": "ad39a96e-8077-454c-a627-6d0e3b9ca6be",
+      "net": "GND",
+      "kind": "via",
+      "edge_gap_mm": 0.44999999999999996
+    },
+    {
+      "uuid": "ee34e6ac-20b1-4f14-ad25-4b7000b590a5",
+      "net": "GND",
+      "kind": "via",
+      "edge_gap_mm": 0.4499999999999996
+    },
+    {
+      "uuid": "0014a37b-bee7-428c-ac0c-405a765ebe10",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.567544708630179
+    },
+    {
+      "uuid": "00d41d18-e9a4-49f8-917a-699fd863b74f",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.605707
+    },
+    {
+      "uuid": "029b4a8c-7b28-4b94-bf5e-0ee70e31ccbe",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.9086664169569884
+    },
+    {
+      "uuid": "04903f0a-da70-4f66-805f-78161f7db9ed",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.655706999999999
+    },
+    {
+      "uuid": "06bf8251-6691-4dd6-afa5-6d05ebb62c06",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.9591142556610841
+    },
+    {
+      "uuid": "06c2e745-51bc-4e94-832d-8b652aeea28f",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.2036785052737062
+    },
+    {
+      "uuid": "0acfde31-3ffd-4cc2-a045-cbe4d1fce3f0",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.1735434089118513
+    },
+    {
+      "uuid": "0b275858-0267-4ad7-a72a-16a80ab883f6",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.1882130579772432
+    },
+    {
+      "uuid": "0d27d54a-de3f-4a30-afba-66a756b13172",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.4344060486989578
+    },
+    {
+      "uuid": "1054ec81-fc99-4a7a-bdfd-625615c1a5ed",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.925
+    },
+    {
+      "uuid": "117f7f73-16bd-4d71-a4a1-e7362cb719d1",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.3178384687396452
+    },
+    {
+      "uuid": "16a0adf9-e6a9-43a1-bcf2-e1bf57a9df7f",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.2175523561080277
+    },
+    {
+      "uuid": "16b39210-85ab-45ad-84db-d8fbbfc171af",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.1882130579772432
+    },
+    {
+      "uuid": "18d1a47e-4bb8-4b10-99fd-87da01f004d4",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.4966984188606287
+    },
+    {
+      "uuid": "1b587888-5a97-4a97-98f1-d216cec6bf93",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.92
+    },
+    {
+      "uuid": "1c243592-0e8f-4af2-ba9c-b1502d3a8330",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.175
+    },
+    {
+      "uuid": "1d127d27-41f2-4544-934c-0e9c19e10b17",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.421287846588684
+    },
+    {
+      "uuid": "20420cd8-714c-4f33-b3df-ad2b7737debf",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 2.382617224030015
+    },
+    {
+      "uuid": "20ea6b2a-972f-4ae6-8da6-e816a86406b0",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.8057069999999993
+    },
+    {
+      "uuid": "23223982-799e-4b67-bdcf-496d3fa432d2",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 2.320402496418712
+    },
+    {
+      "uuid": "24d8c577-1d95-4387-b8d6-1473663044cf",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.633766344427757
+    },
+    {
+      "uuid": "25e258af-c90c-4e8b-aee0-51b7f34da89e",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.0957217516767164
+    },
+    {
+      "uuid": "276aec77-5645-4d10-9826-915324742be8",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.39669852660465243
+    },
+    {
+      "uuid": "2a5e7351-fcae-4482-a4e0-8e76e7d11521",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.421287846588684
+    },
+    {
+      "uuid": "2ca56d90-a1ea-4dfc-8cfe-9779d0cf2007",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.1499090793479625
+    },
+    {
+      "uuid": "2f620ba1-fd99-4bcb-bc46-79f7722b6dd2",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.4749999999999999
+    },
+    {
+      "uuid": "2f757028-0483-4fdb-b789-b886a9a4e824",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.9258735356656747
+    },
+    {
+      "uuid": "2fea9e64-cb58-4d4d-b1f6-403f98188ef6",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.605707
+    },
+    {
+      "uuid": "308b05dd-371e-4dc5-93f4-20779a6e1f6a",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.7857794065928394
+    },
+    {
+      "uuid": "3160b4c6-6fae-450d-972a-45ff5079cb9d",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.7271097690898296
+    },
+    {
+      "uuid": "342abf9e-d31b-44c3-8a83-d210a39dee25",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.0922615816521157
+    },
+    {
+      "uuid": "346d7183-8f0f-4946-be75-ce7ede22a7c2",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.599999999999999
+    },
+    {
+      "uuid": "3606e6af-35d5-4e7f-9d47-43177303b044",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.355707
+    },
+    {
+      "uuid": "393e0675-e487-42cf-b294-c1c7a0bdf38d",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 2.2723891709405577
+    },
+    {
+      "uuid": "3d70f29f-8e41-41e2-9672-9b8ba95637e3",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 2.205104673002755
+    },
+    {
+      "uuid": "3d922c8a-f726-4174-a464-6fa57e6984dc",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.87002510266603
+    },
+    {
+      "uuid": "3dcfe8f2-257a-4ba6-90b3-40765ea515e5",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.2557070000000004
+    },
+    {
+      "uuid": "3eed9b95-651a-4169-b4fd-5e280297cf34",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.1114230357882469
+    },
+    {
+      "uuid": "420fccc3-4c0d-4215-b853-dc3165db48ad",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.0922615816521157
+    },
+    {
+      "uuid": "42c0fb43-a534-4e6f-a350-4211c365cddb",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.8935067233436107
+    },
+    {
+      "uuid": "44ec2c2e-1085-400b-890d-71316145ad9b",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.950326645222691
+    },
+    {
+      "uuid": "45c6728e-4127-4278-8bc6-59289892266a",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.2230752289451488
+    },
+    {
+      "uuid": "4ab7f36f-cbdd-4ab1-b845-048df2fc0198",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.154844998302225
+    },
+    {
+      "uuid": "4b8001ac-f56f-4319-afd5-edba364fb07a",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.8057069999999993
+    },
+    {
+      "uuid": "4ccaa796-5ef2-4ce8-90a3-dc08b6f9f626",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.7557070000000004
+    },
+    {
+      "uuid": "4cf9cc5f-206f-4da0-96a3-9f6feb652548",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.6557069999999989
+    },
+    {
+      "uuid": "4e366ece-cba6-4716-8fef-b0ff0babc36c",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.0000009999999997
+    },
+    {
+      "uuid": "52d6b9bd-251f-4fe0-8383-6eb2b76a1502",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.7879518028787003
+    },
+    {
+      "uuid": "54ee79dc-294a-4256-b334-8d6e50aa85dc",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 2.0572235623519872
+    },
+    {
+      "uuid": "57ed663a-ae3f-4b3b-a2ff-40222d532050",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.40720194923807573
+    },
+    {
+      "uuid": "5a73c7ed-ada9-43c4-9e6d-76fa07c3ebc6",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.605707
+    },
+    {
+      "uuid": "5b1e3002-3164-41ee-8cb6-b9790d63b532",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 2.4134730458658775
+    },
+    {
+      "uuid": "5e940685-7e76-405b-8ff6-795fde169238",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 2.4789181662694277
+    },
+    {
+      "uuid": "60163d20-bdd8-4b6e-adc8-fcbc09d565fb",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.9086664169569884
+    },
+    {
+      "uuid": "60800df8-8779-4b7e-bfd3-6d904cf203ac",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.2036785052737062
+    },
+    {
+      "uuid": "6084f999-a057-49d5-b8f5-0d6db8879557",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.312244758450721
+    },
+    {
+      "uuid": "60ae1030-e5d6-4d84-a04c-a3c19af4d456",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.605707
+    },
+    {
+      "uuid": "6410973a-a4eb-4616-9a8b-d20a391de596",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.599999999999999
+    },
+    {
+      "uuid": "6534315d-b5fc-4a41-9227-4622a5bd9709",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.3750000000000002
+    },
+    {
+      "uuid": "6848c061-065a-4b77-a464-74ed6d3a4191",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.300681322109521
+    },
+    {
+      "uuid": "6855754f-2674-4497-97e8-864fd249a1d0",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.5057070000000004
+    },
+    {
+      "uuid": "6a226def-f6de-49d1-8f03-dc867f11d1a2",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.2322220051734196
+    },
+    {
+      "uuid": "6aa8abc8-a262-4b2c-861e-e88867e8002a",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.7005275554045902
+    },
+    {
+      "uuid": "6d9bf713-f46d-4701-8892-8a6e262672b3",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.30999999999999994
+    },
+    {
+      "uuid": "70119a3b-51fd-4f5c-8138-d45c6cfeddab",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.748032984511375
+    },
+    {
+      "uuid": "70604158-aabd-4b95-8cc6-513cabf0c15a",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.9086664169569884
+    },
+    {
+      "uuid": "7074aaba-7458-4b54-8e09-9715288911de",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.605707
+    },
+    {
+      "uuid": "71e8406a-b2d3-4bda-a9c4-dcf5f20fc0d3",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.7531216917505794
+    },
+    {
+      "uuid": "72bd2b8f-5939-4aff-94c9-f44889f921c9",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.40720194923807573
+    },
+    {
+      "uuid": "72ced4fc-5fd1-4634-a55c-e5daa3c5191f",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.0557069999999993
+    },
+    {
+      "uuid": "792fba67-1e4e-483f-b13d-6f1394874400",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.8439889837747898
+    },
+    {
+      "uuid": "7954765a-2024-43b1-8b4a-50a8580b53e5",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.9258735356656747
+    },
+    {
+      "uuid": "7a8ed4b2-7a3c-49f0-86d1-982969775d09",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.43379988192707025
+    },
+    {
+      "uuid": "7bd5b6e8-8298-4a1a-9d76-ec383b2fce7f",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 2.329162764872836
+    },
+    {
+      "uuid": "7d1917b3-465a-4151-a64c-c9b6aa618593",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.4344060486989578
+    },
+    {
+      "uuid": "7d2e8041-9f52-4586-bd9c-e15cc59e7252",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.6557069999999989
+    },
+    {
+      "uuid": "7e7906c3-de1c-44e2-a523-9f6a7b2c03aa",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.7695861324429931
+    },
+    {
+      "uuid": "81007055-82cb-479f-9719-6421f8dd0c6c",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.6842895213264357
+    },
+    {
+      "uuid": "814cac46-15cd-4365-8c45-e53e6c31cc67",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.5557069999999993
+    },
+    {
+      "uuid": "81ea6c92-8567-45f7-aaad-6b1989d86f7b",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.405706999999999
+    },
+    {
+      "uuid": "83313aa9-d83f-4a0f-9e07-49cda6a1702d",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.925
+    },
+    {
+      "uuid": "833cdece-9b74-4358-aaf3-5e3f35e1e581",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.605707
+    },
+    {
+      "uuid": "8362606b-e149-4efc-b905-ee86d9321b6e",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.1735434089118513
+    },
+    {
+      "uuid": "84dd9f98-bc75-4726-8947-dfd391cf79c4",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.785779299111262
+    },
+    {
+      "uuid": "85f87056-ecfe-4db5-98dd-20bcfa47b1a4",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.263636627262604
+    },
+    {
+      "uuid": "87ebce4f-e41b-475b-9a7d-60c02800b8cf",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 2.420902425947176
+    },
+    {
+      "uuid": "888d8b19-62b9-4793-ab8a-9c1694a714a6",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.9086664169569884
+    },
+    {
+      "uuid": "88d2fc89-3c60-4890-a68e-7bdc899f9181",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.5057070000000004
+    },
+    {
+      "uuid": "8acf3d4a-1793-44f0-a88f-b0457dfd9163",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.4199740397243072
+    },
+    {
+      "uuid": "91f64587-33cd-4c22-9f61-60f1dba879d8",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.312244758450721
+    },
+    {
+      "uuid": "95aca339-b8b1-41be-9101-5dbdcb5ea813",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.1499090793479625
+    },
+    {
+      "uuid": "9aaa2a17-1fb4-46d6-b12e-f93b858a085b",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.7246147159775458
+    },
+    {
+      "uuid": "9c486478-4bbd-4a19-b36c-31b78f377bd8",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.2374401700652873
+    },
+    {
+      "uuid": "a0ed4cae-b6ae-4293-9712-4d4e22faab98",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 2.2137347202873903
+    },
+    {
+      "uuid": "a16391b9-127a-428c-bd81-ceb73f879959",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.154844998302225
+    },
+    {
+      "uuid": "a1dec8c4-c431-4160-8c6e-afe5ec6b8cba",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.6557069999999989
+    },
+    {
+      "uuid": "a2cb1f58-c1ae-44ad-883e-af9d4d7a30bb",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.9458177748644307
+    },
+    {
+      "uuid": "a3ad11da-c557-43e4-95f4-3f2cbcd1ae58",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.3189593430229594
+    },
+    {
+      "uuid": "a3e8a8d6-cf23-4231-bcd0-faf7b4d4f92f",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.655706999999999
+    },
+    {
+      "uuid": "a63c17d7-8bd9-4dfe-855c-43366f3206fe",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.125
+    },
+    {
+      "uuid": "aa75f826-2d1d-4b52-aa4d-61ccd3be4fec",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.841376659219424
+    },
+    {
+      "uuid": "b5c84f80-3e58-41c8-9761-3093cba22388",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.155706999999999
+    },
+    {
+      "uuid": "b7133c27-48c8-41f8-b65c-d2daff8fd161",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.855707
+    },
+    {
+      "uuid": "b8cf0a53-999d-402d-b30d-ce74c6957714",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.7613294653080287
+    },
+    {
+      "uuid": "ba6dab50-f6db-454f-930e-af0fd8a1d3d0",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.3728871916862166
+    },
+    {
+      "uuid": "beed7239-a52c-40cf-9870-d2486b95e8a2",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.2057069999999996
+    },
+    {
+      "uuid": "bf018f90-4dba-4c96-b2d3-b0398d869ec9",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.7
+    },
+    {
+      "uuid": "c276b78e-3abf-4387-bd89-60b3bb805167",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.9086664169569884
+    },
+    {
+      "uuid": "c3328c1e-4191-489d-9c29-e2595f9f1093",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.2175523561080277
+    },
+    {
+      "uuid": "c5a95259-fb98-45f9-bb0a-31555a10e257",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.8485382502048147
+    },
+    {
+      "uuid": "c624e615-194c-425f-870d-4aef35afd772",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.7271097690898296
+    },
+    {
+      "uuid": "c66691c1-1175-4a31-8478-625bc12b69ba",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.7271097690898296
+    },
+    {
+      "uuid": "c74e5405-59d8-4c4e-917d-e836f6598a8e",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.4336169579600158
+    },
+    {
+      "uuid": "c7ccb122-2973-461e-a0b5-786bb22ab2d4",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.7480329845113748
+    },
+    {
+      "uuid": "cfe44db1-8a26-4949-8d0a-ae83fc651700",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.39669852660465243
+    },
+    {
+      "uuid": "d21298ff-c2d6-4ccd-9138-81a0826f2aa1",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.3057069999999993
+    },
+    {
+      "uuid": "d403fb34-6eec-4956-b9d7-a44411d25795",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 2.4484103153964076
+    },
+    {
+      "uuid": "d612e754-0071-4820-b946-8a437cc10e7f",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.263636627262604
+    },
+    {
+      "uuid": "d628b78b-bcf1-4d35-8710-001474ab5da2",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.4265974481593778
+    },
+    {
+      "uuid": "d79a3ba6-c34a-4e06-a4cf-634d166c2ad0",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.3728871916862166
+    },
+    {
+      "uuid": "d7da7e70-afd3-492a-b083-6a99fa040660",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.999716370940616
+    },
+    {
+      "uuid": "d8a5b360-e6ae-43e9-8767-7854c52393a2",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.2028827070426358
+    },
+    {
+      "uuid": "d8c13f3c-1e7a-4cd8-b73c-2fea342e7218",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.7557070000000004
+    },
+    {
+      "uuid": "d8d9fe07-22b1-41be-b3b7-e0a39d619c05",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.2322220051734196
+    },
+    {
+      "uuid": "d8deaba7-5ec5-4b05-b5ca-b199a4906326",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.1619314451500538
+    },
+    {
+      "uuid": "d9182431-018e-453f-9f2a-22580c0797d4",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.4966984188606287
+    },
+    {
+      "uuid": "d92be666-e42b-467d-8c92-d131c5e0f8ea",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.3057069999999993
+    },
+    {
+      "uuid": "db9bbc1c-66eb-4ac0-a4a1-7e03f7be25fa",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.5057070000000004
+    },
+    {
+      "uuid": "de3d21ab-6aac-4497-8ebd-d9578fdad97b",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.655706999999999
+    },
+    {
+      "uuid": "de3f764f-5851-4fcc-834f-2844d70e04a8",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.5057070000000004
+    },
+    {
+      "uuid": "e092b172-eb2e-4114-aa5b-1b049363b2f3",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.0922627382046421
+    },
+    {
+      "uuid": "e491120e-898a-477e-807f-43bab4af05e6",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.655706999999999
+    },
+    {
+      "uuid": "e7a82450-97c6-47f5-9998-5c227a98b452",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 2.5523794263488093
+    },
+    {
+      "uuid": "e84f9908-2329-4142-8f1c-6f9e2c70b0b0",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.655706999999999
+    },
+    {
+      "uuid": "e9001f5a-0963-473d-bf3e-0da838828158",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.5802941128394676
+    },
+    {
+      "uuid": "e9afdcd7-8c88-4cd9-acba-a9d408aa88c8",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.2028827070426358
+    },
+    {
+      "uuid": "ea599d62-f94d-4984-a935-b146610dbf12",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.0957217516767164
+    },
+    {
+      "uuid": "eba6005f-a9cd-4114-836f-7d2322cd6be3",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.7246147159775457
+    },
+    {
+      "uuid": "f45e22d9-84ac-42e8-b0da-b95e4401e71e",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.655706999999999
+    },
+    {
+      "uuid": "f47d36f5-b2dc-41d8-a598-e51fd66d6b9c",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.6557069999999989
+    },
+    {
+      "uuid": "f5237e7c-d75f-4410-8fcc-601b95c2410f",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.1507648632592633
+    },
+    {
+      "uuid": "f8b738b8-9ad5-4fe0-81bd-7d10e2b36fef",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.92
+    },
+    {
+      "uuid": "faaf5a83-cf3a-42ec-b223-5d7573f18cb7",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 0.4199740397243072
+    },
+    {
+      "uuid": "fb5a3e82-6feb-45e7-8fc5-94f5e7efa5b6",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.8057069999999993
+    },
+    {
+      "uuid": "fb5be0ec-c1cc-4d07-8d00-278edd4dbb0b",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 2.4484103153964076
+    },
+    {
+      "uuid": "fe41dc6a-7487-47f1-8629-1d3f6c9ab020",
+      "net": "GND",
+      "kind": "track",
+      "edge_gap_mm": 1.355707
+    },
+    {
+      "uuid": "4ce9aac6-fc07-46a9-8897-c79489fcaaf6",
+      "net": "AM_D2_P",
+      "kind": "track",
+      "edge_gap_mm": 0.7262084771509519
+    },
+    {
+      "uuid": "79ce87bb-0ae0-4420-ba57-690fb6579366",
+      "net": "AM_D2_P",
+      "kind": "track",
+      "edge_gap_mm": 0.7314022138751592
+    },
+    {
+      "uuid": "9b651451-c496-4513-99e4-6a538448c087",
+      "net": "AM_D2_P",
+      "kind": "track",
+      "edge_gap_mm": 0.726208734813001
+    },
+    {
+      "uuid": "bacca362-a523-44db-9af8-1953633fa43d",
+      "net": "AM_D2_P",
+      "kind": "track",
+      "edge_gap_mm": 0.7
+    },
+    {
+      "uuid": "8cdf8fee-1f33-44b8-ad1b-cca9bf659853",
+      "net": "AM_D2_P",
+      "kind": "via",
+      "edge_gap_mm": 0.8104680109201972
+    },
+    {
+      "uuid": "a15f9893-e45e-48da-b3ae-e96264ae36d2",
+      "net": "AM_D2_P",
+      "kind": "via",
+      "edge_gap_mm": 1.5443291356312676
+    },
+    {
+      "uuid": "85fa4ec5-861b-4ebe-b8d6-44f6a70ad652",
+      "net": "AM_D2_P",
+      "kind": "track",
+      "edge_gap_mm": 1.1364230357882468
+    },
+    {
+      "uuid": "d1369982-b6da-45ab-9aee-8fe254005e1f",
+      "net": "AM_D2_P",
+      "kind": "track",
+      "edge_gap_mm": 0.9104680109201971
+    },
+    {
+      "uuid": "e8899899-4f98-48f1-b8ac-9ff4fc1a50e5",
+      "net": "AM_D2_P",
+      "kind": "track",
+      "edge_gap_mm": 1.3439593430229593
+    },
+    {
+      "uuid": "fa249ff1-7263-44c9-9d60-cb64ccbd1dfc",
+      "net": "AM_D2_P",
+      "kind": "track",
+      "edge_gap_mm": 1.1364230357882468
+    },
+    {
+      "uuid": "36da5c3e-bedf-4b02-bbee-ed1bda9f77d6",
+      "net": "AM_D3_P",
+      "kind": "track",
+      "edge_gap_mm": 1.1000009999999996
+    },
+    {
+      "uuid": "56dd3c27-43bc-473a-9fd9-f66a441a2bc0",
+      "net": "AM_D3_P",
+      "kind": "track",
+      "edge_gap_mm": 1.117262738204642
+    },
+    {
+      "uuid": "713b92c1-c1ce-4833-89d4-19584f5d6f4f",
+      "net": "AM_D3_P",
+      "kind": "track",
+      "edge_gap_mm": 1.1207217516767163
+    },
+    {
+      "uuid": "99844300-60f4-4457-bd3b-baa0ed1c5c36",
+      "net": "AM_D3_P",
+      "kind": "track",
+      "edge_gap_mm": 1.1172615816521156
+    },
+    {
+      "uuid": "d45f17e4-2689-4e01-b70e-e265deec3d8d",
+      "net": "AM_D3_P",
+      "kind": "track",
+      "edge_gap_mm": 1.1172615816521156
+    },
+    {
+      "uuid": "3c728b2d-8fdd-4232-b4b2-dd52b68e68d8",
+      "net": "AM_D3_P",
+      "kind": "via",
+      "edge_gap_mm": 1.9440383234317844
+    },
+    {
+      "uuid": "b9dc2b86-8bc0-4246-b727-c9a01a469f4a",
+      "net": "AM_D3_P",
+      "kind": "via",
+      "edge_gap_mm": 1.9307070000000004
+    },
+    {
+      "uuid": "58e18fa4-88ac-4531-8068-7855e97b7bdf",
+      "net": "AM_D3_P",
+      "kind": "track",
+      "edge_gap_mm": 1.4222770187193028
+    },
+    {
+      "uuid": "758a2bdd-84dd-44f3-be1a-14ffc6594f5d",
+      "net": "AM_D3_P",
+      "kind": "track",
+      "edge_gap_mm": 1.5941175900771207
+    },
+    {
+      "uuid": "a4cf9ead-f6e1-47cd-93e8-bd508bb6b12f",
+      "net": "AM_D3_P",
+      "kind": "track",
+      "edge_gap_mm": 1.4222770187193028
+    },
+    {
+      "uuid": "c0bc427c-c733-4ca7-86cc-1bdbbe87c9cd",
+      "net": "AM_D3_P",
+      "kind": "track",
+      "edge_gap_mm": 1.6120762918714047
+    },
+    {
+      "uuid": "16323e13-aab8-4757-a1b9-1a3928e33956",
+      "net": "AM_CS_P",
+      "kind": "track",
+      "edge_gap_mm": 1.1807069999999988
+    },
+    {
+      "uuid": "5abf9d1c-8233-4e10-b0b4-0dcc01933bde",
+      "net": "AM_CS_P",
+      "kind": "track",
+      "edge_gap_mm": 1.45
+    },
+    {
+      "uuid": "93946fb2-5065-4e3a-8fbe-36a8cb7bb465",
+      "net": "AM_CS_P",
+      "kind": "track",
+      "edge_gap_mm": 1.512849960808778
+    },
+    {
+      "uuid": "b75a90fc-2b51-43d3-a0c3-78292a254b27",
+      "net": "AM_CS_P",
+      "kind": "track",
+      "edge_gap_mm": 1.4999999999999998
+    },
+    {
+      "uuid": "2a8c1b50-cdfd-45ff-96e9-45e1a9215afb",
+      "net": "AM_CS_P",
+      "kind": "via",
+      "edge_gap_mm": 1.35
+    },
+    {
+      "uuid": "5e8f40a7-f9e3-4bb1-81df-0b18a38d6b2a",
+      "net": "AM_CS_P",
+      "kind": "via",
+      "edge_gap_mm": 1.080706999999999
+    },
+    {
+      "uuid": "47aff32d-c220-4864-9913-967c84b804e4",
+      "net": "AM_CS_P",
+      "kind": "track",
+      "edge_gap_mm": 0.8999999999999999
+    },
+    {
+      "uuid": "5815cf0b-5def-4f24-bdfe-741691d06deb",
+      "net": "AM_CS_P",
+      "kind": "track",
+      "edge_gap_mm": 0.875
+    },
+    {
+      "uuid": "7df8560c-584a-4b2e-a3ef-93fc984bcdb7",
+      "net": "AM_CS_P",
+      "kind": "track",
+      "edge_gap_mm": 0.6249999999999989
+    },
+    {
+      "uuid": "e0a8bbd3-3936-4a5f-8618-b58aadb23cba",
+      "net": "AM_CS_P",
+      "kind": "track",
+      "edge_gap_mm": 0.6307069999999999
+    },
+    {
+      "uuid": "10e54a22-aefa-48f4-8342-4cd878a0d9ca",
+      "net": "AM_CLK_P",
+      "kind": "track",
+      "edge_gap_mm": 1.910229578391266
+    },
+    {
+      "uuid": "4bddf273-e115-41ff-9a26-0d3d66a95bde",
+      "net": "AM_CLK_P",
+      "kind": "track",
+      "edge_gap_mm": 1.9000000000000001
+    },
+    {
+      "uuid": "b951029a-1c5b-4fd6-9d85-d1d9aa38a15f",
+      "net": "AM_CLK_P",
+      "kind": "track",
+      "edge_gap_mm": 1.7
+    },
+    {
+      "uuid": "bab3e8fc-c182-4b94-be07-da35defd7f87",
+      "net": "AM_CLK_P",
+      "kind": "track",
+      "edge_gap_mm": 1.4307069999999988
+    },
+    {
+      "uuid": "90c58370-028f-4720-a677-b12ac33dad85",
+      "net": "AM_CLK_P",
+      "kind": "via",
+      "edge_gap_mm": 1.6
+    },
+    {
+      "uuid": "c5a53481-9a3a-4001-8753-d5fff3323ea8",
+      "net": "AM_CLK_P",
+      "kind": "via",
+      "edge_gap_mm": 1.330706999999999
+    },
+    {
+      "uuid": "6a7a2d66-a3bf-4174-94d1-fb350c40b0ce",
+      "net": "AM_CLK_P",
+      "kind": "track",
+      "edge_gap_mm": 0.875
+    },
+    {
+      "uuid": "81595bf4-3425-48e4-85aa-57146204b805",
+      "net": "AM_CLK_P",
+      "kind": "track",
+      "edge_gap_mm": 0.8999999999999999
+    },
+    {
+      "uuid": "a682b056-08d2-47d4-8512-3cd4d3f27069",
+      "net": "AM_CLK_P",
+      "kind": "track",
+      "edge_gap_mm": 0.6307069999999999
+    },
+    {
+      "uuid": "fa02bd80-01aa-41a6-b301-1645b30736e0",
+      "net": "AM_CLK_P",
+      "kind": "track",
+      "edge_gap_mm": 0.6249999999999989
+    },
+    {
+      "uuid": "238d0fb7-1969-4306-97a5-78b736378f85",
+      "net": "TP_SCL_IDLE",
+      "kind": "track",
+      "edge_gap_mm": 1.9102294763626528
+    },
+    {
+      "uuid": "2bab52b2-7f4d-4443-ab54-a190c02c5d31",
+      "net": "TP_SCL_IDLE",
+      "kind": "track",
+      "edge_gap_mm": 2.1058292186184415
+    },
+    {
+      "uuid": "369735b5-dacb-4c32-bcfb-52ac68ab2d6e",
+      "net": "TP_SCL_IDLE",
+      "kind": "track",
+      "edge_gap_mm": 1.9000000000000001
+    },
+    {
+      "uuid": "49564279-ae7a-49cf-9ce9-f69b2646fe0a",
+      "net": "TP_SCL_IDLE",
+      "kind": "track",
+      "edge_gap_mm": 2.2266472388143494
+    },
+    {
+      "uuid": "b3784f93-9754-409b-93c0-449b38487dd7",
+      "net": "TP_SCL_IDLE",
+      "kind": "track",
+      "edge_gap_mm": 1.910229578391266
+    },
+    {
+      "uuid": "f8645cad-604d-4214-b084-9536434cf32a",
+      "net": "TP_SCL_IDLE",
+      "kind": "track",
+      "edge_gap_mm": 1.9122918793719248
+    },
+    {
+      "uuid": "007076a5-8d54-420f-a9fa-6db4395c3bb0",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 2.3084951982145308
+    },
+    {
+      "uuid": "0ce64c21-5a18-48d5-bc22-a3854b3c62be",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 1.6807069999999988
+    },
+    {
+      "uuid": "1bdc00c1-cd10-4793-a92b-3a82d8b79254",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 1.05
+    },
+    {
+      "uuid": "27915ac0-a734-4db6-902d-5afef5c43a58",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 1.3499999999999999
+    },
+    {
+      "uuid": "2e6f04a9-90ae-4b73-acaa-5528adab9ce2",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 1.0999999999999999
+    },
+    {
+      "uuid": "5725963c-9651-43e7-8710-f3061d63a5b1",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 1.05
+    },
+    {
+      "uuid": "7f20f6ef-01e8-4d3f-afef-ec1d3c690fcc",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 1.0999999999999999
+    },
+    {
+      "uuid": "9819ea90-8b08-4a43-b7d4-b66d609620ce",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 2.3084962794121595
+    },
+    {
+      "uuid": "ba220852-2857-4bac-baea-0f35254b601c",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 2.300001
+    },
+    {
+      "uuid": "bc0e85c6-e9d7-448b-afdb-2734f353babe",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 1.0999999999999999
+    },
+    {
+      "uuid": "c12b6503-22af-4a80-a5f0-3499ce24ac29",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 1.05
+    },
+    {
+      "uuid": "efda4e73-04d5-4632-90fb-b6b66098817a",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 1.0999999999999999
+    },
+    {
+      "uuid": "f10f661d-bfa4-4d5b-8b20-a3c76b082715",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 1.25
+    },
+    {
+      "uuid": "fc0bef99-d516-49ec-b23c-3c7b51041bfa",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 1.4
+    },
+    {
+      "uuid": "fe6a35ac-384f-4aeb-9a7f-0fb4bd77bfea",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 1.3
+    },
+    {
+      "uuid": "015ddc9a-6f26-472f-af9a-a319ea6a7246",
+      "net": "AM_D1_P",
+      "kind": "via",
+      "edge_gap_mm": 1.6
+    },
+    {
+      "uuid": "4d656f1a-1f7d-4cf4-87a2-8006b169e563",
+      "net": "AM_D1_P",
+      "kind": "via",
+      "edge_gap_mm": 1.580706999999999
+    },
+    {
+      "uuid": "08ecaa87-fecb-40f6-96c8-29dc53a41135",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 1.8
+    },
+    {
+      "uuid": "21eb2349-fc34-4fc9-ad35-b6b6f99f4b6d",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 0.6249999999999989
+    },
+    {
+      "uuid": "2bd68a52-311d-4089-a39f-06f23253d8c1",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 1.7
+    },
+    {
+      "uuid": "350e1b24-0140-4b10-8f0b-463d08e758f1",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 1.8499999999999999
+    },
+    {
+      "uuid": "5c843fce-c730-45ba-93f2-3b82265f0aa3",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 1.5999999999999999
+    },
+    {
+      "uuid": "5eb2b1b4-c753-4150-9c82-3f60bd503b30",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 1.8
+    },
+    {
+      "uuid": "75fbda41-b6de-4c0f-8163-f1ebb7a87886",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 0.875
+    },
+    {
+      "uuid": "850cc227-f907-4900-a739-2abd828d0944",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 0.6307069999999999
+    },
+    {
+      "uuid": "c0357214-473d-4d6f-86b9-f07379650369",
+      "net": "AM_D1_P",
+      "kind": "track",
+      "edge_gap_mm": 0.8999999999999999
+    },
+    {
+      "uuid": "11557e40-4db4-49a6-94d9-21ff6ef94b42",
+      "net": "TP_SDA_IDLE",
+      "kind": "track",
+      "edge_gap_mm": 2.3084962794121595
+    },
+    {
+      "uuid": "1c18f442-bb74-4a21-83fe-602f0f1b5523",
+      "net": "TP_SDA_IDLE",
+      "kind": "track",
+      "edge_gap_mm": 2.473410315396408
+    },
+    {
+      "uuid": "2f6b307c-63cf-449a-9a13-123033743f22",
+      "net": "TP_SDA_IDLE",
+      "kind": "track",
+      "edge_gap_mm": 2.3102096135405006
+    },
+    {
+      "uuid": "3070daa9-465f-43b7-becb-2caeb788c9f4",
+      "net": "TP_SDA_IDLE",
+      "kind": "track",
+      "edge_gap_mm": 2.3084951982145308
+    },
+    {
+      "uuid": "3ba3bff3-af00-45c9-805a-3262e69adda8",
+      "net": "TP_SDA_IDLE",
+      "kind": "track",
+      "edge_gap_mm": 2.3084951982145308
+    },
+    {
+      "uuid": "3f2f3d22-18a8-4c13-a255-3f0e0d626488",
+      "net": "TP_SDA_IDLE",
+      "kind": "track",
+      "edge_gap_mm": 2.300001
+    },
+    {
+      "uuid": "f52d88cc-a7e3-42ba-9398-7caeb7832373",
+      "net": "TP_SDA_IDLE",
+      "kind": "track",
+      "edge_gap_mm": 2.5773794263488097
+    },
+    {
+      "uuid": "211658d0-c662-4711-8c66-16e17fdadb31",
+      "net": "AM_D0_P",
+      "kind": "track",
+      "edge_gap_mm": 2.3084952830141505
+    },
+    {
+      "uuid": "5998e701-ddb7-4f6d-9ff4-e14c23340a90",
+      "net": "AM_D0_P",
+      "kind": "track",
+      "edge_gap_mm": 1.1807069999999988
+    },
+    {
+      "uuid": "ab50c7b3-84d1-459d-a5a1-c5f26b78853c",
+      "net": "AM_D0_P",
+      "kind": "track",
+      "edge_gap_mm": 2.3
+    },
+    {
+      "uuid": "fe2dd0f2-90eb-4811-af53-f2d14b1aae9b",
+      "net": "AM_D0_P",
+      "kind": "track",
+      "edge_gap_mm": 1.45
+    },
+    {
+      "uuid": "26fa563c-bf08-4132-b064-92509389f03d",
+      "net": "AM_D0_P",
+      "kind": "via",
+      "edge_gap_mm": 1.35
+    },
+    {
+      "uuid": "67ca1f39-0624-41bc-8370-8444897fb5a2",
+      "net": "AM_D0_P",
+      "kind": "via",
+      "edge_gap_mm": 1.080706999999999
+    },
+    {
+      "uuid": "05defa23-86e3-4f8c-8029-eef962cc8f46",
+      "net": "AM_D0_P",
+      "kind": "track",
+      "edge_gap_mm": 0.6249999999999989
+    },
+    {
+      "uuid": "4c935c00-4e8e-4961-aec6-7398d64e01af",
+      "net": "AM_D0_P",
+      "kind": "track",
+      "edge_gap_mm": 0.875
+    },
+    {
+      "uuid": "7f4c6b87-3b0c-4908-b4a1-a1d0544ee496",
+      "net": "AM_D0_P",
+      "kind": "track",
+      "edge_gap_mm": 0.8999999999999999
+    },
+    {
+      "uuid": "e5e40e4a-389b-42c9-82a4-e2a82caf2b83",
+      "net": "AM_D0_P",
+      "kind": "track",
+      "edge_gap_mm": 0.6307069999999999
+    },
+    {
+      "uuid": "02f08570-1afa-41fb-b365-4d2777cbb483",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.9212426411276522
+    },
+    {
+      "uuid": "1f2cae24-1d07-4957-ac00-653f122f555f",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.969030363543609
+    },
+    {
+      "uuid": "363eaf24-6b48-4b39-a56f-9e2fac0c2b13",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.9899387399512709
+    },
+    {
+      "uuid": "3b903feb-4579-4ccf-a78c-fd642e3f683e",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.7631524324375609
+    },
+    {
+      "uuid": "3cfac1fb-4a96-44c7-b5bb-ee51be3f6ce2",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.7012077685781043
+    },
+    {
+      "uuid": "3ddbb3ae-78df-471f-b183-c6891e6384d0",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.059029902537407
+    },
+    {
+      "uuid": "4ab231f8-df07-4894-bad0-c5d920926cf2",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.7064022138751596
+    },
+    {
+      "uuid": "5e04bbc3-8403-4677-b732-a05721faba4b",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.8590768169701035
+    },
+    {
+      "uuid": "60e98446-445c-472f-abdc-e2f55dfec601",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.9640694008818658
+    },
+    {
+      "uuid": "772f0ab8-2ba7-4ce7-8f2a-94eb502bcab0",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.0870899792395594
+    },
+    {
+      "uuid": "7989ef56-de25-4a09-8406-0615977b67ed",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 2.0607251508209106
+    },
+    {
+      "uuid": "80fbcab6-24b2-416a-b211-8730aa221bf0",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.156820774239906
+    },
+    {
+      "uuid": "86410536-2e05-4ea9-9f91-35491c628739",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.1899107478399413
+    },
+    {
+      "uuid": "8e34433a-a232-4380-82b5-49c4ff9168e4",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.2535326868395074
+    },
+    {
+      "uuid": "8f432814-cf99-4abd-af39-957058c53eb3",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.8727903881391705
+    },
+    {
+      "uuid": "947378f3-6c39-4f62-960e-6c292994601e",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.1425792376683335
+    },
+    {
+      "uuid": "948c053c-1e9a-4da6-be87-340d0f844057",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.8959458892487265
+    },
+    {
+      "uuid": "965a9644-ec0e-4256-84b3-b87d6e3a5421",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.217764874155003
+    },
+    {
+      "uuid": "97542b19-f13b-4a05-bf47-56aed3a75e7c",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.3480246308483208
+    },
+    {
+      "uuid": "9773b4b7-717c-42d5-9e8e-34a8e9365096",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.0317968648315734
+    },
+    {
+      "uuid": "9886b7f3-aa51-462f-b834-1d46421f65c3",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.7691082394154198
+    },
+    {
+      "uuid": "a7977af9-d6d5-4309-857d-dd5bae439391",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.7012075109157345
+    },
+    {
+      "uuid": "c637bab1-02de-4378-a71d-bf3ca2931e98",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.39112718406317
+    },
+    {
+      "uuid": "d77b7c8c-c35a-4ea9-bda1-7f84f9b43b3b",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.8061227609414029
+    },
+    {
+      "uuid": "e03e07c4-0b69-41d9-b247-4eb75f17cafe",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.7012084771509522
+    },
+    {
+      "uuid": "e29a2721-d84e-4148-b1a6-a60cd84f05e6",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.5499990000000001
+    },
+    {
+      "uuid": "e42f2ef3-e3c8-42ce-ac9e-1b8f0074f107",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.5405490707499419
+    },
+    {
+      "uuid": "e7996084-86fe-40c6-a42b-97c0fd467570",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.4246526997438436
+    },
+    {
+      "uuid": "e8b979b9-e316-4581-a0df-d8a219c90d65",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.0793393348582556
+    },
+    {
+      "uuid": "e9933ac0-620c-40a3-b869-c53ed8fe2cff",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.2881472113638357
+    },
+    {
+      "uuid": "ee706156-1334-43ad-bc2e-a3e8b9c951f0",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 2.0953178937484016
+    },
+    {
+      "uuid": "f20c05b6-34db-4134-a6f9-5e57162e493e",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.3205642657538204
+    },
+    {
+      "uuid": "f20fda1e-0bb6-4f8f-8a8f-a07117bb2296",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 2.0953178937484016
+    },
+    {
+      "uuid": "e46e6ebf-077f-40d7-9fbf-cbda9bcae6ce",
+      "net": "AM_RAW",
+      "kind": "via",
+      "edge_gap_mm": 1.5120766528656253
+    },
+    {
+      "uuid": "fbf5fa07-94d9-4fa3-9418-d28575c38891",
+      "net": "AM_RAW",
+      "kind": "via",
+      "edge_gap_mm": 2.0204265064380778
+    },
+    {
+      "uuid": "0d283924-67bf-4223-8948-f1333e61507e",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.125
+    },
+    {
+      "uuid": "155ac0e7-46c7-4176-983d-f717efb7b661",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.875
+    },
+    {
+      "uuid": "1fe49358-1d9a-4360-942e-268c853ef05a",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.855707
+    },
+    {
+      "uuid": "23d4c218-55a7-4e0a-a550-3b09530cd048",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 2.005707
+    },
+    {
+      "uuid": "2df77554-658f-47fb-b338-a6fb3d9c970d",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.599999999999999
+    },
+    {
+      "uuid": "4811410c-1066-49e0-b6bc-85f20d6ca7cf",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.5057070000000004
+    },
+    {
+      "uuid": "4a5466ec-30dc-4960-a643-8b7f8a2c4a1f",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.155706999999999
+    },
+    {
+      "uuid": "4f102722-c8b8-479b-af13-b8c56171d78f",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 2.055706999999999
+    },
+    {
+      "uuid": "5b98b83c-e8ff-44e6-b0b8-5857bc085bdb",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.105707
+    },
+    {
+      "uuid": "69c6e4be-c127-498c-8431-1f7a3d9a97e6",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.599999999999999
+    },
+    {
+      "uuid": "6f22e0de-13fd-4dca-aa8e-991096cde806",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.8775617787924153
+    },
+    {
+      "uuid": "78f71fc9-fe05-4d3f-b1d5-71fc9f8d4f5a",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.875
+    },
+    {
+      "uuid": "7c81c919-2710-4a47-9045-3525fd00ec02",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.8775617787924153
+    },
+    {
+      "uuid": "9973f3cf-c0ac-48f8-ae99-9ed70253e211",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.9749990000000002
+    },
+    {
+      "uuid": "b14f9a65-1880-4b7b-a521-cd4566754bbb",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.7271097690898298
+    },
+    {
+      "uuid": "b1b3790f-73c2-443a-b98a-7f55f41a444a",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.605707
+    },
+    {
+      "uuid": "b5e1ccf3-dbff-4fe8-8b1e-b17aac018e38",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.325
+    },
+    {
+      "uuid": "ba7f4fb4-1fdc-4506-822f-4b4202d30073",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.8500000000000001
+    },
+    {
+      "uuid": "bb80d526-8f52-48d6-b44a-2e86f8fa2f22",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 2.0958709127557538
+    },
+    {
+      "uuid": "bedf7019-9487-4d9d-a8d0-335ac2158c7e",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.8057069999999993
+    },
+    {
+      "uuid": "c7bd2941-cc8c-4b01-8c94-a48a6b811bbd",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.87002510266603
+    },
+    {
+      "uuid": "d728ab9b-deb4-4610-b02a-8483e65a26fb",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.5870766528656253
+    },
+    {
+      "uuid": "d9e705a6-75a6-43bb-b023-e981ce128af8",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.4557069999999996
+    },
+    {
+      "uuid": "dc2b2db3-25d8-4779-af1b-c825c4d4ee2b",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.7557070000000004
+    },
+    {
+      "uuid": "e05e8be1-58f0-437e-8859-c23f56e3418a",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.7271097690898298
+    },
+    {
+      "uuid": "e19332f7-9087-455b-bff4-ce08a4d1f63f",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.605707
+    },
+    {
+      "uuid": "e24ab397-003f-46e3-a924-d73b28b9d5d5",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 2.0749999999999997
+    },
+    {
+      "uuid": "e362d56b-5d4c-43c3-ad9b-1d970d6870c4",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.075
+    },
+    {
+      "uuid": "e6d026a9-d510-4f83-9176-c88d37f34baa",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.8500000000000001
+    },
+    {
+      "uuid": "e70c5023-2782-4d15-8893-b5b84ef89110",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 2.0953178937484016
+    },
+    {
+      "uuid": "e821e146-78d2-4a00-a5d8-72cd9d30f320",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.8500000000000001
+    },
+    {
+      "uuid": "f13d4ae8-1c81-46f6-9de2-8e37c7bf6d25",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 2.1057069999999998
+    },
+    {
+      "uuid": "f923a4fc-ec21-4723-9765-50d3b4cd2075",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 1.0557069999999993
+    },
+    {
+      "uuid": "fc6446f4-b295-4fe1-9ea5-b4ba70c8b751",
+      "net": "AM_RAW",
+      "kind": "track",
+      "edge_gap_mm": 0.599999999999999
+    },
+    {
+      "uuid": "0c280266-7199-4487-94da-a14479453198",
+      "net": "AM_1V8",
+      "kind": "track",
+      "edge_gap_mm": 1.0922605964402294
+    },
+    {
+      "uuid": "3ab4cd65-30a9-4286-8018-61ccf02987de",
+      "net": "AM_1V8",
+      "kind": "track",
+      "edge_gap_mm": 1.3972770187193033
+    },
+    {
+      "uuid": "8c7582bf-9c0c-4e8b-8dc8-a32866799eb1",
+      "net": "AM_1V8",
+      "kind": "track",
+      "edge_gap_mm": 1.0922615816521164
+    },
+    {
+      "uuid": "9c409aa1-0afc-417c-a9dc-367db12de040",
+      "net": "AM_1V8",
+      "kind": "track",
+      "edge_gap_mm": 1.092260767781133
+    },
+    {
+      "uuid": "bef64666-6422-485e-a6ac-0bcbb1fe7e48",
+      "net": "AM_1V8",
+      "kind": "track",
+      "edge_gap_mm": 1.074999
+    },
+    {
+      "uuid": "c2507919-f86d-4f96-893a-1965f73b5cad",
+      "net": "AM_1V8",
+      "kind": "track",
+      "edge_gap_mm": 1.5691175900771213
+    },
+    {
+      "uuid": "db5728df-ab14-4fd3-a84d-a24ea36deb1d",
+      "net": "AM_1V8",
+      "kind": "track",
+      "edge_gap_mm": 1.095721751676717
+    }
+  ],
+  "B_coverlay_gang_windows": [
+    {
+      "connector": "JF2",
+      "window_flat_xy_mm": [
+        0.4,
+        10.180707,
+        7.6,
+        13.280707
+      ],
+      "minimum_nominal_pad_expansion_mm": 0.09999999999999964,
+      "single_gang_rectangle": true
+    },
+    {
+      "connector": "JF1",
+      "window_flat_xy_mm": [
+        0.65,
+        0.5,
+        7.35,
+        3.1
+      ],
+      "minimum_nominal_pad_expansion_mm": 0.10000000000000009,
+      "single_gang_rectangle": true
+    }
+  ],
+  "F_PI_stiffener_regions": [
+    {
+      "flat_xy_bounds_mm": [
+        0.2,
+        0.3,
+        7.8,
+        3.3
+      ],
+      "filled": true,
+      "stroke_width_mm": 0.0
+    },
+    {
+      "flat_xy_bounds_mm": [
+        0.2,
+        10.230708,
+        7.8,
+        13.230708
+      ],
+      "filled": true,
+      "stroke_width_mm": 0.0
+    }
+  ],
+  "native_fabrication_notes": [
+    "TARGET: PI core25um; base Cu12um/side; finished0.11mm nominal",
+    "F.Adhes: F-side PI stiffener0.20mm proposed / filled regions",
+    "Final coverlay, plating, laminate and stiffener tolerances: fab approval pending",
+    "PI FLEX ENGINEERING PROTOTYPE / NOT FOR ORDER",
+    "B.Mask: gang coverlay windows / both connectors on B"
+  ],
+  "native_per_layer_stack_approved": false,
+  "native_numeric_per_layer_stack_present": false,
+  "finished_thickness_nominal_mm": 0.11,
+  "core_PI_target_mm": 0.025,
+  "base_copper_target_mm_per_side": 0.012,
+  "F_PI_stiffener_target_mm": 0.2,
+  "scope": "Native12 straight outline segments, all56 rectangular pads and every track/via checked analytically to outline centerlines; minimum planes/pad-other-net copper covered by separate native DRC/custom rule. Two zero-stroke filled F-side stiffener regions and B-side gang windows measured. PI targets are declared in native comments, not invented per-layer laminate values. Actual coverlay/adhesive/plating, laser/stiffener tolerances, advanced vias, assembly and screen-back datum remain unqualified."
+}

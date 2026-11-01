@@ -469,7 +469,7 @@
     "hardware_rail_or_level_shift_changed": false,
     "scope": "Current nominal1.8V rail and level-shifter supply satisfy both displayed VDDIO ranges; this is not output tolerance, startup/overshoot, shipping-SKU or functional qualification."
   },
-  "current_review_sha256": "9010c081da02a50bc07cfcdc5b58cb1e6cc4b9a0faae91f9e9cc206f202c8015",
+  "current_review_sha256": "5a8d419e3c5973ac8caf9b488bcb5233a9f9a3a550d1b95760e6451170570d06",
   "source_frozen_pdf_sha256": "878311f5d5594db6a4320401569f575e0a8c56ad5a4073d6acb63c8b05b0cba9",
   "checker_sha256": "7873aa55f8d4d5d912911a6ead6ef1fe21bf25a155825bd960fe3805da539677",
   "folded_male_solder_plane_to_screen_back_Z_offset_mm": null,

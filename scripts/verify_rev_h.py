@@ -91,6 +91,7 @@ def verify():
  require(sha(ROOT/screen_source['source_pdf'])==screen_source['source_pdf_sha256'],'Changed screen source PDF')
  require(sha(H/'display_link/review/design_contract.json')==screen_source['display_link_contract_sha256'],'Stale screen/FPC target binding')
  require(len(screen_source['selected_native_dimensions'])==8 and screen_source['pdf_page5_visual_observations']['folded_male_solder_plane_to_screen_back_Z_offset_mm'] is None,'Re-audit screen source dimensions before claiming folded Z closure')
+ require(screen_source['fpc_dfm_followup_adoption_sha256']==sha(H/'display_link/review/fab_geometry_adoption.json'),'Stale vendor-datum/FPC follow-up chain')
  upstream_path=H/'review/am178_upstream_materials_review.json';upstream=json.loads(upstream_path.read_text(encoding='utf8'))
  require(upstream['status']=='UPSTREAM_MECHANICAL_MATCH_ELECTRICAL_VARIANT_REVIEWED_NOT_RELEASE' and upstream['commit']=='9f68afe8910a2cc10f9c36f36c7b3ed9bb67ec70','Unexpected upstream AMOLED review scope/commit')
  require(upstream['checker_sha256']==sha(H/'review/devtools/check_h_am178_upstream_materials.py') and upstream['current_review_sha256']==sha(H/'review/am178_vendor_mechanical_review.json'),'Stale upstream AMOLED comparison inputs')
@@ -135,6 +136,7 @@ def verify():
  require(complete_cable['status']=='COMPLETE_NOMINAL_ENDPOINT_ROUTE_NOT_QUALIFIED_HARNESS','Complete route must retain its actual qualification scope')
  complete_sources={'power_ports_native.json':H/'mechanical/current/power_ports_native.json','pogo_assembly_review.json':H/'mechanical/current/pogo_assembly_review.json','interboard_contract.json':H/'review/interboard_contract.json','design_contract.json':H/'display_link/review/design_contract.json'}
  for name,path in complete_sources.items():require(sha(path)==complete_cable['source_sha256'][name],'Stale complete cable input: '+name)
+ for name,digest in complete_cable['source_code_sha256'].items():require(sha(H/'review/devtools'/name)==digest,'Changed checked cable/swept-FPC code: '+name)
  require(len(complete_cable['wires'])==4 and {w['pin']:w['net'] for w in complete_cable['wires']}==port['pin_map'],'Wrong complete cable pin map')
  require(all(v['tube_gap_lower_bound_mm']>0 for v in complete_cable['wire_pair_clearances']) and len(complete_cable['wire_pair_clearances'])==6,'Missing nominal wire-pair screening')
  require(all(v['wire_tube_gap_lower_bound_mm']>0 for v in complete_cable['obstacles_checked'].values()),'Nominal complete cable overlaps a checked obstacle')

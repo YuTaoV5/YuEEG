@@ -12,7 +12,7 @@
     "cradle_assembly.png": "ffca7f726d5a7262138bc720a8d321211306ea1e72d8d0f62fdab54fbad7f967",
     "native_cad_review.json": "8fc15d6867fa56904b9d90e93d897fb1c863c21d690b31e3f329248fa0a9b753",
     "power_component_envelopes.json": "0173cb87747c18bb5733db9674e38a90c2cdeb263d453b2a530965a6ddd537c1",
-    "clearance_review.json": "a0a7cb6012233917a37f77ffd183728eb276d5cfc312aade551a11c036350362",
+    "clearance_review.json": "c71d050a3b7de7595753382c2642dfea1ae6a4cc3133f28e0c574e3426769d65",
     "README.md": "4b0685e54919810f683851e1615fc2718c1de9e65476d8dea5d6fb118f988cd9"
   },
   "inputs_sha256": {
@@ -21,7 +21,7 @@
     "hardware/YuEEG_8CH_RevH_Stack/mechanical/current/npbx1_key_notch_basis.json": "838dc000296f3d01fca0b6a748cdf7e90b77139fcacaf6fa3ab73057e62ff611",
     "hardware/YuEEG_8CH_RevH_Stack/mechanical/current/npbx1_user_model_comparison.json": "ed290bc3eb232563f413978704c550239922e69dd5fc2a87aa9ed4091ee97287",
     "hardware/YuEEG_8CH_RevH_Stack/mechanical/current/pogo_reference.json": "881d1abdf16373985fb8d4380abb7afac1b56d5380a6837f2e0491b4a5879a32",
-    "hardware/YuEEG_8CH_RevH_Stack/mechanical/current/complete_power_harness_review.json": "0d72961604a1c62252034c7d7fb908e55b60c69e5b142d5e17fa5f768e562945",
+    "hardware/YuEEG_8CH_RevH_Stack/mechanical/current/complete_power_harness_review.json": "33063cb331629f488868ad94867be3e8dc82deb09cff8fd21618a2fdff353968",
     "hardware/YuEEG_8CH_RevH_Stack/review/devtools/build_h_battery_cradle.py": "245a999b513202666194d47f81e6f1b96bcc46d9057dc270c44e9b69850cb844",
     "hardware/YuEEG_8CH_RevH_Stack/review/devtools/extract_h_cradle_power_envelopes.py": "d8c912e7e4ddcc9a3903b902b656f0aa47d4a967a58570b23ba2498a33fff6d0",
     "hardware/YuEEG_8CH_RevH_Stack/review/devtools/check_h_battery_cradle_clearance.py": "458ba9b4dd4097e3538f59cf18ae86245caeb9bd38dbd1add9605644ac5ce8b5",

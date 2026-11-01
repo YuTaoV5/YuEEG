@@ -2,13 +2,13 @@
   "status": "CONDITIONAL_REVIEW_ARTIFACTS_NOT_ASSEMBLY_RELEASE",
   "files_sha256": {
     "power_ports_native.json": "575571e068ea78f073d59e6358f8f80e043c503dae0e748f79275a001ee1982d",
-    "power_harness_routing_review.json": "5deb26b6f0232117a5e78013380e1186427914690e13123769948d01857b80a8",
+    "power_harness_routing_review.json": "b118f10f3015856dc2ddf10df07e6d11706fab5f0d25659258488d1b1005b61d",
     "power_harness_routing_review.png": "e3a9cf6ca704c5dc6441e6c850ba033e1d30fced5a48392ebf627abdfe06e35e",
-    "power_harness_routing_review.svg": "741bc805dd2ba80d9baff3ad2d1c4c762130f5fc823a0c43671a17e2146a6ca7",
+    "power_harness_routing_review.svg": "ddcfeaff7c66aeb288c6bcaf500ec101cf93663bac6370eab6caf46ec01d61c5",
     "power_port_tail_review.json": "d9db4088dab6b50056aafd56ce15b8977c8b41810a2d54070cb8d5ce610548c3",
-    "complete_power_harness_review.json": "0d72961604a1c62252034c7d7fb908e55b60c69e5b142d5e17fa5f768e562945",
+    "complete_power_harness_review.json": "33063cb331629f488868ad94867be3e8dc82deb09cff8fd21618a2fdff353968",
     "complete_power_harness_review.png": "79ce41da391e920ee2e97c76c993c5ca76c8ae57dfb11b4ffb96556b8d535d84",
-    "complete_power_harness_review.svg": "43f71f4de36dccadf8766ee5af7b7da409f7096e51369cd6fd5df0abe93d5a46"
+    "complete_power_harness_review.svg": "d2156c90fd01040ce8f6808d11e6029248104d0c676763883085510dfcc78675"
   },
   "pcb_sha256": {
     "afe": "61f639e6cd2ab0925f28603e0191da73723e721caa7f991c334818731c2a21b8",

@@ -159,6 +159,7 @@ assert best > 0
 report = {
     'status':'COMPLETE_NOMINAL_ENDPOINT_ROUTE_NOT_QUALIFIED_HARNESS',
     'source_sha256':{p.name:sha(p) for p in [M/'power_ports_native.json',M/'pogo_assembly_review.json',H/'review/interboard_contract.json',H/'display_link/review/design_contract.json']},
+    'source_code_sha256':{name:sha(H/'review/devtools'/name) for name in ['review_h_complete_power_harness.py','check_h_display_fold_space.py']},
     'catalog':'https://www.jst-mfg.com/product/pdf/eng/ePH.pdf','catalog_reference_pages':[1,2,3,4],
     'product_frame':{'AFE_F_z_mm':0.,'digital_B_z_mm':8.5,'digital_F_z_mm':digital_F,'power_transform':'X=49.95+PCB_X; Y=-4.05-PCB_local_Z; Z=16.6-PCB_Y; local_Z positive away from F'},
     'assumptions':{'wire_AWG':24,'wire_OD_max_mm':od,'wire_axis_height_from_connector_board_F_mm':exit_axis_height,

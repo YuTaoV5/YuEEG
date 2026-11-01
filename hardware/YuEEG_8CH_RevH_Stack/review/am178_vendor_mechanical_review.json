@@ -224,8 +224,9 @@
     "folded_male_solder_plane_to_screen_back_Z_offset_mm": null,
     "complete_folded_back_conductive_envelope_qualified": false
   },
-  "display_link_contract_sha256": "ba84db7ae22199cc02e52a775d5694b3dc58a4663b36ace4a7b8d2a99e209aac",
+  "display_link_contract_sha256": "a389edf651319b6633804a02e41e7c9197e9c469491d17878dbc76bfef86de12",
   "connector_mounting_plane_separation_target_mm": 6.0,
   "mechanical_decision": "Keep screen on top and use a separate insulating support. Do not equate the 6mm flex-plane target with the support height. Current factory 2D CAD and PDF do not close the folded connector Z datum; retain engineering prototype status.",
-  "scope": "Selected numeric DWG entities cross-checked against rendered manufacturer PDF pages4/5. No full CAD solid reconstruction, delivered-SKU equivalence, complete folded assembly clearance or physical validation claimed. The public product table has an inconsistent 35.14mm outer length; use the drawing 42.74mm. The local DWG is not added to this review delivery."
+  "scope": "Selected numeric DWG entities cross-checked against rendered manufacturer PDF pages4/5. No full CAD solid reconstruction, delivered-SKU equivalence, complete folded assembly clearance or physical validation claimed. The public product table has an inconsistent 35.14mm outer length; use the drawing 42.74mm. The local DWG is not added to this review delivery.",
+  "fpc_dfm_followup_adoption_sha256": "b97c41c4b4d4a08b06e732c16b0657dabecb5a68fc5e6b7ce3ffdcd1881a4e5a"
 }

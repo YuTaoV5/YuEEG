@@ -1,8 +1,8 @@
 {
   "status": "CONDITIONAL_NOMINAL_SPACE_SCREEN_NOT_ASSEMBLY_RELEASE",
-  "design_contract_sha256": "ba84db7ae22199cc02e52a775d5694b3dc58a4663b36ace4a7b8d2a99e209aac",
+  "design_contract_sha256": "a389edf651319b6633804a02e41e7c9197e9c469491d17878dbc76bfef86de12",
   "digital_pcb_sha256": "e4ec2796baec9bfced51394bc5c8ac8c5172db75c834cd15c4a2eb06d868470f",
-  "fpc_pcb_sha256": "51979b486cb4e063baf91e5e389caad5001929970646c76e1cca3f596b3a5b12",
+  "fpc_pcb_sha256": "6ce7b60e96179da0bd3e42f352f31eb3f3b1b8d94331982284aee869ba9d33a5",
   "neighbor_native_sha256": "7230c625e90738deb6d74cf2ea264dcae80f757acb8a6af03d995d585c744ff9",
   "sampling_step_max_mm": 0.002,
   "model": "Swept substrate, proposed .20 mm F-side end stiffeners and nominal connector body boxes; intentional mate excluded. Segment AABBs conservative for each interval, with curve chord approximation below .000001 mm; no overall manufacturing/assembly tolerance approval.",
@@ -263,5 +263,7 @@
     5.970000000000001
   ],
   "host_y_only_separation_lower_bound_mm": 23.064999999999998,
-  "scope": "Only listed obstacles. A small distance to a conservative full lead-height box is a design risk, not proof of actual package collision. Screen back, factory FPC, solder and all other obstacles remain unverified."
+  "scope": "Only listed obstacles. A small distance to a conservative full lead-height box is a design risk, not proof of actual package collision. Screen back, factory FPC, solder and all other obstacles remain unverified.",
+  "native_fab_geometry_sha256": "d5604f92edda97e727d17ef4d35c59798ab754c44758b988c7ca9ccea268534b",
+  "sweep_checker_sha256": "037ae3fb8fd49e28ec77a1512f657717a1eb8b9f60dde668ab6a588b20cb0656"
 }

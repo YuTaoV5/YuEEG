@@ -330,7 +330,7 @@
     }
   },
   "native_ports_sha256": "575571e068ea78f073d59e6358f8f80e043c503dae0e748f79275a001ee1982d",
-  "display_fpc_pcb_sha256": "51979b486cb4e063baf91e5e389caad5001929970646c76e1cca3f596b3a5b12",
+  "display_fpc_pcb_sha256": "6ce7b60e96179da0bd3e42f352f31eb3f3b1b8d94331982284aee869ba9d33a5",
   "source": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
   "reference_pages": [
     1,

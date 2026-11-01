@@ -35,7 +35,9 @@ def sweep(q):
   elif t<c:theta=math.pi/2+(t-a-math.pi*r/2-v)/r;y=straight+r*math.sin(theta);z=z0+r+v-r*math.cos(theta)
   else:theta=math.pi;y=fy-t;z=z0+2*r+v
   # Beveled transition from the same offsets used in native Edge.Cuts.
-  t0,t1=q.get('end_taper_offsets_from_connector_mm',[1.8,2.3]);e=min(t-my,fy-t);mix=min(1,max(0,(e-t0)/(t1-t0)));w=W*(1-mix)+neck*mix
+  end='JF1' if t-my<=fy-t else 'JF2'
+  t0,t1=q.get('end_taper_offsets_by_connector_mm',{}).get(end,q.get('end_taper_offsets_from_connector_mm',[1.8,2.3]))
+  e=min(t-my,fy-t);mix=min(1,max(0,(e-t0)/(t1-t0)));w=W*(1-mix)+neck*mix
   stiff=.2 if abs(t-my)<=1.5 or abs(t-fy)<=1.5 else 0
   pts=[(cx+sgn*w/2,cy+y-off*math.sin(theta),z+off*math.cos(theta)) for sgn in [-1,1] for off in [-half,half+stiff]]
   return pts
@@ -56,4 +58,5 @@ def check(q):
  # HOST begins at y49.05; minimum Y-only separation is a conservative lower bound
  return dict(neighbors=rows,fpc_swept_bounds=[min(c[i] for c in cells) for i in range(3)]+[max(c[i+3] for c in cells) for i in range(3)],host_y_only_separation_lower_bound_mm=49.05-max(c[4] for c in cells))
 result=check(q);report=dict(status='CONDITIONAL_NOMINAL_SPACE_SCREEN_NOT_ASSEMBLY_RELEASE',design_contract_sha256=hashlib.sha256((D/'review/design_contract.json').read_bytes()).hexdigest(),digital_pcb_sha256=hashlib.sha256((H/'digital/YuEEG_H_DIGITAL.kicad_pcb').read_bytes()).hexdigest(),fpc_pcb_sha256=hashlib.sha256((D/'YuEEG_H_DISPLAY_LINK.kicad_pcb').read_bytes()).hexdigest(),neighbor_native_sha256=hashlib.sha256((D/'review/neighbor_native.json').read_bytes()).hexdigest(),sampling_step_max_mm=.002,model='Swept substrate, proposed .20 mm F-side end stiffeners and nominal connector body boxes; intentional mate excluded. Segment AABBs conservative for each interval, with curve chord approximation below .000001 mm; no overall manufacturing/assembly tolerance approval.',**result,scope='Only listed obstacles. A small distance to a conservative full lead-height box is a design risk, not proof of actual package collision. Screen back, factory FPC, solder and all other obstacles remain unverified.')
+fab=D/'review/fab_geometry.json';native=json.loads(fab.read_text());assert native['pcb_sha256']==report['fpc_pcb_sha256'] and native['contract_sha256']==report['design_contract_sha256'];report['native_fab_geometry_sha256']=hashlib.sha256(fab.read_bytes()).hexdigest();report['sweep_checker_sha256']=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
 out=D/'review/fold_space.json';out.write_text(json.dumps(report,indent=2));print([(v['ref'],round(v['minimum_nominal_box_distance_mm'],4)) for v in result['neighbors']]);print('HOST Y-only separation',result['host_y_only_separation_lower_bound_mm'])
